@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-15 11:50+0000\n"
+"POT-Creation-Date: 2020-01-17 08:56+0000\n"
 "PO-Revision-Date: 2020-01-17 08:27+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.stg.fedoraproject.org/projects/"
@@ -18,8 +18,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
-"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 3.10.1\n"
 
 #: pkg/docker/storage.jsx:261
@@ -75,6 +75,16 @@ msgstr[2] "$0 пакунків"
 #: pkg/systemd/init.js:484 pkg/systemd/service-details.jsx:59
 msgid "$0 Template"
 msgstr "Шаблон $0"
+
+#: pkg/docker/containers-view.jsx:614
+#, fuzzy
+#| msgid "1 Vulnerability"
+#| msgid_plural "$0 Vulnerabilities"
+msgid "$0 Vulnerability"
+msgid_plural "$0 Vulnerabilities"
+msgstr[0] "$0 вразливість"
+msgstr[1] "$0 вразливості"
+msgstr[2] "$0 вразливостей"
 
 #: pkg/networkmanager/firewall.jsx:160
 msgid "$0 Zone"
@@ -274,17 +284,9 @@ msgstr[0] "$1 виправлення захисту"
 msgstr[1] "$1 виправлення захисту"
 msgstr[2] "$1 виправлень захисту"
 
-#: pkg/networkmanager/interfaces.js:2739
-msgid "$mtu"
-msgstr "$mtu"
-
 #: pkg/storaged/utils.js:182
 msgid "$name (from $host)"
 msgstr "$name (з $host)"
-
-#: pkg/docker/details.js:151
-msgid "${hip}:${hport} -> $cport"
-msgstr "${hip}:${hport} -> $cport"
 
 #: pkg/storaged/utils.js:126
 msgid "${size} ${desc}"
@@ -316,13 +318,6 @@ msgstr "1 МіБ"
 #: pkg/systemd/index.html:183 pkg/systemd/index.html:187
 msgid "1 Minute"
 msgstr "1 хвилина"
-
-#: pkg/docker/containers-view.jsx:614
-msgid "1 Vulnerability"
-msgid_plural "$0 Vulnerabilities"
-msgstr[0] "$0 вразливість"
-msgstr[1] "$0 вразливості"
-msgstr[2] "$0 вразливостей"
 
 #: pkg/dashboard/index.html:55 pkg/networkmanager/index.html:72
 #: pkg/networkmanager/index.html:408 pkg/systemd/graphs.html:55
@@ -1102,7 +1097,7 @@ msgstr "Автозапуск"
 msgid "Available"
 msgstr "Доступні"
 
-#: pkg/packagekit/updates.jsx:872
+#: pkg/packagekit/updates.jsx:880
 msgid "Available Updates"
 msgstr "Доступні оновлення"
 
@@ -1221,7 +1216,7 @@ msgstr "Трансляція"
 msgid "Broken configuration"
 msgstr "Помилки у налаштуваннях"
 
-#: pkg/packagekit/updates.jsx:852
+#: pkg/packagekit/updates.jsx:860
 msgid "Bug Fix Updates Available"
 msgstr "Доступні оновлення із виправленнями вад"
 
@@ -1447,7 +1442,7 @@ msgstr "Перевіряємо і відновлюємо пристрій RAID $
 msgid "Checking for new applications"
 msgstr "Шукаємо нові програми"
 
-#: pkg/systemd/overview-cards/healthCard.jsx:83
+#: pkg/packagekit/updates.jsx:819
 msgid "Checking for package updates..."
 msgstr "Шукаємо оновлення пакунків…"
 
@@ -2286,7 +2281,7 @@ msgstr "Затримка"
 #: pkg/docker/index.html:139 pkg/docker/index.html:251
 #: pkg/networkmanager/index.html:440 pkg/users/index.html:79
 #: pkg/users/index.html:357 pkg/docker/containers-view.jsx:202
-#: pkg/docker/details.js:293 pkg/docker/util.js:641
+#: pkg/docker/details.js:288 pkg/docker/util.js:641
 #: pkg/machines/components/deleteDialog.jsx:145
 #: pkg/machines/components/deleteDialog.jsx:161
 #: pkg/machines/components/deleteResource.jsx:76
@@ -2355,7 +2350,7 @@ msgstr "Вилучення пристрою RAID призведе до вити�
 msgid "Deleting a VDO device will erase all data on it."
 msgstr "Вилучення пристрою VDO призведе до витирання усіх даних на ньому."
 
-#: pkg/docker/containers-view.jsx:201 pkg/docker/details.js:292
+#: pkg/docker/containers-view.jsx:201 pkg/docker/details.js:287
 msgid "Deleting a container will erase all data in it."
 msgstr ""
 "Вилучення контейнера призведе до витирання усіх даних, що на ньому "
@@ -2754,7 +2749,7 @@ msgstr "Кінець не може бути порожнім"
 msgid "Enforcing"
 msgstr "Примусово"
 
-#: pkg/packagekit/updates.jsx:854
+#: pkg/packagekit/updates.jsx:862
 msgid "Enhancement Updates Available"
 msgstr "Доступні оновлення із поліпшеннями"
 
@@ -3215,7 +3210,7 @@ msgstr "Твердий диск"
 msgid "Hardware Information"
 msgstr "Дані щодо обладнання"
 
-#: pkg/systemd/overview-cards/healthCard.jsx:72
+#: pkg/systemd/overview-cards/healthCard.jsx:55
 msgid "Health"
 msgstr "Здоров'я"
 
@@ -3448,8 +3443,8 @@ msgid ""
 "In order to synchronize users, you need to log in to {{#strong}}{{host}}{{/"
 "strong}}."
 msgstr ""
-"Для синхронізації параметрів користувачів, слід увійти до "
-"{{#strong}}{{host}}{{/strong}}."
+"Для синхронізації параметрів користувачів, слід увійти до {{#strong}}{{host}}"
+"{{/strong}}."
 
 #: pkg/networkmanager/interfaces.js:828 pkg/networkmanager/interfaces.js:1398
 #: pkg/networkmanager/interfaces.js:1405 pkg/networkmanager/interfaces.js:2588
@@ -3498,7 +3493,7 @@ msgstr "IQN ініціатора має бути непорожнімy"
 msgid "Install"
 msgstr "Встановити"
 
-#: pkg/packagekit/updates.jsx:839
+#: pkg/packagekit/updates.jsx:847
 msgid "Install All Updates"
 msgstr "Встановити усі оновлення"
 
@@ -3506,7 +3501,7 @@ msgstr "Встановити усі оновлення"
 msgid "Install NFS Support"
 msgstr "Встановити підтримку NFS"
 
-#: pkg/packagekit/updates.jsx:839 pkg/packagekit/updates.jsx:845
+#: pkg/packagekit/updates.jsx:847 pkg/packagekit/updates.jsx:853
 msgid "Install Security Updates"
 msgstr "Встановити оновлення захисту"
 
@@ -4913,8 +4908,8 @@ msgstr "Недоступний"
 msgid "Not connected"
 msgstr "Не з’єднано"
 
-#: pkg/systemd/overview-cards/healthCard.jsx:90
-#: pkg/systemd/overview-cards/healthCard.jsx:91
+#: pkg/systemd/overview-cards/healthCard.jsx:62
+#: pkg/systemd/overview-cards/healthCard.jsx:63
 msgid "Not connected to Insights"
 msgstr "Не з'єднано із Insights"
 
@@ -4922,7 +4917,7 @@ msgstr "Не з'єднано із Insights"
 msgid "Not enough space to grow."
 msgstr "Недостатньо місця для росту."
 
-#: pkg/docker/details.js:186 pkg/storaged/details.jsx:121
+#: pkg/docker/details.js:181 pkg/storaged/details.jsx:121
 msgid "Not found"
 msgstr "Не знайдено"
 
@@ -5327,7 +5322,7 @@ msgstr "Ціль тестування луною"
 msgid "Pizza Box"
 msgstr "З коробку для піци"
 
-#: pkg/docker/containers-view.jsx:200 pkg/docker/details.js:291
+#: pkg/docker/containers-view.jsx:200 pkg/docker/details.js:286
 #: pkg/docker/util.js:612 pkg/storaged/content-views.jsx:305
 #: pkg/storaged/mdraid-details.jsx:289 pkg/storaged/vdo-details.jsx:194
 #: pkg/storaged/vgroup-details.jsx:207
@@ -6021,11 +6016,11 @@ msgstr "Правила перезапуску"
 msgid "Restart Policy:"
 msgstr "Правила перезапуску:"
 
-#: pkg/packagekit/updates.jsx:499 pkg/packagekit/updates.jsx:916
+#: pkg/packagekit/updates.jsx:499 pkg/packagekit/updates.jsx:924
 msgid "Restart Recommended"
 msgstr "Рекомендовано перезапустити"
 
-#: pkg/packagekit/updates.jsx:928
+#: pkg/packagekit/updates.jsx:936
 msgid "Restarting"
 msgstr "Перезапускаємо"
 
@@ -6225,7 +6220,7 @@ msgstr "Безпечно витираємо $target"
 msgid "Security"
 msgstr "Безпека"
 
-#: pkg/packagekit/updates.jsx:850
+#: pkg/packagekit/updates.jsx:858
 msgid "Security Updates Available"
 msgstr "Доступні оновлення захисту"
 
@@ -6914,7 +6909,7 @@ msgstr "Служби системи"
 msgid "System information"
 msgstr "Відомості щодо системи"
 
-#: pkg/packagekit/updates.jsx:935 pkg/packagekit/updates.jsx:948
+#: pkg/packagekit/updates.jsx:942 pkg/packagekit/updates.jsx:956
 msgid "System is up to date"
 msgstr "Система не потребує оновлення"
 
@@ -7255,16 +7250,19 @@ msgstr "Паролі не збігаються."
 msgid "The pool is empty"
 msgstr "Буфер порожній"
 
-#: pkg/docker/containers-view.jsx:434
-msgid "The scan from $time ($type) found no vulnerabilities."
-msgstr "Скануванням від $time ($type) вразливостей не знайдено."
-
 #: pkg/docker/containers-view.jsx:436
-msgid "The scan from $time ($type) found one vulnerability:"
+#, fuzzy
+#| msgid "The scan from $time ($type) found one vulnerability:"
+#| msgid_plural "The scan from $time ($type) found $count vulnerabilities:"
+msgid "The scan from $time ($type) found $count vulnerability:"
 msgid_plural "The scan from $time ($type) found $count vulnerabilities:"
 msgstr[0] "Під час сканування $time ($type) виявлено $count помилку:"
 msgstr[1] "Під час сканування $time ($type) виявлено $count помилки:"
 msgstr[2] "Під час сканування $time ($type) виявлено $count помилок:"
+
+#: pkg/docker/containers-view.jsx:434
+msgid "The scan from $time ($type) found no vulnerabilities."
+msgstr "Скануванням від $time ($type) вразливостей не знайдено."
 
 #: pkg/docker/containers-view.jsx:432
 msgid "The scan from $time ($type) was not successful."
@@ -7549,7 +7547,7 @@ msgstr ""
 "Ця програма для перегляду інтернету є надто старою для роботи з Cockpit (не "
 "вистачає можливості $0)"
 
-#: pkg/packagekit/updates.jsx:882
+#: pkg/packagekit/updates.jsx:890
 msgid "This web console will be updated."
 msgstr "Цю вебконсоль буде оновлено."
 
@@ -7949,7 +7947,7 @@ msgstr "Оновлено"
 msgid "Updated packages may require a restart to take effect."
 msgstr "Використання оновлених пакунків може потребувати перезапуску."
 
-#: pkg/packagekit/updates.jsx:856
+#: pkg/packagekit/updates.jsx:864
 msgid "Updates Available"
 msgstr "Доступні оновлення"
 
@@ -8413,7 +8411,7 @@ msgstr "Вам слід вибрати найвідповіднішу опера
 msgid "You will be logged out in $0 seconds."
 msgstr "Вашого користувача буде викинуто з системи за $0 секунд."
 
-#: pkg/packagekit/updates.jsx:884
+#: pkg/packagekit/updates.jsx:892
 msgid ""
 "Your browser will disconnect, but this does not affect the update process. "
 "You can reconnect in a few moments to continue watching the progress."
@@ -8422,7 +8420,7 @@ msgstr ""
 "процес оновлення. Ви зможете з'єднатися знову за декілька секунд, щоб "
 "продовжити спостереження за поступом."
 
-#: pkg/packagekit/updates.jsx:929
+#: pkg/packagekit/updates.jsx:937
 msgid ""
 "Your server will close the connection soon. You can reconnect after it has "
 "restarted."
@@ -9217,6 +9215,12 @@ msgstr "yum"
 #: pkg/networkmanager/manifest.json.in
 msgid "zone"
 msgstr "зона"
+
+#~ msgid "$mtu"
+#~ msgstr "$mtu"
+
+#~ msgid "${hip}:${hport} -> $cport"
+#~ msgstr "${hip}:${hport} -> $cport"
 
 #~ msgid "Hide Performance Options"
 #~ msgstr "Приховати параметри швидкодії"
