@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-02-28 07:03+0000\n"
-"PO-Revision-Date: 2020-02-19 19:58+0000\n"
+"PO-Revision-Date: 2020-03-12 13:38+0000\n"
 "Last-Translator: Massimiliano Torromeo <massimiliano.torromeo@gmail.com>\n"
 "Language-Team: Italian <https://translate.fedoraproject.org/projects/cockpit/"
 "master/it/>\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.10.3\n"
+"X-Generator: Weblate 3.11.2\n"
 
 #: pkg/docker/storage.jsx:261
 msgid " (shared with the OS)"
@@ -29,6 +29,7 @@ msgstr " (condiviso con il SO)"
 #: pkg/machines/components/diskAdd.jsx:233
 msgid " Attaching it will make this disk shareable for every VM using it."
 msgstr ""
+" Montarlo renderà questo disco condivisibile con ogni VM che lo utilizzi."
 
 #: pkg/networkmanager/interfaces.js:2330
 msgid "$0 Active Zone"
@@ -57,12 +58,13 @@ msgstr "$0 File System"
 
 #: pkg/machines/components/create-vm-dialog/pxe-helpers.js:105
 msgid "$0 Network"
-msgstr ""
+msgstr "Rete $0"
 
 #: pkg/packagekit/history.jsx:100
 msgid "$0 Package"
 msgid_plural "$0 Packages"
-msgstr[0] ""
+msgstr[0] "$0 Pacchetto"
+msgstr[1] "$0 Pacchetti"
 
 #: pkg/systemd/init.js:484 pkg/systemd/service-details.jsx:59
 msgid "$0 Template"
@@ -71,50 +73,51 @@ msgstr "$0 Template"
 #: pkg/docker/containers-view.jsx:614
 msgid "$0 Vulnerability"
 msgid_plural "$0 Vulnerabilities"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "$0 Vulnerabilità"
+msgstr[1] "$0 Vulnerabilità"
 
 #: pkg/networkmanager/firewall.jsx:160
 msgid "$0 Zone"
-msgstr ""
+msgstr "Zona $0"
 
 #: src/base1/test-locale.js:83 src/base1/test-locale.js:84
 #: src/base1/test-locale.js:85 src/base1/test-locale.js:86
 msgid "$0 bit"
 msgid_plural "$0 bits"
 msgstr[0] "$0 bit"
-msgstr[1] "$0 bits"
+msgstr[1] "$0 bit"
 
 #: src/base1/test-locale.js:74 src/base1/test-locale.js:75
 #: src/base1/test-locale.js:87 src/base1/test-locale.js:88
 msgid "$0 byte"
 msgid_plural "$0 bytes"
 msgstr[0] "$0 byte"
-msgstr[1] "$0 bytes"
+msgstr[1] "$0 byte"
 
 #: src/base1/test-locale.js:76 src/base1/test-locale.js:77
 msgctxt "memory"
 msgid "$0 byte"
 msgid_plural "$0 bytes"
 msgstr[0] "$0 byte"
-msgstr[1] "$0 bytes"
+msgstr[1] "$0 byte"
 
 #: pkg/storaged/vdo-details.jsx:279
 msgid "$0 data + $1 overhead used of $2 ($3)"
-msgstr "$0 dati + + $1 overhead utilizzato di $2 ($3)"
+msgstr "$0 dati + $1 overhead utilizzato di $2 ($3)"
 
 #: pkg/lib/plot.js:971
 msgid "$0 day"
 msgid_plural "$0 days"
-msgstr[0] ""
+msgstr[0] "$0 giorno"
+msgstr[1] "$0 giorni"
 
 #: src/base1/test-locale.js:65 src/base1/test-locale.js:66
 #: src/base1/test-locale.js:67 pkg/playground/translate.js:26
 #: pkg/playground/translate.js:29 pkg/storaged/mdraid-details.jsx:208
 msgid "$0 disk is missing"
 msgid_plural "$0 disks are missing"
-msgstr[0] "Il $0 disco non esiste"
-msgstr[1] "Il $0 disco non esiste"
+msgstr[0] "$0 disco non esiste"
+msgstr[1] "$0 dischi non esistono"
 
 #: src/base1/test-locale.js:68 src/base1/test-locale.js:70
 #: src/base1/test-locale.js:72 pkg/playground/translate.js:32
@@ -122,18 +125,16 @@ msgstr[1] "Il $0 disco non esiste"
 msgctxt "disk-non-rotational"
 msgid "$0 disk is missing"
 msgid_plural "$0 disks are missing"
-msgstr[0] "Il $0 disco non esiste"
-msgstr[1] "Il $0 disco non esiste"
+msgstr[0] "$0 disco non esiste"
+msgstr[1] "$0 dischi non esistono"
 
 #: pkg/shell/indexes.js:611
-#, fuzzy
-#| msgid "Authentication"
 msgid "$0 documentation"
-msgstr "Autenticazione"
+msgstr "Documentazione $0"
 
 #: src/ws/login.js:336 src/ws/login.js:695
 msgid "$0 error"
-msgstr "$0 errore"
+msgstr "Errore $0"
 
 #: src/base1/cockpit.js:2785
 msgid "$0 exited with code $1"
@@ -158,7 +159,8 @@ msgstr "I $0 filesystem non possono essere ridimensionati qui."
 #: pkg/lib/plot.js:974
 msgid "$0 hour"
 msgid_plural "$0 hours"
-msgstr[0] ""
+msgstr[0] "$0 ora"
+msgstr[1] "$0 ore"
 
 #: pkg/machines/components/desktopConsole.jsx:44
 msgid ""
@@ -166,7 +168,7 @@ msgid ""
 "GNOME Software or run the following:"
 msgstr ""
 "$0 è disponibile per la maggior parte dei sistemi operativi. Per "
-"installarlo, cercarlo nel software GNOME o eseguire quanto segue:"
+"installarlo, cercalo in GNOME Software o esegui quanto segue:"
 
 #: pkg/storaged/content-views.jsx:333 pkg/storaged/content-views.jsx:573
 #: pkg/storaged/format-dialog.jsx:164 pkg/storaged/lvol-tabs.jsx:203
@@ -187,18 +189,20 @@ msgstr "$0 ucciso con il segnale $1"
 #: pkg/lib/plot.js:977
 msgid "$0 minute"
 msgid_plural "$0 minutes"
-msgstr[0] ""
+msgstr[0] "$0 minuto"
+msgstr[1] "$0 minuti"
 
 #: pkg/lib/plot.js:965
 msgid "$0 month"
 msgid_plural "$0 months"
-msgstr[0] ""
+msgstr[0] "$0 mese"
+msgstr[1] "$0 mesi"
 
 #: pkg/selinux/setroubleshoot-view.jsx:434
 msgid "$0 occurrence"
 msgid_plural "$1 occurrences"
 msgstr[0] "$0 occorrenza"
-msgstr[1] "$1 fenomeni"
+msgstr[1] "$1 occorrenze"
 
 #: pkg/storaged/fsys-tab.jsx:365
 msgid "$0 of $1"
@@ -207,20 +211,21 @@ msgstr "$0 di $1"
 #: pkg/systemd/init.js:424
 msgid "$0 service has failed"
 msgid_plural "$0 services have failed"
-msgstr[0] ""
+msgstr[0] "$0 servizio ha fallito"
+msgstr[1] "$0 servizi hanno fallito"
 
 #: pkg/docker/util.js:125
 msgid "$0 shares"
-msgstr "$0 titoli azionari"
+msgstr "$0 condivisioni"
 
 #: pkg/storaged/crypto-keyslots.jsx:589
 msgid "$0 slots remain"
-msgstr "$0 le fessure rimangono"
+msgstr "$0 slot disponibili"
 
 #: pkg/packagekit/updates.jsx:163
 msgid "$0 update"
 msgid_plural "$0 updates"
-msgstr[0] "$0 attualizzazione"
+msgstr[0] "$0 aggiornamento"
 msgstr[1] "$0 aggiornamenti"
 
 #: pkg/storaged/vdo-details.jsx:291
@@ -230,7 +235,8 @@ msgstr "$0 usato di $1 ($2 salvato)"
 #: pkg/lib/plot.js:968
 msgid "$0 week"
 msgid_plural "$0 weeks"
-msgstr[0] ""
+msgstr[0] "$0 settimana"
+msgstr[1] "$0 settimane"
 
 #: pkg/lib/cockpit-components-install-dialog.jsx:108
 msgid "$0 will be installed."
@@ -239,20 +245,21 @@ msgstr "$0 sarà installato."
 #: pkg/lib/plot.js:962
 msgid "$0 year"
 msgid_plural "$0 years"
-msgstr[0] ""
+msgstr[0] "$0 anno"
+msgstr[1] "$0 anni"
 
 #: pkg/storaged/vgroup-details.jsx:112
 msgid "$0, $1 free"
-msgstr "$0# $1 libero"
+msgstr "$0, $1 libero"
 
 #: pkg/systemd/logs.js:457
 msgid "$0: crash at $1"
-msgstr ""
+msgstr "$0: crash il $1"
 
 #: pkg/packagekit/updates.jsx:161
 msgid "$1 security fix"
 msgid_plural "$1 security fixes"
-msgstr[0] "$1 fissaggio di sicurezza"
+msgstr[0] "$1 correzione di sicurezza"
 msgstr[1] "$1 correzioni di sicurezza"
 
 #: pkg/storaged/utils.js:182
@@ -265,7 +272,7 @@ msgstr "${size} ${desc}"
 
 #: pkg/networkmanager/firewall.jsx:573
 msgid "(Optional)"
-msgstr ""
+msgstr "(Opzionale)"
 
 #: pkg/storaged/crypto-tab.jsx:132
 msgid "(none)"
@@ -274,8 +281,8 @@ msgstr "(nessuno)"
 #: pkg/packagekit/updates.jsx:165
 msgid ", including $1 security fix"
 msgid_plural ", including $1 security fixes"
-msgstr[0] "comprese le correzioni di $1sicurezza"
-msgstr[1] "comprese le correzioni di $1sicurezza"
+msgstr[0] ", compresa $1 correzione di sicurezza"
+msgstr[1] ", comprese $1 correzioni di sicurezza"
 
 #: pkg/storaged/nfs-details.jsx:325
 msgid "--"
@@ -313,11 +320,11 @@ msgstr "1 settimana"
 
 #: pkg/systemd/services.html:164
 msgid "10th"
-msgstr "10°"
+msgstr "10"
 
 #: pkg/systemd/services.html:165
 msgid "11th"
-msgstr "11t°"
+msgstr "11"
 
 #: pkg/storaged/mdraids-panel.jsx:104
 msgid "128 KiB"
@@ -325,19 +332,19 @@ msgstr "128 KiB"
 
 #: pkg/systemd/services.html:166
 msgid "12th"
-msgstr "12°"
+msgstr "12"
 
 #: pkg/systemd/services.html:167
 msgid "13th"
-msgstr "13°"
+msgstr "13"
 
 #: pkg/systemd/services.html:168
 msgid "14th"
-msgstr "14°"
+msgstr "14"
 
 #: pkg/systemd/services.html:169
 msgid "15th"
-msgstr "15°"
+msgstr "15"
 
 #: pkg/storaged/mdraids-panel.jsx:101
 msgid "16 KiB"
@@ -345,23 +352,23 @@ msgstr "16 KiB"
 
 #: pkg/systemd/services.html:170
 msgid "16th"
-msgstr "16°"
+msgstr "16"
 
 #: pkg/systemd/services.html:171
 msgid "17th"
-msgstr "17°"
+msgstr "17"
 
 #: pkg/systemd/services.html:172
 msgid "18th"
-msgstr "18°"
+msgstr "18"
 
 #: pkg/systemd/services.html:173
 msgid "19th"
-msgstr "19°"
+msgstr "19"
 
 #: pkg/systemd/services.html:155
 msgid "1st"
-msgstr "1°"
+msgstr "1"
 
 #: pkg/storaged/mdraids-panel.jsx:107
 msgid "2 MiB"
@@ -385,23 +392,23 @@ msgstr "21"
 
 #: pkg/systemd/services.html:176
 msgid "22nd"
-msgstr "22esimo"
+msgstr "22"
 
 #: pkg/systemd/services.html:177
 msgid "23rd"
-msgstr "ventitreesimo"
+msgstr "23"
 
 #: pkg/systemd/services.html:178
 msgid "24th"
-msgstr "ventiquattresimo"
+msgstr "24"
 
 #: pkg/systemd/services.html:179
 msgid "25th"
-msgstr "venticinquesimo"
+msgstr "25"
 
 #: pkg/systemd/services.html:180
 msgid "26th"
-msgstr "26°"
+msgstr "26"
 
 #: pkg/systemd/services.html:181
 msgid "27th"
@@ -409,15 +416,15 @@ msgstr "27"
 
 #: pkg/systemd/services.html:182
 msgid "28th"
-msgstr "ventottesimo"
+msgstr "28"
 
 #: pkg/systemd/services.html:183
 msgid "29th"
-msgstr "ventinovesimo"
+msgstr "29"
 
 #: pkg/systemd/services.html:156
 msgid "2nd"
-msgstr "2a"
+msgstr "2"
 
 #: pkg/systemd/graphs.js:380
 msgid "3 min"
@@ -437,7 +444,7 @@ msgstr "32 KiB"
 
 #: pkg/systemd/services.html:157
 msgid "3rd"
-msgstr "Terzo"
+msgstr "3"
 
 #: pkg/storaged/mdraids-panel.jsx:99
 msgid "4 KiB"
@@ -453,7 +460,7 @@ msgstr "40 minuti"
 
 #: pkg/systemd/services.html:158
 msgid "4th"
-msgstr "4a"
+msgstr "4"
 
 #: pkg/systemd/index.html:188
 msgid "5 Minutes"
@@ -475,7 +482,7 @@ msgstr "512 KiB"
 
 #: pkg/systemd/services.html:159
 msgid "5th"
-msgstr "Quinto"
+msgstr "5"
 
 #: pkg/dashboard/index.html:53 pkg/networkmanager/index.html:71
 #: pkg/networkmanager/index.html:407 pkg/systemd/graphs.html:53
@@ -493,11 +500,11 @@ msgstr "64 KiB"
 
 #: pkg/systemd/services.html:160
 msgid "6th"
-msgstr "6°"
+msgstr "6"
 
 #: pkg/systemd/services.html:161
 msgid "7th"
-msgstr "7°"
+msgstr "7"
 
 #: pkg/storaged/mdraids-panel.jsx:100
 msgid "8 KiB"
@@ -513,11 +520,11 @@ msgstr "802.3ad LACP"
 
 #: pkg/systemd/services.html:162
 msgid "8th"
-msgstr "ottavo"
+msgstr "8"
 
 #: pkg/systemd/services.html:163
 msgid "9th"
-msgstr "Nona"
+msgstr "9"
 
 #: pkg/lib/machine-not-supported.html:5
 msgid ""
@@ -567,7 +574,7 @@ msgstr "Informazioni su Cockpit"
 
 #: pkg/lib/machine-info.js:254
 msgid "Absent"
-msgstr ""
+msgstr "Assente"
 
 #: pkg/users/index.html:104 pkg/users/index.html:190
 #: pkg/machines/components/diskEdit.jsx:94
@@ -627,7 +634,7 @@ msgstr "Attivo dal"
 
 #: pkg/systemd/service-details.jsx:355
 msgid "Active since "
-msgstr ""
+msgstr "Active dal "
 
 #: pkg/networkmanager/interfaces.js:1981
 msgid "Adaptive load balancing"
@@ -677,28 +684,28 @@ msgstr "Aggiungi chiave"
 
 #: pkg/lib/machine-add.html:4
 msgid "Add Machine to Dashboard"
-msgstr "Aggiungi macchina alla dashboard"
+msgstr "Aggiungi Macchina alla Dashboard"
 
 #: pkg/machines/components/vmnetworktab.jsx:272
 msgid "Add Network Interface"
-msgstr ""
+msgstr "Aggiungi Scheda di Rete"
 
 #: pkg/networkmanager/firewall.jsx:495
 msgid "Add Ports"
-msgstr ""
+msgstr "Aggiungi Porte"
 
 #: pkg/networkmanager/firewall.jsx:146 pkg/networkmanager/firewall.jsx:152
 #: pkg/networkmanager/firewall.jsx:495
 msgid "Add Services"
-msgstr "Aggiungi servizi"
+msgstr "Aggiungi Servizi"
 
 #: pkg/docker/storage.jsx:219
 msgid "Add Storage"
-msgstr "Aggiungi storage"
+msgstr "Aggiungi Storage"
 
 #: pkg/networkmanager/index.html:117
 msgid "Add Team"
-msgstr "Aggiungi team"
+msgstr "Aggiungi Team"
 
 #: pkg/networkmanager/index.html:119
 msgid "Add VLAN"
@@ -706,16 +713,16 @@ msgstr "Aggiungi VLAN"
 
 #: pkg/machines/components/nicAdd.jsx:192
 msgid "Add Virtual Network Interface"
-msgstr ""
+msgstr "Aggiungi Scheda di Rete Virtuale"
 
 #: pkg/networkmanager/firewall.jsx:668 pkg/networkmanager/firewall.jsx:899
 #: pkg/networkmanager/firewall.jsx:905
 msgid "Add Zone"
-msgstr ""
+msgstr "Aggiungi Zona"
 
 #: pkg/networkmanager/firewall.jsx:904
 msgid "Add a new zone"
-msgstr ""
+msgstr "Aggiungi una nuova zona"
 
 #: pkg/storaged/iscsi-panel.jsx:42
 msgid "Add iSCSI Portal"
@@ -727,49 +734,51 @@ msgstr "Aggiungi chiave"
 
 #: pkg/networkmanager/firewall.jsx:496
 msgid "Add ports to $0 zone"
-msgstr ""
+msgstr "Aggiungi porte alla zona $0"
 
 #: pkg/users/index.html:406
 msgid "Add public key"
-msgstr "Aggiungere la chiave pubblica"
+msgstr "Aggiungi chiave pubblica"
 
 #: pkg/networkmanager/firewall.jsx:496
 msgid "Add services to $0 zone"
-msgstr ""
+msgstr "Aggiungi servizi alla zona $0"
 
 #: pkg/networkmanager/firewall.jsx:151
 msgid "Add services to zone $0"
-msgstr ""
+msgstr "Aggiungi servizi alla zona $0"
 
 #: pkg/networkmanager/firewall.jsx:746
 msgid "Add zone"
-msgstr ""
+msgstr "Aggiungi zona"
 
 #: pkg/networkmanager/interfaces.js:3100
 msgid ""
 "Adding <b>$0</b> will break the connection to the server, and will make the "
 "administration UI unavailable."
 msgstr ""
-"L'aggiunta di I <b>$0</b>interromperà la connessione al server e renderà "
-"l'interfaccia utente di amministrazione non disponibile."
+"L'aggiunta di <b>$0</b> interromperà la connessione al server e renderà "
+"l'interfaccia di amministrazione non disponibile."
 
 #: pkg/networkmanager/firewall.jsx:586
 msgid ""
 "Adding custom ports will reload firewalld. A reload will result in the loss "
 "of any runtime-only configuration!"
 msgstr ""
+"Aggiungere porte personalizzate ricaricherà firewalld. Un ricaricamento "
+"provocherà la perdita di qualsiasi configurazione non persistente!"
 
 #: pkg/users/authorized-keys.js:113
 msgid "Adding key"
-msgstr "Aggiunta di un tasto"
+msgstr "Aggiunta della chiave"
 
 #: pkg/storaged/jobs-panel.jsx:73
 msgid "Adding physical volume to $target"
-msgstr "Aggiunta di volume fisico a $target"
+msgstr "Aggiunta del volume fisico a $target"
 
 #: pkg/machines/components/vmDisksTab.jsx:119
 msgid "Additional"
-msgstr ""
+msgstr "Aggiuntivo"
 
 #: pkg/networkmanager/interfaces.js:2651
 msgid "Additional DNS $val"
@@ -781,11 +790,11 @@ msgstr "Domini di ricerca DNS aggiuntivi $val"
 
 #: pkg/docker/index.html:309
 msgid "Additional Storage"
-msgstr "Memoria aggiuntiva"
+msgstr "Spazio di archiviazione aggiuntivo"
 
 #: pkg/systemd/service-details.jsx:210
 msgid "Additional actions"
-msgstr ""
+msgstr "Azioni aggiuntive"
 
 #: pkg/networkmanager/interfaces.js:2646
 msgid "Additional address $val"
@@ -820,7 +829,7 @@ msgstr "L'indirizzo non è un URL valido"
 #: pkg/machines/components/networks/createNetworkDialog.jsx:88
 #: pkg/machines/components/networks/createNetworkDialog.jsx:95
 msgid "Address not within subnet"
-msgstr ""
+msgstr "L'indirizzo non è nella sottorete"
 
 #: pkg/machines/components/desktopConsole.jsx:153
 msgid "Address:"
@@ -849,7 +858,7 @@ msgstr "Dopo"
 #: pkg/systemd/services.html:309
 msgctxt "time-delay"
 msgid "After"
-msgstr ""
+msgstr "Dopo"
 
 #: pkg/systemd/overview-cards/realmd-operation.html:27
 msgid ""
@@ -857,6 +866,10 @@ msgid ""
 "log into this machine. This may also affect other services as DNS resolution "
 "settings and the list of trusted CAs may change."
 msgstr ""
+"Dopo aver abbandonato il dominio, solo gli utenti con credenziali locali "
+"saranno in grado di accedere a questa macchina. Questo può inoltre influire "
+"su altri servizi dato che le impostazioni di risoluzione DNS e la lista "
+"delle CA fidate potrebbero cambiare."
 
 #: pkg/systemd/services.html:300 pkg/systemd/services.html:304
 #: pkg/systemd/init.js:969
@@ -869,7 +882,7 @@ msgstr "Allarme e oltre"
 
 #: pkg/systemd/services.html:64 pkg/systemd/logs.js:239 pkg/systemd/logs.js:416
 msgid "All"
-msgstr ""
+msgstr "Tutti"
 
 #: pkg/lib/machine-info.js:79
 msgid "All In One"
@@ -885,11 +898,11 @@ msgstr ""
 
 #: pkg/systemd/service-details.jsx:160
 msgid "Allow running (unmask)"
-msgstr ""
+msgstr "Permetti esecuzione (smascheramento)"
 
 #: pkg/networkmanager/firewall.jsx:720
 msgid "Allowed Addresses"
-msgstr ""
+msgstr "Indirizzi Consentiti"
 
 #: pkg/docker/index.html:550 pkg/docker/util.js:108
 msgid "Always"
@@ -3044,11 +3057,11 @@ msgstr "Sistemi di file system"
 
 #: pkg/networkmanager/firewall.jsx:515
 msgid "Filter Services"
-msgstr "Servizi di filtraggio"
+msgstr "Filtra Servizi"
 
 #: pkg/systemd/services.html:61
 msgid "Filter by name or description..."
-msgstr ""
+msgstr "Filtra per nome o descrizione..."
 
 #: pkg/lib/machine-unknown-hostkey.html:10 pkg/shell/index.html:301
 msgid "Fingerprint"
@@ -3090,7 +3103,7 @@ msgstr ""
 
 #: pkg/users/index.html:122
 msgid "Force Change"
-msgstr "Cambio di forza"
+msgstr "Forza Cambiamento"
 
 #: pkg/docker/util.js:519
 msgid "Force Delete"
@@ -3098,11 +3111,11 @@ msgstr "Forza Cancella"
 
 #: pkg/machines/components/vm/vmActions.jsx:46
 msgid "Force Restart"
-msgstr "Riavvio della forza"
+msgstr "Riavvio Forzato"
 
 #: pkg/machines/components/vm/vmActions.jsx:60
 msgid "Force Shut Down"
-msgstr "Spegnimento forzato"
+msgstr "Spegnimento Forzato"
 
 #: pkg/users/index.html:326
 msgid "Force password change"
@@ -3110,22 +3123,22 @@ msgstr "Forzare la modifica della password"
 
 #: pkg/storaged/crypto-keyslots.jsx:381
 msgid "Force remove passphrase in $0"
-msgstr "Forza rimuovere la passphrase in $0"
+msgstr "Forza rimozione della passphrase da $0"
 
 #: pkg/machines/components/storagePools/createStoragePoolDialog.jsx:249
 #: pkg/machines/components/storagePools/storageVolumeCreateBody.jsx:64
 #: pkg/storaged/content-views.jsx:365 pkg/storaged/content-views.jsx:367
 #: pkg/storaged/content-views.jsx:604 pkg/storaged/format-dialog.jsx:263
 msgid "Format"
-msgstr "Formato"
+msgstr "Formatta"
 
 #: pkg/storaged/format-dialog.jsx:134
 msgid "Format $0"
-msgstr "Formato $0"
+msgstr "Formatta $0"
 
 #: pkg/storaged/content-views.jsx:580
 msgid "Format Disk $0"
-msgstr "Formato Disco $0"
+msgstr "Formatta Disco $0"
 
 #: pkg/storaged/content-views.jsx:605
 msgid "Formatting a disk will erase all data on it."
@@ -3174,7 +3187,7 @@ msgstr "Venerdì"
 
 #: pkg/packagekit/autoupdates.jsx:325
 msgid "Fridays"
-msgstr ""
+msgstr "Venerdì"
 
 #: pkg/users/index.html:86 pkg/users/index.html:167
 msgid "Full Name"
@@ -3194,7 +3207,7 @@ msgstr "Generale"
 
 #: pkg/machines/components/nicAdd.jsx:49
 msgid "Generate automatically"
-msgstr ""
+msgstr "Genera automaticamente"
 
 #: pkg/sosreport/index.html:55
 msgid "Generating report"
@@ -3216,7 +3229,7 @@ msgstr "Vai a"
 
 #: pkg/systemd/graphs.html:46
 msgid "Go to                                                now"
-msgstr ""
+msgstr "Vai a                                                ora"
 
 #: pkg/apps/application.jsx:108
 msgid "Go to Application"
@@ -3237,17 +3250,17 @@ msgstr "Console grafica in Desktop Viewer"
 
 #: pkg/systemd/graphs.html:5
 msgid "Graphs"
-msgstr ""
+msgstr "Grafici"
 
 #: pkg/storaged/lvol-tabs.jsx:240 pkg/storaged/lvol-tabs.jsx:389
 #: pkg/storaged/lvol-tabs.jsx:441 pkg/storaged/vdo-details.jsx:228
 #: pkg/storaged/vdo-details.jsx:297
 msgid "Grow"
-msgstr "Crescere"
+msgstr "Espandi"
 
 #: pkg/storaged/lvol-tabs.jsx:406
 msgid "Grow Content"
-msgstr ""
+msgstr "Espandi Contenuto"
 
 #: pkg/storaged/lvol-tabs.jsx:236
 msgid "Grow Logical Volume"
@@ -3259,11 +3272,11 @@ msgstr "Estendere le dimensioni logiche di $0"
 
 #: pkg/storaged/vdo-details.jsx:113
 msgid "Grow to take all space"
-msgstr "Crescere per prendere tutto lo spazio"
+msgstr "Espandi prendendo tutto lo spazio"
 
 #: pkg/networkmanager/index.html:259
 msgid "Hair Pin mode"
-msgstr "Capelli Modalità pin"
+msgstr "Modalità Hairpin"
 
 #: pkg/networkmanager/interfaces.js:2882
 msgid "Hairpin mode"
@@ -3283,7 +3296,7 @@ msgstr "Informazioni hardware"
 
 #: pkg/systemd/overview-cards/healthCard.jsx:55
 msgid "Health"
-msgstr ""
+msgstr "Salute"
 
 #: pkg/networkmanager/interfaces.js:2858
 msgid "Hello time $hello_time"
@@ -3291,7 +3304,7 @@ msgstr "Ciao tempo $hello_time"
 
 #: pkg/shell/index.html:48
 msgid "Help"
-msgstr ""
+msgstr "Aiuto"
 
 #: pkg/machines/components/diskAdd.jsx:156
 #, fuzzy
@@ -3308,7 +3321,7 @@ msgstr "Host"
 
 #: pkg/machines/components/create-vm-dialog/pxe-helpers.js:172
 msgid "Host Device"
-msgstr ""
+msgstr "Dispositivo Host"
 
 #: pkg/dashboard/index.html:137
 #: pkg/machines/components/storagePools/createStoragePoolDialog.jsx:142
@@ -3321,7 +3334,7 @@ msgstr "La chiave host non è corretta"
 
 #: pkg/systemd/overview-cards/realmd-operation.js:605
 msgid "Host name should not be changed in a domain"
-msgstr ""
+msgstr "Il nome dell'host non dovrebbe essere cambiato in un dominio"
 
 #: pkg/machines/components/storagePools/createStoragePoolDialog.jsx:148
 msgid "Host should not be empty"
@@ -3329,7 +3342,7 @@ msgstr "L'host non deve essere vuoto"
 
 #: pkg/systemd/overview-cards/configurationCard.jsx:384
 msgid "Hostname"
-msgstr ""
+msgstr "Nome host"
 
 #: pkg/systemd/services.html:353
 msgid "Hour : Minute"
@@ -3355,7 +3368,7 @@ msgstr "Attesa I/O"
 
 #: pkg/systemd/hwinfo.jsx:272
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #: pkg/networkmanager/index.html:126 pkg/networkmanager/index.html:144
 #: pkg/machines/components/vmnetworktab.jsx:162
@@ -3368,7 +3381,7 @@ msgstr "Indirizzo IP:"
 
 #: pkg/machines/components/networks/createNetworkDialog.jsx:183
 msgid "IP Configuration"
-msgstr ""
+msgstr "Configurazione IP"
 
 #: pkg/docker/index.html:180
 msgid "IP Prefix Length:"
