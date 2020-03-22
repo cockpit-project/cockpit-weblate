@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-03-17 16:33+0000\n"
-"PO-Revision-Date: 2020-02-06 12:51+0000\n"
+"PO-Revision-Date: 2020-03-22 12:47+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://translate.fedoraproject.org/projects/cockpit/"
 "master/cs/>\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 3.10.3\n"
+"X-Generator: Weblate 3.11.3\n"
 
 #: pkg/machines/components/diskAdd.jsx:234
 msgid " Attaching it will make this disk shareable for every VM using it."
@@ -252,10 +252,8 @@ msgstr[1] "$0 roky"
 msgstr[2] "$0 let"
 
 #: pkg/networkmanager/firewall.jsx:169
-#, fuzzy
-#| msgid "zone"
 msgid "$0 zone"
-msgstr "zóna"
+msgstr "zóna $0"
 
 #: pkg/storaged/vgroup-details.jsx:112
 msgid "$0, $1 free"
@@ -561,6 +559,8 @@ msgid ""
 "A network bond combines multiple network interfaces into one logical "
 "interface with higher throughput or redundancy."
 msgstr ""
+"Síťové spřažení spojuje vícero síťových rozhraní do jednoho logického "
+"rozhraní s vyšší propustností nebo odolností proti výpadku."
 
 #: pkg/storaged/mdraid-details.jsx:114
 msgid "A spare disk needs to be added first before this disk can be removed."
@@ -805,10 +805,8 @@ msgid "Additional packages:"
 msgstr "Další balíčky:"
 
 #: pkg/networkmanager/firewall.jsx:113
-#, fuzzy
-#| msgid "Additional"
 msgid "Additional ports"
-msgstr "Další"
+msgstr "Další porty"
 
 # auto translated by TM merge from project: firewalld, version: master, DocId:
 # po/firewalld
@@ -1394,10 +1392,8 @@ msgid "Change"
 msgstr "Změnit"
 
 #: pkg/machines/components/vm/firmwareModal.jsx:57
-#, fuzzy
-#| msgid "Change passphrase"
 msgid "Change Firmware"
-msgstr "Změnit heslovou frázi"
+msgstr "Změnit firmware"
 
 #: pkg/systemd/index.html:217
 msgid "Change Host Name"
@@ -2255,7 +2251,7 @@ msgstr "Uživatelsky určené předvolby šifrování"
 
 #: pkg/machines/components/vmOverviewTabLibvirt.jsx:204
 msgid "Custom firmware: $0"
-msgstr ""
+msgstr "Uživatelsky určený firmware: $0"
 
 #: pkg/storaged/format-dialog.jsx:247 pkg/storaged/fsys-tab.jsx:241
 #: pkg/storaged/nfs-details.jsx:176
@@ -2610,7 +2606,7 @@ msgstr "Disky"
 
 #: pkg/selinux/setroubleshoot-view.jsx:355
 msgid "Dismiss"
-msgstr ""
+msgstr "Zahodit"
 
 #: pkg/shell/index.html:61 pkg/shell/index.html:123
 msgid "Display Language"
@@ -3026,10 +3022,8 @@ msgid "Failed to add zone"
 msgstr "Zónu se nepodařilo přidat"
 
 #: pkg/machines/components/vm/firmwareModal.jsx:49
-#, fuzzy
-#| msgid "Failed to change password"
 msgid "Failed to change firmware"
-msgstr "Nepodařilo se změnit heslo"
+msgstr "Firmware se nepodařilo změnit"
 
 #: pkg/lib/credentials.js:228 pkg/users/local.js:103 pkg/users/local.js:135
 msgid "Failed to change password"
@@ -3136,11 +3130,8 @@ msgstr "Brána firewall není k dispozici"
 # auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId:
 # po/ipa
 #: pkg/machines/components/vmOverviewTabLibvirt.jsx:281
-#, fuzzy
-#| msgctxt "storage"
-#| msgid "Firmware Version"
 msgid "Firmware"
-msgstr "Verze firmware"
+msgstr "Firmware"
 
 # auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId:
 # po/ipa
@@ -3425,10 +3416,8 @@ msgstr "Hodin"
 # auto translated by TM merge from project: Fedora Websites, version:
 # getfedora.org, DocId: po/getfedora
 #: pkg/machines/components/vmOverviewTabLibvirt.jsx:277
-#, fuzzy
-#| msgid "More details"
 msgid "Hypervisor Details"
-msgstr "Další podrobnosti"
+msgstr "Podrobnosti o hypervizoru"
 
 #: pkg/systemd/graphs.html:147 pkg/systemd/graphs.js:295
 msgid "I/O Wait"
@@ -3638,10 +3627,8 @@ msgid "Included services"
 msgstr "Obsažené služby"
 
 #: pkg/storaged/fsys-tab.jsx:479
-#, fuzzy
-#| msgid "The filesystem is not mounted."
 msgid "Inconsistent filesystem mount"
-msgstr "Souborový systém není připojený."
+msgstr "Nekonzistentní připojení souborového systému"
 
 #: pkg/lib/machine-invalid-hostkey.html:2
 msgid "Incorrect Host Key"
@@ -4008,10 +3995,8 @@ msgid "Launch Remote Viewer"
 msgstr "Spustit vzdálený prohlížeč"
 
 #: pkg/networkmanager/interfaces.js:1718
-#, fuzzy
-#| msgid "Read more..."
 msgid "Learn more"
-msgstr "Zjistit více…"
+msgstr "Další informace naleznete"
 
 #: pkg/systemd/overview-cards/realmd-operation.html:24
 #: pkg/systemd/overview-cards/realmd-operation.html:28
@@ -4042,23 +4027,21 @@ msgstr ""
 #: pkg/machines/components/create-vm-dialog/createVmDialog.jsx:446
 msgid ""
 "Leave the password blank if you do not wish to have a root account created"
-msgstr ""
+msgstr "Pokud si nepřejete vytvořit účet root, nevyplňujte heslo"
 
 #: pkg/machines/components/create-vm-dialog/createVmDialog.jsx:457
 msgid ""
 "Leave the password blank if you do not wish to have a user account created"
-msgstr ""
+msgstr "Pokud si nepřejete vytvářet uživatelský účet, nevyplňujte heslo"
 
 #: pkg/machines/components/vmOverviewTabLibvirt.jsx:247
 msgid ""
 "Libvirt did not detect any UEFI/OVMF firmware image installed on the host"
-msgstr ""
+msgstr "Libvirt nenalezlo na hostiteli žádný obraz UEFI/OVMF firmware"
 
 #: pkg/machines/components/vmOverviewTabLibvirt.jsx:241
-#, fuzzy
-#| msgid "Network Selection does not support PXE."
 msgid "Libvirt or hypervisor does not support UEFI"
-msgstr "Síťový výběr nepodporuje PXE."
+msgstr "Libvirt nebo hypervizor nepodporuje UEFI"
 
 #: pkg/shell/index.html:99
 msgid "Licensed under:"
@@ -4828,11 +4811,8 @@ msgstr "Síťový provoz"
 # auto translated by TM merge from project: Cockpit, version: rhel-7.4, DocId:
 # cockpit
 #: pkg/networkmanager/interfaces.js:1725
-#, fuzzy
-#| msgid "Network"
-#| msgid_plural "Networks"
 msgid "Network bond"
-msgstr "Síť"
+msgstr "Síťová spřažení"
 
 #: pkg/networkmanager/index.html:56
 msgid "Network devices and graphs require NetworkManager."
@@ -5085,10 +5065,8 @@ msgid "No keys added"
 msgstr "Nepřidány žádné klíče"
 
 #: pkg/lib/journal.js:546
-#, fuzzy
-#| msgid "Load earlier entries"
 msgid "No log entries"
-msgstr "Načíst dřívější položky"
+msgstr "Žádné položky záznamu událostí"
 
 #: pkg/storaged/drive-details.jsx:75
 msgid "No media inserted"
@@ -5517,10 +5495,8 @@ msgstr "Skončení platnosti hesla"
 # auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId:
 # po/ipa
 #: pkg/machines/components/create-vm-dialog/createVmDialog.jsx:451
-#, fuzzy
-#| msgid "Password"
 msgid "Password for $0"
-msgstr "Heslo"
+msgstr "Heslo pro $0"
 
 #: pkg/machines/components/create-vm-dialog/password.jsx:13
 #: pkg/users/local.js:250
@@ -5679,16 +5655,12 @@ msgid "Pizza Box"
 msgstr "Velikost „krabice od pizzy“"
 
 #: pkg/machines/components/diskAdd.jsx:389
-#, fuzzy
-#| msgid "Could not reset the storage pool"
 msgid "Please choose a storage pool"
-msgstr "Nedaří se resetovat fond úložiště"
+msgstr "Zvolte fond úložiště"
 
 #: pkg/machines/components/diskAdd.jsx:428
-#, fuzzy
-#| msgid "Please enter new volume name"
 msgid "Please choose a volume"
-msgstr "Zadejte název pro nový svazek"
+msgstr "Zvolte svazek"
 
 #: pkg/docker/containers-view.jsx:202 pkg/docker/details.js:286
 #: pkg/docker/util.js:616 pkg/storaged/content-views.jsx:340
@@ -5719,7 +5691,7 @@ msgstr "Nainstalujte balíček $0"
 
 #: pkg/machines/components/create-vm-dialog/createVmDialog.jsx:187
 msgid "Please set a root or a user password"
-msgstr ""
+msgstr "Nastavte heslo pro účet root nebo uživatele"
 
 #: pkg/users/local.js:1256
 msgid "Please specify an expiration date"
@@ -5901,10 +5873,8 @@ msgid "Product"
 msgstr "Produkt"
 
 #: pkg/machines/components/create-vm-dialog/createVmDialog.jsx:420
-#, fuzzy
-#| msgid "Change Profile"
 msgid "Profile"
-msgstr "Změnit profil"
+msgstr "Profil"
 
 #: pkg/shell/index.html:95
 msgid "Project website"
@@ -6450,10 +6420,8 @@ msgid "Roles"
 msgstr "Role"
 
 #: pkg/machines/components/create-vm-dialog/createVmDialog.jsx:440
-#, fuzzy
-#| msgid "Set Password"
 msgid "Root Password"
-msgstr "Nastavit heslo"
+msgstr "Heslo pro účet root"
 
 #: pkg/networkmanager/interfaces.js:1966 pkg/networkmanager/interfaces.js:1983
 msgid "Round Robin"
@@ -6484,7 +6452,7 @@ msgstr "Spustit obraz"
 
 #: pkg/machines/components/create-vm-dialog/createVmDialog.jsx:403
 msgid "Run unattended installation"
-msgstr ""
+msgstr "Spustit bezobslužnou instalaci"
 
 #: pkg/machines/components/networks/networkOverviewTab.jsx:93
 #: pkg/machines/components/vmOverviewTabLibvirt.jsx:170
@@ -6815,6 +6783,8 @@ msgid ""
 "Setting the user passwords for unattended installation requires starting the "
 "VM when creating it"
 msgstr ""
+"Nastavení hesel pro uživatele pro bezobslužnou instalaci vyžaduje spuštění "
+"virt. stroje při jeho vytváření"
 
 #: pkg/packagekit/updates.jsx:58
 msgid "Setting up"
@@ -6899,6 +6869,8 @@ msgstr "Vypnout"
 #: pkg/machines/components/vmOverviewTabLibvirt.jsx:228
 msgid "Shut off the VM in order to edit firmware configuration"
 msgstr ""
+"Aby bylo možné upravovat nastavení firmware, je třeba virt. stroj nejprve "
+"vypnout"
 
 #: pkg/systemd/overview.jsx:106
 msgid "Shutdown"
@@ -7704,12 +7676,8 @@ msgid "The pool is empty"
 msgstr "Fond je prázdný"
 
 #: pkg/machines/components/create-vm-dialog/createVmDialog.jsx:408
-#, fuzzy
-#| msgid ""
-#| "The selected Operating System has minimum storage size requirement of $0 "
-#| "$1"
 msgid "The selected Operating System does not support unattended installation"
-msgstr "Vybraný operační systém vyžaduje velikost úložiště přinejmenším $0 $1"
+msgstr "Vybraný operační systém nepodporuje bezobslužnou instalaci"
 
 #: pkg/machines/components/create-vm-dialog/createVmDialog.jsx:165
 msgid "The selected Operating System has minimum memory requirement of $0 $1"
@@ -7842,6 +7810,7 @@ msgstr "Toto VDO zařízení nepoužívá ze svého podkladového zařízení v�
 #: pkg/machines/components/deleteDialog.jsx:154
 msgid "This VM is transient. Shut it down if you wish to delete it."
 msgstr ""
+"Tento vir. stroj je přechodný. Pokud ho chcete smazat, stačí ho vypnout."
 
 #: pkg/systemd/init.js:1267
 msgid ""
@@ -8067,7 +8036,7 @@ msgstr "Věž"
 
 #: pkg/machines/components/vmOverviewTabLibvirt.jsx:234
 msgid "Transient VMs don't support editting firmware configuration"
-msgstr ""
+msgstr "U přechodných virt. strojů nelze upravovat nastavení firmware"
 
 #: pkg/systemd/service-details.jsx:437
 msgid "Triggered By"
@@ -8286,10 +8255,8 @@ msgid "Unknown configuration"
 msgstr "Neznámé nastavení"
 
 #: pkg/machines/components/vmOverviewTabLibvirt.jsx:206
-#, fuzzy
-#| msgid "unknown target"
 msgid "Unknown firmware"
-msgstr "neznámý cíl"
+msgstr "Neznámý firmware"
 
 #: pkg/storaged/iscsi-panel.jsx:84
 msgid "Unknown host name"
@@ -8408,10 +8375,8 @@ msgid "Update Log"
 msgstr "Záznam událostí aktualizací"
 
 #: pkg/apps/application-list.jsx:129
-#, fuzzy
-#| msgid "Package information"
 msgid "Update package information"
-msgstr "Informace o balíčku"
+msgstr "Aktualizovat informace o balíčcích"
 
 # auto translated by TM merge from project: dnf, version: master, DocId:
 # po/dnf
