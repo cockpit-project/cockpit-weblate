@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-03-17 16:33+0000\n"
-"PO-Revision-Date: 2020-03-17 20:38+0000\n"
+"PO-Revision-Date: 2020-03-22 12:47+0000\n"
 "Last-Translator: Igor Gorbounov <igor.gorbounov@gmail.com>\n"
 "Language-Team: Russian <https://translate.fedoraproject.org/projects/cockpit/"
 "master/ru/>\n"
@@ -17,8 +17,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 3.11.3\n"
 
 #: pkg/machines/components/diskAdd.jsx:234
@@ -251,10 +251,8 @@ msgstr[1] "$0 года"
 msgstr[2] "$0 лет"
 
 #: pkg/networkmanager/firewall.jsx:169
-#, fuzzy
-#| msgid "Add zone"
 msgid "$0 zone"
-msgstr "Добавить зону"
+msgstr "Зона $0"
 
 #: pkg/storaged/vgroup-details.jsx:112
 msgid "$0, $1 free"
@@ -559,6 +557,8 @@ msgid ""
 "A network bond combines multiple network interfaces into one logical "
 "interface with higher throughput or redundancy."
 msgstr ""
+"Сетевое объединение сливает несколько сетевых интерфейсов в один логический "
+"интерфейс с увеличенной пропускной способностью или с избыточностью."
 
 #: pkg/storaged/mdraid-details.jsx:114
 msgid "A spare disk needs to be added first before this disk can be removed."
@@ -803,10 +803,8 @@ msgid "Additional packages:"
 msgstr "Дополнительные пакеты:"
 
 #: pkg/networkmanager/firewall.jsx:113
-#, fuzzy
-#| msgid "Additional"
 msgid "Additional ports"
-msgstr "Дополнительно"
+msgstr "Дополнительные порты"
 
 #: pkg/lib/machine-add.html:11
 #: pkg/machines/components/networks/networkOverviewTab.jsx:109
@@ -910,7 +908,6 @@ msgid "Always attach"
 msgstr "Всегда присоединять"
 
 #: pkg/lib/cockpit-components-modifications.jsx:81
-#, fuzzy
 msgid "Ansible"
 msgstr "Ansible"
 
@@ -1368,10 +1365,8 @@ msgid "Change"
 msgstr "Изменить"
 
 #: pkg/machines/components/vm/firmwareModal.jsx:57
-#, fuzzy
-#| msgid "Change passphrase"
 msgid "Change Firmware"
-msgstr "Изменить парольную фразу"
+msgstr "Изменить микропрограмму"
 
 #: pkg/systemd/index.html:217
 msgid "Change Host Name"
@@ -2220,7 +2215,7 @@ msgstr "Пользовательские параметры шифрования
 
 #: pkg/machines/components/vmOverviewTabLibvirt.jsx:204
 msgid "Custom firmware: $0"
-msgstr ""
+msgstr "Специализированная микропрограмма: $0"
 
 #: pkg/storaged/format-dialog.jsx:247 pkg/storaged/fsys-tab.jsx:241
 #: pkg/storaged/nfs-details.jsx:176
@@ -2555,7 +2550,7 @@ msgstr "Диски"
 
 #: pkg/selinux/setroubleshoot-view.jsx:355
 msgid "Dismiss"
-msgstr ""
+msgstr "Закрыть"
 
 #: pkg/shell/index.html:61 pkg/shell/index.html:123
 msgid "Display Language"
@@ -2792,7 +2787,7 @@ msgstr "Введите IP-адрес или имя узла"
 
 #: pkg/lib/machine-change-auth.html:79
 msgid "Enter passphrase to add identity to ssh-agent"
-msgstr ""
+msgstr "Введите парольную фразу для добавления ключа в ssh-agent"
 
 #: pkg/lib/machine-change-auth.html:57
 msgid ""
@@ -2949,10 +2944,8 @@ msgid "Failed to add zone"
 msgstr "Не удалось добавить зону"
 
 #: pkg/machines/components/vm/firmwareModal.jsx:49
-#, fuzzy
-#| msgid "Failed to change password"
 msgid "Failed to change firmware"
-msgstr "Не удалось изменить пароль"
+msgstr "Не удалось изменить микропрограмму"
 
 #: pkg/lib/credentials.js:228 pkg/users/local.js:103 pkg/users/local.js:135
 msgid "Failed to change password"
@@ -3053,10 +3046,8 @@ msgstr "Межсетевой экран недоступен"
 # translation auto-copied from project subscription-manager, version 1.11.X,
 # document keys
 #: pkg/machines/components/vmOverviewTabLibvirt.jsx:281
-#, fuzzy
-#| msgid "Version"
 msgid "Firmware"
-msgstr "Версия"
+msgstr "Микропрограмма"
 
 # translation auto-copied from project subscription-manager, version 1.11.X,
 # document keys
@@ -3319,10 +3310,8 @@ msgid "Hours"
 msgstr "ч"
 
 #: pkg/machines/components/vmOverviewTabLibvirt.jsx:277
-#, fuzzy
-#| msgid "More details"
 msgid "Hypervisor Details"
-msgstr "Дополнительные сведения"
+msgstr "Сведения о гипервизоре"
 
 #: pkg/systemd/graphs.html:147 pkg/systemd/graphs.js:295
 msgid "I/O Wait"
@@ -3521,7 +3510,7 @@ msgstr "Включённые службы"
 
 #: pkg/storaged/fsys-tab.jsx:479
 msgid "Inconsistent filesystem mount"
-msgstr ""
+msgstr "Неправильное монтирование файловой системы"
 
 #: pkg/lib/machine-invalid-hostkey.html:2
 msgid "Incorrect Host Key"
@@ -3870,8 +3859,6 @@ msgid "Launch Remote Viewer"
 msgstr "Запустить средство удалённого просмотра"
 
 #: pkg/networkmanager/interfaces.js:1718
-#, fuzzy
-#| msgid "Read more..."
 msgid "Learn more"
 msgstr "Подробнее..."
 
@@ -3905,22 +3892,25 @@ msgstr ""
 msgid ""
 "Leave the password blank if you do not wish to have a root account created"
 msgstr ""
+"Оставьте поле пароля пустым, если не хотите создавать учетную запись root"
 
 #: pkg/machines/components/create-vm-dialog/createVmDialog.jsx:457
 msgid ""
 "Leave the password blank if you do not wish to have a user account created"
 msgstr ""
+"Оставьте поле пароля пустым, если не хотите создавать учетную запись "
+"пользователя"
 
 #: pkg/machines/components/vmOverviewTabLibvirt.jsx:247
 msgid ""
 "Libvirt did not detect any UEFI/OVMF firmware image installed on the host"
 msgstr ""
+"Libvirt не удалось обнаружить какого-либо образа микропрограммы UEFI/OVMF, "
+"установленного в основной системе"
 
 #: pkg/machines/components/vmOverviewTabLibvirt.jsx:241
-#, fuzzy
-#| msgid "Network Selection does not support PXE."
 msgid "Libvirt or hypervisor does not support UEFI"
-msgstr "Выбор сети не поддерживает PXE."
+msgstr "Libvirt или гипервизор не поддерживают UEFI"
 
 #: pkg/shell/index.html:99
 msgid "Licensed under:"
@@ -4653,11 +4643,8 @@ msgid "Network Traffic"
 msgstr "Сетевой трафик"
 
 #: pkg/networkmanager/interfaces.js:1725
-#, fuzzy
-#| msgid "Network"
-#| msgid_plural "Networks"
 msgid "Network bond"
-msgstr "сеть"
+msgstr "Сетевое объединение"
 
 #: pkg/networkmanager/index.html:56
 msgid "Network devices and graphs require NetworkManager."
@@ -4902,10 +4889,8 @@ msgid "No keys added"
 msgstr "Нет добавленных ключей"
 
 #: pkg/lib/journal.js:546
-#, fuzzy
-#| msgid "Load earlier entries"
 msgid "No log entries"
-msgstr "Загрузить более ранние записи"
+msgstr "Нет записей в журнале"
 
 #: pkg/storaged/drive-details.jsx:75
 msgid "No media inserted"
@@ -4987,6 +4972,8 @@ msgid ""
 "Non-persistent storage pool cannot be deleted. It ceases to exists when it's "
 "deactivated."
 msgstr ""
+"Временный буфер хранения не может быть удален. Он перестает существовать "
+"после отключения."
 
 #: pkg/kdump/kdump-view.jsx:423
 #: pkg/machines/components/networks/createNetworkDialog.jsx:191
@@ -5004,7 +4991,7 @@ msgstr "Не готово"
 
 #: pkg/packagekit/updates.jsx:789
 msgid "Not Registered"
-msgstr ""
+msgstr "Не зарегистрировано"
 
 #: pkg/lib/credentials.js:255
 msgid "Not a valid private key"
@@ -5016,27 +5003,27 @@ msgstr "Право доступа к Docker в этой системе отсу�
 
 #: pkg/networkmanager/firewall.jsx:910
 msgid "Not authorized to add a new zone"
-msgstr ""
+msgstr "Нет прав на добавление новой зоны"
 
 #: pkg/networkmanager/firewall.jsx:155
 msgid "Not authorized to add services to zone $0"
-msgstr ""
+msgstr "Нет прав для добавления служб в зону $0"
 
 #: pkg/networkmanager/firewall.jsx:940
 msgid "Not authorized to disable the firewall"
-msgstr ""
+msgstr "Нет прав для отключения межсетевого экрана"
 
 #: pkg/networkmanager/firewall.jsx:940
 msgid "Not authorized to enable the firewall"
-msgstr ""
+msgstr "Нет прав для включения межсетевого экрана"
 
 #: pkg/networkmanager/firewall.jsx:70
 msgid "Not authorized to remove service $0"
-msgstr ""
+msgstr "Нет прав для удаления службы $0"
 
 #: pkg/networkmanager/firewall.jsx:143
 msgid "Not authorized to remove zone $0"
-msgstr ""
+msgstr "Нет прав для удаления зоны $0"
 
 #: pkg/networkmanager/interfaces.js:817
 msgid "Not available"
@@ -5238,7 +5225,7 @@ msgstr "PCI"
 
 #: pkg/systemd/overview-cards/configurationCard.jsx:433
 msgid "PCP"
-msgstr ""
+msgstr "PCP"
 
 #: pkg/packagekit/updates.jsx:508
 msgid "Package information"
@@ -5323,10 +5310,8 @@ msgid "Password Expiration"
 msgstr "Срок действия пароля"
 
 #: pkg/machines/components/create-vm-dialog/createVmDialog.jsx:451
-#, fuzzy
-#| msgid "Password"
 msgid "Password for $0"
-msgstr "Пароль"
+msgstr "Пароль для $0"
 
 #: pkg/machines/components/create-vm-dialog/password.jsx:13
 #: pkg/users/local.js:250
@@ -5408,7 +5393,7 @@ msgstr "Приостановить"
 
 #: pkg/systemd/overview-cards/configurationCard.jsx:407
 msgid "Performance profile"
-msgstr ""
+msgstr "Профиль производительности"
 
 #: pkg/lib/machine-info.js:87
 msgid "Peripheral Chassis"
@@ -5479,16 +5464,12 @@ msgid "Pizza Box"
 msgstr "Ультратонкий корпус"
 
 #: pkg/machines/components/diskAdd.jsx:389
-#, fuzzy
-#| msgid "Could not reset the storage pool"
 msgid "Please choose a storage pool"
-msgstr "Не удалось сбросить пул носителей"
+msgstr "Выберите буфер хранения"
 
 #: pkg/machines/components/diskAdd.jsx:428
-#, fuzzy
-#| msgid "Please enter new volume name"
 msgid "Please choose a volume"
-msgstr "Введите новое имя тома"
+msgstr "Выберите том"
 
 #: pkg/docker/containers-view.jsx:202 pkg/docker/details.js:286
 #: pkg/docker/util.js:616 pkg/storaged/content-views.jsx:340
@@ -5519,7 +5500,7 @@ msgstr "Установите пакет $0"
 
 #: pkg/machines/components/create-vm-dialog/createVmDialog.jsx:187
 msgid "Please set a root or a user password"
-msgstr ""
+msgstr "Установите пароль root или пользователя"
 
 #: pkg/users/local.js:1256
 msgid "Please specify an expiration date"
@@ -5684,10 +5665,8 @@ msgid "Product"
 msgstr "Продукт"
 
 #: pkg/machines/components/create-vm-dialog/createVmDialog.jsx:420
-#, fuzzy
-#| msgid "Change Profile"
 msgid "Profile"
-msgstr "Изменить профиль"
+msgstr "Профиль"
 
 #: pkg/shell/index.html:95
 msgid "Project website"
@@ -5793,8 +5772,6 @@ msgid "RAID Level"
 msgstr "Уровень RAID"
 
 #: pkg/storaged/mdraid-details.jsx:330
-#, fuzzy
-#| msgid "RAID Level"
 msgctxt "storage"
 msgid "RAID Level"
 msgstr "Уровень RAID"
@@ -5970,7 +5947,7 @@ msgstr "Удалить $0"
 
 #: pkg/networkmanager/firewall.jsx:851
 msgid "Remove $0 service from $1 zone"
-msgstr ""
+msgstr "Удалить службу $0 из зоны $1"
 
 #: pkg/storaged/crypto-keyslots.jsx:423
 msgid "Remove $0?"
@@ -5994,11 +5971,11 @@ msgstr "Удалить парольную фразу в $0?"
 
 #: pkg/networkmanager/firewall.jsx:75
 msgid "Remove service $0"
-msgstr ""
+msgstr "Удалить службу $0"
 
 #: pkg/networkmanager/firewall.jsx:147 pkg/networkmanager/firewall.jsx:834
 msgid "Remove zone $0"
-msgstr ""
+msgstr "Удалить зону $0"
 
 # translation auto-copied from project subscription-manager, version 1.11.X,
 # document keys
@@ -6032,10 +6009,13 @@ msgid ""
 "unreachable. Make sure that this zone does not apply to your current web "
 "console connection."
 msgstr ""
+"Удаление службы cockpit может привести к недоступности веб-консоли. "
+"Убедитесь, что эта зона не относится к вашему текущему подключению к "
+"веб-консоли."
 
 #: pkg/networkmanager/firewall.jsx:832
 msgid "Removing the zone will remove all services within it."
-msgstr ""
+msgstr "Удаление зоны приведет к удалению всех служб в ней."
 
 #: pkg/storaged/lvol-tabs.jsx:39 pkg/storaged/vgroup-details.jsx:183
 #: pkg/storaged/vgroup-details.jsx:232
@@ -6089,23 +6069,23 @@ msgstr "Сообщить"
 
 #: pkg/systemd/reporting.jsx:153
 msgid "Report to ABRT Analytics"
-msgstr ""
+msgstr "Сообщить в ABRT Analytics"
 
 #: pkg/systemd/reporting.jsx:410
 msgid "Reported; no links available"
-msgstr ""
+msgstr "Сообщение сделано; нет ссылок"
 
 #: pkg/systemd/reporting.jsx:306
 msgid "Reporting failed"
-msgstr ""
+msgstr "Сообщение не удалось"
 
 #: pkg/systemd/reporting.jsx:206
 msgid "Reporting was canceled"
-msgstr ""
+msgstr "Отчеты отменены"
 
 #: pkg/systemd/reporting.jsx:408
 msgid "Reports:"
-msgstr ""
+msgstr "Отчеты:"
 
 # translation auto-copied from project Red Hat Satellite User Guide, version
 # 6.0, document appe-Glossary_of_Terms
@@ -6220,20 +6200,16 @@ msgstr ""
 "другим компьютерам"
 
 #: pkg/systemd/manifest.json.in
-#, fuzzy
-#| msgid "Networking Logs"
 msgid "Reviewing logs"
-msgstr "Сетевые журналы"
+msgstr "Просмотр журналов"
 
 #: pkg/users/index.html:94
 msgid "Roles"
 msgstr "Роли"
 
 #: pkg/machines/components/create-vm-dialog/createVmDialog.jsx:440
-#, fuzzy
-#| msgid "Set Password"
 msgid "Root Password"
-msgstr "Задать пароль"
+msgstr "Пароль root"
 
 #: pkg/networkmanager/interfaces.js:1966 pkg/networkmanager/interfaces.js:1983
 msgid "Round Robin"
@@ -6262,7 +6238,7 @@ msgstr "Запуск образа"
 
 #: pkg/machines/components/create-vm-dialog/createVmDialog.jsx:403
 msgid "Run unattended installation"
-msgstr ""
+msgstr "Запустить автоматическую установку"
 
 #: pkg/machines/components/networks/networkOverviewTab.jsx:93
 #: pkg/machines/components/vmOverviewTabLibvirt.jsx:170
@@ -6391,7 +6367,7 @@ msgstr "Компьютер с невскрываемым корпусом"
 
 #: pkg/shell/index.html:398
 msgid "Search"
-msgstr ""
+msgstr "Поиск"
 
 #: pkg/systemd/services.html:313 pkg/systemd/services.html:317
 #: pkg/systemd/init.js:972
@@ -6400,7 +6376,7 @@ msgstr "с"
 
 #: pkg/systemd/overview-cards/configurationCard.jsx:412
 msgid "Secure Shell keys"
-msgstr ""
+msgstr "Ключи Secure Shell"
 
 #: pkg/storaged/jobs-panel.jsx:56
 msgid "Securely erasing $target"
@@ -6424,7 +6400,7 @@ msgstr ""
 
 #: pkg/systemd/reporting.jsx:246
 msgid "Send"
-msgstr ""
+msgstr "Отправить"
 
 #: pkg/machines/components/vm/vmActions.jsx:65
 msgid "Send Non-Maskable Interrupt"
@@ -6447,7 +6423,7 @@ msgstr "Последовательная консоль"
 #: pkg/storaged/drive-details.jsx:73
 msgctxt "storage"
 msgid "Serial Number"
-msgstr ""
+msgstr "Серийный номер"
 
 # translation auto-copied from project subscription-manager, version 1.11.X,
 # document keys
@@ -6529,7 +6505,7 @@ msgstr "Сеанс"
 
 #: pkg/shell/index.html:142
 msgid "Session is about to expire"
-msgstr ""
+msgstr "Сессия истекает"
 
 #: pkg/dashboard/index.html:188 pkg/users/index.html:240
 msgid "Set"
@@ -6541,7 +6517,7 @@ msgstr "Задать диапазон DHCP"
 
 #: pkg/systemd/overview-cards/configurationCard.jsx:347
 msgid "Set Hostname"
-msgstr ""
+msgstr "Установить название узла"
 
 #: pkg/users/index.html:121 pkg/users/index.html:213
 msgid "Set Password"
@@ -6579,6 +6555,8 @@ msgid ""
 "Setting the user passwords for unattended installation requires starting the "
 "VM when creating it"
 msgstr ""
+"Установка паролей пользователей для автоматической установки требует запуска "
+"ВМ при ее создании"
 
 #: pkg/packagekit/updates.jsx:58
 msgid "Setting up"
@@ -6611,10 +6589,8 @@ msgid "Shift+Insert"
 msgstr "Shift+Insert"
 
 #: pkg/machines/components/diskAdd.jsx:157
-#, fuzzy
-#| msgid "Additional actions"
 msgid "Show Additional Options"
-msgstr "Дополнительные действия"
+msgstr "Показать дополнительные параметры"
 
 #: pkg/storaged/overview.jsx:52
 msgid "Show all"
@@ -6622,7 +6598,7 @@ msgstr "Показать все"
 
 #: pkg/storaged/things-panel.jsx:82
 msgid "Show all $0 devices"
-msgstr ""
+msgstr "Показать все устройства $0"
 
 #: pkg/storaged/drives-panel.jsx:104
 msgid "Show all $0 drives"
@@ -6661,11 +6637,11 @@ msgstr "Завершение работы"
 
 #: pkg/machines/components/vmOverviewTabLibvirt.jsx:228
 msgid "Shut off the VM in order to edit firmware configuration"
-msgstr ""
+msgstr "Выключите ВМ для редактирования конфигурации микропрограммы"
 
 #: pkg/systemd/overview.jsx:106
 msgid "Shutdown"
-msgstr ""
+msgstr "Выключить"
 
 #: pkg/lib/machine-info.js:245
 msgid "Single Rank"
@@ -6873,8 +6849,6 @@ msgid "State"
 msgstr "Состояние"
 
 #: pkg/storaged/mdraid-details.jsx:335
-#, fuzzy
-#| msgid "State"
 msgctxt "storage"
 msgid "State"
 msgstr "Состояние"
@@ -7123,7 +7097,7 @@ msgstr "Системные службы"
 
 #: pkg/systemd/overview-cards/systemInformationCard.jsx:87
 msgid "System information"
-msgstr ""
+msgstr "Сведения о системе"
 
 # ctx::sourcefile::/systems/SystemEntitlements
 #: pkg/packagekit/updates.jsx:927 pkg/packagekit/updates.jsx:937
@@ -7132,7 +7106,7 @@ msgstr "Система не нуждается в обновлении"
 
 #: pkg/systemd/overview-cards/configurationCard.jsx:392
 msgid "System time"
-msgstr ""
+msgstr "Системное время"
 
 #: pkg/docker/index.html:291 pkg/docker/index.html:295
 #: pkg/networkmanager/firewall.jsx:178
@@ -7220,11 +7194,11 @@ msgstr "Проверка подключения"
 
 #: pkg/machines/components/deleteResource.jsx:51
 msgid "The $0 could not be deleted"
-msgstr ""
+msgstr "Не удалось удалить $0"
 
 #: pkg/storaged/vdos-panel.jsx:45
 msgid "The $0 package must be installed to create VDO devices."
-msgstr ""
+msgstr "Для создания устройств VDO должен быть установлен пакет $0."
 
 #: pkg/lib/machine-dialogs.js:390
 msgid "The IP address or host name cannot contain whitespace."
@@ -7290,7 +7264,7 @@ msgstr ""
 #: pkg/machines/components/vmDisksTab.jsx:176
 #: pkg/machines/components/vmnetworktab.jsx:229
 msgid "The VM needs to be running or shut off to detach this device"
-msgstr ""
+msgstr "ВМ должна работать или быть отключена, чтобы отсоединить это устройство"
 
 #: pkg/users/local.js:1362
 msgid "The account '$0' will be forced to change their password on next login"
@@ -7308,7 +7282,7 @@ msgstr ""
 
 #: pkg/networkmanager/firewall.jsx:716
 msgid "The cockpit service is automatically included"
-msgstr ""
+msgstr "Служба cockpit автоматически входит в состав"
 
 #: pkg/sosreport/index.html:35
 msgid "The collected information will be stored locally on the system."
@@ -7337,17 +7311,21 @@ msgstr "Экспортируемый каталог на сервере"
 
 #: pkg/storaged/fsys-tab.jsx:392
 msgid "The filesystem has no permanent mount point."
-msgstr ""
+msgstr "У этой файловой системы нет постоянной точки монтирования."
 
 #: pkg/storaged/fsys-tab.jsx:256
 msgid "The filesystem is already mounted at $0.  Proceeding will unmount it."
 msgstr ""
+"Файловая система уже смонтирована в $0.  Продолжение приведет к ее "
+"размонтированию."
 
 #: pkg/storaged/fsys-tab.jsx:465
 msgid ""
 "The filesystem is currently mounted but will not be mounted after the next "
 "boot."
 msgstr ""
+"Файловая система сейчас смонтирована, после следующей загрузки не будет "
+"смонтирована."
 
 #: pkg/storaged/fsys-tab.jsx:457
 msgid ""
