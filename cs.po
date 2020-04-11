@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-03 12:56+0000\n"
+"POT-Creation-Date: 2020-04-11 06:10+0000\n"
 "PO-Revision-Date: 2020-03-22 12:47+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://translate.fedoraproject.org/projects/cockpit/"
@@ -93,6 +93,13 @@ msgstr[0] "$0 bajt"
 msgstr[1] "$0 bajty"
 msgstr[2] "$0 bajtů"
 
+#: pkg/systemd/overview-cards/insights.jsx:155
+msgid "$0 critical hit"
+msgid_plural "$0 hits, including critical"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
 #: pkg/storaged/vdo-details.jsx:279
 msgid "$0 data + $1 overhead used of $2 ($3)"
 msgstr "$0 data + $1 režie využito z $2 ($3)"
@@ -168,6 +175,13 @@ msgstr[0] "$0 hodina"
 msgstr[1] "$0 hodiny"
 msgstr[2] "$0 hodin"
 
+#: pkg/systemd/overview-cards/insights.jsx:160
+msgid "$0 important hit"
+msgid_plural "$0 hits, including important"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
 #: pkg/machines/components/desktopConsole.jsx:56
 msgid ""
 "$0 is available for most operating systems. To install it, search for it in "
@@ -192,12 +206,29 @@ msgstr "$0 není k dispozici z žádného z repozitářů."
 msgid "$0 killed with signal $1"
 msgstr "$0 vynuceně ukončeno signálem $1"
 
+#: pkg/systemd/overview-cards/insights.jsx:170
+msgid "$0 low severity hit"
+msgid_plural "$0 low severity hits"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
 #: pkg/lib/plot.js:977
 msgid "$0 minute"
 msgid_plural "$0 minutes"
 msgstr[0] "$0 minuta"
 msgstr[1] "$0 minuty"
 msgstr[2] "$0 minut"
+
+#: pkg/systemd/overview-cards/insights.jsx:165
+#, fuzzy
+#| msgid "$0 month"
+#| msgid_plural "$0 months"
+msgid "$0 moderate hit"
+msgid_plural "$0 hits, including moderate"
+msgstr[0] "$0 měsíc"
+msgstr[1] "$0 měsíce"
+msgstr[2] "$0 měsíců"
 
 #: pkg/lib/plot.js:965
 msgid "$0 month"
@@ -633,7 +664,7 @@ msgctxt "page-title"
 msgid "Accounts"
 msgstr "Účty"
 
-#: pkg/machines/components/networks/network.jsx:157
+#: pkg/machines/components/networks/network.jsx:164
 #: pkg/machines/components/storagePools/storagePool.jsx:179
 #: pkg/storaged/content-views.jsx:287
 msgid "Activate"
@@ -713,7 +744,7 @@ msgstr "Přidat klíč"
 msgid "Add Machine to Dashboard"
 msgstr "Přidat stroj na přehled"
 
-#: pkg/machines/components/vmnetworktab.jsx:266
+#: pkg/machines/components/vmnetworktab.jsx:271
 msgid "Add Network Interface"
 msgstr "Přidat síťové rozhraní"
 
@@ -849,10 +880,10 @@ msgstr "Adresu je třeba vyplnit"
 msgid "Address is not a valid URL"
 msgstr "Do adresy nebyla vyplněná platná URL"
 
-#: pkg/machines/components/networks/createNetworkDialog.jsx:61
-#: pkg/machines/components/networks/createNetworkDialog.jsx:68
-#: pkg/machines/components/networks/createNetworkDialog.jsx:89
-#: pkg/machines/components/networks/createNetworkDialog.jsx:96
+#: pkg/machines/components/networks/createNetworkDialog.jsx:73
+#: pkg/machines/components/networks/createNetworkDialog.jsx:80
+#: pkg/machines/components/networks/createNetworkDialog.jsx:101
+#: pkg/machines/components/networks/createNetworkDialog.jsx:108
 msgid "Address not within subnet"
 msgstr "Adresa se nenachází v podsíti"
 
@@ -1063,7 +1094,7 @@ msgstr "Pověřené veřejné SSH klíče"
 # auto translated by TM merge from project: anaconda, version: f25, DocId:
 # main
 #: pkg/networkmanager/index.html:187
-#: pkg/machines/components/networks/createNetworkDialog.jsx:163
+#: pkg/machines/components/networks/createNetworkDialog.jsx:175
 #: pkg/networkmanager/interfaces.js:1957 pkg/networkmanager/interfaces.js:2745
 #: pkg/networkmanager/interfaces.js:3313 pkg/networkmanager/interfaces.js:3317
 #: pkg/networkmanager/interfaces.js:3323
@@ -1349,10 +1380,10 @@ msgstr "Obraz se nedaří smazat"
 #: pkg/apps/utils.jsx:84 pkg/lib/cockpit-components-dialog.jsx:158
 #: pkg/machines/components/create-vm-dialog/createVmDialog.jsx:947
 #: pkg/machines/components/deleteDialog.jsx:185
-#: pkg/machines/components/deleteResource.jsx:116
+#: pkg/machines/components/deleteResource.jsx:74
 #: pkg/machines/components/diskAdd.jsx:551
 #: pkg/machines/components/diskEdit.jsx:215
-#: pkg/machines/components/networks/createNetworkDialog.jsx:484
+#: pkg/machines/components/networks/createNetworkDialog.jsx:492
 #: pkg/machines/components/nicAdd.jsx:206
 #: pkg/machines/components/nicEdit.jsx:174
 #: pkg/machines/components/storagePools/createStoragePoolDialog.jsx:514
@@ -1824,7 +1855,7 @@ msgstr "Potvrdit odebrání $0"
 msgid "Confirm removal with passphrase"
 msgstr "Potvrdit odebrání pomocí heslové fráze"
 
-#: pkg/machines/components/deleteResource.jsx:108
+#: pkg/machines/components/deleteResource.jsx:66
 msgid "Confirm this action"
 msgstr "Potvrďte tuto akci"
 
@@ -1859,10 +1890,6 @@ msgstr "Připojte se libovolnou aplikací pro zobrazování $0."
 msgid "Connect with any SPICE or VNC viewer application."
 msgstr "Připojte se libovolnou aplikací pro zobrazování SPICE nebo VNC."
 
-#: pkg/machines/components/vnc.jsx:106
-msgid "Connecting"
-msgstr "Připojování"
-
 #: pkg/lib/machine-add.html:41
 msgid ""
 "Connecting simultaneously to more than {{ limit }} machines is unsupported."
@@ -1887,6 +1914,7 @@ msgstr "Připojování ke stroji"
 # auto translated by TM merge from project: system-config-printer, version:
 # master, DocId: system-config-printer
 #: pkg/machines/components/machinesConnectionSelector.jsx:34
+#: pkg/machines/components/networks/createNetworkDialog.jsx:41
 #: pkg/machines/components/networks/networkList.jsx:55
 #: pkg/machines/components/storagePools/storagePoolList.jsx:54
 #: pkg/machines/hostvmslist.jsx:74
@@ -1913,7 +1941,7 @@ msgstr "Spojení bude ztraceno"
 msgid "Consists Of"
 msgstr "Sestává se z"
 
-#: pkg/machines/components/consoles.jsx:80
+#: pkg/machines/components/consoles.jsx:77
 msgid "Console Type"
 msgstr "Typ konzole"
 
@@ -2052,7 +2080,7 @@ msgstr "Zhavarovat systém"
 
 #: pkg/users/index.html:200
 #: pkg/machines/components/create-vm-dialog/createVmDialog.jsx:944
-#: pkg/machines/components/networks/createNetworkDialog.jsx:481
+#: pkg/machines/components/networks/createNetworkDialog.jsx:489
 #: pkg/machines/components/storagePools/createStoragePoolDialog.jsx:511
 #: pkg/machines/components/storagePools/storageVolumeCreate.jsx:93
 #: pkg/storaged/content-views.jsx:129 pkg/storaged/content-views.jsx:275
@@ -2140,8 +2168,8 @@ msgstr "Vytvořit VDO zařízení"
 msgid "Create VM"
 msgstr "Vytvořit virt. stroj"
 
-#: pkg/machines/components/networks/createNetworkDialog.jsx:471
-#: pkg/machines/components/networks/createNetworkDialog.jsx:519
+#: pkg/machines/components/networks/createNetworkDialog.jsx:479
+#: pkg/machines/components/networks/createNetworkDialog.jsx:526
 msgid "Create Virtual Network"
 msgstr "Vytvořit virtuální síť"
 
@@ -2244,8 +2272,10 @@ msgstr "Vytvoření virt. stroje $0 se nezdařilo"
 msgid "Critical and above"
 msgstr "Kritické a závažnější"
 
-#: pkg/machines/components/vnc.jsx:109
-msgid "Ctrl+Alt+Del"
+#: pkg/machines/components/vnc.jsx:134
+#, fuzzy
+#| msgid "Ctrl+Alt+Del"
+msgid "Ctrl+Alt+$0"
 msgstr "Ctrl+Alt+Del"
 
 #: pkg/lib/cockpit-components-context-menu.jsx:104
@@ -2320,7 +2350,7 @@ msgstr "Přehled"
 msgid "Data Used"
 msgstr "Využito dat"
 
-#: pkg/machines/components/networks/network.jsx:153
+#: pkg/machines/components/networks/network.jsx:160
 #: pkg/machines/components/storagePools/storagePool.jsx:170
 #: pkg/storaged/content-views.jsx:285
 msgid "Deactivate"
@@ -2361,10 +2391,10 @@ msgstr "Prodleva"
 #: pkg/machines/components/deleteDialog.jsx:146
 #: pkg/machines/components/deleteDialog.jsx:161
 #: pkg/machines/components/deleteDialog.jsx:182
-#: pkg/machines/components/deleteResource.jsx:82
-#: pkg/machines/components/deleteResource.jsx:92
-#: pkg/machines/components/deleteResource.jsx:105
-#: pkg/machines/components/deleteResource.jsx:113
+#: pkg/machines/components/deleteResource.jsx:63
+#: pkg/machines/components/deleteResource.jsx:71
+#: pkg/machines/components/deleteResource.jsx:102
+#: pkg/machines/components/deleteResource.jsx:112
 #: pkg/machines/components/storagePools/storagePoolDelete.jsx:204
 #: pkg/machines/components/storagePools/storagePoolDelete.jsx:214
 #: pkg/machines/components/storagePools/storagePoolDelete.jsx:237
@@ -2494,7 +2524,7 @@ msgstr "Vývoj"
 
 # auto translated by TM merge from project: anaconda, version: f25, DocId:
 # main
-#: pkg/machines/components/networks/createNetworkDialog.jsx:156
+#: pkg/machines/components/networks/createNetworkDialog.jsx:168
 #: pkg/machines/components/networks/networkList.jsx:55
 #: pkg/machines/components/vm/bootOrderModal.jsx:93
 #: pkg/machines/components/vmDiskColumns.jsx:43
@@ -2569,8 +2599,7 @@ msgstr "Nepovolit spuštění (maskovat)"
 msgid "Disconnect"
 msgstr "Odpojit"
 
-#: pkg/machines/components/vnc.jsx:107 pkg/shell/indexes.js:244
-#: pkg/shell/indexes.js:892
+#: pkg/shell/indexes.js:244 pkg/shell/indexes.js:892
 msgid "Disconnected"
 msgstr "Odpojeno"
 
@@ -2853,12 +2882,12 @@ msgstr "Šifrování"
 msgid "Encryption Options"
 msgstr "Volby šifrování"
 
-#: pkg/machines/components/networks/createNetworkDialog.jsx:239
+#: pkg/machines/components/networks/createNetworkDialog.jsx:251
 msgid "End"
 msgstr "Konec"
 
-#: pkg/machines/components/networks/createNetworkDialog.jsx:64
-#: pkg/machines/components/networks/createNetworkDialog.jsx:92
+#: pkg/machines/components/networks/createNetworkDialog.jsx:76
+#: pkg/machines/components/networks/createNetworkDialog.jsx:104
 msgid "End should not be empty"
 msgstr "Konec je třeba vyplnit"
 
@@ -3076,6 +3105,10 @@ msgstr "Nepodařilo se zjistit IP adresy rozhraní nacházející se v $0"
 msgid "Failed to load authorized keys."
 msgstr "Nepodařilo se nahrát ověřovací klíče."
 
+#: pkg/machines/components/vnc.jsx:130
+msgid "Failed to send key Ctrl+Alt+$0 to VM $1"
+msgstr ""
+
 #: pkg/systemd/service-details.jsx:346
 msgid "Failed to start"
 msgstr "Nepodařilo se spustit"
@@ -3217,7 +3250,7 @@ msgid "Formatting a storage device will erase all data on it."
 msgstr ""
 "Formátování úložného zařízení vymaže všechna data, která na něm nyní jsou."
 
-#: pkg/machines/components/networks/createNetworkDialog.jsx:134
+#: pkg/machines/components/networks/createNetworkDialog.jsx:146
 msgid "Forward Mode"
 msgstr "Režim přeposílání"
 
@@ -3366,7 +3399,7 @@ msgstr "Pro držení v rukou"
 msgid "Hardware Information"
 msgstr "Informace o hardware"
 
-#: pkg/systemd/overview-cards/healthCard.jsx:55
+#: pkg/systemd/overview-cards/healthCard.jsx:35
 msgid "Health"
 msgstr "Celkový stav"
 
@@ -3459,7 +3492,7 @@ msgstr "IP adresa"
 msgid "IP Address:"
 msgstr "IP adresa:"
 
-#: pkg/machines/components/networks/createNetworkDialog.jsx:184
+#: pkg/machines/components/networks/createNetworkDialog.jsx:196
 msgid "IP Configuration"
 msgstr "Nastavení IP"
 
@@ -3489,11 +3522,11 @@ msgstr "IPv4"
 msgid "IPv4 Address"
 msgstr "IPv4 adresa"
 
-#: pkg/machines/components/networks/createNetworkDialog.jsx:266
+#: pkg/machines/components/networks/createNetworkDialog.jsx:278
 msgid "IPv4 Network"
 msgstr "IPv4 síť"
 
-#: pkg/machines/components/networks/createNetworkDialog.jsx:46
+#: pkg/machines/components/networks/createNetworkDialog.jsx:58
 msgid "IPv4 Network should not be empty"
 msgstr "IPv4 síť je třeba vyplnit"
 
@@ -3501,11 +3534,11 @@ msgstr "IPv4 síť je třeba vyplnit"
 msgid "IPv4 Settings"
 msgstr "Nastavení IPv4"
 
-#: pkg/machines/components/networks/createNetworkDialog.jsx:200
+#: pkg/machines/components/networks/createNetworkDialog.jsx:212
 msgid "IPv4 and IPv6"
 msgstr "IPv4 a IPv6"
 
-#: pkg/machines/components/networks/createNetworkDialog.jsx:194
+#: pkg/machines/components/networks/createNetworkDialog.jsx:206
 msgid "IPv4 only"
 msgstr "Pouze IPv4"
 
@@ -3519,11 +3552,11 @@ msgstr "IPv6"
 msgid "IPv6 Address"
 msgstr "IPv6 adresa"
 
-#: pkg/machines/components/networks/createNetworkDialog.jsx:310
+#: pkg/machines/components/networks/createNetworkDialog.jsx:322
 msgid "IPv6 Network"
 msgstr "IPv6 síť"
 
-#: pkg/machines/components/networks/createNetworkDialog.jsx:74
+#: pkg/machines/components/networks/createNetworkDialog.jsx:86
 msgid "IPv6 Network should not be empty"
 msgstr "IPv6 síť je třeba vyplnit"
 
@@ -3531,7 +3564,7 @@ msgstr "IPv6 síť je třeba vyplnit"
 msgid "IPv6 Settings"
 msgstr "Nastavení IPv6"
 
-#: pkg/machines/components/networks/createNetworkDialog.jsx:197
+#: pkg/machines/components/networks/createNetworkDialog.jsx:209
 msgid "IPv6 only"
 msgstr "Pouze IPv6"
 
@@ -3673,6 +3706,10 @@ msgstr "Iniciátor"
 msgid "Initiator IQN should not be empty"
 msgstr "IQN iniciátoru by mělo být vyplněné"
 
+#: pkg/systemd/overview-cards/insights.jsx:184
+msgid "Insights: "
+msgstr ""
+
 # auto translated by TM merge from project: dnf, version: master, DocId: dnf
 #: pkg/apps/application-list.jsx:84 pkg/apps/application.jsx:113
 #: pkg/lib/cockpit-components-install-dialog.jsx:118
@@ -3765,23 +3802,23 @@ msgstr "Vnitřní chyba: neplatná hlavička výzvy"
 msgid "Internal error"
 msgstr "Vnitřní chyba"
 
-#: pkg/machines/components/networks/createNetworkDialog.jsx:48
-#: pkg/machines/components/networks/createNetworkDialog.jsx:59
-#: pkg/machines/components/networks/createNetworkDialog.jsx:66
+#: pkg/machines/components/networks/createNetworkDialog.jsx:60
+#: pkg/machines/components/networks/createNetworkDialog.jsx:71
+#: pkg/machines/components/networks/createNetworkDialog.jsx:78
 msgid "Invalid IPv4 address"
 msgstr "Neplatná IPv4 adresa"
 
-#: pkg/machines/components/networks/createNetworkDialog.jsx:53
+#: pkg/machines/components/networks/createNetworkDialog.jsx:65
 msgid "Invalid IPv4 mask or prefix length"
 msgstr "Neplatná IPv4 maska nebo délka předpony"
 
-#: pkg/machines/components/networks/createNetworkDialog.jsx:76
-#: pkg/machines/components/networks/createNetworkDialog.jsx:87
-#: pkg/machines/components/networks/createNetworkDialog.jsx:94
+#: pkg/machines/components/networks/createNetworkDialog.jsx:88
+#: pkg/machines/components/networks/createNetworkDialog.jsx:99
+#: pkg/machines/components/networks/createNetworkDialog.jsx:106
 msgid "Invalid IPv6 address"
 msgstr "Neplatná IPv6 adresa"
 
-#: pkg/machines/components/networks/createNetworkDialog.jsx:81
+#: pkg/machines/components/networks/createNetworkDialog.jsx:93
 msgid "Invalid IPv6 prefix"
 msgstr "Neplatná IPv6 předpona"
 
@@ -4391,11 +4428,11 @@ msgstr "Označování $target jako vadný"
 msgid "Mask Service"
 msgstr "Maskovat službu"
 
-#: pkg/machines/components/networks/createNetworkDialog.jsx:280
+#: pkg/machines/components/networks/createNetworkDialog.jsx:292
 msgid "Mask or Prefix Length"
 msgstr "Maska nebo délka předpony"
 
-#: pkg/machines/components/networks/createNetworkDialog.jsx:51
+#: pkg/machines/components/networks/createNetworkDialog.jsx:63
 msgid "Mask or Prefix Length should not be empty"
 msgstr "Masku nebo délku předpony je třeba vyplnit"
 
@@ -4723,7 +4760,7 @@ msgstr "NTP server"
 #: pkg/networkmanager/index.html:330 pkg/docker/containers-view.jsx:363
 #: pkg/docker/containers-view.jsx:570
 #: pkg/machines/components/create-vm-dialog/createVmDialog.jsx:198
-#: pkg/machines/components/networks/createNetworkDialog.jsx:109
+#: pkg/machines/components/networks/createNetworkDialog.jsx:121
 #: pkg/machines/components/networks/networkList.jsx:55
 #: pkg/machines/components/storagePools/createStoragePoolDialog.jsx:43
 #: pkg/machines/components/storagePools/storagePoolList.jsx:54
@@ -4775,7 +4812,7 @@ msgstr "Název nemůže obsahovat prázdné znaky."
 msgid "Name must not be empty"
 msgstr "Název je třeba vyplnit"
 
-#: pkg/machines/components/networks/createNetworkDialog.jsx:42
+#: pkg/machines/components/networks/createNetworkDialog.jsx:54
 #: pkg/machines/components/storagePools/createStoragePoolDialog.jsx:54
 msgid "Name should not be empty"
 msgstr "Název je třeba vyplnit"
@@ -4806,11 +4843,11 @@ msgctxt "label"
 msgid "Network"
 msgstr "Síť"
 
-#: pkg/machines/components/networks/network.jsx:119
+#: pkg/machines/components/networks/network.jsx:120
 msgid "Network $0 failed to get activated"
 msgstr "Síť $0 se nepodařilo aktivovat"
 
-#: pkg/machines/components/networks/network.jsx:131
+#: pkg/machines/components/networks/network.jsx:132
 msgid "Network $0 failed to get deactivated"
 msgstr "Síť $0 se nepodařilo deaktivovat"
 
@@ -5023,7 +5060,7 @@ msgstr "Bez signálu"
 msgid "No configuration found"
 msgstr "Nenalezeno žádné nastavení"
 
-#: pkg/machines/components/consoles.jsx:98
+#: pkg/machines/components/consoles.jsx:90
 msgid "No console defined for this virtual machine."
 msgstr "Pro tento virtuální stroj není definována žádná konzole."
 
@@ -5053,7 +5090,7 @@ msgstr "Není poskytnut žádný popis."
 msgid "No disks are available."
 msgstr "Nejsou k dispozici žádné disky."
 
-#: pkg/machines/components/vmDisksTab.jsx:191
+#: pkg/machines/components/vmDisksTab.jsx:198
 msgid "No disks defined for this VM"
 msgstr "Pro tento virt. stroj nejsou definované žádné disky"
 
@@ -5113,7 +5150,7 @@ msgstr ""
 "crashkernel (např. v /etc/default/grub) pro vyhrazení paměti při startu. "
 "Příklad: crashkernel=512M"
 
-#: pkg/machines/components/vmnetworktab.jsx:279
+#: pkg/machines/components/vmnetworktab.jsx:284
 msgid "No network interfaces defined for this VM"
 msgstr "Pro tento virt. stroj nebyla určena žádná síťová rozhraní"
 
@@ -5141,6 +5178,10 @@ msgstr "Žádné výsledky pro $0"
 msgid "No results found"
 msgstr "Nenalezeny žádné výsledky"
 
+#: pkg/systemd/overview-cards/insights.jsx:143
+msgid "No rule hits"
+msgstr ""
+
 #: pkg/docker/containers-view.jsx:368
 msgid "No running containers"
 msgstr "Žádné spuštěné kontejnery"
@@ -5165,7 +5206,7 @@ msgstr "Žádné čekající aktualizace"
 msgid "No user name specified"
 msgstr "Nebylo zadáno uživatelské jméno"
 
-#: pkg/machines/components/networks/network.jsx:164
+#: pkg/machines/components/networks/network.jsx:170
 msgid ""
 "Non-persistent network cannot be deleted. It ceases to exists when it's "
 "deactivated."
@@ -5179,7 +5220,7 @@ msgstr ""
 "Netrvalý fond úložiště není možné smazat. Přestane existovat po vypnutí."
 
 #: pkg/kdump/kdump-view.jsx:423
-#: pkg/machines/components/networks/createNetworkDialog.jsx:191
+#: pkg/machines/components/networks/createNetworkDialog.jsx:203
 #: pkg/networkmanager/firewall.jsx:693 pkg/tuned/dialog.js:230
 msgid "None"
 msgstr "Žádný"
@@ -5236,8 +5277,7 @@ msgstr "Není k dispozici"
 msgid "Not connected"
 msgstr "Nepřipojeno"
 
-#: pkg/systemd/overview-cards/healthCard.jsx:62
-#: pkg/systemd/overview-cards/healthCard.jsx:63
+#: pkg/systemd/overview-cards/insights.jsx:125
 msgid "Not connected to Insights"
 msgstr "Nepřipojeno k Insights"
 
@@ -5740,7 +5780,7 @@ msgstr "Pro přístup k jeho konzoli je třeba virtuální stroj napřed zapnout
 msgid "Please try another term"
 msgstr "Zkuste jiný pojem"
 
-#: pkg/machines/components/vmnetworktab.jsx:231
+#: pkg/machines/components/vmnetworktab.jsx:235
 msgid "Plug"
 msgstr "Připojit"
 
@@ -5816,11 +5856,11 @@ msgstr "Upřednostňovaný počet patic který odhalit hostovi."
 msgid "Prefix"
 msgstr "Předpona"
 
-#: pkg/machines/components/networks/createNetworkDialog.jsx:324
+#: pkg/machines/components/networks/createNetworkDialog.jsx:336
 msgid "Prefix Length"
 msgstr "Délka předpony"
 
-#: pkg/machines/components/networks/createNetworkDialog.jsx:79
+#: pkg/machines/components/networks/createNetworkDialog.jsx:91
 msgid "Prefix Length should not be empty"
 msgstr "Délku předpony je třeba vyplnit"
 
@@ -6181,7 +6221,8 @@ msgstr "Odebrání:"
 # auto translated by TM merge from project: system-config-printer, version:
 # master, DocId: system-config-printer
 #: pkg/apps/application-list.jsx:82 pkg/apps/application.jsx:110
-#: pkg/machines/components/vmDisksTab.jsx:175
+#: pkg/machines/components/vmDisksTab.jsx:171
+#: pkg/machines/components/vmDisksTab.jsx:181
 #: pkg/storaged/crypto-keyslots.jsx:402 pkg/storaged/crypto-keyslots.jsx:439
 #: pkg/storaged/nfs-details.jsx:309
 msgid "Remove"
@@ -6657,7 +6698,7 @@ msgstr "Odeslat"
 msgid "Send Non-Maskable Interrupt"
 msgstr "Poslat nemaskovatelné přerušení"
 
-#: pkg/machines/components/vnc.jsx:108
+#: pkg/machines/components/vnc.jsx:149
 msgid "Send key"
 msgstr "Poslat stisk klávesy"
 
@@ -6770,7 +6811,7 @@ msgstr "Platnost relace brzy skončí"
 msgid "Set"
 msgstr "Nastavit"
 
-#: pkg/machines/components/networks/createNetworkDialog.jsx:218
+#: pkg/machines/components/networks/createNetworkDialog.jsx:230
 msgid "Set DHCP Range"
 msgstr "Nastavit DHCP rozsah"
 
@@ -7057,7 +7098,7 @@ msgid "Stable"
 msgstr "Stabilní"
 
 #: pkg/docker/index.html:130 pkg/docker/containers-view.jsx:314
-#: pkg/machines/components/networks/createNetworkDialog.jsx:224
+#: pkg/machines/components/networks/createNetworkDialog.jsx:236
 #: pkg/storaged/content-views.jsx:306 pkg/storaged/mdraid-details.jsx:313
 #: pkg/storaged/vdo-details.jsx:258 pkg/systemd/service-details.jsx:179
 msgid "Start"
@@ -7087,8 +7128,8 @@ msgstr "Spustit libvirt"
 msgid "Start pool when host boots"
 msgstr "Spustit fond při startu hostitele"
 
-#: pkg/machines/components/networks/createNetworkDialog.jsx:57
-#: pkg/machines/components/networks/createNetworkDialog.jsx:85
+#: pkg/machines/components/networks/createNetworkDialog.jsx:69
+#: pkg/machines/components/networks/createNetworkDialog.jsx:97
 msgid "Start should not be empty"
 msgstr "Začátek je třeba vyplnit"
 
@@ -7472,7 +7513,7 @@ msgstr "Vyzkoušet nastavení kdump"
 msgid "Testing connection"
 msgstr "Zkouška spojení"
 
-#: pkg/machines/components/deleteResource.jsx:51
+#: pkg/machines/components/deleteResource.jsx:48
 msgid "The $0 could not be deleted"
 msgstr "$0 nebylo možné smazat"
 
@@ -7540,8 +7581,8 @@ msgstr "Virt. stroj je spuštěný."
 msgid "The VM is suspended by guest power management."
 msgstr "Virt. stroj je uspaný svou vlastní správou napájení."
 
-#: pkg/machines/components/vmDisksTab.jsx:174
-#: pkg/machines/components/vmnetworktab.jsx:225
+#: pkg/machines/components/vmDisksTab.jsx:180
+#: pkg/machines/components/vmnetworktab.jsx:230
 msgid "The VM needs to be running or shut off to detach this device"
 msgstr ""
 "Pro odpojení tohoto zařízení je třeba, aby virt. stroj byl spuštěný nebo "
@@ -8251,7 +8292,7 @@ msgstr "Nedostupné"
 msgid "Unexpected error"
 msgstr "Neočekávaná chyba"
 
-#: pkg/machines/components/networks/createNetworkDialog.jsx:115
+#: pkg/machines/components/networks/createNetworkDialog.jsx:127
 msgid "Unique Network Name"
 msgstr "Doposud nepoužívaný název sítě"
 
@@ -8366,7 +8407,7 @@ msgstr "Odpojování $target"
 msgid "Unnamed"
 msgstr "Bez názvu"
 
-#: pkg/machines/components/vmnetworktab.jsx:231
+#: pkg/machines/components/vmnetworktab.jsx:235
 msgid "Unplug"
 msgstr "Odpojit"
 
@@ -8706,7 +8747,7 @@ msgstr "Správa virtuálních strojů"
 msgid "Virtual Network"
 msgstr "Virtuální síť"
 
-#: pkg/machines/components/networks/createNetworkDialog.jsx:415
+#: pkg/machines/components/networks/createNetworkDialog.jsx:426
 msgid "Virtual Network failed to be created"
 msgstr "Vytvoření virtuální sítě se nezdařilo"
 
@@ -9753,6 +9794,9 @@ msgstr "yum"
 #: pkg/networkmanager/manifest.json.in
 msgid "zone"
 msgstr "zóna"
+
+#~ msgid "Connecting"
+#~ msgstr "Připojování"
 
 #~ msgid "About Cockpit"
 #~ msgstr "O Cockpit"

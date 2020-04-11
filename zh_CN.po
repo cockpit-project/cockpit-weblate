@@ -18,7 +18,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-03 12:56+0000\n"
+"POT-Creation-Date: 2020-04-11 06:10+0000\n"
 "PO-Revision-Date: 2020-02-06 08:43+0000\n"
 "Last-Translator: Ludek Janda <ljanda@redhat.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
@@ -90,6 +90,11 @@ msgid "$0 byte"
 msgid_plural "$0 bytes"
 msgstr[0] "$0 字节"
 
+#: pkg/systemd/overview-cards/insights.jsx:155
+msgid "$0 critical hit"
+msgid_plural "$0 hits, including critical"
+msgstr[0] ""
+
 #: pkg/storaged/vdo-details.jsx:279
 msgid "$0 data + $1 overhead used of $2 ($3)"
 msgstr "$0 数据 + $1 过渡使用 $2（$3）"
@@ -159,6 +164,11 @@ msgid "$0 hour"
 msgid_plural "$0 hours"
 msgstr[0] "$0 小时"
 
+#: pkg/systemd/overview-cards/insights.jsx:160
+msgid "$0 important hit"
+msgid_plural "$0 hits, including important"
+msgstr[0] ""
+
 #: pkg/machines/components/desktopConsole.jsx:56
 msgid ""
 "$0 is available for most operating systems. To install it, search for it in "
@@ -182,10 +192,23 @@ msgstr "所有仓库都不提供 $0。"
 msgid "$0 killed with signal $1"
 msgstr "$0 被信号 $1 终止"
 
+#: pkg/systemd/overview-cards/insights.jsx:170
+msgid "$0 low severity hit"
+msgid_plural "$0 low severity hits"
+msgstr[0] ""
+
 #: pkg/lib/plot.js:977
 msgid "$0 minute"
 msgid_plural "$0 minutes"
 msgstr[0] "$0 分钟"
+
+#: pkg/systemd/overview-cards/insights.jsx:165
+#, fuzzy
+#| msgid "$0 month"
+#| msgid_plural "$0 months"
+msgid "$0 moderate hit"
+msgid_plural "$0 hits, including moderate"
+msgstr[0] "$0 月"
 
 #: pkg/lib/plot.js:965
 msgid "$0 month"
@@ -601,7 +624,7 @@ msgctxt "page-title"
 msgid "Accounts"
 msgstr "账户"
 
-#: pkg/machines/components/networks/network.jsx:157
+#: pkg/machines/components/networks/network.jsx:164
 #: pkg/machines/components/storagePools/storagePool.jsx:179
 #: pkg/storaged/content-views.jsx:287
 msgid "Activate"
@@ -677,7 +700,7 @@ msgstr "添加密钥"
 msgid "Add Machine to Dashboard"
 msgstr "把机器添加到仪表板"
 
-#: pkg/machines/components/vmnetworktab.jsx:266
+#: pkg/machines/components/vmnetworktab.jsx:271
 msgid "Add Network Interface"
 msgstr "添加网络接口"
 
@@ -809,10 +832,10 @@ msgstr "地址不能为空"
 msgid "Address is not a valid URL"
 msgstr "该地址无效"
 
-#: pkg/machines/components/networks/createNetworkDialog.jsx:61
-#: pkg/machines/components/networks/createNetworkDialog.jsx:68
-#: pkg/machines/components/networks/createNetworkDialog.jsx:89
-#: pkg/machines/components/networks/createNetworkDialog.jsx:96
+#: pkg/machines/components/networks/createNetworkDialog.jsx:73
+#: pkg/machines/components/networks/createNetworkDialog.jsx:80
+#: pkg/machines/components/networks/createNetworkDialog.jsx:101
+#: pkg/machines/components/networks/createNetworkDialog.jsx:108
 msgid "Address not within subnet"
 msgstr "地址不在子网内"
 
@@ -1006,7 +1029,7 @@ msgid "Authorized Public SSH Keys"
 msgstr "授权公共 SSH 密钥"
 
 #: pkg/networkmanager/index.html:187
-#: pkg/machines/components/networks/createNetworkDialog.jsx:163
+#: pkg/machines/components/networks/createNetworkDialog.jsx:175
 #: pkg/networkmanager/interfaces.js:1957 pkg/networkmanager/interfaces.js:2745
 #: pkg/networkmanager/interfaces.js:3313 pkg/networkmanager/interfaces.js:3317
 #: pkg/networkmanager/interfaces.js:3323
@@ -1282,10 +1305,10 @@ msgstr "无法加载镜像"
 #: pkg/apps/utils.jsx:84 pkg/lib/cockpit-components-dialog.jsx:158
 #: pkg/machines/components/create-vm-dialog/createVmDialog.jsx:947
 #: pkg/machines/components/deleteDialog.jsx:185
-#: pkg/machines/components/deleteResource.jsx:116
+#: pkg/machines/components/deleteResource.jsx:74
 #: pkg/machines/components/diskAdd.jsx:551
 #: pkg/machines/components/diskEdit.jsx:215
-#: pkg/machines/components/networks/createNetworkDialog.jsx:484
+#: pkg/machines/components/networks/createNetworkDialog.jsx:492
 #: pkg/machines/components/nicAdd.jsx:206
 #: pkg/machines/components/nicEdit.jsx:174
 #: pkg/machines/components/storagePools/createStoragePoolDialog.jsx:514
@@ -1733,7 +1756,7 @@ msgstr "确认移除 $0"
 msgid "Confirm removal with passphrase"
 msgstr "使用密码确认删除"
 
-#: pkg/machines/components/deleteResource.jsx:108
+#: pkg/machines/components/deleteResource.jsx:66
 msgid "Confirm this action"
 msgstr "确认此操作"
 
@@ -1766,10 +1789,6 @@ msgstr "使用任何 $0 查看器应用来连接。"
 msgid "Connect with any SPICE or VNC viewer application."
 msgstr "使用任何 SPICE 或 VNC 查看器应用来连接。"
 
-#: pkg/machines/components/vnc.jsx:106
-msgid "Connecting"
-msgstr "连接"
-
 #: pkg/lib/machine-add.html:41
 msgid ""
 "Connecting simultaneously to more than {{ limit }} machines is unsupported."
@@ -1792,6 +1811,7 @@ msgid "Connecting to the machine"
 msgstr "正在连接至主机"
 
 #: pkg/machines/components/machinesConnectionSelector.jsx:34
+#: pkg/machines/components/networks/createNetworkDialog.jsx:41
 #: pkg/machines/components/networks/networkList.jsx:55
 #: pkg/machines/components/storagePools/storagePoolList.jsx:54
 #: pkg/machines/hostvmslist.jsx:74
@@ -1818,7 +1838,7 @@ msgstr "连接将丢失"
 msgid "Consists Of"
 msgstr "组成"
 
-#: pkg/machines/components/consoles.jsx:80
+#: pkg/machines/components/consoles.jsx:77
 msgid "Console Type"
 msgstr "控制台类型"
 
@@ -1950,7 +1970,7 @@ msgstr "导致系统崩溃"
 
 #: pkg/users/index.html:200
 #: pkg/machines/components/create-vm-dialog/createVmDialog.jsx:944
-#: pkg/machines/components/networks/createNetworkDialog.jsx:481
+#: pkg/machines/components/networks/createNetworkDialog.jsx:489
 #: pkg/machines/components/storagePools/createStoragePoolDialog.jsx:511
 #: pkg/machines/components/storagePools/storageVolumeCreate.jsx:93
 #: pkg/storaged/content-views.jsx:129 pkg/storaged/content-views.jsx:275
@@ -2036,8 +2056,8 @@ msgstr "创建 VDO 设备"
 msgid "Create VM"
 msgstr "创建虚拟机"
 
-#: pkg/machines/components/networks/createNetworkDialog.jsx:471
-#: pkg/machines/components/networks/createNetworkDialog.jsx:519
+#: pkg/machines/components/networks/createNetworkDialog.jsx:479
+#: pkg/machines/components/networks/createNetworkDialog.jsx:526
 msgid "Create Virtual Network"
 msgstr "创建虚拟网络"
 
@@ -2132,8 +2152,10 @@ msgstr "虚拟机$0创建失败"
 msgid "Critical and above"
 msgstr "关键及以上级别"
 
-#: pkg/machines/components/vnc.jsx:109
-msgid "Ctrl+Alt+Del"
+#: pkg/machines/components/vnc.jsx:134
+#, fuzzy
+#| msgid "Ctrl+Alt+Del"
+msgid "Ctrl+Alt+$0"
 msgstr "Ctrl+Alt+Del"
 
 #: pkg/lib/cockpit-components-context-menu.jsx:104
@@ -2206,7 +2228,7 @@ msgstr "仪表板"
 msgid "Data Used"
 msgstr "数据已使用空间"
 
-#: pkg/machines/components/networks/network.jsx:153
+#: pkg/machines/components/networks/network.jsx:160
 #: pkg/machines/components/storagePools/storagePool.jsx:170
 #: pkg/storaged/content-views.jsx:285
 msgid "Deactivate"
@@ -2243,10 +2265,10 @@ msgstr "延时"
 #: pkg/machines/components/deleteDialog.jsx:146
 #: pkg/machines/components/deleteDialog.jsx:161
 #: pkg/machines/components/deleteDialog.jsx:182
-#: pkg/machines/components/deleteResource.jsx:82
-#: pkg/machines/components/deleteResource.jsx:92
-#: pkg/machines/components/deleteResource.jsx:105
-#: pkg/machines/components/deleteResource.jsx:113
+#: pkg/machines/components/deleteResource.jsx:63
+#: pkg/machines/components/deleteResource.jsx:71
+#: pkg/machines/components/deleteResource.jsx:102
+#: pkg/machines/components/deleteResource.jsx:112
 #: pkg/machines/components/storagePools/storagePoolDelete.jsx:204
 #: pkg/machines/components/storagePools/storagePoolDelete.jsx:214
 #: pkg/machines/components/storagePools/storagePoolDelete.jsx:237
@@ -2360,7 +2382,7 @@ msgstr "详情"
 msgid "Development"
 msgstr "开发"
 
-#: pkg/machines/components/networks/createNetworkDialog.jsx:156
+#: pkg/machines/components/networks/createNetworkDialog.jsx:168
 #: pkg/machines/components/networks/networkList.jsx:55
 #: pkg/machines/components/vm/bootOrderModal.jsx:93
 #: pkg/machines/components/vmDiskColumns.jsx:43
@@ -2435,8 +2457,7 @@ msgstr "不允许运行 (掩盖)"
 msgid "Disconnect"
 msgstr "断开"
 
-#: pkg/machines/components/vnc.jsx:107 pkg/shell/indexes.js:244
-#: pkg/shell/indexes.js:892
+#: pkg/shell/indexes.js:244 pkg/shell/indexes.js:892
 msgid "Disconnected"
 msgstr "已断开连接"
 
@@ -2697,12 +2718,12 @@ msgstr "加密"
 msgid "Encryption Options"
 msgstr "加密选项"
 
-#: pkg/machines/components/networks/createNetworkDialog.jsx:239
+#: pkg/machines/components/networks/createNetworkDialog.jsx:251
 msgid "End"
 msgstr "结束"
 
-#: pkg/machines/components/networks/createNetworkDialog.jsx:64
-#: pkg/machines/components/networks/createNetworkDialog.jsx:92
+#: pkg/machines/components/networks/createNetworkDialog.jsx:76
+#: pkg/machines/components/networks/createNetworkDialog.jsx:104
 msgid "End should not be empty"
 msgstr "结束不应为空"
 
@@ -2910,6 +2931,10 @@ msgstr "获取在 $0 中的接口的 IP 地址失败"
 msgid "Failed to load authorized keys."
 msgstr "载入 authorized key 失败。"
 
+#: pkg/machines/components/vnc.jsx:130
+msgid "Failed to send key Ctrl+Alt+$0 to VM $1"
+msgstr ""
+
 #: pkg/systemd/service-details.jsx:346
 msgid "Failed to start"
 msgstr "启动失败"
@@ -3040,7 +3065,7 @@ msgstr "格式化磁盘将擦除其中的所有数据。"
 msgid "Formatting a storage device will erase all data on it."
 msgstr "格式化存储设备将擦除其中的所有数据."
 
-#: pkg/machines/components/networks/createNetworkDialog.jsx:134
+#: pkg/machines/components/networks/createNetworkDialog.jsx:146
 msgid "Forward Mode"
 msgstr "转发模式"
 
@@ -3173,7 +3198,7 @@ msgstr "手持"
 msgid "Hardware Information"
 msgstr "硬件信息"
 
-#: pkg/systemd/overview-cards/healthCard.jsx:55
+#: pkg/systemd/overview-cards/healthCard.jsx:35
 msgid "Health"
 msgstr "健康"
 
@@ -3256,7 +3281,7 @@ msgstr "IP 地址"
 msgid "IP Address:"
 msgstr "IP 地址:"
 
-#: pkg/machines/components/networks/createNetworkDialog.jsx:184
+#: pkg/machines/components/networks/createNetworkDialog.jsx:196
 msgid "IP Configuration"
 msgstr "IP 配置"
 
@@ -3283,11 +3308,11 @@ msgstr "IPv4"
 msgid "IPv4 Address"
 msgstr "IPv4 地址"
 
-#: pkg/machines/components/networks/createNetworkDialog.jsx:266
+#: pkg/machines/components/networks/createNetworkDialog.jsx:278
 msgid "IPv4 Network"
 msgstr "IPv4 网络"
 
-#: pkg/machines/components/networks/createNetworkDialog.jsx:46
+#: pkg/machines/components/networks/createNetworkDialog.jsx:58
 msgid "IPv4 Network should not be empty"
 msgstr "IPv4 网络不能为空"
 
@@ -3295,11 +3320,11 @@ msgstr "IPv4 网络不能为空"
 msgid "IPv4 Settings"
 msgstr "IPv4 设置"
 
-#: pkg/machines/components/networks/createNetworkDialog.jsx:200
+#: pkg/machines/components/networks/createNetworkDialog.jsx:212
 msgid "IPv4 and IPv6"
 msgstr "IPv4 和 IPv6"
 
-#: pkg/machines/components/networks/createNetworkDialog.jsx:194
+#: pkg/machines/components/networks/createNetworkDialog.jsx:206
 msgid "IPv4 only"
 msgstr "仅 IPv4"
 
@@ -3311,11 +3336,11 @@ msgstr "IPv6"
 msgid "IPv6 Address"
 msgstr "IPv6 地址"
 
-#: pkg/machines/components/networks/createNetworkDialog.jsx:310
+#: pkg/machines/components/networks/createNetworkDialog.jsx:322
 msgid "IPv6 Network"
 msgstr "IPv6 网络"
 
-#: pkg/machines/components/networks/createNetworkDialog.jsx:74
+#: pkg/machines/components/networks/createNetworkDialog.jsx:86
 msgid "IPv6 Network should not be empty"
 msgstr "IPv6 网络不能为空"
 
@@ -3323,7 +3348,7 @@ msgstr "IPv6 网络不能为空"
 msgid "IPv6 Settings"
 msgstr "IPv6 设置"
 
-#: pkg/machines/components/networks/createNetworkDialog.jsx:197
+#: pkg/machines/components/networks/createNetworkDialog.jsx:209
 msgid "IPv6 only"
 msgstr "仅 IPv6"
 
@@ -3457,6 +3482,10 @@ msgstr "启动器"
 msgid "Initiator IQN should not be empty"
 msgstr "启动器 IQN 不能为空"
 
+#: pkg/systemd/overview-cards/insights.jsx:184
+msgid "Insights: "
+msgstr ""
+
 #: pkg/apps/application-list.jsx:84 pkg/apps/application.jsx:113
 #: pkg/lib/cockpit-components-install-dialog.jsx:118
 #: pkg/machines/components/vm/vmActions.jsx:99
@@ -3538,23 +3567,23 @@ msgstr "内部错误：无效的挑战字头部"
 msgid "Internal error"
 msgstr "内部错误"
 
-#: pkg/machines/components/networks/createNetworkDialog.jsx:48
-#: pkg/machines/components/networks/createNetworkDialog.jsx:59
-#: pkg/machines/components/networks/createNetworkDialog.jsx:66
+#: pkg/machines/components/networks/createNetworkDialog.jsx:60
+#: pkg/machines/components/networks/createNetworkDialog.jsx:71
+#: pkg/machines/components/networks/createNetworkDialog.jsx:78
 msgid "Invalid IPv4 address"
 msgstr "无效的 IPv4 地址"
 
-#: pkg/machines/components/networks/createNetworkDialog.jsx:53
+#: pkg/machines/components/networks/createNetworkDialog.jsx:65
 msgid "Invalid IPv4 mask or prefix length"
 msgstr "无效的 IPv4 掩码或前缀长度"
 
-#: pkg/machines/components/networks/createNetworkDialog.jsx:76
-#: pkg/machines/components/networks/createNetworkDialog.jsx:87
-#: pkg/machines/components/networks/createNetworkDialog.jsx:94
+#: pkg/machines/components/networks/createNetworkDialog.jsx:88
+#: pkg/machines/components/networks/createNetworkDialog.jsx:99
+#: pkg/machines/components/networks/createNetworkDialog.jsx:106
 msgid "Invalid IPv6 address"
 msgstr "无效的 IPv6 地址"
 
-#: pkg/machines/components/networks/createNetworkDialog.jsx:81
+#: pkg/machines/components/networks/createNetworkDialog.jsx:93
 msgid "Invalid IPv6 prefix"
 msgstr "无效的 IPv6 前缀"
 
@@ -4150,11 +4179,11 @@ msgstr "标记 $target 为故障"
 msgid "Mask Service"
 msgstr "掩盖服务"
 
-#: pkg/machines/components/networks/createNetworkDialog.jsx:280
+#: pkg/machines/components/networks/createNetworkDialog.jsx:292
 msgid "Mask or Prefix Length"
 msgstr "掩码或前缀长度"
 
-#: pkg/machines/components/networks/createNetworkDialog.jsx:51
+#: pkg/machines/components/networks/createNetworkDialog.jsx:63
 msgid "Mask or Prefix Length should not be empty"
 msgstr "掩码或前缀长度不能为空"
 
@@ -4462,7 +4491,7 @@ msgstr "NTP 服务器"
 #: pkg/networkmanager/index.html:330 pkg/docker/containers-view.jsx:363
 #: pkg/docker/containers-view.jsx:570
 #: pkg/machines/components/create-vm-dialog/createVmDialog.jsx:198
-#: pkg/machines/components/networks/createNetworkDialog.jsx:109
+#: pkg/machines/components/networks/createNetworkDialog.jsx:121
 #: pkg/machines/components/networks/networkList.jsx:55
 #: pkg/machines/components/storagePools/createStoragePoolDialog.jsx:43
 #: pkg/machines/components/storagePools/storagePoolList.jsx:54
@@ -4514,7 +4543,7 @@ msgstr "名称不能包含空格。"
 msgid "Name must not be empty"
 msgstr "名称不能为空"
 
-#: pkg/machines/components/networks/createNetworkDialog.jsx:42
+#: pkg/machines/components/networks/createNetworkDialog.jsx:54
 #: pkg/machines/components/storagePools/createStoragePoolDialog.jsx:54
 msgid "Name should not be empty"
 msgstr "名称不应为空"
@@ -4541,11 +4570,11 @@ msgctxt "label"
 msgid "Network"
 msgstr "网络"
 
-#: pkg/machines/components/networks/network.jsx:119
+#: pkg/machines/components/networks/network.jsx:120
 msgid "Network $0 failed to get activated"
 msgstr "网络 $0 激活失败"
 
-#: pkg/machines/components/networks/network.jsx:131
+#: pkg/machines/components/networks/network.jsx:132
 msgid "Network $0 failed to get deactivated"
 msgstr "网络 $0 取消激活失败"
 
@@ -4752,7 +4781,7 @@ msgstr "无载体"
 msgid "No configuration found"
 msgstr "未找到配置"
 
-#: pkg/machines/components/consoles.jsx:98
+#: pkg/machines/components/consoles.jsx:90
 msgid "No console defined for this virtual machine."
 msgstr "没有为该虚拟机定义控制台。"
 
@@ -4782,7 +4811,7 @@ msgstr "没有提供说明。"
 msgid "No disks are available."
 msgstr "没有可用的磁盘。"
 
-#: pkg/machines/components/vmDisksTab.jsx:191
+#: pkg/machines/components/vmDisksTab.jsx:198
 msgid "No disks defined for this VM"
 msgstr "没有为该虚拟机定义磁盘"
 
@@ -4841,7 +4870,7 @@ msgstr ""
 "没有内存预留。在内核命令行（例如在 /etc/default/grub 文件）中增加一个 "
 "crashkernel 选项以在启动时预留内存。例如：crashkernel=512M"
 
-#: pkg/machines/components/vmnetworktab.jsx:279
+#: pkg/machines/components/vmnetworktab.jsx:284
 msgid "No network interfaces defined for this VM"
 msgstr "没有为此 VM 定义网络接口"
 
@@ -4869,6 +4898,10 @@ msgstr "没有 $0 的结果"
 msgid "No results found"
 msgstr "没有找到结果"
 
+#: pkg/systemd/overview-cards/insights.jsx:143
+msgid "No rule hits"
+msgstr ""
+
 #: pkg/docker/containers-view.jsx:368
 msgid "No running containers"
 msgstr "没有运行的容器"
@@ -4893,7 +4926,7 @@ msgstr "没有待完成的更新"
 msgid "No user name specified"
 msgstr "未指定用户名"
 
-#: pkg/machines/components/networks/network.jsx:164
+#: pkg/machines/components/networks/network.jsx:170
 msgid ""
 "Non-persistent network cannot be deleted. It ceases to exists when it's "
 "deactivated."
@@ -4906,7 +4939,7 @@ msgid ""
 msgstr "非持久性网络池无法删除。停用后它不再存在。"
 
 #: pkg/kdump/kdump-view.jsx:423
-#: pkg/machines/components/networks/createNetworkDialog.jsx:191
+#: pkg/machines/components/networks/createNetworkDialog.jsx:203
 #: pkg/networkmanager/firewall.jsx:693 pkg/tuned/dialog.js:230
 msgid "None"
 msgstr "无"
@@ -4963,8 +4996,7 @@ msgstr "不可用"
 msgid "Not connected"
 msgstr "未连接"
 
-#: pkg/systemd/overview-cards/healthCard.jsx:62
-#: pkg/systemd/overview-cards/healthCard.jsx:63
+#: pkg/systemd/overview-cards/insights.jsx:125
 msgid "Not connected to Insights"
 msgstr "没有连接到 Insights"
 
@@ -5437,7 +5469,7 @@ msgstr "请启动虚拟机来访问其控制台。"
 msgid "Please try another term"
 msgstr "请尝试另一个终端"
 
-#: pkg/machines/components/vmnetworktab.jsx:231
+#: pkg/machines/components/vmnetworktab.jsx:235
 msgid "Plug"
 msgstr "插"
 
@@ -5505,11 +5537,11 @@ msgstr "向客户机公开的首选插槽数。"
 msgid "Prefix"
 msgstr "前缀"
 
-#: pkg/machines/components/networks/createNetworkDialog.jsx:324
+#: pkg/machines/components/networks/createNetworkDialog.jsx:336
 msgid "Prefix Length"
 msgstr "前缀长度"
 
-#: pkg/machines/components/networks/createNetworkDialog.jsx:79
+#: pkg/machines/components/networks/createNetworkDialog.jsx:91
 msgid "Prefix Length should not be empty"
 msgstr "前缀长度不能为空"
 
@@ -5855,7 +5887,8 @@ msgid "Removals:"
 msgstr "移除："
 
 #: pkg/apps/application-list.jsx:82 pkg/apps/application.jsx:110
-#: pkg/machines/components/vmDisksTab.jsx:175
+#: pkg/machines/components/vmDisksTab.jsx:171
+#: pkg/machines/components/vmDisksTab.jsx:181
 #: pkg/storaged/crypto-keyslots.jsx:402 pkg/storaged/crypto-keyslots.jsx:439
 #: pkg/storaged/nfs-details.jsx:309
 msgid "Remove"
@@ -6309,7 +6342,7 @@ msgstr "发送"
 msgid "Send Non-Maskable Interrupt"
 msgstr "发送不可屏蔽中断"
 
-#: pkg/machines/components/vnc.jsx:108
+#: pkg/machines/components/vnc.jsx:149
 msgid "Send key"
 msgstr "发送密钥"
 
@@ -6412,7 +6445,7 @@ msgstr "会话即将到期"
 msgid "Set"
 msgstr "设置"
 
-#: pkg/machines/components/networks/createNetworkDialog.jsx:218
+#: pkg/machines/components/networks/createNetworkDialog.jsx:230
 msgid "Set DHCP Range"
 msgstr "设置 DHCP 范围"
 
@@ -6681,7 +6714,7 @@ msgid "Stable"
 msgstr "稳定的"
 
 #: pkg/docker/index.html:130 pkg/docker/containers-view.jsx:314
-#: pkg/machines/components/networks/createNetworkDialog.jsx:224
+#: pkg/machines/components/networks/createNetworkDialog.jsx:236
 #: pkg/storaged/content-views.jsx:306 pkg/storaged/mdraid-details.jsx:313
 #: pkg/storaged/vdo-details.jsx:258 pkg/systemd/service-details.jsx:179
 msgid "Start"
@@ -6711,8 +6744,8 @@ msgstr "启动 libvirt"
 msgid "Start pool when host boots"
 msgstr "在主机引导时启动池"
 
-#: pkg/machines/components/networks/createNetworkDialog.jsx:57
-#: pkg/machines/components/networks/createNetworkDialog.jsx:85
+#: pkg/machines/components/networks/createNetworkDialog.jsx:69
+#: pkg/machines/components/networks/createNetworkDialog.jsx:97
 msgid "Start should not be empty"
 msgstr "开始不能为空"
 
@@ -7063,7 +7096,7 @@ msgstr "测试内核转储设置"
 msgid "Testing connection"
 msgstr "测试连接"
 
-#: pkg/machines/components/deleteResource.jsx:51
+#: pkg/machines/components/deleteResource.jsx:48
 msgid "The $0 could not be deleted"
 msgstr "$0 无法被删除"
 
@@ -7128,8 +7161,8 @@ msgstr "虚拟机正在运行。"
 msgid "The VM is suspended by guest power management."
 msgstr "虚拟机已被客户机电源管理暂停。"
 
-#: pkg/machines/components/vmDisksTab.jsx:174
-#: pkg/machines/components/vmnetworktab.jsx:225
+#: pkg/machines/components/vmDisksTab.jsx:180
+#: pkg/machines/components/vmnetworktab.jsx:230
 msgid "The VM needs to be running or shut off to detach this device"
 msgstr "虚拟机需要运行或关闭才能分离该设备"
 
@@ -7780,7 +7813,7 @@ msgstr "不可用"
 msgid "Unexpected error"
 msgstr "意外的错误"
 
-#: pkg/machines/components/networks/createNetworkDialog.jsx:115
+#: pkg/machines/components/networks/createNetworkDialog.jsx:127
 msgid "Unique Network Name"
 msgstr "唯一的网络名称"
 
@@ -7893,7 +7926,7 @@ msgstr "卸载 $target"
 msgid "Unnamed"
 msgstr "未命名"
 
-#: pkg/machines/components/vmnetworktab.jsx:231
+#: pkg/machines/components/vmnetworktab.jsx:235
 msgid "Unplug"
 msgstr "拔"
 
@@ -8209,7 +8242,7 @@ msgstr "虚拟机管理"
 msgid "Virtual Network"
 msgstr "虚拟网络"
 
-#: pkg/machines/components/networks/createNetworkDialog.jsx:415
+#: pkg/machines/components/networks/createNetworkDialog.jsx:426
 msgid "Virtual Network failed to be created"
 msgstr "虚拟网络创建失败"
 
@@ -9208,6 +9241,9 @@ msgstr "yum"
 #: pkg/networkmanager/manifest.json.in
 msgid "zone"
 msgstr "区"
+
+#~ msgid "Connecting"
+#~ msgstr "连接"
 
 #~ msgid "About Cockpit"
 #~ msgstr "关于 Cockpit"
