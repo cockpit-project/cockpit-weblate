@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-18 11:48+0000\n"
-"PO-Revision-Date: 2020-03-22 12:47+0000\n"
+"PO-Revision-Date: 2020-04-19 17:40+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://translate.fedoraproject.org/projects/cockpit/"
 "master/cs/>\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 3.11.3\n"
+"X-Generator: Weblate 4.0.1\n"
 
 #: pkg/machines/components/diskAdd.jsx:234
 msgid " Attaching it will make this disk shareable for every VM using it."
@@ -96,9 +96,9 @@ msgstr[2] "$0 bajtů"
 #: pkg/systemd/overview-cards/insights.jsx:155
 msgid "$0 critical hit"
 msgid_plural "$0 hits, including critical"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "$0 kritický zásah"
+msgstr[1] "$0 kritické zásahy"
+msgstr[2] "$0 kritických zásahů"
 
 #: pkg/storaged/vdo-details.jsx:279
 msgid "$0 data + $1 overhead used of $2 ($3)"
@@ -161,12 +161,12 @@ msgstr "$0 souborovým systémům nelze změnit velikost zde."
 #: pkg/systemd/overview.jsx:96
 msgctxt "<date> from <host>"
 msgid "$0 from $1"
-msgstr ""
+msgstr "$0 z $1"
 
 #: pkg/systemd/overview.jsx:94
 msgctxt "<date> from <host> on <terminal>"
 msgid "$0 from $1 on $2"
-msgstr ""
+msgstr "$0 z $1 na $2"
 
 #: pkg/lib/plot.js:974
 msgid "$0 hour"
@@ -178,9 +178,9 @@ msgstr[2] "$0 hodin"
 #: pkg/systemd/overview-cards/insights.jsx:160
 msgid "$0 important hit"
 msgid_plural "$0 hits, including important"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "$0 důležitý zásah"
+msgstr[1] "$0 zásahy, včetně důležitého"
+msgstr[2] "$0 zásahů, včetně důležitého"
 
 #: pkg/machines/components/desktopConsole.jsx:56
 msgid ""
@@ -209,9 +209,9 @@ msgstr "$0 vynuceně ukončeno signálem $1"
 #: pkg/systemd/overview-cards/insights.jsx:170
 msgid "$0 low severity hit"
 msgid_plural "$0 low severity hits"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "$0 zásah s nízkou prioritou"
+msgstr[1] "$0 zásahy s nízkou prioritou"
+msgstr[2] "$0 zásahů s nízkou prioritou"
 
 #: pkg/lib/plot.js:977
 msgid "$0 minute"
@@ -221,14 +221,11 @@ msgstr[1] "$0 minuty"
 msgstr[2] "$0 minut"
 
 #: pkg/systemd/overview-cards/insights.jsx:165
-#, fuzzy
-#| msgid "$0 month"
-#| msgid_plural "$0 months"
 msgid "$0 moderate hit"
 msgid_plural "$0 hits, including moderate"
-msgstr[0] "$0 měsíc"
-msgstr[1] "$0 měsíce"
-msgstr[2] "$0 měsíců"
+msgstr[0] "$0 zásah střední závažnosti"
+msgstr[1] "$0 zásahy střední závažnosti"
+msgstr[2] "$0 zásahů střední závažnosti"
 
 #: pkg/lib/plot.js:965
 msgid "$0 month"
@@ -249,11 +246,9 @@ msgid "$0 of $1"
 msgstr "$0 z $1"
 
 #: pkg/systemd/overview.jsx:98
-#, fuzzy
-#| msgid "$0 of $1"
 msgctxt "<date> on <terminal>"
 msgid "$0 on $1"
-msgstr "$0 z $1"
+msgstr "$0 na $1"
 
 #: pkg/systemd/init.js:424
 msgid "$0 service has failed"
@@ -627,10 +622,8 @@ msgid "ARP Ping"
 msgstr "ARP ping"
 
 #: pkg/shell/index.html:86 pkg/shell/indexes.js:625
-#, fuzzy
-#| msgid "Web Console"
 msgid "About Web Console"
-msgstr "Webová konzole"
+msgstr "O webové konzole"
 
 #: pkg/lib/machine-info.js:254
 msgid "Absent"
@@ -2273,10 +2266,8 @@ msgid "Critical and above"
 msgstr "Kritické a závažnější"
 
 #: pkg/machines/components/vnc.jsx:134
-#, fuzzy
-#| msgid "Ctrl+Alt+Del"
 msgid "Ctrl+Alt+$0"
-msgstr "Ctrl+Alt+Del"
+msgstr "Ctrl+Alt+$0"
 
 #: pkg/lib/cockpit-components-context-menu.jsx:104
 msgid "Ctrl+Insert"
@@ -3107,7 +3098,7 @@ msgstr "Nepodařilo se nahrát ověřovací klíče."
 
 #: pkg/machines/components/vnc.jsx:130
 msgid "Failed to send key Ctrl+Alt+$0 to VM $1"
-msgstr ""
+msgstr "Nepodařilo se odeslat kombinaci kláves Ctrl+Alt+$0 do virt. stroje $1"
 
 #: pkg/systemd/service-details.jsx:346
 msgid "Failed to start"
@@ -3705,7 +3696,7 @@ msgstr "IQN iniciátoru by mělo být vyplněné"
 
 #: pkg/systemd/overview-cards/insights.jsx:184
 msgid "Insights: "
-msgstr ""
+msgstr "Vhledy: "
 
 # auto translated by TM merge from project: dnf, version: master, DocId: dnf
 #: pkg/apps/application-list.jsx:84 pkg/apps/application.jsx:113
@@ -4044,16 +4035,12 @@ msgid "Last checked: $0"
 msgstr "Naposledy zkontrolováno: $0"
 
 #: pkg/systemd/overview.jsx:133
-#, fuzzy
-#| msgid "Last Login"
 msgid "Last failed login:"
-msgstr "Poslední přihlášení"
+msgstr "Poslední nezdařené přihlášení:"
 
 #: pkg/systemd/overview.jsx:132
-#, fuzzy
-#| msgid "Last Login"
 msgid "Last login:"
-msgstr "Poslední přihlášení"
+msgstr "Poslední přihlášení:"
 
 #: pkg/machines/components/desktopConsole.jsx:128
 msgid "Launch Remote Viewer"
@@ -5177,7 +5164,7 @@ msgstr "Nenalezeny žádné výsledky"
 
 #: pkg/systemd/overview-cards/insights.jsx:143
 msgid "No rule hits"
-msgstr ""
+msgstr "Žádné zásahy pravidla"
 
 #: pkg/docker/containers-view.jsx:368
 msgid "No running containers"
@@ -7690,11 +7677,6 @@ msgstr ""
 "Následující kontejnery závisí na tomto obrazu a přestanou být použitelné."
 
 #: pkg/sosreport/index.html:51
-#, fuzzy
-#| msgid ""
-#| "The generated archive contains data considered sensitive and its content "
-#| "should be reviewed by the originating organization before being passed to "
-#| "any third party.              "
 msgid ""
 "The generated archive contains data considered sensitive and its content "
 "should be reviewed by the originating organization before being passed to "
@@ -7702,7 +7684,7 @@ msgid ""
 msgstr ""
 "Vytvořený archiv obsahuje data považovaná za citlivá a jeho obsah by měl být "
 "předtím, než bude předán třetí straně zrevidován organizací, která ho "
-"vytvořila.              "
+"vytvořila."
 
 #: pkg/lib/machine-invalid-hostkey.html:8
 msgid ""
@@ -7870,9 +7852,9 @@ msgstr ""
 msgid "There was $0 failed login attempt since the last successful login."
 msgid_plural ""
 "There were $0 failed login attempts since the last successful login."
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Od minulého úspěšného přihlášení mezitím došlo k $0 neúspěšnému pokusu."
+msgstr[1] "Od minulého úspěšného přihlášení mezitím došlo k $0 neúspěšným pokusům."
+msgstr[2] "Od minulého úspěšného přihlášení mezitím došlo k $0 neúspěšným pokusům."
 
 #: pkg/shell/index.html:433
 msgid "There was an unexpected error while connecting to the machine."
