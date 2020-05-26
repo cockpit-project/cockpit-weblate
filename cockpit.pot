@@ -28,7 +28,7 @@ msgstr ""
 "#-#-#-#-#  cockpit.c.pot (PACKAGE VERSION)  #-#-#-#-#\n"
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-19 15:14+0000\n"
+"POT-Creation-Date: 2020-05-26 19:44+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,7 +45,7 @@ msgstr ""
 "#-#-#-#-#  cockpit.js.pot (PACKAGE VERSION)  #-#-#-#-#\n"
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-19 15:14+0000\n"
+"POT-Creation-Date: 2020-05-26 19:44+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -63,7 +63,7 @@ msgstr ""
 "#-#-#-#-#  cockpit.appstream.pot (PACKAGE VERSION)  #-#-#-#-#\n"
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-19 15:14+0000\n"
+"POT-Creation-Date: 2020-05-26 19:44+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -74,7 +74,7 @@ msgstr ""
 "#-#-#-#-#  cockpit.polkit.pot (PACKAGE VERSION)  #-#-#-#-#\n"
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-19 15:14+0000\n"
+"POT-Creation-Date: 2020-05-26 19:44+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -181,7 +181,7 @@ msgid_plural "$0 disks are missing"
 msgstr[0] ""
 msgstr[1] ""
 
-#: pkg/shell/indexes.js:616
+#: pkg/shell/indexes.js:388
 msgid "$0 documentation"
 msgstr ""
 
@@ -651,7 +651,7 @@ msgstr ""
 msgid "ARP Ping"
 msgstr ""
 
-#: pkg/shell/index.html:79 pkg/shell/indexes.js:630
+#: pkg/shell/index.html:149 pkg/shell/indexes.js:402
 msgid "About Web Console"
 msgstr ""
 
@@ -667,10 +667,6 @@ msgstr ""
 
 #: pkg/users/index.html:251
 msgid "Account Expiration"
-msgstr ""
-
-#: pkg/shell/index.html:60
-msgid "Account Settings"
 msgstr ""
 
 #: pkg/users/index.html:63
@@ -705,7 +701,7 @@ msgstr ""
 msgid "Active Backup"
 msgstr ""
 
-#: pkg/shell/index.html:57 pkg/shell/active-pages.js:95
+#: pkg/shell/index.html:77 pkg/shell/active-pages.js:95
 msgid "Active Pages"
 msgstr ""
 
@@ -725,7 +721,7 @@ msgstr ""
 msgid "Adaptive transmit load balancing"
 msgstr ""
 
-#: pkg/lib/machine-add.html:36 pkg/shell/index.html:180
+#: pkg/lib/machine-add.html:36 pkg/shell/index.html:250
 #: pkg/machines/components/diskAdd.jsx:548
 #: pkg/machines/components/nicAdd.jsx:203 pkg/storaged/crypto-keyslots.jsx:235
 #: pkg/storaged/iscsi-panel.jsx:137 pkg/storaged/iscsi-panel.jsx:161
@@ -759,10 +755,6 @@ msgstr ""
 msgid "Add Key"
 msgstr ""
 
-#: pkg/lib/machine-add.html:4
-msgid "Add Machine to Dashboard"
-msgstr ""
-
 #: pkg/machines/components/vmnetworktab.jsx:282
 msgid "Add Network Interface"
 msgstr ""
@@ -793,6 +785,10 @@ msgstr ""
 msgid "Add Zone"
 msgstr ""
 
+#: pkg/lib/machine-add.html:4
+msgid "Add a New Host"
+msgstr ""
+
 #: pkg/networkmanager/firewall.jsx:892
 msgid "Add a new zone"
 msgstr ""
@@ -801,8 +797,12 @@ msgstr ""
 msgid "Add iSCSI Portal"
 msgstr ""
 
-#: pkg/shell/index.html:172 pkg/users/index.html:419
+#: pkg/shell/index.html:242 pkg/users/index.html:419
 msgid "Add key"
+msgstr ""
+
+#: pkg/shell/hosts.jsx:243
+msgid "Add new host"
 msgstr ""
 
 #: pkg/networkmanager/firewall.jsx:488
@@ -1029,6 +1029,10 @@ msgstr ""
 
 #: pkg/packagekit/updates.jsx:57
 msgid "Applying updates failed"
+msgstr ""
+
+#: pkg/shell/indexes.js:319
+msgid "Apps"
 msgstr ""
 
 #: pkg/storaged/drive-details.jsx:51
@@ -1359,14 +1363,14 @@ msgstr ""
 #: pkg/docker/index.html:683 pkg/docker/index.html:723
 #: pkg/docker/index.html:754 pkg/lib/machine-add.html:37
 #: pkg/lib/machine-change-auth.html:92 pkg/lib/machine-change-port.html:41
-#: pkg/lib/machine-sync-users.html:77 pkg/networkmanager/index.html:499
-#: pkg/networkmanager/index.html:527 pkg/networkmanager/index.html:554
-#: pkg/networkmanager/index.html:581 pkg/networkmanager/index.html:608
-#: pkg/networkmanager/index.html:635 pkg/networkmanager/index.html:662
-#: pkg/networkmanager/index.html:689 pkg/networkmanager/index.html:716
-#: pkg/playground/translate.html:39 pkg/shell/index.html:120
-#: pkg/systemd/index.html:123 pkg/systemd/index.html:207
-#: pkg/systemd/index.html:261
+#: pkg/lib/machine-sync-users.html:77 pkg/lib/machine-unknown-hostkey.html:23
+#: pkg/networkmanager/index.html:499 pkg/networkmanager/index.html:527
+#: pkg/networkmanager/index.html:554 pkg/networkmanager/index.html:581
+#: pkg/networkmanager/index.html:608 pkg/networkmanager/index.html:635
+#: pkg/networkmanager/index.html:662 pkg/networkmanager/index.html:689
+#: pkg/networkmanager/index.html:716 pkg/playground/translate.html:39
+#: pkg/shell/index.html:138 pkg/shell/index.html:190 pkg/systemd/index.html:123
+#: pkg/systemd/index.html:207 pkg/systemd/index.html:261
 #: pkg/systemd/overview-cards/realmd-operation.html:82
 #: pkg/systemd/services.html:283 pkg/users/index.html:201
 #: pkg/users/index.html:240 pkg/users/index.html:279 pkg/users/index.html:318
@@ -1400,7 +1404,7 @@ msgstr ""
 msgid "Cannot be enabled"
 msgstr ""
 
-#: pkg/shell/indexes.js:717
+#: pkg/shell/indexes.js:461
 msgid "Cannot connect to an unknown machine"
 msgstr ""
 
@@ -1444,7 +1448,7 @@ msgstr ""
 msgid "Change Host Name"
 msgstr ""
 
-#: pkg/shell/index.html:322
+#: pkg/shell/index.html:392
 msgid "Change Password"
 msgstr ""
 
@@ -1534,7 +1538,7 @@ msgstr ""
 msgid "Choose an operating system"
 msgstr ""
 
-#: pkg/shell/index.html:114
+#: pkg/shell/index.html:184
 msgid "Choose the language to be used in the application"
 msgstr ""
 
@@ -1554,7 +1558,7 @@ msgstr ""
 msgid "Clear 'Failed to start'"
 msgstr ""
 
-#: pkg/shell/indexes.js:511
+#: pkg/shell/nav.jsx:126
 msgid "Clear Search"
 msgstr ""
 
@@ -1577,10 +1581,9 @@ msgstr ""
 
 #: pkg/docker/index.html:703 pkg/lib/machine-auth-failed.html:20
 #: pkg/lib/machine-change-port.html:45 pkg/lib/machine-invalid-hostkey.html:12
-#: pkg/lib/machine-not-supported.html:8 pkg/lib/machine-unknown-hostkey.html:19
-#: pkg/networkmanager/index.html:735 pkg/shell/index.html:93
-#: pkg/shell/index.html:152 pkg/shell/index.html:334 pkg/systemd/index.html:164
-#: pkg/users/index.html:45 pkg/apps/utils.jsx:104
+#: pkg/lib/machine-not-supported.html:8 pkg/networkmanager/index.html:735
+#: pkg/shell/index.html:163 pkg/shell/index.html:222 pkg/shell/index.html:404
+#: pkg/systemd/index.html:164 pkg/users/index.html:45 pkg/apps/utils.jsx:104
 #: pkg/lib/cockpit-components-modifications.jsx:103 pkg/shell/superuser.jsx:83
 #: pkg/sosreport/index.js:44 pkg/sosreport/index.js:126
 #: pkg/storaged/dialog.jsx:400
@@ -1609,7 +1612,7 @@ msgstr ""
 msgid "Cockpit could not contact the given host."
 msgstr ""
 
-#: pkg/shell/base_index.js:838
+#: pkg/shell/base_index.js:830
 msgid ""
 "Cockpit had an unexpected internal error. <br/><br/>You can try restarting "
 "Cockpit by pressing refresh in your browser. The javascript console contains "
@@ -1625,7 +1628,7 @@ msgid ""
 "journal interface."
 msgstr ""
 
-#: pkg/shell/index.html:82
+#: pkg/shell/index.html:152
 msgid "Cockpit is an interactive Linux server admin interface."
 msgstr ""
 
@@ -1681,6 +1684,7 @@ msgid ""
 msgstr ""
 
 #: pkg/dashboard/index.html:169 pkg/lib/machine-add.html:27
+#: pkg/shell/index.html:128
 msgid "Color"
 msgstr ""
 
@@ -1713,7 +1717,7 @@ msgstr ""
 msgid "Command:"
 msgstr ""
 
-#: pkg/shell/index.html:268
+#: pkg/shell/index.html:338
 msgid "Comment"
 msgstr ""
 
@@ -1763,7 +1767,7 @@ msgstr ""
 msgid "Condition failed"
 msgstr ""
 
-#: pkg/systemd/overview-cards/configurationCard.jsx:361
+#: pkg/systemd/overview-cards/configurationCard.jsx:371
 msgid "Configuration"
 msgstr ""
 
@@ -1787,7 +1791,7 @@ msgstr ""
 msgid "Configuring system settings"
 msgstr ""
 
-#: pkg/shell/index.html:306 pkg/users/index.html:178
+#: pkg/shell/index.html:376 pkg/users/index.html:178
 #: pkg/storaged/format-dialog.jsx:221
 msgid "Confirm"
 msgstr ""
@@ -1816,7 +1820,7 @@ msgstr ""
 msgid "Conflicts"
 msgstr ""
 
-#: pkg/lib/machine-unknown-hostkey.html:22
+#: pkg/lib/machine-unknown-hostkey.html:20
 #: pkg/machines/components/serialConsole.jsx:85
 msgid "Connect"
 msgstr ""
@@ -1854,7 +1858,7 @@ msgstr ""
 msgid "Connecting to Virtualization Service"
 msgstr ""
 
-#: pkg/shell/indexes.js:712
+#: pkg/shell/indexes.js:456
 msgid "Connecting to the machine"
 msgstr ""
 
@@ -1866,11 +1870,11 @@ msgstr ""
 msgid "Connection"
 msgstr ""
 
-#: pkg/dashboard/list.js:414
+#: pkg/dashboard/list.js:414 pkg/shell/hosts.jsx:209
 msgid "Connection Error"
 msgstr ""
 
-#: pkg/shell/index.html:410
+#: pkg/shell/index.html:431
 msgid "Connection failed"
 msgstr ""
 
@@ -1933,15 +1937,15 @@ msgctxt "page-title"
 msgid "Containers"
 msgstr ""
 
-#: pkg/shell/indexes.js:411
-msgid "Contains"
+#: pkg/shell/nav.jsx:198
+msgid "Contains:"
 msgstr ""
 
 #: pkg/storaged/content-views.jsx:632
 msgid "Content"
 msgstr ""
 
-#: pkg/shell/index.html:136
+#: pkg/shell/index.html:206
 msgid "Continue Session"
 msgstr ""
 
@@ -1984,7 +1988,7 @@ msgstr ""
 msgid "Couldn't change user password"
 msgstr ""
 
-#: pkg/shell/indexes.js:715
+#: pkg/shell/indexes.js:459
 msgid "Couldn't connect to the machine"
 msgstr ""
 
@@ -2419,7 +2423,7 @@ msgstr ""
 msgid "Detachable"
 msgstr ""
 
-#: pkg/shell/index.html:233 pkg/docker/containers-view.jsx:343
+#: pkg/shell/index.html:303 pkg/docker/containers-view.jsx:343
 #: pkg/docker/containers-view.jsx:437 pkg/docker/containers-view.jsx:537
 #: pkg/packagekit/updates.jsx:397
 msgid "Details"
@@ -2501,7 +2505,7 @@ msgstr ""
 msgid "Disconnect"
 msgstr ""
 
-#: pkg/shell/indexes.js:248 pkg/shell/indexes.js:905
+#: pkg/shell/indexes.js:165
 msgid "Disconnected"
 msgstr ""
 
@@ -2552,7 +2556,7 @@ msgstr ""
 msgid "Dismiss"
 msgstr ""
 
-#: pkg/shell/index.html:53 pkg/shell/index.html:111
+#: pkg/shell/index.html:73 pkg/shell/index.html:181
 msgid "Display Language"
 msgstr ""
 
@@ -2577,7 +2581,7 @@ msgid "Does not automatically start"
 msgstr ""
 
 #: pkg/systemd/overview-cards/realmd-operation.html:11
-#: pkg/systemd/overview-cards/configurationCard.jsx:384
+#: pkg/systemd/overview-cards/configurationCard.jsx:394
 #: pkg/systemd/overview-cards/realmd-operation.js:124
 msgid "Domain"
 msgstr ""
@@ -2668,9 +2672,13 @@ msgid "Duplicate port"
 msgstr ""
 
 #: pkg/machines/components/diskEdit.jsx:250
-#: pkg/machines/components/vmnetworktab.jsx:224 pkg/storaged/crypto-tab.jsx:129
-#: pkg/storaged/nfs-details.jsx:305
+#: pkg/machines/components/vmnetworktab.jsx:224 pkg/shell/indexes.js:331
+#: pkg/storaged/crypto-tab.jsx:129 pkg/storaged/nfs-details.jsx:305
 msgid "Edit"
+msgstr ""
+
+#: pkg/shell/index.html:102
+msgid "Edit Host"
 msgstr ""
 
 #: pkg/dashboard/index.html:142
@@ -2679,6 +2687,10 @@ msgstr ""
 
 #: pkg/storaged/crypto-keyslots.jsx:276
 msgid "Edit Tang keyserver"
+msgstr ""
+
+#: pkg/shell/hosts.jsx:242
+msgid "Edit hosts"
 msgstr ""
 
 #: pkg/storaged/crypto-keyslots.jsx:548
@@ -2717,7 +2729,7 @@ msgstr ""
 msgid "Enable Service"
 msgstr ""
 
-#: pkg/systemd/overview-cards/configurationCard.jsx:418
+#: pkg/systemd/overview-cards/configurationCard.jsx:428
 msgid "Enable stored metrics"
 msgstr ""
 
@@ -3035,7 +3047,7 @@ msgstr ""
 msgid "Filter by name or description"
 msgstr ""
 
-#: pkg/lib/machine-unknown-hostkey.html:10 pkg/shell/index.html:276
+#: pkg/lib/machine-unknown-hostkey.html:10 pkg/shell/index.html:346
 msgid "Fingerprint"
 msgstr ""
 
@@ -3247,7 +3259,7 @@ msgstr ""
 msgid "Hello time $hello_time"
 msgstr ""
 
-#: pkg/shell/index.html:40
+#: pkg/shell/index.html:58
 msgid "Help"
 msgstr ""
 
@@ -3262,7 +3274,7 @@ msgstr ""
 #: pkg/machines/components/storagePools/createStoragePoolDialog.jsx:138
 #: pkg/machines/components/storagePools/storagePoolOverviewTab.jsx:35
 #: pkg/machines/components/vm/bootOrderModal.jsx:97
-#: pkg/machines/components/vmDiskColumns.jsx:47 pkg/shell/indexes.js:581
+#: pkg/machines/components/vmDiskColumns.jsx:47 pkg/shell/hosts.jsx:229
 msgid "Host"
 msgstr ""
 
@@ -3270,7 +3282,7 @@ msgstr ""
 msgid "Host Device"
 msgstr ""
 
-#: pkg/dashboard/index.html:149
+#: pkg/dashboard/index.html:149 pkg/shell/index.html:108
 #: pkg/machines/components/storagePools/createStoragePoolDialog.jsx:143
 msgid "Host Name"
 msgstr ""
@@ -3287,8 +3299,12 @@ msgstr ""
 msgid "Host should not be empty"
 msgstr ""
 
-#: pkg/systemd/overview-cards/configurationCard.jsx:366
+#: pkg/systemd/overview-cards/configurationCard.jsx:376
 msgid "Hostname"
+msgstr ""
+
+#: pkg/shell/hosts.jsx:198
+msgid "Hosts"
 msgstr ""
 
 #: pkg/systemd/services.html:259
@@ -3636,12 +3652,12 @@ msgstr ""
 msgid "Invalid address $0"
 msgstr ""
 
-#: pkg/systemd/overview-cards/configurationCard.jsx:945
+#: pkg/systemd/overview-cards/configurationCard.jsx:955
 #: pkg/systemd/shutdown.js:154
 msgid "Invalid date format"
 msgstr ""
 
-#: pkg/systemd/overview-cards/configurationCard.jsx:941
+#: pkg/systemd/overview-cards/configurationCard.jsx:951
 #: pkg/systemd/shutdown.js:150
 msgid "Invalid date format and invalid time format"
 msgstr ""
@@ -3698,7 +3714,7 @@ msgstr ""
 msgid "Invalid range"
 msgstr ""
 
-#: pkg/systemd/overview-cards/configurationCard.jsx:943
+#: pkg/systemd/overview-cards/configurationCard.jsx:953
 #: pkg/systemd/shutdown.js:152
 msgid "Invalid time format"
 msgstr ""
@@ -3861,7 +3877,7 @@ msgstr ""
 msgid "Leave Domain"
 msgstr ""
 
-#: pkg/dashboard/index.html:161
+#: pkg/dashboard/index.html:161 pkg/shell/index.html:120
 msgid ""
 "Leave blank to connect to this machine as the currently logged in user. If "
 "you enter a different username, that user will always be used when "
@@ -3894,7 +3910,7 @@ msgstr ""
 msgid "Libvirt or hypervisor does not support UEFI"
 msgstr ""
 
-#: pkg/shell/index.html:87
+#: pkg/shell/index.html:157
 msgid "Licensed under:"
 msgstr ""
 
@@ -4022,7 +4038,7 @@ msgstr ""
 msgid "Log In"
 msgstr ""
 
-#: pkg/shell/index.html:67
+#: pkg/shell/index.html:84
 msgid "Log Out"
 msgstr ""
 
@@ -4134,10 +4150,6 @@ msgstr ""
 
 #: pkg/machines/components/diskEdit.jsx:81
 msgid "Machine must be shut off before changing bus type"
-msgstr ""
-
-#: pkg/shell/indexes.js:545
-msgid "Machines"
 msgstr ""
 
 #: pkg/lib/machine-info.js:83
@@ -4309,7 +4321,7 @@ msgstr ""
 msgid "Message to logged in users"
 msgstr ""
 
-#: pkg/shell/index.html:413
+#: pkg/shell/index.html:434
 msgid "Messages related to the failure might be found in the journal:"
 msgstr ""
 
@@ -4507,7 +4519,7 @@ msgstr ""
 msgid "NSNA Ping"
 msgstr ""
 
-#: pkg/systemd/overview-cards/configurationCard.jsx:1014
+#: pkg/systemd/overview-cards/configurationCard.jsx:1024
 msgid "NTP Server"
 msgstr ""
 
@@ -4582,7 +4594,7 @@ msgstr ""
 msgid "Name: "
 msgstr ""
 
-#: pkg/systemd/overview-cards/configurationCard.jsx:841
+#: pkg/systemd/overview-cards/configurationCard.jsx:851
 msgid "Need at least one NTP server"
 msgstr ""
 
@@ -4685,7 +4697,7 @@ msgstr ""
 msgid "New NFS Mount"
 msgstr ""
 
-#: pkg/shell/index.html:297 pkg/users/index.html:220
+#: pkg/shell/index.html:367 pkg/users/index.html:220
 msgid "New Password"
 msgstr ""
 
@@ -4914,7 +4926,7 @@ msgstr ""
 msgid "No results for $0"
 msgstr ""
 
-#: pkg/shell/indexes.js:530
+#: pkg/shell/nav.jsx:125
 msgid "No results found"
 msgstr ""
 
@@ -5033,7 +5045,7 @@ msgstr ""
 msgid "Not found"
 msgstr ""
 
-#: pkg/systemd/overview-cards/configurationCard.jsx:355
+#: pkg/systemd/overview-cards/configurationCard.jsx:365
 msgid "Not joined"
 msgstr ""
 
@@ -5079,7 +5091,7 @@ msgstr ""
 msgid "Ok"
 msgstr ""
 
-#: pkg/shell/index.html:288 pkg/users/index.html:217
+#: pkg/shell/index.html:358 pkg/users/index.html:217
 msgid "Old Password"
 msgstr ""
 
@@ -5138,7 +5150,7 @@ msgstr ""
 msgid "Only editable when the guest is shut off"
 msgstr ""
 
-#: pkg/shell/index.html:35
+#: pkg/shell/index.html:53
 msgid "Ooops!"
 msgstr ""
 
@@ -5205,7 +5217,7 @@ msgstr ""
 msgid "PCI"
 msgstr ""
 
-#: pkg/systemd/overview-cards/configurationCard.jsx:415
+#: pkg/systemd/overview-cards/configurationCard.jsx:425
 msgid "PCP"
 msgstr ""
 
@@ -5278,8 +5290,8 @@ msgid "Passphrases do not match"
 msgstr ""
 
 #: pkg/lib/machine-auth-failed.html:8 pkg/lib/machine-change-auth.html:52
-#: pkg/lib/machine-sync-users.html:63 pkg/shell/index.html:206
-#: pkg/shell/index.html:235 pkg/shell/index.html:250 pkg/users/index.html:118
+#: pkg/lib/machine-sync-users.html:63 pkg/shell/index.html:276
+#: pkg/shell/index.html:305 pkg/shell/index.html:320 pkg/users/index.html:118
 #: pkg/users/index.html:175 src/ws/login.html:55 pkg/shell/superuser.jsx:44
 #: pkg/storaged/iscsi-panel.jsx:47 pkg/storaged/iscsi-panel.jsx:157
 msgid "Password"
@@ -5366,7 +5378,7 @@ msgstr ""
 msgid "Pause"
 msgstr ""
 
-#: pkg/systemd/overview-cards/configurationCard.jsx:389
+#: pkg/systemd/overview-cards/configurationCard.jsx:399
 msgid "Performance profile"
 msgstr ""
 
@@ -5641,7 +5653,7 @@ msgstr ""
 msgid "Profile"
 msgstr ""
 
-#: pkg/shell/index.html:83
+#: pkg/shell/index.html:153
 msgid "Project website"
 msgstr ""
 
@@ -5667,7 +5679,7 @@ msgstr ""
 msgid "Protocol"
 msgstr ""
 
-#: pkg/lib/machine-auth-failed.html:9 pkg/shell/index.html:234
+#: pkg/lib/machine-auth-failed.html:9 pkg/shell/index.html:304
 msgid "Public Key"
 msgstr ""
 
@@ -5815,13 +5827,13 @@ msgstr ""
 msgid "Real Host Name"
 msgstr ""
 
-#: pkg/systemd/overview-cards/configurationCard.jsx:512
+#: pkg/systemd/overview-cards/configurationCard.jsx:522
 msgid ""
 "Real host name can only contain lower-case characters, digits, dashes, and "
 "periods (with populated subdomains)"
 msgstr ""
 
-#: pkg/systemd/overview-cards/configurationCard.jsx:513
+#: pkg/systemd/overview-cards/configurationCard.jsx:523
 msgid "Real host name must be 64 characters or less"
 msgstr ""
 
@@ -5843,7 +5855,7 @@ msgstr ""
 msgid "Recommended default"
 msgstr ""
 
-#: pkg/shell/index.html:396
+#: pkg/shell/index.html:420
 msgid "Reconnect"
 msgstr ""
 
@@ -6254,7 +6266,7 @@ msgstr ""
 msgid "SPICE TLS Port:"
 msgstr ""
 
-#: pkg/shell/index.html:63 pkg/shell/index.html:162
+#: pkg/shell/index.html:80 pkg/shell/index.html:232
 msgid "SSH Keys"
 msgstr ""
 
@@ -6274,7 +6286,7 @@ msgstr ""
 msgid "STP Priority"
 msgstr ""
 
-#: pkg/shell/index.html:417
+#: pkg/shell/index.html:438
 msgid ""
 "Safari users need to import and trust the certificate of the self-signing CA:"
 msgstr ""
@@ -6318,7 +6330,7 @@ msgstr ""
 msgid "Sealed-case PC"
 msgstr ""
 
-#: pkg/shell/index.html:372
+#: pkg/shell/nav.jsx:108
 msgid "Search"
 msgstr ""
 
@@ -6327,7 +6339,7 @@ msgstr ""
 msgid "Seconds"
 msgstr ""
 
-#: pkg/systemd/overview-cards/configurationCard.jsx:394
+#: pkg/systemd/overview-cards/configurationCard.jsx:404
 msgid "Secure Shell keys"
 msgstr ""
 
@@ -6339,7 +6351,7 @@ msgstr ""
 msgid "Security Updates Available"
 msgstr ""
 
-#: pkg/shell/index.html:119
+#: pkg/shell/index.html:189
 msgid "Select"
 msgstr ""
 
@@ -6451,11 +6463,12 @@ msgstr ""
 msgid "Session"
 msgstr ""
 
-#: pkg/shell/index.html:130
+#: pkg/shell/index.html:200
 msgid "Session is about to expire"
 msgstr ""
 
-#: pkg/dashboard/index.html:186 pkg/users/index.html:239
+#: pkg/dashboard/index.html:186 pkg/shell/index.html:137
+#: pkg/users/index.html:239
 msgid "Set"
 msgstr ""
 
@@ -6463,7 +6476,7 @@ msgstr ""
 msgid "Set DHCP Range"
 msgstr ""
 
-#: pkg/systemd/overview-cards/configurationCard.jsx:335
+#: pkg/systemd/overview-cards/configurationCard.jsx:345
 msgid "Set Hostname"
 msgstr ""
 
@@ -6558,7 +6571,7 @@ msgstr ""
 msgid "Show filters"
 msgstr ""
 
-#: pkg/systemd/overview-cards/configurationCard.jsx:397
+#: pkg/systemd/overview-cards/configurationCard.jsx:407
 msgid "Show fingerprints"
 msgstr ""
 
@@ -6623,6 +6636,14 @@ msgstr ""
 
 #: pkg/storaged/dialog.jsx:906
 msgid "Size must be at least $0"
+msgstr ""
+
+#: pkg/shell/index.html:19
+msgid "Skip main navigation"
+msgstr ""
+
+#: pkg/shell/index.html:18
+msgid "Skip to Content"
 msgstr ""
 
 #: pkg/systemd/hwinfo.jsx:260
@@ -6846,6 +6867,10 @@ msgstr ""
 msgid "Stop and remove"
 msgstr ""
 
+#: pkg/shell/hosts.jsx:242
+msgid "Stop editing hosts"
+msgstr ""
+
 #: pkg/docker/util.js:232
 msgid "Stopped"
 msgstr ""
@@ -6915,7 +6940,7 @@ msgstr ""
 msgid "Storage size must not be 0"
 msgstr ""
 
-#: pkg/systemd/overview-cards/configurationCard.jsx:403
+#: pkg/systemd/overview-cards/configurationCard.jsx:413
 msgid "Store metrics"
 msgstr ""
 
@@ -6999,6 +7024,7 @@ msgid "Synchronize"
 msgstr ""
 
 #: pkg/dashboard/index.html:188 pkg/lib/machine-sync-users.html:4
+#: pkg/shell/index.html:139
 msgid "Synchronize users"
 msgstr ""
 
@@ -7014,8 +7040,9 @@ msgstr ""
 msgid "Synchronizing RAID Device $target"
 msgstr ""
 
+#: pkg/shell/index.html:24
 #: pkg/machines/components/machinesConnectionSelector.jsx:43
-#: pkg/machines/helpers.js:188
+#: pkg/machines/helpers.js:188 pkg/shell/indexes.js:322
 msgid "System"
 msgstr ""
 
@@ -7039,7 +7066,7 @@ msgstr ""
 msgid "System is up to date"
 msgstr ""
 
-#: pkg/systemd/overview-cards/configurationCard.jsx:374
+#: pkg/systemd/overview-cards/configurationCard.jsx:384
 msgid "System time"
 msgstr ""
 
@@ -7325,7 +7352,7 @@ msgstr ""
 msgid "The logged in user is not permitted to view system modifications"
 msgstr ""
 
-#: pkg/shell/indexes.js:709
+#: pkg/shell/indexes.js:453
 msgid "The machine is restarting"
 msgstr ""
 
@@ -7422,7 +7449,7 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: pkg/shell/index.html:412
+#: pkg/shell/index.html:433
 msgid "There was an unexpected error while connecting to the machine."
 msgstr ""
 
@@ -7618,7 +7645,7 @@ msgstr ""
 msgid "Timers"
 msgstr ""
 
-#: pkg/shell/index.html:315
+#: pkg/shell/index.html:385
 msgid ""
 "Tip: Make your key password match your login password to automatically "
 "authenticate against other systems."
@@ -7636,8 +7663,16 @@ msgid ""
 "version."
 msgstr ""
 
+#: pkg/shell/index.html:66
+msgid "Toggle session settings"
+msgstr ""
+
 #: src/base1/cockpit.js:4067
 msgid "Too much data"
+msgstr ""
+
+#: pkg/shell/indexes.js:325
+msgid "Tools"
 msgstr ""
 
 #: pkg/lib/cockpit-components-install-dialog.jsx:98
@@ -7661,7 +7696,7 @@ msgstr ""
 msgid "Triggers"
 msgstr ""
 
-#: pkg/shell/index.html:397 pkg/machines/components/libvirtSlate.jsx:101
+#: pkg/shell/index.html:421 pkg/machines/components/libvirtSlate.jsx:101
 msgid "Troubleshoot"
 msgstr ""
 
@@ -7713,7 +7748,7 @@ msgstr ""
 msgid "Turn on administrative access"
 msgstr ""
 
-#: pkg/shell/index.html:272
+#: pkg/shell/index.html:342
 #: pkg/machines/components/storagePools/createStoragePoolDialog.jsx:86
 #: pkg/machines/components/storagePools/storagePoolOverviewTab.jsx:74
 #: pkg/machines/components/vm/bootOrderModal.jsx:108
@@ -7816,7 +7851,7 @@ msgid "Unavailable"
 msgstr ""
 
 #: pkg/docker/index.html:697 pkg/networkmanager/index.html:728
-#: pkg/shell/base_index.js:837 pkg/users/local.js:1533
+#: pkg/shell/base_index.js:829 pkg/users/local.js:1533
 msgid "Unexpected error"
 msgstr ""
 
@@ -7886,7 +7921,7 @@ msgstr ""
 msgid "Unlock"
 msgstr ""
 
-#: pkg/shell/index.html:216 pkg/shell/index.html:260
+#: pkg/shell/index.html:286 pkg/shell/index.html:330
 msgid "Unlock Key"
 msgstr ""
 
@@ -8032,7 +8067,7 @@ msgstr ""
 msgid "Use Existing"
 msgstr ""
 
-#: pkg/shell/index.html:168
+#: pkg/shell/index.html:238
 msgid "Use the following keys to authenticate against other systems"
 msgstr ""
 
@@ -8052,8 +8087,8 @@ msgid "Used by Containers"
 msgstr ""
 
 #: pkg/dashboard/index.html:156 pkg/playground/translate.html:85
-#: pkg/playground/translate.html:105 pkg/systemd/graphs.html:138
-#: pkg/systemd/graphs.js:297
+#: pkg/playground/translate.html:105 pkg/shell/index.html:115
+#: pkg/systemd/graphs.html:138 pkg/systemd/graphs.js:297
 msgid "User"
 msgstr ""
 
@@ -8211,7 +8246,7 @@ msgstr ""
 msgid "Verifying"
 msgstr ""
 
-#: pkg/shell/index.html:85 pkg/packagekit/updates.jsx:395
+#: pkg/shell/index.html:155 pkg/packagekit/updates.jsx:395
 #: pkg/systemd/hwinfo.jsx:75
 msgid "Version"
 msgstr ""
@@ -8341,7 +8376,7 @@ msgstr ""
 msgid "Warning and above"
 msgstr ""
 
-#: pkg/shell/indexes.js:618
+#: pkg/shell/indexes.js:390
 msgid "Web Console"
 msgstr ""
 
@@ -8677,7 +8712,7 @@ msgstr ""
 msgid "e.g. \"$0\""
 msgstr ""
 
-#: pkg/systemd/overview-cards/configurationCard.jsx:335
+#: pkg/systemd/overview-cards/configurationCard.jsx:345
 msgid "edit"
 msgstr ""
 
@@ -8713,7 +8748,7 @@ msgstr ""
 msgid "extension"
 msgstr ""
 
-#: pkg/systemd/overview-cards/configurationCard.jsx:261
+#: pkg/systemd/overview-cards/configurationCard.jsx:271
 msgid "failed to list ssh host keys: $0"
 msgstr ""
 
