@@ -23,8 +23,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-06-02 20:39+0000\n"
-"PO-Revision-Date: 2020-06-06 07:04+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2020-06-08 21:05+0000\n"
+"Last-Translator: Jonas Becker <jonasbecker1.jb@gmail.com>\n"
 "Language-Team: German <https://translate.fedoraproject.org/projects/cockpit/"
 "master/de/>\n"
 "Language: de\n"
@@ -6102,11 +6102,11 @@ msgstr "Passphrase entfernen in $0?"
 
 #: pkg/networkmanager/firewall.jsx:68
 msgid "Remove service $0"
-msgstr ""
+msgstr "Service $0 entfernen"
 
 #: pkg/networkmanager/firewall.jsx:139 pkg/networkmanager/firewall.jsx:793
 msgid "Remove zone $0"
-msgstr ""
+msgstr "Zone $0 entfernen"
 
 #: pkg/apps/application-list.jsx:53 pkg/apps/application.jsx:60
 msgid "Removing"
@@ -6138,10 +6138,13 @@ msgid ""
 "unreachable. Make sure that this zone does not apply to your current web "
 "console connection."
 msgstr ""
+"Das entfernen des Cockpit-Services kann die Web Konsole nicht mehr "
+"erreichbar machen. Stelen sie sicher, dass die Zone keine Auswirkungen auf "
+"ihre aktuelle Web Konsolen Verbindung hat."
 
 #: pkg/networkmanager/firewall.jsx:791
 msgid "Removing the zone will remove all services within it."
-msgstr ""
+msgstr "Das entfernen der Zone wird alle Service in ihr entfernen."
 
 #: pkg/storaged/lvol-tabs.jsx:39 pkg/storaged/vgroup-details.jsx:164
 #: pkg/storaged/vgroup-details.jsx:213
@@ -6195,19 +6198,19 @@ msgstr "Melden"
 
 #: pkg/systemd/reporting.jsx:153
 msgid "Report to ABRT Analytics"
-msgstr ""
+msgstr "Zu ABRT Analytics senden"
 
 #: pkg/systemd/reporting.jsx:410
 msgid "Reported; no links available"
-msgstr ""
+msgstr "Gemeldet; keine Links verfügbar"
 
 #: pkg/systemd/reporting.jsx:306
 msgid "Reporting failed"
-msgstr ""
+msgstr "Meldung fehlgeschlagen"
 
 #: pkg/systemd/reporting.jsx:206
 msgid "Reporting was canceled"
-msgstr ""
+msgstr "Meldung wurde abgebrochen"
 
 #: pkg/systemd/reporting.jsx:408
 msgid "Reports:"
@@ -6270,6 +6273,8 @@ msgid ""
 "Resizing an encrypted filesystem requires unlocking the disk. Please provide "
 "a current disk passphrase."
 msgstr ""
+"Die Größenänderung eines verschlüsselten Dateisystems benötigt das "
+"entsperren der Festplatte. Bitte geben sie das Passwort ein."
 
 #: pkg/docker/index.html:132 pkg/docker/containers-view.jsx:320
 #: pkg/machines/components/vm/vmActions.jsx:44 pkg/systemd/overview.jsx:208
@@ -6299,30 +6304,25 @@ msgid "Restarting"
 msgstr "Neustart"
 
 #: pkg/networkmanager/index.html:39
-#, fuzzy
 msgid "Restoring connection"
 msgstr "Erneut verbinden"
 
 #: pkg/machines/components/vm/vmActions.jsx:85 pkg/systemd/logs.js:411
 #: pkg/systemd/logs.js:1051
 msgid "Resume"
-msgstr ""
+msgstr "Fortfahren"
 
 #: pkg/docker/index.html:517
 msgid "Retries:"
 msgstr "Wiederholungen:"
 
 #: src/ws/login.html:59
-#, fuzzy
-#| msgid "Reuse my password for privileged tasks"
 msgid "Reuse my password for remote connections"
-msgstr "Mein Passwort für Administrator-Aufgaben verwenden"
+msgstr "Mein Passwort für Remote-Verbindungen verwenden"
 
 #: pkg/systemd/manifest.json.in
-#, fuzzy
-#| msgid "Networking Logs"
 msgid "Reviewing logs"
-msgstr "Netzwerk-Logs"
+msgstr "Bewerte Logs"
 
 #: pkg/users/index.html:94
 msgid "Roles"
@@ -6340,7 +6340,7 @@ msgstr "Round Robin"
 
 #: pkg/machines/components/create-vm-dialog/pxe-helpers.js:98
 msgid "Route to $0"
-msgstr ""
+msgstr "Route zu $0"
 
 #: pkg/machines/components/create-vm-dialog/pxe-helpers.js:100
 msgid "Routed Network"
@@ -6360,8 +6360,9 @@ msgid "Run Image"
 msgstr "Bild ausführen"
 
 #: pkg/machines/components/create-vm-dialog/createVmDialog.jsx:402
+#, fuzzy
 msgid "Run unattended installation"
-msgstr ""
+msgstr "Installation im Hintergrund ausführen"
 
 #: pkg/machines/components/networks/networkOverviewTab.jsx:93
 #: pkg/machines/components/vmOverviewTabLibvirt.jsx:167
@@ -6427,10 +6428,8 @@ msgid "SPICE TLS Port:"
 msgstr "SPICE TLS-Port:"
 
 #: pkg/shell/index.html:80 pkg/shell/index.html:232
-#, fuzzy
-#| msgid "Keys"
 msgid "SSH Keys"
-msgstr "Schlüssel"
+msgstr "SSH Schlüssel"
 
 #: pkg/networkmanager/index.html:242
 msgid "STP Forward delay"
@@ -6451,7 +6450,7 @@ msgstr "STP Priorität"
 #: pkg/shell/index.html:438
 msgid ""
 "Safari users need to import and trust the certificate of the self-signing CA:"
-msgstr ""
+msgstr "Safari Benutzer müssen die selbst  signierten Zertifikate  importieren:"
 
 #: pkg/systemd/services.html:59
 msgid "Saturday"
@@ -8009,7 +8008,7 @@ msgstr "Dienstag"
 
 #: pkg/packagekit/autoupdates.jsx:316
 msgid "Tuesdays"
-msgstr "Dienstag"
+msgstr "Dienstags"
 
 #: pkg/tuned/dialog.js:255
 msgid "Tuned has failed to start"
@@ -8028,10 +8027,8 @@ msgid "Tuned is off"
 msgstr "Tuned ist ausgeschaltet"
 
 #: pkg/systemd/superuser-alert.jsx:44
-#, fuzzy
-#| msgid "Requires administration access to edit"
 msgid "Turn on administrative access"
-msgstr "Benötigt Administrator-Zugriff zum bearbeiten"
+msgstr "Administrator-Zugriff aktivieren"
 
 #: pkg/shell/index.html:342
 #: pkg/machines/components/storagePools/createStoragePoolDialog.jsx:86
@@ -8051,17 +8048,15 @@ msgstr "Typ"
 
 #: pkg/machines/components/vm/bootOrderModal.jsx:145
 msgid "Type ID"
-msgstr ""
+msgstr "Typ ID"
 
 #: pkg/lib/machine-change-auth.html:42
 msgid "Type a password"
 msgstr "Geben Sie ein Passwort ein"
 
 #: pkg/systemd/logs.html:71
-#, fuzzy
-#| msgid "Type to filter…"
 msgid "Type to filter"
-msgstr "Zum Filtern tippen..."
+msgstr "Zum Filtern tippen"
 
 #: pkg/docker/containers-view.jsx:119
 msgid "Type to filter…"
@@ -8186,10 +8181,8 @@ msgid "Unknown configuration"
 msgstr "Unbekannte Konfiguration"
 
 #: pkg/machines/components/vmOverviewTabLibvirt.jsx:203
-#, fuzzy
-#| msgid "unknown target"
 msgid "Unknown firmware"
-msgstr "Unbekanntes Ziel"
+msgstr "Unbekannte Firmware"
 
 #: pkg/storaged/iscsi-panel.jsx:84
 msgid "Unknown host name"
@@ -8197,7 +8190,7 @@ msgstr "Unbekannter Host-Name"
 
 #: pkg/networkmanager/firewall.jsx:361
 msgid "Unknown service name"
-msgstr ""
+msgstr "Unbekannten Servicename"
 
 #: pkg/storaged/crypto-keyslots.jsx:575
 msgid "Unknown type"
@@ -8304,10 +8297,8 @@ msgid "Update Log"
 msgstr "Aktualisierungsprotokoll"
 
 #: pkg/apps/application-list.jsx:129
-#, fuzzy
-#| msgid "Package information"
 msgid "Update package information"
-msgstr "Paket informationen"
+msgstr "Paket Informationen updaten"
 
 #: pkg/packagekit/updates.jsx:72
 msgid "Updated"
@@ -8329,7 +8320,7 @@ msgstr "Aktualisiere"
 
 #: pkg/systemd/services/service-details.jsx:488
 msgid "Updating status..."
-msgstr ""
+msgstr "Update Status..."
 
 #: pkg/systemd/overview-cards/systemInformationCard.jsx:128
 msgid "Uptime"
@@ -8337,7 +8328,7 @@ msgstr ""
 
 #: pkg/machines/components/diskEdit.jsx:41
 msgid "Url"
-msgstr ""
+msgstr "Url"
 
 # translation auto-copied from project subscription-manager, version 1.9.X,
 # document keys
@@ -8578,14 +8569,12 @@ msgid "Virtual Machines"
 msgstr "Virtuelle Maschinen"
 
 #: pkg/machines/index.html:4
-#, fuzzy
-#| msgid "Virtual Machines"
 msgid "Virtual Machines Management"
-msgstr "Virtuelle Maschinen"
+msgstr "Verwaltung Virtueller Maschinen"
 
 #: pkg/machines/components/create-vm-dialog/pxe-helpers.js:161
 msgid "Virtual Network"
-msgstr ""
+msgstr "Virtuelles Netzwerk"
 
 #: pkg/machines/components/networks/createNetworkDialog.jsx:426
 msgid "Virtual Network failed to be created"
@@ -8651,7 +8640,7 @@ msgstr "Warten auf Details ..."
 
 #: pkg/systemd/reporting.jsx:221
 msgid "Waiting for input…"
-msgstr ""
+msgstr "Warte auf Eingabe…"
 
 #: pkg/apps/utils.jsx:64
 msgid "Waiting for other programs to finish using the package manager..."
@@ -9073,7 +9062,7 @@ msgstr "jeden Tag"
 
 #: pkg/apps/manifest.json.in
 msgid "extension"
-msgstr ""
+msgstr "Erweiterung"
 
 #: pkg/systemd/overview-cards/configurationCard.jsx:271
 msgid "failed to list ssh host keys: $0"
@@ -9093,7 +9082,7 @@ msgstr ""
 
 #: pkg/storaged/manifest.json.in
 msgid "fstab"
-msgstr ""
+msgstr "Fstab"
 
 #: pkg/systemd/manifest.json.in
 msgid "graphs"
@@ -9184,7 +9173,7 @@ msgstr ""
 
 #: pkg/kdump/manifest.json.in
 msgid "kdump"
-msgstr ""
+msgstr "kdump"
 
 #: pkg/kdump/kdump-view.jsx:497
 msgid "kdump status"
@@ -9200,14 +9189,13 @@ msgstr "Schlüsselschlitz $0"
 
 #: pkg/users/manifest.json.in
 msgid "keys"
-msgstr ""
+msgstr "Schlüssel"
 
 #: pkg/machines/manifest.json.in
 msgid "libvirt"
-msgstr ""
+msgstr "libvirt"
 
 #: pkg/kdump/kdump-view.jsx:384 pkg/kdump/kdump-view.jsx:386
-#, fuzzy
 msgid "locally in $0"
 msgstr "lokal in $0"
 
@@ -9221,19 +9209,19 @@ msgstr "Login"
 
 #: pkg/storaged/manifest.json.in
 msgid "luks"
-msgstr ""
+msgstr "luks"
 
 #: pkg/storaged/manifest.json.in
 msgid "lvm2"
-msgstr ""
+msgstr "lvm2"
 
 #: pkg/networkmanager/manifest.json.in
 msgid "mac"
-msgstr ""
+msgstr "mac"
 
 #: pkg/systemd/manifest.json.in
 msgid "machine"
-msgstr ""
+msgstr "Maschine"
 
 #: pkg/systemd/manifest.json.in
 msgid "mask"
@@ -9253,7 +9241,7 @@ msgstr ""
 
 #: pkg/storaged/manifest.json.in
 msgid "mkfs"
-msgstr ""
+msgstr "mkfs"
 
 #: pkg/storaged/manifest.json.in
 msgid "mount"
@@ -9270,7 +9258,7 @@ msgstr "Netzwerk"
 
 #: pkg/storaged/manifest.json.in
 msgid "nfs"
-msgstr ""
+msgstr "nfs"
 
 #: pkg/kdump/kdump-client.js:117
 msgid "nfs dump target isn't formated as server:path"
@@ -9300,11 +9288,11 @@ msgstr "Betriebssystem"
 
 #: pkg/systemd/manifest.json.in
 msgid "os"
-msgstr ""
+msgstr "os"
 
 #: pkg/packagekit/manifest.json.in
 msgid "package"
-msgstr ""
+msgstr "Paket"
 
 #: pkg/packagekit/manifest.json.in
 msgid "packagekit"
@@ -9316,7 +9304,7 @@ msgstr "Partition"
 
 #: pkg/users/manifest.json.in
 msgid "passwd"
-msgstr ""
+msgstr "passwd"
 
 #: pkg/users/manifest.json.in
 msgid "password"
@@ -9324,7 +9312,7 @@ msgstr "Passwort"
 
 #: pkg/systemd/manifest.json.in
 msgid "path"
-msgstr ""
+msgstr "Pfad"
 
 #: pkg/machines/helpers.js:194
 msgid "paused"
@@ -9332,11 +9320,11 @@ msgstr "pausiert"
 
 #: pkg/systemd/manifest.json.in
 msgid "pci"
-msgstr ""
+msgstr "pci"
 
 #: pkg/apps/manifest.json.in
 msgid "plugin"
-msgstr ""
+msgstr "Plugin"
 
 #: pkg/networkmanager/manifest.json.in
 msgid "port"
@@ -9348,7 +9336,7 @@ msgstr ""
 
 #: pkg/machines/manifest.json.in
 msgid "pxe"
-msgstr ""
+msgstr "pxe"
 
 #: pkg/machines/manifest.json.in
 msgid "qcow2"
@@ -9356,7 +9344,7 @@ msgstr "qcow2"
 
 #: pkg/machines/manifest.json.in
 msgid "qemu"
-msgstr ""
+msgstr "qemu"
 
 #: pkg/systemd/logs.html:79
 msgid "qualifiers"
@@ -9364,24 +9352,23 @@ msgstr ""
 
 #: pkg/storaged/manifest.json.in
 msgid "raid"
-msgstr ""
+msgstr "RAID"
 
 #: pkg/systemd/manifest.json.in
 msgid "ram"
-msgstr ""
+msgstr "Arbeitsspeicher"
 
 #: pkg/storaged/fsys-tab.jsx:379
 msgid "read only"
-msgstr ""
+msgstr "nur lesbar"
 
 #: pkg/tuned/change-profile.jsx:42
-#, fuzzy
 msgid "recommended"
-msgstr "MII (empfohlen)"
+msgstr "empfohlen"
 
 #: pkg/machines/helpers.js:206
 msgid "redirected device"
-msgstr ""
+msgstr "weitergeleitete Geräte"
 
 #: pkg/systemd/manifest.json.in
 msgid "restart"
@@ -9473,7 +9460,7 @@ msgstr ""
 
 #: pkg/systemd/manifest.json.in pkg/users/manifest.json.in
 msgid "ssh"
-msgstr ""
+msgstr "ssh"
 
 #: pkg/kdump/kdump-view.jsx:122
 msgid "ssh key"
@@ -9493,7 +9480,7 @@ msgstr "Angehalten (PM)"
 
 #: pkg/systemd/manifest.json.in
 msgid "systemctl"
-msgstr ""
+msgstr "systemctl"
 
 #: pkg/systemd/manifest.json.in
 msgid "systemd"
@@ -9517,7 +9504,7 @@ msgstr "Team"
 
 #: pkg/systemd/manifest.json.in
 msgid "time"
-msgstr ""
+msgstr "Zeit"
 
 #: pkg/systemd/manifest.json.in
 msgid "timer"
