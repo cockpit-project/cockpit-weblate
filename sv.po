@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-18 06:24+0000\n"
+"POT-Creation-Date: 2021-01-19 19:00+0000\n"
 "PO-Revision-Date: 2020-06-11 12:40+0000\n"
 "Last-Translator: Jakob Sundberg <jakob@mress.se>\n"
 "Language-Team: Swedish <https://translate.fedoraproject.org/projects/cockpit/"
@@ -147,12 +147,12 @@ msgstr "$0 filsystem kan inte storleksändras här."
 msgid "$0 free"
 msgstr "$0, $1 fritt"
 
-#: pkg/systemd/overview.jsx:99
+#: pkg/systemd/overview.jsx:98
 msgctxt "<date> from <host>"
 msgid "$0 from $1"
 msgstr "$0 från $1"
 
-#: pkg/systemd/overview.jsx:97
+#: pkg/systemd/overview.jsx:96
 msgctxt "<date> from <host> on <terminal>"
 msgid "$0 from $1 on $2"
 msgstr "$0 från $1 på $2"
@@ -245,7 +245,7 @@ msgstr[1] "$0 förekomster"
 msgid "$0 of $1"
 msgstr "$0 av $1"
 
-#: pkg/systemd/overview.jsx:101
+#: pkg/systemd/overview.jsx:100
 msgctxt "<date> on <terminal>"
 msgid "$0 on $1"
 msgstr "$0 på $1"
@@ -380,7 +380,7 @@ msgstr "1 timme"
 msgid "1 min"
 msgstr "1 min"
 
-#: pkg/systemd/index.html:33 pkg/systemd/index.html:37
+#: pkg/systemd/shutdown.jsx:166
 msgid "1 minute"
 msgstr "1 minut"
 
@@ -450,7 +450,7 @@ msgstr "1:a"
 msgid "2 MiB"
 msgstr "2 MiB"
 
-#: pkg/systemd/index.html:39
+#: pkg/systemd/shutdown.jsx:168
 msgid "20 minutes"
 msgstr "20 minuter"
 
@@ -518,7 +518,7 @@ msgstr "3:e"
 msgid "4 KiB"
 msgstr "4 KiB"
 
-#: pkg/systemd/index.html:40
+#: pkg/systemd/shutdown.jsx:169
 msgid "40 minutes"
 msgstr "40 minuter"
 
@@ -530,7 +530,7 @@ msgstr "4:e"
 msgid "5 min"
 msgstr "5 min"
 
-#: pkg/systemd/index.html:38 pkg/lib/cockpit-components-plot.jsx:272
+#: pkg/systemd/shutdown.jsx:167 pkg/lib/cockpit-components-plot.jsx:272
 msgid "5 minutes"
 msgstr "5 minuter"
 
@@ -546,7 +546,7 @@ msgstr "5:e"
 msgid "6 hours"
 msgstr "6 timmar"
 
-#: pkg/systemd/index.html:41
+#: pkg/systemd/shutdown.jsx:170
 msgid "60 minutes"
 msgstr "60 minuter"
 
@@ -724,7 +724,7 @@ msgstr "Lägg till"
 msgid "Add $0"
 msgstr "Lägg till $0"
 
-#: pkg/networkmanager/index.html:87
+#: pkg/networkmanager/index.html:86
 msgid "Add VLAN"
 msgstr " Lägg till VLAN"
 
@@ -732,11 +732,11 @@ msgstr " Lägg till VLAN"
 msgid "Add a new zone"
 msgstr "Lägg till zon"
 
-#: pkg/networkmanager/index.html:84
+#: pkg/networkmanager/index.html:83
 msgid "Add bond"
 msgstr "Lägg till bindning"
 
-#: pkg/networkmanager/index.html:86
+#: pkg/networkmanager/index.html:85
 msgid "Add bridge"
 msgstr "Lägg till brygga"
 
@@ -791,7 +791,7 @@ msgstr "Lägg till tjänster till $0 zonen"
 msgid "Add services to zone $0"
 msgstr "Lägg till tjänster till zon $0"
 
-#: pkg/networkmanager/index.html:85
+#: pkg/networkmanager/index.html:84
 msgid "Add team"
 msgstr "Lägg till team"
 
@@ -986,8 +986,10 @@ msgstr "Ansible"
 msgid "Ansible roles documentation"
 msgstr "Dokumentation för Ansibleroller"
 
-#: pkg/systemd/terminal.jsx:94
-msgid "Appearance:"
+#: pkg/systemd/terminal.jsx:100
+#, fuzzy
+#| msgid "Appearance:"
+msgid "Appearance"
 msgstr "Utseende:"
 
 #: pkg/apps/index.html:23 pkg/apps/application-list.jsx:169
@@ -1000,7 +1002,7 @@ msgstr "Program"
 msgid "Applications list"
 msgstr "Program"
 
-#: pkg/networkmanager/index.html:433 pkg/networkmanager/index.html:469
+#: pkg/networkmanager/index.html:434 pkg/networkmanager/index.html:469
 #: pkg/networkmanager/index.html:498 pkg/networkmanager/index.html:527
 #: pkg/networkmanager/index.html:556 pkg/networkmanager/index.html:585
 #: pkg/networkmanager/index.html:614 pkg/networkmanager/index.html:643
@@ -1215,7 +1217,7 @@ msgctxt "storage"
 msgid "Bitmap"
 msgstr "bitmap"
 
-#: pkg/systemd/terminal.jsx:99
+#: pkg/systemd/terminal.jsx:106
 msgid "Black"
 msgstr "Svart"
 
@@ -1244,7 +1246,7 @@ msgstr "Blockerat"
 msgid "Bond"
 msgstr "Binda"
 
-#: pkg/networkmanager/index.html:450
+#: pkg/networkmanager/index.html:451
 #, fuzzy
 #| msgid "Bridge settings"
 msgid "Bond settings"
@@ -1372,18 +1374,19 @@ msgstr "Hittade inga loggar med dessa filter aktiva."
 
 #: pkg/sosreport/index.html:74
 #: pkg/systemd/overview-cards/realmd-operation.html:93
-#: pkg/systemd/index.html:57 pkg/systemd/services.html:290
-#: pkg/static/login.html:102 pkg/shell/machines/machine-add.html:55
+#: pkg/systemd/services.html:290 pkg/static/login.html:102
+#: pkg/shell/machines/machine-add.html:55
 #: pkg/shell/machines/machine-change-port.html:26
 #: pkg/shell/machines/machine-change-auth.html:75
 #: pkg/shell/machines/machine-invalid-hostkey.html:30
 #: pkg/shell/machines/machine-unknown-hostkey.html:22
-#: pkg/networkmanager/index.html:434 pkg/networkmanager/index.html:470
+#: pkg/networkmanager/index.html:435 pkg/networkmanager/index.html:470
 #: pkg/networkmanager/index.html:499 pkg/networkmanager/index.html:528
 #: pkg/networkmanager/index.html:557 pkg/networkmanager/index.html:586
 #: pkg/networkmanager/index.html:615 pkg/networkmanager/index.html:644
 #: pkg/networkmanager/index.html:673 pkg/playground/translate.html:39
-#: pkg/sosreport/index.js:52 pkg/systemd/overview-cards/motdCard.jsx:102
+#: pkg/sosreport/index.js:52 pkg/systemd/shutdown.jsx:183
+#: pkg/systemd/overview-cards/motdCard.jsx:102
 #: pkg/systemd/overview-cards/configurationCard.jsx:434
 #: pkg/systemd/hwinfo.jsx:239 pkg/systemd/reporting.jsx:419
 #: pkg/systemd/services/service-details.jsx:70 pkg/packagekit/updates.jsx:201
@@ -1433,7 +1436,7 @@ msgid "Cannot join a domain because realmd is not available on this system"
 msgstr ""
 "Kan inte ansluta till en domän eftersom realmd inte finns på detta system"
 
-#: pkg/systemd/shutdown.js:176
+#: pkg/systemd/shutdown.jsx:136
 msgid "Cannot schedule event in the past"
 msgstr "Kan inte schemalägga händelser som redan hänt"
 
@@ -1608,7 +1611,7 @@ msgstr ""
 
 #: pkg/shell/machines/machine-not-supported.html:8
 #: pkg/shell/machines/machine-auth-failed.html:20 pkg/shell/index.html:289
-#: pkg/networkmanager/index.html:416 pkg/networkmanager/index.html:445
+#: pkg/networkmanager/index.html:417 pkg/networkmanager/index.html:446
 #: pkg/networkmanager/index.html:481 pkg/networkmanager/index.html:510
 #: pkg/networkmanager/index.html:539 pkg/networkmanager/index.html:568
 #: pkg/networkmanager/index.html:597 pkg/networkmanager/index.html:626
@@ -2233,7 +2236,7 @@ msgstr "DNS-sökdomäner"
 msgid "DNS search domains $val"
 msgstr "DNS-sökdomäner $val"
 
-#: pkg/systemd/terminal.jsx:100
+#: pkg/systemd/terminal.jsx:107
 msgid "Dark"
 msgstr "Mörk"
 
@@ -2263,11 +2266,11 @@ msgstr "Felsökning och högre"
 msgid "Deduplication"
 msgstr "Avduplicering"
 
-#: pkg/systemd/index.html:28
+#: pkg/systemd/shutdown.jsx:195
 msgid "Delay"
 msgstr "Fördröjning"
 
-#: pkg/networkmanager/index.html:382 pkg/systemd/abrtLog.jsx:242
+#: pkg/networkmanager/index.html:384 pkg/systemd/abrtLog.jsx:242
 #: pkg/storaged/vdo-details.jsx:201 pkg/storaged/vdo-details.jsx:264
 #: pkg/storaged/vgroup-details.jsx:202 pkg/storaged/vgroup-details.jsx:224
 #: pkg/storaged/mdraid-details.jsx:294 pkg/storaged/mdraid-details.jsx:317
@@ -3301,7 +3304,7 @@ msgstr "ID"
 msgid "ID $id"
 msgstr "Id $id"
 
-#: pkg/networkmanager/index.html:94 pkg/networkmanager/index.html:111
+#: pkg/networkmanager/index.html:93 pkg/networkmanager/index.html:110
 #: pkg/machines/components/vm/nics/vmNicsCard.jsx:222
 msgid "IP address"
 msgstr "IP-adress"
@@ -3318,7 +3321,7 @@ msgstr ""
 msgid "IP configuration"
 msgstr "IP-konfiguration"
 
-#: pkg/networkmanager/index.html:420
+#: pkg/networkmanager/index.html:421
 #, fuzzy
 #| msgid "IPv4 settings"
 msgid "IP settings"
@@ -3561,7 +3564,7 @@ msgstr "Gränssnitt"
 msgid "Interface type"
 msgstr "Gränssnittstyp"
 
-#: pkg/networkmanager/index.html:82 pkg/networkmanager/index.html:237
+#: pkg/networkmanager/index.html:81 pkg/networkmanager/index.html:237
 #: pkg/networkmanager/interfaces.js:2887 pkg/networkmanager/firewall.jsx:180
 #: pkg/networkmanager/firewall.jsx:742
 msgid "Interfaces"
@@ -3599,11 +3602,11 @@ msgstr "Felaktigt IPv6-prefix"
 msgid "Invalid address $0"
 msgstr "Felaktig adress $0"
 
-#: pkg/systemd/overview-cards/serverTime.js:617 pkg/systemd/shutdown.js:155
+#: pkg/systemd/shutdown.jsx:121 pkg/systemd/overview-cards/serverTime.js:617
 msgid "Invalid date format"
 msgstr "Felaktigt datumformat"
 
-#: pkg/systemd/shutdown.js:151
+#: pkg/systemd/shutdown.jsx:115
 msgid "Invalid date format and invalid time format"
 msgstr "Felaktigt datumformat och felaktigt tidsformat"
 
@@ -3655,7 +3658,7 @@ msgstr "Felaktigt prefix eller nätmask $0"
 msgid "Invalid range"
 msgstr "Felaktigt område"
 
-#: pkg/systemd/shutdown.js:153
+#: pkg/systemd/shutdown.jsx:118
 msgid "Invalid time format"
 msgstr "Felaktigt tidsformat"
 
@@ -3807,7 +3810,7 @@ msgstr "Senaste 7 datgarna"
 msgid "Last checked: $0"
 msgstr "Senast kontrollerad: $0 sedan"
 
-#: pkg/systemd/overview.jsx:136
+#: pkg/systemd/overview.jsx:135
 msgid "Last failed login:"
 msgstr "Senaste misslyckade inloggning:"
 
@@ -3815,7 +3818,7 @@ msgstr "Senaste misslyckade inloggning:"
 msgid "Last login"
 msgstr "Senaste inloggning"
 
-#: pkg/systemd/overview.jsx:135
+#: pkg/systemd/overview.jsx:134
 msgid "Last login:"
 msgstr "Senaste inloggningen:"
 
@@ -3855,7 +3858,7 @@ msgstr "Libvirt eller hypervisor stödjer inte UEFI"
 msgid "Licensed under:"
 msgstr "Licensierad under:"
 
-#: pkg/systemd/terminal.jsx:101
+#: pkg/systemd/terminal.jsx:108
 msgid "Light"
 msgstr "Ljust"
 
@@ -4270,7 +4273,7 @@ msgstr "Minnesteknologi"
 msgid "Memory usage"
 msgstr "Minnesanvändning:"
 
-#: pkg/systemd/shutdown.js:84
+#: pkg/systemd/shutdown.jsx:192
 msgid "Message to logged in users"
 msgstr "Meddelande till inloggade användare"
 
@@ -4479,7 +4482,7 @@ msgstr "NSNA-ping"
 msgid "NTP server"
 msgstr "NTP-server"
 
-#: pkg/networkmanager/index.html:93 pkg/networkmanager/index.html:110
+#: pkg/networkmanager/index.html:92 pkg/networkmanager/index.html:109
 #: pkg/networkmanager/index.html:136 pkg/networkmanager/index.html:180
 #: pkg/networkmanager/index.html:233 pkg/networkmanager/index.html:290
 #: pkg/systemd/hwinfo.jsx:83 pkg/systemd/services/services-list.jsx:52
@@ -4758,7 +4761,7 @@ msgstr "Inte tillgängligt"
 msgid "No data available between $0 and $1"
 msgstr "Hände mellan $0 och $1"
 
-#: pkg/systemd/index.html:43
+#: pkg/systemd/shutdown.jsx:172
 msgid "No delay"
 msgstr "Ingen fördröjning"
 
@@ -5450,6 +5453,10 @@ msgstr "Fysiska volymer"
 msgid "Physical volumes can not be resized here."
 msgstr "Storleken på fysiska volymer kan inte ändras här."
 
+#: pkg/systemd/shutdown.jsx:204
+msgid "Pick date"
+msgstr ""
+
 #: pkg/networkmanager/index.html:314
 msgid "Ping interval"
 msgstr "Ping-intervall"
@@ -5844,8 +5851,8 @@ msgstr "Det verkliga värdnamnet får bara vara 64 tecken eller mindre"
 msgid "Reboot"
 msgstr "Starta om"
 
-#: pkg/networkmanager/index.html:96 pkg/networkmanager/index.html:113
-#: pkg/networkmanager/index.html:398
+#: pkg/networkmanager/index.html:95 pkg/networkmanager/index.html:112
+#: pkg/networkmanager/index.html:399
 msgid "Receiving"
 msgstr "Tar emot"
 
@@ -6105,7 +6112,7 @@ msgstr "Behov av"
 msgid "Reserved memory"
 msgstr "Reserverat minne"
 
-#: pkg/systemd/terminal.jsx:106
+#: pkg/systemd/terminal.jsx:115
 msgid "Reset"
 msgstr "Återställ"
 
@@ -6126,8 +6133,8 @@ msgid ""
 "a current disk passphrase."
 msgstr ""
 
-#: pkg/systemd/shutdown.js:100 pkg/systemd/shutdown.js:101
-#: pkg/systemd/overview.jsx:209 pkg/systemd/overview.jsx:226
+#: pkg/systemd/shutdown.jsx:180 pkg/systemd/shutdown.jsx:182
+#: pkg/systemd/overview.jsx:207 pkg/systemd/overview.jsx:224
 #: pkg/systemd/services/service-details.jsx:129
 #: pkg/machines/components/vm/vmActions.jsx:243
 msgid "Restart"
@@ -6414,8 +6421,8 @@ msgstr "Skicka tangenttryck"
 msgid "Send non-maskable interrupt"
 msgstr "Skicka ej maskerbart avbrott"
 
-#: pkg/networkmanager/index.html:95 pkg/networkmanager/index.html:112
-#: pkg/networkmanager/index.html:397
+#: pkg/networkmanager/index.html:94 pkg/networkmanager/index.html:111
+#: pkg/networkmanager/index.html:398
 msgid "Sending"
 msgstr "Skickar"
 
@@ -6625,7 +6632,7 @@ msgstr "Krymp en logisk volym"
 msgid "Shrink volume"
 msgstr ""
 
-#: pkg/systemd/shutdown.js:97 pkg/systemd/shutdown.js:98
+#: pkg/systemd/shutdown.jsx:180 pkg/systemd/shutdown.jsx:182
 #: pkg/machines/components/vm/vmActions.jsx:210
 #: pkg/machines/components/vm/vmActions.jsx:217
 msgid "Shut down"
@@ -6640,7 +6647,7 @@ msgstr "stäng av"
 msgid "Shut off the VM in order to edit firmware configuration"
 msgstr ""
 
-#: pkg/systemd/overview.jsx:212
+#: pkg/systemd/overview.jsx:210
 msgid "Shutdown"
 msgstr ""
 
@@ -6809,7 +6816,7 @@ msgstr "Uppspännande-träd-protokollet (STP)"
 msgid "Spare"
 msgstr "Reserv"
 
-#: pkg/systemd/index.html:44
+#: pkg/systemd/shutdown.jsx:173
 msgid "Specific time"
 msgstr "Specifik tid"
 
@@ -7509,7 +7516,7 @@ msgstr ""
 "Det finns inte tillräckligt med fritt utrymme någon annanstans för att ta "
 "bort dennay fysiska volym.  Åtminstone $0 mer ledigt utrymme behövs."
 
-#: pkg/systemd/overview.jsx:127
+#: pkg/systemd/overview.jsx:126
 msgid "There was $0 failed login attempt since the last successful login."
 msgid_plural ""
 "There were $0 failed login attempts since the last successful login."
@@ -8100,7 +8107,7 @@ msgstr "Lås upp $target"
 msgid "Unlocking disk..."
 msgstr "Låser upp disken …"
 
-#: pkg/networkmanager/index.html:105
+#: pkg/networkmanager/index.html:104
 msgid "Unmanaged interfaces"
 msgstr "Ej hanterade gränssnitt"
 
@@ -8574,7 +8581,7 @@ msgstr ""
 msgid "When empty, connect with the current user"
 msgstr ""
 
-#: pkg/systemd/terminal.jsx:102
+#: pkg/systemd/terminal.jsx:109
 msgid "White"
 msgstr ""
 
@@ -9262,7 +9269,7 @@ msgstr ""
 msgid "roles"
 msgstr ""
 
-#: pkg/systemd/overview.jsx:253
+#: pkg/systemd/overview.jsx:254
 msgid "running $0"
 msgstr ""
 
