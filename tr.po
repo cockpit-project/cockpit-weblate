@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-01 19:00+0000\n"
+"POT-Creation-Date: 2021-06-08 18:18+0000\n"
 "PO-Revision-Date: 2021-03-22 08:01+0000\n"
 "Last-Translator: Burak Yavuz <hitowerdigit@hotmail.com>\n"
 "Language-Team: Turkish <https://translate.fedoraproject.org/projects/cockpit/"
@@ -228,7 +228,7 @@ msgid_plural "$0 security fixes available"
 msgstr[0] "$0 güvenlik düzeltmesi mevcut"
 msgstr[1] "$0 güvenlik düzeltmesi mevcut"
 
-#: pkg/systemd/services/services.jsx:696
+#: pkg/systemd/services/services.jsx:802
 msgid "$0 service has failed"
 msgid_plural "$0 services have failed"
 msgstr[0] "$0 hizmet başarısız oldu"
@@ -665,6 +665,13 @@ msgstr "Etkin olma başlangıcı"
 msgid "Active since "
 msgstr "Etkin olma başlangıcı "
 
+#: pkg/systemd/services/services.jsx:903 pkg/systemd/services/services.jsx:904
+#: pkg/systemd/services/services.jsx:911
+#, fuzzy
+#| msgid "Activate"
+msgid "Active state"
+msgstr "Etkinleştir"
+
 #: pkg/networkmanager/interfaces.js:1470
 msgid "Adaptive load balancing"
 msgstr "Uyarlanabilir yük dengeleme"
@@ -876,7 +883,13 @@ msgstr "Uyarı"
 msgid "Alert and above"
 msgstr "Uyarı ve üstü"
 
-#: pkg/systemd/services/services.jsx:733 pkg/systemd/logs.js:170
+#: pkg/systemd/services/services.jsx:190
+#, fuzzy
+#| msgid "alias"
+msgid "Alias"
+msgstr "takma ad"
+
+#: pkg/systemd/logs.js:170
 msgid "All"
 msgstr "Tümü"
 
@@ -1042,7 +1055,7 @@ msgstr "Otomatik oturum açma"
 msgid "Automatic updates"
 msgstr "Otomatik güncellemeler"
 
-#: pkg/systemd/services/services-list.jsx:68
+#: pkg/systemd/services/services-list.jsx:75
 #: pkg/systemd/services/service-details.jsx:407
 msgid "Automatically starts"
 msgstr "Otomatik olarak başlar"
@@ -1086,6 +1099,18 @@ msgstr "Hesaplara geri dön"
 #: pkg/storaged/vdo-details.jsx:275
 msgid "Backing device"
 msgstr "Yedeklenen aygıt"
+
+#: pkg/systemd/services/services.jsx:198
+#, fuzzy
+#| msgid "Blade"
+msgid "Bad"
+msgstr "Blade"
+
+#: pkg/systemd/services/services.jsx:164
+#, fuzzy
+#| msgid "Bond settings"
+msgid "Bad setting"
+msgstr "Birleştirme ayarları"
 
 #: pkg/networkmanager/index.html:222
 msgid "Balancer"
@@ -1253,7 +1278,7 @@ msgstr ""
 msgid "Cancel"
 msgstr "İptal"
 
-#: pkg/systemd/services/services-list.jsx:74
+#: pkg/systemd/services/services-list.jsx:81
 msgid "Cannot be enabled"
 msgstr "Etkinleştirilemez"
 
@@ -1399,7 +1424,7 @@ msgstr "$target temizleniyor"
 msgid "Clear 'Failed to start'"
 msgstr "'Başlatılamadı' hatasını temizle"
 
-#: pkg/systemd/services/services.jsx:820
+#: pkg/systemd/services/services.jsx:961
 msgid "Clear all filters"
 msgstr "Tüm süzgeçleri temizle"
 
@@ -2017,7 +2042,6 @@ msgid "Deleting volume group $target"
 msgstr "$target birim grubu siliniyor"
 
 #: pkg/networkmanager/firewall.jsx:738
-#: pkg/systemd/services/services-list.jsx:53
 #: pkg/systemd/services/timer-dialog.jsx:144
 msgid "Description"
 msgstr "Açıklama"
@@ -2094,7 +2118,7 @@ msgstr "tuned'i etkisizleştir"
 
 #: pkg/networkmanager/interfaces.js:1450
 #: pkg/systemd/services/service-details.jsx:340
-#: pkg/systemd/services/services.jsx:556 pkg/systemd/services/services.jsx:735
+#: pkg/systemd/services/services.jsx:187 pkg/systemd/services/services.jsx:840
 #: pkg/packagekit/autoupdates.jsx:335
 msgid "Disabled"
 msgstr "Etkisizleştirildi"
@@ -2150,7 +2174,7 @@ msgstr "Önyüklemede otomatik olarak bağlama"
 msgid "Docking station"
 msgstr "Kenetleme istasyonu"
 
-#: pkg/systemd/services/services-list.jsx:70
+#: pkg/systemd/services/services-list.jsx:77
 msgid "Does not automatically start"
 msgstr "Otomatik olarak başlamaz"
 
@@ -2298,7 +2322,8 @@ msgstr "Hizmeti etkinleştir"
 msgid "Enable the firewall"
 msgstr "Güvenlik duvarını etkinleştir"
 
-#: pkg/systemd/services/services.jsx:553 pkg/systemd/services/services.jsx:734
+#: pkg/systemd/services/services.jsx:185 pkg/systemd/services/services.jsx:186
+#: pkg/systemd/services/services.jsx:839
 msgid "Enabled"
 msgstr "Etkinleştirildi"
 
@@ -2372,7 +2397,8 @@ msgstr "Düzeltme"
 #: pkg/playground/translate.html:100 pkg/playground/translate.html:105
 #: pkg/storaged/storage-controls.jsx:90 pkg/storaged/storage-controls.jsx:168
 #: pkg/storaged/fsys-tab.jsx:304 pkg/storaged/multipath.jsx:61
-#: pkg/systemd/services/service-details.jsx:488 pkg/apps/utils.jsx:87
+#: pkg/systemd/services/service-details.jsx:488
+#: pkg/systemd/services/services.jsx:165 pkg/apps/utils.jsx:87
 msgid "Error"
 msgstr "Hata"
 
@@ -2532,13 +2558,20 @@ msgid "Failed to save changes in /etc/motd"
 msgstr "/etc/motd içinde değişiklikleri kaydetme başarısız oldu"
 
 #: pkg/systemd/services/service-details.jsx:349
-#: pkg/systemd/services/services.jsx:547
+#: pkg/systemd/services/services.jsx:176
 msgid "Failed to start"
 msgstr "Başlatılamadı"
 
 #: pkg/tuned/dialog.js:141
 msgid "Failed to switch profile"
 msgstr "Profil değiştirme başarısız oldu"
+
+#: pkg/systemd/services/services.jsx:919 pkg/systemd/services/services.jsx:920
+#: pkg/systemd/services/services.jsx:927
+#, fuzzy
+#| msgid "Failed to start"
+msgid "File state"
+msgstr "Başlatılamadı"
 
 #: pkg/storaged/content-views.jsx:158
 msgid "Filesystem"
@@ -2552,11 +2585,7 @@ msgstr "Dosya sistemi adı"
 msgid "Filesystems"
 msgstr "Dosya sistemleri"
 
-#: pkg/systemd/services/services.jsx:768
-msgid "Filter"
-msgstr "Süz"
-
-#: pkg/systemd/services/services.jsx:776
+#: pkg/systemd/services/services.jsx:895
 msgid "Filter by name or description"
 msgstr "Ada veya açıklamaya göre süz"
 
@@ -2596,7 +2625,7 @@ msgstr "Yazı tipi boyutu"
 msgid "For legacy applications only. Reduces performance."
 msgstr "Sadece eski uygulamalar için. Performansı düşürür."
 
-#: pkg/systemd/services/services-list.jsx:72
+#: pkg/systemd/services/services-list.jsx:79
 #: pkg/systemd/services/service-details.jsx:331
 msgid "Forbidden from running"
 msgstr "Çalıştırılması yasak"
@@ -2668,6 +2697,12 @@ msgstr "GNU LGPL sürüm 2.1"
 
 #: pkg/networkmanager/network-interface.jsx:367 pkg/systemd/abrtLog.jsx:248
 msgid "General"
+msgstr "Genel"
+
+#: pkg/systemd/services/services.jsx:196
+#, fuzzy
+#| msgid "General"
+msgid "Generated"
 msgstr "Genel"
 
 #: pkg/sosreport/index.html:62
@@ -2896,6 +2931,12 @@ msgstr "Bir artır"
 msgid "Index memory"
 msgstr "İndeks belleği"
 
+#: pkg/systemd/services/services.jsx:195
+#, fuzzy
+#| msgid "direct"
+msgid "Indirect"
+msgstr "doğrudan"
+
 #: pkg/packagekit/updates.jsx:694
 msgid "Info"
 msgstr "Bilgi"
@@ -2982,6 +3023,12 @@ msgstr "Dahili hata"
 #: pkg/static/login.js:798
 msgid "Internal error: Invalid challenge header"
 msgstr "İç hata: Geçersiz sınama üstbilgisi"
+
+#: pkg/systemd/services/services.jsx:194
+#, fuzzy
+#| msgid "Invalid key"
+msgid "Invalid"
+msgstr "Geçersiz anahtar"
 
 #: pkg/networkmanager/utils.js:90 pkg/networkmanager/utils.js:175
 msgid "Invalid address $0"
@@ -3242,6 +3289,12 @@ msgstr "Bağlantı açılma gecikmesi"
 msgid "Link watch"
 msgstr "Bağlantı izleme"
 
+#: pkg/systemd/services/services.jsx:188 pkg/systemd/services/services.jsx:189
+#, fuzzy
+#| msgid "Links"
+msgid "Linked"
+msgstr "Bağlantılar"
+
 #: pkg/systemd/services/service-details.jsx:533
 #, fuzzy
 #| msgid "Persistent"
@@ -3291,7 +3344,7 @@ msgstr "Sistem değişiklikleri yükleniyor..."
 
 #: pkg/kdump/kdump-view.jsx:369 pkg/metrics/metrics.jsx:740
 #: pkg/metrics/metrics.jsx:1292 pkg/storaged/devices.jsx:75
-#: pkg/systemd/services/services.jsx:710 pkg/systemd/logDetails.jsx:153
+#: pkg/systemd/services/services.jsx:816 pkg/systemd/logDetails.jsx:153
 #: pkg/systemd/logs.js:165 pkg/systemd/logs.js:217
 msgid "Loading..."
 msgstr "Yükleniyor..."
@@ -3433,6 +3486,10 @@ msgstr "Makine SSH anahtarı parmak izleri"
 msgid "Main server chassis"
 msgstr "Ana sunucu kasası"
 
+#: pkg/systemd/services/services.jsx:179
+msgid "Maintanance"
+msgstr ""
+
 #: pkg/storaged/crypto-keyslots.jsx:363
 #, fuzzy
 #| msgid "Make sure the key hash from the Tang server matches:"
@@ -3523,6 +3580,7 @@ msgid "Mask service"
 msgstr "Hizmeti maskele"
 
 #: pkg/systemd/services/service-details.jsx:330
+#: pkg/systemd/services/services.jsx:191 pkg/systemd/services/services.jsx:192
 msgid "Masked"
 msgstr "Maskelendi"
 
@@ -3566,6 +3624,10 @@ msgstr "Bellek teknolojisi"
 #: pkg/metrics/metrics.jsx:107
 msgid "Memory usage"
 msgstr "Bellek kullanımı"
+
+#: pkg/systemd/services/services.jsx:166
+msgid "Merged"
+msgstr ""
 
 #: pkg/lib/cockpit-components-shutdown.jsx:174
 msgid "Message to logged in users"
@@ -3767,8 +3829,7 @@ msgstr "NTP sunucusu"
 #: pkg/storaged/iscsi-panel.jsx:188 pkg/storaged/fsys-tab.jsx:361
 #: pkg/storaged/fsys-tab.jsx:518 pkg/storaged/fsys-panel.jsx:94
 #: pkg/networkmanager/network-main.jsx:179
-#: pkg/networkmanager/network-main.jsx:194
-#: pkg/systemd/services/services-list.jsx:52 pkg/systemd/hwinfo.jsx:84
+#: pkg/networkmanager/network-main.jsx:194 pkg/systemd/hwinfo.jsx:84
 #: pkg/packagekit/updates.jsx:371
 msgid "Name"
 msgstr "Ad"
@@ -3997,7 +4058,7 @@ msgstr "Mantıksal birimler yok"
 msgid "No logs found"
 msgstr "Bulunan günlükler yok"
 
-#: pkg/systemd/services/services.jsx:821
+#: pkg/systemd/services/services.jsx:962
 msgid "No matching results"
 msgstr "Eşleşen sonuçlar yok"
 
@@ -4027,7 +4088,7 @@ msgstr "Belirtilen gerçek ad yok"
 msgid "No results found"
 msgstr "Bulunan sonuçlar yok"
 
-#: pkg/systemd/services/services.jsx:819
+#: pkg/systemd/services/services.jsx:960
 msgid ""
 "No results match the filter criteria. Clear all filters to show results."
 msgstr ""
@@ -4096,7 +4157,7 @@ msgstr "Anamakineye bağlı değil"
 msgid "Not enough space to grow."
 msgstr "Büyütmek için yeterli alan yok."
 
-#: pkg/storaged/details.jsx:123
+#: pkg/storaged/details.jsx:123 pkg/systemd/services/services.jsx:163
 msgid "Not found"
 msgstr "Bulunamadı"
 
@@ -4122,7 +4183,8 @@ msgstr "Kayıtlı değil"
 
 #: pkg/storaged/mdraid-details.jsx:352
 #: pkg/systemd/services/service-details.jsx:370
-#: pkg/systemd/services/services.jsx:549
+#: pkg/systemd/services/services.jsx:175 pkg/systemd/services/services.jsx:178
+#: pkg/systemd/services/services.jsx:850
 msgid "Not running"
 msgstr "Çalışmıyor"
 
@@ -4875,6 +4937,12 @@ msgstr "Yeniden yükle"
 msgid "Reload propagated from"
 msgstr "Yeniden yükleme şuradan yayıldı"
 
+#: pkg/systemd/services/services.jsx:174
+#, fuzzy
+#| msgid "Reading"
+msgid "Reloading"
+msgstr "Okuma"
+
 #: pkg/packagekit/updates.jsx:432
 msgid "Reloading the state of remaining services"
 msgstr "Kalan hizmetlerin durumu yeniden yükleniyor"
@@ -5153,7 +5221,8 @@ msgstr "Çalıştırıcı"
 
 #: pkg/storaged/mdraid-details.jsx:352
 #: pkg/systemd/services/service-details.jsx:362
-#: pkg/systemd/services/services.jsx:545
+#: pkg/systemd/services/services.jsx:173 pkg/systemd/services/services.jsx:177
+#: pkg/systemd/services/services.jsx:849
 msgid "Running"
 msgstr "Çalışıyor"
 
@@ -5303,10 +5372,6 @@ msgstr "Sadece güvenlik güncellemeleri"
 #: pkg/shell/shell-modals.jsx:95
 msgid "Select"
 msgstr "Seç"
-
-#: pkg/systemd/services/services.jsx:780
-msgid "Select unit state"
-msgstr "Birim durumunu seçin"
 
 #: pkg/systemd/reporting.jsx:245
 msgid "Send"
@@ -5669,7 +5734,8 @@ msgstr "RAID aygıtı $target başlatılıyor"
 msgid "Starting swapspace $target"
 msgstr "Takas alanı $target başlatılıyor"
 
-#: pkg/systemd/services/services-list.jsx:98 pkg/systemd/hwinfo.jsx:308
+#: pkg/systemd/services/services-list.jsx:38
+#: pkg/systemd/services/services-list.jsx:44 pkg/systemd/hwinfo.jsx:308
 msgid "State"
 msgstr "Durum"
 
@@ -5679,7 +5745,7 @@ msgid "State"
 msgstr "Durum"
 
 #: pkg/systemd/services/service-details.jsx:380
-#: pkg/systemd/services/services.jsx:559 pkg/systemd/services/services.jsx:736
+#: pkg/systemd/services/services.jsx:193 pkg/systemd/services/services.jsx:841
 msgid "Static"
 msgstr "Sabit"
 
@@ -5751,6 +5817,10 @@ msgstr "Parolayı sakla"
 #: pkg/storaged/crypto-tab.jsx:135
 msgid "Stored passphrase"
 msgstr "Saklanmış parola"
+
+#: pkg/systemd/services/services.jsx:161
+msgid "Stub"
+msgstr ""
 
 #: pkg/lib/machine-info.js:76
 msgid "Sub-Chassis"
@@ -5872,7 +5942,7 @@ msgstr "Sistem hizmetleri"
 msgid "System time"
 msgstr "Sistem saati"
 
-#: pkg/systemd/services/services-list.jsx:33
+#: pkg/systemd/services/services-list.jsx:48
 msgid "Systemd units"
 msgstr "Systemd birimleri"
 
@@ -6500,11 +6570,20 @@ msgstr "Toplam boyut: $0"
 msgid "Tower"
 msgstr "Tower"
 
+#: pkg/systemd/services/services.jsx:197
+msgid "Transient"
+msgstr ""
+
+#: pkg/systemd/services/services-list.jsx:43
+#, fuzzy
+#| msgid "Triggers"
+msgid "Trigger"
+msgstr "Tetikleyiciler"
+
 #: pkg/systemd/services/service-details.jsx:429
 msgid "Triggered by"
 msgstr "Tetikleyen"
 
-#: pkg/systemd/services/services-list.jsx:54
 #: pkg/systemd/services/service-details.jsx:428
 msgid "Triggers"
 msgstr "Tetikleyiciler"
@@ -6694,11 +6773,12 @@ msgstr "Kullanılamıyor"
 msgid "Unexpected error"
 msgstr "Beklenmeyen hata"
 
-#: pkg/storaged/dialog.jsx:1094
+#: pkg/storaged/dialog.jsx:1094 pkg/systemd/services/services-list.jsx:37
+#: pkg/systemd/services/services-list.jsx:42
 msgid "Unit"
 msgstr "Birim"
 
-#: pkg/systemd/services/services.jsx:721
+#: pkg/systemd/services/services.jsx:827
 msgid "Unit not found"
 msgstr "Birim bulunamadı"
 
@@ -6706,9 +6786,11 @@ msgstr "Birim bulunamadı"
 msgid "Unix group: $0"
 msgstr "Unix grubu: $0"
 
-#: pkg/lib/machine-info.js:59 pkg/lib/machine-info.js:228
-#: pkg/storaged/fsys-tab.jsx:390 pkg/storaged/swap-tab.jsx:62
-#: pkg/networkmanager/network-interface.jsx:198
+#: pkg/lib/machine-info.js:59 pkg/lib/machine-info.js:220
+#: pkg/lib/machine-info.js:228 pkg/lib/machine-info.js:230
+#: pkg/lib/machine-info.js:237 pkg/lib/machine-info.js:239
+#: pkg/lib/machine-info.js:243 pkg/storaged/fsys-tab.jsx:390
+#: pkg/storaged/swap-tab.jsx:62 pkg/networkmanager/network-interface.jsx:198
 #: pkg/networkmanager/network-interface.jsx:200
 #: pkg/networkmanager/interfaces.js:512 pkg/networkmanager/interfaces.js:988
 msgid "Unknown"
@@ -7888,8 +7970,8 @@ msgstr "udp"
 msgid "unit"
 msgstr "birim"
 
-#: pkg/systemd/services/services.jsx:495 pkg/systemd/services/services.jsx:496
-#: pkg/systemd/services/services.jsx:518 pkg/systemd/services/services.jsx:519
+#: pkg/systemd/services/services.jsx:610 pkg/systemd/services/services.jsx:611
+#: pkg/systemd/services/services.jsx:633 pkg/systemd/services/services.jsx:634
 msgid "unknown"
 msgstr "bilinmeyen"
 
@@ -7956,6 +8038,12 @@ msgstr "bölge"
 #: pkg/shell/machines/machine-invalid-hostkey.html:2
 msgid "{{host}} key changed"
 msgstr "{{host}} anahtarı değişti"
+
+#~ msgid "Filter"
+#~ msgstr "Süz"
+
+#~ msgid "Select unit state"
+#~ msgstr "Birim durumunu seçin"
 
 #, fuzzy
 #~| msgid "Enable stored metrics"
@@ -9100,9 +9188,6 @@ msgstr "{{host}} anahtarı değişti"
 #~ msgid "custom"
 #~ msgstr "özel"
 
-#~ msgid "direct"
-#~ msgstr "doğrudan"
-
 #~ msgid "disabled"
 #~ msgstr "etkisizleştirildi"
 
@@ -9324,9 +9409,6 @@ msgstr "{{host}} anahtarı değişti"
 
 #~ msgid "Incorrect host key"
 #~ msgstr "Yanlış anamakine anahtarı"
-
-#~ msgid "Reading"
-#~ msgstr "Okuma"
 
 #~ msgid ""
 #~ "The authenticity of host {{#strong}}{{host}}{{/strong}} can't be "
@@ -9762,9 +9844,6 @@ msgstr "{{host}} anahtarı değişti"
 #~ msgid "Invalid port"
 #~ msgstr "Geçersiz bağlantı noktası"
 
-#~ msgid "Links"
-#~ msgstr "Bağlantılar"
-
 #~ msgid "Links:"
 #~ msgstr "Bağlantılar:"
 
@@ -9848,9 +9927,6 @@ msgstr "{{host}} anahtarı değişti"
 
 #~ msgid "With terminal"
 #~ msgstr "Terminal ile"
-
-#~ msgid "alias"
-#~ msgstr "takma ad"
 
 #~ msgid "default"
 #~ msgstr "öntanımlı"

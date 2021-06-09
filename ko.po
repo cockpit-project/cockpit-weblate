@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-01 19:00+0000\n"
+"POT-Creation-Date: 2021-06-08 18:18+0000\n"
 "PO-Revision-Date: 2021-06-05 10:03+0000\n"
 "Last-Translator: Sundeep Anand <suanand@redhat.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/cockpit/"
@@ -213,7 +213,7 @@ msgid "$0 security fix available"
 msgid_plural "$0 security fixes available"
 msgstr[0] "$0 보안 픽스 이용 가능"
 
-#: pkg/systemd/services/services.jsx:696
+#: pkg/systemd/services/services.jsx:802
 msgid "$0 service has failed"
 msgid_plural "$0 services have failed"
 msgstr[0] "$0 서비스 실패"
@@ -629,6 +629,13 @@ msgstr "이후 활성화"
 msgid "Active since "
 msgstr "이후 활성화 "
 
+#: pkg/systemd/services/services.jsx:903 pkg/systemd/services/services.jsx:904
+#: pkg/systemd/services/services.jsx:911
+#, fuzzy
+#| msgid "Activate"
+msgid "Active state"
+msgstr "활성화"
+
 #: pkg/networkmanager/interfaces.js:1470
 msgid "Adaptive load balancing"
 msgstr "적응형 로드 밸런싱"
@@ -838,7 +845,13 @@ msgstr "주의"
 msgid "Alert and above"
 msgstr "경고 이상의 수준"
 
-#: pkg/systemd/services/services.jsx:733 pkg/systemd/logs.js:170
+#: pkg/systemd/services/services.jsx:190
+#, fuzzy
+#| msgid "alias"
+msgid "Alias"
+msgstr "alias"
+
+#: pkg/systemd/logs.js:170
 msgid "All"
 msgstr "모두"
 
@@ -1001,7 +1014,7 @@ msgstr "자동 로그인"
 msgid "Automatic updates"
 msgstr "자동 최신화"
 
-#: pkg/systemd/services/services-list.jsx:68
+#: pkg/systemd/services/services-list.jsx:75
 #: pkg/systemd/services/service-details.jsx:407
 msgid "Automatically starts"
 msgstr "자동 시작"
@@ -1045,6 +1058,18 @@ msgstr "계정으로 돌아가기"
 #: pkg/storaged/vdo-details.jsx:275
 msgid "Backing device"
 msgstr "백업 장치"
+
+#: pkg/systemd/services/services.jsx:198
+#, fuzzy
+#| msgid "Blade"
+msgid "Bad"
+msgstr "블레이드"
+
+#: pkg/systemd/services/services.jsx:164
+#, fuzzy
+#| msgid "Bond settings"
+msgid "Bad setting"
+msgstr "본드 설정"
 
 #: pkg/networkmanager/index.html:222
 msgid "Balancer"
@@ -1210,7 +1235,7 @@ msgstr "현재 필터 조합을 사용하여 로그를 찾을 수 없습니다."
 msgid "Cancel"
 msgstr "취소"
 
-#: pkg/systemd/services/services-list.jsx:74
+#: pkg/systemd/services/services-list.jsx:81
 msgid "Cannot be enabled"
 msgstr "활성화할 수 없습니다"
 
@@ -1354,7 +1379,7 @@ msgstr "$target 지우는 중"
 msgid "Clear 'Failed to start'"
 msgstr "‘시작 실패’ 지우기"
 
-#: pkg/systemd/services/services.jsx:820
+#: pkg/systemd/services/services.jsx:961
 msgid "Clear all filters"
 msgstr "모든 필터 지우기"
 
@@ -1969,7 +1994,6 @@ msgid "Deleting volume group $target"
 msgstr "볼륨 그룹 $target 삭제 중"
 
 #: pkg/networkmanager/firewall.jsx:738
-#: pkg/systemd/services/services-list.jsx:53
 #: pkg/systemd/services/timer-dialog.jsx:144
 msgid "Description"
 msgstr "설명"
@@ -2048,7 +2072,7 @@ msgstr "tuned 비활성화"
 
 #: pkg/networkmanager/interfaces.js:1450
 #: pkg/systemd/services/service-details.jsx:340
-#: pkg/systemd/services/services.jsx:556 pkg/systemd/services/services.jsx:735
+#: pkg/systemd/services/services.jsx:187 pkg/systemd/services/services.jsx:840
 #: pkg/packagekit/autoupdates.jsx:335
 msgid "Disabled"
 msgstr "사용 안함"
@@ -2108,7 +2132,7 @@ msgstr "부팅시 자동으로 마운트하지 마십시오"
 msgid "Docking station"
 msgstr "도킹 스테이션"
 
-#: pkg/systemd/services/services-list.jsx:70
+#: pkg/systemd/services/services-list.jsx:77
 msgid "Does not automatically start"
 msgstr "자동으로 시작되지 않습니다"
 
@@ -2256,7 +2280,8 @@ msgstr "서비스 활성화"
 msgid "Enable the firewall"
 msgstr "방화벽 활성화"
 
-#: pkg/systemd/services/services.jsx:553 pkg/systemd/services/services.jsx:734
+#: pkg/systemd/services/services.jsx:185 pkg/systemd/services/services.jsx:186
+#: pkg/systemd/services/services.jsx:839
 msgid "Enabled"
 msgstr "사용"
 
@@ -2328,7 +2353,8 @@ msgstr "에라타"
 #: pkg/playground/translate.html:100 pkg/playground/translate.html:105
 #: pkg/storaged/storage-controls.jsx:90 pkg/storaged/storage-controls.jsx:168
 #: pkg/storaged/fsys-tab.jsx:304 pkg/storaged/multipath.jsx:61
-#: pkg/systemd/services/service-details.jsx:488 pkg/apps/utils.jsx:87
+#: pkg/systemd/services/service-details.jsx:488
+#: pkg/systemd/services/services.jsx:165 pkg/apps/utils.jsx:87
 msgid "Error"
 msgstr "오류"
 
@@ -2487,13 +2513,20 @@ msgid "Failed to save changes in /etc/motd"
 msgstr "/etc/motd에 변경 사항을 저장하지 못했습니다"
 
 #: pkg/systemd/services/service-details.jsx:349
-#: pkg/systemd/services/services.jsx:547
+#: pkg/systemd/services/services.jsx:176
 msgid "Failed to start"
 msgstr "시작하지 못했습니다"
 
 #: pkg/tuned/dialog.js:141
 msgid "Failed to switch profile"
 msgstr "프로파일 전환에 실패했습니다"
+
+#: pkg/systemd/services/services.jsx:919 pkg/systemd/services/services.jsx:920
+#: pkg/systemd/services/services.jsx:927
+#, fuzzy
+#| msgid "Failed to start"
+msgid "File state"
+msgstr "시작하지 못했습니다"
 
 #: pkg/storaged/content-views.jsx:158
 msgid "Filesystem"
@@ -2507,11 +2540,7 @@ msgstr "파일시스템 이름"
 msgid "Filesystems"
 msgstr "파일 시스템"
 
-#: pkg/systemd/services/services.jsx:768
-msgid "Filter"
-msgstr "필터"
-
-#: pkg/systemd/services/services.jsx:776
+#: pkg/systemd/services/services.jsx:895
 msgid "Filter by name or description"
 msgstr "이름 또는 설명에 따라 필터링"
 
@@ -2551,7 +2580,7 @@ msgstr "폰트 크기"
 msgid "For legacy applications only. Reduces performance."
 msgstr "기존 응용프로그램 전용입니다. 성능이 저하됩니다."
 
-#: pkg/systemd/services/services-list.jsx:72
+#: pkg/systemd/services/services-list.jsx:79
 #: pkg/systemd/services/service-details.jsx:331
 msgid "Forbidden from running"
 msgstr "실행 금지"
@@ -2623,6 +2652,12 @@ msgstr "GNU LGPL 버전 2.1"
 
 #: pkg/networkmanager/network-interface.jsx:367 pkg/systemd/abrtLog.jsx:248
 msgid "General"
+msgstr "일반"
+
+#: pkg/systemd/services/services.jsx:196
+#, fuzzy
+#| msgid "General"
+msgid "Generated"
 msgstr "일반"
 
 #: pkg/sosreport/index.html:62
@@ -2849,6 +2884,12 @@ msgstr "1 씩 증가"
 msgid "Index memory"
 msgstr "인덱스 메모리"
 
+#: pkg/systemd/services/services.jsx:195
+#, fuzzy
+#| msgid "direct"
+msgid "Indirect"
+msgstr "직접"
+
 #: pkg/packagekit/updates.jsx:694
 msgid "Info"
 msgstr "정보"
@@ -2935,6 +2976,12 @@ msgstr "내부 오류"
 #: pkg/static/login.js:798
 msgid "Internal error: Invalid challenge header"
 msgstr "내부 오류: 잘못된 챌린지 헤더"
+
+#: pkg/systemd/services/services.jsx:194
+#, fuzzy
+#| msgid "Invalid key"
+msgid "Invalid"
+msgstr "잘못된 키"
 
 #: pkg/networkmanager/utils.js:90 pkg/networkmanager/utils.js:175
 msgid "Invalid address $0"
@@ -3196,6 +3243,12 @@ msgstr "링크 업 딜레이"
 msgid "Link watch"
 msgstr "링크 보기"
 
+#: pkg/systemd/services/services.jsx:188 pkg/systemd/services/services.jsx:189
+#, fuzzy
+#| msgid "Links"
+msgid "Linked"
+msgstr "링크"
+
 #: pkg/systemd/services/service-details.jsx:533
 #, fuzzy
 #| msgid "Persistent"
@@ -3249,7 +3302,7 @@ msgstr "시스템 수정 로딩 중..."
 # frontend/webadmin/modules/webadmin/src/main/resources/org/ovirt/engine/ui/frontend/org.ovirt.engine.ui.webadmin.ApplicationConstants
 #: pkg/kdump/kdump-view.jsx:369 pkg/metrics/metrics.jsx:740
 #: pkg/metrics/metrics.jsx:1292 pkg/storaged/devices.jsx:75
-#: pkg/systemd/services/services.jsx:710 pkg/systemd/logDetails.jsx:153
+#: pkg/systemd/services/services.jsx:816 pkg/systemd/logDetails.jsx:153
 #: pkg/systemd/logs.js:165 pkg/systemd/logs.js:217
 msgid "Loading..."
 msgstr "적재 중..."
@@ -3394,6 +3447,10 @@ msgstr "머신 SSH 키 지문"
 msgid "Main server chassis"
 msgstr "메인 서버 섀시"
 
+#: pkg/systemd/services/services.jsx:179
+msgid "Maintanance"
+msgstr ""
+
 #: pkg/storaged/crypto-keyslots.jsx:363
 #, fuzzy
 #| msgid "Make sure the key hash from the Tang server matches:"
@@ -3483,6 +3540,7 @@ msgid "Mask service"
 msgstr "마스크 서비스"
 
 #: pkg/systemd/services/service-details.jsx:330
+#: pkg/systemd/services/services.jsx:191 pkg/systemd/services/services.jsx:192
 msgid "Masked"
 msgstr "마스크 설정되었습니다"
 
@@ -3525,6 +3583,10 @@ msgstr "메모리 기술"
 #: pkg/metrics/metrics.jsx:107
 msgid "Memory usage"
 msgstr "메모리 사용량"
+
+#: pkg/systemd/services/services.jsx:166
+msgid "Merged"
+msgstr ""
 
 #: pkg/lib/cockpit-components-shutdown.jsx:174
 msgid "Message to logged in users"
@@ -3726,8 +3788,7 @@ msgstr "NTP 서버"
 #: pkg/storaged/iscsi-panel.jsx:188 pkg/storaged/fsys-tab.jsx:361
 #: pkg/storaged/fsys-tab.jsx:518 pkg/storaged/fsys-panel.jsx:94
 #: pkg/networkmanager/network-main.jsx:179
-#: pkg/networkmanager/network-main.jsx:194
-#: pkg/systemd/services/services-list.jsx:52 pkg/systemd/hwinfo.jsx:84
+#: pkg/networkmanager/network-main.jsx:194 pkg/systemd/hwinfo.jsx:84
 #: pkg/packagekit/updates.jsx:371
 msgid "Name"
 msgstr "이름"
@@ -3956,7 +4017,7 @@ msgstr "논리 볼륨 없음"
 msgid "No logs found"
 msgstr "로그를 찾을 수 없음"
 
-#: pkg/systemd/services/services.jsx:821
+#: pkg/systemd/services/services.jsx:962
 msgid "No matching results"
 msgstr "일치하는 결과를 찾을 수 없습니다"
 
@@ -3985,7 +4046,7 @@ msgstr "실제 이름이 지정되지 않았습니다"
 msgid "No results found"
 msgstr "결과를 찾을 수 없습니다"
 
-#: pkg/systemd/services/services.jsx:819
+#: pkg/systemd/services/services.jsx:960
 msgid ""
 "No results match the filter criteria. Clear all filters to show results."
 msgstr ""
@@ -4054,7 +4115,7 @@ msgstr "호스트에 연결되어 있지 않음"
 msgid "Not enough space to grow."
 msgstr "확장 공간이 부족합니다."
 
-#: pkg/storaged/details.jsx:123
+#: pkg/storaged/details.jsx:123 pkg/systemd/services/services.jsx:163
 msgid "Not found"
 msgstr "찾을 수 없습니다"
 
@@ -4080,7 +4141,8 @@ msgstr "등록되지 않음"
 
 #: pkg/storaged/mdraid-details.jsx:352
 #: pkg/systemd/services/service-details.jsx:370
-#: pkg/systemd/services/services.jsx:549
+#: pkg/systemd/services/services.jsx:175 pkg/systemd/services/services.jsx:178
+#: pkg/systemd/services/services.jsx:850
 msgid "Not running"
 msgstr "미동작"
 
@@ -4840,6 +4902,12 @@ msgstr "다시읽기"
 msgid "Reload propagated from"
 msgstr "전달 소스를 다시 로드"
 
+#: pkg/systemd/services/services.jsx:174
+#, fuzzy
+#| msgid "Reading"
+msgid "Reloading"
+msgstr "읽는 중"
+
 #: pkg/packagekit/updates.jsx:432
 msgid "Reloading the state of remaining services"
 msgstr "나머지 서비스의 상태 재로딩 중"
@@ -5126,7 +5194,8 @@ msgstr "실행자"
 
 #: pkg/storaged/mdraid-details.jsx:352
 #: pkg/systemd/services/service-details.jsx:362
-#: pkg/systemd/services/services.jsx:545
+#: pkg/systemd/services/services.jsx:173 pkg/systemd/services/services.jsx:177
+#: pkg/systemd/services/services.jsx:849
 msgid "Running"
 msgstr "작동중"
 
@@ -5275,10 +5344,6 @@ msgstr "보안 업데이트만"
 #: pkg/shell/shell-modals.jsx:95
 msgid "Select"
 msgstr "선택"
-
-#: pkg/systemd/services/services.jsx:780
-msgid "Select unit state"
-msgstr "장치 상태 선택"
 
 #: pkg/systemd/reporting.jsx:245
 msgid "Send"
@@ -5645,7 +5710,8 @@ msgstr "RAID 장치 $target 시작 중"
 msgid "Starting swapspace $target"
 msgstr "스왑공간 $target 시작 중"
 
-#: pkg/systemd/services/services-list.jsx:98 pkg/systemd/hwinfo.jsx:308
+#: pkg/systemd/services/services-list.jsx:38
+#: pkg/systemd/services/services-list.jsx:44 pkg/systemd/hwinfo.jsx:308
 msgid "State"
 msgstr "상태"
 
@@ -5655,7 +5721,7 @@ msgid "State"
 msgstr "상태"
 
 #: pkg/systemd/services/service-details.jsx:380
-#: pkg/systemd/services/services.jsx:559 pkg/systemd/services/services.jsx:736
+#: pkg/systemd/services/services.jsx:193 pkg/systemd/services/services.jsx:841
 msgid "Static"
 msgstr "정적"
 
@@ -5727,6 +5793,10 @@ msgstr "비밀번호 저장"
 #: pkg/storaged/crypto-tab.jsx:135
 msgid "Stored passphrase"
 msgstr "저장된 암호"
+
+#: pkg/systemd/services/services.jsx:161
+msgid "Stub"
+msgstr ""
 
 #: pkg/lib/machine-info.js:76
 msgid "Sub-Chassis"
@@ -5848,7 +5918,7 @@ msgstr "시스템 서비스"
 msgid "System time"
 msgstr "시스템 시간"
 
-#: pkg/systemd/services/services-list.jsx:33
+#: pkg/systemd/services/services-list.jsx:48
 msgid "Systemd units"
 msgstr "Systemd 유닛"
 
@@ -6448,11 +6518,20 @@ msgstr "전체 크기: $0"
 msgid "Tower"
 msgstr "타워"
 
+#: pkg/systemd/services/services.jsx:197
+msgid "Transient"
+msgstr ""
+
+#: pkg/systemd/services/services-list.jsx:43
+#, fuzzy
+#| msgid "Triggers"
+msgid "Trigger"
+msgstr "트리거"
+
 #: pkg/systemd/services/service-details.jsx:429
 msgid "Triggered by"
 msgstr "트리거 대상"
 
-#: pkg/systemd/services/services-list.jsx:54
 #: pkg/systemd/services/service-details.jsx:428
 msgid "Triggers"
 msgstr "트리거"
@@ -6642,11 +6721,12 @@ msgstr "사용 불가능"
 msgid "Unexpected error"
 msgstr "예상치 못한 오류"
 
-#: pkg/storaged/dialog.jsx:1094
+#: pkg/storaged/dialog.jsx:1094 pkg/systemd/services/services-list.jsx:37
+#: pkg/systemd/services/services-list.jsx:42
 msgid "Unit"
 msgstr "단위"
 
-#: pkg/systemd/services/services.jsx:721
+#: pkg/systemd/services/services.jsx:827
 msgid "Unit not found"
 msgstr "찾을 수 없음"
 
@@ -6654,9 +6734,11 @@ msgstr "찾을 수 없음"
 msgid "Unix group: $0"
 msgstr "Unix 그룹: $0"
 
-#: pkg/lib/machine-info.js:59 pkg/lib/machine-info.js:228
-#: pkg/storaged/fsys-tab.jsx:390 pkg/storaged/swap-tab.jsx:62
-#: pkg/networkmanager/network-interface.jsx:198
+#: pkg/lib/machine-info.js:59 pkg/lib/machine-info.js:220
+#: pkg/lib/machine-info.js:228 pkg/lib/machine-info.js:230
+#: pkg/lib/machine-info.js:237 pkg/lib/machine-info.js:239
+#: pkg/lib/machine-info.js:243 pkg/storaged/fsys-tab.jsx:390
+#: pkg/storaged/swap-tab.jsx:62 pkg/networkmanager/network-interface.jsx:198
 #: pkg/networkmanager/network-interface.jsx:200
 #: pkg/networkmanager/interfaces.js:512 pkg/networkmanager/interfaces.js:988
 msgid "Unknown"
@@ -7841,8 +7923,8 @@ msgstr "udp"
 msgid "unit"
 msgstr "단위"
 
-#: pkg/systemd/services/services.jsx:495 pkg/systemd/services/services.jsx:496
-#: pkg/systemd/services/services.jsx:518 pkg/systemd/services/services.jsx:519
+#: pkg/systemd/services/services.jsx:610 pkg/systemd/services/services.jsx:611
+#: pkg/systemd/services/services.jsx:633 pkg/systemd/services/services.jsx:634
 msgid "unknown"
 msgstr "알 수 없음"
 
@@ -7909,6 +7991,12 @@ msgstr "영역"
 #: pkg/shell/machines/machine-invalid-hostkey.html:2
 msgid "{{host}} key changed"
 msgstr "{{host}} 키 변경됩니다"
+
+#~ msgid "Filter"
+#~ msgstr "필터"
+
+#~ msgid "Select unit state"
+#~ msgstr "장치 상태 선택"
 
 #, fuzzy
 #~| msgid "Enable stored metrics"
@@ -9025,9 +9113,6 @@ msgstr "{{host}} 키 변경됩니다"
 #~ msgid "custom"
 #~ msgstr "사용자 지정"
 
-#~ msgid "direct"
-#~ msgstr "직접"
-
 #~ msgid "disabled"
 #~ msgstr "비활성화됩니다"
 
@@ -9244,9 +9329,6 @@ msgstr "{{host}} 키 변경됩니다"
 
 #~ msgid "Incorrect host key"
 #~ msgstr "잘못된 호스트 키"
-
-#~ msgid "Reading"
-#~ msgstr "읽는 중"
 
 #~ msgid ""
 #~ "The authenticity of host {{#strong}}{{host}}{{/strong}} can't be "
@@ -9787,9 +9869,6 @@ msgstr "{{host}} 키 변경됩니다"
 #~ msgid "Link to another container"
 #~ msgstr "다른 컨테이너로의 링크"
 
-#~ msgid "Links"
-#~ msgstr "링크"
-
 #~ msgid "Links:"
 #~ msgstr "링크:"
 
@@ -9963,9 +10042,6 @@ msgstr "{{host}} 키 변경됩니다"
 #~ msgstr ""
 #~ "{{#strong}}{{host}}{{/strong}}에 연결되어 있지만 사용자를 동기화하려면 수"
 #~ "퍼 유저 권한을 가진 사용자가 필요합니다."
-
-#~ msgid "alias"
-#~ msgstr "alias"
 
 #~ msgid "default"
 #~ msgstr "기본"

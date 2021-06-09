@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-01 19:00+0000\n"
+"POT-Creation-Date: 2021-06-08 18:18+0000\n"
 "PO-Revision-Date: 2021-03-22 08:01+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
@@ -244,7 +244,7 @@ msgstr[0] "Доступне $0 оновлення захисту"
 msgstr[1] "Доступні $0 оновлення захисту"
 msgstr[2] "Доступні $0 оновлень захисту"
 
-#: pkg/systemd/services/services.jsx:696
+#: pkg/systemd/services/services.jsx:802
 msgid "$0 service has failed"
 msgid_plural "$0 services have failed"
 msgstr[0] "Критична помилка $0 служби"
@@ -683,6 +683,13 @@ msgstr "Активний з"
 msgid "Active since "
 msgstr "Активний з "
 
+#: pkg/systemd/services/services.jsx:903 pkg/systemd/services/services.jsx:904
+#: pkg/systemd/services/services.jsx:911
+#, fuzzy
+#| msgid "Activate"
+msgid "Active state"
+msgstr "Задіяти"
+
 #: pkg/networkmanager/interfaces.js:1470
 msgid "Adaptive load balancing"
 msgstr "Адаптивне урівноваження навантаження"
@@ -893,7 +900,13 @@ msgstr "Попередження"
 msgid "Alert and above"
 msgstr "Тривога і вище"
 
-#: pkg/systemd/services/services.jsx:733 pkg/systemd/logs.js:170
+#: pkg/systemd/services/services.jsx:190
+#, fuzzy
+#| msgid "alias"
+msgid "Alias"
+msgstr "псевдонім"
+
+#: pkg/systemd/logs.js:170
 msgid "All"
 msgstr "Всі"
 
@@ -1060,7 +1073,7 @@ msgstr "Автоматичний вхід"
 msgid "Automatic updates"
 msgstr "Автоматичні оновлення"
 
-#: pkg/systemd/services/services-list.jsx:68
+#: pkg/systemd/services/services-list.jsx:75
 #: pkg/systemd/services/service-details.jsx:407
 msgid "Automatically starts"
 msgstr "Запускати автоматично"
@@ -1104,6 +1117,18 @@ msgstr "Назад до облікових записів"
 #: pkg/storaged/vdo-details.jsx:275
 msgid "Backing device"
 msgstr "Резервний пристрій"
+
+#: pkg/systemd/services/services.jsx:198
+#, fuzzy
+#| msgid "Blade"
+msgid "Bad"
+msgstr "Blade"
+
+#: pkg/systemd/services/services.jsx:164
+#, fuzzy
+#| msgid "Bond settings"
+msgid "Bad setting"
+msgstr "Параметри прив'язки"
 
 #: pkg/networkmanager/index.html:222
 msgid "Balancer"
@@ -1270,7 +1295,7 @@ msgstr "Не вдалося знайти журналів на основі по
 msgid "Cancel"
 msgstr "Скасувати"
 
-#: pkg/systemd/services/services-list.jsx:74
+#: pkg/systemd/services/services-list.jsx:81
 msgid "Cannot be enabled"
 msgstr "Не може бути увімкнено"
 
@@ -1416,7 +1441,7 @@ msgstr "Спорожнюємо для $target"
 msgid "Clear 'Failed to start'"
 msgstr "Вилучити «Не вдалося запустити»"
 
-#: pkg/systemd/services/services.jsx:820
+#: pkg/systemd/services/services.jsx:961
 msgid "Clear all filters"
 msgstr "Зняти усі фільтри"
 
@@ -2042,7 +2067,6 @@ msgid "Deleting volume group $target"
 msgstr "Вилучаємо групу томів $target"
 
 #: pkg/networkmanager/firewall.jsx:738
-#: pkg/systemd/services/services-list.jsx:53
 #: pkg/systemd/services/timer-dialog.jsx:144
 msgid "Description"
 msgstr "Опис"
@@ -2119,7 +2143,7 @@ msgstr "Вимкнути tuned"
 
 #: pkg/networkmanager/interfaces.js:1450
 #: pkg/systemd/services/service-details.jsx:340
-#: pkg/systemd/services/services.jsx:556 pkg/systemd/services/services.jsx:735
+#: pkg/systemd/services/services.jsx:187 pkg/systemd/services/services.jsx:840
 #: pkg/packagekit/autoupdates.jsx:335
 msgid "Disabled"
 msgstr "Вимкнено"
@@ -2175,7 +2199,7 @@ msgstr "Не монтувати автоматично під час заван�
 msgid "Docking station"
 msgstr "Станція заряджання"
 
-#: pkg/systemd/services/services-list.jsx:70
+#: pkg/systemd/services/services-list.jsx:77
 msgid "Does not automatically start"
 msgstr "Не запускається автоматично"
 
@@ -2323,7 +2347,8 @@ msgstr "Увімкнути службу"
 msgid "Enable the firewall"
 msgstr "Увімкнути брандмауер"
 
-#: pkg/systemd/services/services.jsx:553 pkg/systemd/services/services.jsx:734
+#: pkg/systemd/services/services.jsx:185 pkg/systemd/services/services.jsx:186
+#: pkg/systemd/services/services.jsx:839
 msgid "Enabled"
 msgstr "Увімкнено"
 
@@ -2397,7 +2422,8 @@ msgstr "Відомі помилки"
 #: pkg/playground/translate.html:100 pkg/playground/translate.html:105
 #: pkg/storaged/storage-controls.jsx:90 pkg/storaged/storage-controls.jsx:168
 #: pkg/storaged/fsys-tab.jsx:304 pkg/storaged/multipath.jsx:61
-#: pkg/systemd/services/service-details.jsx:488 pkg/apps/utils.jsx:87
+#: pkg/systemd/services/service-details.jsx:488
+#: pkg/systemd/services/services.jsx:165 pkg/apps/utils.jsx:87
 msgid "Error"
 msgstr "Помилка"
 
@@ -2556,13 +2582,20 @@ msgid "Failed to save changes in /etc/motd"
 msgstr "Не вдалося зберегти зміни до /etc/motd"
 
 #: pkg/systemd/services/service-details.jsx:349
-#: pkg/systemd/services/services.jsx:547
+#: pkg/systemd/services/services.jsx:176
 msgid "Failed to start"
 msgstr "Не вдалося запустити"
 
 #: pkg/tuned/dialog.js:141
 msgid "Failed to switch profile"
 msgstr "Не вдалося перемкнути профіль"
+
+#: pkg/systemd/services/services.jsx:919 pkg/systemd/services/services.jsx:920
+#: pkg/systemd/services/services.jsx:927
+#, fuzzy
+#| msgid "Failed to start"
+msgid "File state"
+msgstr "Не вдалося запустити"
 
 #: pkg/storaged/content-views.jsx:158
 msgid "Filesystem"
@@ -2576,11 +2609,7 @@ msgstr "Назва файлової системи"
 msgid "Filesystems"
 msgstr "Файлові системи"
 
-#: pkg/systemd/services/services.jsx:768
-msgid "Filter"
-msgstr "Фільтрування"
-
-#: pkg/systemd/services/services.jsx:776
+#: pkg/systemd/services/services.jsx:895
 msgid "Filter by name or description"
 msgstr "Фільтрувати за назвою або описом"
 
@@ -2620,7 +2649,7 @@ msgstr "Розмір шрифту"
 msgid "For legacy applications only. Reduces performance."
 msgstr "Лише для застарілих програм. Знижує швидкодію."
 
-#: pkg/systemd/services/services-list.jsx:72
+#: pkg/systemd/services/services-list.jsx:79
 #: pkg/systemd/services/service-details.jsx:331
 msgid "Forbidden from running"
 msgstr "Заборонено запускати"
@@ -2695,6 +2724,12 @@ msgstr "GNU LGPL, версія 2.1"
 
 #: pkg/networkmanager/network-interface.jsx:367 pkg/systemd/abrtLog.jsx:248
 msgid "General"
+msgstr "Загальний"
+
+#: pkg/systemd/services/services.jsx:196
+#, fuzzy
+#| msgid "General"
+msgid "Generated"
 msgstr "Загальний"
 
 #: pkg/sosreport/index.html:62
@@ -2922,6 +2957,12 @@ msgstr "Збільшити на одиницю"
 msgid "Index memory"
 msgstr "Пам'ять покажчика"
 
+#: pkg/systemd/services/services.jsx:195
+#, fuzzy
+#| msgid "direct"
+msgid "Indirect"
+msgstr "безпосередньо"
+
 #: pkg/packagekit/updates.jsx:694
 msgid "Info"
 msgstr "Інформація"
@@ -3008,6 +3049,12 @@ msgstr "Внутрішня помилка"
 #: pkg/static/login.js:798
 msgid "Internal error: Invalid challenge header"
 msgstr "Внутрішня помилка: некоректний заголовок виклику"
+
+#: pkg/systemd/services/services.jsx:194
+#, fuzzy
+#| msgid "Invalid key"
+msgid "Invalid"
+msgstr "Некоректний ключ"
 
 #: pkg/networkmanager/utils.js:90 pkg/networkmanager/utils.js:175
 msgid "Invalid address $0"
@@ -3268,6 +3315,12 @@ msgstr "Затримка встановлення зв’язку"
 msgid "Link watch"
 msgstr "Спостереження за посиланнями"
 
+#: pkg/systemd/services/services.jsx:188 pkg/systemd/services/services.jsx:189
+#, fuzzy
+#| msgid "Links"
+msgid "Linked"
+msgstr "Посилання"
+
 #: pkg/systemd/services/service-details.jsx:533
 #, fuzzy
 #| msgid "Persistent"
@@ -3317,7 +3370,7 @@ msgstr "Завантажуємо модифікації системи…"
 
 #: pkg/kdump/kdump-view.jsx:369 pkg/metrics/metrics.jsx:740
 #: pkg/metrics/metrics.jsx:1292 pkg/storaged/devices.jsx:75
-#: pkg/systemd/services/services.jsx:710 pkg/systemd/logDetails.jsx:153
+#: pkg/systemd/services/services.jsx:816 pkg/systemd/logDetails.jsx:153
 #: pkg/systemd/logs.js:165 pkg/systemd/logs.js:217
 msgid "Loading..."
 msgstr "Завантаження…"
@@ -3459,6 +3512,10 @@ msgstr "Відбитки ключів SSH комп’ютерів"
 msgid "Main server chassis"
 msgstr "Апаратний блок основного сервера"
 
+#: pkg/systemd/services/services.jsx:179
+msgid "Maintanance"
+msgstr ""
+
 #: pkg/storaged/crypto-keyslots.jsx:363
 #, fuzzy
 #| msgid "Make sure the key hash from the Tang server matches:"
@@ -3548,6 +3605,7 @@ msgid "Mask service"
 msgstr "Замаскувати службу"
 
 #: pkg/systemd/services/service-details.jsx:330
+#: pkg/systemd/services/services.jsx:191 pkg/systemd/services/services.jsx:192
 msgid "Masked"
 msgstr "Замасковано"
 
@@ -3591,6 +3649,10 @@ msgstr "Технологія пам'яті"
 #: pkg/metrics/metrics.jsx:107
 msgid "Memory usage"
 msgstr "Використання пам'яті"
+
+#: pkg/systemd/services/services.jsx:166
+msgid "Merged"
+msgstr ""
 
 #: pkg/lib/cockpit-components-shutdown.jsx:174
 msgid "Message to logged in users"
@@ -3792,8 +3854,7 @@ msgstr "Сервер NTP"
 #: pkg/storaged/iscsi-panel.jsx:188 pkg/storaged/fsys-tab.jsx:361
 #: pkg/storaged/fsys-tab.jsx:518 pkg/storaged/fsys-panel.jsx:94
 #: pkg/networkmanager/network-main.jsx:179
-#: pkg/networkmanager/network-main.jsx:194
-#: pkg/systemd/services/services-list.jsx:52 pkg/systemd/hwinfo.jsx:84
+#: pkg/networkmanager/network-main.jsx:194 pkg/systemd/hwinfo.jsx:84
 #: pkg/packagekit/updates.jsx:371
 msgid "Name"
 msgstr "Назва"
@@ -4024,7 +4085,7 @@ msgstr "Немає логічних томів"
 msgid "No logs found"
 msgstr "Журналів не знайдено"
 
-#: pkg/systemd/services/services.jsx:821
+#: pkg/systemd/services/services.jsx:962
 msgid "No matching results"
 msgstr "Нічого не знайдено"
 
@@ -4054,7 +4115,7 @@ msgstr "Не вказано справжнього імені"
 msgid "No results found"
 msgstr "Нічого не знайдено"
 
-#: pkg/systemd/services/services.jsx:819
+#: pkg/systemd/services/services.jsx:960
 msgid ""
 "No results match the filter criteria. Clear all filters to show results."
 msgstr ""
@@ -4123,7 +4184,7 @@ msgstr "Не з'єднано із вузлом"
 msgid "Not enough space to grow."
 msgstr "Недостатньо місця для росту."
 
-#: pkg/storaged/details.jsx:123
+#: pkg/storaged/details.jsx:123 pkg/systemd/services/services.jsx:163
 msgid "Not found"
 msgstr "Не знайдено"
 
@@ -4149,7 +4210,8 @@ msgstr "Не зареєстровано"
 
 #: pkg/storaged/mdraid-details.jsx:352
 #: pkg/systemd/services/service-details.jsx:370
-#: pkg/systemd/services/services.jsx:549
+#: pkg/systemd/services/services.jsx:175 pkg/systemd/services/services.jsx:178
+#: pkg/systemd/services/services.jsx:850
 msgid "Not running"
 msgstr "Зупинено"
 
@@ -4904,6 +4966,12 @@ msgstr "Перезавантажити"
 msgid "Reload propagated from"
 msgstr "Поширене перезавантаження з"
 
+#: pkg/systemd/services/services.jsx:174
+#, fuzzy
+#| msgid "Reading"
+msgid "Reloading"
+msgstr "Читання"
+
 #: pkg/packagekit/updates.jsx:432
 msgid "Reloading the state of remaining services"
 msgstr "Перезавантажуємо стан решти служб"
@@ -5183,7 +5251,8 @@ msgstr "Засіб для запуску"
 
 #: pkg/storaged/mdraid-details.jsx:352
 #: pkg/systemd/services/service-details.jsx:362
-#: pkg/systemd/services/services.jsx:545
+#: pkg/systemd/services/services.jsx:173 pkg/systemd/services/services.jsx:177
+#: pkg/systemd/services/services.jsx:849
 msgid "Running"
 msgstr "Працює"
 
@@ -5333,10 +5402,6 @@ msgstr "Лише оновлення захисту"
 #: pkg/shell/shell-modals.jsx:95
 msgid "Select"
 msgstr "Вибрати"
-
-#: pkg/systemd/services/services.jsx:780
-msgid "Select unit state"
-msgstr "Виберіть стан модуля"
 
 #: pkg/systemd/reporting.jsx:245
 msgid "Send"
@@ -5702,7 +5767,8 @@ msgstr "Зупиняємо пристрій RAID $target"
 msgid "Starting swapspace $target"
 msgstr "Запускаємо резервну область пам’яті $target"
 
-#: pkg/systemd/services/services-list.jsx:98 pkg/systemd/hwinfo.jsx:308
+#: pkg/systemd/services/services-list.jsx:38
+#: pkg/systemd/services/services-list.jsx:44 pkg/systemd/hwinfo.jsx:308
 msgid "State"
 msgstr "Стан"
 
@@ -5712,7 +5778,7 @@ msgid "State"
 msgstr "Стан"
 
 #: pkg/systemd/services/service-details.jsx:380
-#: pkg/systemd/services/services.jsx:559 pkg/systemd/services/services.jsx:736
+#: pkg/systemd/services/services.jsx:193 pkg/systemd/services/services.jsx:841
 msgid "Static"
 msgstr "Статичний"
 
@@ -5784,6 +5850,10 @@ msgstr "Зберігати пароль"
 #: pkg/storaged/crypto-tab.jsx:135
 msgid "Stored passphrase"
 msgstr "Збережений пароль"
+
+#: pkg/systemd/services/services.jsx:161
+msgid "Stub"
+msgstr ""
 
 #: pkg/lib/machine-info.js:76
 msgid "Sub-Chassis"
@@ -5905,7 +5975,7 @@ msgstr "Служби системи"
 msgid "System time"
 msgstr "Системний час"
 
-#: pkg/systemd/services/services-list.jsx:33
+#: pkg/systemd/services/services-list.jsx:48
 msgid "Systemd units"
 msgstr "Модулі systemd"
 
@@ -6542,11 +6612,20 @@ msgstr "Загальний розмір: $0"
 msgid "Tower"
 msgstr "Башточка"
 
+#: pkg/systemd/services/services.jsx:197
+msgid "Transient"
+msgstr ""
+
+#: pkg/systemd/services/services-list.jsx:43
+#, fuzzy
+#| msgid "Triggers"
+msgid "Trigger"
+msgstr "Умовні зміни"
+
 #: pkg/systemd/services/service-details.jsx:429
 msgid "Triggered by"
 msgstr "Причина вмикання"
 
-#: pkg/systemd/services/services-list.jsx:54
 #: pkg/systemd/services/service-details.jsx:428
 msgid "Triggers"
 msgstr "Умовні зміни"
@@ -6733,11 +6812,12 @@ msgstr "Недоступний"
 msgid "Unexpected error"
 msgstr "Неочікувана помилка"
 
-#: pkg/storaged/dialog.jsx:1094
+#: pkg/storaged/dialog.jsx:1094 pkg/systemd/services/services-list.jsx:37
+#: pkg/systemd/services/services-list.jsx:42
 msgid "Unit"
 msgstr "Модуль"
 
-#: pkg/systemd/services/services.jsx:721
+#: pkg/systemd/services/services.jsx:827
 msgid "Unit not found"
 msgstr "Модуль не знайдено"
 
@@ -6745,9 +6825,11 @@ msgstr "Модуль не знайдено"
 msgid "Unix group: $0"
 msgstr "Група у Unix: $0"
 
-#: pkg/lib/machine-info.js:59 pkg/lib/machine-info.js:228
-#: pkg/storaged/fsys-tab.jsx:390 pkg/storaged/swap-tab.jsx:62
-#: pkg/networkmanager/network-interface.jsx:198
+#: pkg/lib/machine-info.js:59 pkg/lib/machine-info.js:220
+#: pkg/lib/machine-info.js:228 pkg/lib/machine-info.js:230
+#: pkg/lib/machine-info.js:237 pkg/lib/machine-info.js:239
+#: pkg/lib/machine-info.js:243 pkg/storaged/fsys-tab.jsx:390
+#: pkg/storaged/swap-tab.jsx:62 pkg/networkmanager/network-interface.jsx:198
 #: pkg/networkmanager/network-interface.jsx:200
 #: pkg/networkmanager/interfaces.js:512 pkg/networkmanager/interfaces.js:988
 msgid "Unknown"
@@ -7934,8 +8016,8 @@ msgstr "udp"
 msgid "unit"
 msgstr "модуль"
 
-#: pkg/systemd/services/services.jsx:495 pkg/systemd/services/services.jsx:496
-#: pkg/systemd/services/services.jsx:518 pkg/systemd/services/services.jsx:519
+#: pkg/systemd/services/services.jsx:610 pkg/systemd/services/services.jsx:611
+#: pkg/systemd/services/services.jsx:633 pkg/systemd/services/services.jsx:634
 msgid "unknown"
 msgstr "невідомо"
 
@@ -8002,6 +8084,12 @@ msgstr "зона"
 #: pkg/shell/machines/machine-invalid-hostkey.html:2
 msgid "{{host}} key changed"
 msgstr "Змінено ключ {{host}}"
+
+#~ msgid "Filter"
+#~ msgstr "Фільтрування"
+
+#~ msgid "Select unit state"
+#~ msgstr "Виберіть стан модуля"
 
 #, fuzzy
 #~| msgid "Enable stored metrics"
@@ -9165,9 +9253,6 @@ msgstr "Змінено ключ {{host}}"
 #~ msgid "custom"
 #~ msgstr "нетиповий"
 
-#~ msgid "direct"
-#~ msgstr "безпосередньо"
-
 #~ msgid "disabled"
 #~ msgstr "вимкнено"
 
@@ -9390,9 +9475,6 @@ msgstr "Змінено ключ {{host}}"
 
 #~ msgid "Incorrect host key"
 #~ msgstr "Неправильний ключ вузла"
-
-#~ msgid "Reading"
-#~ msgstr "Читання"
 
 #~ msgid ""
 #~ "The authenticity of host {{#strong}}{{host}}{{/strong}} can't be "
@@ -9951,9 +10033,6 @@ msgstr "Змінено ключ {{host}}"
 #~ msgid "Link to another container"
 #~ msgstr "Посилання на інший контейнер"
 
-#~ msgid "Links"
-#~ msgstr "Посилання"
-
 #~ msgid "Links:"
 #~ msgstr "Посилання:"
 
@@ -10133,9 +10212,6 @@ msgstr "Змінено ключ {{host}}"
 #~ "Ви встановлюєте з’єднання із {{#strong}}{{host}}{{/strong}}. Втім, для "
 #~ "синхронізації даних користувачів потрібні права доступу адміністративного "
 #~ "користувача."
-
-#~ msgid "alias"
-#~ msgstr "псевдонім"
 
 #~ msgid "default"
 #~ msgstr "типовий"
