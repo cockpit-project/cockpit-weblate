@@ -14,7 +14,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-02 09:43+0000\n"
 "PO-Revision-Date: 2021-09-08 09:06+0000\n"
-"Last-Translator: Sundeep Anand <suanand@redhat.com>\n"
+"Last-Translator: Ludek Janda <ljanda@redhat.com>\n"
 "Language-Team: Japanese <https://translate.fedoraproject.org/projects/"
 "cockpit/main/ja/>\n"
 "Language: ja\n"
@@ -283,10 +283,8 @@ msgid "(Optional)"
 msgstr "(オプション)"
 
 #: pkg/storaged/format-dialog.jsx:145 pkg/storaged/format-dialog.jsx:162
-#, fuzzy
-#| msgid "recommended"
 msgid "(recommended)"
-msgstr "推奨"
+msgstr "(推奨)"
 
 #: pkg/packagekit/updates.jsx:742
 msgid ", including $1 security fix"
@@ -549,14 +547,13 @@ msgstr ""
 msgid "A package needs a system reboot for the updates to take effect:"
 msgid_plural ""
 "Some packages need a system reboot for the updates to take effect:"
-msgstr[0] ""
-"パッケージの更新を有効にするには、システムを再起動する必要があります。"
+msgstr[0] "パッケージの更新を有効にするには、システムを再起動する必要があります:"
 
 #: pkg/packagekit/updates.jsx:1431
 msgid "A service needs to be restarted for the updates to take effect:"
 msgid_plural ""
 "Some services need to be restarted for the updates to take effect:"
-msgstr[0] "更新を有効にするには、サービスを再起動する必要があります。"
+msgstr[0] "更新を有効にするには、サービスを再起動する必要があります:"
 
 #: pkg/storaged/mdraid-details.jsx:131
 msgid "A spare disk needs to be added first before this disk can be removed."
@@ -644,10 +641,8 @@ msgstr "以下以降アクティブ "
 
 #: pkg/systemd/services/services.jsx:903 pkg/systemd/services/services.jsx:904
 #: pkg/systemd/services/services.jsx:911
-#, fuzzy
-#| msgid "Activate"
 msgid "Active state"
-msgstr "有効化"
+msgstr "アクティブな状態"
 
 #: pkg/networkmanager/interfaces.js:1470
 msgid "Adaptive load balancing"
@@ -898,6 +893,8 @@ msgid ""
 "fields. These are space separated values, in form FIELD=VALUE, where value "
 "can be comma separated list of possible values."
 msgstr ""
+"ログメッセージのテキスト文字列はフィルターでフィルタリングできます。文字列は、正規表現の形式でも指定できます。また、メッセージログフィールドによるフィルタ"
+"リングもサポートできます。これらは、FIELD=VALUE の形式でスペースで区切った値は、使用できる値のカンマ区切りのリストになります。"
 
 #: pkg/systemd/terminal.jsx:146
 msgid "Appearance"
@@ -924,10 +921,8 @@ msgid "Apply"
 msgstr "適用"
 
 #: pkg/packagekit/kpatch.jsx:240
-#, fuzzy
-#| msgid "Apply security updates"
 msgid "Apply kernel patches"
-msgstr "セキュリティーアップデートを適用します"
+msgstr "カーネルパッチの適用"
 
 #: pkg/selinux/setroubleshoot-view.jsx:104
 msgid "Apply this solution"
@@ -969,10 +964,8 @@ msgid "At least one disk is needed."
 msgstr "少なくとも 1 つのディスクが必要です。"
 
 #: pkg/systemd/services/timer-dialog.jsx:241
-#, fuzzy
-#| msgid "1 minute"
 msgid "At minute"
-msgstr "1 分"
+msgstr "分"
 
 #: pkg/systemd/services/timer-dialog.jsx:180
 msgid "At specific time"
@@ -1092,16 +1085,12 @@ msgid "Backing device"
 msgstr "バッキングデバイス"
 
 #: pkg/systemd/services/services.jsx:198
-#, fuzzy
-#| msgid "Blade"
 msgid "Bad"
-msgstr "ブレード"
+msgstr "正しくない"
 
 #: pkg/systemd/services/services.jsx:164
-#, fuzzy
-#| msgid "Bond settings"
 msgid "Bad setting"
-msgstr "ボンド設定"
+msgstr "正しくない設定"
 
 #: pkg/networkmanager/index.html:222
 msgid "Balancer"
@@ -1156,7 +1145,7 @@ msgstr "ボンド設定"
 
 #: pkg/systemd/logs.jsx:355
 msgid "Boot"
-msgstr ""
+msgstr "ブート"
 
 #: pkg/systemd/services/service-details.jsx:451
 msgid "Bound by"
@@ -1525,10 +1514,8 @@ msgstr ""
 "マシンは他のマシンを管理するようになります。"
 
 #: pkg/metrics/metrics.jsx:1043
-#, fuzzy
-#| msgid "Store metrics"
 msgid "Collect metrics"
-msgstr "メトリクスの保存"
+msgstr "メトリックスの収集"
 
 #: pkg/shell/machines/machine-add.html:37
 msgid "Color"
@@ -1626,10 +1613,8 @@ msgid "Confirm removal of $0"
 msgstr "$0 の削除を確認"
 
 #: pkg/storaged/crypto-keyslots.jsx:435
-#, fuzzy
-#| msgid "Confirm removal with passphrase"
 msgid "Confirm removal with an alternate passphrase"
-msgstr "パスフレーズで削除を確認"
+msgstr "代替のパスフレーズで削除を確認"
 
 #: pkg/systemd/services/service-details.jsx:454
 msgid "Conflicted by"
@@ -1958,6 +1943,9 @@ msgid ""
 "'now' refers to the current time. Finally, relative times may be specified, "
 "prefixed with '-' or '+'"
 msgstr ""
+"日付の指定は、YYYY-MM-DD hh:mm:ss の形式にする必要があります。または、文字列は 'yesterday'、'today'、"
+"'tomorrow' が理解されます。'now' は現在の時刻を指します。最後に、相対時間を指定できます。最後に、ハイフン (-) または '+' "
+"を付けることができます"
 
 #: pkg/storaged/content-views.jsx:306
 msgid "Deactivate"
@@ -1990,10 +1978,8 @@ msgid "Delay"
 msgstr "遅延"
 
 #: pkg/systemd/services/timer-dialog.jsx:186
-#, fuzzy
-#| msgid "Size must be a number"
 msgid "Delay must be a number"
-msgstr "サイズは数値である必要があります"
+msgstr "遅延は数字である必要があります"
 
 #: pkg/storaged/vdo-details.jsx:201 pkg/storaged/vdo-details.jsx:264
 #: pkg/storaged/content-views.jsx:365 pkg/storaged/content-views.jsx:388
@@ -2318,10 +2304,8 @@ msgid "Emptying $target"
 msgstr "$target を空にしています"
 
 #: pkg/packagekit/kpatch.jsx:232 pkg/packagekit/autoupdates.jsx:401
-#, fuzzy
-#| msgid "Enabled"
 msgid "Enable"
-msgstr "有効"
+msgstr "有効化"
 
 #: pkg/networkmanager/network-interface.jsx:730
 msgid "Enable or disable the device"
@@ -2370,10 +2354,8 @@ msgid "Encryption options"
 msgstr "暗号化オプション"
 
 #: pkg/storaged/crypto-tab.jsx:240
-#, fuzzy
-#| msgid "Encryption"
 msgid "Encryption type"
-msgstr "暗号化"
+msgstr "暗号化タイプ"
 
 #: pkg/selinux/setroubleshoot-view.jsx:263
 msgid "Enforcing"
@@ -2478,22 +2460,16 @@ msgid "Expansion chassis"
 msgstr "拡張シャーシ"
 
 #: pkg/users/expiration-dialogs.js:62
-#, fuzzy
-#| msgid "Lock account on $0"
 msgid "Expire account on"
-msgstr "$0 のアカウントをロック"
+msgstr "アカウントの有効期限"
 
 #: pkg/users/account-details.js:111
-#, fuzzy
-#| msgid "Lock account on $0"
 msgid "Expire account on $0"
-msgstr "$0 のアカウントをロック"
+msgstr "アカウントの有効期限: $0"
 
 #: pkg/metrics/metrics.jsx:1060
-#, fuzzy
-#| msgid "Routed network"
 msgid "Export to network"
-msgstr "ルーティングされたネットワーク"
+msgstr "ネットワークへエクスポート"
 
 #: pkg/systemd/abrtLog.jsx:244
 msgid "Extended information"
@@ -2529,10 +2505,8 @@ msgid "Failed to change password"
 msgstr "パスワードの変更に失敗しました"
 
 #: pkg/metrics/metrics.jsx:1028
-#, fuzzy
-#| msgid "Failed to clone VM $0"
 msgid "Failed to configure PCP"
-msgstr "VM $0 仮想マシンのクローンに失敗しました"
+msgstr "PCP の設定に失敗しました"
 
 #: pkg/selinux/setroubleshoot-client.js:164
 msgid "Failed to delete alert: $0"
@@ -2551,20 +2525,16 @@ msgid "Failed to edit machine: $0"
 msgstr "マシンの編集に失敗しました: $0"
 
 #: pkg/lib/cockpit-components-firewalld-request.jsx:116
-#, fuzzy
-#| msgid "Failed to enable tuned"
 msgid "Failed to enable $0 in firewalld"
-msgstr "tuned の有効化に失敗しました"
+msgstr "firewalld での $0 の有効化に失敗しました"
 
 #: pkg/tuned/dialog.js:163
 msgid "Failed to enable tuned"
 msgstr "tuned の有効化に失敗しました"
 
 #: pkg/systemd/logsJournal.jsx:260
-#, fuzzy
-#| msgid "Failed to switch profile"
 msgid "Failed to fetch logs"
-msgstr "プロファイルの切り替えに失敗しました"
+msgstr "ログの取得に失敗しました"
 
 #: pkg/users/authorized-keys-panel.js:108
 msgid "Failed to load authorized keys."
