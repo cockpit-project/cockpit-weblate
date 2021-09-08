@@ -11,8 +11,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-02 09:43+0000\n"
-"PO-Revision-Date: 2021-08-29 11:04+0000\n"
-"Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
+"PO-Revision-Date: 2021-09-08 09:06+0000\n"
+"Last-Translator: Burak Yavuz <hitowerdigit@hotmail.com>\n"
 "Language-Team: Turkish <https://translate.fedoraproject.org/projects/cockpit/"
 "main/tr/>\n"
 "Language: tr\n"
@@ -23,10 +23,8 @@ msgstr ""
 "X-Generator: Weblate 4.8\n"
 
 #: pkg/storaged/content-views.jsx:449
-#, fuzzy
-#| msgid "Encrypted $0"
 msgid "$0 (encrypted)"
-msgstr "Şifrelenmiş $0"
+msgstr "$0 (şifrelenmiş)"
 
 #: pkg/metrics/metrics.jsx:419
 msgid "$0 CPU"
@@ -1461,10 +1459,8 @@ msgid "Clear search"
 msgstr "Aramayı temizle"
 
 #: pkg/storaged/crypto-tab.jsx:247
-#, fuzzy
-#| msgid "Create devices"
 msgid "Cleartext device"
-msgstr "Aygıtları oluştur"
+msgstr "Metin temizleme aygıtı"
 
 #: pkg/users/account-create-dialog.js:212 pkg/users/password-dialogs.js:216
 msgid "Click $0 again to use the password anyway."
@@ -2615,17 +2611,13 @@ msgid "Filesystem"
 msgstr "Dosya sistemi"
 
 #: pkg/storaged/content-views.jsx:419
-#, fuzzy
-#| msgid "Filesystem directory"
 msgctxt "storage-id-desc"
 msgid "Filesystem (encrypted)"
-msgstr "Dosya sistemi dizini"
+msgstr "Dosya sistemi (şifrelenmiş)"
 
 #: pkg/storaged/fsys-tab.jsx:671
-#, fuzzy
-#| msgid "Filesystems"
 msgid "Filesystem is locked"
-msgstr "Dosya sistemleri"
+msgstr "Dosya sistemi kilitli"
 
 #: pkg/storaged/fsys-tab.jsx:459
 msgid "Filesystem name"
@@ -2930,6 +2922,11 @@ msgid ""
 "during boot is not possible, such as when a passphrase is required to unlock "
 "the filesystem but booting is unattended."
 msgstr ""
+"Eğer bu seçenek işaretlenirse, dosya sistemi bir sonraki önyükleme "
+"sırasında, önüne bağlanmış olsa bile bağlanmayacaktır. Bu, önyükleme "
+"sırasında bağlama mümkün değilse , örneğin dosya sisteminin kilidini açmak "
+"için bir parola gerektiğinde, ancak önyüklemenin katılımsız olmasında "
+"yararlıdır."
 
 #: pkg/networkmanager/interfaces.js:1459 pkg/packagekit/updates.jsx:631
 #: pkg/packagekit/updates.jsx:706
@@ -3316,10 +3313,8 @@ msgid "Leave domain"
 msgstr "Etki alanından ayrıl"
 
 #: pkg/shell/shell-modals.jsx:81
-#, fuzzy
-#| msgid "GNU LGPL version 2.1"
 msgid "Licensed under GNU LGPL version 2.1"
-msgstr "GNU LGPL sürüm 2.1"
+msgstr "GNU LGPL sürüm 2.1 altında lisanslıdır"
 
 #: pkg/systemd/terminal.jsx:154
 msgid "Light"
@@ -3411,10 +3406,8 @@ msgid "Loading of SSH keys failed"
 msgstr "SSH anahtarlarını yükleme başarısız oldu"
 
 #: pkg/shell/shell-modals.jsx:91
-#, fuzzy
-#| msgid "Loading keys..."
 msgid "Loading packages..."
-msgstr "Anahtarlar yükleniyor..."
+msgstr "Paketler yükleniyor..."
 
 #: pkg/lib/cockpit-components-modifications.jsx:142
 msgid "Loading system modifications..."
@@ -3456,12 +3449,9 @@ msgid "Locked devices"
 msgstr "Kilitli aygıtlar"
 
 #: pkg/storaged/content-views.jsx:421
-#, fuzzy
-#| msgctxt "storage-id-desc"
-#| msgid "Encrypted data"
 msgctxt "storage-id-desc"
 msgid "Locked encrypted data"
-msgstr "Şifrelenmiş veri"
+msgstr "Kilitli şifrelenmiş veriler"
 
 #: pkg/storaged/jobs-panel.jsx:45
 msgid "Locking $target"
@@ -4011,10 +4001,8 @@ msgid "Never expire password"
 msgstr "Parolanın süresi asla dolmasın"
 
 #: pkg/storaged/fsys-tab.jsx:328 pkg/storaged/format-dialog.jsx:261
-#, fuzzy
-#| msgid "Mount at boot"
 msgid "Never mount at boot"
-msgstr "Önyüklemede bağla"
+msgstr "Önyüklemede asla bağlama"
 
 #: pkg/storaged/nfs-details.jsx:144
 msgid "New NFS mount"
@@ -5295,14 +5283,12 @@ msgid "Resume"
 msgstr "Devam"
 
 #: pkg/storaged/format-dialog.jsx:175
-#, fuzzy
-#| msgid "Using LUKS encryption"
 msgid "Reuse existing encryption"
-msgstr "LUKS şifrelemesi kullanılıyor"
+msgstr "Varolan şifrelemeyi yeniden kullan"
 
 #: pkg/storaged/format-dialog.jsx:172
 msgid "Reuse existing encryption ($0)"
-msgstr ""
+msgstr "Varolan şifrelemeyi yeniden kullan ($0)"
 
 #: pkg/systemd/manifest.json:0
 msgid "Reviewing logs"
@@ -6223,6 +6209,8 @@ msgid ""
 "The disk needs to be unlocked before formatting.  Please provide a existing "
 "passphrase."
 msgstr ""
+"Biçimlendirmeden önce diskin kilidinin açılması gerekir. Lütfen varolan bir "
+"parola verin."
 
 #: pkg/storaged/fsys-tab.jsx:516
 msgid "The filesystem has no permanent mount point."
@@ -6303,6 +6291,8 @@ msgid ""
 "The filesystem will be unlocked and mounted on the next boot. This might "
 "require inputting a passphrase."
 msgstr ""
+"Dosya sisteminin kilidi açılacak ve bir sonraki önyüklemeye bağlanacaktır. "
+"Bu bir parola girmeyi gerektirebilir."
 
 #: pkg/packagekit/updates.jsx:439
 msgid "The following service will be restarted:"
@@ -7006,10 +6996,8 @@ msgid "Unlock"
 msgstr "Kilidi aç"
 
 #: pkg/storaged/fsys-tab.jsx:643
-#, fuzzy
-#| msgid "Mount also automatically on boot"
 msgid "Unlock automatically on boot"
-msgstr "Önyüklemede de otomatik olarak bağla"
+msgstr "Önyüklemede kilidi otomatik olarak aç"
 
 #: pkg/shell/index.html:171 pkg/shell/index.html:215
 msgid "Unlock key"
@@ -7196,11 +7184,11 @@ msgstr "Kullanıcı adı"
 
 #: pkg/storaged/manifest.json:0
 msgid "Using LUKS encryption"
-msgstr "LUKS şifrelemesi kullanılıyor"
+msgstr "LUKS şifrelemesi kullanma"
 
 #: pkg/storaged/manifest.json:0
 msgid "Using Tang server"
-msgstr "Tang sunucusu kullanılıyor"
+msgstr "Tang sunucusu kullanma"
 
 #: pkg/storaged/content-views.jsx:195
 msgid "VDO backing"
@@ -7374,10 +7362,8 @@ msgid "Web console is running in limited access mode."
 msgstr "Web konsolu sınırlı erişim kipinde çalışıyor."
 
 #: pkg/shell/shell-modals.jsx:84
-#, fuzzy
-#| msgid "Web Console"
 msgid "Web console logo"
-msgstr "Web Konsolu"
+msgstr "Web konsol logosu"
 
 #: pkg/systemd/services/timer-dialog.jsx:284 pkg/packagekit/autoupdates.jsx:310
 msgid "Wednesdays"
@@ -7902,10 +7888,8 @@ msgid "network"
 msgstr "ağ"
 
 #: pkg/storaged/fsys-tab.jsx:503
-#, fuzzy
-#| msgid "Mount at boot"
 msgid "never mounted at boot"
-msgstr "Önyüklemede bağla"
+msgstr "önyüklemede asla bağlanmasın"
 
 #: pkg/storaged/manifest.json:0
 msgid "nfs"
