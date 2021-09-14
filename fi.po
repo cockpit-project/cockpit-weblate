@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-07 18:06+0000\n"
+"POT-Creation-Date: 2021-09-14 18:06+0000\n"
 "PO-Revision-Date: 2021-08-29 11:04+0000\n"
 "Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/cockpit/"
@@ -41,12 +41,12 @@ msgid "$0 GiB total"
 msgstr "$0 Git yhteensä"
 
 #: pkg/networkmanager/network-main.jsx:167
+#, fuzzy
+#| msgid "$0 active zone"
 msgid "$0 active zone"
-msgstr "$0 aktiivinen vyöhyke"
-
-#: pkg/networkmanager/network-main.jsx:167
-msgid "$0 active zones"
-msgstr "$0 aktiiviset vyöhykkeet"
+msgid_plural "$0 active zones"
+msgstr[0] "$0 aktiivinen vyöhyke"
+msgstr[1] "$0 aktiivinen vyöhyke"
 
 #: pkg/storaged/others-panel.jsx:57
 msgid "$0 block device"
@@ -832,7 +832,7 @@ msgstr "Osoitteet"
 msgid "Administration with Cockpit Web Console"
 msgstr "Hallinta Cockpit-verkkokonsolilla"
 
-#: pkg/shell/superuser.jsx:95 pkg/shell/superuser.jsx:366
+#: pkg/shell/superuser.jsx:90 pkg/shell/superuser.jsx:361
 msgid "Administrative access"
 msgstr "Hallinnollinen käyttöoikeus"
 
@@ -1273,7 +1273,7 @@ msgstr "Lokeja ei löydy käyttämällä nykyistä suodatinten yhdistelmää."
 #: pkg/networkmanager/firewall.jsx:801 pkg/sosreport/index.js:56
 #: pkg/lib/cockpit-components-shutdown.jsx:172
 #: pkg/lib/cockpit-components-dialog.jsx:132 pkg/shell/superuser.jsx:86
-#: pkg/shell/superuser.jsx:160 pkg/shell/shell-modals.jsx:142
+#: pkg/shell/superuser.jsx:155 pkg/shell/shell-modals.jsx:142
 #: pkg/systemd/services/service-details.jsx:76
 #: pkg/systemd/services/timer-dialog.jsx:135 pkg/systemd/reporting.jsx:421
 #: pkg/systemd/overview-cards/configurationCard.jsx:328
@@ -1467,8 +1467,8 @@ msgstr "Asiakasohjelmisto"
 #: pkg/shell/machines/machine-auth-failed.html:20 pkg/shell/index.html:290
 #: pkg/apps/utils.jsx:93 pkg/storaged/dialog.jsx:431 pkg/sosreport/index.js:48
 #: pkg/sosreport/index.js:135 pkg/lib/cockpit-components-modifications.jsx:78
-#: pkg/lib/cockpit-components-terminal.jsx:208 pkg/shell/superuser.jsx:99
-#: pkg/shell/superuser.jsx:107 pkg/shell/shell-modals.jsx:194
+#: pkg/lib/cockpit-components-terminal.jsx:208 pkg/shell/superuser.jsx:94
+#: pkg/shell/superuser.jsx:102 pkg/shell/shell-modals.jsx:194
 #: pkg/systemd/overview-cards/configurationCard.jsx:229
 #: pkg/users/dialog-utils.js:58
 msgid "Close"
@@ -2181,11 +2181,9 @@ msgstr "Levyt"
 #, fuzzy
 #| msgid "Dismiss"
 msgid "Dismiss $0 alert"
-msgstr "Hylkää"
-
-#: pkg/selinux/setroubleshoot-view.jsx:404
-msgid "Dismiss $0 alerts"
-msgstr ""
+msgid_plural "Dismiss $0 alerts"
+msgstr[0] "Hylkää"
+msgstr[1] "Hylkää"
 
 #: pkg/selinux/setroubleshoot-view.jsx:404
 #, fuzzy
@@ -2532,7 +2530,7 @@ msgstr "Palvelun lisääminen epäonnistui"
 msgid "Failed to add zone"
 msgstr "Vyöhykkeen lisääminen epäonnistui"
 
-#: pkg/lib/credentials.js:242 pkg/users/password-dialogs.js:103
+#: pkg/lib/credentials.js:232 pkg/users/password-dialogs.js:103
 #: pkg/users/password-dialogs.js:125
 msgid "Failed to change password"
 msgstr "Salasanan vaihtaminen epäonnistui"
@@ -3091,7 +3089,7 @@ msgstr "Virheellinen päivämuoto ja aikamuoto"
 msgid "Invalid expiration date"
 msgstr "Ei kelvollinen vanhenemispäivä"
 
-#: pkg/lib/credentials.js:312
+#: pkg/lib/credentials.js:294
 msgid "Invalid file permissions"
 msgstr "Virheelliset tiedosto-oikeudet"
 
@@ -3318,15 +3316,15 @@ msgstr "GNU LGPL -versio 2.1"
 msgid "Light"
 msgstr "Kevyt"
 
-#: pkg/shell/superuser.jsx:157
+#: pkg/shell/superuser.jsx:152
 msgid "Limit access"
 msgstr "Rajoita pääsyä"
 
-#: pkg/shell/superuser.jsx:366
+#: pkg/shell/superuser.jsx:361
 msgid "Limited access"
 msgstr "Rajoitettu pääsy"
 
-#: pkg/shell/superuser.jsx:171
+#: pkg/shell/superuser.jsx:166
 msgid ""
 "Limited access mode restricts administrative privileges. Some parts of the "
 "web console will have reduced functionality."
@@ -4028,7 +4026,7 @@ msgstr "Uusi tunnuslause"
 msgid "New password"
 msgstr "Uusi salasana"
 
-#: pkg/lib/credentials.js:251 pkg/users/password-dialogs.js:86
+#: pkg/lib/credentials.js:241 pkg/users/password-dialogs.js:86
 msgid "New password was not accepted"
 msgstr "Uutta salasanaa ei hyväksytty"
 
@@ -4190,7 +4188,7 @@ msgid "No rule hits"
 msgstr "Ei sääntöosumia"
 
 #: pkg/lib/cockpit-components-file-autocomplete.jsx:174
-#: pkg/lib/credentials.js:190
+#: pkg/lib/credentials.js:191
 msgid "No such file or directory"
 msgstr "Ei tällaista tiedostoa tai hakemistoa"
 
@@ -4211,7 +4209,7 @@ msgstr "Käyttäjänimeä ei ole määritetty"
 msgid "None"
 msgstr "Ei yhtään"
 
-#: pkg/lib/credentials.js:282
+#: pkg/lib/credentials.js:277
 msgid "Not a valid private key"
 msgstr "Ei kelvollinen yksityinen avain"
 
@@ -4326,7 +4324,7 @@ msgstr "Vanha tunnuslause"
 msgid "Old password"
 msgstr "Vanha salasana"
 
-#: pkg/lib/credentials.js:231 pkg/users/password-dialogs.js:53
+#: pkg/lib/credentials.js:221 pkg/users/password-dialogs.js:53
 msgid "Old password not accepted"
 msgstr "Vanhaa salasanaa ei hyväksytty"
 
@@ -4546,7 +4544,7 @@ msgstr "Salasana on liian heikko"
 msgid "Password must be changed"
 msgstr "Salasana tulee vaihtaa"
 
-#: pkg/lib/credentials.js:316
+#: pkg/lib/credentials.js:298
 msgid "Password not accepted"
 msgstr "Salasanaa ei hyväksytty"
 
@@ -4775,7 +4773,7 @@ msgstr "Prioriteeetti"
 msgid "Priority $priority"
 msgstr "Prioriteetti $priority"
 
-#: pkg/shell/superuser.jsx:103
+#: pkg/shell/superuser.jsx:98
 msgid "Problem becoming administrator"
 msgstr "Ongelma järjestelmänvalvojaksi tulemisessa"
 
@@ -4799,11 +4797,11 @@ msgstr "Projektin verkkosivusto"
 msgid "Prompting via passwd timed out"
 msgstr "Kysely 'passwd':n kautta aikakatkaistiin"
 
-#: pkg/lib/credentials.js:287
+#: pkg/lib/credentials.js:285
 msgid "Prompting via ssh-add timed out"
 msgstr "Kysely 'ssh-add':in kautta aikakatkaistiin"
 
-#: pkg/lib/credentials.js:200
+#: pkg/lib/credentials.js:210
 msgid "Prompting via ssh-keygen timed out"
 msgstr "Kysely 'ssh-keygen':in kautta aikakatkaistiin"
 
@@ -5998,7 +5996,7 @@ msgstr "Kytke $0 päälle"
 msgid "Switch to administrative access"
 msgstr "Vaihda järjestelmänvalvojan käyttöoikeuksille"
 
-#: pkg/shell/superuser.jsx:169
+#: pkg/shell/superuser.jsx:164
 msgid "Switch to limited access"
 msgstr "Vaihda rajoitettuun pääsyyn"
 
@@ -7130,7 +7128,7 @@ msgstr "Käytä pakkausta"
 msgid "Use deduplication"
 msgstr "Käytä päällekkäisyyden poistoa"
 
-#: pkg/shell/credentials.js:76
+#: pkg/shell/credentials.js:74
 msgid "Use key"
 msgstr "Käytä avainta"
 
@@ -7465,7 +7463,7 @@ msgstr ""
 "Sinun on vaihdettava \"Järjestelmänvalvojan käyttöoikeus\":een, jotta voit "
 "luoda raportteja."
 
-#: pkg/shell/superuser.jsx:314
+#: pkg/shell/superuser.jsx:309
 msgid "You now have administrative access."
 msgstr "Sinulla on nyt järjestelmänvalvojan käyttöoikeus."
 
@@ -7484,7 +7482,7 @@ msgid ""
 msgstr ""
 "Selaimesi ei salli liittämistä pikavalikosta. Voit käyttää Vaihto+Insert."
 
-#: pkg/shell/superuser.jsx:172
+#: pkg/shell/superuser.jsx:167
 msgid "Your browser will remember your access level across sessions."
 msgstr "Selaimesi muistaa käyttöoikeustasosi istuntojen ajan."
 
@@ -8195,6 +8193,9 @@ msgstr "vyöhyke"
 #: pkg/shell/machines/machine-invalid-hostkey.html:2
 msgid "{{host}} key changed"
 msgstr "{{host}} avain vaihdettu"
+
+#~ msgid "$0 active zones"
+#~ msgstr "$0 aktiiviset vyöhykkeet"
 
 #~ msgid "$0 occurrence"
 #~ msgid_plural "$0 occurrences"
