@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-08 08:15+0000\n"
-"PO-Revision-Date: 2021-09-07 06:02+0000\n"
+"PO-Revision-Date: 2021-09-23 11:05+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://translate.fedoraproject.org/projects/cockpit/"
 "rhel-8-5/cs/>\n"
@@ -256,9 +256,9 @@ msgstr[2] "$0 služeb zhavarovalo"
 #: pkg/packagekit/updates.jsx:665 pkg/packagekit/updates.jsx:772
 msgid "$0 service needs to be restarted"
 msgid_plural "$0 services need to be restarted"
-msgstr[0] "Je třeba restartovat $0 službu"
-msgstr[1] "Je třeba restartovat $0 služby"
-msgstr[2] "Je třeba restartovat $0 služeb"
+msgstr[0] "Je třeba zrestartovat $0 službu"
+msgstr[1] "Je třeba zrestartovat $0 služby"
+msgstr[2] "Je třeba zrestartovat $0 služeb"
 
 #: pkg/storaged/crypto-keyslots.jsx:599
 msgid "$0 slot remains"
@@ -589,19 +589,17 @@ msgstr ""
 msgid "A package needs a system reboot for the updates to take effect:"
 msgid_plural ""
 "Some packages need a system reboot for the updates to take effect:"
-msgstr[0] "Aby se aktualizace projevily, balíček potřebuje restart systému:"
-msgstr[1] ""
-"Aby se aktualizace projevily, některé balíčky potřebují restart systému:"
-msgstr[2] ""
-"Aby se aktualizace projevily, některé balíčky potřebují restart systému:"
+msgstr[0] "Aby se uplatnil, aktualizovaný balíček potřebuje restart systému:"
+msgstr[1] "Aby se uplatnily, aktualizované balíčky potřebují restart systému:"
+msgstr[2] "Aby se uplatnily, aktualizované balíčky potřebují restart systému:"
 
 #: pkg/packagekit/updates.jsx:1431
 msgid "A service needs to be restarted for the updates to take effect:"
 msgid_plural ""
 "Some services need to be restarted for the updates to take effect:"
-msgstr[0] "Aby se aktualizace projevily, je třeba restartovat službu:"
-msgstr[1] "Aby se aktualizace projevily, je třeba restartovat některé služby:"
-msgstr[2] "Aby se aktualizace projevily, je třeba restartovat některé služby:"
+msgstr[0] "Aby se aktualizace uplatnily, je třeba restartovat službu:"
+msgstr[1] "Aby se aktualizace uplatnily, je třeba restartovat některé služby:"
+msgstr[2] "Aby se aktualizace uplatnily, je třeba restartovat některé služby:"
 
 #: pkg/storaged/mdraid-details.jsx:131
 msgid "A spare disk needs to be added first before this disk can be removed."
@@ -2404,7 +2402,7 @@ msgstr "Upravit hostitele"
 # po/ipa
 #: pkg/systemd/overview-cards/motdCard.jsx:77
 msgid "Edit motd"
-msgstr "Upravit motd"
+msgstr "Upravit hostitele"
 
 #: pkg/networkmanager/network-main.jsx:158
 msgid "Edit rules and zones"
@@ -2608,11 +2606,11 @@ msgstr "Rozšiřující šasi"
 
 #: pkg/users/expiration-dialogs.js:62
 msgid "Expire account on"
-msgstr "Skončit platnost účtu v"
+msgstr "Ukončit platnost účtu v"
 
 #: pkg/users/account-details.js:111
 msgid "Expire account on $0"
-msgstr "Skončit platnost účtu na $0"
+msgstr "Ukončit platnost účtu v $0"
 
 #: pkg/metrics/metrics.jsx:1060
 msgid "Export to network"
@@ -3452,7 +3450,7 @@ msgstr "Poslední přihlášení:"
 
 #: pkg/storaged/crypto-tab.jsx:49
 msgid "Last modified: $0"
-msgstr "Naposledy změněno: $0"
+msgstr "Naposledy zkontrolováno: $0"
 
 #: pkg/networkmanager/network-main-dialogs.jsx:73
 #: pkg/lib/cockpit-components-dialog.jsx:226
@@ -4764,7 +4762,7 @@ msgstr "Vložit"
 # pulseaudio.pot
 #: pkg/lib/cockpit-components-terminal.jsx:201
 msgid "Paste error"
-msgstr "Vložit chybu"
+msgstr "Chyba vkládání"
 
 #: pkg/users/authorized-keys-panel.js:36
 msgid "Paste the contents of your public SSH key file here"
@@ -5845,7 +5843,7 @@ msgstr ""
 
 #: pkg/packagekit/updates.jsx:86
 msgid "Setting up"
-msgstr "Nastavení"
+msgstr "Nastavování"
 
 #: pkg/storaged/jobs-panel.jsx:58
 msgid "Setting up loop device $target"
@@ -6837,6 +6835,13 @@ msgid ""
 "chronological order, 2 the second and so on; while -0 is the last boot, -1 "
 "the boot before last, and so on."
 msgstr ""
+"Toto přidá shodu pro „_BOOT_ID=“. Pokud není určeno, budou zobrazeny záznamy "
+"událostí pro stávající start systému. Pokud je identifikátor startu "
+"vynechán, kladný posun prohledá starty počínaje od začátku žurnálu a posun "
+"rovný nebo menší než nula prohledá starty počínaje od konce žurnálu. Proto 1 "
+"znamená první start, nalezený v žurnálu v chronologickém pořadí, 2 druhé a "
+"tak dále; zatímco -0 je poslední start, -1 start před tím posledním, a tak "
+"dále."
 
 #: pkg/systemd/logs.jsx:369
 msgid ""
@@ -6844,6 +6849,9 @@ msgid ""
 "find all possible messages for the given unit. Can contain more units "
 "separated by comma. "
 msgstr ""
+"Toto přidá shodu pro „_SYSTEMD_UNIT=“, „COREDUMP_UNIT=“ a „UNIT=“ a pomůže "
+"tak nalezení všech případných zpráv pro danou jednotku. Může obsahovat "
+"vícero jednotek, oddělovaných čárkou. "
 
 #: pkg/shell/machines/machine-dialogs.js:757
 msgid "This will allow you to log in without password in the future."
@@ -6885,7 +6893,7 @@ msgstr "Časová zóna"
 
 #: pkg/systemd/services/timer-dialog.jsx:126
 msgid "Timer creation failed"
-msgstr "Vytvoření časovače se nezdaiřlo"
+msgstr "Vytvoření časovače se nezdařilo"
 
 #: pkg/systemd/services/service-tabs.jsx:41
 msgid "Timers"
@@ -6905,6 +6913,8 @@ msgid ""
 "To ensure that your connection is not intercepted by a malicious third-"
 "party, please verify the host key fingerprint:"
 msgstr ""
+"Abyste zajistili, že do vašeho připojení není zasahováno záškodnickou třetí "
+"stranou, ověřte otisk klíče hostitele:"
 
 #: pkg/packagekit/updates.jsx:1294
 msgid ""
@@ -6919,6 +6929,8 @@ msgid ""
 "To verify a fingerprint, run the following on $0 while physically sitting at "
 "the machine or through a trusted network:"
 msgstr ""
+"Pokud chcete otisk ověřit, spusťte následující na $0 když jste fyzicky u "
+"stroje nebo prostřednictvím důvěryhodné sítě:"
 
 #: pkg/shell/machines/machine-unknown-hostkey.html:10
 #: pkg/shell/machines/machine-invalid-hostkey.html:18
@@ -6926,6 +6938,8 @@ msgid ""
 "To verify a fingerprint, run the following on {{host}} while physically "
 "sitting at the machine or through a trusted network:"
 msgstr ""
+"Pokud chcete otisk ověřit, spusťte následující na {{host}} když jste fyzicky "
+"u stroje nebo prostřednictvím důvěryhodné sítě:"
 
 #: pkg/metrics/metrics.jsx:1347
 msgid "Today"
@@ -7030,6 +7044,9 @@ msgid ""
 "under certain workloads. The core of Tuned are profiles, which tune your "
 "system for different use cases."
 msgstr ""
+"Tuned je služba která monitoruje váš systém a optimalizuje jeho výkon pod "
+"určitými zátěžemi. Jádrem Tuned jsou profily, který ladí váš systém pro "
+"různé případy použití."
 
 #: pkg/tuned/dialog.js:93
 msgid "Tuned is not available"
@@ -7667,6 +7684,9 @@ msgid ""
 "information. However, the update process will continue in the background. "
 "Reconnect to continue watching the update process."
 msgstr ""
+"Když je webová konzole restartována, už neuvidíte informaci o průběhu. "
+"Nicméně aktualizační proces bude pokračovat na pozadí. Pokud chcete sledovat "
+"proces aktualizace, znovu se připojte."
 
 #: pkg/systemd/terminal.jsx:155
 msgid "White"
@@ -7899,7 +7919,7 @@ msgstr "konzole"
 
 #: pkg/systemd/manifest.json:0
 msgid "coredump"
-msgstr "coredump"
+msgstr "výpis paměti"
 
 #: pkg/systemd/manifest.json:0
 msgid "cpu"
@@ -8005,7 +8025,7 @@ msgstr "každé úterý"
 # DocId: locale
 #: pkg/packagekit/autoupdates.jsx:342
 msgid "every Wednesday"
-msgstr "každý všední den"
+msgstr "každou středu"
 
 #: pkg/packagekit/autoupdates.jsx:307 pkg/packagekit/autoupdates.jsx:339
 msgid "every day"
@@ -8233,7 +8253,7 @@ msgstr "heslo"
 
 #: pkg/lib/cockpit-components-password.jsx:85
 msgid "password quality"
-msgstr "kvalita hesla"
+msgstr "odolnost hesla"
 
 #: pkg/packagekit/updates.jsx:281
 msgid "patches"
@@ -8338,7 +8358,7 @@ msgstr "zobrazit více"
 
 #: pkg/systemd/manifest.json:0
 msgid "shut"
-msgstr "shut"
+msgstr "vyp"
 
 #: pkg/systemd/manifest.json:0
 msgid "socket"
@@ -8440,7 +8460,7 @@ msgstr "zrušit maskování"
 
 #: pkg/storaged/manifest.json:0
 msgid "unmount"
-msgstr "unmount"
+msgstr "odpojit (unmount)"
 
 #: pkg/storaged/utils.js:439
 msgid "unpartitioned space on $0"
