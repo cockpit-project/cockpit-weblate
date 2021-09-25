@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-21 18:06+0000\n"
-"PO-Revision-Date: 2021-09-21 06:05+0000\n"
+"PO-Revision-Date: 2021-09-25 20:05+0000\n"
 "Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/cockpit/"
 "main/fi/>\n"
@@ -21,10 +21,8 @@ msgstr ""
 "X-Generator: Weblate 4.8\n"
 
 #: pkg/storaged/content-views.jsx:449
-#, fuzzy
-#| msgid "Encrypted $0"
 msgid "$0 (encrypted)"
-msgstr "Salattu $0"
+msgstr "$0 (salattu)"
 
 #: pkg/metrics/metrics.jsx:419
 msgid "$0 CPU"
@@ -912,6 +910,11 @@ msgid ""
 "fields. These are space separated values, in form FIELD=VALUE, where value "
 "can be comma separated list of possible values."
 msgstr ""
+"Mikä tahansa tekstimerkkijono lokiviesteissä voidaan suodattaa. Merkkijono "
+"voi olla myös säännöllisten lausekkeiden muodossa. Tukee myös suodatusta "
+"viestilokikenttien mukaan. Nämä ovat välilyönnillä erotettuja arvoja "
+"muodossa FIELD=VALUE, jossa arvo voi olla pilkuilla erotettu luettelo "
+"mahdollisista arvoista."
 
 #: pkg/systemd/terminal.jsx:146
 msgid "Appearance"
@@ -1443,10 +1446,8 @@ msgid "Clear search"
 msgstr "Tyhjennä haku"
 
 #: pkg/storaged/crypto-tab.jsx:245
-#, fuzzy
-#| msgid "Create devices"
 msgid "Cleartext device"
-msgstr "Luo laitteet"
+msgstr "Selkeä teksti-laite"
 
 #: pkg/users/account-create-dialog.js:212 pkg/users/password-dialogs.js:216
 msgid "Click $0 again to use the password anyway."
@@ -1970,6 +1971,10 @@ msgid ""
 "'now' refers to the current time. Finally, relative times may be specified, "
 "prefixed with '-' or '+'"
 msgstr ""
+"Päivämäärätietojen on oltava muodossa VVVV-KK-PP hh:mm:ss. Vaihtoehtoisesti "
+"merkkijonot \"eilen\", \"tänään\", \"huomenna\" ymmärretään. \"nyt\" viittaa "
+"nykyiseen aikaan. Lopuksi suhteelliset ajat voidaan määrittää etuliitteellä "
+"'-' tai '+'"
 
 #: pkg/storaged/content-views.jsx:306
 msgid "Deactivate"
@@ -2183,10 +2188,8 @@ msgstr[0] "Hylkää $0 hälytys"
 msgstr[1] "Hylkää $0 hälytykset"
 
 #: pkg/selinux/setroubleshoot-view.jsx:404
-#, fuzzy
-#| msgid "Close selected pages"
 msgid "Dismiss selected alerts"
-msgstr "Sulje valitut sivut"
+msgstr "Hylkää valitut hälytykset"
 
 #: pkg/shell/index.html:71 pkg/shell/shell-modals.jsx:139
 msgid "Display language"
@@ -2603,17 +2606,13 @@ msgid "Filesystem"
 msgstr "Tiedostojärjestelmä"
 
 #: pkg/storaged/content-views.jsx:419
-#, fuzzy
-#| msgid "Filesystem directory"
 msgctxt "storage-id-desc"
 msgid "Filesystem (encrypted)"
-msgstr "Tiedostojärjestelmän hakemisto"
+msgstr "Tiedostojärjestelmä (salattu)"
 
 #: pkg/storaged/fsys-tab.jsx:671
-#, fuzzy
-#| msgid "Filesystems"
 msgid "Filesystem is locked"
-msgstr "Tiedostojärjestelmät"
+msgstr "Tiedostojärjestelmä on lukittu"
 
 #: pkg/storaged/fsys-tab.jsx:459
 msgid "Filesystem name"
@@ -2919,6 +2918,11 @@ msgid ""
 "during boot is not possible, such as when a passphrase is required to unlock "
 "the filesystem but booting is unattended."
 msgstr ""
+"Jos tämä vaihtoehto on valittuna, tiedostojärjestelmää ei liitetä seuraavan "
+"käynnistyksen aikana, vaikka se olisi ollut liitettynä aiemmin. Tästä on "
+"hyötyä, jos liittäminen käynnistyksen aikana ei ole mahdollista, esimerkiksi "
+"silloin, kun salasana tarvitaan tiedostojärjestelmän lukituksen avaamiseen, "
+"mutta käynnistys on ilman valvontaa."
 
 #: pkg/networkmanager/interfaces.js:1459 pkg/packagekit/updates.jsx:625
 #: pkg/packagekit/updates.jsx:700
@@ -3210,7 +3214,7 @@ msgstr "Ytimen tyhjennys"
 
 #: pkg/packagekit/kpatch.jsx:345
 msgid "Kernel patch $0 is active"
-msgstr ""
+msgstr "Ytimen korjaustiedosto $0 on aktiivinen"
 
 #: pkg/packagekit/kpatch.jsx:352
 msgid "Kernel patch $0 is installed"
@@ -3302,10 +3306,8 @@ msgid "Leave domain"
 msgstr "Jätä toimialue"
 
 #: pkg/shell/shell-modals.jsx:81
-#, fuzzy
-#| msgid "GNU LGPL version 2.1"
 msgid "Licensed under GNU LGPL version 2.1"
-msgstr "GNU LGPL -versio 2.1"
+msgstr "Käytetään GNU LGPL -versio 2.1 lisenssiä"
 
 #: pkg/systemd/terminal.jsx:154
 msgid "Light"
@@ -3397,10 +3399,8 @@ msgid "Loading of SSH keys failed"
 msgstr "SSH-avainten lataaminen epäonnistui"
 
 #: pkg/shell/shell-modals.jsx:91
-#, fuzzy
-#| msgid "Loading keys..."
 msgid "Loading packages..."
-msgstr "Ladataan avaimet..."
+msgstr "Ladataan paketteja..."
 
 #: pkg/lib/cockpit-components-modifications.jsx:142
 msgid "Loading system modifications..."
@@ -3442,12 +3442,9 @@ msgid "Locked devices"
 msgstr "Lukitut laitteet"
 
 #: pkg/storaged/content-views.jsx:421
-#, fuzzy
-#| msgctxt "storage-id-desc"
-#| msgid "Encrypted data"
 msgctxt "storage-id-desc"
 msgid "Locked encrypted data"
-msgstr "Salatut tiedot"
+msgstr "Lukitut salatut tiedot"
 
 #: pkg/storaged/jobs-panel.jsx:45
 msgid "Locking $target"
@@ -3994,10 +3991,8 @@ msgid "Never expire password"
 msgstr "Älä koskaan vanhenna salasanaa"
 
 #: pkg/storaged/format-dialog.jsx:261 pkg/storaged/fsys-tab.jsx:328
-#, fuzzy
-#| msgid "Mount at boot"
 msgid "Never mount at boot"
-msgstr "Liitä käynnistyksen yhteydessä"
+msgstr "Älä koskaan liitä käynnistyksen yhteydessä"
 
 #: pkg/storaged/nfs-details.jsx:144
 msgid "New NFS mount"
@@ -5280,14 +5275,12 @@ msgid "Resume"
 msgstr "Palauta"
 
 #: pkg/storaged/format-dialog.jsx:175
-#, fuzzy
-#| msgid "Using LUKS encryption"
 msgid "Reuse existing encryption"
-msgstr "Käytetään LUKS-salausta"
+msgstr "Käytä olemassa olevaa salausta uudelleen"
 
 #: pkg/storaged/format-dialog.jsx:172
 msgid "Reuse existing encryption ($0)"
-msgstr ""
+msgstr "Käytä olemassa olevaa salausta uudelleen ($0)"
 
 #: pkg/systemd/manifest.json:0
 msgid "Reviewing logs"
@@ -5642,15 +5635,15 @@ msgstr "Näytä sormenjäljet"
 
 #: pkg/systemd/logs.jsx:378
 msgid "Show messages containing given string."
-msgstr ""
+msgstr "Näytä viestit, jotka sisältävät annetun merkkijonon."
 
 #: pkg/systemd/logs.jsx:367
 msgid "Show messages for the specified systemd unit."
-msgstr ""
+msgstr "Näytä määritetyn järjestelmäyksikön viestit."
 
 #: pkg/systemd/logs.jsx:356
 msgid "Show messages from a specific boot."
-msgstr ""
+msgstr "Näytä viestit tietystä käynnistyksestä."
 
 #: pkg/systemd/services/service-details.jsx:558
 msgid "Show more relationships"
@@ -5683,7 +5676,7 @@ msgstr "Sammuta"
 
 #: pkg/systemd/logs.jsx:333
 msgid "Since"
-msgstr ""
+msgstr "Siitä asti kun"
 
 #: pkg/lib/machine-info.js:255
 msgid "Single rank"
@@ -5831,10 +5824,12 @@ msgstr "Käynnistä palvelu"
 #: pkg/systemd/logs.jsx:334
 msgid "Start showing entries on or newer than the specified date."
 msgstr ""
+"Aloita merkintöjen näyttäminen määritetystä tai sitä myöhemmästä päivästä."
 
 #: pkg/systemd/logs.jsx:345
 msgid "Start showing entries on or older than the specified date."
 msgstr ""
+"Aloita merkintöjen näyttäminen määritetystä tai sitä aiemmasta päivästä."
 
 #: pkg/storaged/jobs-panel.jsx:66
 msgid "Starting RAID device $target"
@@ -6202,7 +6197,7 @@ msgstr ""
 msgid ""
 "The disk needs to be unlocked before formatting.  Please provide a existing "
 "passphrase."
-msgstr ""
+msgstr "Levy on avattava ennen alustamista. Anna olemassa oleva tunnuslause."
 
 #: pkg/storaged/fsys-tab.jsx:516
 msgid "The filesystem has no permanent mount point."
@@ -6280,6 +6275,8 @@ msgid ""
 "The filesystem will be unlocked and mounted on the next boot. This might "
 "require inputting a passphrase."
 msgstr ""
+"Tiedostojärjestelmän lukitus avataan ja se liitetään järjestelmään "
+"seuraavassa käynnistyksessä. Tämä saattaa edellyttää salasanan syöttämistä."
 
 #: pkg/packagekit/updates.jsx:433
 msgid "The following service will be restarted:"
