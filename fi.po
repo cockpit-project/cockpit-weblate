@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-21 18:06+0000\n"
-"PO-Revision-Date: 2021-09-25 20:05+0000\n"
+"PO-Revision-Date: 2021-10-01 15:05+0000\n"
 "Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/cockpit/"
 "main/fi/>\n"
@@ -6567,6 +6567,13 @@ msgid ""
 "chronological order, 2 the second and so on; while -0 is the last boot, -1 "
 "the boot before last, and so on."
 msgstr ""
+"Tämä lisää osuman '_BOOT_ID ='. Jos sitä ei ole määritetty, nykyisen "
+"käynnistyksen lokit näytetään. Jos käynnistystunnus jätetään pois, "
+"positiivinen siirtymä etsii käynnistykset päiväkirjan alusta alkaen ja yhtä "
+"suuri tai pienempi kuin nolla-siirtymä etsii käynnistykset päiväkirjan "
+"lopusta alkaen. Siten 1 tarkoittaa ensimmäistä löydettyä käynnistystä "
+"päiväkirjassa aikajärjestyksessä, 2 toista ja niin edelleen; kun -0 on "
+"viimeinen käynnistys, -1 käynnistys ennen viimeistä jne."
 
 #: pkg/systemd/logs.jsx:369
 msgid ""
@@ -6574,6 +6581,9 @@ msgid ""
 "find all possible messages for the given unit. Can contain more units "
 "separated by comma. "
 msgstr ""
+"Tämä lisää osuman '_SYSTEMD_UNIT =', 'COREDUMP_UNIT =' ja 'UNIT =' "
+"löytääkseen kaikki mahdolliset viestit annetulle yksikölle. Voi sisältää "
+"enemmän yksiköitä pilkuilla erotettuna. "
 
 #: pkg/shell/machines/machine-dialogs.js:757
 msgid "This will allow you to log in without password in the future."
@@ -6966,10 +6976,8 @@ msgid "Unlock"
 msgstr "Avaa"
 
 #: pkg/storaged/fsys-tab.jsx:643
-#, fuzzy
-#| msgid "Mount also automatically on boot"
 msgid "Unlock automatically on boot"
-msgstr "Liitä myös automaattisesti käynnistyksessä"
+msgstr "Avaa lukitus automaattisesti käynnistyksessä"
 
 #: pkg/shell/index.html:171 pkg/shell/index.html:215
 msgid "Unlock key"
@@ -7032,7 +7040,7 @@ msgstr "Tukematon taltio"
 
 #: pkg/systemd/logs.jsx:344
 msgid "Until"
-msgstr ""
+msgstr "Kunnes"
 
 #: pkg/base1/cockpit.js:4036 pkg/base1/cockpit.js:4038
 msgid "Untrusted host"
@@ -7333,10 +7341,8 @@ msgid "Web console is running in limited access mode."
 msgstr "Verkkokonsoli toimii rajoitetun pääsyn tilassa."
 
 #: pkg/shell/shell-modals.jsx:84
-#, fuzzy
-#| msgid "Web Console"
 msgid "Web console logo"
-msgstr "Verkkokonsoli"
+msgstr "Verkkokonsolilogo"
 
 #: pkg/packagekit/autoupdates.jsx:308 pkg/systemd/services/timer-dialog.jsx:284
 msgid "Wednesdays"
@@ -7722,7 +7728,7 @@ msgstr "firewalld"
 
 #: pkg/packagekit/kpatch.jsx:244
 msgid "for current and future kernels"
-msgstr ""
+msgstr "nykyisille ja tuleville ytimille"
 
 #: pkg/packagekit/kpatch.jsx:249
 msgid "for current kernel only"
@@ -7865,10 +7871,8 @@ msgid "network"
 msgstr "verkko"
 
 #: pkg/storaged/fsys-tab.jsx:503
-#, fuzzy
-#| msgid "Mount at boot"
 msgid "never mounted at boot"
-msgstr "Liitä käynnistyksen yhteydessä"
+msgstr "Ei koskaan liitetä käynnistyksen yhteydessä"
 
 #: pkg/storaged/manifest.json:0
 msgid "nfs"
@@ -7927,7 +7931,7 @@ msgstr "salasanan laatu"
 
 #: pkg/packagekit/updates.jsx:275
 msgid "patches"
-msgstr ""
+msgstr "paikkauksia"
 
 #: pkg/systemd/manifest.json:0
 msgid "path"
