@@ -23,8 +23,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-08 08:07+0000\n"
-"PO-Revision-Date: 2021-11-16 06:16+0000\n"
-"Last-Translator: Martin Pitt <mpitt@redhat.com>\n"
+"PO-Revision-Date: 2021-12-07 22:16+0000\n"
+"Last-Translator: Ettore Atalan <atalanttore@googlemail.com>\n"
 "Language-Team: German <https://translate.fedoraproject.org/projects/cockpit/"
 "rhel-9-0/de/>\n"
 "Language: de\n"
@@ -32,7 +32,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.9\n"
+"X-Generator: Weblate 4.9.1\n"
 
 #: pkg/metrics/metrics.jsx:419
 msgid "$0 CPU"
@@ -571,24 +571,26 @@ msgstr ""
 "und wird zur Datei ${afile} hinzugefügt für ${ruser} auf ${rhost}."
 
 #: pkg/packagekit/updates.jsx:1427
-#, fuzzy
-#| msgid "Updated packages may require a restart to take effect."
 msgid "A package needs a system reboot for the updates to take effect:"
 msgid_plural ""
 "Some packages need a system reboot for the updates to take effect:"
 msgstr[0] ""
-"Aktualisierte Pakete erfordern möglicherweise einen Neustart, um wirksam zu "
-"werden."
+"Ein Paket benötigt einen Neustart des Systems, damit die Aktualisierungen "
+"wirksam werden:"
 msgstr[1] ""
-"Aktualisierte Pakete erfordern möglicherweise einen Neustart, um wirksam zu "
-"werden."
+"Einige Pakete benötigen einen Neustart des Systems, damit die "
+"Aktualisierungen wirksam werden:"
 
 #: pkg/packagekit/updates.jsx:1431
 msgid "A service needs to be restarted for the updates to take effect:"
 msgid_plural ""
 "Some services need to be restarted for the updates to take effect:"
 msgstr[0] ""
+"Ein Dienst muss neu gestartet werden, damit die Aktualisierungen wirksam "
+"werden:"
 msgstr[1] ""
+"Einige Dienste müssen neu gestartet werden, damit die Aktualisierungen "
+"wirksam werden:"
 
 #: pkg/storaged/mdraid-details.jsx:131
 msgid "A spare disk needs to be added first before this disk can be removed."
@@ -1271,6 +1273,7 @@ msgstr "CVE"
 #: pkg/shell/machines/machine-add.html:26
 msgid "Can be a hostname, IP address, alias name, or ssh:// URI"
 msgstr ""
+"Kann ein Hostname, eine IP-Adresse, ein Alias-Name oder ein ssh:// URI sein"
 
 #: pkg/systemd/logsJournal.jsx:281
 msgid "Can not find any logs using the current combination of filters."
@@ -1386,6 +1389,9 @@ msgid ""
 "However, an unexpected change may indicate a third-party attempt to "
 "intercept your connection."
 msgstr ""
+"Geänderte Schlüssel sind oft das Ergebnis einer Neuinstallation des "
+"Betriebssystems. Allerdings kann eine unerwartete Änderung auf einen Versuch "
+"eines Dritten hinweisen, Ihre Verbindung auszuspähen."
 
 #: pkg/networkmanager/interfaces.js:1724
 msgid ""
@@ -1554,10 +1560,8 @@ msgstr ""
 "Maschinen mit einem Klick hinzu und Ihre Maschinen schauen zu ihren Kumpels."
 
 #: pkg/metrics/metrics.jsx:1043
-#, fuzzy
-#| msgid "Store metrics"
 msgid "Collect metrics"
-msgstr "Kennzahlen speichern"
+msgstr "Kennzahlen sammeln"
 
 #: pkg/shell/machines/machine-add.html:37
 msgid "Color"
@@ -1654,10 +1658,8 @@ msgid "Confirm removal of $0"
 msgstr "Betätigen sie das entfernen von $0"
 
 #: pkg/storaged/crypto-keyslots.jsx:414
-#, fuzzy
-#| msgid "Confirm removal with passphrase"
 msgid "Confirm removal with an alternate passphrase"
-msgstr "Bestätigen Sie das Entfernen mit der Passphrase"
+msgstr "Bestätigen Sie die Entfernung mit einer alternativen Passphrase"
 
 #: pkg/systemd/services/service-details.jsx:454
 msgid "Conflicted by"
@@ -2189,10 +2191,8 @@ msgid "Disk I/O"
 msgstr "Festplatten-E/A"
 
 #: pkg/metrics/metrics.jsx:125
-#, fuzzy
-#| msgid "Disk I/O"
 msgid "Disk I/O spike"
-msgstr "Festplatten-E/A"
+msgstr ""
 
 #: pkg/storaged/drive-details.jsx:64
 msgid "Disk is OK"
@@ -2521,16 +2521,12 @@ msgid "Expansion chassis"
 msgstr "Erweiterungsgehäuse"
 
 #: pkg/users/expiration-dialogs.js:62
-#, fuzzy
-#| msgid "Lock account on $0"
 msgid "Expire account on"
-msgstr "Konto sperren auf $0"
+msgstr "Konto ablaufen lassen am"
 
 #: pkg/users/account-details.js:111
-#, fuzzy
-#| msgid "Lock account on $0"
 msgid "Expire account on $0"
-msgstr "Konto sperren auf $0"
+msgstr "Konto auf $0 ablaufen lassen"
 
 #: pkg/metrics/metrics.jsx:1060
 msgid "Export to network"
@@ -2570,10 +2566,8 @@ msgid "Failed to change password"
 msgstr "Passwort konnte nicht geändert werden"
 
 #: pkg/metrics/metrics.jsx:1028
-#, fuzzy
-#| msgid "Failed to add machine: $0"
 msgid "Failed to configure PCP"
-msgstr "Maschine konnte nicht hinzugefügt werden: $0"
+msgstr "PCP konnte nicht konfiguriert werden"
 
 #: pkg/selinux/setroubleshoot-client.js:164
 msgid "Failed to delete alert: $0"
@@ -2592,20 +2586,16 @@ msgid "Failed to edit machine: $0"
 msgstr "Maschine konnte nicht editiert werden: $0"
 
 #: pkg/lib/cockpit-components-firewalld-request.jsx:116
-#, fuzzy
-#| msgid "Failed to enable tuned"
 msgid "Failed to enable $0 in firewalld"
-msgstr "Tuned konnte nicht aktiviert werden"
+msgstr "$0 konnte nicht in firewalld aktiviert werden"
 
 #: pkg/tuned/dialog.js:163
 msgid "Failed to enable tuned"
 msgstr "Tuned konnte nicht aktiviert werden"
 
 #: pkg/systemd/logsJournal.jsx:260
-#, fuzzy
-#| msgid "Failed to switch profile"
 msgid "Failed to fetch logs"
-msgstr "Profil konnte nicht gewechselt werden"
+msgstr "Protokolle konnten nicht abgerufen werden"
 
 #: pkg/users/authorized-keys-panel.js:108
 msgid "Failed to load authorized keys."
@@ -2618,16 +2608,12 @@ msgid ""
 msgstr ""
 
 #: pkg/packagekit/updates.jsx:424
-#, fuzzy
-#| msgid "Failed to add service"
 msgid "Failed to restart service"
-msgstr "Hinzufügen des Services fehlgeschlagen"
+msgstr "Dienst konnte nicht neu gestartet werden"
 
 #: pkg/systemd/overview-cards/motdCard.jsx:97
-#, fuzzy
-#| msgid "Failed to change firmware"
 msgid "Failed to save changes in /etc/motd"
-msgstr "Firmware konnte nicht geändert werden"
+msgstr "Änderungen in /etc/motd konnten nicht gespeichert werden"
 
 #: pkg/systemd/services/service-details.jsx:350
 #: pkg/systemd/services/services.jsx:176
@@ -2754,12 +2740,12 @@ msgid ""
 "Free up space in this group: Shrink or delete other logical volumes or add "
 "another physical volume."
 msgstr ""
+"Geben Sie Speicherplatz in dieser Gruppe frei: Verkleinern oder löschen Sie "
+"andere logische Volumen oder fügen Sie ein weiteres physisches Volumen hinzu."
 
 #: pkg/systemd/logs.jsx:377
-#, fuzzy
-#| msgid "Clear search"
 msgid "Free-form search"
-msgstr "Suche zurücksetzen"
+msgstr "Freitext-Suche"
 
 #: pkg/systemd/services/timer-dialog.jsx:286 pkg/packagekit/autoupdates.jsx:312
 msgid "Fridays"
@@ -2787,10 +2773,8 @@ msgid "Generating report"
 msgstr "Bericht erstellen"
 
 #: pkg/systemd/logDetails.jsx:58
-#, fuzzy
-#| msgid "Go to"
 msgid "Go to $0"
-msgstr "Gehe zu"
+msgstr "Gehe zu $0"
 
 #: pkg/apps/application.jsx:119
 msgid "Go to application"
@@ -3025,7 +3009,7 @@ msgstr "Installation"
 
 #: pkg/storaged/nfs-panel.jsx:95
 msgid "Install NFS support"
-msgstr "Installieren Sie die NFS-Unterstützung"
+msgstr "NFS-Unterstützung installieren"
 
 #: pkg/storaged/vdos-panel.jsx:44
 msgid "Install VDO support"
@@ -3033,7 +3017,7 @@ msgstr "Installiere VDO-Unterstützung"
 
 #: pkg/packagekit/updates.jsx:1331
 msgid "Install all updates"
-msgstr "Installieren Sie alle Updates"
+msgstr "Alle Aktualisierungen installieren"
 
 #: pkg/metrics/metrics.jsx:1294
 msgid "Install cockpit-pcp"
@@ -3041,7 +3025,7 @@ msgstr "cockpit-pcp installieren"
 
 #: pkg/packagekit/updates.jsx:1331 pkg/packagekit/updates.jsx:1337
 msgid "Install security updates"
-msgstr "Installieren Sie Sicherheitsupdates"
+msgstr "Sicherheitsaktualisierungen installieren"
 
 #: pkg/selinux/setroubleshoot-view.jsx:339
 msgid "Install setroubleshoot-server to troubleshoot SELinux events."
@@ -3061,7 +3045,7 @@ msgstr "Installiert"
 #: pkg/apps/application.jsx:63 pkg/apps/application-list.jsx:57
 #: pkg/packagekit/updates.jsx:84
 msgid "Installing"
-msgstr "Installation wird ausgeführt"
+msgstr "Wird installiert"
 
 #: pkg/lib/cockpit-components-install-dialog.jsx:189
 msgid "Installing $0"
@@ -3226,15 +3210,12 @@ msgid "Kerberos based SSO"
 msgstr "Kerberos-basiertes SSO"
 
 #: pkg/kdump/manifest.json:0
-#, fuzzy
 msgid "Kernel Dump"
-msgstr "Kernel dump"
+msgstr "Kernel-Auszug"
 
 #: pkg/kdump/kdump-view.jsx:500
-#, fuzzy
-#| msgid "Kernel dump"
 msgid "Kernel crash dump"
-msgstr "Kernel dump"
+msgstr "Kernel-Absturz-Auszug"
 
 #: pkg/kdump/index.html:23
 msgid "Kernel dump"
@@ -3242,7 +3223,7 @@ msgstr "Kernel dump"
 
 #: pkg/packagekit/kpatch.jsx:345
 msgid "Kernel patch $0 is active"
-msgstr ""
+msgstr "Kernel-Patch $0 ist aktiv"
 
 #: pkg/packagekit/kpatch.jsx:352
 msgid "Kernel patch $0 is installed"
@@ -3291,7 +3272,7 @@ msgstr ""
 
 #: pkg/networkmanager/index.html:266
 msgid "LACP key"
-msgstr "LACP key"
+msgstr "LACP-Schlüssel"
 
 #: pkg/lib/machine-info.js:66
 msgid "Laptop"
@@ -3322,10 +3303,8 @@ msgid "Last login:"
 msgstr "Letzte Anmeldung:"
 
 #: pkg/storaged/crypto-tab.jsx:49
-#, fuzzy
-#| msgid "Last checked: $0"
 msgid "Last modified: $0"
-msgstr "Zuletzt geprüft: $0"
+msgstr "Zuletzt geändert: $0"
 
 #: pkg/networkmanager/network-main-dialogs.jsx:73
 #: pkg/lib/cockpit-components-dialog.jsx:226
@@ -3429,10 +3408,8 @@ msgid "Loading keys..."
 msgstr "Schlüssel werden geladen..."
 
 #: pkg/systemd/overview-cards/configurationCard.jsx:210
-#, fuzzy
-#| msgid "Loading available updates failed"
 msgid "Loading of SSH keys failed"
-msgstr "Das Laden verfügbarer Updates ist fehlgeschlagen"
+msgstr "Laden von SSH-Schlüsseln fehlgeschlagen"
 
 #: pkg/lib/cockpit-components-modifications.jsx:142
 msgid "Loading system modifications..."
@@ -3600,10 +3577,8 @@ msgid "Managed interfaces"
 msgstr "Verwaltete Schnittstellen"
 
 #: pkg/storaged/manifest.json:0
-#, fuzzy
-#| msgid "Managing services"
 msgid "Managing LVMs"
-msgstr "Dienste verwalten"
+msgstr "LVMs verwalten"
 
 #: pkg/storaged/manifest.json:0
 msgid "Managing NFS mounts"
@@ -3632,10 +3607,8 @@ msgid "Managing networking bonds"
 msgstr "Netzwerk verwalten"
 
 #: pkg/networkmanager/manifest.json:0
-#, fuzzy
-#| msgid "Managing networking"
 msgid "Managing networking bridges"
-msgstr "Netzwerk verwalten"
+msgstr "Netzwerkbrücken verwalten"
 
 #: pkg/networkmanager/manifest.json:0
 #, fuzzy
@@ -3677,7 +3650,7 @@ msgstr "Manuell mit SSH prüfen: "
 
 #: pkg/storaged/jobs-panel.jsx:67
 msgid "Marking $target as faulty"
-msgstr "Markiere $target als fehlerhaft"
+msgstr "$target als fehlerhaft markieren"
 
 #: pkg/systemd/services/service-details.jsx:160
 #: pkg/systemd/services/service-details.jsx:163
@@ -3736,7 +3709,7 @@ msgstr "Menü"
 
 #: pkg/systemd/services/services.jsx:166
 msgid "Merged"
-msgstr ""
+msgstr "Zusammengeführt"
 
 #: pkg/lib/cockpit-components-shutdown.jsx:177
 msgid "Message to logged in users"
@@ -3744,23 +3717,19 @@ msgstr "Nachricht an angemeldete Benutzer"
 
 #: pkg/shell/index.html:321
 msgid "Messages related to the failure might be found in the journal:"
-msgstr ""
+msgstr "Im Journal finden sich möglicherweise Meldungen zu dem Fehler:"
 
 #: pkg/storaged/lvol-tabs.jsx:502
 msgid "Metadata used"
 msgstr "Verwendete Metadaten"
 
 #: pkg/metrics/metrics.jsx:1316
-#, fuzzy
-#| msgid "Disk settings could not be saved"
 msgid "Metrics history could not be loaded"
-msgstr "Festplatten-Einstellungen konnten nicht gespeichert werden"
+msgstr "Kennzahlenverlauf konnte nicht geladen werden"
 
 #: pkg/metrics/metrics.jsx:1007 pkg/metrics/metrics.jsx:1014
-#, fuzzy
-#| msgid "Bridge settings"
 msgid "Metrics settings"
-msgstr "Netzwerkbrücke-Einstellungen"
+msgstr "Kennzahleneinstellungen"
 
 #: pkg/lib/machine-info.js:92
 msgid "Mini PC"
@@ -3904,10 +3873,9 @@ msgid "Multi-system chassis"
 msgstr "Multi-System-Chassis"
 
 #: pkg/storaged/drive-details.jsx:88
-#, fuzzy
 msgctxt "storage"
 msgid "Multipathed devices"
-msgstr "Andere Geräte"
+msgstr "Mehrpfadige Geräte"
 
 #: pkg/storaged/nfs-details.jsx:144
 msgid "NFS mount"
@@ -3998,10 +3966,8 @@ msgid "Network bond"
 msgstr "Netzwerk"
 
 #: pkg/networkmanager/app.jsx:95
-#, fuzzy
-#| msgid "Network devices and graphs require NetworkManager."
 msgid "Network devices and graphs require NetworkManager"
-msgstr "Netzwerkgeräte und -diagramme erfordern NetworkManager."
+msgstr "Netzwerkgeräte und -diagramme erfordern NetworkManager"
 
 #: pkg/networkmanager/network-main.jsx:201
 msgid "Network logs"
@@ -4030,10 +3996,8 @@ msgid "Never"
 msgstr "Nie"
 
 #: pkg/users/account-details.js:108 pkg/users/expiration-dialogs.js:36
-#, fuzzy
-#| msgid "Never lock account"
 msgid "Never expire account"
-msgstr "Sperren Sie niemals Ihr Konto"
+msgstr "Konto nie ablaufen lassen"
 
 #: pkg/users/account-details.js:100 pkg/users/expiration-dialogs.js:144
 msgid "Never expire password"
@@ -4105,10 +4069,8 @@ msgid "No data available"
 msgstr "Keine Daten verfügbar"
 
 #: pkg/metrics/metrics.jsx:1337
-#, fuzzy
-#| msgid "Occurred between $0 and $1"
 msgid "No data available between $0 and $1"
-msgstr "Zwischen aufgetreten $0 und $1"
+msgstr "Keine Daten verfügbar zwischen $0 und $1"
 
 #: pkg/lib/cockpit-components-shutdown.jsx:154
 msgid "No delay"
@@ -4215,6 +4177,8 @@ msgstr "Keine Ergebnisse gefunden"
 msgid ""
 "No results match the filter criteria. Clear all filters to show results."
 msgstr ""
+"Keine Ergebnisse entsprechen den Filterkriterien. Löschen Sie alle Filter, "
+"um die Ergebnisse anzuzeigen."
 
 #: pkg/systemd/overview-cards/insights.jsx:145
 msgid "No rule hits"
@@ -4399,7 +4363,7 @@ msgstr "Nur Notfall"
 
 #: pkg/shell/index.html:50
 msgid "Ooops!"
-msgstr "Ooops!"
+msgstr "Uuups!"
 
 #: pkg/metrics/metrics.jsx:977
 msgid "Open the pmproxy service in the firewall to share metrics."
@@ -4458,7 +4422,7 @@ msgstr "PCI"
 
 #: pkg/metrics/metrics.jsx:1293
 msgid "Package cockpit-pcp is missing for metrics history"
-msgstr ""
+msgstr "Paket cockpit-pcp fehlt für den Kennzahlenverlauf"
 
 #: pkg/packagekit/updates.jsx:635 pkg/packagekit/updates.jsx:712
 msgid "Package information"
@@ -4640,10 +4604,8 @@ msgid ""
 msgstr ""
 
 #: pkg/metrics/index.html:20 pkg/metrics/metrics.jsx:1415
-#, fuzzy
-#| msgid "Performance profile"
 msgid "Performance Metrics"
-msgstr "Leistungsprofil"
+msgstr "Leistungskennzahlen"
 
 #: pkg/systemd/overview-cards/configurationCard.jsx:110
 msgid "Performance profile"
@@ -4705,7 +4667,7 @@ msgstr "Pizza-Box"
 
 #: pkg/shell/superuser.jsx:52
 msgid "Please authenticate to gain administrative access"
-msgstr ""
+msgstr "Bitte authentifizieren Sie sich, um administrativen Zugriff zu erhalten"
 
 #: pkg/storaged/vdo-details.jsx:197 pkg/storaged/content-views.jsx:335
 #: pkg/storaged/vgroup-details.jsx:199 pkg/storaged/mdraid-details.jsx:296
@@ -4719,6 +4681,7 @@ msgstr "Bitte bestätigen Sie das Stoppen von $0"
 #: pkg/static/login.html:39
 msgid "Please enable JavaScript to use the Web Console."
 msgstr ""
+"Bitte aktivieren Sie JavaScript, um die Web-Konsole verwenden zu können."
 
 #: pkg/networkmanager/firewall.jsx:912
 msgid "Please install the $0 package"
@@ -4726,7 +4689,7 @@ msgstr "Bitte installieren Sie die $0 Paket"
 
 #: pkg/packagekit/updates.jsx:1407
 msgid "Please reload the page after resolving the issue."
-msgstr ""
+msgstr "Bitte laden Sie die Seite neu, nachdem Sie das Problem behoben haben."
 
 #: pkg/users/expiration-dialogs.js:84
 msgid "Please specify an expiration date"
@@ -4814,10 +4777,8 @@ msgid "Priority $priority"
 msgstr "Priorität $priority"
 
 #: pkg/shell/superuser.jsx:98
-#, fuzzy
-#| msgid "Domain administrator name"
 msgid "Problem becoming administrator"
-msgstr "Name des Domain-Administrators"
+msgstr "Problem beim Administrator werden"
 
 #: pkg/systemd/abrtLog.jsx:272
 msgid "Problem details"
@@ -4955,7 +4916,7 @@ msgstr "Bereich"
 
 #: pkg/networkmanager/firewall.jsx:446
 msgid "Range must be strictly ordered"
-msgstr ""
+msgstr "Bereich muss strikt geordnet sein"
 
 #: pkg/systemd/hwinfo.jsx:312
 msgid "Rank"
@@ -4979,7 +4940,7 @@ msgstr "Nur-lesen"
 
 #: pkg/kdump/kdump-view.jsx:415
 msgid "Reading..."
-msgstr "Lese..."
+msgstr "Wird gelesen ..."
 
 #: pkg/playground/translate.html:19
 msgid "Ready"
@@ -5014,21 +4975,19 @@ msgid "Reboot"
 msgstr "Neustart"
 
 #: pkg/packagekit/updates.jsx:1424
-#, fuzzy
-#| msgid "Restart recommended"
 msgid "Reboot recommended"
 msgstr "Neustart empfohlen"
 
 #: pkg/packagekit/updates.jsx:630 pkg/packagekit/updates.jsx:703
 #: pkg/packagekit/updates.jsx:766
 msgid "Reboot system..."
-msgstr ""
+msgstr "System neu starten ..."
 
 #: pkg/networkmanager/network-interface-members.jsx:216
 #: pkg/networkmanager/network-main.jsx:182
 #: pkg/networkmanager/network-main.jsx:197
 msgid "Receiving"
-msgstr "Empfange"
+msgstr "Wird empfangen"
 
 #: pkg/shell/index.html:307
 msgid "Reconnect"
@@ -5039,9 +4998,8 @@ msgid "Recovering"
 msgstr "Am Erholen"
 
 #: pkg/storaged/jobs-panel.jsx:72
-#, fuzzy
 msgid "Recovering RAID device $target"
-msgstr "Stoppe RAID-Gerät $target"
+msgstr "RAID-Gerät $target wird wiederhergestellt"
 
 #: pkg/packagekit/updates.jsx:75
 msgid "Refreshing package information"
@@ -5077,7 +5035,7 @@ msgstr "Wird neu geladen"
 
 #: pkg/packagekit/updates.jsx:435
 msgid "Reloading the state of remaining services"
-msgstr ""
+msgstr "Der Zustand der verbleibenden Dienste wird neu geladen"
 
 #: pkg/kdump/kdump-view.jsx:136 pkg/kdump/kdump-view.jsx:388
 msgid "Remote over NFS"
@@ -5466,6 +5424,7 @@ msgstr "Speicherplatz durch komprimieren der einzelnen Blöcke mit LZ4 spare"
 #: pkg/storaged/vdos-panel.jsx:125
 msgid "Save space by storing identical data blocks just once"
 msgstr ""
+"Sparen Sie Platz, indem identische Datenblöcke nur einmal gespeichert werden"
 
 #: pkg/storaged/crypto-keyslots.jsx:286 pkg/storaged/crypto-keyslots.jsx:336
 #: pkg/storaged/crypto-keyslots.jsx:380
@@ -5600,7 +5559,7 @@ msgstr "Sitzung"
 
 #: pkg/shell/shell-modals.jsx:135
 msgid "Session is about to expire"
-msgstr ""
+msgstr "Sitzung läuft bald ab"
 
 # translation auto-copied from project KIE Workbench - Common, version 6.0.0,
 # document org.kie.workbench.widgets/kie-wb-common-
@@ -5692,11 +5651,11 @@ msgstr "Fingerabdrücke anzeigen"
 
 #: pkg/systemd/logs.jsx:378
 msgid "Show messages containing given string."
-msgstr ""
+msgstr "Meldungen mit der angegebenen Zeichenkette anzeigen."
 
 #: pkg/systemd/logs.jsx:367
 msgid "Show messages for the specified systemd unit."
-msgstr ""
+msgstr "Meldungen für die angegebene systemd-Einheit anzeigen."
 
 #: pkg/systemd/logs.jsx:356
 msgid "Show messages from a specific boot."
@@ -5704,7 +5663,7 @@ msgstr ""
 
 #: pkg/systemd/services/service-details.jsx:553
 msgid "Show more relationships"
-msgstr ""
+msgstr "Weitere Beziehungen anzeigen"
 
 #: pkg/systemd/services/service-details.jsx:553
 msgid "Show relationships"
@@ -5720,7 +5679,7 @@ msgstr "Logisches Volumen verkleinern"
 
 #: pkg/storaged/lvol-tabs.jsx:447
 msgid "Shrink volume"
-msgstr "Volume komprimieren"
+msgstr "Volumen verkleinern"
 
 #: pkg/lib/cockpit-components-shutdown.jsx:169
 #: pkg/lib/cockpit-components-shutdown.jsx:171
@@ -5964,7 +5923,7 @@ msgstr "Speicher"
 
 #: pkg/storaged/devices.jsx:81
 msgid "Storage can not be managed on this system."
-msgstr ""
+msgstr "Der Speicher kann auf diesem System nicht verwaltet werden."
 
 #: pkg/storaged/logs-panel.jsx:39
 msgid "Storage logs"
@@ -6266,13 +6225,13 @@ msgstr ""
 "ausgehängt."
 
 #: pkg/storaged/fsys-tab.jsx:496
-#, fuzzy
 msgid ""
 "The filesystem is configured to be automatically mounted on boot but its "
 "encryption container will not be unlocked at that time."
 msgstr ""
-"Das Dateisystem ist momentan als $0 eingehangen und wird beim nächsten "
-"Systemstart nicht eingehangen."
+"Das Dateisystem ist so konfiguriert, dass es beim Booten automatisch "
+"eingehängt wird, aber sein Verschlüsselungscontainer wird zu diesem "
+"Zeitpunkt nicht entsperrt."
 
 #: pkg/storaged/fsys-tab.jsx:488
 msgid ""
@@ -6342,6 +6301,9 @@ msgid ""
 "should be reviewed by the originating organization before being passed to "
 "any third party."
 msgstr ""
+"Das erzeugte Archiv enthält Daten, die als vertraulich gelten, und dessen "
+"Inhalt sollte von der Organisation, von der es stammt, überprüft werden, "
+"bevor es an Dritte weitergegeben wird."
 
 #: pkg/shell/machines/machine-dialogs.js:866
 msgid "The key password can not be empty"
@@ -6372,10 +6334,9 @@ msgstr ""
 #: pkg/lib/cockpit-components-modifications.jsx:137
 msgid "The logged in user is not permitted to view system modifications"
 msgstr ""
+"Der angemeldete Benutzer ist nicht berechtigt, Systemänderungen einzusehen"
 
 #: pkg/shell/indexes.js:503
-#, fuzzy
-#| msgid "The machine is restarting"
 msgid "The machine is rebooting"
 msgstr "Die Maschine startet neu"
 
@@ -6402,6 +6363,8 @@ msgid ""
 "The resulting fingerprint is fine to share via public methods, including "
 "email."
 msgstr ""
+"Der entstandene Fingerabdruck kann über öffentliche Methoden, einschließlich "
+"E-Mail, weitergegeben werden."
 
 #: pkg/static/login.js:798
 msgid ""
@@ -6421,10 +6384,13 @@ msgstr ""
 #: pkg/systemd/hwinfo.jsx:72
 msgid "The user $0 is not permitted to change cpu security mitigations"
 msgstr ""
+"Der Benutzer $0 ist nicht berechtigt, die CPU-Sicherheitsmaßnahmen zu ändern"
 
 #: pkg/users/account-roles.js:95
 msgid "The user must log out and log back in to fully change roles."
 msgstr ""
+"Der Benutzer muss sich ab- und wieder anmelden, um die Rollen vollständig zu "
+"ändern."
 
 #: pkg/users/account-create-dialog.js:91
 msgid ""
@@ -6550,10 +6516,12 @@ msgstr "Dieses Feld darf nicht leer sein"
 #: pkg/packagekit/autoupdates.jsx:327
 msgid "This host will reboot after updates are installed."
 msgstr ""
+"Dieser Host wird nach der Installation der Aktualisierungen neu gestartet."
 
 #: pkg/storaged/lvol-tabs.jsx:442
 msgid "This logical volume is not completely used by its content."
 msgstr ""
+"Dieses logische Volumen ist nicht vollständig durch seinen Inhalt belegt."
 
 #: pkg/shell/machines/machine-dialogs.js:383
 msgid "This machine has already been added."
@@ -6606,10 +6574,9 @@ msgstr ""
 "Dieses Volume muss aktiviert werden, bevor die Größe geändert werden kann."
 
 #: pkg/static/login.js:159
-#, fuzzy
-#| msgid "This web browser is too old to run Cockpit (missing $0)"
 msgid "This web browser is too old to run the Web Console (missing $0)"
-msgstr "Dieser Webbrowser ist zu alt, um Cockpit auszuführen (fehlt) $0)"
+msgstr ""
+"Dieser Webbrowser ist zu alt, um die Web-Konsole auszuführen (fehlende $0)"
 
 #: pkg/systemd/logs.jsx:358
 msgid ""
@@ -6653,6 +6620,8 @@ msgid ""
 "This zone contains the cockpit service. Make sure that this zone does not "
 "apply to your current web console connection."
 msgstr ""
+"Diese Zone enthält den Cockpit-Dienst. Stellen Sie sicher, dass diese Zone "
+"nicht auf Ihre aktuelle Web-Konsolenverbindung angewendet wird."
 
 #: pkg/systemd/services/timer-dialog.jsx:285 pkg/packagekit/autoupdates.jsx:311
 msgid "Thursdays"
@@ -6667,10 +6636,8 @@ msgid "Time zone"
 msgstr "Zeitzone"
 
 #: pkg/systemd/services/timer-dialog.jsx:126
-#, fuzzy
-#| msgid "Connection failed"
 msgid "Timer creation failed"
-msgstr "Verbindung fehlgeschlagen"
+msgstr "Timer-Erstellung fehlgeschlagen"
 
 #: pkg/systemd/services/service-tabs.jsx:41
 msgid "Timers"
@@ -6690,6 +6657,9 @@ msgid ""
 "To ensure that your connection is not intercepted by a malicious third-"
 "party, please verify the host key fingerprint:"
 msgstr ""
+"Überprüfen Sie bitte den Fingerabdruck des Host-Schlüssels, um "
+"sicherzustellen, dass Ihre Verbindung nicht von einem böswilligen Dritten "
+"ausgespäht wird:"
 
 #: pkg/packagekit/updates.jsx:1294
 msgid ""
@@ -6705,6 +6675,9 @@ msgid ""
 "To verify a fingerprint, run the following on $0 while physically sitting at "
 "the machine or through a trusted network:"
 msgstr ""
+"Um einen Fingerabdruck zu überprüfen, führen Sie die folgenden Schritte auf $"
+"0 aus, während Sie physisch an der Maschine sitzen oder über ein "
+"vertrauenswürdiges Netzwerk:"
 
 #: pkg/shell/machines/machine-unknown-hostkey.html:10
 #: pkg/shell/machines/machine-invalid-hostkey.html:18
@@ -6723,11 +6696,11 @@ msgstr "Umschalten"
 
 #: pkg/storaged/mdraid-details.jsx:206
 msgid "Toggle bitmap"
-msgstr ""
+msgstr "Bitmap umschalten"
 
 #: pkg/lib/cockpit-components-shutdown.jsx:193
 msgid "Toggle date picker"
-msgstr ""
+msgstr "Datumsauswahl umschalten"
 
 #: pkg/systemd/logs.jsx:190
 msgid "Toggle filters"
@@ -6759,7 +6732,7 @@ msgstr "Turm"
 
 #: pkg/systemd/services/services.jsx:197
 msgid "Transient"
-msgstr ""
+msgstr "Vorübergehend"
 
 #: pkg/systemd/services/timer-dialog.jsx:167
 #: pkg/systemd/services/services-list.jsx:43
@@ -6812,6 +6785,9 @@ msgid ""
 "under certain workloads. The core of Tuned are profiles, which tune your "
 "system for different use cases."
 msgstr ""
+"Tuned ist ein Dienst, der Ihr System überwacht und die Leistung unter "
+"bestimmten Arbeitsbelastungen optimiert. Das Herzstück von Tuned sind "
+"Profile, die Ihr System für verschiedene Anwendungsfälle abstimmen."
 
 #: pkg/tuned/dialog.js:93
 msgid "Tuned is not available"
@@ -6866,13 +6842,12 @@ msgid "Unable to connect to that address"
 msgstr "Es kann keine Verbindung zu dieser Adresse hergestellt werden"
 
 #: pkg/shell/machines/machine-dialogs.js:475
-#, fuzzy
 msgid ""
 "Unable to contact the given host $0. Make sure it has ssh running on port "
 "$1, or specify another port in the address."
 msgstr ""
-"Cockpit konnte den angegebenen Host $0 nicht erreichen. Stellen Sie sicher, "
-"dass SSH auf Port $1 läuft oder geben Sie einen anderen Port in der Adresse "
+"Der angegebene Host $0 kann nicht kontaktiert werden. Stellen Sie sicher, "
+"dass ssh auf Port $1 läuft, oder geben Sie einen anderen Port in der Adresse "
 "an."
 
 #: pkg/shell/machines/machine-change-port.html:9
@@ -7118,8 +7093,6 @@ msgid "Updated"
 msgstr "Aktualisiert"
 
 #: pkg/packagekit/updates.jsx:627
-#, fuzzy
-#| msgid "Updated packages may require a restart to take effect."
 msgid "Updated packages may require a reboot to take effect."
 msgstr ""
 "Aktualisierte Pakete erfordern möglicherweise einen Neustart, um wirksam zu "
@@ -7319,10 +7292,8 @@ msgstr "Bericht anzeigen"
 
 #: pkg/lib/cockpit-components-firewalld-request.jsx:120
 #: pkg/lib/cockpit-components-firewalld-request.jsx:157
-#, fuzzy
-#| msgid "Firewall"
 msgid "Visit Firewall"
-msgstr "Firewall"
+msgstr "Firewall besuchen"
 
 #: pkg/storaged/content-views.jsx:150
 msgid "Volume"
@@ -7338,7 +7309,7 @@ msgstr "Datenträgerverbund $0"
 
 #: pkg/storaged/lvol-tabs.jsx:443
 msgid "Volume size is $0. Content size is $1."
-msgstr ""
+msgstr "Die Größe des Volumens beträgt $0. Die Größe des Inhalts beträgt $1."
 
 #: pkg/networkmanager/interfaces.js:757
 msgid "Waiting"
@@ -7387,10 +7358,8 @@ msgid "Web Console for Linux servers"
 msgstr "Webkonsole für Linux-Server"
 
 #: pkg/packagekit/updates.jsx:455 pkg/packagekit/updates.jsx:877
-#, fuzzy
-#| msgid "Web Console for Linux servers"
 msgid "Web Console will restart"
-msgstr "Webkonsole für Linux-Server"
+msgstr "Web-Konsole wird neu gestartet"
 
 #: pkg/systemd/superuser-alert.jsx:58
 msgid "Web console is running in limited access mode."
@@ -7414,7 +7383,7 @@ msgstr "Wenn"
 
 #: pkg/shell/machines/machine-add.html:34
 msgid "When empty, connect with the current user"
-msgstr ""
+msgstr "Wenn leer, mit dem aktuellen Benutzer verbinden"
 
 #: pkg/packagekit/updates.jsx:458 pkg/packagekit/updates.jsx:882
 msgid ""
@@ -7422,6 +7391,10 @@ msgid ""
 "information. However, the update process will continue in the background. "
 "Reconnect to continue watching the update process."
 msgstr ""
+"Wenn die Web-Konsole neu gestartet wird, sehen Sie keine "
+"Fortschrittsinformationen mehr. Allerdings wird der Aktualisierungsprozess "
+"im Hintergrund fortgesetzt. Stellen Sie die Verbindung wieder her, um den "
+"Aktualisierungsprozess weiter zu verfolgen."
 
 #: pkg/systemd/terminal.jsx:155
 msgid "White"
@@ -7489,6 +7462,8 @@ msgstr "Wollen sie probieren alte Einträge zu laden."
 #: pkg/shell/machines/machine-change-auth.html:29
 msgid "You may want to change the password of the key for automatic login."
 msgstr ""
+"Vielleicht möchten Sie das Passwort des Schlüssels für die automatische "
+"Anmeldung ändern."
 
 #: pkg/users/password-dialogs.js:79
 msgid "You must wait longer to change your password"
@@ -7497,6 +7472,7 @@ msgstr "Sie müssen länger warten, um Ihr Passwort zu ändern"
 #: pkg/metrics/metrics.jsx:1287
 msgid "You need to relogin to be able to see metrics history"
 msgstr ""
+"Sie müssen sich erneut anmelden, um den Kennzahlenverlauf sehen zu können"
 
 #: pkg/sosreport/index.html:39
 msgid ""
@@ -7520,10 +7496,12 @@ msgid ""
 "Your browser does not allow paste from the context menu. You can use Shift"
 "+Insert."
 msgstr ""
+"Ihr Browser lässt das Einfügen über das Kontextmenü nicht zu. Sie können "
+"Umschalt+Einfügen verwenden."
 
 #: pkg/shell/superuser.jsx:167
 msgid "Your browser will remember your access level across sessions."
-msgstr ""
+msgstr "Ihr Browser speichert Ihre Zugriffsstufe über mehrere Sitzungen hinweg."
 
 #: pkg/packagekit/updates.jsx:1474
 msgid ""
@@ -7675,10 +7653,8 @@ msgid "disk"
 msgstr "Datenträger"
 
 #: pkg/systemd/manifest.json:0
-#, fuzzy
-#| msgid "udisks"
 msgid "disks"
-msgstr "udisks"
+msgstr "Datenträger"
 
 #: pkg/packagekit/manifest.json:0
 msgid "dnf"
@@ -7771,7 +7747,6 @@ msgid "firewall"
 msgstr "Firewall"
 
 #: pkg/networkmanager/manifest.json:0
-#, fuzzy
 msgid "firewalld"
 msgstr "firewalld"
 
@@ -7815,7 +7790,7 @@ msgstr "iSCSI targets"
 
 #: pkg/shell/shell-modals.jsx:155
 msgid "in most browsers"
-msgstr ""
+msgstr "in den meisten Browsern"
 
 #: pkg/apps/manifest.json:0
 msgid "install"
@@ -7894,10 +7869,8 @@ msgid "memory"
 msgstr "Speicher"
 
 #: pkg/systemd/manifest.json:0
-#, fuzzy
-#| msgid "Store metrics"
 msgid "metrics"
-msgstr "Kennzahlen speichern"
+msgstr "Kennzahlen"
 
 #: pkg/systemd/manifest.json:0
 msgid "mitigation"
@@ -7991,8 +7964,6 @@ msgid "pci"
 msgstr "pci"
 
 #: pkg/systemd/manifest.json:0
-#, fuzzy
-#| msgid "cpu"
 msgid "pcp"
 msgstr "pcp"
 
@@ -8001,21 +7972,16 @@ msgid "plugin"
 msgstr "Plugin"
 
 #: pkg/metrics/metrics.jsx:1308
-#, fuzzy
-#| msgid "$0 service has failed"
-#| msgid_plural "$0 services have failed"
 msgid "pmlogger.service has failed"
-msgstr "$0 Dienst ist fehlerhaft"
+msgstr "pmlogger.service ist fehlgeschlagen"
 
 #: pkg/metrics/metrics.jsx:1310
 msgid "pmlogger.service is failing to collect data"
-msgstr ""
+msgstr "pmlogger.service kann keine Daten sammeln"
 
 #: pkg/metrics/metrics.jsx:1301
-#, fuzzy
-#| msgid "Service is running"
 msgid "pmlogger.service is not running"
-msgstr "Dienst läuft nicht"
+msgstr "pmlogger.service läuft nicht"
 
 #: pkg/networkmanager/manifest.json:0
 msgid "port"
@@ -8226,7 +8192,7 @@ msgstr "Warnung"
 
 #: pkg/packagekit/autoupdates.jsx:353
 msgid "will be applied $0 at $1"
-msgstr ""
+msgstr "wird $0 auf $1 angewandt"
 
 #: pkg/storaged/crypto-tab.jsx:221
 msgid "yes"
