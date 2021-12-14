@@ -20,8 +20,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-07 18:03+0000\n"
-"PO-Revision-Date: 2021-12-07 22:16+0000\n"
-"Last-Translator: Martin Pitt <mpitt@redhat.com>\n"
+"PO-Revision-Date: 2021-12-14 19:44+0000\n"
+"Last-Translator: Ludek Janda <ljanda@redhat.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
 "projects/cockpit/main/zh_CN/>\n"
 "Language: zh_CN\n"
@@ -33,7 +33,7 @@ msgstr ""
 
 #: pkg/storaged/content-views.jsx:496
 msgid "$0 (encrypted)"
-msgstr "$0（已加密）"
+msgstr "$0（加密的）"
 
 #: pkg/metrics/metrics.jsx:420
 msgid "$0 CPU"
@@ -751,7 +751,7 @@ msgstr "添加区域"
 msgid ""
 "Adding $0 will break the connection to the server, and will make the "
 "administration UI unavailable."
-msgstr "添加 <b>$0</b> 将会中断与服务器的连接，并且将导致管理界面不可用。"
+msgstr "添加 $0 将会中断与服务器的连接，并且将导致管理界面不可用。"
 
 #: pkg/networkmanager/firewall.jsx:527
 msgid ""
@@ -887,21 +887,14 @@ msgid "Ansible roles documentation"
 msgstr "Ansible 角色文档"
 
 #: pkg/systemd/logs.jsx:380
-#, fuzzy
-#| msgid ""
-#| "Any text string in the logs messages can be filtered. The string can also "
-#| "be in the form of a regular expressions. Also supports filtering by "
-#| "message log fields. These are space separated values, in form "
-#| "FIELD=VALUE, where value can be comma separated list of possible values."
 msgid ""
 "Any text string in the logs messages can be filtered. The string can also be "
 "in the form of a regular expression. Also supports filtering by message log "
 "fields. These are space separated values, in form FIELD=VALUE, where value "
 "can be comma separated list of possible values."
 msgstr ""
-"可以对日志信息中的文本字符串进行过滤。字符串也可以是正则表达式的形式。另外，"
-"还支持按消息日志的字段进行过滤。它们是使用空格分隔的列，格式为 FIELD=VALUE，"
-"其中的值是以逗号分隔的可能的值的列表。"
+"可以过滤日志消息中的任何文本字符串。字符串也可以是正则表达式的形式。另外，还支持按消息日志字段进行过滤。这些是空格分隔的值，格式为 "
+"FIELD=VALUE，其中值可以是逗号分隔的可能的值列表。"
 
 #: pkg/systemd/terminal.jsx:144
 msgid "Appearance"
@@ -2199,11 +2192,11 @@ msgstr "域管理员密码"
 
 #: pkg/systemd/overview-cards/realmd.jsx:310
 msgid "Domain could not be contacted"
-msgstr "域 $0 无法联系"
+msgstr "无法联系域"
 
 #: pkg/systemd/overview-cards/realmd.jsx:311
 msgid "Domain is not supported"
-msgstr "不支持域 $0"
+msgstr "不支持域"
 
 #: pkg/systemd/services/timer-dialog.jsx:226
 msgid "Don't repeat"
@@ -3243,10 +3236,8 @@ msgid "LACP key"
 msgstr "LACP 密钥"
 
 #: pkg/storaged/content-views.jsx:457 pkg/storaged/content-views.jsx:474
-#, fuzzy
-#| msgid "Add member"
 msgid "LVM2 member"
-msgstr "添加成员"
+msgstr "LVM2 成员"
 
 #: pkg/storaged/vgroups-panel.jsx:40
 msgid "LVM2 volume group"
@@ -4470,10 +4461,8 @@ msgid "Partition of $0"
 msgstr "$0 的分区"
 
 #: pkg/storaged/content-views.jsx:748
-#, fuzzy
-#| msgid "Add block devices"
 msgid "Partitioned block device"
-msgstr "添加块设备"
+msgstr "分区块设备"
 
 #: pkg/storaged/content-views.jsx:665
 msgid "Partitioning"
@@ -5997,10 +5986,8 @@ msgstr "保存的密码"
 
 #: pkg/storaged/content-views.jsx:442 pkg/storaged/content-views.jsx:469
 #: pkg/storaged/content-views.jsx:476
-#, fuzzy
-#| msgid "Interface members"
 msgid "Stratis member"
-msgstr "接口成员"
+msgstr "Stratis 成员"
 
 #: pkg/storaged/pvol-tabs.jsx:112
 msgid "Stratis pool"
@@ -6485,13 +6472,13 @@ msgstr "该设备有正在使用的文件系统。继续进行将卸载其上的
 
 #: pkg/storaged/dialog.jsx:1031
 msgid "This device is currently used for LVM2 volume groups."
-msgstr "该设备正在被卷组使用。"
+msgstr "该设备目前用于 LVM2 卷组。"
 
 #: pkg/storaged/dialog.jsx:1064
 msgid ""
 "This device is currently used for LVM2 volume groups. Proceeding will remove "
 "it from its volume groups."
-msgstr "该设备正在被卷组使用。继续进行将从卷组中移除它。"
+msgstr "该设备目前用于 LVM2 卷组。继续进行将从卷组中移除它。"
 
 #: pkg/storaged/dialog.jsx:1035
 msgid "This device is currently used for RAID devices."
@@ -7168,8 +7155,6 @@ msgstr "已使用"
 
 #: pkg/storaged/stratis-details.jsx:655 pkg/storaged/stratis-details.jsx:792
 #: pkg/storaged/content-views.jsx:729 pkg/storaged/content-views.jsx:979
-#, fuzzy
-#| msgid "Used by"
 msgid "Used for"
 msgstr "用于"
 
