@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-14 18:03+0000\n"
+"POT-Creation-Date: 2021-12-21 18:03+0000\n"
 "PO-Revision-Date: 2021-12-21 20:16+0000\n"
 "Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/cockpit/"
@@ -106,7 +106,7 @@ msgstr "$0 levyt"
 msgid "$0 documentation"
 msgstr "$0 dokumentointi"
 
-#: pkg/static/login.js:393 pkg/static/login.js:841
+#: pkg/static/login.js:393 pkg/static/login.js:897
 msgid "$0 error"
 msgstr "$0 virhe"
 
@@ -171,7 +171,7 @@ msgstr "$0 on aktiivisessa käytössä"
 msgid "$0 is not available from any repository."
 msgstr "$0 ei ole saatavilla mistään ohjelmistovarastosta."
 
-#: pkg/static/login.js:663 pkg/shell/hosts_dialog.jsx:451
+#: pkg/static/login.js:719 pkg/shell/hosts_dialog.jsx:451
 msgid "$0 key changed"
 msgstr "$0 avain muuttunut"
 
@@ -609,7 +609,7 @@ msgstr "Poissa"
 msgid "Accept key and connect"
 msgstr "Hyväksy avain ja muodosta yhteys"
 
-#: pkg/static/login.js:578
+#: pkg/static/login.js:629
 msgid "Accept key and log in"
 msgstr "Hyväksy avain ja kirjaudu sisään"
 
@@ -1023,11 +1023,11 @@ msgstr "Tunnistaudutaan"
 msgid "Authentication"
 msgstr "Tunnistautuminen"
 
-#: pkg/static/login.js:831
+#: pkg/static/login.js:887
 msgid "Authentication failed"
 msgstr "Tunnistautuminen epäonnistui"
 
-#: pkg/static/login.js:821
+#: pkg/static/login.js:877
 msgid "Authentication failed: Server closed connection"
 msgstr "Tunnistautuminen epäonnistui: Palvelin sulki yhteyden"
 
@@ -1664,6 +1664,12 @@ msgstr "Yhdistä automaattisesti"
 
 #: pkg/static/login.html:103
 msgid "Connect to"
+msgstr "Yhdistä"
+
+#: pkg/static/login.js:621
+#, fuzzy
+#| msgid "Connect to"
+msgid "Connect to:"
 msgstr "Yhdistä"
 
 #: pkg/selinux/setroubleshoot-view.jsx:328
@@ -3110,7 +3116,7 @@ msgstr "Liitännät"
 msgid "Internal error"
 msgstr "Sisäinen virhe"
 
-#: pkg/static/login.js:811
+#: pkg/static/login.js:867
 msgid "Internal error: Invalid challenge header"
 msgstr "Sisäinen virhe: Virheellinen haasteen otsikko"
 
@@ -3516,7 +3522,7 @@ msgstr "Lukitut salatut tiedot"
 msgid "Locking $target"
 msgstr "Lukitaan $target"
 
-#: pkg/static/login.html:115 pkg/static/login.js:578
+#: pkg/static/login.html:115 pkg/static/login.js:629
 #: pkg/shell/hosts_dialog.jsx:742 pkg/shell/failures.jsx:72
 msgid "Log in"
 msgstr "Kirjaudu sisään"
@@ -3525,7 +3531,7 @@ msgstr "Kirjaudu sisään"
 msgid "Log in to $0"
 msgstr "Kirjaudu kohteeseen $0"
 
-#: pkg/static/login.js:608
+#: pkg/static/login.js:664
 msgid "Log in with your server user account."
 msgstr "Kirjaudu sisään palvelimesi käyttäjätilillä."
 
@@ -4072,7 +4078,7 @@ msgstr "Älä koskaan liitä käynnistyksen yhteydessä"
 msgid "New NFS mount"
 msgstr "Uusi NFS-liitos"
 
-#: pkg/static/login.js:667 pkg/shell/hosts_dialog.jsx:451
+#: pkg/static/login.js:723 pkg/shell/hosts_dialog.jsx:451
 msgid "New host"
 msgstr "Uusi isäntä"
 
@@ -4709,7 +4715,7 @@ msgstr "Pysyvä"
 msgid "Permanently delete $0?"
 msgstr "Poista $0 pysyvästi?"
 
-#: pkg/static/login.js:837
+#: pkg/static/login.js:893
 msgid "Permission denied"
 msgstr "Käyttö estetty"
 
@@ -4775,7 +4781,7 @@ msgstr "Lataa sivu uudelleen ongelman ratkaisemisen jälkeen."
 msgid "Please specify an expiration date"
 msgstr "Määritä vanhenemispäivä"
 
-#: pkg/static/login.js:526
+#: pkg/static/login.js:537
 msgid "Please specify the host to connect to"
 msgstr "Määritä isäntä, johon haluat muodostaa yhteyden"
 
@@ -5072,6 +5078,12 @@ msgstr "Käynnistä järjestelmä uudelleen..."
 msgid "Receiving"
 msgstr "Vastaanotetaan"
 
+#: pkg/static/login.html:161
+#, fuzzy
+#| msgid "Edit hosts"
+msgid "Recent hosts"
+msgstr "Muokkaa isäntää"
+
 #: pkg/shell/failures.jsx:71
 msgid "Reconnect"
 msgstr "Yhdistä uudelleen"
@@ -5088,15 +5100,15 @@ msgstr "Palautetaan RAID-laite $target"
 msgid "Refreshing package information"
 msgstr "Päivitetään pakettitietoja"
 
-#: pkg/static/login.js:827
+#: pkg/static/login.js:883
 msgid "Refusing to connect. Host is unknown"
 msgstr "Kieltäytyminen yhteyden muodostamisesta. Isäntä on tuntematon"
 
-#: pkg/static/login.js:829
+#: pkg/static/login.js:885
 msgid "Refusing to connect. Hostkey does not match"
 msgstr "Kieltäytyminen yhteyden muodostamisesta. Isäntäavain ei täsmää"
 
-#: pkg/static/login.js:825
+#: pkg/static/login.js:881
 msgid "Refusing to connect. Hostkey is unknown"
 msgstr "Kieltäytyminen yhteyden muodostamisesta. Isäntäavain on tuntematon"
 
@@ -5190,6 +5202,12 @@ msgstr "Poista ja pysäytä laite"
 #: pkg/storaged/vdo-details.jsx:107
 msgid "Remove device"
 msgstr "Poista laite"
+
+#: pkg/static/login.js:595
+#, fuzzy
+#| msgid "Remove item"
+msgid "Remove host"
+msgstr "Poista kohde"
 
 #: pkg/networkmanager/ip-settings.jsx:198
 #: pkg/networkmanager/ip-settings.jsx:243
@@ -6522,7 +6540,7 @@ msgstr ""
 "Tuloksena oleva sormenjälki sopii jakaa julkisilla menetelmillä, mukaan "
 "lukien sähköposti."
 
-#: pkg/static/login.js:819
+#: pkg/static/login.js:875
 msgid ""
 "The server refused to authenticate '$0' using password authentication, and "
 "no other supported authentication methods are available."
@@ -6833,7 +6851,7 @@ msgstr ""
 "ssa joko käyttämällä Red Hat -asiakasportaalia tai paikallista "
 "tilauspalvelinta."
 
-#: pkg/static/login.js:672 pkg/shell/hosts_dialog.jsx:463
+#: pkg/static/login.js:728 pkg/shell/hosts_dialog.jsx:463
 #: pkg/shell/hosts_dialog.jsx:474
 msgid ""
 "To verify a fingerprint, run the following on $0 while physically sitting at "
@@ -7001,7 +7019,7 @@ msgstr "Asetusten asettaminen epäonnistui: $0"
 msgid "Unable to apply this solution automatically"
 msgstr "Tämän ratkaisun automaattinen asettaminen epäonnistui"
 
-#: pkg/static/login.js:823
+#: pkg/static/login.js:879
 msgid "Unable to connect to that address"
 msgstr "Siihen osoitteeseen yhdistäminen epäonnistui"
 
@@ -7342,7 +7360,7 @@ msgstr "Käyttäjä"
 msgid "User name"
 msgstr "Käyttäjänimi"
 
-#: pkg/static/login.js:524
+#: pkg/static/login.js:535
 msgid "User name cannot be empty"
 msgstr "Käyttäjätunnus ei voi olla tyhjä"
 
@@ -7583,7 +7601,7 @@ msgstr "Kirjoita"
 msgid "Write-mostly"
 msgstr "Kirjoitus-enimmäkseen"
 
-#: pkg/static/login.js:833
+#: pkg/static/login.js:889
 msgid "Wrong user name or password"
 msgstr "Väärä käyttäjätunnus tai salasana"
 
@@ -7599,7 +7617,7 @@ msgstr "Vuosittain"
 msgid "Yes"
 msgstr "Kyllä"
 
-#: pkg/static/login.js:669 pkg/shell/hosts_dialog.jsx:470
+#: pkg/static/login.js:725 pkg/shell/hosts_dialog.jsx:470
 msgid "You are connecting to $0 for the first time."
 msgstr "Yhdistät $0:een ensimmäistä kertaa."
 
