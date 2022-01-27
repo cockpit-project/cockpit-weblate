@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-08 08:07+0000\n"
-"PO-Revision-Date: 2021-12-10 12:16+0000\n"
+"PO-Revision-Date: 2022-01-28 10:16+0000\n"
 "Last-Translator: Luna Jernberg <bittin@reimu.nl>\n"
 "Language-Team: Swedish <https://translate.fedoraproject.org/projects/cockpit/"
 "rhel-9-0/sv/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.9.1\n"
+"X-Generator: Weblate 4.10.1\n"
 
 #: pkg/metrics/metrics.jsx:419
 msgid "$0 CPU"
@@ -575,8 +575,9 @@ msgstr[1] "Uppdaterade paket kan behöva en omstart för att få effekt."
 msgid "A service needs to be restarted for the updates to take effect:"
 msgid_plural ""
 "Some services need to be restarted for the updates to take effect:"
-msgstr[0] ""
+msgstr[0] "En tjänst måste startas om för att uppdateringarna ska träda i kraft:"
 msgstr[1] ""
+"Vissa tjänster måste startas om för att uppdateringarna ska träda i kraft:"
 
 #: pkg/storaged/mdraid-details.jsx:131
 msgid "A spare disk needs to be added first before this disk can be removed."
@@ -630,9 +631,8 @@ msgstr "Konton"
 
 #: pkg/apps/application-list.jsx:112 pkg/storaged/content-views.jsx:647
 #: pkg/storaged/content-views.jsx:816
-#, fuzzy
 msgid "Actions"
-msgstr "Program"
+msgstr "Åtgärder"
 
 #: pkg/storaged/content-views.jsx:282
 msgid "Activate"
@@ -665,10 +665,8 @@ msgstr "Aktiv sedan"
 
 #: pkg/systemd/services/services.jsx:903 pkg/systemd/services/services.jsx:904
 #: pkg/systemd/services/services.jsx:911
-#, fuzzy
-#| msgid "Activate"
 msgid "Active state"
-msgstr "Aktivera"
+msgstr "Aktivt tillstånd"
 
 #: pkg/networkmanager/interfaces.js:1470
 msgid "Adaptive load balancing"
@@ -850,10 +848,8 @@ msgid "Advanced TCA"
 msgstr "Avanserad TCA"
 
 #: pkg/storaged/dialog.jsx:983
-#, fuzzy
-#| msgid "Current allocation"
 msgid "Affected locations"
-msgstr "Nuvarande indelning"
+msgstr "Berörda platser"
 
 #: pkg/systemd/services/service-details.jsx:456
 msgid "After"
@@ -896,7 +892,7 @@ msgstr "Alla uppdateringar"
 
 #: pkg/lib/machine-info.js:70
 msgid "All-in-one"
-msgstr ""
+msgstr "Allt i ett"
 
 #: pkg/systemd/services/service-details.jsx:120
 msgid "Allow running (unmask)"
@@ -921,6 +917,10 @@ msgid ""
 "fields. These are space separated values, in form FIELD=VALUE, where value "
 "can be comma separated list of possible values."
 msgstr ""
+"Alla textsträngar i loggmeddelandena kan filtreras. Strängen kan också vara "
+"i form av ett reguljärt uttryck. Stöder även filtrering efter "
+"meddelandeloggfält. Dessa är mellanslagsseparerade värden, i formen "
+"FÄLT=VÄRDE, där värde kan vara kommaseparerad lista över möjliga värden."
 
 #: pkg/systemd/terminal.jsx:146
 msgid "Appearance"
@@ -982,12 +982,10 @@ msgid "Asset tag"
 msgstr "MaskinID"
 
 #: pkg/storaged/mdraids-panel.jsx:133
-#, fuzzy
-#| msgid "At least one disk is needed."
 msgid "At least $0 disk is needed."
 msgid_plural "At least $0 disks are needed."
-msgstr[0] "Åtminstone en disk behövs."
-msgstr[1] "Åtminstone en disk behövs."
+msgstr[0] "Åtminstone $0 disk behövs."
+msgstr[1] "Åtminstone $0 diskar behövs."
 
 #: pkg/storaged/vgroups-panel.jsx:84 pkg/storaged/vgroup-details.jsx:71
 #: pkg/storaged/mdraid-details.jsx:67
@@ -995,10 +993,8 @@ msgid "At least one disk is needed."
 msgstr "Åtminstone en disk behövs."
 
 #: pkg/systemd/services/timer-dialog.jsx:241
-#, fuzzy
-#| msgid "1 minute"
 msgid "At minute"
-msgstr "1 minut"
+msgstr "På minut"
 
 #: pkg/systemd/services/timer-dialog.jsx:180
 msgid "At specific time"
@@ -1042,9 +1038,8 @@ msgid "Authentication required"
 msgstr "Autentisering krävs"
 
 #: pkg/shell/machines/machine-dialogs.js:752
-#, fuzzy
 msgid "Authorize SSH key."
-msgstr "Auktoriserade publika SSH-nycklar"
+msgstr "Auktorisera SSH-nyckel"
 
 #: pkg/users/authorized-keys-panel.js:149
 msgid "Authorized public SSH keys"
@@ -1262,7 +1257,7 @@ msgstr "CVE"
 
 #: pkg/shell/machines/machine-add.html:26
 msgid "Can be a hostname, IP address, alias name, or ssh:// URI"
-msgstr ""
+msgstr "Kan vara ett värdnamn, IP-adress, aliasnamn eller ssh:// URI"
 
 #: pkg/systemd/logsJournal.jsx:281
 msgid "Can not find any logs using the current combination of filters."
@@ -1301,7 +1296,6 @@ msgid "Cannot be enabled"
 msgstr "Kan inte slås på"
 
 #: pkg/shell/indexes.js:511
-#, fuzzy
 msgid "Cannot connect to an unknown host"
 msgstr "Kan inte ansluta till en okänd maskin"
 
@@ -1376,6 +1370,9 @@ msgid ""
 "However, an unexpected change may indicate a third-party attempt to "
 "intercept your connection."
 msgstr ""
+"Ändrade nycklar är ofta resultatet av en ominstallation av operativsystemet. "
+"En oväntad förändring kan dock indikera ett försök från tredje part att "
+"avlyssna din anslutning."
 
 #: pkg/networkmanager/interfaces.js:1724
 msgid ""
@@ -1543,10 +1540,8 @@ msgstr ""
 "maskiner kommer se efter sina kompisar."
 
 #: pkg/metrics/metrics.jsx:1043
-#, fuzzy
-#| msgid "Store metrics"
 msgid "Collect metrics"
-msgstr "Lagringsmått"
+msgstr "Samla in mätvärden"
 
 #: pkg/shell/machines/machine-add.html:37
 msgid "Color"
@@ -1554,7 +1549,7 @@ msgstr "Färg"
 
 #: pkg/networkmanager/firewall.jsx:595 pkg/networkmanager/firewall.jsx:605
 msgid "Comma-separated ports, ranges, and aliases are accepted"
-msgstr ""
+msgstr "Kommaseparerade portar, intervall och alias accepteras"
 
 #: pkg/systemd/services/timer-dialog.jsx:158
 msgid "Command"
@@ -1640,7 +1635,7 @@ msgstr "Bekräfta nytt lösenord"
 
 #: pkg/networkmanager/firewall.jsx:797
 msgid "Confirm removal of $0"
-msgstr ""
+msgstr "Bekräfta borttagning av $0"
 
 #: pkg/storaged/crypto-keyslots.jsx:414
 msgid "Confirm removal with an alternate passphrase"
@@ -1704,9 +1699,8 @@ msgid "Container administrator"
 msgstr "Behållaradministratör"
 
 #: pkg/shell/nav.jsx:197
-#, fuzzy
 msgid "Contains:"
-msgstr "Behållare:"
+msgstr "Innehåller:"
 
 #: pkg/storaged/content-views.jsx:635 pkg/storaged/content-views.jsx:645
 #: pkg/storaged/content-views.jsx:647 pkg/storaged/content-views.jsx:816
@@ -1961,7 +1955,7 @@ msgstr "Dagligen"
 
 #: pkg/packagekit/updates.jsx:876
 msgid "Danger alert:"
-msgstr ""
+msgstr "Fara varning:"
 
 #: pkg/systemd/terminal.jsx:153
 msgid "Dark"
@@ -2536,10 +2530,8 @@ msgid "Failed to change password"
 msgstr "Misslyckades att ändra lösenord"
 
 #: pkg/metrics/metrics.jsx:1028
-#, fuzzy
-#| msgid "Failed to add machine: $0"
 msgid "Failed to configure PCP"
-msgstr "Misslyckades att lägga till en maskin: $0"
+msgstr "Misslyckades att konfigurera PCP"
 
 #: pkg/selinux/setroubleshoot-client.js:164
 msgid "Failed to delete alert: $0"
@@ -2566,10 +2558,8 @@ msgid "Failed to enable tuned"
 msgstr "Misslyckades att aktivera tuned"
 
 #: pkg/systemd/logsJournal.jsx:260
-#, fuzzy
-#| msgid "Failed to switch profile"
 msgid "Failed to fetch logs"
-msgstr "Misslyckades att byta profil"
+msgstr "Misslyckades att hämta loggar"
 
 #: pkg/users/authorized-keys-panel.js:108
 msgid "Failed to load authorized keys."
@@ -2580,6 +2570,9 @@ msgid ""
 "Failed to parse unit files for dnf-automatic.timer or dnf-automatic-install."
 "timer. Please remove custom overrides to configure automatic updates."
 msgstr ""
+"Det gick inte att analysera enhetsfiler för dnf-automatic.timer eller dnf-"
+"automatic-install.timer. Ta bort anpassade åsidosättningar för att "
+"konfigurera automatiska uppdateringar."
 
 #: pkg/packagekit/updates.jsx:424
 msgid "Failed to restart service"
@@ -2845,9 +2838,8 @@ msgid "Hours"
 msgstr "Timmar"
 
 #: pkg/lib/serverTime.js:614
-#, fuzzy
 msgid "Hours must be a number between 0 and 23"
-msgstr "Timmen måste vara ett tal mellan 0-23"
+msgstr "Timmar måste vara ett tal mellan 0-23"
 
 #: pkg/networkmanager/firewall.jsx:613 pkg/systemd/hwinfo.jsx:312
 msgid "ID"
@@ -2900,12 +2892,16 @@ msgid ""
 "If the fingerprint matches, click \"Accept key and connect\". Otherwise, do "
 "not connect and contact your administrator."
 msgstr ""
+"Om fingeravtrycket stämmer, klicka på \"Acceptera nyckel och anslut\". "
+"Annars, anslut inte och kontakta din administratör."
 
 #: pkg/static/login.html:72
 msgid ""
 "If the fingerprint matches, click \"Accept key and log in\". Otherwise, do "
 "not log in and contact your administrator."
 msgstr ""
+"Om fingeravtrycket stämmer, klicka på \"Acceptera nyckel och logga in\". "
+"Annars, logga inte in och kontakta din administratör."
 
 #: pkg/networkmanager/interfaces.js:1459 pkg/packagekit/updates.jsx:631
 #: pkg/packagekit/updates.jsx:706
@@ -2918,7 +2914,7 @@ msgstr "Avbildsbyggare"
 
 #: pkg/metrics/metrics.jsx:584
 msgid "In"
-msgstr ""
+msgstr "In"
 
 #: pkg/shell/machines/machine-dialogs.js:739
 msgid ""
@@ -3338,12 +3334,12 @@ msgstr "Länkad"
 
 #: pkg/systemd/services/service-details.jsx:537
 msgid "Listen"
-msgstr ""
+msgstr "Lyssna"
 
 #: pkg/metrics/metrics.jsx:102 pkg/metrics/metrics.jsx:480
 #: pkg/metrics/metrics.jsx:1378
 msgid "Load"
-msgstr ""
+msgstr "Ladda"
 
 #: pkg/networkmanager/interfaces.js:1483
 msgid "Load balancing"
@@ -3378,10 +3374,8 @@ msgid "Loading keys..."
 msgstr "Laddar nycklar..."
 
 #: pkg/systemd/overview-cards/configurationCard.jsx:210
-#, fuzzy
-#| msgid "Loading available updates failed"
 msgid "Loading of SSH keys failed"
-msgstr "Inläsningen av tillgängliga uppdateringar misslyckades"
+msgstr "Inläsningen av SSH-nycklar misslyckades"
 
 #: pkg/lib/cockpit-components-modifications.jsx:142
 msgid "Loading system modifications..."
@@ -3536,11 +3530,11 @@ msgid "Maintanance"
 msgstr "Underhåll"
 
 #: pkg/storaged/crypto-keyslots.jsx:361
-#, fuzzy
-#| msgid "Make sure the key hash from the Tang server matches:"
 msgid ""
 "Make sure the key hash from the Tang server matches one of the following:"
-msgstr "Se till att kontrollsumman för nyckeln från Tang-servern stämmer:"
+msgstr ""
+"Se till att kontrollsumman för nyckeln från Tang-servern matchar något av "
+"följande:"
 
 #: pkg/networkmanager/network-main.jsx:176
 msgid "Managed interfaces"
@@ -3973,10 +3967,8 @@ msgid "Never"
 msgstr "Aldrig"
 
 #: pkg/users/account-details.js:108 pkg/users/expiration-dialogs.js:36
-#, fuzzy
-#| msgid "Never lock account"
 msgid "Never expire account"
-msgstr "Lås aldrig konton"
+msgstr "Upphör aldrig konto"
 
 #: pkg/users/account-details.js:100 pkg/users/expiration-dialogs.js:144
 msgid "Never expire password"
@@ -4230,9 +4222,8 @@ msgid "Not installed"
 msgstr "Inte installerad"
 
 #: pkg/systemd/overview-cards/configurationCard.jsx:78
-#, fuzzy
 msgid "Not joined"
-msgstr "Inte monterat"
+msgstr "Inte med"
 
 #: pkg/storaged/nfs-panel.jsx:53
 msgid "Not mounted"
@@ -4258,10 +4249,8 @@ msgid "Not running"
 msgstr "Kör inte"
 
 #: pkg/packagekit/autoupdates.jsx:336
-#, fuzzy
-#| msgid "No NFS mounts set up"
 msgid "Not set up"
-msgstr "Inga NFS-monteringar uppsatta"
+msgstr "Inte uppsatt"
 
 #: pkg/lib/serverTime.js:380
 msgid "Not synchronized"
@@ -4346,7 +4335,7 @@ msgstr "Hoppsan!"
 
 #: pkg/metrics/metrics.jsx:977
 msgid "Open the pmproxy service in the firewall to share metrics."
-msgstr ""
+msgstr "Öppna pmproxy-tjänsten i brandväggen för att dela mätvärden."
 
 #: pkg/storaged/jobs-panel.jsx:91
 msgid "Operation '$operation' on $target"
@@ -4401,7 +4390,7 @@ msgstr "PCI"
 
 #: pkg/metrics/metrics.jsx:1293
 msgid "Package cockpit-pcp is missing for metrics history"
-msgstr ""
+msgstr "Paketet cockpit-pcp saknas för statistikhistorik"
 
 #: pkg/packagekit/updates.jsx:635 pkg/packagekit/updates.jsx:712
 msgid "Package information"
@@ -4479,10 +4468,8 @@ msgid "Passphrase cannot be empty"
 msgstr "Lösenfrasen får inte vara tom"
 
 #: pkg/storaged/crypto-keyslots.jsx:420
-#, fuzzy
-#| msgid "Passphrase cannot be empty"
 msgid "Passphrase from any other key slot"
-msgstr "Lösenfrasen får inte vara tom"
+msgstr "Lösenfrasen från vilket annat nyckelfack som helst"
 
 #: pkg/storaged/crypto-keyslots.jsx:410
 msgid "Passphrase removal may prevent unlocking $0."
@@ -4532,10 +4519,8 @@ msgid "Paste"
 msgstr "Klistra in"
 
 #: pkg/lib/cockpit-components-terminal.jsx:201
-#, fuzzy
-#| msgid "Internal error"
 msgid "Paste error"
-msgstr "Internt fel"
+msgstr "Klistra in fel"
 
 #: pkg/users/authorized-keys-panel.js:36
 msgid "Paste the contents of your public SSH key file here"
@@ -4582,12 +4567,11 @@ msgid ""
 "Performance Co-Pilot collects and analyzes performance metrics from your "
 "system."
 msgstr ""
+"Performance Co-Pilot samlar in och analyserar prestandamått från ditt system."
 
 #: pkg/metrics/index.html:20 pkg/metrics/metrics.jsx:1415
-#, fuzzy
-#| msgid "Store metrics"
 msgid "Performance Metrics"
-msgstr "Lagringsmått"
+msgstr "Prestandamått"
 
 #: pkg/systemd/overview-cards/configurationCard.jsx:110
 msgid "Performance profile"
@@ -4726,7 +4710,7 @@ msgstr "Förbereder"
 
 #: pkg/lib/machine-info.js:259
 msgid "Present"
-msgstr ""
+msgstr "Närvarande"
 
 #: pkg/networkmanager/interfaces.js:2210
 msgid "Preserve"
@@ -4738,7 +4722,7 @@ msgstr "Snyggt värdnamn"
 
 #: pkg/systemd/logs.jsx:58
 msgid "Previous boot"
-msgstr ""
+msgstr "Tidigare uppstart"
 
 #: pkg/networkmanager/index.html:178
 msgid "Primary"
@@ -4755,10 +4739,8 @@ msgid "Priority $priority"
 msgstr "Prioritet $priority"
 
 #: pkg/shell/superuser.jsx:98
-#, fuzzy
-#| msgid "Domain administrator name"
 msgid "Problem becoming administrator"
-msgstr "Domänadministratörens namn"
+msgstr "Problem med att bli administratör"
 
 #: pkg/systemd/abrtLog.jsx:272
 msgid "Problem details"
@@ -4960,7 +4942,7 @@ msgstr "Omstart rekommenderas"
 #: pkg/packagekit/updates.jsx:630 pkg/packagekit/updates.jsx:703
 #: pkg/packagekit/updates.jsx:766
 msgid "Reboot system..."
-msgstr ""
+msgstr "Starta om system..."
 
 #: pkg/networkmanager/network-interface-members.jsx:216
 #: pkg/networkmanager/network-main.jsx:182
@@ -5009,14 +4991,12 @@ msgid "Reload propagated from"
 msgstr "Omläsning vidarebefordrad från"
 
 #: pkg/systemd/services/services.jsx:174
-#, fuzzy
-#| msgid "Reading"
 msgid "Reloading"
-msgstr "Läser"
+msgstr "Laddar om"
 
 #: pkg/packagekit/updates.jsx:435
 msgid "Reloading the state of remaining services"
-msgstr ""
+msgstr "Laddar om tillståndet för återstående tjänster"
 
 #: pkg/kdump/kdump-view.jsx:136 pkg/kdump/kdump-view.jsx:388
 msgid "Remote over NFS"
@@ -5069,10 +5049,8 @@ msgid "Remove device"
 msgstr "Ta bort enhet"
 
 #: pkg/storaged/crypto-keyslots.jsx:434
-#, fuzzy
-#| msgid "Remove passphrase in $0?"
 msgid "Remove passphrase in key slot $0"
-msgstr "Ta bort lösenfrasen i $0?"
+msgstr "Ta bort lösenfrasen i nyckelfack $0"
 
 #: pkg/networkmanager/firewall.jsx:73
 msgid "Remove service $0"
@@ -5107,6 +5085,9 @@ msgid ""
 "Removing a passphrase without confirmation of another passphrase may prevent "
 "unlocking or key management, if other passphrases are forgotten or lost."
 msgstr ""
+"Att ta bort en lösenfras utan bekräftelse av en annan lösenfras kan "
+"förhindra upplåsning eller nyckelhantering, om andra lösenfraser glöms bort "
+"eller går förlorade."
 
 #: pkg/storaged/jobs-panel.jsx:81
 msgid "Removing physical volume from $target"
@@ -5168,7 +5149,7 @@ msgstr "Rapport"
 
 #: pkg/systemd/reporting.jsx:154
 msgid "Report to ABRT Analytics"
-msgstr ""
+msgstr "Rapportera till ABRT Analys"
 
 #: pkg/systemd/reporting.jsx:411
 msgid "Reported; no links available"
@@ -5180,7 +5161,7 @@ msgstr "Rapporteringen misslyckades"
 
 #: pkg/systemd/reporting.jsx:207
 msgid "Reporting was canceled"
-msgstr ""
+msgstr "Rapporteringen avbröts"
 
 #: pkg/systemd/reporting.jsx:409
 msgid "Reports:"
@@ -5240,6 +5221,8 @@ msgid ""
 "Resizing an encrypted filesystem requires unlocking the disk. Please provide "
 "a current disk passphrase."
 msgstr ""
+"Ändra storlek på ett krypterat filsystem kräver upplåsning av disken. Ange "
+"en aktuell disklösenfras."
 
 #: pkg/systemd/services/service-details.jsx:130
 msgid "Restart"
@@ -5446,10 +5429,8 @@ msgid "Select"
 msgstr "Välj"
 
 #: pkg/systemd/logs.jsx:320
-#, fuzzy
-#| msgid "select container"
 msgid "Select a identifier"
-msgstr "välj behållare"
+msgstr "Välj en identifierare"
 
 #: pkg/systemd/reporting.jsx:247
 msgid "Send"
@@ -5651,7 +5632,7 @@ msgstr "Krymp en logisk volym"
 
 #: pkg/storaged/lvol-tabs.jsx:447
 msgid "Shrink volume"
-msgstr ""
+msgstr "Krymp volym"
 
 #: pkg/lib/cockpit-components-shutdown.jsx:169
 #: pkg/lib/cockpit-components-shutdown.jsx:171
@@ -5876,7 +5857,7 @@ msgstr "Stoppa enhet"
 
 #: pkg/shell/hosts.jsx:211
 msgid "Stop editing hosts"
-msgstr ""
+msgstr "Sluta redigera värdar"
 
 #: pkg/storaged/jobs-panel.jsx:65
 msgid "Stopping RAID device $target"
@@ -5959,10 +5940,8 @@ msgid "Swap space"
 msgstr "Växlingsutrymme"
 
 #: pkg/networkmanager/network-interface-members.jsx:69
-#, fuzzy
-#| msgid "Switch off $0"
 msgid "Switch of $0"
-msgstr "Stäng av $0"
+msgstr "Ändra till $0"
 
 #: pkg/networkmanager/network-interface-members.jsx:95
 #: pkg/networkmanager/network-interface.jsx:166
@@ -6038,7 +6017,7 @@ msgstr "Systemet är uppdaterat"
 
 #: pkg/selinux/setroubleshoot-view.jsx:425
 msgid "System modifications"
-msgstr ""
+msgstr "Systemändringar"
 
 #: pkg/systemd/services/service-tabs.jsx:38
 msgid "System services"
@@ -6113,7 +6092,7 @@ msgstr "Testar anslutningen"
 
 #: pkg/storaged/vdos-panel.jsx:45
 msgid "The $0 package must be installed to create VDO devices."
-msgstr ""
+msgstr "Paketet $0 måste installeras för att skapa VDO-enheter."
 
 #: pkg/shell/machines/machine-dialogs.js:403
 #, fuzzy
@@ -6159,7 +6138,7 @@ msgstr ""
 
 #: pkg/networkmanager/firewall.jsx:748
 msgid "The cockpit service is automatically included"
-msgstr ""
+msgstr "Cockpit tjänsten ingår automatiskt"
 
 #: pkg/sosreport/index.html:38
 msgid "The collected information will be stored locally on the system."
@@ -6188,40 +6167,47 @@ msgid "The filesystem has no permanent mount point."
 msgstr "Filsystemet har ingen permanent monteringspunkt."
 
 #: pkg/storaged/fsys-tab.jsx:279
-#, fuzzy
 msgid "The filesystem is already mounted at $0. Proceeding will unmount it."
-msgstr ""
-"Filsystemet används av inloggningssessioner.  Att gå vidare kommer stoppa "
-"dessa."
+msgstr "Filsystemet är redan monterat på $0. Om du fortsätter avmonteras det."
 
 #: pkg/storaged/fsys-tab.jsx:496
 msgid ""
 "The filesystem is configured to be automatically mounted on boot but its "
 "encryption container will not be unlocked at that time."
 msgstr ""
+"Filsystemet är konfigurerat att monteras automatiskt vid uppstart men dess "
+"krypteringsbehållare kommer inte att låsas upp vid den tidpunkten."
 
 #: pkg/storaged/fsys-tab.jsx:488
 msgid ""
 "The filesystem is currently mounted but will not be mounted after the next "
 "boot."
 msgstr ""
+"Filsystemet är för närvarande monterat men kommer inte att monteras efter "
+"nästa uppstart."
 
 #: pkg/storaged/fsys-tab.jsx:480
 msgid ""
 "The filesystem is currently mounted on $0 but will be mounted on $1 on the "
 "next boot."
 msgstr ""
+"Filsystemet är för närvarande monterat på $0 men kommer att monteras på $1 "
+"vid nästa uppstart."
 
 #: pkg/storaged/fsys-tab.jsx:492
 msgid ""
 "The filesystem is currently mounted on $0 but will not be mounted after the "
 "next boot."
 msgstr ""
+"Filsystemet är för närvarande monterat på $0 men kommer inte att monteras "
+"efter nästa uppstart."
 
 #: pkg/storaged/fsys-tab.jsx:484
 msgid ""
 "The filesystem is currently not mounted but will be mounted on the next boot."
 msgstr ""
+"Filsystemet är för närvarande inte monterat men kommer att monteras vid "
+"nästa uppstart."
 
 #: pkg/storaged/dialog.jsx:1046
 msgid ""
@@ -6259,6 +6245,9 @@ msgid ""
 "should be reviewed by the originating organization before being passed to "
 "any third party."
 msgstr ""
+"Det genererade arkivet innehåller data som betraktas som känsligt och dess "
+"innehåll bör granskas av ursprungsorganisationen innan den skickas till "
+"någon tredje part."
 
 #: pkg/shell/machines/machine-dialogs.js:866
 msgid "The key password can not be empty"
@@ -6286,16 +6275,15 @@ msgstr "Den sista fysiska volymen i en volymgrupp kan inte tas bort."
 
 #: pkg/lib/cockpit-components-modifications.jsx:137
 msgid "The logged in user is not permitted to view system modifications"
-msgstr ""
+msgstr "Den inloggade användaren har inte tillåtelse att se systemändringar"
 
 #: pkg/shell/indexes.js:503
 msgid "The machine is rebooting"
 msgstr "Denna maskin startar om"
 
 #: pkg/shell/machines/machine-dialogs.js:882
-#, fuzzy
 msgid "The new key password can not be empty"
-msgstr "Det sista nyckelfacket kan inte tas bort"
+msgstr "Det nya nyckellösenordet får inte vara tomt"
 
 #: pkg/shell/machines/machine-dialogs.js:887
 msgid "The new key passwords do not match"
@@ -6332,11 +6320,11 @@ msgstr "Servern vägrade att autentisera med några stödda metoder."
 
 #: pkg/systemd/hwinfo.jsx:72
 msgid "The user $0 is not permitted to change cpu security mitigations"
-msgstr ""
+msgstr "Användaren $0 tillåts inte ändra CPU-säkerhetsbegränsningar"
 
 #: pkg/users/account-roles.js:95
 msgid "The user must log out and log back in to fully change roles."
-msgstr ""
+msgstr "Användaren måste logga ut och logga in igen för att helt byta roller."
 
 #: pkg/users/account-create-dialog.js:91
 msgid ""
@@ -6460,7 +6448,7 @@ msgstr ""
 
 #: pkg/storaged/lvol-tabs.jsx:442
 msgid "This logical volume is not completely used by its content."
-msgstr ""
+msgstr "Denna logiska volym används inte helt av innehållet."
 
 #: pkg/shell/machines/machine-dialogs.js:383
 msgid "This machine has already been added."
@@ -6513,10 +6501,8 @@ msgid "This volume needs to be activated before it can be resized."
 msgstr "Denna volym behöver aktiveras före dess storlek kan ändras."
 
 #: pkg/static/login.js:159
-#, fuzzy
-#| msgid "This web browser is too old to run Cockpit (missing $0)"
 msgid "This web browser is too old to run the Web Console (missing $0)"
-msgstr "Denna webbläsare är för gammal för att köra Cockpit (saknar $0)"
+msgstr "Den här webbläsaren är för gammal för att köra webbkonsolen ($0 saknas)"
 
 #: pkg/systemd/logs.jsx:358
 msgid ""
@@ -6596,6 +6582,8 @@ msgid ""
 "To ensure that your connection is not intercepted by a malicious third-"
 "party, please verify the host key fingerprint:"
 msgstr ""
+"För att säkerställa att din anslutning inte fångas upp av en skadlig tredje "
+"part, vänligen verifiera värdnyckelns fingeravtryck:"
 
 #: pkg/packagekit/updates.jsx:1294
 msgid ""
@@ -6611,6 +6599,8 @@ msgid ""
 "To verify a fingerprint, run the following on $0 while physically sitting at "
 "the machine or through a trusted network:"
 msgstr ""
+"För att verifiera ett fingeravtryck, kör följande på $0 medan du fysiskt "
+"sitter vid maskinen eller genom ett pålitligt nätverk:"
 
 #: pkg/shell/machines/machine-unknown-hostkey.html:10
 #: pkg/shell/machines/machine-invalid-hostkey.html:18
@@ -6618,6 +6608,8 @@ msgid ""
 "To verify a fingerprint, run the following on {{host}} while physically "
 "sitting at the machine or through a trusted network:"
 msgstr ""
+"För att verifiera ett fingeravtryck, kör följande på {{host}} medan du "
+"fysiskt sitter vid maskinen eller via ett pålitligt nätverk:"
 
 #: pkg/metrics/metrics.jsx:1347
 msgid "Today"
@@ -6625,21 +6617,19 @@ msgstr "Idag"
 
 #: pkg/storaged/iscsi-panel.jsx:251
 msgid "Toggle"
-msgstr ""
+msgstr "Växla"
 
 #: pkg/storaged/mdraid-details.jsx:206
 msgid "Toggle bitmap"
-msgstr ""
+msgstr "Växla bitmap"
 
 #: pkg/lib/cockpit-components-shutdown.jsx:193
 msgid "Toggle date picker"
-msgstr ""
+msgstr "Växla datumväljare"
 
 #: pkg/systemd/logs.jsx:190
-#, fuzzy
-#| msgid "Hide filters"
 msgid "Toggle filters"
-msgstr "Göm filter"
+msgstr "Växla filter"
 
 #: pkg/base1/cockpit.js:4056
 msgid "Too much data"
@@ -6671,8 +6661,6 @@ msgstr ""
 
 #: pkg/systemd/services/timer-dialog.jsx:167
 #: pkg/systemd/services/services-list.jsx:43
-#, fuzzy
-#| msgid "Triggers"
 msgid "Trigger"
 msgstr "Utlösare"
 
@@ -6698,7 +6686,7 @@ msgstr "Förtroendenyckel"
 
 #: pkg/networkmanager/firewall.jsx:714
 msgid "Trust level"
-msgstr ""
+msgstr "Tillitsnivå"
 
 #: pkg/static/login.html:119
 msgid "Try again"
@@ -6747,9 +6735,8 @@ msgid "Type"
 msgstr "Typ"
 
 #: pkg/systemd/logs.jsx:401
-#, fuzzy
 msgid "Type to filter"
-msgstr "Skriv för att filtrera …"
+msgstr "Skriv för att filtrera"
 
 #: pkg/networkmanager/firewall.jsx:186
 msgid "UDP"
@@ -6777,13 +6764,12 @@ msgid "Unable to connect to that address"
 msgstr "Kan inte ansluta till den adressen"
 
 #: pkg/shell/machines/machine-dialogs.js:475
-#, fuzzy
 msgid ""
 "Unable to contact the given host $0. Make sure it has ssh running on port "
 "$1, or specify another port in the address."
 msgstr ""
-"Cockpit kunde inte kontakta den angivna värden $0. Se till att den har ssh "
-"körande på port $1, eller ange en annan port i adressen."
+"Det går inte att kontakta den givna värden $0. Se till att ssh körs på port $"
+"1, eller ange en annan port i adressen."
 
 #: pkg/shell/machines/machine-change-port.html:9
 msgid "Unable to contact {{#strong}}{{host}}{{/strong}}."
@@ -6804,36 +6790,38 @@ msgid ""
 "authentication. Please provide the password. You may want to set up your SSH "
 "keys for automatic login."
 msgstr ""
+"Det gick inte att logga in på {{#strong}}{{full_address}}{{/strong}} med SSH-"
+"nyckelautentisering. Ange lösenordet. Du kanske vill ställa in dina SSH-"
+"nycklar för automatisk inloggning."
 
 #: pkg/shell/machines/machine-change-auth.html:10
 msgid ""
 "Unable to log in to {{#strong}}{{full_address}}{{/strong}}. The host does "
 "not accept password login or any of your SSH keys."
 msgstr ""
+"Det gick inte att logga in på {{#strong}}{{full_address}}{{/strong}}. Värden "
+"accepterar inte lösenordsinloggning eller någon av dina SSH-nycklar."
 
 #: pkg/shell/machines/machine-auth-failed.html:15
-#, fuzzy
 msgid ""
 "Unable to log in to {{#strong}}{{host}}{{/strong}}. For more authentication "
 "options and troubleshooting support please upgrade cockpit-ws to a newer "
 "version."
 msgstr ""
-"Cockpit kunde inte logga in på {{#strong}}{{host}}{{/strong}}. {{#can_sync}}"
-"Du kan vilja försöka att {{#sync_link}}synkronisera användare{{/sync_link}}."
-"{{/can_sync}}  För fler autentiseringsalternativ och hjälp med felsökning, "
-"uppgradera cockpit-ws till en nyare version."
+"Det gick inte att logga in på {{#strong}}{{host}}{{/strong}}. För fler "
+"autentiseringsalternativ och felsökningssupport, uppgradera cockpit-ws till "
+"en nyare version."
 
 #: pkg/shell/machines/machine-auth-failed.html:6
-#, fuzzy
 msgid ""
 "Unable to log in to {{#strong}}{{host}}{{/strong}}. To connect to this host "
 "you will need to enable one of the following authentication methods in the "
 "sshd config on {{#strong}}{{host}}{{/strong}}:"
 msgstr ""
-"Cockpit kunde inte logga in på {{#strong}}{{host}}{{/strong}}.  För att "
-"använda denna maskin med cockpit behöver du aktivera en av följande "
-"autentiseringsmetoder i sshd-konfigurationen på {{#strong}}{{host}}{{/"
-"strong}}:"
+"Det gick inte att logga in på {{#strong}}{{host}}{{/strong}}. För att "
+"ansluta till denna värd måste du aktivera en av följande "
+"autentiseringsmetoder i sshd-konfigurationen på "
+"{{#strong}}{{host}}{{/strong}}:"
 
 #: pkg/storaged/iscsi-panel.jsx:91
 msgid "Unable to reach server"
@@ -6912,7 +6900,7 @@ msgstr "Okänt värdnamn"
 
 #: pkg/networkmanager/firewall.jsx:408
 msgid "Unknown service name"
-msgstr ""
+msgstr "Okänt tjänstnamn"
 
 #: pkg/storaged/crypto-keyslots.jsx:585
 msgid "Unknown type"
@@ -6992,7 +6980,7 @@ msgstr "Volym som ej stöds"
 
 #: pkg/systemd/logs.jsx:344
 msgid "Until"
-msgstr ""
+msgstr "Tills"
 
 #: pkg/base1/cockpit.js:4036 pkg/base1/cockpit.js:4038
 msgid "Untrusted host"
@@ -7003,10 +6991,8 @@ msgid "Update"
 msgstr "Uppdatera"
 
 #: pkg/packagekit/updates.jsx:697
-#, fuzzy
-#| msgid "Updates available"
 msgid "Update Success Table"
-msgstr "Uppdateringar tillgängliga"
+msgstr "Uppdatera framgångstabell"
 
 #: pkg/packagekit/updates.jsx:898
 msgid "Update history"
@@ -7241,7 +7227,7 @@ msgstr "Volymgrupp $0"
 
 #: pkg/storaged/lvol-tabs.jsx:443
 msgid "Volume size is $0. Content size is $1."
-msgstr ""
+msgstr "Volymstorlek är $0. Innehållsstorlek är $1."
 
 #: pkg/networkmanager/interfaces.js:757
 msgid "Waiting"
@@ -7542,11 +7528,11 @@ msgstr "konsol"
 
 #: pkg/systemd/manifest.json:0
 msgid "coredump"
-msgstr ""
+msgstr "coredump"
 
 #: pkg/systemd/manifest.json:0
 msgid "cpu"
-msgstr ""
+msgstr "cpu"
 
 #: pkg/systemd/manifest.json:0 pkg/kdump/manifest.json:0
 msgid "crash"
@@ -7652,7 +7638,7 @@ msgstr "varje dag"
 
 #: pkg/apps/manifest.json:0
 msgid "extension"
-msgstr ""
+msgstr "tillägg"
 
 #: pkg/systemd/overview-cards/configurationCard.jsx:202
 msgid "failed to list ssh host keys: $0"
@@ -7740,7 +7726,7 @@ msgstr "journal"
 
 #: pkg/systemd/logs.jsx:411
 msgid "journalctl manpage"
-msgstr ""
+msgstr "journalctl mansida"
 
 #: pkg/kdump/manifest.json:0
 msgid "kdump"
@@ -7780,7 +7766,7 @@ msgstr "maskin"
 
 #: pkg/systemd/manifest.json:0
 msgid "mask"
-msgstr ""
+msgstr "mask"
 
 #: pkg/systemd/manifest.json:0
 msgid "memory"
@@ -7794,7 +7780,7 @@ msgstr "Lagringsmått"
 
 #: pkg/systemd/manifest.json:0
 msgid "mitigation"
-msgstr ""
+msgstr "rättningar"
 
 #: pkg/storaged/manifest.json:0
 msgid "mkfs"
@@ -7810,7 +7796,7 @@ msgstr "montering"
 
 #: pkg/storaged/manifest.json:0
 msgid "nbde"
-msgstr ""
+msgstr "nbde"
 
 #: pkg/networkmanager/manifest.json:0 pkg/systemd/manifest.json:0
 msgid "network"
@@ -7826,7 +7812,7 @@ msgstr "nfs-dumpmålet är inte formaterat som server:sökväg"
 
 #: pkg/metrics/metrics.jsx:99
 msgid "nice"
-msgstr ""
+msgstr "nice"
 
 #: pkg/tuned/dialog.js:103 pkg/storaged/crypto-tab.jsx:221
 #: pkg/storaged/crypto-tab.jsx:230
@@ -7874,7 +7860,7 @@ msgstr "lösenordskvalitet"
 
 #: pkg/packagekit/updates.jsx:281
 msgid "patches"
-msgstr ""
+msgstr "rättningar"
 
 #: pkg/systemd/manifest.json:0
 msgid "path"
@@ -7890,24 +7876,19 @@ msgstr "pcp"
 
 #: pkg/apps/manifest.json:0
 msgid "plugin"
-msgstr ""
+msgstr "insticksmodul"
 
 #: pkg/metrics/metrics.jsx:1308
-#, fuzzy
-#| msgid "$0 service has failed"
-#| msgid_plural "$0 services have failed"
 msgid "pmlogger.service has failed"
-msgstr "$0 tjänsten har inte startat"
+msgstr "pmlogger.service har misslyckats"
 
 #: pkg/metrics/metrics.jsx:1310
 msgid "pmlogger.service is failing to collect data"
-msgstr ""
+msgstr "pmlogger.service misslyckas att samla in data"
 
 #: pkg/metrics/metrics.jsx:1301
-#, fuzzy
-#| msgid "Service is running"
 msgid "pmlogger.service is not running"
-msgstr "Tjänster kör"
+msgstr "pmlogger.service körs inte"
 
 #: pkg/networkmanager/manifest.json:0
 msgid "port"
@@ -7927,7 +7908,7 @@ msgstr "ram"
 
 #: pkg/storaged/fsys-tab.jsx:402
 msgid "read only"
-msgstr ""
+msgstr "läs endast"
 
 #: pkg/tuned/change-profile.jsx:55
 msgid "recommended"
@@ -7980,7 +7961,7 @@ msgstr "visa mer"
 
 #: pkg/systemd/manifest.json:0
 msgid "shut"
-msgstr ""
+msgstr "stäng"
 
 #: pkg/systemd/manifest.json:0
 msgid "socket"
@@ -7997,7 +7978,7 @@ msgstr "lösningsdetaljer"
 
 #: pkg/sosreport/manifest.json:0
 msgid "sos"
-msgstr ""
+msgstr "sos"
 
 #: pkg/systemd/manifest.json:0 pkg/users/manifest.json:0
 msgid "ssh"
@@ -8074,7 +8055,7 @@ msgstr "okänt mål"
 
 #: pkg/systemd/manifest.json:0
 msgid "unmask"
-msgstr ""
+msgstr "avmaskera"
 
 #: pkg/storaged/manifest.json:0
 msgid "unmount"
@@ -8098,7 +8079,7 @@ msgstr "användarnamn"
 
 #: pkg/storaged/manifest.json:0
 msgid "vdo"
-msgstr ""
+msgstr "vdo"
 
 #: pkg/systemd/manifest.json:0
 msgid "version"
@@ -8133,10 +8114,8 @@ msgid "zone"
 msgstr "zon"
 
 #: pkg/shell/machines/machine-invalid-hostkey.html:2
-#, fuzzy
-#| msgid "Force change"
 msgid "{{host}} key changed"
-msgstr "Framtvinga ändring"
+msgstr "{{host}} nyckel ändrad"
 
 #, fuzzy
 #~ msgid "Show filters"
