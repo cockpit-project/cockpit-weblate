@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-08 08:07+0000\n"
-"PO-Revision-Date: 2022-01-28 10:16+0000\n"
+"PO-Revision-Date: 2022-01-30 13:16+0000\n"
 "Last-Translator: David Smith <pxesrv@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
 "projects/cockpit/rhel-9-0/zh_CN/>\n"
@@ -58,7 +58,7 @@ msgstr "$0 块设备"
 
 #: pkg/storaged/mdraid-details.jsx:193
 msgid "$0 chunk size"
-msgstr "$0 区块大小"
+msgstr "$0 块大小"
 
 #: pkg/systemd/overview-cards/insights.jsx:157
 msgid "$0 critical hit"
@@ -862,7 +862,7 @@ msgstr "一体化"
 
 #: pkg/systemd/services/service-details.jsx:120
 msgid "Allow running (unmask)"
-msgstr "允许运行 (非掩盖)"
+msgstr "允许运行 (取消屏蔽)"
 
 #: pkg/networkmanager/firewall.jsx:768
 msgid "Allowed addresses"
@@ -1209,7 +1209,7 @@ msgstr "CPU 高负载"
 
 #: pkg/metrics/metrics.jsx:95
 msgid "CPU usage"
-msgstr "CPU 使用"
+msgstr "CPU 使用率"
 
 #: pkg/packagekit/updates.jsx:303
 msgid "CVE"
@@ -2091,7 +2091,7 @@ msgstr "禁用"
 
 #: pkg/systemd/services/service-details.jsx:153
 msgid "Disallow running (mask)"
-msgstr "不允许运行 (掩盖)"
+msgstr "不允许运行 (屏蔽)"
 
 #: pkg/shell/indexes.js:168
 msgid "Disconnected"
@@ -3235,7 +3235,7 @@ msgstr "被限制的访问"
 msgid ""
 "Limited access mode restricts administrative privileges. Some parts of the "
 "web console will have reduced functionality."
-msgstr "限制访问模式会限制管理员权限。Web 控制台一些部分的功能将会减少。"
+msgstr "限制访问模式会限制管理员权限。Web 控制台部分功能将会减少。"
 
 #: pkg/networkmanager/index.html:200 pkg/networkmanager/index.html:244
 msgid "Link down delay"
@@ -3284,7 +3284,7 @@ msgstr "载入更早条目"
 
 #: pkg/metrics/metrics.jsx:103
 msgid "Load spike"
-msgstr "加载高负载"
+msgstr "负载激增"
 
 #: pkg/packagekit/updates.jsx:79
 msgid "Loading available updates failed"
@@ -3542,21 +3542,19 @@ msgstr "标记 $target 为故障"
 #: pkg/systemd/services/service-details.jsx:160
 #: pkg/systemd/services/service-details.jsx:163
 msgid "Mask service"
-msgstr "掩盖服务"
+msgstr "屏蔽服务"
 
 #: pkg/systemd/services/service-details.jsx:331
 #: pkg/systemd/services/services.jsx:191 pkg/systemd/services/services.jsx:192
 msgid "Masked"
-msgstr "掩盖"
+msgstr "已屏蔽"
 
 #: pkg/systemd/services/service-details.jsx:161
 msgid ""
 "Masking service prevents all dependent units from running. This can have "
 "bigger impact than anticipated. Please confirm that you want to mask this "
 "unit."
-msgstr ""
-"掩盖服务会阻止所有依赖的单元被运行。这所造成的结果可能会比预期的大。请确认您"
-"需要掩盖这个单元。"
+msgstr "屏蔽服务会阻止所有依赖的单元被运行。这所造成的影响可能会比预期的大。请确认您需要屏蔽这个单元。"
 
 #: pkg/networkmanager/network-interface.jsx:548
 msgid "Maximum message age $max_age"
@@ -3588,7 +3586,7 @@ msgstr "内存拓扑"
 
 #: pkg/metrics/metrics.jsx:109
 msgid "Memory usage"
-msgstr "内存使用"
+msgstr "内存使用率"
 
 #: pkg/storaged/content-views.jsx:647 pkg/storaged/content-views.jsx:816
 msgid "Menu"
@@ -3683,7 +3681,7 @@ msgstr "更多"
 
 #: pkg/packagekit/updates.jsx:883
 msgid "More info..."
-msgstr "更多信息。。。"
+msgstr "更多信息..."
 
 #: pkg/storaged/content-views.jsx:369 pkg/storaged/nfs-details.jsx:313
 #: pkg/storaged/fsys-tab.jsx:291 pkg/kdump/kdump-view.jsx:97
@@ -3860,7 +3858,7 @@ msgstr "网络日志"
 
 #: pkg/metrics/metrics.jsx:583
 msgid "Network usage"
-msgstr "网络使用"
+msgstr "网络使用率"
 
 #: pkg/networkmanager/app.jsx:87
 msgid "NetworkManager is not installed"
@@ -3939,7 +3937,7 @@ msgstr "没有档案被创建。"
 
 #: pkg/storaged/crypto-keyslots.jsx:599
 msgid "No available slots"
-msgstr "没有可用的 slot"
+msgstr "没有可用的插槽"
 
 #: pkg/networkmanager/interfaces.js:1333
 msgid "No carrier"
@@ -3981,7 +3979,7 @@ msgstr "没有可用的磁盘。"
 
 #: pkg/storaged/drives-panel.jsx:102
 msgid "No drives attached"
-msgstr "没有附件的驱动器"
+msgstr "未连接驱动器"
 
 #: pkg/storaged/format-dialog.jsx:187
 msgid "No encryption"
@@ -4649,7 +4647,7 @@ msgstr "优先级 $priority"
 
 #: pkg/shell/superuser.jsx:98
 msgid "Problem becoming administrator"
-msgstr "成为管理员出问题"
+msgstr "成为管理员时出现问题"
 
 #: pkg/systemd/abrtLog.jsx:272
 msgid "Problem details"
@@ -6884,11 +6882,11 @@ msgstr "运行时间"
 #: pkg/metrics/metrics.jsx:1379 pkg/metrics/metrics.jsx:1380
 #: pkg/metrics/metrics.jsx:1381
 msgid "Usage"
-msgstr "使用"
+msgstr "用量"
 
 #: pkg/storaged/storage-controls.jsx:207
 msgid "Usage of $0"
-msgstr "$0 的使用"
+msgstr "$0 的用量"
 
 #: pkg/storaged/vdos-panel.jsx:128
 msgid "Use 512 byte emulation"
@@ -7360,7 +7358,7 @@ msgstr "控制台"
 
 #: pkg/systemd/manifest.json:0
 msgid "coredump"
-msgstr "coredump"
+msgstr "核心转储"
 
 #: pkg/systemd/manifest.json:0
 msgid "cpu"
@@ -7598,7 +7596,7 @@ msgstr "机器"
 
 #: pkg/systemd/manifest.json:0
 msgid "mask"
-msgstr "掩码"
+msgstr "屏蔽"
 
 #: pkg/systemd/manifest.json:0
 msgid "memory"
@@ -7883,7 +7881,7 @@ msgstr "未知目标"
 
 #: pkg/systemd/manifest.json:0
 msgid "unmask"
-msgstr "非掩码"
+msgstr "取消屏蔽"
 
 #: pkg/storaged/manifest.json:0
 msgid "unmount"
