@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-01 18:03+0000\n"
-"PO-Revision-Date: 2022-02-18 15:16+0000\n"
+"PO-Revision-Date: 2022-03-04 20:16+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
 "cockpit/main/uk/>\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.10.1\n"
+"X-Generator: Weblate 4.11.2\n"
 
 #: pkg/storaged/content-views.jsx:501
 msgid "$0 (encrypted)"
@@ -1695,10 +1695,8 @@ msgid "Connecting to SETroubleshoot daemon..."
 msgstr "Встановлюємо з’єднання із фоновою службою SETroubleshoot…"
 
 #: pkg/systemd/services/services.jsx:245
-#, fuzzy
-#| msgid "Connection failed"
 msgid "Connecting to dbus failed: $0"
-msgstr "Не вдалося встановити з'єднання"
+msgstr "Не вдалося встановити з'єднання із dbus: $0"
 
 #: pkg/shell/indexes.js:447
 msgid "Connecting to the machine"
@@ -1829,7 +1827,7 @@ msgstr "Створити знімок файлової системи $0"
 
 #: pkg/users/account-create-dialog.js:271
 msgid "Create account with weak password"
-msgstr ""
+msgstr "Створити обліковий запис із простим паролем"
 
 #: pkg/storaged/things-panel.jsx:77
 msgid "Create devices"
@@ -3485,23 +3483,19 @@ msgstr "Очікувати"
 
 #: pkg/systemd/services/services.jsx:412
 msgid "Listing unit files"
-msgstr ""
+msgstr "Виведення списку файлів модулів"
 
 #: pkg/systemd/services/services.jsx:474
 msgid "Listing unit files failed: $0"
-msgstr ""
+msgstr "Не вдалося вивести список файлів модулів: $0"
 
 #: pkg/systemd/services/services.jsx:380
-#, fuzzy
-#| msgid "Systemd units"
 msgid "Listing units"
-msgstr "Модулі systemd"
+msgstr "Виведення списку модулів"
 
 #: pkg/systemd/services/services.jsx:475
-#, fuzzy
-#| msgid "Last modified: $0"
 msgid "Listing units failed: $0"
-msgstr "Востаннє змінено: $0"
+msgstr "Не вдалося вивести список модулів: $0"
 
 #: pkg/metrics/metrics.jsx:105 pkg/metrics/metrics.jsx:507
 #: pkg/metrics/metrics.jsx:1420
@@ -3545,10 +3539,8 @@ msgid "Loading of SSH keys failed"
 msgstr "Не вдалося завантажити ключі SSH"
 
 #: pkg/systemd/services/services.jsx:731
-#, fuzzy
-#| msgid "Loading of SSH keys failed"
 msgid "Loading of units failed"
-msgstr "Не вдалося завантажити ключі SSH"
+msgstr "Не вдалося завантажити модулі"
 
 #: pkg/shell/shell-modals.jsx:77
 msgid "Loading packages..."
@@ -3559,10 +3551,8 @@ msgid "Loading system modifications..."
 msgstr "Завантажуємо модифікації системи…"
 
 #: pkg/systemd/services/services.jsx:445
-#, fuzzy
-#| msgid "Login failed"
 msgid "Loading unit failed: $0"
-msgstr "Невдала спроба увійти"
+msgstr "Не вдалося завантажити модуль: $0"
 
 #: pkg/kdump/kdump-view.jsx:375 pkg/storaged/devices.jsx:69
 #: pkg/systemd/services/services.jsx:733 pkg/systemd/logsJournal.jsx:269
@@ -5849,10 +5839,8 @@ msgid "Set up"
 msgstr "Налаштувати"
 
 #: pkg/users/password-dialogs.js:244
-#, fuzzy
-#| msgid "Set password"
 msgid "Set weak password"
-msgstr "Встановити пароль"
+msgstr "Встановити простий пароль"
 
 #: pkg/selinux/setroubleshoot-view.jsx:253
 msgid ""
@@ -6248,7 +6236,7 @@ msgstr "Підноутбук"
 
 #: pkg/systemd/services/services.jsx:242
 msgid "Subscribing to systemd signals failed: $0"
-msgstr ""
+msgstr "Не вдалося підписатися на сигнали systemd: $0"
 
 #: pkg/storaged/crypto-keyslots.jsx:400
 msgid "Successfully copied to clipboard!"
@@ -7532,20 +7520,16 @@ msgid "Very securely erasing $target"
 msgstr "Дуже безпечно витираємо $target"
 
 #: pkg/metrics/metrics.jsx:479 pkg/metrics/metrics.jsx:480
-#, fuzzy
-#| msgid "View all logs"
 msgid "View all CPUs"
-msgstr "Переглянути усі журнали"
+msgstr "Переглянути усі процесори"
 
 #: pkg/metrics/metrics.jsx:770 pkg/lib/cockpit-components-logs-panel.jsx:171
 msgid "View all logs"
 msgstr "Переглянути усі журнали"
 
 #: pkg/systemd/services/services.jsx:750
-#, fuzzy
-#| msgid "Filter services"
 msgid "View all services"
-msgstr "Фільтрувати служби"
+msgstr "Переглянути усі служби"
 
 #: pkg/lib/cockpit-components-modifications.jsx:162
 msgid "View automation script"
@@ -7859,7 +7843,7 @@ msgstr "avc"
 
 #: pkg/metrics/metrics.jsx:466
 msgid "average: $0%"
-msgstr ""
+msgstr "середнє: $0%"
 
 #: pkg/storaged/dialog.jsx:1028
 msgid "backing device for VDO device"
@@ -8171,7 +8155,7 @@ msgstr "маска"
 
 #: pkg/metrics/metrics.jsx:467
 msgid "max: $0%"
-msgstr ""
+msgstr "макс.: $0%"
 
 #: pkg/storaged/dialog.jsx:1027
 msgid "member of RAID device"
