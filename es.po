@@ -24,8 +24,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-08 18:03+0000\n"
-"PO-Revision-Date: 2022-02-10 18:19+0000\n"
-"Last-Translator: Miguel Angel Sanchez <maletils@gmail.com>\n"
+"PO-Revision-Date: 2022-04-03 22:16+0000\n"
+"Last-Translator: Miguel Ángel Sánchez <maletils@gmail.com>\n"
 "Language-Team: Spanish <https://translate.fedoraproject.org/projects/cockpit/"
 "main/es/>\n"
 "Language: es\n"
@@ -33,7 +33,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.10.1\n"
+"X-Generator: Weblate 4.11.2\n"
 
 #: pkg/storaged/content-views.jsx:501
 msgid "$0 (encrypted)"
@@ -564,8 +564,8 @@ msgid ""
 "A network bond combines multiple network interfaces into one logical "
 "interface with higher throughput or redundancy."
 msgstr ""
-"Una red balanceada combina múltiples interfaces de red en una sola interfaz "
-"lógica con un alto rendimiento o redundancia."
+"Una agregación de enlaces de red combina múltiples interfaces de red en una "
+"sola interfaz lógica con un alto rendimiento o redundancia."
 
 #: pkg/shell/hosts_dialog.jsx:773
 msgid ""
@@ -721,7 +721,7 @@ msgstr "Añadir dispositivos de bloques"
 
 #: pkg/networkmanager/network-main.jsx:175
 msgid "Add bond"
-msgstr "Añadir balanceo"
+msgstr "Añadir agregación"
 
 #: pkg/networkmanager/network-main.jsx:177
 msgid "Add bridge"
@@ -944,9 +944,9 @@ msgid ""
 "can be comma separated list of possible values."
 msgstr ""
 "Se puede filtrar cualquier cadena de texto en los mensajes de los registros. "
-"La cadena también puede tener la forma de expresión regular. También admite "
-"el filtrado por campos de registro de mensajes. Estos son valores separados "
-"por espacios, en forma FIELD = VALUE, donde el valor puede ser una lista de "
+"La cadena también puede tener forma de expresión regular. También admite el "
+"filtrado por campos de registro de mensajes. Estos son valores separados por "
+"espacios, en forma CAMPO = VALOR, donde el valor puede ser una lista de "
 "valores posibles separados por comas."
 
 #: pkg/systemd/terminal.jsx:147
@@ -1199,13 +1199,11 @@ msgstr "Bloqueado"
 #: pkg/networkmanager/network-interface.jsx:188
 #: pkg/networkmanager/network-interface.jsx:437
 msgid "Bond"
-msgstr "Balanceo"
+msgstr "Agregación de enlaces"
 
 #: pkg/networkmanager/bond.jsx:136
-#, fuzzy
-#| msgid "Bridge settings"
 msgid "Bond settings"
-msgstr "Configuración del puente"
+msgstr "Configuración de la agregación de enlaces"
 
 #: pkg/systemd/logs.jsx:355
 msgid "Boot"
@@ -1595,8 +1593,8 @@ msgstr "Color"
 #: pkg/networkmanager/firewall.jsx:602 pkg/networkmanager/firewall.jsx:612
 msgid "Comma-separated ports, ranges, and services are accepted"
 msgstr ""
-"Los puertos, rangos y/o servicios tienen que estar separados por comas para "
-"que sean válidos"
+"Los puertos, rangos y/o servicios deben estar separados por comas para que "
+"sean válidos"
 
 #: pkg/storaged/dialog.jsx:1203 pkg/storaged/dialog.jsx:1222
 #: pkg/systemd/services/timer-dialog.jsx:159
@@ -1718,10 +1716,8 @@ msgid "Connecting to SETroubleshoot daemon..."
 msgstr "Conectándose al servicio de SETroubleshoot..."
 
 #: pkg/systemd/services/services.jsx:245
-#, fuzzy
-#| msgid "Connection failed"
 msgid "Connecting to dbus failed: $0"
-msgstr "Conexión fallida"
+msgstr "Falló la conexión con dbus: $0"
 
 #: pkg/shell/indexes.js:447
 msgid "Connecting to the machine"
@@ -1854,7 +1850,7 @@ msgstr "Crear una instantánea del sistema de archivos $0"
 
 #: pkg/users/account-create-dialog.js:271
 msgid "Create account with weak password"
-msgstr ""
+msgstr "Crear la cuenta con la contraseña débil"
 
 #: pkg/storaged/things-panel.jsx:77
 msgid "Create devices"
@@ -2234,10 +2230,8 @@ msgid "Disabled"
 msgstr "Deshabilitado"
 
 #: pkg/users/account-create-dialog.js:69 pkg/users/account-details.js:323
-#, fuzzy
-#| msgid "Domain administrator password"
 msgid "Disallow interactive password"
-msgstr "Contraseña del administrador del dominio"
+msgstr "Denegar la autenticación interactiva con contraseña"
 
 #: pkg/systemd/services/service-details.jsx:158
 msgid "Disallow running (mask)"
@@ -2260,11 +2254,8 @@ msgid "Disk is OK"
 msgstr "El disco está OK"
 
 #: pkg/storaged/drive-details.jsx:63
-#, fuzzy
-#| msgid "$0 disk is missing"
-#| msgid_plural "$0 disks are missing"
 msgid "Disk is failing"
-msgstr "Falta $0 disco"
+msgstr "El disco está fallando"
 
 # auto translated by TM merge from project: Cockpit, version: rhel-8.0, DocId:
 # cockpit
@@ -2350,7 +2341,7 @@ msgstr "Descargar un navegador libre"
 
 #: pkg/sosreport/index.jsx:150
 msgid "Download report"
-msgstr "Informe de descarga"
+msgstr "Descargar informe"
 
 #: pkg/packagekit/updates.jsx:90
 msgid "Downloaded"
@@ -2411,7 +2402,7 @@ msgstr "Editar reglas y zonas"
 
 #: pkg/storaged/crypto-keyslots.jsx:579
 msgid "Editing a key requires a free slot"
-msgstr "Editar una clave requiere una ranura libre"
+msgstr "Editar una clave requiere un guardaclaves libre"
 
 #: pkg/storaged/jobs-panel.jsx:43
 msgid "Ejecting $target"
@@ -2668,8 +2659,6 @@ msgid "Failed to disable tuned"
 msgstr "Falló la desactivación del servicio tuned"
 
 #: pkg/tuned/dialog.jsx:178
-#, fuzzy
-#| msgid "Failed to disable tuned profile"
 msgid "Failed to disabled tuned profile"
 msgstr "Falló la desactivación de un perfil en tuned"
 
@@ -2683,7 +2672,7 @@ msgstr "Fallo al habilitar $0 en firewalld"
 
 #: pkg/tuned/dialog.jsx:155
 msgid "Failed to enable tuned"
-msgstr "Falló habilitando tuned"
+msgstr "Falló la habilitación de tuned"
 
 #: pkg/systemd/logsJournal.jsx:260
 msgid "Failed to fetch logs"
@@ -2818,11 +2807,8 @@ msgid "Forward delay $forward_delay"
 msgstr "Retardo del reenvío $forward_delay"
 
 #: pkg/systemd/abrtLog.jsx:83
-#, fuzzy
-#| msgctxt "storage"
-#| msgid "Serial number"
 msgid "Frame number"
-msgstr "Número de serie"
+msgstr "Número del frame"
 
 #: pkg/storaged/pvol-tabs.jsx:52
 msgid "Free"
@@ -3017,6 +3003,8 @@ msgid ""
 "If left empty, ID will be generated based on associated port services and "
 "port numbers"
 msgstr ""
+"Si se deja vacío, se generará un ID basado en los servicios y números de "
+"puerto asociados"
 
 #: pkg/static/login.html:72
 msgid ""
@@ -3391,8 +3379,7 @@ msgstr "Contraseña de la clave"
 
 #: pkg/storaged/crypto-keyslots.jsx:611
 msgid "Key slots with unknown types can not be edited here"
-msgstr ""
-"Las clave de las ranuras con tipos desconocidos no se pueden editar aquí"
+msgstr "Los guardaclaves de tipo desconocido no se pueden editar aquí"
 
 #: pkg/storaged/crypto-keyslots.jsx:282
 msgid "Key source"
@@ -3510,7 +3497,7 @@ msgstr "Límites"
 
 #: pkg/networkmanager/bond.jsx:201 pkg/networkmanager/team.jsx:195
 msgid "Link down delay"
-msgstr "Desvincular demora"
+msgstr "Retardo a desconexión de enlace"
 
 #: pkg/networkmanager/ip-settings.jsx:43 pkg/networkmanager/ip-settings.jsx:53
 msgid "Link local"
@@ -3518,11 +3505,11 @@ msgstr "Enlace local"
 
 #: pkg/networkmanager/bond.jsx:188
 msgid "Link monitoring"
-msgstr "Monitorizar el enlace"
+msgstr "Monitorización del enlace"
 
 #: pkg/networkmanager/bond.jsx:198 pkg/networkmanager/team.jsx:192
 msgid "Link up delay"
-msgstr "Vincular demora"
+msgstr "Retardo a conexión de enlace"
 
 #: pkg/networkmanager/team.jsx:185
 msgid "Link watch"
@@ -3533,30 +3520,24 @@ msgid "Linked"
 msgstr "Vinculado"
 
 #: pkg/systemd/services/service-details.jsx:543
-#, fuzzy
-#| msgid "Persistent"
 msgid "Listen"
-msgstr "Persistente"
+msgstr "Escuchando"
 
 #: pkg/systemd/services/services.jsx:412
 msgid "Listing unit files"
-msgstr ""
+msgstr "Listando los archivos de unidad"
 
 #: pkg/systemd/services/services.jsx:474
 msgid "Listing unit files failed: $0"
-msgstr ""
+msgstr "Fallo al listar los archivos de unidad: $0"
 
 #: pkg/systemd/services/services.jsx:380
-#, fuzzy
-#| msgid "Systemd units"
 msgid "Listing units"
-msgstr "Unidades de systemd"
+msgstr "Listando unidades"
 
 #: pkg/systemd/services/services.jsx:475
-#, fuzzy
-#| msgid "Last modified: $0"
 msgid "Listing units failed: $0"
-msgstr "Última modificación: $0"
+msgstr "Fallo al listar unidades: $0"
 
 #: pkg/metrics/metrics.jsx:105 pkg/metrics/metrics.jsx:514
 #: pkg/metrics/metrics.jsx:1433
@@ -3600,10 +3581,8 @@ msgid "Loading of SSH keys failed"
 msgstr "Fallo al cargar las claves SSH"
 
 #: pkg/systemd/services/services.jsx:731
-#, fuzzy
-#| msgid "Loading of SSH keys failed"
 msgid "Loading of units failed"
-msgstr "Fallo al cargar las claves SSH"
+msgstr "Fallo al cargar las unidades"
 
 #: pkg/shell/shell-modals.jsx:77
 msgid "Loading packages..."
@@ -3614,10 +3593,8 @@ msgid "Loading system modifications..."
 msgstr "Cargando modificaciones del sistema..."
 
 #: pkg/systemd/services/services.jsx:445
-#, fuzzy
-#| msgid "Login failed"
 msgid "Loading unit failed: $0"
-msgstr "Inicio de sesión fallido"
+msgstr "Fallo al cargar la unidad: $0"
 
 #: pkg/kdump/kdump-view.jsx:375 pkg/storaged/devices.jsx:69
 #: pkg/systemd/services/services.jsx:733 pkg/systemd/logsJournal.jsx:269
@@ -3783,14 +3760,14 @@ msgstr "Chasis del servidor principal"
 
 #: pkg/systemd/services/services.jsx:195
 msgid "Maintenance"
-msgstr "Mantenimiento"
+msgstr "Modo de mantenimiento"
 
 #: pkg/storaged/crypto-keyslots.jsx:389
 msgid ""
 "Make sure the key hash from the Tang server matches one of the following:"
 msgstr ""
-"Asegúrese de que el código de verificación de clave del servidor Tang "
-"coincida con uno de los siguientes:"
+"Asegúrese de que el hash de la clave del servidor Tang coincida con uno de "
+"los siguientes:"
 
 #: pkg/networkmanager/network-main.jsx:181
 msgid "Managed interfaces"
@@ -3821,22 +3798,16 @@ msgid "Managing firewall"
 msgstr "Gestión del cortafuegos"
 
 #: pkg/networkmanager/manifest.json:0
-#, fuzzy
-#| msgid "Managing networking"
 msgid "Managing networking bonds"
-msgstr "Gestionando la red"
+msgstr "Gestión de agregaciones de enlaces de red"
 
 #: pkg/networkmanager/manifest.json:0
-#, fuzzy
-#| msgid "Managing networking"
 msgid "Managing networking bridges"
-msgstr "Gestionando la red"
+msgstr "Gestión de puentes de red"
 
 #: pkg/networkmanager/manifest.json:0
-#, fuzzy
-#| msgid "Managing networking"
 msgid "Managing networking teams"
-msgstr "Gestionando la red"
+msgstr "Gestión de agregaciones de interfaces de red"
 
 #: pkg/storaged/manifest.json:0
 msgid "Managing partitions"
@@ -3919,7 +3890,7 @@ msgstr "Uso de memoria"
 
 #: pkg/systemd/services/services.jsx:182
 msgid "Merged"
-msgstr ""
+msgstr "Fusionado"
 
 #: pkg/lib/cockpit-components-shutdown.jsx:187
 msgid "Message to logged in users"
@@ -3991,7 +3962,7 @@ msgstr "Los lunes"
 
 #: pkg/networkmanager/bond.jsx:194
 msgid "Monitoring interval"
-msgstr "Monitorizando un intervalo"
+msgstr "Intervalo de monitorización"
 
 #: pkg/networkmanager/bond.jsx:205
 msgid "Monitoring targets"
@@ -4178,7 +4149,7 @@ msgstr "Pico de E/S de red"
 
 #: pkg/networkmanager/bond.jsx:139
 msgid "Network bond"
-msgstr "Red balanceada"
+msgstr "Agregación de enlaces de red"
 
 #: pkg/networkmanager/app.jsx:99
 msgid "Network devices and graphs require NetworkManager"
@@ -4341,7 +4312,7 @@ msgstr "No hay sistemas de archivos"
 
 #: pkg/storaged/crypto-keyslots.jsx:629
 msgid "No free key slots"
-msgstr "No hay ranuras clave libres"
+msgstr "No hay guardaclaves libres"
 
 #: pkg/storaged/content-views.jsx:982
 msgid "No free space"
@@ -4550,7 +4521,7 @@ msgstr "Aceptar"
 # cockpit
 #: pkg/storaged/crypto-keyslots.jsx:337
 msgid "Old passphrase"
-msgstr "Contraseña vieja"
+msgstr "Contraseña antigua"
 
 #: pkg/users/password-dialogs.js:138
 msgid "Old password"
@@ -4624,6 +4595,8 @@ msgid ""
 "Other authentication methods are still available even when interactive "
 "password authentication is not allowed."
 msgstr ""
+"Hay otros métodos de autenticación disponibles incluso cuando se deshabilita "
+"la autenticación interactiva con contraseña."
 
 #: pkg/storaged/content-views.jsx:490
 msgctxt "storage-id-desc"
@@ -4754,14 +4727,12 @@ msgid "Passphrase cannot be empty"
 msgstr "La contraseña no puede estar vacía"
 
 #: pkg/storaged/crypto-keyslots.jsx:448
-#, fuzzy
-#| msgid "Passphrase cannot be empty"
 msgid "Passphrase from any other key slot"
-msgstr "La contraseña no puede estar vacía"
+msgstr "Contraseña de cualquier otro guardaclaves"
 
 #: pkg/storaged/crypto-keyslots.jsx:438
 msgid "Passphrase removal may prevent unlocking $0."
-msgstr "Eliminar la contraseña quizás evite el desbloqueo $0."
+msgstr "Eliminar la contraseña puede prevenir el desbloqueo $0."
 
 #: pkg/storaged/format-dialog.jsx:277 pkg/storaged/stratis-panel.jsx:152
 #: pkg/storaged/crypto-keyslots.jsx:304 pkg/storaged/crypto-keyslots.jsx:343
@@ -5009,10 +4980,8 @@ msgid "Present"
 msgstr "Presente"
 
 #: pkg/networkmanager/dialogs-common.jsx:69
-#, fuzzy
-#| msgid "Preserve"
 msgid "Preserve"
-msgstr "Conservar"
+msgstr "Mantener"
 
 #: pkg/systemd/overview-cards/configurationCard.jsx:308
 msgid "Pretty host name"
@@ -5169,7 +5138,7 @@ msgstr "RAM"
 
 #: pkg/lib/machine-info.js:80
 msgid "Rack mount chassis"
-msgstr "Chasis montado en el rack"
+msgstr "Chasis montado en rack"
 
 #: pkg/networkmanager/dialogs-common.jsx:70
 msgid "Random"
@@ -5383,10 +5352,8 @@ msgstr "Eliminar elemento"
 # auto translated by TM merge from project: Cockpit, version: rhel-8.0, DocId:
 # cockpit
 #: pkg/storaged/crypto-keyslots.jsx:462
-#, fuzzy
-#| msgid "Remove passphrase in key slot $0"
 msgid "Remove passphrase in key slot $0?"
-msgstr "Eliminar la contraseña en $0"
+msgstr "¿Eliminar la contraseña del guardaclaves $0?"
 
 #: pkg/networkmanager/firewall.jsx:68
 msgid "Remove service $0"
@@ -5423,8 +5390,8 @@ msgid ""
 "Removing a passphrase without confirmation of another passphrase may prevent "
 "unlocking or key management, if other passphrases are forgotten or lost."
 msgstr ""
-"Eliminar una contraseña sin la confirmación de otra contraseña puede impedir "
-"el desbloqueo o gestión de claves, si otras contraseñas se pierden o se "
+"Eliminar una contraseña sin confirmar con otra contraseña puede impedir el "
+"desbloqueo o la gestión de claves, si otras contraseñas se pierden o se "
 "olvidan."
 
 #: pkg/storaged/jobs-panel.jsx:81
@@ -5769,8 +5736,8 @@ msgid ""
 "Saving a new passphrase requires unlocking the disk. Please provide a "
 "current disk passphrase."
 msgstr ""
-"Para guardar una nueva contraseña hay que desbloquear el disco. Por favor "
-"indique una contraseña para el disco actual."
+"Para guardar una nueva contraseña se necesita primero desbloquear el disco. "
+"Por favor, introduzca una contraseña actual del disco."
 
 #: pkg/systemd/overview-cards/shutdownStatus.jsx:88
 msgid "Scheduled poweroff at $0"
@@ -5813,10 +5780,8 @@ msgid "Security updates only"
 msgstr "Sólo actualizaciones de seguridad"
 
 #: pkg/packagekit/autoupdates.jsx:353
-#, fuzzy
-#| msgid "will be applied $0 at $1"
 msgid "Security updates will be applied $0 at $1"
-msgstr "se aplicarán el $0 a las $1"
+msgstr "Las actualizaciones de seguridad se aplicarán el $0 a las $1"
 
 #: pkg/shell/shell-modals.jsx:128
 msgid "Select"
@@ -5952,10 +5917,8 @@ msgid "Set up"
 msgstr "Preparar"
 
 #: pkg/users/password-dialogs.js:244
-#, fuzzy
-#| msgid "Set password"
 msgid "Set weak password"
-msgstr "Establecer contraseña"
+msgstr "Establecer contraseña débil"
 
 #: pkg/selinux/setroubleshoot-view.jsx:253
 msgid ""
@@ -6325,7 +6288,7 @@ msgstr "Guardar contraseña"
 #: pkg/storaged/crypto-tab.jsx:148 pkg/storaged/crypto-tab.jsx:150
 #: pkg/storaged/crypto-tab.jsx:244
 msgid "Stored passphrase"
-msgstr "Frase de paso almacenada"
+msgstr "Contraseña almacenada"
 
 #: pkg/storaged/content-views.jsx:447 pkg/storaged/content-views.jsx:474
 #: pkg/storaged/content-views.jsx:481
@@ -6341,7 +6304,6 @@ msgid "Stratis pool $0"
 msgstr "Grupo de almacenamiento Stratis $0"
 
 #: pkg/systemd/services/services.jsx:177
-#, fuzzy
 msgid "Stub"
 msgstr "Stub"
 
@@ -6355,7 +6317,7 @@ msgstr "Subportátil"
 
 #: pkg/systemd/services/services.jsx:242
 msgid "Subscribing to systemd signals failed: $0"
-msgstr ""
+msgstr "Falló la suscripción a las señales de systemd: $0"
 
 #: pkg/storaged/crypto-keyslots.jsx:400
 msgid "Successfully copied to clipboard!"
@@ -6624,8 +6586,8 @@ msgid ""
 "The disk needs to be unlocked before formatting.  Please provide a existing "
 "passphrase."
 msgstr ""
-"El disco necesita ser desbloqueado antes de poder formatear. Por favor, "
-"introduzca una contraseña existente."
+"Se necesita desbloquear el disco antes de formatearlo. Por favor, introduzca "
+"una contraseña existente."
 
 #: pkg/storaged/fsys-tab.jsx:526
 msgid "The filesystem has no permanent mount point."
@@ -6714,7 +6676,7 @@ msgstr "Las contraseñas de la clave no coinciden"
 
 #: pkg/users/authorized-keys.js:123
 msgid "The key you provided was not valid."
-msgstr "La clave que propuso no era válida."
+msgstr "La clave introducida no resultó válida."
 
 #: pkg/storaged/mdraid-details.jsx:136
 msgid "The last disk of a RAID device cannot be removed."
@@ -6722,7 +6684,7 @@ msgstr "El último disco del dispositivo RAID no se puede eliminar."
 
 #: pkg/storaged/crypto-keyslots.jsx:586
 msgid "The last key slot can not be removed"
-msgstr "La último compartimento de la clave no se puede eliminar"
+msgstr "No se puede eliminar el último guardaclaves"
 
 #: pkg/storaged/vgroup-details.jsx:103
 msgid "The last physical volume of a volume group cannot be removed."
@@ -7171,7 +7133,7 @@ msgstr "Los martes"
 
 #: pkg/tuned/dialog.jsx:252
 msgid "Tuned has failed to start"
-msgstr "Tuned a fallado al iniciar"
+msgstr "Tuned ha fallado al iniciar"
 
 #: pkg/tuned/dialog.jsx:276
 msgid ""
@@ -7265,8 +7227,8 @@ msgid ""
 "password. You may want to set up your SSH keys for automatic login."
 msgstr ""
 "No se pudo iniciar sesión en $0 usando autenticación por clave SSH. Por "
-"favor introduzca la contraseña. Quizás quieras configurar claves SSH para "
-"inicios de sesión automáticos."
+"favor, introduzca la contraseña. Quizás quiera configurar claves SSH para "
+"permitir inicios de sesión automáticos."
 
 #: pkg/shell/hosts_dialog.jsx:746
 msgid ""
@@ -7493,10 +7455,8 @@ msgid "Updates history"
 msgstr "Histórico de actualizaciones"
 
 #: pkg/packagekit/autoupdates.jsx:354
-#, fuzzy
-#| msgid "will be applied $0 at $1"
 msgid "Updates will be applied $0 at $1"
-msgstr "se aplicarán el $0 a las $1"
+msgstr "Las actualizaciones se aplicarán el $0 a las $1"
 
 #: pkg/packagekit/updates.jsx:86
 msgid "Updating"
@@ -7603,8 +7563,6 @@ msgid "VDO filesystem volume (compression/deduplication)"
 msgstr "Volumen de sistema de archivos VDO (compresión/desduplicación)"
 
 #: pkg/storaged/content-views.jsx:212
-#, fuzzy
-#| msgid "VDO Pool"
 msgid "VDO pool"
 msgstr "Grupo de almacenamiento VDO"
 
@@ -7661,20 +7619,16 @@ msgid "Very securely erasing $target"
 msgstr "Borrado de forma muy segura $target"
 
 #: pkg/metrics/metrics.jsx:486 pkg/metrics/metrics.jsx:487
-#, fuzzy
-#| msgid "View all logs"
 msgid "View all CPUs"
-msgstr "Ver todos los registros"
+msgstr "Mostrar todas las CPUs"
 
 #: pkg/metrics/metrics.jsx:779 pkg/lib/cockpit-components-logs-panel.jsx:171
 msgid "View all logs"
 msgstr "Ver todos los registros"
 
 #: pkg/systemd/services/services.jsx:751
-#, fuzzy
-#| msgid "Filter services"
 msgid "View all services"
-msgstr "Filtrar servicios"
+msgstr "Mostrar todos los servicios"
 
 #: pkg/lib/cockpit-components-modifications.jsx:162
 msgid "View automation script"
@@ -7702,10 +7656,8 @@ msgstr "Ver el informe"
 
 #: pkg/lib/cockpit-components-firewalld-request.jsx:120
 #: pkg/lib/cockpit-components-firewalld-request.jsx:157
-#, fuzzy
-#| msgid "Visit Firewall"
 msgid "Visit firewall"
-msgstr "Visitar el cortafuegos"
+msgstr "Ir al cortafuegos"
 
 #: pkg/storaged/content-views.jsx:209
 msgid "Volume"
@@ -7986,7 +7938,7 @@ msgstr "avc"
 
 #: pkg/metrics/metrics.jsx:473
 msgid "average: $0%"
-msgstr ""
+msgstr "media: $0%"
 
 #: pkg/storaged/dialog.jsx:1028
 msgid "backing device for VDO device"
@@ -8002,7 +7954,7 @@ msgstr "bios"
 
 #: pkg/networkmanager/manifest.json:0
 msgid "bond"
-msgstr "balanceado"
+msgstr "agregación de enlaces"
 
 #: pkg/systemd/manifest.json:0
 msgid "boot"
@@ -8197,9 +8149,8 @@ msgid "graphs"
 msgstr "gráficos"
 
 #: pkg/storaged/lvol-tabs.jsx:228
-#, fuzzy
 msgid "grow"
-msgstr "aumentar"
+msgstr "incrementar"
 
 #: pkg/systemd/manifest.json:0
 msgid "hardware"
@@ -8299,7 +8250,7 @@ msgstr "máscara"
 
 #: pkg/metrics/metrics.jsx:474
 msgid "max: $0%"
-msgstr ""
+msgstr "máx: $0%"
 
 #: pkg/storaged/dialog.jsx:1027
 msgid "member of RAID device"
