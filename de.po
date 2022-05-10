@@ -23,7 +23,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-05-03 18:03+0000\n"
-"PO-Revision-Date: 2022-05-04 15:06+0000\n"
+"PO-Revision-Date: 2022-05-10 21:02+0000\n"
 "Last-Translator: Joachim Philipp <joachim.philipp@gmail.com>\n"
 "Language-Team: German <https://translate.fedoraproject.org/projects/cockpit/"
 "main/de/>\n"
@@ -2052,6 +2052,10 @@ msgid ""
 "'now' refers to the current time. Finally, relative times may be specified, "
 "prefixed with '-' or '+'"
 msgstr ""
+"Datumsangaben sollten im Format JJJJ-MM-TT hh:mm:ss sein. Alternativ werden "
+"auch die Begriffe 'gestern', 'heute', 'morgen' verstanden. 'Now' bezieht "
+"sich auf die aktuelle Zeit. Es können auch relative Zeiten angegeben werden "
+"mit den Vorzeichen '-' oder '+'"
 
 #: pkg/storaged/content-views.jsx:322
 msgid "Deactivate"
@@ -2127,11 +2131,9 @@ msgid "Deleting LVM2 volume group $target"
 msgstr "LVM2-Volumengruppe $target wird gelöscht"
 
 #: pkg/storaged/stratis-details.jsx:252
-#, fuzzy
-#| msgid "Deleting a container will erase all data in it."
 msgid "Deleting a Stratis pool will erase all data it contains."
 msgstr ""
-"Das Löschen eines Containers entfernt alle sich darin befindlichen Daten."
+"Das Löschen eines Stratis Pools entfernt alle sich darin befindlichen Daten."
 
 #: pkg/storaged/stratis-details.jsx:551
 msgid "Deleting a filesystem will delete all data in it."
@@ -2248,14 +2250,12 @@ msgid "Disabled"
 msgstr "Deaktiviert"
 
 #: pkg/users/account-details.js:323
-#, fuzzy
-#| msgid "Domain administrator password"
 msgid "Disallow interactive password"
-msgstr "Passwort des Domain-Administrators"
+msgstr "Interaktives Passwort nicht erlauben"
 
 #: pkg/users/account-create-dialog.js:80
 msgid "Disallow password authentication"
-msgstr ""
+msgstr "Authentifizierung durch Passwort nicht erlauben"
 
 #: pkg/systemd/services/service-details.jsx:158
 msgid "Disallow running (mask)"
@@ -2271,18 +2271,15 @@ msgstr "Festplatten-E/A"
 
 #: pkg/metrics/metrics.jsx:127
 msgid "Disk I/O spike"
-msgstr ""
+msgstr "Disk I/O Spitze"
 
 #: pkg/storaged/drive-details.jsx:66
 msgid "Disk is OK"
 msgstr "Datenträger ist OK"
 
 #: pkg/storaged/drive-details.jsx:65
-#, fuzzy
-#| msgid "$0 disk is missing"
-#| msgid_plural "$0 disks are missing"
 msgid "Disk is failing"
-msgstr "$0 Festplatte fehlt"
+msgstr "Festplatte versagt"
 
 #: pkg/storaged/crypto-keyslots.jsx:197
 msgid "Disk passphrase"
@@ -2345,16 +2342,12 @@ msgid "Domain administrator password"
 msgstr "Passwort des Domain-Administrators"
 
 #: pkg/systemd/overview-cards/realmd.jsx:310
-#, fuzzy
-#| msgid "Domain $0 could not be contacted"
 msgid "Domain could not be contacted"
-msgstr "Die Domain $0 konnte nicht kontaktiert werden"
+msgstr "Die Domäne konnte nicht kontaktiert werden"
 
 #: pkg/systemd/overview-cards/realmd.jsx:311
-#, fuzzy
-#| msgid "Domain $0 is not supported"
 msgid "Domain is not supported"
-msgstr "Domain $0 wird nicht unterstützt"
+msgstr "Domäne wird nicht unterstützt"
 
 #: pkg/systemd/services/timer-dialog.jsx:237
 msgid "Don't repeat"
@@ -2488,10 +2481,8 @@ msgid "Encrypted $0"
 msgstr "Verschlüsselt $0"
 
 #: pkg/storaged/stratis-details.jsx:412
-#, fuzzy
-#| msgid "Encrypted partition of $0"
 msgid "Encrypted Stratis pool $0"
-msgstr "Verschlüsselte Partition von $0"
+msgstr "Verschlüsselter Stratis Pool $0"
 
 #: pkg/storaged/utils.js:275
 msgid "Encrypted logical volume of $0"
@@ -2579,6 +2570,8 @@ msgstr "Fehlermeldung"
 #: pkg/lib/cockpit-components-modifications.jsx:138
 msgid "Error running semanage to discover system modifications"
 msgstr ""
+"Semanage konnte nicht ausgeführt werden um Veränderungen am System zu "
+"entdecken"
 
 #: pkg/users/authorized-keys.js:120
 msgid "Error saving authorized keys: "
@@ -2650,7 +2643,7 @@ msgstr "Erweiterte Partition"
 
 #: pkg/systemd/overview-cards/cryptoPolicies.jsx:218
 msgid "FIPS is not properly enabled"
-msgstr ""
+msgstr "FIPS wurde nicht richtig aktiviert"
 
 #: pkg/networkmanager/interfaces.js:757 pkg/storaged/mdraid-details.jsx:111
 msgid "Failed"
