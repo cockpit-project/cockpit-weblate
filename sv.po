@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-05-17 18:04+0000\n"
-"PO-Revision-Date: 2022-05-16 17:18+0000\n"
-"Last-Translator: Luna Jernberg <bittin@reimu.nl>\n"
+"PO-Revision-Date: 2022-05-20 17:53+0000\n"
+"Last-Translator: Göran Uddeborg <goeran@uddeborg.se>\n"
 "Language-Team: Swedish <https://translate.fedoraproject.org/projects/cockpit/"
 "main/sv/>\n"
 "Language: sv\n"
@@ -66,8 +66,8 @@ msgstr "$0 styckesstorlek"
 #: pkg/systemd/overview-cards/insights.jsx:195
 msgid "$0 critical hit"
 msgid_plural "$0 hits, including critical"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "$0 kritisk träff"
+msgstr[1] "$0 träffar, inklusive kritiska"
 
 #: pkg/storaged/stratis-details.jsx:198
 msgid "$0 data"
@@ -118,12 +118,10 @@ msgid "$0 failed"
 msgstr "$0 misslyckades"
 
 #: pkg/systemd/overview-cards/lastLogin.jsx:102
-#, fuzzy
-#| msgid "Last failed login:"
 msgid "$0 failed login attempt"
 msgid_plural "$0 failed login attempts"
-msgstr[0] "Senaste misslyckade inloggning:"
-msgstr[1] "Senaste misslyckade inloggning:"
+msgstr[0] "$0 misslyckat inloggningsförsök"
+msgstr[1] "$0 misslyckade inloggningsförsök"
 
 #: pkg/storaged/content-views.jsx:455
 msgctxt "storage-id-desc"
@@ -155,8 +153,8 @@ msgstr[1] "$0 timmar"
 #: pkg/systemd/overview-cards/insights.jsx:200
 msgid "$0 important hit"
 msgid_plural "$0 hits, including important"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "$0 viktig träff"
+msgstr[1] "$0 träffar, inklusive viktiga"
 
 #: pkg/storaged/content-views.jsx:371 pkg/storaged/content-views.jsx:676
 #: pkg/storaged/mdraid-details.jsx:232 pkg/storaged/mdraid-details.jsx:287
@@ -183,8 +181,8 @@ msgstr "$0 dödad med signal $1"
 #: pkg/systemd/overview-cards/insights.jsx:210
 msgid "$0 low severity hit"
 msgid_plural "$0 low severity hits"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "$0 träff med låg allvarlighet"
+msgstr[1] "$0 träffar med låg allvarlighet"
 
 #: pkg/lib/cockpit-components-plot.jsx:237
 msgid "$0 minute"
@@ -193,11 +191,10 @@ msgstr[0] "$0 minut"
 msgstr[1] "$0 minuter"
 
 #: pkg/systemd/overview-cards/insights.jsx:205
-#, fuzzy
 msgid "$0 moderate hit"
 msgid_plural "$0 hits, including moderate"
-msgstr[0] "$0 månad"
-msgstr[1] "$0 månader"
+msgstr[0] "$0 måttlig träff"
+msgstr[1] "$0 träffar, inklusive måttliga"
 
 #: pkg/lib/cockpit-components-plot.jsx:225
 msgid "$0 month"
@@ -246,8 +243,6 @@ msgstr[0] "$0 tjänst måste startas om"
 msgstr[1] "$0 tjänster måste startas om"
 
 #: pkg/storaged/crypto-keyslots.jsx:624
-#, fuzzy
-#| msgid "$0 slots remain"
 msgid "$0 slot remains"
 msgid_plural "$0 slots remain"
 msgstr[0] "$0 fack återstår"
@@ -553,13 +548,13 @@ msgstr ""
 "läggas till $3-filen på $4 på $5."
 
 #: pkg/packagekit/updates.jsx:1488
-#, fuzzy
-#| msgid "Updated packages may require a restart to take effect."
 msgid "A package needs a system reboot for the updates to take effect:"
 msgid_plural ""
 "Some packages need a system reboot for the updates to take effect:"
-msgstr[0] "Uppdaterade paket kan behöva en omstart för att få effekt."
-msgstr[1] "Uppdaterade paket kan behöva en omstart för att få effekt."
+msgstr[0] ""
+"Ett paket behöver en systemomstart för att uppdateringen skall få effekt"
+msgstr[1] ""
+"Några paket behöver en systemomstart för att uppdateringen skall få effekt"
 
 #: pkg/storaged/stratis-details.jsx:227
 msgid "A pool with this name exists already."
@@ -935,10 +930,8 @@ msgid "Apply and reboot"
 msgstr "Verkställ och starta om"
 
 #: pkg/packagekit/kpatch.jsx:260
-#, fuzzy
-#| msgid "Apply security updates"
 msgid "Apply kernel live patches"
-msgstr "Lägg på säkerhetsuppdateringar"
+msgstr "Lägg på driftsuppdateringar av kärnan"
 
 #: pkg/selinux/setroubleshoot-view.jsx:104
 msgid "Apply this solution"
@@ -946,7 +939,7 @@ msgstr "Lägg på denna lösning"
 
 #: pkg/systemd/overview-cards/cryptoPolicies.jsx:172
 msgid "Applying new policy... This may take a few minutes."
-msgstr ""
+msgstr "Tar ny policy i drift … Detta kan ta några minuter."
 
 #: pkg/selinux/setroubleshoot-view.jsx:81
 msgid "Applying solution..."
@@ -1169,10 +1162,8 @@ msgid "Bond"
 msgstr "Binda"
 
 #: pkg/networkmanager/bond.jsx:136
-#, fuzzy
-#| msgid "Bridge settings"
 msgid "Bond settings"
-msgstr "Brygginställningar"
+msgstr "Bindinställningar"
 
 #: pkg/systemd/logs.jsx:355
 msgid "Boot"
@@ -1633,8 +1624,6 @@ msgid "Confirm"
 msgstr "Bekräfta"
 
 #: pkg/systemd/services/service-details.jsx:660
-#, fuzzy
-#| msgid "Please confirm deletion of $0"
 msgid "Confirm deletion of $0"
 msgstr "Bekräfta raderingen av $0"
 
@@ -1938,6 +1927,9 @@ msgid ""
 "Crypto Policies is a system component that configures the core cryptographic "
 "subsystems, covering the TLS, IPSec, SSH, DNSSec, and Kerberos protocols."
 msgstr ""
+"Kryptopolicyer är en systemkomponent som konfigurerar de grundläggande "
+"kryptografiska undersystemen, innefattande protokollen TLS, IPSec, SSH, "
+"DNSSec och Kerberos."
 
 #: pkg/systemd/overview-cards/cryptoPolicies.jsx:73
 msgid "Crypto policy"
@@ -2028,6 +2020,10 @@ msgid ""
 "'now' refers to the current time. Finally, relative times may be specified, "
 "prefixed with '-' or '+'"
 msgstr ""
+"Datumspecifikationen skall ha formatet ÅÅÅÅ-MM-DD hh:mm:ss. Alternativt "
+"förstås strängarna ”yesterday”, ”today”, ”tomorrow”. ”now” refererar till "
+"den aktuella tiden. Slutligen kan relativa tider anges, inledda med ”-” "
+"eller ”+”"
 
 #: pkg/storaged/content-views.jsx:322
 msgid "Deactivate"
@@ -2133,7 +2129,7 @@ msgstr "Om du raderar raderas all data i en volymgrupp."
 
 #: pkg/systemd/services/service-details.jsx:564
 msgid "Deletion will remove the following files:"
-msgstr ""
+msgstr "Radering kommer ta bort följande filer:"
 
 #: pkg/storaged/dialog.jsx:1224 pkg/networkmanager/firewall.jsx:648
 #: pkg/networkmanager/firewall.jsx:775
@@ -2251,11 +2247,8 @@ msgid "Disk is OK"
 msgstr "Disken är OK"
 
 #: pkg/storaged/drive-details.jsx:65
-#, fuzzy
-#| msgid "$0 disk is missing"
-#| msgid_plural "$0 disks are missing"
 msgid "Disk is failing"
-msgstr "$0 disk saknas"
+msgstr "Disken är på väg att gå sönder"
 
 #: pkg/storaged/crypto-keyslots.jsx:197
 msgid "Disk passphrase"
@@ -2268,12 +2261,10 @@ msgid "Disks"
 msgstr "Diskar"
 
 #: pkg/selinux/setroubleshoot-view.jsx:400
-#, fuzzy
-#| msgid "Dismiss"
 msgid "Dismiss $0 alert"
 msgid_plural "Dismiss $0 alerts"
-msgstr[0] "Avfärda"
-msgstr[1] "Avfärda"
+msgstr[0] "Avfärda $0 larm"
+msgstr[1] "Avfärda $0 larm"
 
 #: pkg/selinux/setroubleshoot-view.jsx:400
 msgid "Dismiss selected alerts"
@@ -2651,8 +2642,6 @@ msgid "Failed to disable tuned"
 msgstr "Misslyckades att avaktivera tuned"
 
 #: pkg/tuned/dialog.jsx:178
-#, fuzzy
-#| msgid "Failed to disable tuned profile"
 msgid "Failed to disabled tuned profile"
 msgstr "Misslyckades avaktivera en tuned-profil"
 
@@ -2824,10 +2813,8 @@ msgstr ""
 "lägg till en ytterligare fysisk volym."
 
 #: pkg/systemd/logs.jsx:377
-#, fuzzy
-#| msgid "Clear search"
 msgid "Free-form search"
-msgstr "Nollställ sökning"
+msgstr "Friformssökning"
 
 #: pkg/packagekit/autoupdates.jsx:310 pkg/systemd/services/timer-dialog.jsx:296
 msgid "Fridays"
@@ -2934,9 +2921,8 @@ msgid "Higher interoperability at the cost of an increased attack surface."
 msgstr "Högre interoperabilitet till priset av en ökad attackyta."
 
 #: pkg/packagekit/history.jsx:107
-#, fuzzy
 msgid "History package count"
-msgstr "Lås kontot"
+msgstr "Historiepaketantal"
 
 #: pkg/shell/hosts_dialog.jsx:248 pkg/shell/hosts.jsx:196
 msgid "Host"
@@ -3008,6 +2994,8 @@ msgid ""
 "If left empty, ID will be generated based on associated port services and "
 "port numbers"
 msgstr ""
+"Om det lämnas tomt kommer ett ID att genereras baserat på associerade "
+"porttjänster och portnummer"
 
 #: pkg/static/login.html:72
 msgid ""
