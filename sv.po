@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-02-28 09:29+0000\n"
-"PO-Revision-Date: 2022-05-25 09:18+0000\n"
+"PO-Revision-Date: 2022-05-27 11:18+0000\n"
 "Last-Translator: Göran Uddeborg <goeran@uddeborg.se>\n"
 "Language-Team: Swedish <https://translate.fedoraproject.org/projects/cockpit/"
 "rhel-9-0/sv/>\n"
@@ -5978,6 +5978,9 @@ msgid ""
 "mitigations have the side effect of reducing performance. Change these "
 "settings at your own risk."
 msgstr ""
+"Programvarubaserade sätt att gå runt problem hjälper till att förhindra CPU-"
+"säkerhetsrisker. Dessa begränsningar har sidoeffekten att reducera "
+"prestanda. Ändra dessa inställningar på egen risk."
 
 #: pkg/selinux/setroubleshoot-view.jsx:87
 msgid "Solution applied successfully"
@@ -6174,30 +6177,27 @@ msgstr "Stratis pool $0"
 
 #: pkg/systemd/services/services.jsx:177
 msgid "Stub"
-msgstr ""
+msgstr "Stubbe"
 
 #: pkg/lib/machine-info.js:76
 msgid "Sub-Chassis"
 msgstr "Under-chassi"
 
 #: pkg/lib/machine-info.js:71
-#, fuzzy
 msgid "Sub-Notebook"
 msgstr "ULPC"
 
 #: pkg/systemd/services/services.jsx:242
 msgid "Subscribing to systemd signals failed: $0"
-msgstr ""
+msgstr "Att prenumerera på systemd-signaler misslyckades: $0"
 
 #: pkg/storaged/crypto-keyslots.jsx:400
 msgid "Successfully copied to clipboard!"
 msgstr "Kopierade till urklipp!"
 
 #: pkg/systemd/logs.jsx:413
-#, fuzzy
-#| msgid "Copy to clipboard"
 msgid "Successfully copied to keyboard"
-msgstr "Kopiera till urklipp"
+msgstr "Kopierade till tangentbord"
 
 #: pkg/systemd/services/timer-dialog.jsx:289 pkg/packagekit/autoupdates.jsx:312
 msgid "Sundays"
@@ -6213,10 +6213,8 @@ msgid "Swap"
 msgstr "Växlingsutrymme"
 
 #: pkg/metrics/metrics.jsx:117
-#, fuzzy
-#| msgid "Swap used"
 msgid "Swap out"
-msgstr "Använt växlingsutrymme"
+msgstr "Växla ut"
 
 #: pkg/storaged/content-views.jsx:488
 msgctxt "storage-id-desc"
@@ -6302,9 +6300,8 @@ msgid "System time"
 msgstr "Systemtid"
 
 #: pkg/systemd/services/services-list.jsx:49
-#, fuzzy
 msgid "Systemd units"
-msgstr "Systemtjänster"
+msgstr "Systemenheter"
 
 #: pkg/networkmanager/firewall.jsx:178
 msgid "TCP"
@@ -6373,9 +6370,8 @@ msgid "The $0 package will be installed to create VDO devices."
 msgstr "Paketet $0 kommer att installeras för att skapa VDO-enheter."
 
 #: pkg/shell/hosts_dialog.jsx:146
-#, fuzzy
 msgid "The IP address or hostname cannot contain whitespace."
-msgstr "IP-adressen och värdnamnet får inte innehålla blanktecken."
+msgstr "IP-adressen eller värdnamnet får inte innehålla blanktecken."
 
 #: pkg/storaged/mdraid-details.jsx:222
 msgid "The RAID array is in a degraded state"
@@ -6557,18 +6553,15 @@ msgstr "Den sista fysiska volymen i en volymgrupp kan inte tas bort."
 
 #: pkg/storaged/dialog.jsx:1239
 msgid "The listed processes and services will be forcefully stopped."
-msgstr ""
+msgstr "De listade processerna och tjänsterna kommer tvingas stoppa."
 
 #: pkg/storaged/dialog.jsx:1241
 msgid "The listed processes will be forcefully stopped."
-msgstr ""
+msgstr "De listade processerna kommer att tvingas stoppa."
 
 #: pkg/storaged/dialog.jsx:1243
-#, fuzzy
-#| msgid "The following service will be restarted:"
-#| msgid_plural "The following services will be restarted:"
 msgid "The listed services will be forcefully stopped."
-msgstr "Följande tjänst kommer att startas om:"
+msgstr "De listade tjänsterna kommer att tvingas stoppa."
 
 #: pkg/lib/cockpit-components-modifications.jsx:137
 msgid "The logged in user is not permitted to view system modifications"
@@ -6793,6 +6786,13 @@ msgid ""
 "chronological order, 2 the second and so on; while -0 is the last boot, -1 "
 "the boot before last, and so on."
 msgstr ""
+"Detta kommer lägga till en matchning av ”_BOOT_ID=”. Om det inte anges "
+"kommer den aktuella uppstarten visas. Om uppstarts-ID:t utelämnas kommer ett "
+"positivt avstånd leta efter uppstarter från början av journalen och ett lika-"
+"med-eller-mindre-än noll-avstånd leta efter uppstarter från slutet av "
+"journalen. Alltså betyder 1 den första uppstarten som finns i journalen i "
+"kronologisk ordning, 2 den andra och så vidare; medan -0 är sista "
+"uppstarten, -1 uppstarten före det, och så vidare."
 
 #: pkg/systemd/logs.jsx:369
 msgid ""
@@ -6800,6 +6800,9 @@ msgid ""
 "find all possible messages for the given unit. Can contain more units "
 "separated by comma. "
 msgstr ""
+"Detta kommer lägga till en matchning av ”_SYSTEMD_UNIT=”, ”COREDUMP_UNIT=” "
+"och ”UNIT=” för att hitta alla möjliga meddelanden för den angivna enheten. "
+"Kan innehålla flera enheter separerade av komma. "
 
 #: pkg/shell/hosts_dialog.jsx:802
 msgid "This will allow you to log in without password in the future."
@@ -6824,6 +6827,8 @@ msgid ""
 "This zone contains the cockpit service. Make sure that this zone does not "
 "apply to your current web console connection."
 msgstr ""
+"Denna zon innehåller cockpit-tjänsten. Se till att denna zon inte gäller din "
+"aktuella webbkonsolanslutning."
 
 #: pkg/systemd/services/timer-dialog.jsx:286 pkg/packagekit/autoupdates.jsx:309
 msgid "Thursdays"
@@ -6831,7 +6836,7 @@ msgstr "Torsdagar"
 
 #: pkg/storaged/stratis-details.jsx:125
 msgid "Tier"
-msgstr ""
+msgstr "Nivå"
 
 #: pkg/systemd/logs.jsx:200 pkg/packagekit/history.jsx:107
 msgid "Time"
@@ -6842,10 +6847,8 @@ msgid "Time zone"
 msgstr "Tidszon"
 
 #: pkg/systemd/services/timer-dialog.jsx:127
-#, fuzzy
-#| msgid "Connection failed"
 msgid "Timer creation failed"
-msgstr "Anslutningen misslyckades"
+msgstr "Att skapa en timer misslyckades"
 
 #: pkg/systemd/services/service-tabs.jsx:42
 msgid "Timers"
@@ -6933,7 +6936,7 @@ msgstr "Torn"
 
 #: pkg/systemd/services/services.jsx:213
 msgid "Transient"
-msgstr ""
+msgstr "Transient"
 
 #: pkg/networkmanager/plots.js:38
 msgid "Transmitting"
@@ -6990,6 +6993,9 @@ msgid ""
 "under certain workloads. The core of Tuned are profiles, which tune your "
 "system for different use cases."
 msgstr ""
+"Tuned är en tjänst som övervakar systemet och optimerar prestandan under "
+"vissa belastningar. Kärnan av Tuned är profiler, vilka trimmar systemet för "
+"olika användningsfall."
 
 #: pkg/tuned/dialog.jsx:75
 msgid "Tuned is not available"
