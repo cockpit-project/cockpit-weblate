@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-07 18:03+0000\n"
+"POT-Creation-Date: 2022-06-14 18:07+0000\n"
 "PO-Revision-Date: 2022-05-29 11:18+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
@@ -26,7 +26,7 @@ msgstr ""
 msgid "$0 (encrypted)"
 msgstr "$0 (зашифровано)"
 
-#: pkg/metrics/metrics.jsx:457
+#: pkg/metrics/metrics.jsx:526
 msgid "$0 CPU"
 msgid_plural "$0 CPUs"
 msgstr[0] "$0 процесор"
@@ -41,10 +41,6 @@ msgstr "$0 ГіБ"
 msgid "$0 Stratis pool"
 msgstr "$0 буфер Stratis"
 
-#: pkg/networkmanager/firewall.jsx:178
-msgid "$0 Zone"
-msgstr "Зона $0"
-
 #: pkg/networkmanager/network-main.jsx:167
 msgid "$0 active zone"
 msgid_plural "$0 active zones"
@@ -52,7 +48,7 @@ msgstr[0] "$0 активна зона"
 msgstr[1] "$0 активні зони"
 msgstr[2] "$0 активних зон"
 
-#: pkg/metrics/metrics.jsx:480 pkg/metrics/metrics.jsx:583
+#: pkg/metrics/metrics.jsx:549 pkg/metrics/metrics.jsx:652
 msgid "$0 available"
 msgstr "Доступно $0"
 
@@ -118,11 +114,11 @@ msgstr "Документація з $0"
 msgid "$0 error"
 msgstr "Помилка $0"
 
-#: pkg/lib/cockpit.js:2719
+#: pkg/lib/cockpit.js:2717
 msgid "$0 exited with code $1"
 msgstr "$0 завершено роботу з кодом $1"
 
-#: pkg/lib/cockpit.js:2721
+#: pkg/lib/cockpit.js:2719
 msgid "$0 failed"
 msgstr "Помилка $0"
 
@@ -150,7 +146,7 @@ msgstr "Файлові системи $0 не можна звужувати."
 msgid "$0 filesystems can not be resized here."
 msgstr "Тут не можна змінювати розмір файлових систем $0."
 
-#: pkg/metrics/metrics.jsx:625
+#: pkg/metrics/metrics.jsx:694
 msgid "$0 free"
 msgstr "Вільно $0"
 
@@ -186,7 +182,7 @@ msgstr "$0 немає у жодному зі сховищ."
 msgid "$0 key changed"
 msgstr "Змінено ключ $0"
 
-#: pkg/lib/cockpit.js:2717
+#: pkg/lib/cockpit.js:2715
 msgid "$0 killed with signal $1"
 msgstr "$0 завершено з сигналом $1"
 
@@ -236,7 +232,7 @@ msgstr[0] "$0 пакунок потребує перезавантаження �
 msgstr[1] "$0 пакунки потребують перезавантаження системи"
 msgstr[2] "$0 пакунків потребують перезавантаження системи"
 
-#: pkg/metrics/metrics.jsx:127
+#: pkg/metrics/metrics.jsx:129
 msgid "$0 page"
 msgid_plural "$0 pages"
 msgstr[0] "$0 сторінка"
@@ -271,8 +267,8 @@ msgstr[0] "Лишився $0 слот"
 msgstr[1] "Лишилося $0 слоти"
 msgstr[2] "Лишилося $0 слотів"
 
-#: pkg/metrics/metrics.jsx:472 pkg/metrics/metrics.jsx:574
-#: pkg/metrics/metrics.jsx:633
+#: pkg/metrics/metrics.jsx:541 pkg/metrics/metrics.jsx:643
+#: pkg/metrics/metrics.jsx:702
 msgid "$0 total"
 msgstr "Загалом $0"
 
@@ -305,6 +301,10 @@ msgstr[0] "$0 рік"
 msgstr[1] "$0 роки"
 msgstr[2] "$0 років"
 
+#: pkg/networkmanager/firewall.jsx:190
+msgid "$0 zone"
+msgstr "зона $0"
+
 #: pkg/storaged/vgroup-details.jsx:118
 msgid "$0, $1 free"
 msgstr "$0, вільно $1"
@@ -313,7 +313,7 @@ msgstr "$0, вільно $1"
 msgid "$0: crash at $1"
 msgstr "$0: аварія у $1"
 
-#: pkg/storaged/utils.js:191
+#: pkg/storaged/utils.js:189
 msgid "$name (from $host)"
 msgstr "$name (з $host)"
 
@@ -340,7 +340,7 @@ msgstr "1 день"
 msgid "1 hour"
 msgstr "1 година"
 
-#: pkg/metrics/metrics.jsx:547
+#: pkg/metrics/metrics.jsx:616
 msgid "1 min"
 msgstr "1 хв."
 
@@ -376,7 +376,7 @@ msgstr "13-е"
 msgid "14th"
 msgstr "14-е"
 
-#: pkg/metrics/metrics.jsx:549
+#: pkg/metrics/metrics.jsx:618
 msgid "15 min"
 msgstr "15 хв."
 
@@ -488,7 +488,7 @@ msgstr "40 хвилин"
 msgid "4th"
 msgstr "4-е"
 
-#: pkg/metrics/metrics.jsx:548
+#: pkg/metrics/metrics.jsx:617
 msgid "5 min"
 msgstr "5 хв."
 
@@ -709,7 +709,7 @@ msgstr "Додати $0"
 msgid "Add VLAN"
 msgstr "Додати VLAN"
 
-#: pkg/networkmanager/firewall.jsx:966
+#: pkg/networkmanager/firewall.jsx:1027
 msgid "Add a new zone"
 msgstr "Додати нову зону"
 
@@ -753,15 +753,15 @@ msgstr "Додати учасника"
 msgid "Add new host"
 msgstr "Додати новий вузол"
 
-#: pkg/networkmanager/firewall.jsx:967
+#: pkg/networkmanager/firewall.jsx:1028
 msgid "Add new zone"
 msgstr "Додати нову зону"
 
-#: pkg/networkmanager/firewall.jsx:548
+#: pkg/networkmanager/firewall.jsx:584
 msgid "Add ports"
 msgstr "Додати порти"
 
-#: pkg/networkmanager/firewall.jsx:549
+#: pkg/networkmanager/firewall.jsx:585
 msgid "Add ports to $0 zone"
 msgstr "Додати порти до зони $0"
 
@@ -769,15 +769,15 @@ msgstr "Додати порти до зони $0"
 msgid "Add public key"
 msgstr "Додати відкритий ключ"
 
-#: pkg/networkmanager/firewall.jsx:169 pkg/networkmanager/firewall.jsx:548
+#: pkg/networkmanager/firewall.jsx:181 pkg/networkmanager/firewall.jsx:584
 msgid "Add services"
 msgstr "Додавання служб"
 
-#: pkg/networkmanager/firewall.jsx:549
+#: pkg/networkmanager/firewall.jsx:585
 msgid "Add services to $0 zone"
 msgstr "Додати служби до зони $0"
 
-#: pkg/networkmanager/firewall.jsx:168
+#: pkg/networkmanager/firewall.jsx:180
 msgid "Add services to zone $0"
 msgstr "Додати служби до зони $0"
 
@@ -785,7 +785,7 @@ msgstr "Додати служби до зони $0"
 msgid "Add team"
 msgstr "Додати команду"
 
-#: pkg/networkmanager/firewall.jsx:757 pkg/networkmanager/firewall.jsx:765
+#: pkg/networkmanager/firewall.jsx:799 pkg/networkmanager/firewall.jsx:807
 msgid "Add zone"
 msgstr "Додати зону"
 
@@ -797,7 +797,7 @@ msgstr ""
 "Додавання $0 призведе до розірвання з’єднання із сервером і зробить "
 "адміністративний інтерфейс користувача недоступним."
 
-#: pkg/networkmanager/firewall.jsx:562
+#: pkg/networkmanager/firewall.jsx:600
 msgid ""
 "Adding custom ports will reload firewalld. A reload will result in the loss "
 "of any runtime-only configuration!"
@@ -833,7 +833,7 @@ msgstr "Додаткова адреса $val"
 msgid "Additional packages:"
 msgstr "Додаткові пакунки:"
 
-#: pkg/networkmanager/firewall.jsx:139
+#: pkg/networkmanager/firewall.jsx:151
 msgid "Additional ports"
 msgstr "Додаткові порти"
 
@@ -927,7 +927,7 @@ msgstr "Усе в одному"
 msgid "Allow running (unmask)"
 msgstr "Дозволити запуск (зняти маску)"
 
-#: pkg/networkmanager/firewall.jsx:187 pkg/networkmanager/firewall.jsx:827
+#: pkg/networkmanager/firewall.jsx:199 pkg/networkmanager/firewall.jsx:869
 msgid "Allowed addresses"
 msgstr "Дозволені адреси"
 
@@ -1269,7 +1269,7 @@ msgstr ""
 "без пароля."
 
 #: pkg/systemd/hwinfo.jsx:118 pkg/systemd/overview-cards/usageCard.jsx:134
-#: pkg/metrics/metrics.jsx:526 pkg/metrics/metrics.jsx:1503
+#: pkg/metrics/metrics.jsx:595 pkg/metrics/metrics.jsx:1572
 msgid "CPU"
 msgstr "Процесор"
 
@@ -1281,11 +1281,11 @@ msgstr "Захист процесора"
 msgid "CPU security toggles"
 msgstr "Перемикачі захисту процесора"
 
-#: pkg/metrics/metrics.jsx:102
+#: pkg/metrics/metrics.jsx:104
 msgid "CPU spike"
 msgstr "Пік процесора"
 
-#: pkg/metrics/metrics.jsx:101
+#: pkg/metrics/metrics.jsx:103
 msgid "CPU usage"
 msgstr "Використання процесора"
 
@@ -1321,11 +1321,11 @@ msgstr "Не вдалося знайти журналів на основі по
 #: pkg/shell/hosts_dialog.jsx:278 pkg/shell/hosts_dialog.jsx:373
 #: pkg/shell/hosts_dialog.jsx:495 pkg/shell/hosts_dialog.jsx:861
 #: pkg/tuned/dialog.jsx:311 pkg/apps/utils.jsx:66
-#: pkg/networkmanager/firewall.jsx:568 pkg/networkmanager/firewall.jsx:768
-#: pkg/networkmanager/firewall.jsx:860
+#: pkg/networkmanager/firewall.jsx:606 pkg/networkmanager/firewall.jsx:810
+#: pkg/networkmanager/firewall.jsx:902
 #: pkg/networkmanager/dialogs-common.jsx:155 pkg/storaged/jobs-panel.jsx:139
 #: pkg/sosreport/index.jsx:288 pkg/sosreport/index.jsx:373
-#: pkg/metrics/metrics.jsx:1100 pkg/packagekit/autoupdates.jsx:274
+#: pkg/metrics/metrics.jsx:1169 pkg/packagekit/autoupdates.jsx:274
 #: pkg/packagekit/updates.jsx:506 pkg/packagekit/updates.jsx:577
 #: pkg/packagekit/kpatch.jsx:311
 msgid "Cancel"
@@ -1347,7 +1347,7 @@ msgstr "Не може бути увімкнено"
 msgid "Cannot connect to an unknown host"
 msgstr "Не вдалося з'єднатися зі невідомим вузлом"
 
-#: pkg/lib/cockpit.js:3969
+#: pkg/lib/cockpit.js:3967
 msgid "Cannot forward login credentials"
 msgstr "Не вдалося переспрямувати реєстраційні дані для входу"
 
@@ -1534,7 +1534,7 @@ msgstr "Cockpit"
 msgid "Cockpit authentication is configured incorrectly."
 msgstr "Розпізнавання у Cockpit налаштовано з помилками."
 
-#: pkg/lib/cockpit.js:3975
+#: pkg/lib/cockpit.js:3973
 msgid "Cockpit could not contact the given host."
 msgstr "Cockpit не вдалося встановити зв’язок із вказаним вузлом."
 
@@ -1561,7 +1561,7 @@ msgstr ""
 msgid "Cockpit is an interactive Linux server admin interface."
 msgstr "Cockpit — інтерактивний інтерфейс адміністратора сервера Linux."
 
-#: pkg/lib/cockpit.js:3973
+#: pkg/lib/cockpit.js:3971
 msgid "Cockpit is not compatible with the software on the system."
 msgstr "Cockpit є несумісним із програмним забезпеченням цієї системи."
 
@@ -1569,7 +1569,7 @@ msgstr "Cockpit є несумісним із програмним забезпе
 msgid "Cockpit is not installed"
 msgstr "Cockpit не встановлено"
 
-#: pkg/lib/cockpit.js:3967
+#: pkg/lib/cockpit.js:3965
 msgid "Cockpit is not installed on the system."
 msgstr "Cockpit у цій системі не встановлено."
 
@@ -1588,7 +1588,7 @@ msgstr ""
 "і адмініструвати ці сервери. Просто додайте їх одним клацанням кнопкою миші "
 "і ваш комп’ютер сам нагляне за своїми приятелями."
 
-#: pkg/metrics/metrics.jsx:1109
+#: pkg/metrics/metrics.jsx:1178
 msgid "Collect metrics"
 msgstr "Зібрати метрику"
 
@@ -1596,7 +1596,7 @@ msgstr "Зібрати метрику"
 msgid "Color"
 msgstr "Колір"
 
-#: pkg/networkmanager/firewall.jsx:630 pkg/networkmanager/firewall.jsx:640
+#: pkg/networkmanager/firewall.jsx:670 pkg/networkmanager/firewall.jsx:681
 msgid "Comma-separated ports, ranges, and services are accepted"
 msgstr "Можна використовувати відокремлені комами порти, діапазони і служби"
 
@@ -1692,7 +1692,7 @@ msgstr "Підтвердження нового пароля"
 msgid "Confirm password"
 msgstr "Підтвердження пароля"
 
-#: pkg/networkmanager/firewall.jsx:856
+#: pkg/networkmanager/firewall.jsx:898
 msgid "Confirm removal of $0"
 msgstr "Підтвердження вилучення $0"
 
@@ -1744,7 +1744,7 @@ msgstr "Помилка з'єднання"
 msgid "Connection failed"
 msgstr "Не вдалося встановити з'єднання"
 
-#: pkg/lib/cockpit.js:3965
+#: pkg/lib/cockpit.js:3963
 msgid "Connection has timed out."
 msgstr "Вичерпано час очікування на з’єднання."
 
@@ -1811,7 +1811,7 @@ msgstr "Копіювати"
 msgid "Copy to clipboard"
 msgstr "Копіювати до буфера"
 
-#: pkg/metrics/metrics.jsx:494
+#: pkg/metrics/metrics.jsx:563
 msgid "Core $0"
 msgstr "Ядро $0"
 
@@ -1999,7 +1999,7 @@ msgstr "Ctrl-Shift-J"
 msgid "Current boot"
 msgstr "Поточне завантаження"
 
-#: pkg/metrics/metrics.jsx:507
+#: pkg/metrics/metrics.jsx:576
 msgid "Current top CPU usage"
 msgstr "Поточний рейтинг використання процесора"
 
@@ -2017,11 +2017,11 @@ msgstr "Нетипове правило шифрування"
 msgid "Custom mount options"
 msgstr "Нетипові параметри монтування"
 
-#: pkg/networkmanager/firewall.jsx:586
+#: pkg/networkmanager/firewall.jsx:625
 msgid "Custom ports"
 msgstr "Нетипові порти"
 
-#: pkg/networkmanager/firewall.jsx:786
+#: pkg/networkmanager/firewall.jsx:828
 msgid "Custom zones"
 msgstr "Нетипові зони"
 
@@ -2111,15 +2111,16 @@ msgstr "Значенням затримки має бути число"
 #: pkg/systemd/services/service-details.jsx:141
 #: pkg/systemd/services/service-details.jsx:666 pkg/systemd/abrtLog.jsx:291
 #: pkg/networkmanager/network-interface.jsx:720
-#: pkg/networkmanager/firewall.jsx:68 pkg/networkmanager/firewall.jsx:857
-#: pkg/storaged/mdraid-details.jsx:297 pkg/storaged/mdraid-details.jsx:323
-#: pkg/storaged/vdo-details.jsx:205 pkg/storaged/vdo-details.jsx:271
-#: pkg/storaged/vgroup-details.jsx:200 pkg/storaged/vgroup-details.jsx:225
-#: pkg/storaged/content-views.jsx:382 pkg/storaged/content-views.jsx:408
-#: pkg/storaged/stratis-details.jsx:253 pkg/storaged/stratis-details.jsx:417
-#: pkg/storaged/stratis-details.jsx:552 pkg/storaged/stratis-details.jsx:600
-#: pkg/sosreport/index.jsx:367 pkg/sosreport/index.jsx:479
-#: pkg/users/account-details.js:278 pkg/users/delete-account-dialog.js:60
+#: pkg/networkmanager/firewall.jsx:117 pkg/networkmanager/firewall.jsx:178
+#: pkg/networkmanager/firewall.jsx:899 pkg/storaged/mdraid-details.jsx:297
+#: pkg/storaged/mdraid-details.jsx:323 pkg/storaged/vdo-details.jsx:205
+#: pkg/storaged/vdo-details.jsx:271 pkg/storaged/vgroup-details.jsx:200
+#: pkg/storaged/vgroup-details.jsx:225 pkg/storaged/content-views.jsx:382
+#: pkg/storaged/content-views.jsx:408 pkg/storaged/stratis-details.jsx:253
+#: pkg/storaged/stratis-details.jsx:417 pkg/storaged/stratis-details.jsx:552
+#: pkg/storaged/stratis-details.jsx:600 pkg/sosreport/index.jsx:367
+#: pkg/sosreport/index.jsx:479 pkg/users/account-details.js:278
+#: pkg/users/delete-account-dialog.js:60
 msgid "Delete"
 msgstr "Вилучити"
 
@@ -2192,7 +2193,7 @@ msgid "Deletion will remove the following files:"
 msgstr "У результаті вилучення буде усунено такі файли:"
 
 #: pkg/systemd/services/timer-dialog.jsx:159
-#: pkg/networkmanager/firewall.jsx:653 pkg/networkmanager/firewall.jsx:797
+#: pkg/networkmanager/firewall.jsx:695 pkg/networkmanager/firewall.jsx:839
 #: pkg/storaged/dialog.jsx:1224
 msgid "Description"
 msgstr "Опис"
@@ -2294,11 +2295,11 @@ msgstr "Заборонити запуск (замаскувати)"
 msgid "Disconnected"
 msgstr "Роз'єднано"
 
-#: pkg/metrics/metrics.jsx:130 pkg/metrics/metrics.jsx:1505
+#: pkg/metrics/metrics.jsx:132 pkg/metrics/metrics.jsx:1574
 msgid "Disk I/O"
 msgstr "Дисковий ввід/вивід"
 
-#: pkg/metrics/metrics.jsx:131
+#: pkg/metrics/metrics.jsx:133
 msgid "Disk I/O spike"
 msgstr "Пік дискового введення-виведення"
 
@@ -2316,7 +2317,7 @@ msgstr "Пароль до диска"
 
 #: pkg/storaged/vgroups-panel.jsx:74 pkg/storaged/mdraid-details.jsx:65
 #: pkg/storaged/mdraid-details.jsx:163 pkg/storaged/mdraids-panel.jsx:121
-#: pkg/storaged/vgroup-details.jsx:67 pkg/metrics/metrics.jsx:603
+#: pkg/storaged/vgroup-details.jsx:67 pkg/metrics/metrics.jsx:672
 msgid "Disks"
 msgstr "Диски"
 
@@ -2414,9 +2415,9 @@ msgid "Dual rank"
 msgstr "Подвійний ранг"
 
 #: pkg/shell/hosts.jsx:167 pkg/shell/indexes.jsx:339
-#: pkg/storaged/crypto-keyslots.jsx:577 pkg/storaged/nfs-details.jsx:305
-#: pkg/storaged/iscsi-panel.jsx:251 pkg/packagekit/autoupdates.jsx:407
-#: pkg/packagekit/kpatch.jsx:230
+#: pkg/networkmanager/firewall.jsx:115 pkg/storaged/crypto-keyslots.jsx:577
+#: pkg/storaged/nfs-details.jsx:305 pkg/storaged/iscsi-panel.jsx:251
+#: pkg/packagekit/autoupdates.jsx:407 pkg/packagekit/kpatch.jsx:230
 msgid "Edit"
 msgstr "Змінити"
 
@@ -2427,6 +2428,12 @@ msgstr "Редагувати /etc/motd"
 #: pkg/storaged/crypto-keyslots.jsx:356
 msgid "Edit Tang keyserver"
 msgstr "Редагувати сервер ключів Tang"
+
+#: pkg/networkmanager/firewall.jsx:582
+#, fuzzy
+#| msgid "Add services to $0 zone"
+msgid "Edit custom service in $0 zone"
+msgstr "Додати служби до зони $0"
 
 #: pkg/shell/hosts_dialog.jsx:244
 msgid "Edit host"
@@ -2443,6 +2450,18 @@ msgstr "Редагувати motd"
 #: pkg/networkmanager/network-main.jsx:158
 msgid "Edit rules and zones"
 msgstr "Редагування правил і зон"
+
+#: pkg/networkmanager/firewall.jsx:581
+#, fuzzy
+#| msgid "Edit server"
+msgid "Edit service"
+msgstr "Змінити сервер"
+
+#: pkg/networkmanager/firewall.jsx:115
+#, fuzzy
+#| msgid "Edit server"
+msgid "Edit service $0"
+msgstr "Змінити сервер"
 
 #: pkg/storaged/crypto-keyslots.jsx:579
 msgid "Editing a key requires a free slot"
@@ -2500,7 +2519,7 @@ msgstr "Зашифрувати дані"
 msgid "Encrypted"
 msgstr "Зашифрований"
 
-#: pkg/storaged/utils.js:283
+#: pkg/storaged/utils.js:281
 msgid "Encrypted $0"
 msgstr "Зашифрований $0"
 
@@ -2508,11 +2527,11 @@ msgstr "Зашифрований $0"
 msgid "Encrypted Stratis pool $0"
 msgstr "Шифрований буфер Stratis $0"
 
-#: pkg/storaged/utils.js:275
+#: pkg/storaged/utils.js:273
 msgid "Encrypted logical volume of $0"
 msgstr "Зашифрований логічний том $0"
 
-#: pkg/storaged/utils.js:277
+#: pkg/storaged/utils.js:275
 msgid "Encrypted partition of $0"
 msgstr "Шифрований розділ $0"
 
@@ -2558,7 +2577,7 @@ msgstr "Доступні оновлення із поліпшеннями"
 msgid "Enter a valid MAC address"
 msgstr "Введіть коректну MAC-адресу"
 
-#: pkg/networkmanager/firewall.jsx:187 pkg/networkmanager/firewall.jsx:833
+#: pkg/networkmanager/firewall.jsx:199 pkg/networkmanager/firewall.jsx:875
 msgid "Entire subnet"
 msgstr "Уся підмережа"
 
@@ -2586,7 +2605,7 @@ msgstr "Помилка"
 msgid "Error and above"
 msgstr "Помилка і вище"
 
-#: pkg/metrics/metrics.jsx:1448
+#: pkg/metrics/metrics.jsx:1517
 msgid "Error has occurred"
 msgstr "Сталася помилка"
 
@@ -2623,19 +2642,19 @@ msgstr "MTU Ethernet"
 msgid "Ethtool"
 msgstr "Ethtool"
 
-#: pkg/metrics/metrics.jsx:851
+#: pkg/metrics/metrics.jsx:920
 msgid "Event"
 msgstr "Подія"
 
-#: pkg/metrics/metrics.jsx:843
+#: pkg/metrics/metrics.jsx:912
 msgid "Event logs"
 msgstr "Журнал подій"
 
-#: pkg/networkmanager/firewall.jsx:635
+#: pkg/networkmanager/firewall.jsx:676
 msgid "Example: 22,ssh,8080,5900-5910"
 msgstr "Приклад: 22,ssh,8080,5900-5910"
 
-#: pkg/networkmanager/firewall.jsx:645
+#: pkg/networkmanager/firewall.jsx:687
 msgid "Example: 88,2019,nfs,rsync"
 msgstr "Приклад: 88,2019,nfs,rsync"
 
@@ -2655,7 +2674,7 @@ msgstr "Завершити строк дії облікового запису"
 msgid "Expire account on $0"
 msgstr "Завершити строк дії облікового запису $0"
 
-#: pkg/metrics/metrics.jsx:1126
+#: pkg/metrics/metrics.jsx:1195
 msgid "Export to network"
 msgstr "Експортувати до мережі"
 
@@ -2679,15 +2698,15 @@ msgstr "Помилка"
 msgid "Failed to add machine: $0"
 msgstr "Не вдалося додати комп’ютер: $0"
 
-#: pkg/networkmanager/firewall.jsx:351
+#: pkg/networkmanager/firewall.jsx:381
 msgid "Failed to add port"
 msgstr "Не вдалося додати порт"
 
-#: pkg/networkmanager/firewall.jsx:351
+#: pkg/networkmanager/firewall.jsx:381
 msgid "Failed to add service"
 msgstr "Не вдалося додати службу"
 
-#: pkg/networkmanager/firewall.jsx:728
+#: pkg/networkmanager/firewall.jsx:770
 msgid "Failed to add zone"
 msgstr "Не вдалося додати зону"
 
@@ -2696,7 +2715,7 @@ msgstr "Не вдалося додати зону"
 msgid "Failed to change password"
 msgstr "Не вдалося змінити пароль"
 
-#: pkg/metrics/metrics.jsx:1094
+#: pkg/metrics/metrics.jsx:1163
 msgid "Failed to configure PCP"
 msgstr "Не вдалося налаштувати PCP"
 
@@ -2715,6 +2734,12 @@ msgstr "Не вдалося вимкнути профіль tuned"
 #: pkg/shell/hosts_dialog.jsx:327
 msgid "Failed to edit machine: $0"
 msgstr "Не вдалося змінити запис комп’ютера: $0"
+
+#: pkg/networkmanager/firewall.jsx:359
+#, fuzzy
+#| msgid "Failed to add service"
+msgid "Failed to edit service"
+msgstr "Не вдалося додати службу"
 
 #: pkg/lib/cockpit-components-firewalld-request.jsx:115
 msgid "Failed to enable $0 in firewalld"
@@ -2799,7 +2824,7 @@ msgstr "Фільтрувати за назвою або описом"
 msgid "Filter menu items"
 msgstr "Фільтрувати пункти меню"
 
-#: pkg/networkmanager/firewall.jsx:252
+#: pkg/networkmanager/firewall.jsx:265
 msgid "Filter services"
 msgstr "Фільтрувати служби"
 
@@ -2812,11 +2837,11 @@ msgid "Fingerprint"
 msgstr "Відбиток"
 
 #: pkg/networkmanager/firewall.html:22 pkg/networkmanager/network-main.jsx:151
-#: pkg/networkmanager/firewall.jsx:983 pkg/networkmanager/firewall.jsx:990
+#: pkg/networkmanager/firewall.jsx:1044 pkg/networkmanager/firewall.jsx:1051
 msgid "Firewall"
 msgstr "Брандмауер"
 
-#: pkg/networkmanager/firewall.jsx:956
+#: pkg/networkmanager/firewall.jsx:1017
 msgid "Firewall is not available"
 msgstr "Брандмауер недоступний"
 
@@ -2994,7 +3019,7 @@ msgstr "Кількість пакунків у журналі"
 msgid "Host"
 msgstr "Вузол"
 
-#: pkg/lib/cockpit.js:3961
+#: pkg/lib/cockpit.js:3959
 msgid "Host key is incorrect"
 msgstr "Ключ вузла є неправильним"
 
@@ -3014,7 +3039,7 @@ msgstr "Щогодини"
 msgid "Hours"
 msgstr "Години"
 
-#: pkg/systemd/hwinfo.jsx:310 pkg/networkmanager/firewall.jsx:648
+#: pkg/systemd/hwinfo.jsx:310 pkg/networkmanager/firewall.jsx:690
 msgid "ID"
 msgstr "Ід."
 
@@ -3027,7 +3052,7 @@ msgstr "Ід. $id"
 msgid "IP address"
 msgstr "IP-адреса"
 
-#: pkg/networkmanager/firewall.jsx:841
+#: pkg/networkmanager/firewall.jsx:883
 msgid ""
 "IP address with routing prefix. Separate multiple values with a comma. "
 "Example: 192.0.2.0/24, 2001:db8::/32"
@@ -3055,7 +3080,7 @@ msgstr "Параметри IPv6"
 msgid "Identifier"
 msgstr "Ідентифікатор"
 
-#: pkg/networkmanager/firewall.jsx:648
+#: pkg/networkmanager/firewall.jsx:690
 msgid ""
 "If left empty, ID will be generated based on associated port services and "
 "port numbers"
@@ -3101,7 +3126,7 @@ msgstr "Ігнорувати"
 msgid "Image builder"
 msgstr "Побудова образів"
 
-#: pkg/metrics/metrics.jsx:655
+#: pkg/metrics/metrics.jsx:724
 msgid "In"
 msgstr "Вхід"
 
@@ -3129,11 +3154,11 @@ msgstr "Неактивний"
 msgid "Inactive volume"
 msgstr "Неактивний том"
 
-#: pkg/networkmanager/firewall.jsx:803
+#: pkg/networkmanager/firewall.jsx:845
 msgid "Included services"
 msgstr "Включені служби"
 
-#: pkg/networkmanager/firewall.jsx:993
+#: pkg/networkmanager/firewall.jsx:1054
 msgid ""
 "Incoming requests are blocked by default. Outgoing requests are not blocked."
 msgstr "Типово, вхідні запити заблоковано. Вихідні запити не заблоковано."
@@ -3200,7 +3225,7 @@ msgstr "Встановити підтримку Stratis"
 msgid "Install all updates"
 msgstr "Встановити усі оновлення"
 
-#: pkg/metrics/metrics.jsx:1416
+#: pkg/metrics/metrics.jsx:1485
 msgid "Install cockpit-pcp"
 msgstr "Встановити cockpit-pcp"
 
@@ -3242,7 +3267,7 @@ msgstr "Встановлення $0 призведе до вилучення $1.
 msgid "Installing packages"
 msgstr "Встановлення пакунків"
 
-#: pkg/networkmanager/firewall.jsx:183 pkg/metrics/metrics.jsx:655
+#: pkg/networkmanager/firewall.jsx:195 pkg/metrics/metrics.jsx:724
 msgid "Interface"
 msgid_plural "Interfaces"
 msgstr[0] "Інтерфейс"
@@ -3254,13 +3279,13 @@ msgstr[2] "Інтерфейси"
 msgid "Interface members"
 msgstr "Учасники інтерфейсу"
 
-#: pkg/networkmanager/network-main.jsx:173 pkg/networkmanager/firewall.jsx:810
+#: pkg/networkmanager/network-main.jsx:173 pkg/networkmanager/firewall.jsx:852
 #: pkg/networkmanager/network-interface-members.jsx:215
 #: pkg/networkmanager/bond.jsx:166
 msgid "Interfaces"
 msgstr "Інтерфейси"
 
-#: pkg/lib/cockpit.js:3963
+#: pkg/lib/cockpit.js:3961
 msgid "Internal error"
 msgstr "Внутрішня помилка"
 
@@ -3304,7 +3329,7 @@ msgstr "Некоректна метрика $0"
 msgid "Invalid number of days"
 msgstr "Некоректна кількість днів"
 
-#: pkg/networkmanager/firewall.jsx:442
+#: pkg/networkmanager/firewall.jsx:472
 msgid "Invalid port number"
 msgstr "Некоректний номер порту"
 
@@ -3316,7 +3341,7 @@ msgstr "Некоректний префікс $0"
 msgid "Invalid prefix or netmask $0"
 msgstr "Некоректний префікс або маска мережі $0"
 
-#: pkg/networkmanager/firewall.jsx:470
+#: pkg/networkmanager/firewall.jsx:500
 msgid "Invalid range"
 msgstr "Некоректний діапазон"
 
@@ -3387,7 +3412,7 @@ msgstr "Запис журналу"
 msgid "Journal entry not found"
 msgstr "Не знайдено запису журналу"
 
-#: pkg/metrics/metrics.jsx:1493
+#: pkg/metrics/metrics.jsx:1562
 msgid "Jump to"
 msgstr "Перейти"
 
@@ -3470,7 +3495,7 @@ msgstr "Учасник LVM2"
 msgid "LVM2 volume group"
 msgstr "Група томів LVM2"
 
-#: pkg/storaged/utils.js:257 pkg/storaged/vgroup-details.jsx:221
+#: pkg/storaged/utils.js:255 pkg/storaged/vgroup-details.jsx:221
 msgid "LVM2 volume group $0"
 msgstr "Група томів LVM2 $0"
 
@@ -3596,8 +3621,8 @@ msgstr "Виведення списку модулів"
 msgid "Listing units failed: $0"
 msgstr "Не вдалося вивести список модулів: $0"
 
-#: pkg/metrics/metrics.jsx:108 pkg/metrics/metrics.jsx:544
-#: pkg/metrics/metrics.jsx:1503
+#: pkg/metrics/metrics.jsx:110 pkg/metrics/metrics.jsx:613
+#: pkg/metrics/metrics.jsx:1572
 msgid "Load"
 msgstr "Завантажити"
 
@@ -3605,7 +3630,7 @@ msgstr "Завантажити"
 msgid "Load balancing"
 msgstr "Збалансовування навантаження"
 
-#: pkg/metrics/metrics.jsx:1522
+#: pkg/metrics/metrics.jsx:1591
 msgid "Load earlier data"
 msgstr "Завантажити попередні дані"
 
@@ -3613,7 +3638,7 @@ msgstr "Завантажити попередні дані"
 msgid "Load earlier entries"
 msgstr "Завантажити попередні записи"
 
-#: pkg/metrics/metrics.jsx:109
+#: pkg/metrics/metrics.jsx:111
 msgid "Load spike"
 msgstr "Завантажити пік"
 
@@ -3655,7 +3680,7 @@ msgstr "Не вдалося завантажити модуль: $0"
 
 #: pkg/systemd/services/services.jsx:734 pkg/systemd/logsJournal.jsx:269
 #: pkg/systemd/logDetails.jsx:154 pkg/storaged/devices.jsx:69
-#: pkg/metrics/metrics.jsx:827 pkg/metrics/metrics.jsx:1521
+#: pkg/metrics/metrics.jsx:896 pkg/metrics/metrics.jsx:1590
 #: pkg/kdump/kdump-view.jsx:384
 msgid "Loading..."
 msgstr "Завантаження…"
@@ -3715,7 +3740,7 @@ msgstr "Увійти на основі даних вашого обліково�
 msgid "Log messages"
 msgstr "Повідомлення журналу"
 
-#: pkg/shell/topnav.jsx:172 pkg/metrics/metrics.jsx:1409
+#: pkg/shell/topnav.jsx:172 pkg/metrics/metrics.jsx:1478
 msgid "Log out"
 msgstr "Вийти"
 
@@ -3731,15 +3756,15 @@ msgstr "Логічний"
 msgid "Logical size"
 msgstr "Логічний розмір"
 
-#: pkg/storaged/utils.js:207
+#: pkg/storaged/utils.js:205
 msgid "Logical volume"
 msgstr "Логічний том"
 
-#: pkg/storaged/utils.js:205
+#: pkg/storaged/utils.js:203
 msgid "Logical volume (snapshot)"
 msgstr "Логічний том (знімок)"
 
-#: pkg/storaged/utils.js:279
+#: pkg/storaged/utils.js:277
 msgid "Logical volume of $0"
 msgstr "Логічний том $0"
 
@@ -3755,7 +3780,7 @@ msgstr "Вхід"
 msgid "Login again"
 msgstr "Користувач ще раз"
 
-#: pkg/lib/cockpit.js:3953
+#: pkg/lib/cockpit.js:3951
 msgid "Login failed"
 msgstr "Невдала спроба увійти"
 
@@ -3928,11 +3953,11 @@ msgstr "Максимальний вік повідомлення $max_age"
 
 #: pkg/systemd/services/service-details.jsx:612 pkg/systemd/hwinfo.jsx:309
 #: pkg/systemd/hwinfo.jsx:358 pkg/systemd/overview-cards/usageCard.jsx:146
-#: pkg/metrics/metrics.jsx:570 pkg/metrics/metrics.jsx:1504
+#: pkg/metrics/metrics.jsx:639 pkg/metrics/metrics.jsx:1573
 msgid "Memory"
 msgstr "Пам'ять"
 
-#: pkg/metrics/metrics.jsx:116
+#: pkg/metrics/metrics.jsx:118
 msgid "Memory spike"
 msgstr "Пік пам'яті"
 
@@ -3940,7 +3965,7 @@ msgstr "Пік пам'яті"
 msgid "Memory technology"
 msgstr "Технологія пам'яті"
 
-#: pkg/metrics/metrics.jsx:115
+#: pkg/metrics/metrics.jsx:117
 msgid "Memory usage"
 msgstr "Використання пам'яті"
 
@@ -3964,15 +3989,15 @@ msgstr "Використано метаданих"
 msgid "Metric"
 msgstr "Метрика"
 
-#: pkg/metrics/index.html:20 pkg/metrics/metrics.jsx:1541
+#: pkg/metrics/index.html:20 pkg/metrics/metrics.jsx:1610
 msgid "Metrics and history"
 msgstr "Метрика і журнал"
 
-#: pkg/metrics/metrics.jsx:1439
+#: pkg/metrics/metrics.jsx:1508
 msgid "Metrics history could not be loaded"
 msgstr "Не вдалося завантажити журнал метрики"
 
-#: pkg/metrics/metrics.jsx:1080 pkg/metrics/metrics.jsx:1170
+#: pkg/metrics/metrics.jsx:1149 pkg/metrics/metrics.jsx:1239
 msgid "Metrics settings"
 msgstr "Параметри метрики"
 
@@ -4163,27 +4188,27 @@ msgstr "Назва"
 msgid "Name can not be empty."
 msgstr "Назва не повинна бути порожньою."
 
-#: pkg/storaged/utils.js:134
+#: pkg/storaged/utils.js:132
 msgid "Name cannot be empty."
 msgstr "Назва не може бути порожньою."
 
-#: pkg/storaged/utils.js:162
+#: pkg/storaged/utils.js:160
 msgid "Name cannot be longer than $0 bytes"
 msgstr "Назва не повинна бути довшою за $0 байтів"
 
-#: pkg/storaged/utils.js:160
+#: pkg/storaged/utils.js:158
 msgid "Name cannot be longer than $0 characters"
 msgstr "Назва не повинна бути довшою за $0 символів"
 
-#: pkg/storaged/utils.js:136
+#: pkg/storaged/utils.js:134
 msgid "Name cannot be longer than 127 characters."
 msgstr "Назва не повинна бути довшою за 127 символів."
 
-#: pkg/storaged/utils.js:140
+#: pkg/storaged/utils.js:138
 msgid "Name cannot contain the character '$0'."
 msgstr "Назва не повинна містити символу «$0»."
 
-#: pkg/storaged/utils.js:142
+#: pkg/storaged/utils.js:140
 msgid "Name cannot contain whitespace."
 msgstr "У назві не повинно бути пробілів."
 
@@ -4191,15 +4216,15 @@ msgstr "У назві не повинно бути пробілів."
 msgid "Need at least one NTP server"
 msgstr "Потрібен принаймні один сервер NTP"
 
-#: pkg/metrics/metrics.jsx:645 pkg/metrics/metrics.jsx:1506
+#: pkg/metrics/metrics.jsx:714 pkg/metrics/metrics.jsx:1575
 msgid "Network"
 msgstr "Мережа"
 
-#: pkg/metrics/metrics.jsx:137
+#: pkg/metrics/metrics.jsx:139
 msgid "Network I/O"
 msgstr "Вхід-вихід мережі"
 
-#: pkg/metrics/metrics.jsx:138
+#: pkg/metrics/metrics.jsx:140
 msgid "Network I/O spike"
 msgstr "Пік входу-виходу мережі"
 
@@ -4217,7 +4242,7 @@ msgstr ""
 msgid "Network logs"
 msgstr "Журнали роботи у мережі"
 
-#: pkg/metrics/metrics.jsx:654
+#: pkg/metrics/metrics.jsx:723
 msgid "Network usage"
 msgstr "Використання мережі"
 
@@ -4231,7 +4256,7 @@ msgstr "NetworkManager не запущено"
 
 #: pkg/networkmanager/index.html:23
 #: pkg/networkmanager/network-interface.jsx:697
-#: pkg/networkmanager/firewall.jsx:982 pkg/networkmanager/manifest.json:0
+#: pkg/networkmanager/firewall.jsx:1043 pkg/networkmanager/manifest.json:0
 msgid "Networking"
 msgstr "Робота у мережі"
 
@@ -4312,11 +4337,11 @@ msgstr "Немає сигналу"
 msgid "No configuration found"
 msgstr "Не знайдено налаштувань"
 
-#: pkg/metrics/metrics.jsx:1466
+#: pkg/metrics/metrics.jsx:1535
 msgid "No data available"
 msgstr "Немає доступним даних"
 
-#: pkg/metrics/metrics.jsx:1462
+#: pkg/metrics/metrics.jsx:1531
 msgid "No data available between $0 and $1"
 msgstr "Немає доступних даних між $0 і $1"
 
@@ -4324,7 +4349,7 @@ msgstr "Немає доступних даних між $0 і $1"
 msgid "No delay"
 msgstr "Без затримки"
 
-#: pkg/networkmanager/firewall.jsx:799
+#: pkg/networkmanager/firewall.jsx:841
 msgid "No description available"
 msgstr "Немає опису"
 
@@ -4391,7 +4416,7 @@ msgid "No logical volumes"
 msgstr "Немає логічних томів"
 
 #: pkg/systemd/logsJournal.jsx:282 pkg/systemd/logsJournal.jsx:325
-#: pkg/metrics/metrics.jsx:829
+#: pkg/metrics/metrics.jsx:898
 msgid "No logs found"
 msgstr "Журналів не знайдено"
 
@@ -4457,7 +4482,7 @@ msgstr "Немає оновлень"
 msgid "No user name specified"
 msgstr "Не вказано імені користувача"
 
-#: pkg/tuned/dialog.jsx:229 pkg/networkmanager/firewall.jsx:805
+#: pkg/tuned/dialog.jsx:229 pkg/networkmanager/firewall.jsx:847
 #: pkg/kdump/kdump-view.jsx:433
 msgid "None"
 msgstr "Немає"
@@ -4510,7 +4535,7 @@ msgstr "Не змонтовано"
 msgid "Not permitted to configure realms"
 msgstr "Не дозволено налаштовувати області"
 
-#: pkg/lib/cockpit.js:3951
+#: pkg/lib/cockpit.js:3949
 msgid "Not permitted to perform this action."
 msgstr "Немає дозволу на виконання цієї дії."
 
@@ -4622,7 +4647,7 @@ msgstr ""
 msgid "Ooops!"
 msgstr "Вибачте!"
 
-#: pkg/metrics/metrics.jsx:1067
+#: pkg/metrics/metrics.jsx:1136
 msgid "Open the pmproxy service in the firewall to share metrics."
 msgstr ""
 "Відкрити службу pmproxy у брандмауері для надання метрики у спільне "
@@ -4672,11 +4697,11 @@ msgstr "Інші пристрої"
 msgid "Other options"
 msgstr "Інші параметри"
 
-#: pkg/metrics/metrics.jsx:655
+#: pkg/metrics/metrics.jsx:724
 msgid "Out"
 msgstr "Вихід"
 
-#: pkg/systemd/hwinfo.jsx:327 pkg/metrics/metrics.jsx:1540
+#: pkg/systemd/hwinfo.jsx:327 pkg/metrics/metrics.jsx:1609
 #: pkg/systemd/manifest.json:0
 msgid "Overview"
 msgstr "Огляд"
@@ -4697,7 +4722,7 @@ msgstr "PCI"
 msgid "PID"
 msgstr "PID"
 
-#: pkg/metrics/metrics.jsx:1415
+#: pkg/metrics/metrics.jsx:1484
 msgid "Package cockpit-pcp is missing for metrics history"
 msgstr "Не вистачає пакунка cockpit-pcp для журналу метрики"
 
@@ -4745,7 +4770,7 @@ msgstr "Є частиною $0"
 msgid "Partition"
 msgstr "Розділ"
 
-#: pkg/storaged/utils.js:281
+#: pkg/storaged/utils.js:279
 msgid "Partition of $0"
 msgstr "Розділ $0"
 
@@ -4888,7 +4913,7 @@ msgstr "Шляхи"
 msgid "Pause"
 msgstr "Призупинити"
 
-#: pkg/metrics/metrics.jsx:1083
+#: pkg/metrics/metrics.jsx:1152
 msgid ""
 "Performance Co-Pilot collects and analyzes performance metrics from your "
 "system."
@@ -4961,7 +4986,7 @@ msgid "Please enable JavaScript to use the Web Console."
 msgstr ""
 "Щоб мати змогу користуватися вебконсоллю, будь ласка, увімкніть JavaScript."
 
-#: pkg/networkmanager/firewall.jsx:957
+#: pkg/networkmanager/firewall.jsx:1018
 msgid "Please install the $0 package"
 msgstr "Будь ласка, встановіть пакунок $0"
 
@@ -4981,7 +5006,7 @@ msgstr "Будь ласка, вкажіть вузол, з яким слід в�
 msgid "Pool"
 msgstr "Буфер"
 
-#: pkg/storaged/utils.js:201
+#: pkg/storaged/utils.js:199
 msgid "Pool for thin logical volumes"
 msgstr "Буфер для тонких логічних томів"
 
@@ -4997,7 +5022,7 @@ msgstr "Буфер для тонких резервованих томів"
 msgid "Port"
 msgstr "Порт"
 
-#: pkg/networkmanager/firewall.jsx:446
+#: pkg/networkmanager/firewall.jsx:476
 msgid "Port number and type do not match"
 msgstr "Номер порту і тип не є сумісними"
 
@@ -5174,7 +5199,7 @@ msgstr "Апаратний блок RAID"
 msgid "RAID device"
 msgstr "пристрій RAID"
 
-#: pkg/storaged/mdraid-details.jsx:316 pkg/storaged/utils.js:251
+#: pkg/storaged/mdraid-details.jsx:316 pkg/storaged/utils.js:249
 msgid "RAID device $0"
 msgstr "Пристій RAID $0"
 
@@ -5191,7 +5216,7 @@ msgstr "Рівень RAID"
 msgid "RAID member"
 msgstr "Елемент RAID"
 
-#: pkg/metrics/metrics.jsx:578
+#: pkg/metrics/metrics.jsx:647
 msgid "RAM"
 msgstr "Пам'ять"
 
@@ -5203,11 +5228,11 @@ msgstr "Апаратний блок монтування стійок"
 msgid "Random"
 msgstr "Випадковий"
 
-#: pkg/networkmanager/firewall.jsx:839
+#: pkg/networkmanager/firewall.jsx:881
 msgid "Range"
 msgstr "Діапазон"
 
-#: pkg/networkmanager/firewall.jsx:478
+#: pkg/networkmanager/firewall.jsx:508
 msgid "Range must be strictly ordered"
 msgstr "Діапазон має бути строго упорядковано"
 
@@ -5219,11 +5244,11 @@ msgstr "Ранг"
 msgid "Raw to a device"
 msgstr "Без обробки на пристрій"
 
-#: pkg/metrics/metrics.jsx:607
+#: pkg/metrics/metrics.jsx:676
 msgid "Read"
 msgstr "Читання"
 
-#: pkg/systemd/hwinfo.jsx:218 pkg/metrics/metrics.jsx:1089
+#: pkg/systemd/hwinfo.jsx:218 pkg/metrics/metrics.jsx:1158
 msgid "Read more..."
 msgstr "Докладніше…"
 
@@ -5383,7 +5408,7 @@ msgstr "Вилучити"
 msgid "Remove $0"
 msgstr "Вилучити $0"
 
-#: pkg/networkmanager/firewall.jsx:918
+#: pkg/networkmanager/firewall.jsx:961
 msgid "Remove $0 service from $1 zone"
 msgstr "Вилучити службу $0 із зони $1"
 
@@ -5414,11 +5439,11 @@ msgstr "Вилучити запис"
 msgid "Remove passphrase in key slot $0?"
 msgstr "Вилучити пароль у слоті ключів $0?"
 
-#: pkg/networkmanager/firewall.jsx:107
+#: pkg/networkmanager/firewall.jsx:117
 msgid "Remove service $0"
 msgstr "Вилучити службу $0"
 
-#: pkg/networkmanager/firewall.jsx:166 pkg/networkmanager/firewall.jsx:903
+#: pkg/networkmanager/firewall.jsx:178 pkg/networkmanager/firewall.jsx:946
 msgid "Remove zone $0"
 msgstr "Вилучити зону $0"
 
@@ -5455,7 +5480,7 @@ msgstr ""
 msgid "Removing physical volume from $target"
 msgstr "Вилучаємо фізичний том з $target"
 
-#: pkg/networkmanager/firewall.jsx:917
+#: pkg/networkmanager/firewall.jsx:960
 msgid ""
 "Removing the cockpit service might result in the web console becoming "
 "unreachable. Make sure that this zone does not apply to your current web "
@@ -5465,7 +5490,7 @@ msgstr ""
 "Переконайтеся, що застосування цієї зони не поширюється на ваше поточне "
 "з'єднання за допомогою вебконсолі."
 
-#: pkg/networkmanager/firewall.jsx:902
+#: pkg/networkmanager/firewall.jsx:945
 msgid "Removing the zone will remove all services within it."
 msgstr "Вилучення запису зони призведе до вилучення усіх служб у ній."
 
@@ -5782,7 +5807,7 @@ msgstr "Суботи"
 #: pkg/storaged/crypto-keyslots.jsx:346 pkg/storaged/crypto-keyslots.jsx:365
 #: pkg/storaged/fsys-tab.jsx:374 pkg/storaged/fsys-tab.jsx:490
 #: pkg/storaged/crypto-tab.jsx:158 pkg/storaged/crypto-tab.jsx:202
-#: pkg/storaged/nfs-details.jsx:186 pkg/metrics/metrics.jsx:1097
+#: pkg/storaged/nfs-details.jsx:186 pkg/metrics/metrics.jsx:1166
 #: pkg/packagekit/kpatch.jsx:306 pkg/kdump/kdump-view.jsx:369
 msgid "Save"
 msgstr "Зберегти"
@@ -5906,7 +5931,7 @@ msgstr "Адміністратор сервера"
 msgid "Server cannot be empty."
 msgstr "Запис сервера не може бути порожнім."
 
-#: pkg/lib/cockpit.js:3971
+#: pkg/lib/cockpit.js:3969
 msgid "Server has closed the connection."
 msgstr "З’єднання розірвано сервером."
 
@@ -5914,8 +5939,8 @@ msgstr "З’єднання розірвано сервером."
 msgid "Server software"
 msgstr "Програмне забезпечення сервера"
 
-#: pkg/networkmanager/firewall.jsx:196 pkg/storaged/dialog.jsx:1222
-#: pkg/metrics/metrics.jsx:561 pkg/metrics/metrics.jsx:594
+#: pkg/networkmanager/firewall.jsx:208 pkg/storaged/dialog.jsx:1222
+#: pkg/metrics/metrics.jsx:630 pkg/metrics/metrics.jsx:663
 msgid "Service"
 msgstr "Служба"
 
@@ -5944,7 +5969,7 @@ msgid "Service logs"
 msgstr "Журнали служб"
 
 #: pkg/systemd/services.html:4 pkg/systemd/services/service.jsx:82
-#: pkg/systemd/services/service-tabs.jsx:39 pkg/networkmanager/firewall.jsx:579
+#: pkg/systemd/services/service-tabs.jsx:39 pkg/networkmanager/firewall.jsx:618
 #: pkg/systemd/manifest.json:0
 msgid "Services"
 msgstr "Служби"
@@ -6198,7 +6223,7 @@ msgstr ""
 msgid "Some software needs to be restarted manually"
 msgstr "Частину програмного забезпечення доведеться перезавантажити вручну"
 
-#: pkg/networkmanager/firewall.jsx:776
+#: pkg/networkmanager/firewall.jsx:818
 msgid "Sorted from least to most trusted"
 msgstr "Упорядковано від найменшої до найбільшої довіри"
 
@@ -6407,12 +6432,12 @@ msgstr "Неділі"
 msgid "Support is installed."
 msgstr "Підтримку встановлено."
 
-#: pkg/storaged/content-views.jsx:228 pkg/metrics/metrics.jsx:123
-#: pkg/metrics/metrics.jsx:475 pkg/metrics/metrics.jsx:1504
+#: pkg/storaged/content-views.jsx:228 pkg/metrics/metrics.jsx:125
+#: pkg/metrics/metrics.jsx:544 pkg/metrics/metrics.jsx:1573
 msgid "Swap"
 msgstr "Свопінґ"
 
-#: pkg/metrics/metrics.jsx:122
+#: pkg/metrics/metrics.jsx:124
 msgid "Swap out"
 msgstr "Резервування"
 
@@ -6507,7 +6532,7 @@ msgstr "Системний час"
 msgid "Systemd units"
 msgstr "Модулі systemd"
 
-#: pkg/networkmanager/firewall.jsx:196
+#: pkg/networkmanager/firewall.jsx:208
 msgid "TCP"
 msgstr "TCP"
 
@@ -6623,7 +6648,7 @@ msgid "The account '$0' will be forced to change their password on next login"
 msgstr ""
 "Обліковий запис «$0» має примусово змінити пароль під час наступного входу"
 
-#: pkg/networkmanager/firewall.jsx:807
+#: pkg/networkmanager/firewall.jsx:849
 msgid "The cockpit service is automatically included"
 msgstr "Службу cockpit включено автоматично"
 
@@ -6812,7 +6837,7 @@ msgstr ""
 "Сервером відмовлено у розпізнаванні «$0» за допомогою пароля. Інших "
 "підтримуваних способів розпізнавання не передбачено."
 
-#: pkg/lib/cockpit.js:3955
+#: pkg/lib/cockpit.js:3953
 msgid "The server refused to authenticate using any supported methods."
 msgstr ""
 "Сервер відмовився розпізнавати користувача за допомогою будь-якого з "
@@ -6858,7 +6883,7 @@ msgstr ""
 "У системі є пристрої із декількома шляхами доступу, але службу multipath не "
 "запущено."
 
-#: pkg/networkmanager/firewall.jsx:200
+#: pkg/networkmanager/firewall.jsx:212
 msgid "There are no active services in this zone"
 msgstr "У цій зоні немає активних служб"
 
@@ -6884,7 +6909,7 @@ msgstr ""
 msgid "These changes will be made:"
 msgstr "Буде внесено такі зміни:"
 
-#: pkg/storaged/utils.js:203
+#: pkg/storaged/utils.js:201
 msgid "Thin logical volume"
 msgstr "Тонкий логічний том"
 
@@ -7022,7 +7047,7 @@ msgstr ""
 msgid "This will test the kdump configuration by crashing the kernel."
 msgstr "Перевіряє налаштування kdump, аварійно завершуючи роботу ядра."
 
-#: pkg/networkmanager/firewall.jsx:900
+#: pkg/networkmanager/firewall.jsx:943
 msgid ""
 "This zone contains the cockpit service. Make sure that this zone does not "
 "apply to your current web console connection."
@@ -7093,7 +7118,7 @@ msgstr ""
 "Щоб перевірити відбиток, віддайте вказану нижче команду для $0 під час "
 "безпосередньої роботи на комп'ютері або з використанням надійної мережі:"
 
-#: pkg/metrics/metrics.jsx:1472
+#: pkg/metrics/metrics.jsx:1541
 msgid "Today"
 msgstr "Сьогодні"
 
@@ -7115,7 +7140,7 @@ msgstr "Перемкнути засіб вибору дати"
 msgid "Toggle filters"
 msgstr "Перемкнути фільтри"
 
-#: pkg/lib/cockpit.js:3977
+#: pkg/lib/cockpit.js:3975
 msgid "Too much data"
 msgstr "Забагато даних"
 
@@ -7123,11 +7148,11 @@ msgstr "Забагато даних"
 msgid "Tools"
 msgstr "Інструменти"
 
-#: pkg/metrics/metrics.jsx:560
+#: pkg/metrics/metrics.jsx:629
 msgid "Top 5 CPU services"
 msgstr "Основні 5 служб процесора"
 
-#: pkg/metrics/metrics.jsx:593
+#: pkg/metrics/metrics.jsx:662
 msgid "Top 5 memory services"
 msgstr "Основні 5 служб пам'яті"
 
@@ -7160,7 +7185,7 @@ msgstr "Причина вмикання"
 msgid "Triggers"
 msgstr "Умовні зміни"
 
-#: pkg/metrics/metrics.jsx:1434
+#: pkg/metrics/metrics.jsx:1503
 msgid "Troubleshoot"
 msgstr "Діагностика проблем"
 
@@ -7172,7 +7197,7 @@ msgstr "Діагностика проблем…"
 msgid "Trust key"
 msgstr "Довіряти ключу"
 
-#: pkg/networkmanager/firewall.jsx:773
+#: pkg/networkmanager/firewall.jsx:815
 msgid "Trust level"
 msgstr "Рівень довіри"
 
@@ -7230,7 +7255,7 @@ msgstr "Тип"
 msgid "Type to filter"
 msgstr "Введіть щось для фільтрування"
 
-#: pkg/networkmanager/firewall.jsx:196
+#: pkg/networkmanager/firewall.jsx:208
 msgid "UDP"
 msgstr "UDP"
 
@@ -7378,7 +7403,7 @@ msgstr "Невідомі налаштування"
 msgid "Unknown host name"
 msgstr "Невідома назва вузла"
 
-#: pkg/networkmanager/firewall.jsx:440
+#: pkg/networkmanager/firewall.jsx:470
 msgid "Unknown service name"
 msgstr "Невідома назва служби"
 
@@ -7463,7 +7488,7 @@ msgstr "Непідтримуваний том"
 msgid "Until"
 msgstr "До"
 
-#: pkg/lib/cockpit.js:3957 pkg/lib/cockpit.js:3959
+#: pkg/lib/cockpit.js:3955 pkg/lib/cockpit.js:3957
 msgid "Untrusted host"
 msgstr "Ненадійний вузол"
 
@@ -7524,9 +7549,9 @@ msgid "Uptime"
 msgstr "Тривалість роботи"
 
 #: pkg/systemd/overview-cards/usageCard.jsx:129
-#: pkg/storaged/unrecognized-tab.jsx:37 pkg/metrics/metrics.jsx:1503
-#: pkg/metrics/metrics.jsx:1504 pkg/metrics/metrics.jsx:1505
-#: pkg/metrics/metrics.jsx:1506
+#: pkg/storaged/unrecognized-tab.jsx:37 pkg/metrics/metrics.jsx:1572
+#: pkg/metrics/metrics.jsx:1573 pkg/metrics/metrics.jsx:1574
+#: pkg/metrics/metrics.jsx:1575
 msgid "Usage"
 msgstr "Використання"
 
@@ -7568,7 +7593,7 @@ msgstr "Використати вказані нижче ключі для ро�
 msgid "Use verbose logging"
 msgstr "Скористатися докладним журналюванням"
 
-#: pkg/storaged/swap-tab.jsx:70 pkg/metrics/metrics.jsx:594
+#: pkg/storaged/swap-tab.jsx:70 pkg/metrics/metrics.jsx:663
 msgid "Used"
 msgstr "Використано"
 
@@ -7615,7 +7640,7 @@ msgstr "Пристрої резервного копіювання VDO не мо
 msgid "VDO device"
 msgstr "Пристрій VDO"
 
-#: pkg/storaged/utils.js:262 pkg/storaged/vdo-details.jsx:264
+#: pkg/storaged/utils.js:260 pkg/storaged/vdo-details.jsx:264
 msgid "VDO device $0"
 msgstr "Пристрій VDO $0"
 
@@ -7677,7 +7702,7 @@ msgstr "Версія"
 msgid "Very securely erasing $target"
 msgstr "Дуже безпечно витираємо $target"
 
-#: pkg/metrics/metrics.jsx:516 pkg/metrics/metrics.jsx:517
+#: pkg/metrics/metrics.jsx:585 pkg/metrics/metrics.jsx:586
 msgid "View all CPUs"
 msgstr "Переглянути усі процесори"
 
@@ -7693,7 +7718,7 @@ msgstr "Переглянути усі служби"
 msgid "View automation script"
 msgstr "Переглянути скрипт автоматизації"
 
-#: pkg/metrics/metrics.jsx:818
+#: pkg/metrics/metrics.jsx:887
 msgid "View detailed logs"
 msgstr "Переглянути докладні журнали"
 
@@ -7837,7 +7862,7 @@ msgctxt "storage"
 msgid "World wide name"
 msgstr "World wide name"
 
-#: pkg/metrics/metrics.jsx:611
+#: pkg/metrics/metrics.jsx:680
 msgid "Write"
 msgstr "Запис"
 
@@ -7893,7 +7918,7 @@ msgstr "Ви можете змінити пароль до ключа для а�
 msgid "You must wait longer to change your password"
 msgstr "Для зміни вашого пароля вам доведеться ще почекати"
 
-#: pkg/metrics/metrics.jsx:1408
+#: pkg/metrics/metrics.jsx:1477
 msgid "You need to relogin to be able to see metrics history"
 msgstr ""
 "Вам слід повторно увійти до системи, щоб мати змогу переглядати журнал "
@@ -7932,11 +7957,11 @@ msgstr ""
 "Невдовзі ваш сервер розірве з’єднання. Ви можете відновити це з’єднання, "
 "щойно сервер буде перезапущено."
 
-#: pkg/lib/cockpit.js:3947
+#: pkg/lib/cockpit.js:3945
 msgid "Your session has been terminated."
 msgstr "Ваш сеанс перервано."
 
-#: pkg/lib/cockpit.js:3949
+#: pkg/lib/cockpit.js:3947
 msgid "Your session has expired. Please log in again."
 msgstr ""
 "Строк роботи у вашому сеансі вичерпано. Будь ласка, увійдіть до системи ще "
@@ -8000,7 +8025,7 @@ msgstr "на"
 msgid "avc"
 msgstr "avc"
 
-#: pkg/metrics/metrics.jsx:502
+#: pkg/metrics/metrics.jsx:571
 msgid "average: $0%"
 msgstr "середнє: $0%"
 
@@ -8041,7 +8066,7 @@ msgstr "байтів"
 msgid "cgroups"
 msgstr "cgroups"
 
-#: pkg/metrics/metrics.jsx:430
+#: pkg/metrics/metrics.jsx:456
 msgid "cockpit-podman is not installed"
 msgstr "cockpit-podman не встановлено"
 
@@ -8320,7 +8345,7 @@ msgstr "машина"
 msgid "mask"
 msgstr "маска"
 
-#: pkg/metrics/metrics.jsx:503
+#: pkg/metrics/metrics.jsx:572
 msgid "max: $0%"
 msgstr "макс.: $0%"
 
@@ -8377,7 +8402,7 @@ msgid "nfs dump target isn't formatted as server:path"
 msgstr ""
 "форматування місця для дампів у nfs не збігається із потрібним: сервер:шлях"
 
-#: pkg/metrics/metrics.jsx:105
+#: pkg/metrics/metrics.jsx:107
 msgid "nice"
 msgstr "пріоритетність"
 
@@ -8458,19 +8483,19 @@ msgstr "фізичний том групи томів LVM2"
 msgid "plugin"
 msgstr "додаток"
 
-#: pkg/metrics/metrics.jsx:1431
+#: pkg/metrics/metrics.jsx:1500
 msgid "pmlogger.service has failed"
 msgstr "помилка pmlogger.service"
 
-#: pkg/metrics/metrics.jsx:1433
+#: pkg/metrics/metrics.jsx:1502
 msgid "pmlogger.service is failing to collect data"
 msgstr "pmlogger.service не вдалося зібрати дані"
 
-#: pkg/metrics/metrics.jsx:1424
+#: pkg/metrics/metrics.jsx:1493
 msgid "pmlogger.service is not running"
 msgstr "pmlogger.service не запущено"
 
-#: pkg/metrics/metrics.jsx:424
+#: pkg/metrics/metrics.jsx:450
 msgid "pod"
 msgstr "кокон"
 
@@ -8498,11 +8523,11 @@ msgstr "лише читання"
 msgid "recommended"
 msgstr "найліпший"
 
-#: pkg/storaged/utils.js:673
+#: pkg/storaged/utils.js:671
 msgid "remove from LVM2"
 msgstr "вилучити з LVM2"
 
-#: pkg/storaged/utils.js:662
+#: pkg/storaged/utils.js:660
 msgid "remove from RAID"
 msgstr "вилучити з RAID"
 
@@ -8596,7 +8621,7 @@ msgstr "запис сервера ssh є порожнім"
 msgid "stop"
 msgstr "зупинити"
 
-#: pkg/metrics/metrics.jsx:105
+#: pkg/metrics/metrics.jsx:107
 msgid "sys"
 msgstr "sys"
 
@@ -8658,15 +8683,15 @@ msgstr "невідоме призначення"
 msgid "unmask"
 msgstr "unmask"
 
-#: pkg/storaged/utils.js:649 pkg/storaged/manifest.json:0
+#: pkg/storaged/utils.js:647 pkg/storaged/manifest.json:0
 msgid "unmount"
 msgstr "демонтувати"
 
-#: pkg/storaged/utils.js:440
+#: pkg/storaged/utils.js:438
 msgid "unpartitioned space on $0"
 msgstr "нерозподілене місце на $0"
 
-#: pkg/metrics/metrics.jsx:105 pkg/users/manifest.json:0
+#: pkg/metrics/metrics.jsx:107 pkg/users/manifest.json:0
 msgid "user"
 msgstr "користувач"
 
@@ -8709,6 +8734,9 @@ msgstr "yum"
 #: pkg/networkmanager/manifest.json:0
 msgid "zone"
 msgstr "зона"
+
+#~ msgid "$0 Zone"
+#~ msgstr "Зона $0"
 
 #~ msgid "Create diagnostic report"
 #~ msgstr "Створити діагностичний звіт"
@@ -8764,9 +8792,6 @@ msgstr "зона"
 
 #~ msgid "$0 GiB total"
 #~ msgstr "Загалом $0 ГіБ"
-
-#~ msgid "$0 zone"
-#~ msgstr "зона $0"
 
 #~ msgid "Apply"
 #~ msgstr "Застосувати"
@@ -10683,9 +10708,6 @@ msgstr "зона"
 
 #~ msgid "Avatar"
 #~ msgstr "Аватар"
-
-#~ msgid "Edit server"
-#~ msgstr "Змінити сервер"
 
 #~ msgid ""
 #~ "Leave blank to connect to this machine as the currently logged in user. "
