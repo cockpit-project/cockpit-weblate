@@ -13,8 +13,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-10-14 13:20+0200\n"
-"PO-Revision-Date: 2022-12-15 10:20+0000\n"
-"Last-Translator: fangzheng <fz0000@sina.com>\n"
+"PO-Revision-Date: 2023-01-01 09:20+0000\n"
+"Last-Translator: Mingcong Bai <jeffbai@aosc.io>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
 "projects/cockpit/rhel-7/zh_CN/>\n"
 "Language: zh_CN\n"
@@ -22,7 +22,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.14.2\n"
+"X-Generator: Weblate 4.15\n"
 
 #: pkg/docker/storage.jsx:259
 msgid " (shared with the OS)"
@@ -82,14 +82,14 @@ msgstr[0] "$0 字节"
 
 #: pkg/storaged/vdo-details.jsx:280
 msgid "$0 data + $1 overhead used of $2 ($3)"
-msgstr "$0 数据 + $1 过渡使用 $2（$3）"
+msgstr "已使用 $0 数据 + $1 额外开销，共 $2（$3）"
 
 #: src/base1/test-locale.js:62 src/base1/test-locale.js:63
 #: src/base1/test-locale.js:64 pkg/storaged/mdraid-details.jsx:213
 #: pkg/playground/translate.js:28 pkg/playground/translate.js:31
 msgid "$0 disk is missing"
 msgid_plural "$0 disks are missing"
-msgstr[0] "$0 磁盘无法找到"
+msgstr[0] "找不到 $0 个磁盘"
 
 #: src/base1/test-locale.js:65 src/base1/test-locale.js:67
 #: src/base1/test-locale.js:69 pkg/playground/translate.js:34
@@ -97,31 +97,31 @@ msgstr[0] "$0 磁盘无法找到"
 msgctxt "disk-non-rotational"
 msgid "$0 disk is missing"
 msgid_plural "$0 disks are missing"
-msgstr[0] "$0 磁盘无法找到"
+msgstr[0] "找不到 $0 个磁盘"
 
 #: src/ws/login.js:326 src/ws/login.js:667
 msgid "$0 error"
-msgstr "$0 错误"
+msgstr "$0 个错误"
 
 #: src/base1/cockpit.js:2757
 msgid "$0 exited with code $1"
-msgstr "$0 退出，代码为 $1"
+msgstr "进程 $0 已退出，返回码为 $1"
 
 #: src/base1/cockpit.js:2759
 msgid "$0 failed"
-msgstr "$0 失败"
+msgstr "进程 $0 运行时出错"
 
 #: pkg/storaged/lvol-tabs.jsx:159
 msgid "$0 filesystems can not be made larger."
-msgstr "$0文件系统不能变得更大。"
+msgstr "无法扩容 $0 个文件系统。"
 
 #: pkg/storaged/lvol-tabs.jsx:156
 msgid "$0 filesystems can not be made smaller."
-msgstr "$0文件系统不能变得更小。"
+msgstr "无法缩小 $0 个文件系统。"
 
 #: pkg/storaged/lvol-tabs.jsx:152
 msgid "$0 filesystems can not be resized here."
-msgstr "$0文件系统不能在这里改变大小。"
+msgstr "无法在此处改变 $0 个文件系统的大小。"
 
 #: pkg/machines/components/desktopConsole.jsx:44
 msgid ""
@@ -139,11 +139,11 @@ msgstr "$0 已激活"
 
 #: pkg/lib/cockpit-components-install-dialog.jsx:150
 msgid "$0 is not available from any repository."
-msgstr "所有仓库都不提供 $0。"
+msgstr "没有提供 $0 组件的仓库。"
 
 #: src/base1/cockpit.js:2755
 msgid "$0 killed with signal $1"
-msgstr "$0 被信号 $1 终止"
+msgstr "进程 $0 被信号 $1 终止"
 
 #: pkg/selinux/setroubleshoot-view.jsx:429
 msgid "$0 occurrence"
@@ -169,7 +169,7 @@ msgstr[0] "$0 个更新"
 
 #: pkg/storaged/vdo-details.jsx:292
 msgid "$0 used of $1 ($2 saved)"
-msgstr "$0 使用 $1（已保存 $2）"
+msgstr "已使用 $0，共 $1（已保存 $2）"
 
 #: pkg/ovirt/components/vcpuModal.jsx:98
 msgid "$0 vCPU Details"
@@ -177,7 +177,7 @@ msgstr "$0 vCPU 详情"
 
 #: pkg/lib/cockpit-components-install-dialog.jsx:106
 msgid "$0 will be installed."
-msgstr "将安装 $0。"
+msgstr "即将安装 $0。"
 
 #: pkg/kubernetes/scripts/nodes.js:871
 msgid "$0% Free"
@@ -191,7 +191,7 @@ msgstr[0] "$0% 已使用"
 
 #: pkg/storaged/vgroup-details.jsx:118
 msgid "$0, $1 free"
-msgstr "$0, $1 可用"
+msgstr "容量为 $0，$1 可用"
 
 #: pkg/packagekit/updates.jsx:157
 msgid "$1 security fix"
@@ -204,7 +204,7 @@ msgstr "$mtu"
 
 #: pkg/storaged/utils.js:182
 msgid "$name (from $host)"
-msgstr "$name (来自 $host)"
+msgstr "$name（位于 $host）"
 
 #: pkg/docker/details.js:151
 msgid "${hip}:${hport} -> $cport"
@@ -238,7 +238,7 @@ msgstr "（无）"
 #: pkg/packagekit/updates.jsx:161
 msgid ", including $1 security fix"
 msgid_plural ", including $1 security fixes"
-msgstr[0] "， 包括 $1 安全修复"
+msgstr[0] "，包含 $1 个安全更新"
 
 #: pkg/storaged/nfs-details.jsx:325
 msgid "--"
@@ -276,11 +276,11 @@ msgstr "1 周"
 
 #: pkg/systemd/services.html:273
 msgid "10th"
-msgstr "10号"
+msgstr "10 日"
 
 #: pkg/systemd/services.html:274
 msgid "11th"
-msgstr "11号"
+msgstr "11 日"
 
 #: pkg/storaged/mdraids-panel.jsx:68
 msgid "128 KiB"
@@ -288,19 +288,19 @@ msgstr "128 KiB"
 
 #: pkg/systemd/services.html:275
 msgid "12th"
-msgstr "12号"
+msgstr "12 日"
 
 #: pkg/systemd/services.html:276
 msgid "13th"
-msgstr "13号"
+msgstr "13 日"
 
 #: pkg/systemd/services.html:277
 msgid "14th"
-msgstr "14号"
+msgstr "14 日"
 
 #: pkg/systemd/services.html:278
 msgid "15th"
-msgstr "15号"
+msgstr "15 日"
 
 #: pkg/storaged/mdraids-panel.jsx:65
 msgid "16 KiB"
@@ -308,23 +308,23 @@ msgstr "16 KiB"
 
 #: pkg/systemd/services.html:279
 msgid "16th"
-msgstr "16号"
+msgstr "16 日"
 
 #: pkg/systemd/services.html:280
 msgid "17th"
-msgstr "第17"
+msgstr "17 日"
 
 #: pkg/systemd/services.html:281
 msgid "18th"
-msgstr "第18"
+msgstr "18 日"
 
 #: pkg/systemd/services.html:282
 msgid "19th"
-msgstr "第19"
+msgstr "19 日"
 
 #: pkg/systemd/services.html:264
 msgid "1st"
-msgstr "第1"
+msgstr "1 日"
 
 #: pkg/storaged/mdraids-panel.jsx:71
 msgid "2 MiB"
@@ -340,7 +340,7 @@ msgstr "20 分钟"
 
 #: pkg/systemd/services.html:283
 msgid "20th"
-msgstr "第20"
+msgstr "20 日"
 
 #: pkg/systemd/services.html:284
 msgid "21st"
@@ -356,31 +356,31 @@ msgstr "第23"
 
 #: pkg/systemd/services.html:287
 msgid "24th"
-msgstr "第24"
+msgstr "24 日"
 
 #: pkg/systemd/services.html:288
 msgid "25th"
-msgstr "第25"
+msgstr "25 日"
 
 #: pkg/systemd/services.html:289
 msgid "26th"
-msgstr "第26"
+msgstr "26 日"
 
 #: pkg/systemd/services.html:290
 msgid "27th"
-msgstr "第27"
+msgstr "27 日"
 
 #: pkg/systemd/services.html:291
 msgid "28th"
-msgstr "第28"
+msgstr "28 日"
 
 #: pkg/systemd/services.html:292
 msgid "29th"
-msgstr "第29"
+msgstr "29 日"
 
 #: pkg/systemd/services.html:265
 msgid "2nd"
-msgstr "第2"
+msgstr "2 日"
 
 #: pkg/systemd/host.js:1683
 msgid "3 min"
@@ -388,11 +388,11 @@ msgstr "3 分钟"
 
 #: pkg/systemd/services.html:293
 msgid "30th"
-msgstr "第30"
+msgstr "30 日"
 
 #: pkg/systemd/services.html:294
 msgid "31st"
-msgstr "第31"
+msgstr "31 日"
 
 #: pkg/storaged/mdraids-panel.jsx:66
 msgid "32 KiB"
@@ -400,7 +400,7 @@ msgstr "32 KiB"
 
 #: pkg/systemd/services.html:266
 msgid "3rd"
-msgstr "第3"
+msgstr "3 日"
 
 #: pkg/storaged/mdraids-panel.jsx:63
 msgid "4 KiB"
@@ -416,7 +416,7 @@ msgstr "40 分钟"
 
 #: pkg/systemd/services.html:267
 msgid "4th"
-msgstr "第4"
+msgstr "4 日"
 
 #: pkg/systemd/index.html:456
 msgid "5 Minutes"
@@ -438,7 +438,7 @@ msgstr "512 KiB"
 
 #: pkg/systemd/services.html:268
 msgid "5th"
-msgstr "第5"
+msgstr "5 日"
 
 #: pkg/networkmanager/index.html:67 pkg/networkmanager/index.html:400
 #: pkg/systemd/index.html:188 pkg/dashboard/index.html:53
@@ -456,11 +456,11 @@ msgstr "64 KiB"
 
 #: pkg/systemd/services.html:269
 msgid "6th"
-msgstr "第6"
+msgstr "6 日"
 
 #: pkg/systemd/services.html:270
 msgid "7th"
-msgstr "第7"
+msgstr "7 日"
 
 #: pkg/storaged/mdraids-panel.jsx:64
 msgid "8 KiB"
@@ -476,11 +476,11 @@ msgstr "802.3ad LACP"
 
 #: pkg/systemd/services.html:271
 msgid "8th"
-msgstr "第8"
+msgstr "8 日"
 
 #: pkg/systemd/services.html:272
 msgid "9th"
-msgstr "第9"
+msgstr "9 日"
 
 #: pkg/lib/machine-not-supported.html:5
 msgid ""
@@ -495,11 +495,11 @@ msgstr "需要一个磁盘。"
 #: src/ws/login.html:115
 msgid ""
 "A modern browser is required for security, reliability, and performance."
-msgstr "需要新的浏览器以确保安全性、可靠性和性能。"
+msgstr "请更新浏览器以确保安全性、可靠性和性能。"
 
 #: pkg/storaged/mdraid-details.jsx:119
 msgid "A spare disk needs to be added first before this disk can be removed."
-msgstr "该磁盘被移除前，需要添加一个备用的磁盘。"
+msgstr "在移除该磁盘前需要添加一个备用磁盘。"
 
 #: pkg/networkmanager/interfaces.js:1986
 msgid "ARP"
@@ -550,11 +550,11 @@ msgstr "账户设置"
 
 #: pkg/users/index.html:63
 msgid "Account not available or cannot be edited."
-msgstr "帐户不可用或不可编辑."
+msgstr "此帐户不可用或不可编辑。"
 
 #: pkg/users/index.html:71
 msgid "Accounts"
-msgstr "账户"
+msgstr "用户账户"
 
 #: pkg/users/local.js:335 pkg/users/local.js:642
 msgctxt "page-title"
@@ -570,11 +570,11 @@ msgstr "操作"
 #: pkg/machines/components/networks/network.jsx:147
 #: pkg/storaged/content-views.jsx:256
 msgid "Activate"
-msgstr "激活"
+msgstr "启用逻辑卷"
 
 #: pkg/storaged/jobs-panel.jsx:68
 msgid "Activating $target"
-msgstr "激活 $target"
+msgstr "正在启用逻辑卷 $target"
 
 #: pkg/subscriptions/subscriptions-register.jsx:194
 msgid "Activation Key"
@@ -582,7 +582,7 @@ msgstr "激活码"
 
 #: pkg/networkmanager/interfaces.js:838 pkg/networkmanager/interfaces.js:2001
 msgid "Active"
-msgstr "活跃"
+msgstr "已启用"
 
 #: pkg/networkmanager/interfaces.js:1975 pkg/networkmanager/interfaces.js:1992
 msgid "Active Backup"
@@ -606,11 +606,11 @@ msgstr "真实的"
 
 #: pkg/networkmanager/interfaces.js:1980
 msgid "Adaptive load balancing"
-msgstr "自适应负载均衡"
+msgstr "自适应性负载均衡"
 
 #: pkg/networkmanager/interfaces.js:1979
 msgid "Adaptive transmit load balancing"
-msgstr "自适应传输负载均衡"
+msgstr "自适应性传输负载均衡"
 
 #: pkg/lib/machine-add.html:43 pkg/shell/index.html:181
 #: pkg/kubernetes/views/add-user-dialog.html:27
@@ -754,7 +754,7 @@ msgstr "把服务添加到以下区："
 
 #: pkg/networkmanager/firewall.jsx:779
 msgid "Add zone"
-msgstr "添加区域"
+msgstr "添加安全区域"
 
 #: pkg/networkmanager/interfaces.js:3102
 msgid ""
@@ -766,7 +766,7 @@ msgstr "添加 <b>$0</b> 将会中断与服务器的连接，并且将导致管�
 msgid ""
 "Adding custom ports will reload firewalld. A reload will result in the loss "
 "of any runtime-only configuration!"
-msgstr "添加自定义端口将会重新加载 firewalld。重新加载将会导致运行时配置丢失！"
+msgstr "添加自定义端口需要重启 firewalld，当前的运行时配置将会丢失！"
 
 #: pkg/users/authorized-keys.js:113
 msgid "Adding key"
@@ -774,7 +774,7 @@ msgstr "添加密钥"
 
 #: pkg/storaged/jobs-panel.jsx:73
 msgid "Adding physical volume to $target"
-msgstr "为 $target 添加物理卷"
+msgstr "添加物理卷至 $target"
 
 #: pkg/machines/components/vmDisksTab.jsx:78
 msgid "Additional"
@@ -782,7 +782,7 @@ msgstr "额外"
 
 #: pkg/networkmanager/interfaces.js:2656
 msgid "Additional DNS $val"
-msgstr "额外的 DNS $val"
+msgstr "备用 DNS 服务器：$val"
 
 #: pkg/networkmanager/interfaces.js:2659
 msgid "Additional DNS Search Domains $val"
@@ -794,11 +794,11 @@ msgstr "额外的存储"
 
 #: pkg/networkmanager/interfaces.js:2651
 msgid "Additional address $val"
-msgstr "额外的地址 $val"
+msgstr "其他 IP 地址 $val"
 
 #: pkg/lib/cockpit-components-install-dialog.jsx:73
 msgid "Additional packages:"
-msgstr "额外的软件包："
+msgstr "额外软件包："
 
 #: pkg/lib/machine-add.html:11 pkg/kubernetes/views/node-body.html:5
 #: pkg/kubernetes/views/node-add.html:8
@@ -811,11 +811,11 @@ msgstr "额外的软件包："
 #: pkg/machines/components/networks/networkOverviewTab.jsx:130
 #: pkg/storaged/iscsi-panel.jsx:127
 msgid "Address"
-msgstr "地址"
+msgstr "IP 地址"
 
 #: pkg/networkmanager/interfaces.js:2651
 msgid "Address $val"
-msgstr "地址 $val"
+msgstr "IP 地址： $val"
 
 #: pkg/storaged/crypto-keyslots.jsx:192
 msgid "Address cannot be empty"
@@ -823,7 +823,7 @@ msgstr "地址不能为空"
 
 #: pkg/storaged/crypto-keyslots.jsx:194
 msgid "Address is not a valid URL"
-msgstr "该地址无效"
+msgstr "该地址为无效 URL"
 
 #: pkg/machines/components/desktopConsole.jsx:153
 #: pkg/ovirt/components/VmOverviewColumn.jsx:53
@@ -833,7 +833,7 @@ msgstr "地址："
 #: pkg/kubernetes/views/details-page.html:37
 #: pkg/networkmanager/interfaces.js:3309
 msgid "Addresses"
-msgstr "地址"
+msgstr "IP 地址"
 
 #: pkg/kubernetes/views/service-modify.html:25
 msgid "Adjust"
@@ -861,7 +861,7 @@ msgstr "管理"
 
 #: org.cockpit-project.cockpit-bridge.policy.in.h:1
 msgid "Administration with Cockpit Web Console"
-msgstr "使用 Cockpit Web 控制台管理"
+msgstr "使用 Cockpit 网页控制台管理系统"
 
 #: pkg/realmd/operation.js:336
 msgid "Administrator Password"
@@ -880,16 +880,17 @@ msgid ""
 "After leaving the domain, only users with local credentials will be able to "
 "log into this machine. This may also affect other services as DNS resolution "
 "settings and the list of trusted CAs may change."
-msgstr "从域离开后，仅有使用本地凭据的用户可以登录到该主机。这也可能影响到包括DNS解析设置以及信任的CA在内的一系列设置。"
+msgstr "离开该域后，仅有使用本地凭据的用户可以登录到该主机。这一操作还可能更改 DNS "
+"解析设置及 CA 信任列表，进而影响其他服务。"
 
 #: pkg/systemd/services.html:446 pkg/systemd/services.html:450
 #: pkg/systemd/init.js:1073
 msgid "After system boot"
-msgstr "系统启动后"
+msgstr "系统引导后"
 
 #: pkg/systemd/logs.html:57
 msgid "Alert and above"
-msgstr "Alert 及更高级别"
+msgstr "“警报 (Alert)”及更高级别"
 
 #: pkg/systemd/services.html:71 pkg/systemd/logs.js:212 pkg/systemd/logs.js:382
 msgid "All"
@@ -966,7 +967,7 @@ msgstr "外观："
 #: pkg/apps/index.html:23 pkg/apps/application-list.jsx:152
 #: pkg/apps/application.jsx:143
 msgid "Applications"
-msgstr "应用"
+msgstr "应用程序"
 
 #: pkg/networkmanager/index.html:478 pkg/networkmanager/index.html:502
 #: pkg/networkmanager/index.html:526 pkg/networkmanager/index.html:550
@@ -990,19 +991,19 @@ msgstr "应用安全更新"
 
 #: pkg/selinux/setroubleshoot-view.jsx:112
 msgid "Apply this solution"
-msgstr "应用该方案"
+msgstr "采用该解决方案"
 
 #: pkg/selinux/setroubleshoot-view.jsx:87
 msgid "Applying solution..."
-msgstr "正在应用方案..."
+msgstr "正在应用解决方案……"
 
 #: pkg/packagekit/updates.jsx:43
 msgid "Applying updates"
-msgstr "正在应用更新"
+msgstr "正在安装更新"
 
 #: pkg/packagekit/updates.jsx:45
 msgid "Applying updates failed"
-msgstr "应用更新失败"
+msgstr "更新安装失败"
 
 #: node_modules/registry-image-widgets/views/image-config.html:16
 #: pkg/subscriptions/subscriptions-view.jsx:37
@@ -1024,7 +1025,7 @@ msgstr "至少需要 1 块磁盘。"
 
 #: pkg/systemd/services.html:451
 msgid "At specific time"
-msgstr "在指定时间"
+msgstr "于指定时间"
 
 #: pkg/selinux/setroubleshoot-view.jsx:414
 msgid "Audit log"
@@ -1032,13 +1033,13 @@ msgstr "审计日志"
 
 #: pkg/networkmanager/interfaces.js:830
 msgid "Authenticating"
-msgstr "验证中"
+msgstr "正在认证"
 
 #: pkg/lib/machine-change-auth.html:32 pkg/shell/index.html:66
 #: pkg/shell/index.html:149 pkg/realmd/operation.html:47
 #: pkg/kubernetes/views/auth-form.html:85
 msgid "Authentication"
-msgstr "验证"
+msgstr "认证"
 
 #: pkg/lib/machine-auth-failed.html:2
 msgid "Authentication Failed"
@@ -1050,7 +1051,7 @@ msgstr "验证失败： 服务关闭连接"
 
 #: src/ws/login.js:657
 msgid "Authentication failed"
-msgstr "验证失败"
+msgstr "认证失败"
 
 #: org.cockpit-project.cockpit-bridge.policy.in.h:2
 msgid ""
