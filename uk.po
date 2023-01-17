@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-13 03:00+0000\n"
+"POT-Creation-Date: 2023-01-16 02:53+0000\n"
 "PO-Revision-Date: 2023-01-08 14:24+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
@@ -272,7 +272,7 @@ msgstr[0] "Слід перезапустити $0 службу"
 msgstr[1] "Слід перезапустити $0 служби"
 msgstr[2] "Слід перезапустити $0 служб"
 
-#: pkg/storaged/crypto-keyslots.jsx:624
+#: pkg/storaged/crypto-keyslots.jsx:841
 msgid "$0 slot remains"
 msgid_plural "$0 slots remain"
 msgstr[0] "Лишився $0 слот"
@@ -708,8 +708,8 @@ msgstr "Адаптивне урівноваження навантаження �
 #: pkg/storaged/mdraid-details.jsx:159 pkg/storaged/stratis-details.jsx:148
 #: pkg/storaged/nfs-panel.jsx:65 pkg/storaged/iscsi-panel.jsx:140
 #: pkg/storaged/iscsi-panel.jsx:164 pkg/storaged/iscsi-panel.jsx:259
-#: pkg/storaged/nfs-details.jsx:186 pkg/storaged/crypto-keyslots.jsx:314
-#: pkg/storaged/crypto-keyslots.jsx:627 pkg/shell/credentials.jsx:187
+#: pkg/storaged/nfs-details.jsx:186 pkg/storaged/crypto-keyslots.jsx:508
+#: pkg/storaged/crypto-keyslots.jsx:844 pkg/shell/credentials.jsx:187
 #: pkg/shell/hosts_dialog.jsx:248
 msgid "Add"
 msgstr "Додати"
@@ -718,6 +718,10 @@ msgstr "Додати"
 #: pkg/lib/cockpit-components-firewalld-request.jsx:148
 msgid "Add $0"
 msgstr "Додати $0"
+
+#: pkg/storaged/crypto-keyslots.jsx:417
+msgid "Add Network Bound Disk Encryption"
+msgstr ""
 
 #: pkg/networkmanager/network-main.jsx:178
 msgid "Add VLAN"
@@ -754,7 +758,7 @@ msgstr "Додати портал iSCSI"
 msgid "Add item"
 msgstr "Додати запис"
 
-#: pkg/users/authorized-keys-panel.js:120 pkg/storaged/crypto-keyslots.jsx:280
+#: pkg/users/authorized-keys-panel.js:120 pkg/storaged/crypto-keyslots.jsx:474
 #: pkg/shell/credentials.jsx:93
 msgid "Add key"
 msgstr "Додати ключ"
@@ -803,6 +807,16 @@ msgstr "Додати команду"
 msgid "Add zone"
 msgstr "Додати зону"
 
+#: pkg/storaged/crypto-keyslots.jsx:370
+#, fuzzy
+#| msgid "Encryption options"
+msgid "Adding \"$0\" to encryption options"
+msgstr "Параметри шифрування"
+
+#: pkg/storaged/crypto-keyslots.jsx:359
+msgid "Adding \"$0\" to filesystem options"
+msgstr ""
+
 #: pkg/networkmanager/network-interface-members.jsx:177
 msgid ""
 "Adding $0 will break the connection to the server, and will make the "
@@ -819,13 +833,17 @@ msgstr ""
 "Додавання нетипових портів призведе до перезавантаження firewalld. Це "
 "перезавантаження спричинить втрату усіх налаштувань окремого сеансу роботи!"
 
-#: pkg/users/authorized-keys.js:112
+#: pkg/users/authorized-keys.js:112 pkg/storaged/crypto-keyslots.jsx:440
 msgid "Adding key"
 msgstr "Додавання ключа"
 
 #: pkg/storaged/jobs-panel.jsx:80
 msgid "Adding physical volume to $target"
 msgstr "Додаємо фізичний том до $target"
+
+#: pkg/storaged/crypto-keyslots.jsx:331
+msgid "Adding rd.neednet=1 to kernel command line"
+msgstr ""
 
 #: pkg/networkmanager/network-interface.jsx:317
 msgid "Additional DNS $val"
@@ -860,11 +878,11 @@ msgstr "Адреса"
 msgid "Address $val"
 msgstr "Адреса $val"
 
-#: pkg/storaged/crypto-keyslots.jsx:271
+#: pkg/storaged/crypto-keyslots.jsx:465
 msgid "Address cannot be empty"
 msgstr "Адреса не може бути порожньою"
 
-#: pkg/storaged/crypto-keyslots.jsx:273
+#: pkg/storaged/crypto-keyslots.jsx:467
 msgid "Address is not a valid URL"
 msgstr "Адреса є некоректною"
 
@@ -897,7 +915,7 @@ msgstr "Розширене TCA"
 msgid "After"
 msgstr "Після"
 
-#: pkg/systemd/overview-cards/realmd.jsx:303
+#: pkg/systemd/overview-cards/realmd.jsx:304
 msgid ""
 "After leaving the domain, only users with local credentials will be able to "
 "log into this machine. This may also affect other services as DNS resolution "
@@ -1333,7 +1351,7 @@ msgstr "Не вдалося знайти журналів на основі по
 #: pkg/systemd/services/service-details.jsx:707
 #: pkg/systemd/overview-cards/motdCard.jsx:67
 #: pkg/systemd/overview-cards/configurationCard.jsx:280
-#: pkg/systemd/overview-cards/realmd.jsx:419
+#: pkg/systemd/overview-cards/realmd.jsx:420
 #: pkg/systemd/overview-cards/cryptoPolicies.jsx:180 pkg/apps/utils.jsx:66
 #: pkg/networkmanager/dialogs-common.jsx:155
 #: pkg/networkmanager/firewall.jsx:604 pkg/networkmanager/firewall.jsx:808
@@ -1366,7 +1384,7 @@ msgstr "Не може бути увімкнено"
 msgid "Cannot connect to an unknown host"
 msgstr "Не вдалося з'єднатися зі невідомим вузлом"
 
-#: pkg/lib/cockpit.js:3985
+#: pkg/lib/cockpit.js:3973
 msgid "Cannot forward login credentials"
 msgstr "Не вдалося переспрямувати реєстраційні дані для входу"
 
@@ -1407,7 +1425,7 @@ msgstr "Змінити назву вузла"
 msgid "Change iSCSI initiator name"
 msgstr "Змінити назву ініціатора iSCSI"
 
-#: pkg/storaged/crypto-keyslots.jsx:335
+#: pkg/storaged/crypto-keyslots.jsx:530
 msgid "Change passphrase"
 msgstr "Змінити пароль"
 
@@ -1473,6 +1491,16 @@ msgstr "Перевіряємо пристрій RAID $target"
 msgid "Checking and repairing RAID device $target"
 msgstr "Перевіряємо і відновлюємо пристрій RAID $target"
 
+#: pkg/storaged/crypto-keyslots.jsx:289
+#, fuzzy
+#| msgid "Checking for package updates..."
+msgid "Checking for $0 package"
+msgstr "Шукаємо оновлення пакунків…"
+
+#: pkg/storaged/crypto-keyslots.jsx:310
+msgid "Checking for NBDE support in the initrd"
+msgstr ""
+
 #: pkg/apps/application-list.jsx:123
 msgid "Checking for new applications"
 msgstr "Шукаємо нові програми"
@@ -1526,13 +1554,13 @@ msgstr "Очистити критерій пошуку"
 msgid "Cleartext device"
 msgstr "Пристрій Cleartext"
 
-#: pkg/systemd/overview-cards/realmd.jsx:289
+#: pkg/systemd/overview-cards/realmd.jsx:290
 msgid "Client software"
 msgstr "Клієнтське програмне забезпечення"
 
 #: pkg/users/dialog-utils.js:58
 #: pkg/systemd/overview-cards/configurationCard.jsx:194
-#: pkg/systemd/overview-cards/realmd.jsx:263 pkg/apps/utils.jsx:84
+#: pkg/systemd/overview-cards/realmd.jsx:264 pkg/apps/utils.jsx:84
 #: pkg/networkmanager/interfaces.js:43 pkg/storaged/dialog.jsx:438
 #: pkg/lib/cockpit-components-modifications.jsx:78
 #: pkg/lib/cockpit-components-terminal.jsx:208 pkg/shell/credentials.jsx:84
@@ -1553,7 +1581,7 @@ msgstr "Cockpit"
 msgid "Cockpit authentication is configured incorrectly."
 msgstr "Розпізнавання у Cockpit налаштовано з помилками."
 
-#: pkg/lib/cockpit.js:3991
+#: pkg/lib/cockpit.js:3979
 msgid "Cockpit could not contact the given host."
 msgstr "Cockpit не вдалося встановити зв’язок із вказаним вузлом."
 
@@ -1580,7 +1608,7 @@ msgstr ""
 msgid "Cockpit is an interactive Linux server admin interface."
 msgstr "Cockpit — інтерактивний інтерфейс адміністратора сервера Linux."
 
-#: pkg/lib/cockpit.js:3989
+#: pkg/lib/cockpit.js:3977
 msgid "Cockpit is not compatible with the software on the system."
 msgstr "Cockpit є несумісним із програмним забезпеченням цієї системи."
 
@@ -1588,7 +1616,7 @@ msgstr "Cockpit є несумісним із програмним забезпе
 msgid "Cockpit is not installed"
 msgstr "Cockpit не встановлено"
 
-#: pkg/lib/cockpit.js:3983
+#: pkg/lib/cockpit.js:3971
 msgid "Cockpit is not installed on the system."
 msgstr "Cockpit у цій системі не встановлено."
 
@@ -1719,7 +1747,7 @@ msgstr "Підтвердження пароля"
 msgid "Confirm removal of $0"
 msgstr "Підтвердження вилучення $0"
 
-#: pkg/storaged/crypto-keyslots.jsx:442
+#: pkg/storaged/crypto-keyslots.jsx:659
 msgid "Confirm removal with an alternate passphrase"
 msgstr "Підтвердьте вилучення введенням альтернативного пароля"
 
@@ -1767,7 +1795,7 @@ msgstr "Помилка з'єднання"
 msgid "Connection failed"
 msgstr "Не вдалося встановити з'єднання"
 
-#: pkg/lib/cockpit.js:3981
+#: pkg/lib/cockpit.js:3969
 msgid "Connection has timed out."
 msgstr "Вичерпано час очікування на з’єднання."
 
@@ -1779,7 +1807,7 @@ msgstr "З’єднання буде розірвано"
 msgid "Consists of"
 msgstr "Складається з"
 
-#: pkg/systemd/overview-cards/realmd.jsx:311
+#: pkg/systemd/overview-cards/realmd.jsx:312
 msgid "Contacted domain"
 msgstr "Пов'язаний домен"
 
@@ -1825,7 +1853,7 @@ msgstr "Скопійовано"
 msgid "Copy"
 msgstr "Копіювати"
 
-#: pkg/systemd/logs.jsx:416 pkg/storaged/crypto-keyslots.jsx:399
+#: pkg/systemd/logs.jsx:416 pkg/storaged/crypto-keyslots.jsx:602
 #: pkg/lib/cockpit-components-modifications.jsx:75
 msgid "Copy to clipboard"
 msgstr "Копіювати до буфера"
@@ -2238,7 +2266,7 @@ msgstr "Робоча станція"
 msgid "Detachable"
 msgstr "Змінний"
 
-#: pkg/packagekit/updates.jsx:444 pkg/systemd/overview-cards/realmd.jsx:401
+#: pkg/packagekit/updates.jsx:444 pkg/systemd/overview-cards/realmd.jsx:402
 #: pkg/shell/credentials.jsx:112
 msgid "Details"
 msgstr "Подробиці"
@@ -2339,7 +2367,7 @@ msgstr "З диском усе гаразд"
 msgid "Disk is failing"
 msgstr "Диск виходить з ладу"
 
-#: pkg/storaged/crypto-keyslots.jsx:197
+#: pkg/storaged/crypto-keyslots.jsx:200
 msgid "Disk passphrase"
 msgstr "Пароль до диска"
 
@@ -2381,32 +2409,32 @@ msgid "Does not automatically start"
 msgstr "Не запускається автоматично"
 
 #: pkg/systemd/overview-cards/configurationCard.jsx:76
-#: pkg/systemd/overview-cards/realmd.jsx:269
+#: pkg/systemd/overview-cards/realmd.jsx:270
 msgid "Domain"
 msgstr "Домен"
 
-#: pkg/systemd/overview-cards/realmd.jsx:266
+#: pkg/systemd/overview-cards/realmd.jsx:267
 msgctxt "dialog-title"
 msgid "Domain"
 msgstr "Домен"
 
-#: pkg/systemd/overview-cards/realmd.jsx:425
+#: pkg/systemd/overview-cards/realmd.jsx:426
 msgid "Domain address"
 msgstr "Адреса домену"
 
-#: pkg/systemd/overview-cards/realmd.jsx:433
+#: pkg/systemd/overview-cards/realmd.jsx:434
 msgid "Domain administrator name"
 msgstr "Ім’я адміністратора домену"
 
-#: pkg/systemd/overview-cards/realmd.jsx:436
+#: pkg/systemd/overview-cards/realmd.jsx:437
 msgid "Domain administrator password"
 msgstr "Пароль адміністратора домену"
 
-#: pkg/systemd/overview-cards/realmd.jsx:312
+#: pkg/systemd/overview-cards/realmd.jsx:313
 msgid "Domain could not be contacted"
 msgstr "Не вдалося встановити зв’язок із доменом"
 
-#: pkg/systemd/overview-cards/realmd.jsx:313
+#: pkg/systemd/overview-cards/realmd.jsx:314
 msgid "Domain is not supported"
 msgstr "Підтримки домену не передбачено"
 
@@ -2430,6 +2458,7 @@ msgstr "Отримано"
 msgid "Downloading"
 msgstr "Отримуємо"
 
+#: pkg/storaged/crypto-keyslots.jsx:278
 #: pkg/lib/cockpit-components-install-dialog.jsx:187
 msgid "Downloading $0"
 msgstr "Отримуємо $0"
@@ -2448,7 +2477,7 @@ msgstr "Подвійний ранг"
 
 #: pkg/packagekit/kpatch.jsx:230 pkg/packagekit/autoupdates.jsx:407
 #: pkg/networkmanager/firewall.jsx:116 pkg/storaged/iscsi-panel.jsx:255
-#: pkg/storaged/nfs-details.jsx:305 pkg/storaged/crypto-keyslots.jsx:577
+#: pkg/storaged/nfs-details.jsx:305 pkg/storaged/crypto-keyslots.jsx:794
 #: pkg/shell/hosts.jsx:165 pkg/shell/indexes.jsx:352
 msgid "Edit"
 msgstr "Змінити"
@@ -2457,7 +2486,7 @@ msgstr "Змінити"
 msgid "Edit /etc/motd"
 msgstr "Редагувати /etc/motd"
 
-#: pkg/storaged/crypto-keyslots.jsx:356
+#: pkg/storaged/crypto-keyslots.jsx:551
 msgid "Edit Tang keyserver"
 msgstr "Редагувати сервер ключів Tang"
 
@@ -2493,7 +2522,7 @@ msgstr "Змінити службу $0"
 msgid "Edit user"
 msgstr "Змінити запис користувача"
 
-#: pkg/storaged/crypto-keyslots.jsx:579
+#: pkg/storaged/crypto-keyslots.jsx:796
 msgid "Editing a key requires a free slot"
 msgstr "Редагування ключа потребує вільного слоту"
 
@@ -2540,6 +2569,12 @@ msgstr "Увімкнути брандмауер"
 #: pkg/networkmanager/firewall-switch.jsx:78
 msgid "Enabled"
 msgstr "Увімкнено"
+
+#: pkg/storaged/crypto-keyslots.jsx:378
+#, fuzzy
+#| msgid "Installing $0"
+msgid "Enabling $0"
+msgstr "Встановлюємо $0"
 
 #: pkg/storaged/stratis-panel.jsx:138
 msgid "Encrypt data"
@@ -2883,6 +2918,10 @@ msgctxt "storage"
 msgid "Firmware version"
 msgstr "Версія мікропрограми"
 
+#: pkg/storaged/crypto-keyslots.jsx:435
+msgid "Fix NBDE support"
+msgstr ""
+
 #: pkg/systemd/terminal.jsx:129 pkg/systemd/terminal.jsx:139
 msgid "Font size"
 msgstr "Розмір шрифту"
@@ -3066,7 +3105,7 @@ msgstr "Кількість пакунків у журналі"
 msgid "Host"
 msgstr "Вузол"
 
-#: pkg/lib/cockpit.js:3977
+#: pkg/lib/cockpit.js:3965
 msgid "Host key is incorrect"
 msgstr "Ключ вузла є неправильним"
 
@@ -3299,11 +3338,12 @@ msgstr "Встановлено"
 msgid "Installing"
 msgstr "Встановлення"
 
+#: pkg/storaged/crypto-keyslots.jsx:282
 #: pkg/lib/cockpit-components-install-dialog.jsx:191
 msgid "Installing $0"
 msgstr "Встановлюємо $0"
 
-#: pkg/storaged/content-views.jsx:837
+#: pkg/storaged/content-views.jsx:837 pkg/storaged/crypto-keyslots.jsx:298
 msgid "Installing $0 would remove $1."
 msgstr "Встановлення $0 призведе до вилучення $1."
 
@@ -3329,7 +3369,7 @@ msgstr "Учасники інтерфейсу"
 msgid "Interfaces"
 msgstr "Інтерфейси"
 
-#: pkg/lib/cockpit.js:3979
+#: pkg/lib/cockpit.js:3967
 msgid "Internal error"
 msgstr "Внутрішня помилка"
 
@@ -3414,21 +3454,21 @@ msgstr "sshd працює на іншому порті?"
 msgid "Jobs"
 msgstr "Завдання"
 
-#: pkg/systemd/overview-cards/realmd.jsx:417
+#: pkg/systemd/overview-cards/realmd.jsx:418
 msgid "Join"
 msgstr "З'єднати"
 
-#: pkg/systemd/overview-cards/realmd.jsx:423
+#: pkg/systemd/overview-cards/realmd.jsx:424
 msgctxt "dialog-title"
 msgid "Join a domain"
 msgstr "Долучитися до домену"
 
-#: pkg/systemd/overview-cards/realmd.jsx:449
-#: pkg/systemd/overview-cards/realmd.jsx:471
+#: pkg/systemd/overview-cards/realmd.jsx:450
+#: pkg/systemd/overview-cards/realmd.jsx:472
 msgid "Join domain"
 msgstr "Долучитися до домену"
 
-#: pkg/systemd/overview-cards/realmd.jsx:416
+#: pkg/systemd/overview-cards/realmd.jsx:417
 msgid "Joining"
 msgstr "Долучення"
 
@@ -3499,27 +3539,27 @@ msgstr "Інтерактивне латання ядра"
 msgid "Key password"
 msgstr "Пароль до ключа"
 
-#: pkg/storaged/crypto-keyslots.jsx:611
+#: pkg/storaged/crypto-keyslots.jsx:828
 msgid "Key slots with unknown types can not be edited here"
 msgstr "Тут не можна редагувати слоти ключів із невідомими типами"
 
-#: pkg/storaged/crypto-keyslots.jsx:282
+#: pkg/storaged/crypto-keyslots.jsx:476
 msgid "Key source"
 msgstr "Джерело ключа"
 
-#: pkg/storaged/crypto-keyslots.jsx:634 pkg/storaged/crypto-keyslots.jsx:637
+#: pkg/storaged/crypto-keyslots.jsx:851 pkg/storaged/crypto-keyslots.jsx:854
 msgid "Keys"
 msgstr "Ключі"
 
-#: pkg/storaged/crypto-keyslots.jsx:605
+#: pkg/storaged/crypto-keyslots.jsx:822
 msgid "Keyserver"
 msgstr "Сервер ключів"
 
-#: pkg/storaged/crypto-keyslots.jsx:307 pkg/storaged/crypto-keyslots.jsx:358
+#: pkg/storaged/crypto-keyslots.jsx:501 pkg/storaged/crypto-keyslots.jsx:553
 msgid "Keyserver address"
 msgstr "Адреса сервера ключів"
 
-#: pkg/storaged/crypto-keyslots.jsx:489
+#: pkg/storaged/crypto-keyslots.jsx:706
 msgid "Keyserver removal may prevent unlocking $0."
 msgstr "Вилучення сервера ключів може завадити розблокуванню $0."
 
@@ -3579,13 +3619,13 @@ msgstr "Останній вдалий вхід:"
 msgid "Learn more"
 msgstr "Докладніше"
 
-#: pkg/systemd/overview-cards/realmd.jsx:299
+#: pkg/systemd/overview-cards/realmd.jsx:300
 msgid "Leave $0"
 msgstr "Полишити $0"
 
-#: pkg/systemd/overview-cards/realmd.jsx:296
-#: pkg/systemd/overview-cards/realmd.jsx:299
-#: pkg/systemd/overview-cards/realmd.jsx:301
+#: pkg/systemd/overview-cards/realmd.jsx:297
+#: pkg/systemd/overview-cards/realmd.jsx:300
+#: pkg/systemd/overview-cards/realmd.jsx:302
 msgid "Leave domain"
 msgstr "Полишити домен"
 
@@ -3839,11 +3879,11 @@ msgstr "Вхід"
 msgid "Login again"
 msgstr "Користувач ще раз"
 
-#: pkg/lib/cockpit.js:3969
+#: pkg/lib/cockpit.js:3957
 msgid "Login failed"
 msgstr "Невдала спроба увійти"
 
-#: pkg/systemd/overview-cards/realmd.jsx:275
+#: pkg/systemd/overview-cards/realmd.jsx:276
 msgid "Login format"
 msgstr "Формат входу"
 
@@ -3907,7 +3947,7 @@ msgstr "Апаратний блок основного сервера"
 msgid "Maintenance"
 msgstr "Супровід"
 
-#: pkg/storaged/crypto-keyslots.jsx:389
+#: pkg/storaged/crypto-keyslots.jsx:592
 msgid ""
 "Make sure the key hash from the Tang server matches one of the following:"
 msgstr ""
@@ -3982,7 +4022,7 @@ msgstr "Вручну"
 msgid "Manually"
 msgstr "Вручну"
 
-#: pkg/storaged/crypto-keyslots.jsx:398
+#: pkg/storaged/crypto-keyslots.jsx:601
 msgid "Manually check with SSH: "
 msgstr "Перевірка вручну за допомогою SSH: "
 
@@ -4366,7 +4406,7 @@ msgstr "Новий вузол"
 msgid "New key password"
 msgstr "Новий пароль до ключа"
 
-#: pkg/storaged/crypto-keyslots.jsx:293 pkg/storaged/crypto-keyslots.jsx:340
+#: pkg/storaged/crypto-keyslots.jsx:487 pkg/storaged/crypto-keyslots.jsx:535
 msgid "New passphrase"
 msgstr "Новий пароль"
 
@@ -4398,7 +4438,7 @@ msgstr "Немає сповіщень SELinux."
 msgid "No applications installed or available."
 msgstr "Немає встановлених або доступних програм."
 
-#: pkg/storaged/crypto-keyslots.jsx:624
+#: pkg/storaged/crypto-keyslots.jsx:841
 msgid "No available slots"
 msgstr "Немає доступних слотів"
 
@@ -4460,7 +4500,7 @@ msgstr "Немає файлової системи"
 msgid "No filesystems"
 msgstr "Немає файлових систем"
 
-#: pkg/storaged/crypto-keyslots.jsx:629
+#: pkg/storaged/crypto-keyslots.jsx:846
 msgid "No free key slots"
 msgstr "Немає вільних слотів ключів"
 
@@ -4480,7 +4520,7 @@ msgstr "Призначень iSCSI не налаштовано"
 msgid "No installation package found for this application."
 msgstr "Для цієї програми не знайдено пакунка для встановлення."
 
-#: pkg/storaged/crypto-keyslots.jsx:554
+#: pkg/storaged/crypto-keyslots.jsx:771
 msgid "No keys added"
 msgstr "Не додано жодного ключа"
 
@@ -4608,11 +4648,11 @@ msgstr "Не встановлено"
 msgid "Not mounted"
 msgstr "Не змонтовано"
 
-#: pkg/systemd/overview-cards/realmd.jsx:448
+#: pkg/systemd/overview-cards/realmd.jsx:449
 msgid "Not permitted to configure realms"
 msgstr "Не дозволено налаштовувати області"
 
-#: pkg/lib/cockpit.js:3967
+#: pkg/lib/cockpit.js:3955
 msgid "Not permitted to perform this action."
 msgstr "Немає дозволу на виконання цієї дії."
 
@@ -4675,7 +4715,7 @@ msgstr "Випадки"
 msgid "Ok"
 msgstr "Гаразд"
 
-#: pkg/storaged/crypto-keyslots.jsx:337
+#: pkg/storaged/crypto-keyslots.jsx:532
 msgid "Old passphrase"
 msgstr "Старий пароль"
 
@@ -4871,33 +4911,33 @@ msgstr "Неактивний"
 #: pkg/storaged/fsys-tab.jsx:346 pkg/storaged/stratis-panel.jsx:141
 #: pkg/storaged/format-dialog.jsx:266 pkg/storaged/format-dialog.jsx:292
 #: pkg/storaged/stratis-details.jsx:132 pkg/storaged/stratis-details.jsx:703
-#: pkg/storaged/content-views.jsx:269 pkg/storaged/crypto-keyslots.jsx:288
-#: pkg/storaged/crypto-keyslots.jsx:600
+#: pkg/storaged/content-views.jsx:269 pkg/storaged/crypto-keyslots.jsx:482
+#: pkg/storaged/crypto-keyslots.jsx:817
 msgid "Passphrase"
 msgstr "Пароль"
 
-#: pkg/storaged/crypto-keyslots.jsx:425
+#: pkg/storaged/crypto-keyslots.jsx:642
 msgid "Passphrase can not be empty"
 msgstr "Пароль не може бути порожнім"
 
 #: pkg/storaged/fsys-tab.jsx:349 pkg/storaged/stratis-panel.jsx:145
 #: pkg/storaged/format-dialog.jsx:270 pkg/storaged/format-dialog.jsx:296
-#: pkg/storaged/stratis-details.jsx:135 pkg/storaged/crypto-keyslots.jsx:200
-#: pkg/storaged/crypto-keyslots.jsx:296 pkg/storaged/crypto-keyslots.jsx:338
-#: pkg/storaged/crypto-keyslots.jsx:341
+#: pkg/storaged/stratis-details.jsx:135 pkg/storaged/crypto-keyslots.jsx:203
+#: pkg/storaged/crypto-keyslots.jsx:490 pkg/storaged/crypto-keyslots.jsx:533
+#: pkg/storaged/crypto-keyslots.jsx:536
 msgid "Passphrase cannot be empty"
 msgstr "Пароль не може бути порожнім"
 
-#: pkg/storaged/crypto-keyslots.jsx:448
+#: pkg/storaged/crypto-keyslots.jsx:665
 msgid "Passphrase from any other key slot"
 msgstr "Пароль з будь-якого іншого слоту ключів"
 
-#: pkg/storaged/crypto-keyslots.jsx:438
+#: pkg/storaged/crypto-keyslots.jsx:655
 msgid "Passphrase removal may prevent unlocking $0."
 msgstr "Вилучення пароля може завадити розблокуванню $0."
 
 #: pkg/storaged/stratis-panel.jsx:153 pkg/storaged/format-dialog.jsx:278
-#: pkg/storaged/crypto-keyslots.jsx:304 pkg/storaged/crypto-keyslots.jsx:343
+#: pkg/storaged/crypto-keyslots.jsx:498 pkg/storaged/crypto-keyslots.jsx:538
 msgid "Passphrases do not match"
 msgstr "Паролі не збігаються"
 
@@ -5444,6 +5484,12 @@ msgstr "Відмовляємо у з’єднанні. Ключі вузла н�
 msgid "Refusing to connect. Hostkey is unknown"
 msgstr "Відмовляємо у з’єднанні. Невідомий ключ вузла."
 
+#: pkg/storaged/crypto-keyslots.jsx:320
+#, fuzzy
+#| msgid "Generating report"
+msgid "Regenerating initrd"
+msgstr "Створюємо звіт"
+
 #: pkg/packagekit/updates.jsx:1360
 msgid "Register…"
 msgstr "Зареєструвати…"
@@ -5509,8 +5555,8 @@ msgstr "Вилучення:"
 #: pkg/users/authorized-keys-panel.js:172
 #: pkg/systemd/services/timer-dialog.jsx:369 pkg/apps/application.jsx:51
 #: pkg/storaged/vgroup-details.jsx:121 pkg/storaged/mdraid-details.jsx:145
-#: pkg/storaged/nfs-details.jsx:307 pkg/storaged/crypto-keyslots.jsx:469
-#: pkg/storaged/crypto-keyslots.jsx:504 pkg/storaged/crypto-keyslots.jsx:585
+#: pkg/storaged/nfs-details.jsx:307 pkg/storaged/crypto-keyslots.jsx:686
+#: pkg/storaged/crypto-keyslots.jsx:721 pkg/storaged/crypto-keyslots.jsx:802
 #: pkg/shell/hosts.jsx:168
 msgid "Remove"
 msgstr "Вилучити"
@@ -5523,11 +5569,11 @@ msgstr "Вилучити $0"
 msgid "Remove $0 service from $1 zone"
 msgstr "Вилучити службу $0 із зони $1"
 
-#: pkg/storaged/crypto-keyslots.jsx:488
+#: pkg/storaged/crypto-keyslots.jsx:705
 msgid "Remove $0?"
 msgstr "Вилучити $0?"
 
-#: pkg/storaged/crypto-keyslots.jsx:498
+#: pkg/storaged/crypto-keyslots.jsx:715
 msgid "Remove Tang keyserver?"
 msgstr "Вилучити сервер ключів Tang?"
 
@@ -5546,7 +5592,7 @@ msgstr "Вилучити вузол"
 msgid "Remove item"
 msgstr "Вилучити запис"
 
-#: pkg/storaged/crypto-keyslots.jsx:462
+#: pkg/storaged/crypto-keyslots.jsx:679
 msgid "Remove passphrase in key slot $0?"
 msgstr "Вилучити пароль у слоті ключів $0?"
 
@@ -5562,6 +5608,7 @@ msgstr "Вилучити зону $0"
 msgid "Removing"
 msgstr "Вилучаємо"
 
+#: pkg/storaged/crypto-keyslots.jsx:280
 #: pkg/lib/cockpit-components-install-dialog.jsx:189
 msgid "Removing $0"
 msgstr "Вилучаємо $0"
@@ -5578,7 +5625,7 @@ msgstr ""
 msgid "Removing $target from RAID device"
 msgstr "Вилучаємо $target з пристрою RAID"
 
-#: pkg/storaged/crypto-keyslots.jsx:446
+#: pkg/storaged/crypto-keyslots.jsx:663
 msgid ""
 "Removing a passphrase without confirmation of another passphrase may prevent "
 "unlocking or key management, if other passphrases are forgotten or lost."
@@ -5645,8 +5692,8 @@ msgstr "Повторення"
 msgid "Repeat monthly"
 msgstr "Повторювати щомісяця"
 
-#: pkg/storaged/crypto-keyslots.jsx:286 pkg/storaged/crypto-keyslots.jsx:298
-#: pkg/storaged/crypto-keyslots.jsx:342
+#: pkg/storaged/crypto-keyslots.jsx:480 pkg/storaged/crypto-keyslots.jsx:492
+#: pkg/storaged/crypto-keyslots.jsx:537
 msgid "Repeat passphrase"
 msgstr "Повторіть пароль"
 
@@ -5855,11 +5902,11 @@ msgstr "Стан системи SELinux є невідомим."
 msgid "SELinux troubleshoot"
 msgstr "Усування вад SELinux"
 
-#: pkg/storaged/crypto-keyslots.jsx:394
+#: pkg/storaged/crypto-keyslots.jsx:597
 msgid "SHA1"
 msgstr "SHA1"
 
-#: pkg/storaged/crypto-keyslots.jsx:391
+#: pkg/storaged/crypto-keyslots.jsx:594
 msgid "SHA256"
 msgstr "SHA256"
 
@@ -5914,8 +5961,8 @@ msgstr "Суботи"
 #: pkg/networkmanager/dialogs-common.jsx:152 pkg/metrics/metrics.jsx:1274
 #: pkg/storaged/fsys-tab.jsx:374 pkg/storaged/fsys-tab.jsx:490
 #: pkg/storaged/crypto-tab.jsx:161 pkg/storaged/crypto-tab.jsx:205
-#: pkg/storaged/nfs-details.jsx:186 pkg/storaged/crypto-keyslots.jsx:346
-#: pkg/storaged/crypto-keyslots.jsx:365 pkg/kdump/kdump-view.jsx:324
+#: pkg/storaged/nfs-details.jsx:186 pkg/storaged/crypto-keyslots.jsx:541
+#: pkg/storaged/crypto-keyslots.jsx:560 pkg/kdump/kdump-view.jsx:324
 msgid "Save"
 msgstr "Зберегти"
 
@@ -5936,8 +5983,8 @@ msgstr "Заощаджувати місце стисканням окремих 
 msgid "Save space by storing identical data blocks just once"
 msgstr "Заощаджувати місце, зберігаючи ідентичні блоки даних лише раз"
 
-#: pkg/storaged/crypto-keyslots.jsx:312 pkg/storaged/crypto-keyslots.jsx:363
-#: pkg/storaged/crypto-keyslots.jsx:408
+#: pkg/storaged/crypto-keyslots.jsx:433 pkg/storaged/crypto-keyslots.jsx:506
+#: pkg/storaged/crypto-keyslots.jsx:558 pkg/storaged/crypto-keyslots.jsx:611
 msgid ""
 "Saving a new passphrase requires unlocking the disk. Please provide a "
 "current disk passphrase."
@@ -6042,11 +6089,11 @@ msgstr "Адреса сервера не може бути порожньою."
 msgid "Server cannot be empty."
 msgstr "Запис сервера не може бути порожнім."
 
-#: pkg/lib/cockpit.js:3987
+#: pkg/lib/cockpit.js:3975
 msgid "Server has closed the connection."
 msgstr "З’єднання розірвано сервером."
 
-#: pkg/systemd/overview-cards/realmd.jsx:283
+#: pkg/systemd/overview-cards/realmd.jsx:284
 msgid "Server software"
 msgstr "Програмне забезпечення сервера"
 
@@ -6280,7 +6327,7 @@ msgstr "Перейти до вмісту"
 msgid "Slot"
 msgstr "Слот"
 
-#: pkg/storaged/mdraid-details.jsx:123 pkg/storaged/crypto-keyslots.jsx:573
+#: pkg/storaged/mdraid-details.jsx:123 pkg/storaged/crypto-keyslots.jsx:790
 msgid "Slot $0"
 msgstr "Слот $0"
 
@@ -6530,7 +6577,7 @@ msgstr "Не вдалося підписатися на сигнали systemd: 
 msgid "Successfully copied to clipboard"
 msgstr "Успішно скопійовано до буфера обміну"
 
-#: pkg/storaged/crypto-keyslots.jsx:400
+#: pkg/storaged/crypto-keyslots.jsx:603
 msgid "Successfully copied to clipboard!"
 msgstr "Успішно скопійовано до буфера обміну!"
 
@@ -6650,7 +6697,7 @@ msgstr "TCP"
 msgid "Tablet"
 msgstr "Планшет"
 
-#: pkg/storaged/crypto-keyslots.jsx:289
+#: pkg/storaged/crypto-keyslots.jsx:483
 msgid "Tang keyserver"
 msgstr "Сервер ключів Tang"
 
@@ -6700,8 +6747,20 @@ msgstr "Перевірити параметри kdump"
 msgid "Testing connection"
 msgstr "Перевіряємо з’єднання"
 
+#: pkg/storaged/crypto-keyslots.jsx:300
+#, fuzzy
+#| msgid "$0 is not available from any repository."
+msgid "The $0 package is not available from any repository."
+msgstr "$0 немає у жодному зі сховищ."
+
 #: pkg/storaged/stratis-panel.jsx:45
 msgid "The $0 package must be installed to create Stratis pools."
+msgstr "Для створення буферів Stratis має бути встановлено пакунок $0."
+
+#: pkg/storaged/crypto-keyslots.jsx:295
+#, fuzzy
+#| msgid "The $0 package must be installed to create Stratis pools."
+msgid "The $0 package must be installed."
 msgstr "Для створення буферів Stratis має бути встановлено пакунок $0."
 
 #: pkg/storaged/content-views.jsx:896
@@ -6773,7 +6832,7 @@ msgid ""
 "The creation of this VDO device did not finish and the device can't be used."
 msgstr "Створення цього пристрою VDO не завершено, ним не можна користуватися."
 
-#: pkg/storaged/crypto-keyslots.jsx:550
+#: pkg/storaged/crypto-keyslots.jsx:767
 msgid ""
 "The currently logged in user is not permitted to see information about keys."
 msgstr ""
@@ -6864,6 +6923,10 @@ msgstr[2] "Буде перезавантажено такі служби:"
 msgid "The full name must not contain colons."
 msgstr "У повному імені не повинно міститися двокрапок."
 
+#: pkg/storaged/crypto-keyslots.jsx:317
+msgid "The initrd must be regenerated."
+msgstr ""
+
 #: pkg/shell/hosts_dialog.jsx:682
 msgid "The key password can not be empty"
 msgstr "Пароль до ключа не може бути порожнім"
@@ -6880,7 +6943,7 @@ msgstr "Наданий вами ключ є некоректним."
 msgid "The last disk of a RAID device cannot be removed."
 msgstr "Останній диск пристрою RAID вилучати не можна."
 
-#: pkg/storaged/crypto-keyslots.jsx:586
+#: pkg/storaged/crypto-keyslots.jsx:803
 msgid "The last key slot can not be removed"
 msgstr "Не можна вилучати останній слот ключів"
 
@@ -6951,11 +7014,23 @@ msgstr ""
 "Сервером відмовлено у розпізнаванні «$0» за допомогою пароля. Інших "
 "підтримуваних способів розпізнавання не передбачено."
 
-#: pkg/lib/cockpit.js:3971
+#: pkg/lib/cockpit.js:3959
 msgid "The server refused to authenticate using any supported methods."
 msgstr ""
 "Сервер відмовився розпізнавати користувача за допомогою будь-якого з "
 "підтримуваних методів."
+
+#: pkg/storaged/crypto-keyslots.jsx:423
+msgid ""
+"The system does not currently support unlocking a filesystem with a Tang "
+"keyserver during boot."
+msgstr ""
+
+#: pkg/storaged/crypto-keyslots.jsx:422
+msgid ""
+"The system does not currently support unlocking the root filesystem with a "
+"Tang keyserver."
+msgstr ""
 
 #: pkg/systemd/hwinfo.jsx:72
 msgid "The user $0 is not permitted to change cpu security mitigations"
@@ -7022,6 +7097,10 @@ msgstr ""
 "Під час спроби встановити з'єднання із комп'ютером сталася неочікувана "
 "помилка."
 
+#: pkg/storaged/crypto-keyslots.jsx:427
+msgid "These additional steps are necessary:"
+msgstr ""
+
 #: pkg/storaged/dialog.jsx:1124
 msgid "These changes will be made:"
 msgstr "Буде внесено такі зміни:"
@@ -7080,7 +7159,7 @@ msgstr ""
 msgid "This machine has already been added."
 msgstr "Цей комп’ютер вже було додано."
 
-#: pkg/systemd/overview-cards/realmd.jsx:420
+#: pkg/systemd/overview-cards/realmd.jsx:421
 msgid "This may take a while"
 msgstr "Зачекайте"
 
@@ -7260,7 +7339,7 @@ msgstr "Перемкнути засіб вибору дати"
 msgid "Toggle filters"
 msgstr "Перемкнути фільтри"
 
-#: pkg/lib/cockpit.js:3993
+#: pkg/lib/cockpit.js:3981
 msgid "Too much data"
 msgstr "Забагато даних"
 
@@ -7313,7 +7392,7 @@ msgstr "Діагностика проблем"
 msgid "Troubleshoot…"
 msgstr "Діагностика проблем…"
 
-#: pkg/storaged/crypto-keyslots.jsx:410
+#: pkg/storaged/crypto-keyslots.jsx:613
 msgid "Trust key"
 msgstr "Довіряти ключу"
 
@@ -7527,7 +7606,7 @@ msgstr "Невідома назва вузла"
 msgid "Unknown service name"
 msgstr "Невідома назва служби"
 
-#: pkg/storaged/crypto-keyslots.jsx:610
+#: pkg/storaged/crypto-keyslots.jsx:827
 msgid "Unknown type"
 msgstr "Невідомий тип"
 
@@ -7557,7 +7636,7 @@ msgstr "Розблокуйте буфер для перегляду файлов
 msgid "Unlocking $target"
 msgstr "Розблокуємо $target"
 
-#: pkg/storaged/crypto-keyslots.jsx:243
+#: pkg/storaged/crypto-keyslots.jsx:246
 msgid "Unlocking disk"
 msgstr "Розблоковуємо диск"
 
@@ -7612,7 +7691,7 @@ msgstr "Непідтримуваний том"
 msgid "Until"
 msgstr "До"
 
-#: pkg/lib/cockpit.js:3973 pkg/lib/cockpit.js:3975
+#: pkg/lib/cockpit.js:3961 pkg/lib/cockpit.js:3963
 msgid "Untrusted host"
 msgstr "Ненадійний вузол"
 
@@ -7786,7 +7865,7 @@ msgstr "Ід. VLAN"
 msgid "VLAN settings"
 msgstr "Параметри VLAN"
 
-#: pkg/systemd/overview-cards/realmd.jsx:310
+#: pkg/systemd/overview-cards/realmd.jsx:311
 msgid "Validating address"
 msgstr "Перевіряємо чинність адреси"
 
@@ -7806,7 +7885,7 @@ msgstr "Постачальник"
 msgid "Verified"
 msgstr "Перевірено"
 
-#: pkg/storaged/crypto-keyslots.jsx:386
+#: pkg/storaged/crypto-keyslots.jsx:589
 msgid "Verify key"
 msgstr "Перевірити ключ"
 
@@ -7914,6 +7993,7 @@ msgstr ""
 "Очікуємо на завершення роботи з програмою для керування пакунками інших "
 "програм…"
 
+#: pkg/storaged/crypto-keyslots.jsx:274
 #: pkg/lib/cockpit-components-install-dialog.jsx:148
 #: pkg/lib/cockpit-components-install-dialog.jsx:183
 msgid "Waiting for other software management operations to finish"
@@ -8093,11 +8173,11 @@ msgstr ""
 "Невдовзі ваш сервер розірве з’єднання. Ви можете відновити це з’єднання, "
 "щойно сервер буде перезапущено."
 
-#: pkg/lib/cockpit.js:3963
+#: pkg/lib/cockpit.js:3951
 msgid "Your session has been terminated."
 msgstr "Ваш сеанс перервано."
 
-#: pkg/lib/cockpit.js:3965
+#: pkg/lib/cockpit.js:3953
 msgid "Your session has expired. Please log in again."
 msgstr ""
 "Строк роботи у вашому сеансі вичерпано. Будь ласка, увійдіть до системи ще "
@@ -8931,9 +9011,6 @@ msgstr "зона"
 
 #~ msgid "Download report"
 #~ msgstr "Звіт щодо отримання"
-
-#~ msgid "Generating report"
-#~ msgstr "Створюємо звіт"
 
 #~ msgid "No archive has been created."
 #~ msgstr "Архів не було створено."

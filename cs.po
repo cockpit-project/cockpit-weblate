@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-13 03:00+0000\n"
+"POT-Creation-Date: 2023-01-16 02:53+0000\n"
 "PO-Revision-Date: 2022-04-15 20:17+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://translate.fedoraproject.org/projects/cockpit/"
@@ -278,7 +278,7 @@ msgstr[0] "Je třeba zrestartovat $0 službu"
 msgstr[1] "Je třeba zrestartovat $0 služby"
 msgstr[2] "Je třeba zrestartovat $0 služeb"
 
-#: pkg/storaged/crypto-keyslots.jsx:624
+#: pkg/storaged/crypto-keyslots.jsx:841
 msgid "$0 slot remains"
 msgid_plural "$0 slots remain"
 msgstr[0] "$0 slot zbývá"
@@ -717,8 +717,8 @@ msgstr "Přizpůsobující se rozkládání přenosové zátěže odesílání"
 #: pkg/storaged/mdraid-details.jsx:159 pkg/storaged/stratis-details.jsx:148
 #: pkg/storaged/nfs-panel.jsx:65 pkg/storaged/iscsi-panel.jsx:140
 #: pkg/storaged/iscsi-panel.jsx:164 pkg/storaged/iscsi-panel.jsx:259
-#: pkg/storaged/nfs-details.jsx:186 pkg/storaged/crypto-keyslots.jsx:314
-#: pkg/storaged/crypto-keyslots.jsx:627 pkg/shell/credentials.jsx:187
+#: pkg/storaged/nfs-details.jsx:186 pkg/storaged/crypto-keyslots.jsx:508
+#: pkg/storaged/crypto-keyslots.jsx:844 pkg/shell/credentials.jsx:187
 #: pkg/shell/hosts_dialog.jsx:248
 msgid "Add"
 msgstr "Přidat"
@@ -727,6 +727,10 @@ msgstr "Přidat"
 #: pkg/lib/cockpit-components-firewalld-request.jsx:148
 msgid "Add $0"
 msgstr "Přidat $0"
+
+#: pkg/storaged/crypto-keyslots.jsx:417
+msgid "Add Network Bound Disk Encryption"
+msgstr ""
 
 #: pkg/networkmanager/network-main.jsx:178
 msgid "Add VLAN"
@@ -763,7 +767,7 @@ msgstr "Přidat iSCSI portál"
 msgid "Add item"
 msgstr "Přidat položku"
 
-#: pkg/users/authorized-keys-panel.js:120 pkg/storaged/crypto-keyslots.jsx:280
+#: pkg/users/authorized-keys-panel.js:120 pkg/storaged/crypto-keyslots.jsx:474
 #: pkg/shell/credentials.jsx:93
 msgid "Add key"
 msgstr "Přidat klíč"
@@ -812,6 +816,16 @@ msgstr "Přidat tým"
 msgid "Add zone"
 msgstr "Přidat zónu"
 
+#: pkg/storaged/crypto-keyslots.jsx:370
+#, fuzzy
+#| msgid "Encryption options"
+msgid "Adding \"$0\" to encryption options"
+msgstr "Volby šifrování"
+
+#: pkg/storaged/crypto-keyslots.jsx:359
+msgid "Adding \"$0\" to filesystem options"
+msgstr ""
+
 #: pkg/networkmanager/network-interface-members.jsx:177
 msgid ""
 "Adding $0 will break the connection to the server, and will make the "
@@ -828,13 +842,17 @@ msgstr ""
 "Přidání uživatelsky určených portů znovunačte firewalld. To povede ke ztrátě "
 "jakéhokoli nastavení, které bylo učiněno za běhu a neuloženo!"
 
-#: pkg/users/authorized-keys.js:112
+#: pkg/users/authorized-keys.js:112 pkg/storaged/crypto-keyslots.jsx:440
 msgid "Adding key"
 msgstr "Přidání klíče"
 
 #: pkg/storaged/jobs-panel.jsx:80
 msgid "Adding physical volume to $target"
 msgstr "Přidává se fyzický svazek do $target"
+
+#: pkg/storaged/crypto-keyslots.jsx:331
+msgid "Adding rd.neednet=1 to kernel command line"
+msgstr ""
 
 #: pkg/networkmanager/network-interface.jsx:317
 msgid "Additional DNS $val"
@@ -871,11 +889,11 @@ msgstr "Adresa"
 msgid "Address $val"
 msgstr "Adresa $val"
 
-#: pkg/storaged/crypto-keyslots.jsx:271
+#: pkg/storaged/crypto-keyslots.jsx:465
 msgid "Address cannot be empty"
 msgstr "Adresu je třeba vyplnit"
 
-#: pkg/storaged/crypto-keyslots.jsx:273
+#: pkg/storaged/crypto-keyslots.jsx:467
 msgid "Address is not a valid URL"
 msgstr "Do adresy nebyla vyplněná platná URL"
 
@@ -917,7 +935,7 @@ msgstr "Pokročilé TCA"
 msgid "After"
 msgstr "Po"
 
-#: pkg/systemd/overview-cards/realmd.jsx:303
+#: pkg/systemd/overview-cards/realmd.jsx:304
 msgid ""
 "After leaving the domain, only users with local credentials will be able to "
 "log into this machine. This may also affect other services as DNS resolution "
@@ -1376,7 +1394,7 @@ msgstr ""
 #: pkg/systemd/services/service-details.jsx:707
 #: pkg/systemd/overview-cards/motdCard.jsx:67
 #: pkg/systemd/overview-cards/configurationCard.jsx:280
-#: pkg/systemd/overview-cards/realmd.jsx:419
+#: pkg/systemd/overview-cards/realmd.jsx:420
 #: pkg/systemd/overview-cards/cryptoPolicies.jsx:180 pkg/apps/utils.jsx:66
 #: pkg/networkmanager/dialogs-common.jsx:155
 #: pkg/networkmanager/firewall.jsx:604 pkg/networkmanager/firewall.jsx:808
@@ -1409,7 +1427,7 @@ msgstr "Není možné zapnout"
 msgid "Cannot connect to an unknown host"
 msgstr "Nelze se připojit k neznámému hostiteli"
 
-#: pkg/lib/cockpit.js:3985
+#: pkg/lib/cockpit.js:3973
 msgid "Cannot forward login credentials"
 msgstr "Nedaří přeposlat přístupové údaje"
 
@@ -1452,7 +1470,7 @@ msgstr "Změnit název počítače"
 msgid "Change iSCSI initiator name"
 msgstr "Změnit název iSCSI iniciátoru"
 
-#: pkg/storaged/crypto-keyslots.jsx:335
+#: pkg/storaged/crypto-keyslots.jsx:530
 msgid "Change passphrase"
 msgstr "Změnit heslovou frázi"
 
@@ -1518,6 +1536,16 @@ msgstr "Ověřuje se RAID zařízení $target"
 msgid "Checking and repairing RAID device $target"
 msgstr "Kontroluje a opravuje se RAID zařízení $target"
 
+#: pkg/storaged/crypto-keyslots.jsx:289
+#, fuzzy
+#| msgid "Checking for package updates..."
+msgid "Checking for $0 package"
+msgstr "Zjišťování aktualizací balíčků…"
+
+#: pkg/storaged/crypto-keyslots.jsx:310
+msgid "Checking for NBDE support in the initrd"
+msgstr ""
+
 #: pkg/apps/application-list.jsx:123
 msgid "Checking for new applications"
 msgstr "Hledají se nové aplikace"
@@ -1573,7 +1601,7 @@ msgstr "Vyčistit vyhledávání"
 msgid "Cleartext device"
 msgstr "Znakové zařízení"
 
-#: pkg/systemd/overview-cards/realmd.jsx:289
+#: pkg/systemd/overview-cards/realmd.jsx:290
 msgid "Client software"
 msgstr "Klientský software"
 
@@ -1581,7 +1609,7 @@ msgstr "Klientský software"
 # po/ipa
 #: pkg/users/dialog-utils.js:58
 #: pkg/systemd/overview-cards/configurationCard.jsx:194
-#: pkg/systemd/overview-cards/realmd.jsx:263 pkg/apps/utils.jsx:84
+#: pkg/systemd/overview-cards/realmd.jsx:264 pkg/apps/utils.jsx:84
 #: pkg/networkmanager/interfaces.js:43 pkg/storaged/dialog.jsx:438
 #: pkg/lib/cockpit-components-modifications.jsx:78
 #: pkg/lib/cockpit-components-terminal.jsx:208 pkg/shell/credentials.jsx:84
@@ -1602,7 +1630,7 @@ msgstr "Cockpit"
 msgid "Cockpit authentication is configured incorrectly."
 msgstr "Cockpit ověřování není nastaveno správně."
 
-#: pkg/lib/cockpit.js:3991
+#: pkg/lib/cockpit.js:3979
 msgid "Cockpit could not contact the given host."
 msgstr "Cockpit se nepodařilo daný stroj kontaktovat."
 
@@ -1628,7 +1656,7 @@ msgstr ""
 msgid "Cockpit is an interactive Linux server admin interface."
 msgstr "Cockpit je interaktivní rozhraní pro správu linuxového serveru."
 
-#: pkg/lib/cockpit.js:3989
+#: pkg/lib/cockpit.js:3977
 msgid "Cockpit is not compatible with the software on the system."
 msgstr "Cockpit není kompatibilní se softwarem v systému."
 
@@ -1636,7 +1664,7 @@ msgstr "Cockpit není kompatibilní se softwarem v systému."
 msgid "Cockpit is not installed"
 msgstr "Cockpit není nainstalován"
 
-#: pkg/lib/cockpit.js:3983
+#: pkg/lib/cockpit.js:3971
 msgid "Cockpit is not installed on the system."
 msgstr "Cockpit není v systému nainstalován."
 
@@ -1784,7 +1812,7 @@ msgstr "Potvrzení hesla"
 msgid "Confirm removal of $0"
 msgstr "Potvrdit odebrání $0"
 
-#: pkg/storaged/crypto-keyslots.jsx:442
+#: pkg/storaged/crypto-keyslots.jsx:659
 msgid "Confirm removal with an alternate passphrase"
 msgstr "Potvrdit odebrání pomocí alternativní heslové fráze"
 
@@ -1836,7 +1864,7 @@ msgstr "Chyba připojení"
 msgid "Connection failed"
 msgstr "Připojení se nezdařilo"
 
-#: pkg/lib/cockpit.js:3981
+#: pkg/lib/cockpit.js:3969
 msgid "Connection has timed out."
 msgstr "Překročen časový limit připojení."
 
@@ -1848,7 +1876,7 @@ msgstr "Spojení bude ztraceno"
 msgid "Consists of"
 msgstr "Sestává se z"
 
-#: pkg/systemd/overview-cards/realmd.jsx:311
+#: pkg/systemd/overview-cards/realmd.jsx:312
 msgid "Contacted domain"
 msgstr "Připojená doména"
 
@@ -1896,7 +1924,7 @@ msgstr "Zkopírováno"
 msgid "Copy"
 msgstr "Zkopírovat"
 
-#: pkg/systemd/logs.jsx:416 pkg/storaged/crypto-keyslots.jsx:399
+#: pkg/systemd/logs.jsx:416 pkg/storaged/crypto-keyslots.jsx:602
 #: pkg/lib/cockpit-components-modifications.jsx:75
 msgid "Copy to clipboard"
 msgstr "Zkopírovat do schránky"
@@ -2363,7 +2391,7 @@ msgstr "Odpojitelné"
 
 # auto translated by TM merge from project: blivet-gui, version: master,
 # DocId: po/blivet-gui
-#: pkg/packagekit/updates.jsx:444 pkg/systemd/overview-cards/realmd.jsx:401
+#: pkg/packagekit/updates.jsx:444 pkg/systemd/overview-cards/realmd.jsx:402
 #: pkg/shell/credentials.jsx:112
 msgid "Details"
 msgstr "Podrobnosti"
@@ -2479,7 +2507,7 @@ msgstr "Disk je OK"
 msgid "Disk is failing"
 msgstr "$0 disk chybí"
 
-#: pkg/storaged/crypto-keyslots.jsx:197
+#: pkg/storaged/crypto-keyslots.jsx:200
 msgid "Disk passphrase"
 msgstr "Heslová fráze k disku"
 
@@ -2527,36 +2555,36 @@ msgid "Does not automatically start"
 msgstr "Nespouštět automaticky"
 
 #: pkg/systemd/overview-cards/configurationCard.jsx:76
-#: pkg/systemd/overview-cards/realmd.jsx:269
+#: pkg/systemd/overview-cards/realmd.jsx:270
 msgid "Domain"
 msgstr "Doména"
 
-#: pkg/systemd/overview-cards/realmd.jsx:266
+#: pkg/systemd/overview-cards/realmd.jsx:267
 #, fuzzy
 #| msgid "Domain"
 msgctxt "dialog-title"
 msgid "Domain"
 msgstr "Doména"
 
-#: pkg/systemd/overview-cards/realmd.jsx:425
+#: pkg/systemd/overview-cards/realmd.jsx:426
 msgid "Domain address"
 msgstr "Adresa domény"
 
-#: pkg/systemd/overview-cards/realmd.jsx:433
+#: pkg/systemd/overview-cards/realmd.jsx:434
 msgid "Domain administrator name"
 msgstr "Uživatelské jméno správce domény"
 
-#: pkg/systemd/overview-cards/realmd.jsx:436
+#: pkg/systemd/overview-cards/realmd.jsx:437
 msgid "Domain administrator password"
 msgstr "Heslo správce domény"
 
-#: pkg/systemd/overview-cards/realmd.jsx:312
+#: pkg/systemd/overview-cards/realmd.jsx:313
 #, fuzzy
 #| msgid "Domain $0 could not be contacted"
 msgid "Domain could not be contacted"
 msgstr "Doménu $0 se nedaří kontaktovat"
 
-#: pkg/systemd/overview-cards/realmd.jsx:313
+#: pkg/systemd/overview-cards/realmd.jsx:314
 #, fuzzy
 #| msgid "Domain $0 is not supported"
 msgid "Domain is not supported"
@@ -2586,6 +2614,7 @@ msgstr "Staženo"
 msgid "Downloading"
 msgstr "Stahuje se"
 
+#: pkg/storaged/crypto-keyslots.jsx:278
 #: pkg/lib/cockpit-components-install-dialog.jsx:187
 msgid "Downloading $0"
 msgstr "Stahuje se $0"
@@ -2608,7 +2637,7 @@ msgstr "Dual rank"
 # po/ipa
 #: pkg/packagekit/kpatch.jsx:230 pkg/packagekit/autoupdates.jsx:407
 #: pkg/networkmanager/firewall.jsx:116 pkg/storaged/iscsi-panel.jsx:255
-#: pkg/storaged/nfs-details.jsx:305 pkg/storaged/crypto-keyslots.jsx:577
+#: pkg/storaged/nfs-details.jsx:305 pkg/storaged/crypto-keyslots.jsx:794
 #: pkg/shell/hosts.jsx:165 pkg/shell/indexes.jsx:352
 msgid "Edit"
 msgstr "Upravit"
@@ -2619,7 +2648,7 @@ msgstr "Upravit"
 msgid "Edit /etc/motd"
 msgstr "Upravit soubor /etc/motd"
 
-#: pkg/storaged/crypto-keyslots.jsx:356
+#: pkg/storaged/crypto-keyslots.jsx:551
 msgid "Edit Tang keyserver"
 msgstr "Upravit Tang server s klíči"
 
@@ -2667,7 +2696,7 @@ msgstr "Upravit server"
 msgid "Edit user"
 msgstr "Upravit server"
 
-#: pkg/storaged/crypto-keyslots.jsx:579
+#: pkg/storaged/crypto-keyslots.jsx:796
 msgid "Editing a key requires a free slot"
 msgstr "K upravení klíče je zapotřebí volného slotu"
 
@@ -2718,6 +2747,12 @@ msgstr "Zapnout bránu firewall"
 #: pkg/networkmanager/firewall-switch.jsx:78
 msgid "Enabled"
 msgstr "Povoleno"
+
+#: pkg/storaged/crypto-keyslots.jsx:378
+#, fuzzy
+#| msgid "Installing $0"
+msgid "Enabling $0"
+msgstr "Instaluje se $0"
 
 #: pkg/storaged/stratis-panel.jsx:138
 msgid "Encrypt data"
@@ -3093,6 +3128,10 @@ msgctxt "storage"
 msgid "Firmware version"
 msgstr "Verze firmware"
 
+#: pkg/storaged/crypto-keyslots.jsx:435
+msgid "Fix NBDE support"
+msgstr ""
+
 #: pkg/systemd/terminal.jsx:129 pkg/systemd/terminal.jsx:139
 msgid "Font size"
 msgstr "Velikost písmen"
@@ -3295,7 +3334,7 @@ msgstr "Počet historie balíčku"
 msgid "Host"
 msgstr "Počítač"
 
-#: pkg/lib/cockpit.js:3977
+#: pkg/lib/cockpit.js:3965
 msgid "Host key is incorrect"
 msgstr "Klíč stroje není správný"
 
@@ -3559,11 +3598,12 @@ msgstr "Nainstalováno"
 msgid "Installing"
 msgstr "Instaluje se"
 
+#: pkg/storaged/crypto-keyslots.jsx:282
 #: pkg/lib/cockpit-components-install-dialog.jsx:191
 msgid "Installing $0"
 msgstr "Instaluje se $0"
 
-#: pkg/storaged/content-views.jsx:837
+#: pkg/storaged/content-views.jsx:837 pkg/storaged/crypto-keyslots.jsx:298
 msgid "Installing $0 would remove $1."
 msgstr "Instalace $0 by odebrala $1."
 
@@ -3603,7 +3643,7 @@ msgstr "Rozhraní"
 
 # auto translated by TM merge from project: Pulseaudio, version: 6.0, DocId:
 # pulseaudio.pot
-#: pkg/lib/cockpit.js:3979
+#: pkg/lib/cockpit.js:3967
 msgid "Internal error"
 msgstr "Vnitřní chyba"
 
@@ -3690,13 +3730,13 @@ msgstr "Úlohy"
 
 # auto translated by TM merge from project: Fedora Websites, version:
 # alt.fedoraproject.org, DocId: po/alt.fedoraproject.org
-#: pkg/systemd/overview-cards/realmd.jsx:417
+#: pkg/systemd/overview-cards/realmd.jsx:418
 msgid "Join"
 msgstr "Spojit"
 
 # auto translated by TM merge from project: Cockpit, version: rhel-7.4, DocId:
 # cockpit
-#: pkg/systemd/overview-cards/realmd.jsx:423
+#: pkg/systemd/overview-cards/realmd.jsx:424
 #, fuzzy
 #| msgid "Join a domain"
 msgctxt "dialog-title"
@@ -3705,14 +3745,14 @@ msgstr "Připojit se k doméně"
 
 # auto translated by TM merge from project: authconfig, version: master,
 # DocId: po/authconfig
-#: pkg/systemd/overview-cards/realmd.jsx:449
-#: pkg/systemd/overview-cards/realmd.jsx:471
+#: pkg/systemd/overview-cards/realmd.jsx:450
+#: pkg/systemd/overview-cards/realmd.jsx:472
 msgid "Join domain"
 msgstr "Připojit se k doméně"
 
 # auto translated by TM merge from project: Fedora Websites, version:
 # alt.fedoraproject.org, DocId: po/alt.fedoraproject.org
-#: pkg/systemd/overview-cards/realmd.jsx:416
+#: pkg/systemd/overview-cards/realmd.jsx:417
 #, fuzzy
 #| msgid "Join"
 msgid "Joining"
@@ -3795,27 +3835,27 @@ msgstr "Záplatování jádra systému"
 msgid "Key password"
 msgstr "Heslo ke klíči"
 
-#: pkg/storaged/crypto-keyslots.jsx:611
+#: pkg/storaged/crypto-keyslots.jsx:828
 msgid "Key slots with unknown types can not be edited here"
 msgstr "Sloty klíčů s neznámým typem zde není možné upravovat"
 
-#: pkg/storaged/crypto-keyslots.jsx:282
+#: pkg/storaged/crypto-keyslots.jsx:476
 msgid "Key source"
 msgstr "Zdroj klíče"
 
-#: pkg/storaged/crypto-keyslots.jsx:634 pkg/storaged/crypto-keyslots.jsx:637
+#: pkg/storaged/crypto-keyslots.jsx:851 pkg/storaged/crypto-keyslots.jsx:854
 msgid "Keys"
 msgstr "Klíče"
 
-#: pkg/storaged/crypto-keyslots.jsx:605
+#: pkg/storaged/crypto-keyslots.jsx:822
 msgid "Keyserver"
 msgstr "Server s klíči"
 
-#: pkg/storaged/crypto-keyslots.jsx:307 pkg/storaged/crypto-keyslots.jsx:358
+#: pkg/storaged/crypto-keyslots.jsx:501 pkg/storaged/crypto-keyslots.jsx:553
 msgid "Keyserver address"
 msgstr "Adresa serveru s klíči"
 
-#: pkg/storaged/crypto-keyslots.jsx:489
+#: pkg/storaged/crypto-keyslots.jsx:706
 msgid "Keyserver removal may prevent unlocking $0."
 msgstr "Odebrání serveru s klíči může zabránit odemčení $0."
 
@@ -3887,15 +3927,15 @@ msgstr "Poslední nezdařené přihlášení:"
 msgid "Learn more"
 msgstr "Další informace naleznete"
 
-#: pkg/systemd/overview-cards/realmd.jsx:299
+#: pkg/systemd/overview-cards/realmd.jsx:300
 #, fuzzy
 #| msgid "Remove $0"
 msgid "Leave $0"
 msgstr "Odebrat $0"
 
-#: pkg/systemd/overview-cards/realmd.jsx:296
-#: pkg/systemd/overview-cards/realmd.jsx:299
-#: pkg/systemd/overview-cards/realmd.jsx:301
+#: pkg/systemd/overview-cards/realmd.jsx:297
+#: pkg/systemd/overview-cards/realmd.jsx:300
+#: pkg/systemd/overview-cards/realmd.jsx:302
 msgid "Leave domain"
 msgstr "Opustit doménu"
 
@@ -4186,11 +4226,11 @@ msgstr "přihlášení"
 msgid "Login again"
 msgstr "Znovu přihlásit"
 
-#: pkg/lib/cockpit.js:3969
+#: pkg/lib/cockpit.js:3957
 msgid "Login failed"
 msgstr "Přihlášení se nezdařilo"
 
-#: pkg/systemd/overview-cards/realmd.jsx:275
+#: pkg/systemd/overview-cards/realmd.jsx:276
 msgid "Login format"
 msgstr "Formát přihlašování"
 
@@ -4262,7 +4302,7 @@ msgstr "Hlavní skříň serveru"
 msgid "Maintenance"
 msgstr "Údržba"
 
-#: pkg/storaged/crypto-keyslots.jsx:389
+#: pkg/storaged/crypto-keyslots.jsx:592
 msgid ""
 "Make sure the key hash from the Tang server matches one of the following:"
 msgstr ""
@@ -4344,7 +4384,7 @@ msgstr "Ruční"
 msgid "Manually"
 msgstr "Ručně"
 
-#: pkg/storaged/crypto-keyslots.jsx:398
+#: pkg/storaged/crypto-keyslots.jsx:601
 msgid "Manually check with SSH: "
 msgstr "Zkontrolovat ručně s SSH: "
 
@@ -4755,7 +4795,7 @@ msgstr "Nový hostitel"
 msgid "New key password"
 msgstr "Nové heslo ke klíči"
 
-#: pkg/storaged/crypto-keyslots.jsx:293 pkg/storaged/crypto-keyslots.jsx:340
+#: pkg/storaged/crypto-keyslots.jsx:487 pkg/storaged/crypto-keyslots.jsx:535
 msgid "New passphrase"
 msgstr "Nová heslová fráze"
 
@@ -4789,7 +4829,7 @@ msgstr "Žádné výstrahy SELinux."
 msgid "No applications installed or available."
 msgstr "Nejsou nainstalované ani dostupné žádné aplikace."
 
-#: pkg/storaged/crypto-keyslots.jsx:624
+#: pkg/storaged/crypto-keyslots.jsx:841
 msgid "No available slots"
 msgstr "Nejsou k dispozici žádné sloty"
 
@@ -4855,7 +4895,7 @@ msgstr "Žádný souborový systém"
 msgid "No filesystems"
 msgstr "Žádný souborový systém"
 
-#: pkg/storaged/crypto-keyslots.jsx:629
+#: pkg/storaged/crypto-keyslots.jsx:846
 msgid "No free key slots"
 msgstr "Žádné volné sloty klíčů"
 
@@ -4877,7 +4917,7 @@ msgstr "Nejsou nastavené žádné iSCSI cíle"
 msgid "No installation package found for this application."
 msgstr "Pro tuto aplikaci nebyl nalezen žádný instalační balíček."
 
-#: pkg/storaged/crypto-keyslots.jsx:554
+#: pkg/storaged/crypto-keyslots.jsx:771
 msgid "No keys added"
 msgstr "Nepřidány žádné klíče"
 
@@ -5011,13 +5051,13 @@ msgstr "Nenainstalováno"
 msgid "Not mounted"
 msgstr "Nepřipojeno"
 
-#: pkg/systemd/overview-cards/realmd.jsx:448
+#: pkg/systemd/overview-cards/realmd.jsx:449
 #, fuzzy
 #| msgid "The user $0 is not permitted to modify realms"
 msgid "Not permitted to configure realms"
 msgstr "Uživatel $0 nemá oprávnění měnit název stroje"
 
-#: pkg/lib/cockpit.js:3967
+#: pkg/lib/cockpit.js:3955
 msgid "Not permitted to perform this action."
 msgstr "Neoprávněni k provedení této akce."
 
@@ -5084,7 +5124,7 @@ msgstr "Výskyty"
 msgid "Ok"
 msgstr "Ok"
 
-#: pkg/storaged/crypto-keyslots.jsx:337
+#: pkg/storaged/crypto-keyslots.jsx:532
 msgid "Old passphrase"
 msgstr "Původní heslová fráze"
 
@@ -5307,33 +5347,33 @@ msgstr "Pasivní"
 #: pkg/storaged/fsys-tab.jsx:346 pkg/storaged/stratis-panel.jsx:141
 #: pkg/storaged/format-dialog.jsx:266 pkg/storaged/format-dialog.jsx:292
 #: pkg/storaged/stratis-details.jsx:132 pkg/storaged/stratis-details.jsx:703
-#: pkg/storaged/content-views.jsx:269 pkg/storaged/crypto-keyslots.jsx:288
-#: pkg/storaged/crypto-keyslots.jsx:600
+#: pkg/storaged/content-views.jsx:269 pkg/storaged/crypto-keyslots.jsx:482
+#: pkg/storaged/crypto-keyslots.jsx:817
 msgid "Passphrase"
 msgstr "Heslo"
 
-#: pkg/storaged/crypto-keyslots.jsx:425
+#: pkg/storaged/crypto-keyslots.jsx:642
 msgid "Passphrase can not be empty"
 msgstr "Heslovou frázi je třeba vyplnit"
 
 #: pkg/storaged/fsys-tab.jsx:349 pkg/storaged/stratis-panel.jsx:145
 #: pkg/storaged/format-dialog.jsx:270 pkg/storaged/format-dialog.jsx:296
-#: pkg/storaged/stratis-details.jsx:135 pkg/storaged/crypto-keyslots.jsx:200
-#: pkg/storaged/crypto-keyslots.jsx:296 pkg/storaged/crypto-keyslots.jsx:338
-#: pkg/storaged/crypto-keyslots.jsx:341
+#: pkg/storaged/stratis-details.jsx:135 pkg/storaged/crypto-keyslots.jsx:203
+#: pkg/storaged/crypto-keyslots.jsx:490 pkg/storaged/crypto-keyslots.jsx:533
+#: pkg/storaged/crypto-keyslots.jsx:536
 msgid "Passphrase cannot be empty"
 msgstr "Heslovou frázi je třeba vyplnit"
 
-#: pkg/storaged/crypto-keyslots.jsx:448
+#: pkg/storaged/crypto-keyslots.jsx:665
 msgid "Passphrase from any other key slot"
 msgstr "Heslová fráze z libovolného jiného slotu s klíčem"
 
-#: pkg/storaged/crypto-keyslots.jsx:438
+#: pkg/storaged/crypto-keyslots.jsx:655
 msgid "Passphrase removal may prevent unlocking $0."
 msgstr "Odebrání heslové fráze může bránit odemknutí $0."
 
 #: pkg/storaged/stratis-panel.jsx:153 pkg/storaged/format-dialog.jsx:278
-#: pkg/storaged/crypto-keyslots.jsx:304 pkg/storaged/crypto-keyslots.jsx:343
+#: pkg/storaged/crypto-keyslots.jsx:498 pkg/storaged/crypto-keyslots.jsx:538
 msgid "Passphrases do not match"
 msgstr "Zadání heslové fráze se neshodují"
 
@@ -5930,6 +5970,12 @@ msgstr "Odmítá se připojit. Klíč stroje neodpovídá"
 msgid "Refusing to connect. Hostkey is unknown"
 msgstr "Odmítá se připojit. Klíč stroje není znám"
 
+#: pkg/storaged/crypto-keyslots.jsx:320
+#, fuzzy
+#| msgid "Generating report"
+msgid "Regenerating initrd"
+msgstr "Vytváření výkazu"
+
 #: pkg/packagekit/updates.jsx:1360
 msgid "Register…"
 msgstr "Zaregistrovat…"
@@ -6003,8 +6049,8 @@ msgstr "Odebrání:"
 #: pkg/users/authorized-keys-panel.js:172
 #: pkg/systemd/services/timer-dialog.jsx:369 pkg/apps/application.jsx:51
 #: pkg/storaged/vgroup-details.jsx:121 pkg/storaged/mdraid-details.jsx:145
-#: pkg/storaged/nfs-details.jsx:307 pkg/storaged/crypto-keyslots.jsx:469
-#: pkg/storaged/crypto-keyslots.jsx:504 pkg/storaged/crypto-keyslots.jsx:585
+#: pkg/storaged/nfs-details.jsx:307 pkg/storaged/crypto-keyslots.jsx:686
+#: pkg/storaged/crypto-keyslots.jsx:721 pkg/storaged/crypto-keyslots.jsx:802
 #: pkg/shell/hosts.jsx:168
 msgid "Remove"
 msgstr "Odebrat"
@@ -6017,11 +6063,11 @@ msgstr "Odebrat $0"
 msgid "Remove $0 service from $1 zone"
 msgstr "Odebrat službu $0 ze zóny $1"
 
-#: pkg/storaged/crypto-keyslots.jsx:488
+#: pkg/storaged/crypto-keyslots.jsx:705
 msgid "Remove $0?"
 msgstr "Odebrat $0?"
 
-#: pkg/storaged/crypto-keyslots.jsx:498
+#: pkg/storaged/crypto-keyslots.jsx:715
 msgid "Remove Tang keyserver?"
 msgstr "Odebrat Tang server s klíči?"
 
@@ -6044,7 +6090,7 @@ msgstr "Odebrat zařízení"
 msgid "Remove item"
 msgstr "Odebrat zařízení"
 
-#: pkg/storaged/crypto-keyslots.jsx:462
+#: pkg/storaged/crypto-keyslots.jsx:679
 msgid "Remove passphrase in key slot $0?"
 msgstr "Odebrat heslovou frázi v slotu na klíč $0?"
 
@@ -6061,6 +6107,7 @@ msgstr "Odebrat zónu $0"
 msgid "Removing"
 msgstr "Odebírá se"
 
+#: pkg/storaged/crypto-keyslots.jsx:280
 #: pkg/lib/cockpit-components-install-dialog.jsx:189
 msgid "Removing $0"
 msgstr "Odebírá se $0"
@@ -6081,7 +6128,7 @@ msgstr ""
 msgid "Removing $target from RAID device"
 msgstr "Odebírání $target z RAID zařízení"
 
-#: pkg/storaged/crypto-keyslots.jsx:446
+#: pkg/storaged/crypto-keyslots.jsx:663
 msgid ""
 "Removing a passphrase without confirmation of another passphrase may prevent "
 "unlocking or key management, if other passphrases are forgotten or lost."
@@ -6154,8 +6201,8 @@ msgstr "Opakovat"
 msgid "Repeat monthly"
 msgstr "Opakovat každý měsíc"
 
-#: pkg/storaged/crypto-keyslots.jsx:286 pkg/storaged/crypto-keyslots.jsx:298
-#: pkg/storaged/crypto-keyslots.jsx:342
+#: pkg/storaged/crypto-keyslots.jsx:480 pkg/storaged/crypto-keyslots.jsx:492
+#: pkg/storaged/crypto-keyslots.jsx:537
 msgid "Repeat passphrase"
 msgstr "Zopakovat heslovou frázi"
 
@@ -6385,11 +6432,11 @@ msgstr "Systémový stav SELinux není znám."
 msgid "SELinux troubleshoot"
 msgstr "Řešení problémů s SELinux"
 
-#: pkg/storaged/crypto-keyslots.jsx:394
+#: pkg/storaged/crypto-keyslots.jsx:597
 msgid "SHA1"
 msgstr "SHA1"
 
-#: pkg/storaged/crypto-keyslots.jsx:391
+#: pkg/storaged/crypto-keyslots.jsx:594
 msgid "SHA256"
 msgstr "SHA256"
 
@@ -6444,8 +6491,8 @@ msgstr "Soboty"
 #: pkg/networkmanager/dialogs-common.jsx:152 pkg/metrics/metrics.jsx:1274
 #: pkg/storaged/fsys-tab.jsx:374 pkg/storaged/fsys-tab.jsx:490
 #: pkg/storaged/crypto-tab.jsx:161 pkg/storaged/crypto-tab.jsx:205
-#: pkg/storaged/nfs-details.jsx:186 pkg/storaged/crypto-keyslots.jsx:346
-#: pkg/storaged/crypto-keyslots.jsx:365 pkg/kdump/kdump-view.jsx:324
+#: pkg/storaged/nfs-details.jsx:186 pkg/storaged/crypto-keyslots.jsx:541
+#: pkg/storaged/crypto-keyslots.jsx:560 pkg/kdump/kdump-view.jsx:324
 msgid "Save"
 msgstr "Uložit"
 
@@ -6466,8 +6513,8 @@ msgstr "Šetřit prostorem komprimováním jednotlivých bloků pomocí LZ4"
 msgid "Save space by storing identical data blocks just once"
 msgstr "Šetřit prostorem tím, že stejné bloky dat budou ukládány pouze jednou"
 
-#: pkg/storaged/crypto-keyslots.jsx:312 pkg/storaged/crypto-keyslots.jsx:363
-#: pkg/storaged/crypto-keyslots.jsx:408
+#: pkg/storaged/crypto-keyslots.jsx:433 pkg/storaged/crypto-keyslots.jsx:506
+#: pkg/storaged/crypto-keyslots.jsx:558 pkg/storaged/crypto-keyslots.jsx:611
 msgid ""
 "Saving a new passphrase requires unlocking the disk. Please provide a "
 "current disk passphrase."
@@ -6582,11 +6629,11 @@ msgstr "Adresu serveru je třeba vyplnit."
 msgid "Server cannot be empty."
 msgstr "Server je třeba vyplnit."
 
-#: pkg/lib/cockpit.js:3987
+#: pkg/lib/cockpit.js:3975
 msgid "Server has closed the connection."
 msgstr "Server zavřel spojení."
 
-#: pkg/systemd/overview-cards/realmd.jsx:283
+#: pkg/systemd/overview-cards/realmd.jsx:284
 msgid "Server software"
 msgstr "Serverový software"
 
@@ -6839,7 +6886,7 @@ msgstr "Přeskočit na obsah"
 msgid "Slot"
 msgstr "Slot"
 
-#: pkg/storaged/mdraid-details.jsx:123 pkg/storaged/crypto-keyslots.jsx:573
+#: pkg/storaged/mdraid-details.jsx:123 pkg/storaged/crypto-keyslots.jsx:790
 msgid "Slot $0"
 msgstr "Slot $0"
 
@@ -7114,7 +7161,7 @@ msgstr ""
 msgid "Successfully copied to clipboard"
 msgstr "Úspěšně zkopírováno do schránky!"
 
-#: pkg/storaged/crypto-keyslots.jsx:400
+#: pkg/storaged/crypto-keyslots.jsx:603
 msgid "Successfully copied to clipboard!"
 msgstr "Úspěšně zkopírováno do schránky!"
 
@@ -7250,7 +7297,7 @@ msgstr "TCP"
 msgid "Tablet"
 msgstr "Tablet"
 
-#: pkg/storaged/crypto-keyslots.jsx:289
+#: pkg/storaged/crypto-keyslots.jsx:483
 msgid "Tang keyserver"
 msgstr "Tang server s klíči"
 
@@ -7302,10 +7349,22 @@ msgstr "Vyzkoušet nastavení kdump"
 msgid "Testing connection"
 msgstr "Zkouška spojení"
 
+#: pkg/storaged/crypto-keyslots.jsx:300
+#, fuzzy
+#| msgid "$0 is not available from any repository."
+msgid "The $0 package is not available from any repository."
+msgstr "$0 není k dispozici z žádného z repozitářů."
+
 #: pkg/storaged/stratis-panel.jsx:45
 #, fuzzy
 #| msgid "The $0 package must be installed to create VDO devices."
 msgid "The $0 package must be installed to create Stratis pools."
+msgstr "Pro vytváření VDO zařízení je třeba, aby byl nainstalovaný balíček $0."
+
+#: pkg/storaged/crypto-keyslots.jsx:295
+#, fuzzy
+#| msgid "The $0 package must be installed to create VDO devices."
+msgid "The $0 package must be installed."
 msgstr "Pro vytváření VDO zařízení je třeba, aby byl nainstalovaný balíček $0."
 
 #: pkg/storaged/content-views.jsx:896
@@ -7402,7 +7461,7 @@ msgid ""
 "The creation of this VDO device did not finish and the device can't be used."
 msgstr "Vytváření tohoto VDO zařízení není dokončeno a proto ho nelze použít."
 
-#: pkg/storaged/crypto-keyslots.jsx:550
+#: pkg/storaged/crypto-keyslots.jsx:767
 msgid ""
 "The currently logged in user is not permitted to see information about keys."
 msgstr "Stávající uživatel není oprávněn zobrazovat informace o klíčích."
@@ -7490,6 +7549,10 @@ msgstr[2] "Je třeba restartovat následující služby:"
 msgid "The full name must not contain colons."
 msgstr ""
 
+#: pkg/storaged/crypto-keyslots.jsx:317
+msgid "The initrd must be regenerated."
+msgstr ""
+
 #: pkg/shell/hosts_dialog.jsx:682
 msgid "The key password can not be empty"
 msgstr "Heslo ke klíči je třeba vyplnit"
@@ -7506,7 +7569,7 @@ msgstr "Zadaný klíč není platný."
 msgid "The last disk of a RAID device cannot be removed."
 msgstr "Poslední zbývající disk RAID zařízení není možné odebrat."
 
-#: pkg/storaged/crypto-keyslots.jsx:586
+#: pkg/storaged/crypto-keyslots.jsx:803
 msgid "The last key slot can not be removed"
 msgstr "Poslední zbývající slot klíče není možné odebrat"
 
@@ -7575,9 +7638,21 @@ msgstr ""
 "Server odmítl ověřit „$0“ pomocí ověření heslem a nejsou k dispozici žádné "
 "další metody ověření."
 
-#: pkg/lib/cockpit.js:3971
+#: pkg/lib/cockpit.js:3959
 msgid "The server refused to authenticate using any supported methods."
 msgstr "Server odmítl ověřit u všech podporovaných metod."
+
+#: pkg/storaged/crypto-keyslots.jsx:423
+msgid ""
+"The system does not currently support unlocking a filesystem with a Tang "
+"keyserver during boot."
+msgstr ""
+
+#: pkg/storaged/crypto-keyslots.jsx:422
+msgid ""
+"The system does not currently support unlocking the root filesystem with a "
+"Tang keyserver."
+msgstr ""
 
 #: pkg/systemd/hwinfo.jsx:72
 msgid "The user $0 is not permitted to change cpu security mitigations"
@@ -7644,6 +7719,10 @@ msgstr ""
 msgid "There was an unexpected error while connecting to the machine."
 msgstr "Při připojování ke stroji došlo k neočekávané chybě."
 
+#: pkg/storaged/crypto-keyslots.jsx:427
+msgid "These additional steps are necessary:"
+msgstr ""
+
 #: pkg/storaged/dialog.jsx:1124
 msgid "These changes will be made:"
 msgstr "Budou učiněny tyto změny:"
@@ -7703,7 +7782,7 @@ msgstr ""
 msgid "This machine has already been added."
 msgstr "Tento stroj už byl přidán."
 
-#: pkg/systemd/overview-cards/realmd.jsx:420
+#: pkg/systemd/overview-cards/realmd.jsx:421
 msgid "This may take a while"
 msgstr "Toto může chvíli trvat"
 
@@ -7884,7 +7963,7 @@ msgstr "Přepnout volič datumů"
 msgid "Toggle filters"
 msgstr "Přepnout filtry"
 
-#: pkg/lib/cockpit.js:3993
+#: pkg/lib/cockpit.js:3981
 msgid "Too much data"
 msgstr "Příliš mnoho dat"
 
@@ -7943,7 +8022,7 @@ msgstr "Řešit potíže"
 msgid "Troubleshoot…"
 msgstr "Řešit potíže…"
 
-#: pkg/storaged/crypto-keyslots.jsx:410
+#: pkg/storaged/crypto-keyslots.jsx:613
 msgid "Trust key"
 msgstr "Důvěryhodný klíč"
 
@@ -8186,7 +8265,7 @@ msgstr "Neznámý název stroje"
 msgid "Unknown service name"
 msgstr "Neznámý název služby"
 
-#: pkg/storaged/crypto-keyslots.jsx:610
+#: pkg/storaged/crypto-keyslots.jsx:827
 msgid "Unknown type"
 msgstr "Neznámý typ"
 
@@ -8221,7 +8300,7 @@ msgstr "Pokud chcete vidět souborové systémy, odemkněte fond."
 msgid "Unlocking $target"
 msgstr "Odemyká se $target"
 
-#: pkg/storaged/crypto-keyslots.jsx:243
+#: pkg/storaged/crypto-keyslots.jsx:246
 msgid "Unlocking disk"
 msgstr "Odemykání disku"
 
@@ -8282,7 +8361,7 @@ msgstr "Nepodporovaný svazek"
 msgid "Until"
 msgstr "Dokud"
 
-#: pkg/lib/cockpit.js:3973 pkg/lib/cockpit.js:3975
+#: pkg/lib/cockpit.js:3961 pkg/lib/cockpit.js:3963
 msgid "Untrusted host"
 msgstr "Nedůvěryhodný stroj"
 
@@ -8492,7 +8571,7 @@ msgstr "Identif. VLAN"
 msgid "VLAN settings"
 msgstr "Nastavení VLAN"
 
-#: pkg/systemd/overview-cards/realmd.jsx:310
+#: pkg/systemd/overview-cards/realmd.jsx:311
 msgid "Validating address"
 msgstr "Ověřuje se adresa"
 
@@ -8514,7 +8593,7 @@ msgstr "Výrobce"
 msgid "Verified"
 msgstr "Ověřeno"
 
-#: pkg/storaged/crypto-keyslots.jsx:386
+#: pkg/storaged/crypto-keyslots.jsx:589
 msgid "Verify key"
 msgstr "Ověřit klíč"
 
@@ -8646,6 +8725,7 @@ msgstr "Čeká se na vstup…"
 msgid "Waiting for other programs to finish using the package manager..."
 msgstr "Čeká se až ostatní programy dokončí použití správy balíčků…"
 
+#: pkg/storaged/crypto-keyslots.jsx:274
 #: pkg/lib/cockpit-components-install-dialog.jsx:148
 #: pkg/lib/cockpit-components-install-dialog.jsx:183
 msgid "Waiting for other software management operations to finish"
@@ -8827,11 +8907,11 @@ msgstr ""
 "Server brzy zavře spojení. Po dokončení jeho restartu se budete moci opět "
 "připojit."
 
-#: pkg/lib/cockpit.js:3963
+#: pkg/lib/cockpit.js:3951
 msgid "Your session has been terminated."
 msgstr "Vaše sezení bylo ukončeno."
 
-#: pkg/lib/cockpit.js:3965
+#: pkg/lib/cockpit.js:3953
 msgid "Your session has expired. Please log in again."
 msgstr "Platnost vašeho sezení skončila. Přihlaste se znovu."
 
@@ -9729,9 +9809,6 @@ msgstr "zóna"
 
 #~ msgid "Download report"
 #~ msgstr "Stáhnout si výkaz"
-
-#~ msgid "Generating report"
-#~ msgstr "Vytváření výkazu"
 
 #~ msgid "No archive has been created."
 #~ msgstr "Nebyl vytvořen žádný archiv."

@@ -23,7 +23,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-13 03:00+0000\n"
+"POT-Creation-Date: 2023-01-16 02:53+0000\n"
 "PO-Revision-Date: 2023-01-10 19:20+0000\n"
 "Last-Translator: Miguel Ángel Sánchez <maletils@gmail.com>\n"
 "Language-Team: Spanish <https://translate.fedoraproject.org/projects/cockpit/"
@@ -268,7 +268,7 @@ msgid_plural "$0 services need to be restarted"
 msgstr[0] "$0 servicio necesita reiniciarse"
 msgstr[1] "$0 servicios necesitan reiniciarse"
 
-#: pkg/storaged/crypto-keyslots.jsx:624
+#: pkg/storaged/crypto-keyslots.jsx:841
 msgid "$0 slot remains"
 msgid_plural "$0 slots remain"
 msgstr[0] "$0 hueco disponible"
@@ -706,8 +706,8 @@ msgstr "Transmisión adaptativo para el balanceo de carga"
 #: pkg/storaged/mdraid-details.jsx:159 pkg/storaged/stratis-details.jsx:148
 #: pkg/storaged/nfs-panel.jsx:65 pkg/storaged/iscsi-panel.jsx:140
 #: pkg/storaged/iscsi-panel.jsx:164 pkg/storaged/iscsi-panel.jsx:259
-#: pkg/storaged/nfs-details.jsx:186 pkg/storaged/crypto-keyslots.jsx:314
-#: pkg/storaged/crypto-keyslots.jsx:627 pkg/shell/credentials.jsx:187
+#: pkg/storaged/nfs-details.jsx:186 pkg/storaged/crypto-keyslots.jsx:508
+#: pkg/storaged/crypto-keyslots.jsx:844 pkg/shell/credentials.jsx:187
 #: pkg/shell/hosts_dialog.jsx:248
 msgid "Add"
 msgstr "Añadir"
@@ -716,6 +716,10 @@ msgstr "Añadir"
 #: pkg/lib/cockpit-components-firewalld-request.jsx:148
 msgid "Add $0"
 msgstr "Añadir $0"
+
+#: pkg/storaged/crypto-keyslots.jsx:417
+msgid "Add Network Bound Disk Encryption"
+msgstr ""
 
 #: pkg/networkmanager/network-main.jsx:178
 msgid "Add VLAN"
@@ -755,7 +759,7 @@ msgstr "Añadir elemento"
 # #-#-#-#-#  es.po (PACKAGE VERSION)  #-#-#-#-#
 # auto translated by TM merge from project: Cockpit, version: rhel-8.0, DocId:
 # cockpit
-#: pkg/users/authorized-keys-panel.js:120 pkg/storaged/crypto-keyslots.jsx:280
+#: pkg/users/authorized-keys-panel.js:120 pkg/storaged/crypto-keyslots.jsx:474
 #: pkg/shell/credentials.jsx:93
 msgid "Add key"
 msgstr "Añadir clave"
@@ -804,6 +808,16 @@ msgstr "Añadir equipo"
 msgid "Add zone"
 msgstr "Añadir zona"
 
+#: pkg/storaged/crypto-keyslots.jsx:370
+#, fuzzy
+#| msgid "Encryption options"
+msgid "Adding \"$0\" to encryption options"
+msgstr "Opciones de cifrado"
+
+#: pkg/storaged/crypto-keyslots.jsx:359
+msgid "Adding \"$0\" to filesystem options"
+msgstr ""
+
 #: pkg/networkmanager/network-interface-members.jsx:177
 msgid ""
 "Adding $0 will break the connection to the server, and will make the "
@@ -820,13 +834,17 @@ msgstr ""
 "Añadir puertos específicos hará que se recargue firewalld. ¡Puede que se "
 "pierda la configuración actual!"
 
-#: pkg/users/authorized-keys.js:112
+#: pkg/users/authorized-keys.js:112 pkg/storaged/crypto-keyslots.jsx:440
 msgid "Adding key"
 msgstr "Añadiendo clave"
 
 #: pkg/storaged/jobs-panel.jsx:80
 msgid "Adding physical volume to $target"
 msgstr "Añadiendo volumen físico a $target"
+
+#: pkg/storaged/crypto-keyslots.jsx:331
+msgid "Adding rd.neednet=1 to kernel command line"
+msgstr ""
 
 #: pkg/networkmanager/network-interface.jsx:317
 msgid "Additional DNS $val"
@@ -865,11 +883,11 @@ msgstr "Dirección $val"
 
 # auto translated by TM merge from project: Cockpit, version: rhel-8.0, DocId:
 # cockpit
-#: pkg/storaged/crypto-keyslots.jsx:271
+#: pkg/storaged/crypto-keyslots.jsx:465
 msgid "Address cannot be empty"
 msgstr "La dirección no puede estar vacía"
 
-#: pkg/storaged/crypto-keyslots.jsx:273
+#: pkg/storaged/crypto-keyslots.jsx:467
 msgid "Address is not a valid URL"
 msgstr "La dirección no es una URL válida"
 
@@ -901,7 +919,7 @@ msgstr "TCA avanzado"
 msgid "After"
 msgstr "Después"
 
-#: pkg/systemd/overview-cards/realmd.jsx:303
+#: pkg/systemd/overview-cards/realmd.jsx:304
 msgid ""
 "After leaving the domain, only users with local credentials will be able to "
 "log into this machine. This may also affect other services as DNS resolution "
@@ -1341,7 +1359,7 @@ msgstr ""
 #: pkg/systemd/services/service-details.jsx:707
 #: pkg/systemd/overview-cards/motdCard.jsx:67
 #: pkg/systemd/overview-cards/configurationCard.jsx:280
-#: pkg/systemd/overview-cards/realmd.jsx:419
+#: pkg/systemd/overview-cards/realmd.jsx:420
 #: pkg/systemd/overview-cards/cryptoPolicies.jsx:180 pkg/apps/utils.jsx:66
 #: pkg/networkmanager/dialogs-common.jsx:155
 #: pkg/networkmanager/firewall.jsx:604 pkg/networkmanager/firewall.jsx:808
@@ -1374,7 +1392,7 @@ msgstr "No se puede activar"
 msgid "Cannot connect to an unknown host"
 msgstr "No se puede conectar con un anfitrión desconocido"
 
-#: pkg/lib/cockpit.js:3985
+#: pkg/lib/cockpit.js:3973
 msgid "Cannot forward login credentials"
 msgstr "No se pueden transferir los datos de acceso"
 
@@ -1419,7 +1437,7 @@ msgstr "Cambiar el nombre iniciador del iSCSI"
 
 # auto translated by TM merge from project: Cockpit, version: rhel-8.0, DocId:
 # cockpit
-#: pkg/storaged/crypto-keyslots.jsx:335
+#: pkg/storaged/crypto-keyslots.jsx:530
 msgid "Change passphrase"
 msgstr "Cambiar la contraseña"
 
@@ -1485,6 +1503,16 @@ msgstr "Comprobando el dispositivo RAID $target"
 msgid "Checking and repairing RAID device $target"
 msgstr "Comprobando y reparando el dispositivo RAID $target"
 
+#: pkg/storaged/crypto-keyslots.jsx:289
+#, fuzzy
+#| msgid "Checking for package updates..."
+msgid "Checking for $0 package"
+msgstr "Comprobando si hay actualizaciones de paquetes..."
+
+#: pkg/storaged/crypto-keyslots.jsx:310
+msgid "Checking for NBDE support in the initrd"
+msgstr ""
+
 #: pkg/apps/application-list.jsx:123
 msgid "Checking for new applications"
 msgstr "Comprobando si hay nuevas aplicaciones"
@@ -1540,13 +1568,13 @@ msgstr "Limpiar la búsqueda"
 msgid "Cleartext device"
 msgstr "Dispositivo en texto plano"
 
-#: pkg/systemd/overview-cards/realmd.jsx:289
+#: pkg/systemd/overview-cards/realmd.jsx:290
 msgid "Client software"
 msgstr "Cliente de software"
 
 #: pkg/users/dialog-utils.js:58
 #: pkg/systemd/overview-cards/configurationCard.jsx:194
-#: pkg/systemd/overview-cards/realmd.jsx:263 pkg/apps/utils.jsx:84
+#: pkg/systemd/overview-cards/realmd.jsx:264 pkg/apps/utils.jsx:84
 #: pkg/networkmanager/interfaces.js:43 pkg/storaged/dialog.jsx:438
 #: pkg/lib/cockpit-components-modifications.jsx:78
 #: pkg/lib/cockpit-components-terminal.jsx:208 pkg/shell/credentials.jsx:84
@@ -1567,7 +1595,7 @@ msgstr "Cockpit"
 msgid "Cockpit authentication is configured incorrectly."
 msgstr "La configuración de autenticación de Cockpit está mal configurada."
 
-#: pkg/lib/cockpit.js:3991
+#: pkg/lib/cockpit.js:3979
 msgid "Cockpit could not contact the given host."
 msgstr "Cockpit no se pudo conectar con el anfitrión especificado."
 
@@ -1595,7 +1623,7 @@ msgstr ""
 "Cockpit es una interfaz interactiva que permite la gestión de servidores "
 "Linux."
 
-#: pkg/lib/cockpit.js:3989
+#: pkg/lib/cockpit.js:3977
 msgid "Cockpit is not compatible with the software on the system."
 msgstr "Cockpit no es compatible con el software del sistema."
 
@@ -1603,7 +1631,7 @@ msgstr "Cockpit no es compatible con el software del sistema."
 msgid "Cockpit is not installed"
 msgstr "Cockpit no está instalado"
 
-#: pkg/lib/cockpit.js:3983
+#: pkg/lib/cockpit.js:3971
 msgid "Cockpit is not installed on the system."
 msgstr "Cockpit no está instalado en el sistema."
 
@@ -1737,7 +1765,7 @@ msgstr "Confirme el borrado de $0"
 
 # auto translated by TM merge from project: Cockpit, version: rhel-8.0, DocId:
 # cockpit
-#: pkg/storaged/crypto-keyslots.jsx:442
+#: pkg/storaged/crypto-keyslots.jsx:659
 msgid "Confirm removal with an alternate passphrase"
 msgstr "Confirme la eliminación con otra contraseña alternativa"
 
@@ -1787,7 +1815,7 @@ msgstr "Error de conexión"
 msgid "Connection failed"
 msgstr "Conexión fallida"
 
-#: pkg/lib/cockpit.js:3981
+#: pkg/lib/cockpit.js:3969
 msgid "Connection has timed out."
 msgstr "La conexión ha caducado."
 
@@ -1801,7 +1829,7 @@ msgstr "Se perderá la conexión"
 msgid "Consists of"
 msgstr "Consiste en"
 
-#: pkg/systemd/overview-cards/realmd.jsx:311
+#: pkg/systemd/overview-cards/realmd.jsx:312
 msgid "Contacted domain"
 msgstr "Contactado con el dominio"
 
@@ -1847,7 +1875,7 @@ msgstr "Copiado"
 msgid "Copy"
 msgstr "Copiar"
 
-#: pkg/systemd/logs.jsx:416 pkg/storaged/crypto-keyslots.jsx:399
+#: pkg/systemd/logs.jsx:416 pkg/storaged/crypto-keyslots.jsx:602
 #: pkg/lib/cockpit-components-modifications.jsx:75
 msgid "Copy to clipboard"
 msgstr "Copiar al portapapeles"
@@ -2257,7 +2285,7 @@ msgstr "Escritorio"
 msgid "Detachable"
 msgstr "Desmontable"
 
-#: pkg/packagekit/updates.jsx:444 pkg/systemd/overview-cards/realmd.jsx:401
+#: pkg/packagekit/updates.jsx:444 pkg/systemd/overview-cards/realmd.jsx:402
 #: pkg/shell/credentials.jsx:112
 msgid "Details"
 msgstr "Detalles"
@@ -2360,7 +2388,7 @@ msgstr "El disco está fallando"
 
 # auto translated by TM merge from project: Cockpit, version: rhel-8.0, DocId:
 # cockpit
-#: pkg/storaged/crypto-keyslots.jsx:197
+#: pkg/storaged/crypto-keyslots.jsx:200
 msgid "Disk passphrase"
 msgstr "Contraseña del disco"
 
@@ -2401,32 +2429,32 @@ msgid "Does not automatically start"
 msgstr "No se inicia automáticamente en el inicio"
 
 #: pkg/systemd/overview-cards/configurationCard.jsx:76
-#: pkg/systemd/overview-cards/realmd.jsx:269
+#: pkg/systemd/overview-cards/realmd.jsx:270
 msgid "Domain"
 msgstr "Dominio"
 
-#: pkg/systemd/overview-cards/realmd.jsx:266
+#: pkg/systemd/overview-cards/realmd.jsx:267
 msgctxt "dialog-title"
 msgid "Domain"
 msgstr "Dominio"
 
-#: pkg/systemd/overview-cards/realmd.jsx:425
+#: pkg/systemd/overview-cards/realmd.jsx:426
 msgid "Domain address"
 msgstr "Dirección de dominio"
 
-#: pkg/systemd/overview-cards/realmd.jsx:433
+#: pkg/systemd/overview-cards/realmd.jsx:434
 msgid "Domain administrator name"
 msgstr "Nombre del administrador del dominio"
 
-#: pkg/systemd/overview-cards/realmd.jsx:436
+#: pkg/systemd/overview-cards/realmd.jsx:437
 msgid "Domain administrator password"
 msgstr "Contraseña del administrador del dominio"
 
-#: pkg/systemd/overview-cards/realmd.jsx:312
+#: pkg/systemd/overview-cards/realmd.jsx:313
 msgid "Domain could not be contacted"
 msgstr "No se pudo contactar con el dominio"
 
-#: pkg/systemd/overview-cards/realmd.jsx:313
+#: pkg/systemd/overview-cards/realmd.jsx:314
 msgid "Domain is not supported"
 msgstr "El dominio no está soportado"
 
@@ -2454,6 +2482,7 @@ msgstr "Descargando"
 
 # auto translated by TM merge from project: Cockpit, version: rhel-8.0, DocId:
 # cockpit
+#: pkg/storaged/crypto-keyslots.jsx:278
 #: pkg/lib/cockpit-components-install-dialog.jsx:187
 msgid "Downloading $0"
 msgstr "Descargando $0"
@@ -2472,7 +2501,7 @@ msgstr "Rango dual"
 
 #: pkg/packagekit/kpatch.jsx:230 pkg/packagekit/autoupdates.jsx:407
 #: pkg/networkmanager/firewall.jsx:116 pkg/storaged/iscsi-panel.jsx:255
-#: pkg/storaged/nfs-details.jsx:305 pkg/storaged/crypto-keyslots.jsx:577
+#: pkg/storaged/nfs-details.jsx:305 pkg/storaged/crypto-keyslots.jsx:794
 #: pkg/shell/hosts.jsx:165 pkg/shell/indexes.jsx:352
 msgid "Edit"
 msgstr "Editar"
@@ -2481,7 +2510,7 @@ msgstr "Editar"
 msgid "Edit /etc/motd"
 msgstr "Editar /etc/motd"
 
-#: pkg/storaged/crypto-keyslots.jsx:356
+#: pkg/storaged/crypto-keyslots.jsx:551
 msgid "Edit Tang keyserver"
 msgstr "Editar el servidor de llaves Tang"
 
@@ -2517,7 +2546,7 @@ msgstr "Editar el servicio $0"
 msgid "Edit user"
 msgstr "Editar usuario"
 
-#: pkg/storaged/crypto-keyslots.jsx:579
+#: pkg/storaged/crypto-keyslots.jsx:796
 msgid "Editing a key requires a free slot"
 msgstr "Editar una clave requiere un guardaclaves libre"
 
@@ -2566,6 +2595,14 @@ msgstr "Habilitar el cortafuegos"
 #: pkg/networkmanager/firewall-switch.jsx:78
 msgid "Enabled"
 msgstr "Habilitado"
+
+# auto translated by TM merge from project: Cockpit, version: rhel-8.0, DocId:
+# cockpit
+#: pkg/storaged/crypto-keyslots.jsx:378
+#, fuzzy
+#| msgid "Installing $0"
+msgid "Enabling $0"
+msgstr "Instalando $0"
 
 #: pkg/storaged/stratis-panel.jsx:138
 msgid "Encrypt data"
@@ -2910,6 +2947,10 @@ msgctxt "storage"
 msgid "Firmware version"
 msgstr "Versión del firmware"
 
+#: pkg/storaged/crypto-keyslots.jsx:435
+msgid "Fix NBDE support"
+msgstr ""
+
 #: pkg/systemd/terminal.jsx:129 pkg/systemd/terminal.jsx:139
 msgid "Font size"
 msgstr "Tamaño de la fuente"
@@ -3091,7 +3132,7 @@ msgstr "Cuenta del histórico de paquetes"
 msgid "Host"
 msgstr "Anfitrión"
 
-#: pkg/lib/cockpit.js:3977
+#: pkg/lib/cockpit.js:3965
 msgid "Host key is incorrect"
 msgstr "La tecla del anfitrión es incorrecta"
 
@@ -3333,13 +3374,14 @@ msgstr "Instalando"
 
 # auto translated by TM merge from project: Cockpit, version: rhel-8.0, DocId:
 # cockpit
+#: pkg/storaged/crypto-keyslots.jsx:282
 #: pkg/lib/cockpit-components-install-dialog.jsx:191
 msgid "Installing $0"
 msgstr "Instalando $0"
 
 # auto translated by TM merge from project: Cockpit, version: rhel-8.0, DocId:
 # cockpit
-#: pkg/storaged/content-views.jsx:837
+#: pkg/storaged/content-views.jsx:837 pkg/storaged/crypto-keyslots.jsx:298
 msgid "Installing $0 would remove $1."
 msgstr "Instalar $0 eliminaría $1."
 
@@ -3364,7 +3406,7 @@ msgstr "Miembros de la interfaz"
 msgid "Interfaces"
 msgstr "Interfaces"
 
-#: pkg/lib/cockpit.js:3979
+#: pkg/lib/cockpit.js:3967
 msgid "Internal error"
 msgstr "Error interno"
 
@@ -3449,21 +3491,21 @@ msgstr "¿El servicio SSHD está corriendo en un puerto diferente?"
 msgid "Jobs"
 msgstr "Trabajos"
 
-#: pkg/systemd/overview-cards/realmd.jsx:417
+#: pkg/systemd/overview-cards/realmd.jsx:418
 msgid "Join"
 msgstr "Unirse"
 
-#: pkg/systemd/overview-cards/realmd.jsx:423
+#: pkg/systemd/overview-cards/realmd.jsx:424
 msgctxt "dialog-title"
 msgid "Join a domain"
 msgstr "Unirse a un dominio"
 
-#: pkg/systemd/overview-cards/realmd.jsx:449
-#: pkg/systemd/overview-cards/realmd.jsx:471
+#: pkg/systemd/overview-cards/realmd.jsx:450
+#: pkg/systemd/overview-cards/realmd.jsx:472
 msgid "Join domain"
 msgstr "Unirse a un dominio"
 
-#: pkg/systemd/overview-cards/realmd.jsx:416
+#: pkg/systemd/overview-cards/realmd.jsx:417
 msgid "Joining"
 msgstr "Uniéndose"
 
@@ -3534,33 +3576,33 @@ msgstr "Aplicación de parches en vivo del kernel"
 msgid "Key password"
 msgstr "Contraseña de la clave"
 
-#: pkg/storaged/crypto-keyslots.jsx:611
+#: pkg/storaged/crypto-keyslots.jsx:828
 msgid "Key slots with unknown types can not be edited here"
 msgstr "Los guardaclaves de tipo desconocido no se pueden editar aquí"
 
-#: pkg/storaged/crypto-keyslots.jsx:282
+#: pkg/storaged/crypto-keyslots.jsx:476
 msgid "Key source"
 msgstr "Clave fuente"
 
 # auto translated by TM merge from project: Cockpit, version: rhel-8.0, DocId:
 # cockpit
-#: pkg/storaged/crypto-keyslots.jsx:634 pkg/storaged/crypto-keyslots.jsx:637
+#: pkg/storaged/crypto-keyslots.jsx:851 pkg/storaged/crypto-keyslots.jsx:854
 msgid "Keys"
 msgstr "Claves"
 
 # auto translated by TM merge from project: Cockpit, version: rhel-8.0, DocId:
 # cockpit
-#: pkg/storaged/crypto-keyslots.jsx:605
+#: pkg/storaged/crypto-keyslots.jsx:822
 msgid "Keyserver"
 msgstr "Servidor de claves"
 
 # auto translated by TM merge from project: Cockpit, version: rhel-8.0, DocId:
 # cockpit
-#: pkg/storaged/crypto-keyslots.jsx:307 pkg/storaged/crypto-keyslots.jsx:358
+#: pkg/storaged/crypto-keyslots.jsx:501 pkg/storaged/crypto-keyslots.jsx:553
 msgid "Keyserver address"
 msgstr "Dirección del servidor de claves"
 
-#: pkg/storaged/crypto-keyslots.jsx:489
+#: pkg/storaged/crypto-keyslots.jsx:706
 msgid "Keyserver removal may prevent unlocking $0."
 msgstr "La eliminación del servidor de claves puede prevenir el desbloqueo $0."
 
@@ -3620,13 +3662,13 @@ msgstr "Último inicio de sesión correcto:"
 msgid "Learn more"
 msgstr "Aprenda más"
 
-#: pkg/systemd/overview-cards/realmd.jsx:299
+#: pkg/systemd/overview-cards/realmd.jsx:300
 msgid "Leave $0"
 msgstr "Abandonar $0"
 
-#: pkg/systemd/overview-cards/realmd.jsx:296
-#: pkg/systemd/overview-cards/realmd.jsx:299
-#: pkg/systemd/overview-cards/realmd.jsx:301
+#: pkg/systemd/overview-cards/realmd.jsx:297
+#: pkg/systemd/overview-cards/realmd.jsx:300
+#: pkg/systemd/overview-cards/realmd.jsx:302
 msgid "Leave domain"
 msgstr "Abandonar el dominio"
 
@@ -3880,11 +3922,11 @@ msgstr "Iniciar sesión"
 msgid "Login again"
 msgstr "Acceda de nuevo"
 
-#: pkg/lib/cockpit.js:3969
+#: pkg/lib/cockpit.js:3957
 msgid "Login failed"
 msgstr "Inicio de sesión fallido"
 
-#: pkg/systemd/overview-cards/realmd.jsx:275
+#: pkg/systemd/overview-cards/realmd.jsx:276
 msgid "Login format"
 msgstr "Formato de acceso"
 
@@ -3948,7 +3990,7 @@ msgstr "Chasis del servidor principal"
 msgid "Maintenance"
 msgstr "Modo de mantenimiento"
 
-#: pkg/storaged/crypto-keyslots.jsx:389
+#: pkg/storaged/crypto-keyslots.jsx:592
 msgid ""
 "Make sure the key hash from the Tang server matches one of the following:"
 msgstr ""
@@ -4023,7 +4065,7 @@ msgstr "Manual"
 msgid "Manually"
 msgstr "Manualmente"
 
-#: pkg/storaged/crypto-keyslots.jsx:398
+#: pkg/storaged/crypto-keyslots.jsx:601
 msgid "Manually check with SSH: "
 msgstr "Comprobar manualmente con SSH: "
 
@@ -4414,7 +4456,7 @@ msgstr "Nueva contraseña de la clave"
 
 # auto translated by TM merge from project: Cockpit, version: rhel-8.0, DocId:
 # cockpit
-#: pkg/storaged/crypto-keyslots.jsx:293 pkg/storaged/crypto-keyslots.jsx:340
+#: pkg/storaged/crypto-keyslots.jsx:487 pkg/storaged/crypto-keyslots.jsx:535
 msgid "New passphrase"
 msgstr "Nueva contraseña"
 
@@ -4446,7 +4488,7 @@ msgstr "No hay ninguna alerta de SELinux."
 msgid "No applications installed or available."
 msgstr "No hay aplicaciones instaladas o disponibles."
 
-#: pkg/storaged/crypto-keyslots.jsx:624
+#: pkg/storaged/crypto-keyslots.jsx:841
 msgid "No available slots"
 msgstr "No hay ranuras disponibles"
 
@@ -4508,7 +4550,7 @@ msgstr "Ningún sistema de archivos"
 msgid "No filesystems"
 msgstr "No hay sistemas de archivos"
 
-#: pkg/storaged/crypto-keyslots.jsx:629
+#: pkg/storaged/crypto-keyslots.jsx:846
 msgid "No free key slots"
 msgstr "No hay guardaclaves libres"
 
@@ -4528,7 +4570,7 @@ msgstr "No se han ajustados los objetivos iSCSI"
 msgid "No installation package found for this application."
 msgstr "No se ha encontrado el paquete de instalación para esta aplicación."
 
-#: pkg/storaged/crypto-keyslots.jsx:554
+#: pkg/storaged/crypto-keyslots.jsx:771
 msgid "No keys added"
 msgstr "Sin claves añadidas"
 
@@ -4656,11 +4698,11 @@ msgstr "No instalado"
 msgid "Not mounted"
 msgstr "No se ha montado"
 
-#: pkg/systemd/overview-cards/realmd.jsx:448
+#: pkg/systemd/overview-cards/realmd.jsx:449
 msgid "Not permitted to configure realms"
 msgstr "Sin permisos para configurar realms"
 
-#: pkg/lib/cockpit.js:3967
+#: pkg/lib/cockpit.js:3955
 msgid "Not permitted to perform this action."
 msgstr "No está permitido llevar a cabo esta acción."
 
@@ -4725,7 +4767,7 @@ msgstr "Aceptar"
 
 # auto translated by TM merge from project: Cockpit, version: rhel-8.0, DocId:
 # cockpit
-#: pkg/storaged/crypto-keyslots.jsx:337
+#: pkg/storaged/crypto-keyslots.jsx:532
 msgid "Old passphrase"
 msgstr "Contraseña antigua"
 
@@ -4921,33 +4963,33 @@ msgstr "Pasivo"
 #: pkg/storaged/fsys-tab.jsx:346 pkg/storaged/stratis-panel.jsx:141
 #: pkg/storaged/format-dialog.jsx:266 pkg/storaged/format-dialog.jsx:292
 #: pkg/storaged/stratis-details.jsx:132 pkg/storaged/stratis-details.jsx:703
-#: pkg/storaged/content-views.jsx:269 pkg/storaged/crypto-keyslots.jsx:288
-#: pkg/storaged/crypto-keyslots.jsx:600
+#: pkg/storaged/content-views.jsx:269 pkg/storaged/crypto-keyslots.jsx:482
+#: pkg/storaged/crypto-keyslots.jsx:817
 msgid "Passphrase"
 msgstr "Contraseña"
 
-#: pkg/storaged/crypto-keyslots.jsx:425
+#: pkg/storaged/crypto-keyslots.jsx:642
 msgid "Passphrase can not be empty"
 msgstr "La contraseña no puede estar vacía"
 
 #: pkg/storaged/fsys-tab.jsx:349 pkg/storaged/stratis-panel.jsx:145
 #: pkg/storaged/format-dialog.jsx:270 pkg/storaged/format-dialog.jsx:296
-#: pkg/storaged/stratis-details.jsx:135 pkg/storaged/crypto-keyslots.jsx:200
-#: pkg/storaged/crypto-keyslots.jsx:296 pkg/storaged/crypto-keyslots.jsx:338
-#: pkg/storaged/crypto-keyslots.jsx:341
+#: pkg/storaged/stratis-details.jsx:135 pkg/storaged/crypto-keyslots.jsx:203
+#: pkg/storaged/crypto-keyslots.jsx:490 pkg/storaged/crypto-keyslots.jsx:533
+#: pkg/storaged/crypto-keyslots.jsx:536
 msgid "Passphrase cannot be empty"
 msgstr "La contraseña no puede estar vacía"
 
-#: pkg/storaged/crypto-keyslots.jsx:448
+#: pkg/storaged/crypto-keyslots.jsx:665
 msgid "Passphrase from any other key slot"
 msgstr "Contraseña de cualquier otro guardaclaves"
 
-#: pkg/storaged/crypto-keyslots.jsx:438
+#: pkg/storaged/crypto-keyslots.jsx:655
 msgid "Passphrase removal may prevent unlocking $0."
 msgstr "Eliminar la contraseña puede prevenir el desbloqueo $0."
 
 #: pkg/storaged/stratis-panel.jsx:153 pkg/storaged/format-dialog.jsx:278
-#: pkg/storaged/crypto-keyslots.jsx:304 pkg/storaged/crypto-keyslots.jsx:343
+#: pkg/storaged/crypto-keyslots.jsx:498 pkg/storaged/crypto-keyslots.jsx:538
 msgid "Passphrases do not match"
 msgstr "La contraseña no coincide"
 
@@ -5495,6 +5537,12 @@ msgstr "Rechazando conexión. La clave del anfitrión no coincide"
 msgid "Refusing to connect. Hostkey is unknown"
 msgstr "Rechazando la conexión. La clave de anfitrión es desconocida"
 
+#: pkg/storaged/crypto-keyslots.jsx:320
+#, fuzzy
+#| msgid "Generating report"
+msgid "Regenerating initrd"
+msgstr "Generando informe"
+
 #: pkg/packagekit/updates.jsx:1360
 msgid "Register…"
 msgstr "Registrar…"
@@ -5562,8 +5610,8 @@ msgstr "Borrados:"
 #: pkg/users/authorized-keys-panel.js:172
 #: pkg/systemd/services/timer-dialog.jsx:369 pkg/apps/application.jsx:51
 #: pkg/storaged/vgroup-details.jsx:121 pkg/storaged/mdraid-details.jsx:145
-#: pkg/storaged/nfs-details.jsx:307 pkg/storaged/crypto-keyslots.jsx:469
-#: pkg/storaged/crypto-keyslots.jsx:504 pkg/storaged/crypto-keyslots.jsx:585
+#: pkg/storaged/nfs-details.jsx:307 pkg/storaged/crypto-keyslots.jsx:686
+#: pkg/storaged/crypto-keyslots.jsx:721 pkg/storaged/crypto-keyslots.jsx:802
 #: pkg/shell/hosts.jsx:168
 msgid "Remove"
 msgstr "Eliminar"
@@ -5578,11 +5626,11 @@ msgstr "Eliminar el servicio $0 la zona $1"
 
 # auto translated by TM merge from project: Cockpit, version: rhel-8.0, DocId:
 # cockpit
-#: pkg/storaged/crypto-keyslots.jsx:488
+#: pkg/storaged/crypto-keyslots.jsx:705
 msgid "Remove $0?"
 msgstr "¿Eliminar $0?"
 
-#: pkg/storaged/crypto-keyslots.jsx:498
+#: pkg/storaged/crypto-keyslots.jsx:715
 msgid "Remove Tang keyserver?"
 msgstr "¿Eliminar servidor de claves Tang?"
 
@@ -5603,7 +5651,7 @@ msgstr "Eliminar elemento"
 
 # auto translated by TM merge from project: Cockpit, version: rhel-8.0, DocId:
 # cockpit
-#: pkg/storaged/crypto-keyslots.jsx:462
+#: pkg/storaged/crypto-keyslots.jsx:679
 msgid "Remove passphrase in key slot $0?"
 msgstr "¿Eliminar la contraseña del guardaclaves $0?"
 
@@ -5621,6 +5669,7 @@ msgstr "Eliminando"
 
 # auto translated by TM merge from project: Cockpit, version: rhel-8.0, DocId:
 # cockpit
+#: pkg/storaged/crypto-keyslots.jsx:280
 #: pkg/lib/cockpit-components-install-dialog.jsx:189
 msgid "Removing $0"
 msgstr "Eliminando $0"
@@ -5637,7 +5686,7 @@ msgstr ""
 msgid "Removing $target from RAID device"
 msgstr "Eliminando el $target del dispositivo RAID"
 
-#: pkg/storaged/crypto-keyslots.jsx:446
+#: pkg/storaged/crypto-keyslots.jsx:663
 msgid ""
 "Removing a passphrase without confirmation of another passphrase may prevent "
 "unlocking or key management, if other passphrases are forgotten or lost."
@@ -5707,8 +5756,8 @@ msgstr "Repetir mensualmente"
 
 # auto translated by TM merge from project: Cockpit, version: rhel-8.0, DocId:
 # cockpit
-#: pkg/storaged/crypto-keyslots.jsx:286 pkg/storaged/crypto-keyslots.jsx:298
-#: pkg/storaged/crypto-keyslots.jsx:342
+#: pkg/storaged/crypto-keyslots.jsx:480 pkg/storaged/crypto-keyslots.jsx:492
+#: pkg/storaged/crypto-keyslots.jsx:537
 msgid "Repeat passphrase"
 msgstr "Repita la contraseña"
 
@@ -5926,11 +5975,11 @@ msgstr "Se desconoce el estado de sistema de SELinux."
 msgid "SELinux troubleshoot"
 msgstr "Solución de problemas de SELinux"
 
-#: pkg/storaged/crypto-keyslots.jsx:394
+#: pkg/storaged/crypto-keyslots.jsx:597
 msgid "SHA1"
 msgstr "SHA1"
 
-#: pkg/storaged/crypto-keyslots.jsx:391
+#: pkg/storaged/crypto-keyslots.jsx:594
 msgid "SHA256"
 msgstr "SHA256"
 
@@ -5989,8 +6038,8 @@ msgstr "Los sábados"
 #: pkg/networkmanager/dialogs-common.jsx:152 pkg/metrics/metrics.jsx:1274
 #: pkg/storaged/fsys-tab.jsx:374 pkg/storaged/fsys-tab.jsx:490
 #: pkg/storaged/crypto-tab.jsx:161 pkg/storaged/crypto-tab.jsx:205
-#: pkg/storaged/nfs-details.jsx:186 pkg/storaged/crypto-keyslots.jsx:346
-#: pkg/storaged/crypto-keyslots.jsx:365 pkg/kdump/kdump-view.jsx:324
+#: pkg/storaged/nfs-details.jsx:186 pkg/storaged/crypto-keyslots.jsx:541
+#: pkg/storaged/crypto-keyslots.jsx:560 pkg/kdump/kdump-view.jsx:324
 msgid "Save"
 msgstr "Guardar"
 
@@ -6013,8 +6062,8 @@ msgstr "Ahorre espacio almacenando bloques de datos idénticos solo una vez"
 
 # auto translated by TM merge from project: Cockpit, version: rhel-8.0, DocId:
 # cockpit
-#: pkg/storaged/crypto-keyslots.jsx:312 pkg/storaged/crypto-keyslots.jsx:363
-#: pkg/storaged/crypto-keyslots.jsx:408
+#: pkg/storaged/crypto-keyslots.jsx:433 pkg/storaged/crypto-keyslots.jsx:506
+#: pkg/storaged/crypto-keyslots.jsx:558 pkg/storaged/crypto-keyslots.jsx:611
 msgid ""
 "Saving a new passphrase requires unlocking the disk. Please provide a "
 "current disk passphrase."
@@ -6119,11 +6168,11 @@ msgstr "La dirección del servidor no puede estar vacía."
 msgid "Server cannot be empty."
 msgstr "Servidor no puede estar vacío."
 
-#: pkg/lib/cockpit.js:3987
+#: pkg/lib/cockpit.js:3975
 msgid "Server has closed the connection."
 msgstr "El servidor ha cerrado la conexión."
 
-#: pkg/systemd/overview-cards/realmd.jsx:283
+#: pkg/systemd/overview-cards/realmd.jsx:284
 msgid "Server software"
 msgstr "Software de servidor"
 
@@ -6355,7 +6404,7 @@ msgstr "Saltar al contenido"
 msgid "Slot"
 msgstr "Compartimento"
 
-#: pkg/storaged/mdraid-details.jsx:123 pkg/storaged/crypto-keyslots.jsx:573
+#: pkg/storaged/mdraid-details.jsx:123 pkg/storaged/crypto-keyslots.jsx:790
 msgid "Slot $0"
 msgstr "Compartimento $0"
 
@@ -6610,7 +6659,7 @@ msgstr "Falló la suscripción a las señales de systemd: $0"
 msgid "Successfully copied to clipboard"
 msgstr "Copiado al portapapeles con éxito"
 
-#: pkg/storaged/crypto-keyslots.jsx:400
+#: pkg/storaged/crypto-keyslots.jsx:603
 msgid "Successfully copied to clipboard!"
 msgstr "¡Copiado al portapapeles con éxito!"
 
@@ -6730,7 +6779,7 @@ msgstr "TCP"
 msgid "Tablet"
 msgstr "Tableta"
 
-#: pkg/storaged/crypto-keyslots.jsx:289
+#: pkg/storaged/crypto-keyslots.jsx:483
 msgid "Tang keyserver"
 msgstr "Servidor de claves Tang"
 
@@ -6782,8 +6831,23 @@ msgstr "Ajustes de prueba de kdump"
 msgid "Testing connection"
 msgstr "Probando la conexión"
 
+# auto translated by TM merge from project: Cockpit, version: rhel-8.0, DocId:
+# cockpit
+#: pkg/storaged/crypto-keyslots.jsx:300
+#, fuzzy
+#| msgid "$0 is not available from any repository."
+msgid "The $0 package is not available from any repository."
+msgstr "$0 no está disponible en ningún repositorio."
+
 #: pkg/storaged/stratis-panel.jsx:45
 msgid "The $0 package must be installed to create Stratis pools."
+msgstr ""
+"El paquete $0 debe instalarse para crear grupos de almacenamiento Stratis."
+
+#: pkg/storaged/crypto-keyslots.jsx:295
+#, fuzzy
+#| msgid "The $0 package must be installed to create Stratis pools."
+msgid "The $0 package must be installed."
 msgstr ""
 "El paquete $0 debe instalarse para crear grupos de almacenamiento Stratis."
 
@@ -6863,7 +6927,7 @@ msgstr ""
 
 # auto translated by TM merge from project: Cockpit, version: rhel-8.0, DocId:
 # cockpit
-#: pkg/storaged/crypto-keyslots.jsx:550
+#: pkg/storaged/crypto-keyslots.jsx:767
 msgid ""
 "The currently logged in user is not permitted to see information about keys."
 msgstr "El usuario actual no tiene permitido ver la información de las claves."
@@ -6951,6 +7015,10 @@ msgstr[1] "Los siguientes servicios serán reiniciados:"
 msgid "The full name must not contain colons."
 msgstr "El nombre completo no debe contener dos puntos."
 
+#: pkg/storaged/crypto-keyslots.jsx:317
+msgid "The initrd must be regenerated."
+msgstr ""
+
 #: pkg/shell/hosts_dialog.jsx:682
 msgid "The key password can not be empty"
 msgstr "La contraseña de la clave no puede estar vacía"
@@ -6967,7 +7035,7 @@ msgstr "La clave introducida no resultó válida."
 msgid "The last disk of a RAID device cannot be removed."
 msgstr "El último disco del dispositivo RAID no se puede eliminar."
 
-#: pkg/storaged/crypto-keyslots.jsx:586
+#: pkg/storaged/crypto-keyslots.jsx:803
 msgid "The last key slot can not be removed"
 msgstr "No se puede eliminar el último guardaclaves"
 
@@ -7038,9 +7106,21 @@ msgstr ""
 "El servidor rechazó autenticar '$0' utilizando la autenticación de "
 "contraseña y no hay disponble otro método de autenticación soportado."
 
-#: pkg/lib/cockpit.js:3971
+#: pkg/lib/cockpit.js:3959
 msgid "The server refused to authenticate using any supported methods."
 msgstr "El servido rehusó autenticar usando los métodos soportados."
+
+#: pkg/storaged/crypto-keyslots.jsx:423
+msgid ""
+"The system does not currently support unlocking a filesystem with a Tang "
+"keyserver during boot."
+msgstr ""
+
+#: pkg/storaged/crypto-keyslots.jsx:422
+msgid ""
+"The system does not currently support unlocking the root filesystem with a "
+"Tang keyserver."
+msgstr ""
 
 #: pkg/systemd/hwinfo.jsx:72
 msgid "The user $0 is not permitted to change cpu security mitigations"
@@ -7107,6 +7187,10 @@ msgstr ""
 msgid "There was an unexpected error while connecting to the machine."
 msgstr "Hubo un error no esperado mientra se conectaba a la máquina."
 
+#: pkg/storaged/crypto-keyslots.jsx:427
+msgid "These additional steps are necessary:"
+msgstr ""
+
 #: pkg/storaged/dialog.jsx:1124
 msgid "These changes will be made:"
 msgstr "Se realizarán los siguientes cambios:"
@@ -7163,7 +7247,7 @@ msgstr "Este volumen lógico no se usa completamente por su contenido."
 msgid "This machine has already been added."
 msgstr "Esta máquina ha sido añadida."
 
-#: pkg/systemd/overview-cards/realmd.jsx:420
+#: pkg/systemd/overview-cards/realmd.jsx:421
 msgid "This may take a while"
 msgstr "Esto llevará un tiempo"
 
@@ -7343,7 +7427,7 @@ msgstr "Alternar el selector de fecha"
 msgid "Toggle filters"
 msgstr "Alternar filtros"
 
-#: pkg/lib/cockpit.js:3993
+#: pkg/lib/cockpit.js:3981
 msgid "Too much data"
 msgstr "Demasiados datos"
 
@@ -7398,7 +7482,7 @@ msgstr "Soporte"
 msgid "Troubleshoot…"
 msgstr "Resolución de errores…"
 
-#: pkg/storaged/crypto-keyslots.jsx:410
+#: pkg/storaged/crypto-keyslots.jsx:613
 msgid "Trust key"
 msgstr "Clave de confianza"
 
@@ -7615,7 +7699,7 @@ msgstr "Nombre del servicio desconocido"
 
 # auto translated by TM merge from project: Cockpit, version: rhel-8.0, DocId:
 # cockpit
-#: pkg/storaged/crypto-keyslots.jsx:610
+#: pkg/storaged/crypto-keyslots.jsx:827
 msgid "Unknown type"
 msgstr "Tipo desconocido"
 
@@ -7648,7 +7732,7 @@ msgstr "Desbloquendo $target"
 
 # auto translated by TM merge from project: Cockpit, version: rhel-8.0, DocId:
 # cockpit
-#: pkg/storaged/crypto-keyslots.jsx:243
+#: pkg/storaged/crypto-keyslots.jsx:246
 msgid "Unlocking disk"
 msgstr "Desbloqueando el disco"
 
@@ -7704,7 +7788,7 @@ msgstr "Volumen no soportado"
 msgid "Until"
 msgstr "Hasta"
 
-#: pkg/lib/cockpit.js:3973 pkg/lib/cockpit.js:3975
+#: pkg/lib/cockpit.js:3961 pkg/lib/cockpit.js:3963
 msgid "Untrusted host"
 msgstr "Anfitrión no seguro"
 
@@ -7879,7 +7963,7 @@ msgstr "ID de VLAN"
 msgid "VLAN settings"
 msgstr "Configuración VLAN"
 
-#: pkg/systemd/overview-cards/realmd.jsx:310
+#: pkg/systemd/overview-cards/realmd.jsx:311
 msgid "Validating address"
 msgstr "Validando dirección"
 
@@ -7901,7 +7985,7 @@ msgstr "Verificado"
 
 # auto translated by TM merge from project: Cockpit, version: rhel-8.0, DocId:
 # cockpit
-#: pkg/storaged/crypto-keyslots.jsx:386
+#: pkg/storaged/crypto-keyslots.jsx:589
 msgid "Verify key"
 msgstr "Verificar clave"
 
@@ -8010,6 +8094,7 @@ msgstr ""
 
 # auto translated by TM merge from project: Cockpit, version: rhel-8.0, DocId:
 # cockpit
+#: pkg/storaged/crypto-keyslots.jsx:274
 #: pkg/lib/cockpit-components-install-dialog.jsx:148
 #: pkg/lib/cockpit-components-install-dialog.jsx:183
 msgid "Waiting for other software management operations to finish"
@@ -8188,11 +8273,11 @@ msgstr ""
 "Su servidor cerrará la conexión pronto. Usted se puede volver a conectar "
 "después de que se haya reiniciado."
 
-#: pkg/lib/cockpit.js:3963
+#: pkg/lib/cockpit.js:3951
 msgid "Your session has been terminated."
 msgstr "Su sesión se ha terminado."
 
-#: pkg/lib/cockpit.js:3965
+#: pkg/lib/cockpit.js:3953
 msgid "Your session has expired. Please log in again."
 msgstr "Su sesión ha expirado. Por favor inicie sesión otra vez."
 
@@ -9024,9 +9109,6 @@ msgstr "zona"
 
 #~ msgid "Download report"
 #~ msgstr "Descargar informe"
-
-#~ msgid "Generating report"
-#~ msgstr "Generando informe"
 
 #~ msgid "No archive has been created."
 #~ msgstr "El archivo no se ha creado."

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-13 03:00+0000\n"
+"POT-Creation-Date: 2023-01-16 02:53+0000\n"
 "PO-Revision-Date: 2023-01-17 00:20+0000\n"
 "Last-Translator: Luna Jernberg <bittin@reimu.nl>\n"
 "Language-Team: Swedish <https://translate.fedoraproject.org/projects/cockpit/"
@@ -250,7 +250,7 @@ msgid_plural "$0 services need to be restarted"
 msgstr[0] "$0 tjänst måste startas om"
 msgstr[1] "$0 tjänster måste startas om"
 
-#: pkg/storaged/crypto-keyslots.jsx:624
+#: pkg/storaged/crypto-keyslots.jsx:841
 msgid "$0 slot remains"
 msgid_plural "$0 slots remain"
 msgstr[0] "$0 fack återstår"
@@ -678,8 +678,8 @@ msgstr "Adaptiv lastbalansering av sändning"
 #: pkg/storaged/mdraid-details.jsx:159 pkg/storaged/stratis-details.jsx:148
 #: pkg/storaged/nfs-panel.jsx:65 pkg/storaged/iscsi-panel.jsx:140
 #: pkg/storaged/iscsi-panel.jsx:164 pkg/storaged/iscsi-panel.jsx:259
-#: pkg/storaged/nfs-details.jsx:186 pkg/storaged/crypto-keyslots.jsx:314
-#: pkg/storaged/crypto-keyslots.jsx:627 pkg/shell/credentials.jsx:187
+#: pkg/storaged/nfs-details.jsx:186 pkg/storaged/crypto-keyslots.jsx:508
+#: pkg/storaged/crypto-keyslots.jsx:844 pkg/shell/credentials.jsx:187
 #: pkg/shell/hosts_dialog.jsx:248
 msgid "Add"
 msgstr "Lägg till"
@@ -688,6 +688,10 @@ msgstr "Lägg till"
 #: pkg/lib/cockpit-components-firewalld-request.jsx:148
 msgid "Add $0"
 msgstr "Lägg till $0"
+
+#: pkg/storaged/crypto-keyslots.jsx:417
+msgid "Add Network Bound Disk Encryption"
+msgstr ""
 
 #: pkg/networkmanager/network-main.jsx:178
 msgid "Add VLAN"
@@ -724,7 +728,7 @@ msgstr "Lägg till iSCSI-portal"
 msgid "Add item"
 msgstr "Lägg till post"
 
-#: pkg/users/authorized-keys-panel.js:120 pkg/storaged/crypto-keyslots.jsx:280
+#: pkg/users/authorized-keys-panel.js:120 pkg/storaged/crypto-keyslots.jsx:474
 #: pkg/shell/credentials.jsx:93
 msgid "Add key"
 msgstr "Lägg till nyckel"
@@ -773,6 +777,16 @@ msgstr "Lägg till team"
 msgid "Add zone"
 msgstr "Lägg till zon"
 
+#: pkg/storaged/crypto-keyslots.jsx:370
+#, fuzzy
+#| msgid "Encryption options"
+msgid "Adding \"$0\" to encryption options"
+msgstr "Krypteringsalternativ"
+
+#: pkg/storaged/crypto-keyslots.jsx:359
+msgid "Adding \"$0\" to filesystem options"
+msgstr ""
+
 #: pkg/networkmanager/network-interface-members.jsx:177
 msgid ""
 "Adding $0 will break the connection to the server, and will make the "
@@ -789,13 +803,17 @@ msgstr ""
 "Att lägga till egna portar startar om firewalld . En omstart gör att "
 "osparade ändringar försvinner!"
 
-#: pkg/users/authorized-keys.js:112
+#: pkg/users/authorized-keys.js:112 pkg/storaged/crypto-keyslots.jsx:440
 msgid "Adding key"
 msgstr "Lägger till nyckel"
 
 #: pkg/storaged/jobs-panel.jsx:80
 msgid "Adding physical volume to $target"
 msgstr "Lägger till fysisk volym till $target"
+
+#: pkg/storaged/crypto-keyslots.jsx:331
+msgid "Adding rd.neednet=1 to kernel command line"
+msgstr ""
 
 #: pkg/networkmanager/network-interface.jsx:317
 msgid "Additional DNS $val"
@@ -830,11 +848,11 @@ msgstr "Adress"
 msgid "Address $val"
 msgstr "Adress $val"
 
-#: pkg/storaged/crypto-keyslots.jsx:271
+#: pkg/storaged/crypto-keyslots.jsx:465
 msgid "Address cannot be empty"
 msgstr "Adressen kan inte vara tom"
 
-#: pkg/storaged/crypto-keyslots.jsx:273
+#: pkg/storaged/crypto-keyslots.jsx:467
 msgid "Address is not a valid URL"
 msgstr "Adressen är inte en giltig URL"
 
@@ -866,7 +884,7 @@ msgstr "Avancerad TCA"
 msgid "After"
 msgstr "Efter"
 
-#: pkg/systemd/overview-cards/realmd.jsx:303
+#: pkg/systemd/overview-cards/realmd.jsx:304
 msgid ""
 "After leaving the domain, only users with local credentials will be able to "
 "log into this machine. This may also affect other services as DNS resolution "
@@ -1300,7 +1318,7 @@ msgstr "Hittade inga loggar med dessa filter aktiva."
 #: pkg/systemd/services/service-details.jsx:707
 #: pkg/systemd/overview-cards/motdCard.jsx:67
 #: pkg/systemd/overview-cards/configurationCard.jsx:280
-#: pkg/systemd/overview-cards/realmd.jsx:419
+#: pkg/systemd/overview-cards/realmd.jsx:420
 #: pkg/systemd/overview-cards/cryptoPolicies.jsx:180 pkg/apps/utils.jsx:66
 #: pkg/networkmanager/dialogs-common.jsx:155
 #: pkg/networkmanager/firewall.jsx:604 pkg/networkmanager/firewall.jsx:808
@@ -1333,7 +1351,7 @@ msgstr "Kan inte slås på"
 msgid "Cannot connect to an unknown host"
 msgstr "Kan inte ansluta till en okänd maskin"
 
-#: pkg/lib/cockpit.js:3985
+#: pkg/lib/cockpit.js:3973
 msgid "Cannot forward login credentials"
 msgstr "Kan inte vidarebefordra inloggningsuppgifterna"
 
@@ -1375,7 +1393,7 @@ msgstr "Ändra värdnamn"
 msgid "Change iSCSI initiator name"
 msgstr "Ändra iSCSI-initierarnamn"
 
-#: pkg/storaged/crypto-keyslots.jsx:335
+#: pkg/storaged/crypto-keyslots.jsx:530
 msgid "Change passphrase"
 msgstr "Ändra lösenfras"
 
@@ -1441,6 +1459,16 @@ msgstr "Kontrollerar RAID-enhet $target"
 msgid "Checking and repairing RAID device $target"
 msgstr "Kontrollerar och reparerar RAID-enhet $target"
 
+#: pkg/storaged/crypto-keyslots.jsx:289
+#, fuzzy
+#| msgid "Checking for package updates..."
+msgid "Checking for $0 package"
+msgstr "Söker efter programuppdateringar..."
+
+#: pkg/storaged/crypto-keyslots.jsx:310
+msgid "Checking for NBDE support in the initrd"
+msgstr ""
+
 #: pkg/apps/application-list.jsx:123
 msgid "Checking for new applications"
 msgstr "Kontrollerar om det finns nya program"
@@ -1494,13 +1522,13 @@ msgstr "Nollställ sökning"
 msgid "Cleartext device"
 msgstr "Klar text enhet"
 
-#: pkg/systemd/overview-cards/realmd.jsx:289
+#: pkg/systemd/overview-cards/realmd.jsx:290
 msgid "Client software"
 msgstr "Klientprogramvara"
 
 #: pkg/users/dialog-utils.js:58
 #: pkg/systemd/overview-cards/configurationCard.jsx:194
-#: pkg/systemd/overview-cards/realmd.jsx:263 pkg/apps/utils.jsx:84
+#: pkg/systemd/overview-cards/realmd.jsx:264 pkg/apps/utils.jsx:84
 #: pkg/networkmanager/interfaces.js:43 pkg/storaged/dialog.jsx:438
 #: pkg/lib/cockpit-components-modifications.jsx:78
 #: pkg/lib/cockpit-components-terminal.jsx:208 pkg/shell/credentials.jsx:84
@@ -1521,7 +1549,7 @@ msgstr "Cockpit"
 msgid "Cockpit authentication is configured incorrectly."
 msgstr "Cockpit-autentisering är felaktigt konfigurerad."
 
-#: pkg/lib/cockpit.js:3991
+#: pkg/lib/cockpit.js:3979
 msgid "Cockpit could not contact the given host."
 msgstr "Cockpit kunde inte kontakta den angivna värden."
 
@@ -1547,7 +1575,7 @@ msgstr ""
 msgid "Cockpit is an interactive Linux server admin interface."
 msgstr "Cockpit är ett interaktivt administratörsgränssnitt för Linuxservrar."
 
-#: pkg/lib/cockpit.js:3989
+#: pkg/lib/cockpit.js:3977
 msgid "Cockpit is not compatible with the software on the system."
 msgstr "Cockpit är inte kompatibelt med programvaran på systemet."
 
@@ -1555,7 +1583,7 @@ msgstr "Cockpit är inte kompatibelt med programvaran på systemet."
 msgid "Cockpit is not installed"
 msgstr "Cockpit är inte installerat"
 
-#: pkg/lib/cockpit.js:3983
+#: pkg/lib/cockpit.js:3971
 msgid "Cockpit is not installed on the system."
 msgstr "Cockpit är inte installerat på systemet."
 
@@ -1685,7 +1713,7 @@ msgstr "Bekräfta lösenord"
 msgid "Confirm removal of $0"
 msgstr "Bekräfta borttagning av $0"
 
-#: pkg/storaged/crypto-keyslots.jsx:442
+#: pkg/storaged/crypto-keyslots.jsx:659
 msgid "Confirm removal with an alternate passphrase"
 msgstr "Bekräfta borttagandet med en alternativ lösenfras"
 
@@ -1733,7 +1761,7 @@ msgstr "Anslutningsfel"
 msgid "Connection failed"
 msgstr "Anslutningen misslyckades"
 
-#: pkg/lib/cockpit.js:3981
+#: pkg/lib/cockpit.js:3969
 msgid "Connection has timed out."
 msgstr "Anslutningens tidsgräns överskreds."
 
@@ -1745,7 +1773,7 @@ msgstr "Anslutningen kommer gå förlorad"
 msgid "Consists of"
 msgstr "Består av"
 
-#: pkg/systemd/overview-cards/realmd.jsx:311
+#: pkg/systemd/overview-cards/realmd.jsx:312
 msgid "Contacted domain"
 msgstr "Kontaktade domänen"
 
@@ -1791,7 +1819,7 @@ msgstr "Kopierade"
 msgid "Copy"
 msgstr "Kopiera"
 
-#: pkg/systemd/logs.jsx:416 pkg/storaged/crypto-keyslots.jsx:399
+#: pkg/systemd/logs.jsx:416 pkg/storaged/crypto-keyslots.jsx:602
 #: pkg/lib/cockpit-components-modifications.jsx:75
 msgid "Copy to clipboard"
 msgstr "Kopiera till urklipp"
@@ -2197,7 +2225,7 @@ msgstr "Skrivbord"
 msgid "Detachable"
 msgstr "Frånkopplingsbar"
 
-#: pkg/packagekit/updates.jsx:444 pkg/systemd/overview-cards/realmd.jsx:401
+#: pkg/packagekit/updates.jsx:444 pkg/systemd/overview-cards/realmd.jsx:402
 #: pkg/shell/credentials.jsx:112
 msgid "Details"
 msgstr "Detaljer"
@@ -2298,7 +2326,7 @@ msgstr "Disken är OK"
 msgid "Disk is failing"
 msgstr "Disken är på väg att gå sönder"
 
-#: pkg/storaged/crypto-keyslots.jsx:197
+#: pkg/storaged/crypto-keyslots.jsx:200
 msgid "Disk passphrase"
 msgstr "Disklösenfras"
 
@@ -2339,32 +2367,32 @@ msgid "Does not automatically start"
 msgstr "Startar inte automatiskt"
 
 #: pkg/systemd/overview-cards/configurationCard.jsx:76
-#: pkg/systemd/overview-cards/realmd.jsx:269
+#: pkg/systemd/overview-cards/realmd.jsx:270
 msgid "Domain"
 msgstr "Domän"
 
-#: pkg/systemd/overview-cards/realmd.jsx:266
+#: pkg/systemd/overview-cards/realmd.jsx:267
 msgctxt "dialog-title"
 msgid "Domain"
 msgstr "Domän"
 
-#: pkg/systemd/overview-cards/realmd.jsx:425
+#: pkg/systemd/overview-cards/realmd.jsx:426
 msgid "Domain address"
 msgstr "Domänadress"
 
-#: pkg/systemd/overview-cards/realmd.jsx:433
+#: pkg/systemd/overview-cards/realmd.jsx:434
 msgid "Domain administrator name"
 msgstr "Domänadministratörens namn"
 
-#: pkg/systemd/overview-cards/realmd.jsx:436
+#: pkg/systemd/overview-cards/realmd.jsx:437
 msgid "Domain administrator password"
 msgstr "Domänadministratörens lösenord"
 
-#: pkg/systemd/overview-cards/realmd.jsx:312
+#: pkg/systemd/overview-cards/realmd.jsx:313
 msgid "Domain could not be contacted"
 msgstr "Domän kunde inte kontaktas"
 
-#: pkg/systemd/overview-cards/realmd.jsx:313
+#: pkg/systemd/overview-cards/realmd.jsx:314
 msgid "Domain is not supported"
 msgstr "Domän stödjs inte"
 
@@ -2388,6 +2416,7 @@ msgstr "Hämtat"
 msgid "Downloading"
 msgstr "Hämtar"
 
+#: pkg/storaged/crypto-keyslots.jsx:278
 #: pkg/lib/cockpit-components-install-dialog.jsx:187
 msgid "Downloading $0"
 msgstr "Hämtar $0"
@@ -2406,7 +2435,7 @@ msgstr "Dubbelrad"
 
 #: pkg/packagekit/kpatch.jsx:230 pkg/packagekit/autoupdates.jsx:407
 #: pkg/networkmanager/firewall.jsx:116 pkg/storaged/iscsi-panel.jsx:255
-#: pkg/storaged/nfs-details.jsx:305 pkg/storaged/crypto-keyslots.jsx:577
+#: pkg/storaged/nfs-details.jsx:305 pkg/storaged/crypto-keyslots.jsx:794
 #: pkg/shell/hosts.jsx:165 pkg/shell/indexes.jsx:352
 msgid "Edit"
 msgstr "Redigera"
@@ -2415,7 +2444,7 @@ msgstr "Redigera"
 msgid "Edit /etc/motd"
 msgstr "Redigera /etc/motd"
 
-#: pkg/storaged/crypto-keyslots.jsx:356
+#: pkg/storaged/crypto-keyslots.jsx:551
 msgid "Edit Tang keyserver"
 msgstr "Redigera Tang-nyckelserver"
 
@@ -2451,7 +2480,7 @@ msgstr "Redigera tjänst $0"
 msgid "Edit user"
 msgstr "Redigera användare"
 
-#: pkg/storaged/crypto-keyslots.jsx:579
+#: pkg/storaged/crypto-keyslots.jsx:796
 msgid "Editing a key requires a free slot"
 msgstr "Att redigera en nyckel kräver ett fritt fack"
 
@@ -2498,6 +2527,12 @@ msgstr "Slå på brandväggen"
 #: pkg/networkmanager/firewall-switch.jsx:78
 msgid "Enabled"
 msgstr "Aktiverad"
+
+#: pkg/storaged/crypto-keyslots.jsx:378
+#, fuzzy
+#| msgid "Installing $0"
+msgid "Enabling $0"
+msgstr "Installerar $0"
 
 #: pkg/storaged/stratis-panel.jsx:138
 msgid "Encrypt data"
@@ -2841,6 +2876,10 @@ msgctxt "storage"
 msgid "Firmware version"
 msgstr "Version på hårdvaruprogrammet"
 
+#: pkg/storaged/crypto-keyslots.jsx:435
+msgid "Fix NBDE support"
+msgstr ""
+
 #: pkg/systemd/terminal.jsx:129 pkg/systemd/terminal.jsx:139
 msgid "Font size"
 msgstr "Textstorlek"
@@ -3021,7 +3060,7 @@ msgstr "Historiepaketantal"
 msgid "Host"
 msgstr "Värd"
 
-#: pkg/lib/cockpit.js:3977
+#: pkg/lib/cockpit.js:3965
 msgid "Host key is incorrect"
 msgstr "Värdnyckeln är felaktig"
 
@@ -3252,11 +3291,12 @@ msgstr "Installerad"
 msgid "Installing"
 msgstr "Installerar"
 
+#: pkg/storaged/crypto-keyslots.jsx:282
 #: pkg/lib/cockpit-components-install-dialog.jsx:191
 msgid "Installing $0"
 msgstr "Installerar $0"
 
-#: pkg/storaged/content-views.jsx:837
+#: pkg/storaged/content-views.jsx:837 pkg/storaged/crypto-keyslots.jsx:298
 msgid "Installing $0 would remove $1."
 msgstr "Att installera $0 skulle ta bort $1."
 
@@ -3281,7 +3321,7 @@ msgstr "Gränssnittsmedlemmar"
 msgid "Interfaces"
 msgstr "Gränssnitt"
 
-#: pkg/lib/cockpit.js:3979
+#: pkg/lib/cockpit.js:3967
 msgid "Internal error"
 msgstr "Internt fel"
 
@@ -3366,21 +3406,21 @@ msgstr "Kör sshd på en annan port?"
 msgid "Jobs"
 msgstr "Jobb"
 
-#: pkg/systemd/overview-cards/realmd.jsx:417
+#: pkg/systemd/overview-cards/realmd.jsx:418
 msgid "Join"
 msgstr "Gå med"
 
-#: pkg/systemd/overview-cards/realmd.jsx:423
+#: pkg/systemd/overview-cards/realmd.jsx:424
 msgctxt "dialog-title"
 msgid "Join a domain"
 msgstr "Gå med i en domän"
 
-#: pkg/systemd/overview-cards/realmd.jsx:449
-#: pkg/systemd/overview-cards/realmd.jsx:471
+#: pkg/systemd/overview-cards/realmd.jsx:450
+#: pkg/systemd/overview-cards/realmd.jsx:472
 msgid "Join domain"
 msgstr "Gå med i domän"
 
-#: pkg/systemd/overview-cards/realmd.jsx:416
+#: pkg/systemd/overview-cards/realmd.jsx:417
 msgid "Joining"
 msgstr "Går med"
 
@@ -3451,27 +3491,27 @@ msgstr "Kärn-live-patchning"
 msgid "Key password"
 msgstr "Nyckellösenord"
 
-#: pkg/storaged/crypto-keyslots.jsx:611
+#: pkg/storaged/crypto-keyslots.jsx:828
 msgid "Key slots with unknown types can not be edited here"
 msgstr "Nyckelfack med okända typer kan inte redigeras här"
 
-#: pkg/storaged/crypto-keyslots.jsx:282
+#: pkg/storaged/crypto-keyslots.jsx:476
 msgid "Key source"
 msgstr "Nyckelkälla"
 
-#: pkg/storaged/crypto-keyslots.jsx:634 pkg/storaged/crypto-keyslots.jsx:637
+#: pkg/storaged/crypto-keyslots.jsx:851 pkg/storaged/crypto-keyslots.jsx:854
 msgid "Keys"
 msgstr "Nycklar"
 
-#: pkg/storaged/crypto-keyslots.jsx:605
+#: pkg/storaged/crypto-keyslots.jsx:822
 msgid "Keyserver"
 msgstr "Nyckelserver"
 
-#: pkg/storaged/crypto-keyslots.jsx:307 pkg/storaged/crypto-keyslots.jsx:358
+#: pkg/storaged/crypto-keyslots.jsx:501 pkg/storaged/crypto-keyslots.jsx:553
 msgid "Keyserver address"
 msgstr "Nyckelserverns adress"
 
-#: pkg/storaged/crypto-keyslots.jsx:489
+#: pkg/storaged/crypto-keyslots.jsx:706
 msgid "Keyserver removal may prevent unlocking $0."
 msgstr "Att ta bort nyckelservern kan förhindra upplåsning av $0."
 
@@ -3531,13 +3571,13 @@ msgstr "Senaste lyckade inloggning:"
 msgid "Learn more"
 msgstr "Mer information"
 
-#: pkg/systemd/overview-cards/realmd.jsx:299
+#: pkg/systemd/overview-cards/realmd.jsx:300
 msgid "Leave $0"
 msgstr "Lämna $0"
 
-#: pkg/systemd/overview-cards/realmd.jsx:296
-#: pkg/systemd/overview-cards/realmd.jsx:299
-#: pkg/systemd/overview-cards/realmd.jsx:301
+#: pkg/systemd/overview-cards/realmd.jsx:297
+#: pkg/systemd/overview-cards/realmd.jsx:300
+#: pkg/systemd/overview-cards/realmd.jsx:302
 msgid "Leave domain"
 msgstr "Lämna domänen"
 
@@ -3791,11 +3831,11 @@ msgstr "Inloggning"
 msgid "Login again"
 msgstr "Logga in igen"
 
-#: pkg/lib/cockpit.js:3969
+#: pkg/lib/cockpit.js:3957
 msgid "Login failed"
 msgstr "Inloggningen misslyckades"
 
-#: pkg/systemd/overview-cards/realmd.jsx:275
+#: pkg/systemd/overview-cards/realmd.jsx:276
 msgid "Login format"
 msgstr "Inloggningsformat"
 
@@ -3859,7 +3899,7 @@ msgstr "Huvudserverchassi"
 msgid "Maintenance"
 msgstr "Underhåll"
 
-#: pkg/storaged/crypto-keyslots.jsx:389
+#: pkg/storaged/crypto-keyslots.jsx:592
 msgid ""
 "Make sure the key hash from the Tang server matches one of the following:"
 msgstr ""
@@ -3934,7 +3974,7 @@ msgstr "Manuell"
 msgid "Manually"
 msgstr "Manuellt"
 
-#: pkg/storaged/crypto-keyslots.jsx:398
+#: pkg/storaged/crypto-keyslots.jsx:601
 msgid "Manually check with SSH: "
 msgstr "Kontrollera manuellt med SSH: "
 
@@ -4318,7 +4358,7 @@ msgstr "Ny värd"
 msgid "New key password"
 msgstr "Nytt nyckellösenord"
 
-#: pkg/storaged/crypto-keyslots.jsx:293 pkg/storaged/crypto-keyslots.jsx:340
+#: pkg/storaged/crypto-keyslots.jsx:487 pkg/storaged/crypto-keyslots.jsx:535
 msgid "New passphrase"
 msgstr "Ny lösenfras"
 
@@ -4350,7 +4390,7 @@ msgstr "Inga SELinux-larm."
 msgid "No applications installed or available."
 msgstr "Inga program installerade eller tillgängliga."
 
-#: pkg/storaged/crypto-keyslots.jsx:624
+#: pkg/storaged/crypto-keyslots.jsx:841
 msgid "No available slots"
 msgstr "Inga tillgängliga fack"
 
@@ -4412,7 +4452,7 @@ msgstr "Inget filsystem"
 msgid "No filesystems"
 msgstr "Inga filsystem"
 
-#: pkg/storaged/crypto-keyslots.jsx:629
+#: pkg/storaged/crypto-keyslots.jsx:846
 msgid "No free key slots"
 msgstr "Inga fria nyckelfack"
 
@@ -4432,7 +4472,7 @@ msgstr "Inga iSCSI-mål är uppsatta"
 msgid "No installation package found for this application."
 msgstr "Inget installationspaket hittat för detta program."
 
-#: pkg/storaged/crypto-keyslots.jsx:554
+#: pkg/storaged/crypto-keyslots.jsx:771
 msgid "No keys added"
 msgstr "Inga nycklar tillagda"
 
@@ -4560,11 +4600,11 @@ msgstr "Inte installerad"
 msgid "Not mounted"
 msgstr "Inte monterat"
 
-#: pkg/systemd/overview-cards/realmd.jsx:448
+#: pkg/systemd/overview-cards/realmd.jsx:449
 msgid "Not permitted to configure realms"
 msgstr "Inte tillåtet att konfigurera att ändra riken"
 
-#: pkg/lib/cockpit.js:3967
+#: pkg/lib/cockpit.js:3955
 msgid "Not permitted to perform this action."
 msgstr "Inte tillåtet att utföra denna åtgärd."
 
@@ -4627,7 +4667,7 @@ msgstr "Förekomster"
 msgid "Ok"
 msgstr "Ok"
 
-#: pkg/storaged/crypto-keyslots.jsx:337
+#: pkg/storaged/crypto-keyslots.jsx:532
 msgid "Old passphrase"
 msgstr "Gammal lösenfras"
 
@@ -4820,33 +4860,33 @@ msgstr "Passiv"
 #: pkg/storaged/fsys-tab.jsx:346 pkg/storaged/stratis-panel.jsx:141
 #: pkg/storaged/format-dialog.jsx:266 pkg/storaged/format-dialog.jsx:292
 #: pkg/storaged/stratis-details.jsx:132 pkg/storaged/stratis-details.jsx:703
-#: pkg/storaged/content-views.jsx:269 pkg/storaged/crypto-keyslots.jsx:288
-#: pkg/storaged/crypto-keyslots.jsx:600
+#: pkg/storaged/content-views.jsx:269 pkg/storaged/crypto-keyslots.jsx:482
+#: pkg/storaged/crypto-keyslots.jsx:817
 msgid "Passphrase"
 msgstr "Lösenfras"
 
-#: pkg/storaged/crypto-keyslots.jsx:425
+#: pkg/storaged/crypto-keyslots.jsx:642
 msgid "Passphrase can not be empty"
 msgstr "Lösenfrasen kan inte vara tom"
 
 #: pkg/storaged/fsys-tab.jsx:349 pkg/storaged/stratis-panel.jsx:145
 #: pkg/storaged/format-dialog.jsx:270 pkg/storaged/format-dialog.jsx:296
-#: pkg/storaged/stratis-details.jsx:135 pkg/storaged/crypto-keyslots.jsx:200
-#: pkg/storaged/crypto-keyslots.jsx:296 pkg/storaged/crypto-keyslots.jsx:338
-#: pkg/storaged/crypto-keyslots.jsx:341
+#: pkg/storaged/stratis-details.jsx:135 pkg/storaged/crypto-keyslots.jsx:203
+#: pkg/storaged/crypto-keyslots.jsx:490 pkg/storaged/crypto-keyslots.jsx:533
+#: pkg/storaged/crypto-keyslots.jsx:536
 msgid "Passphrase cannot be empty"
 msgstr "Lösenfrasen får inte vara tom"
 
-#: pkg/storaged/crypto-keyslots.jsx:448
+#: pkg/storaged/crypto-keyslots.jsx:665
 msgid "Passphrase from any other key slot"
 msgstr "Lösenfrasen från vilket annat nyckelfack som helst"
 
-#: pkg/storaged/crypto-keyslots.jsx:438
+#: pkg/storaged/crypto-keyslots.jsx:655
 msgid "Passphrase removal may prevent unlocking $0."
 msgstr "Att ta bort lösenfrasen kan förhindra upplåsning av $0."
 
 #: pkg/storaged/stratis-panel.jsx:153 pkg/storaged/format-dialog.jsx:278
-#: pkg/storaged/crypto-keyslots.jsx:304 pkg/storaged/crypto-keyslots.jsx:343
+#: pkg/storaged/crypto-keyslots.jsx:498 pkg/storaged/crypto-keyslots.jsx:538
 msgid "Passphrases do not match"
 msgstr "Lösenfraserna stämmer inte överens"
 
@@ -5391,6 +5431,12 @@ msgstr "Vägrar att ansluta. Värdnyckeln stämmer inte"
 msgid "Refusing to connect. Hostkey is unknown"
 msgstr "Vägrar att ansluta. Värdnyckeln är okänd"
 
+#: pkg/storaged/crypto-keyslots.jsx:320
+#, fuzzy
+#| msgid "Generating report"
+msgid "Regenerating initrd"
+msgstr "Genererar en rapport"
+
 #: pkg/packagekit/updates.jsx:1360
 msgid "Register…"
 msgstr "Registrera …"
@@ -5456,8 +5502,8 @@ msgstr "Borttagningar:"
 #: pkg/users/authorized-keys-panel.js:172
 #: pkg/systemd/services/timer-dialog.jsx:369 pkg/apps/application.jsx:51
 #: pkg/storaged/vgroup-details.jsx:121 pkg/storaged/mdraid-details.jsx:145
-#: pkg/storaged/nfs-details.jsx:307 pkg/storaged/crypto-keyslots.jsx:469
-#: pkg/storaged/crypto-keyslots.jsx:504 pkg/storaged/crypto-keyslots.jsx:585
+#: pkg/storaged/nfs-details.jsx:307 pkg/storaged/crypto-keyslots.jsx:686
+#: pkg/storaged/crypto-keyslots.jsx:721 pkg/storaged/crypto-keyslots.jsx:802
 #: pkg/shell/hosts.jsx:168
 msgid "Remove"
 msgstr "Ta bort"
@@ -5470,11 +5516,11 @@ msgstr "Ta bort $0"
 msgid "Remove $0 service from $1 zone"
 msgstr "Ta bort tjänsten $0 från zon $1"
 
-#: pkg/storaged/crypto-keyslots.jsx:488
+#: pkg/storaged/crypto-keyslots.jsx:705
 msgid "Remove $0?"
 msgstr "Ta bort $0?"
 
-#: pkg/storaged/crypto-keyslots.jsx:498
+#: pkg/storaged/crypto-keyslots.jsx:715
 msgid "Remove Tang keyserver?"
 msgstr "Ta bort Tang-nyckelserver?"
 
@@ -5493,7 +5539,7 @@ msgstr "Ta bort värd"
 msgid "Remove item"
 msgstr "Ta bort post"
 
-#: pkg/storaged/crypto-keyslots.jsx:462
+#: pkg/storaged/crypto-keyslots.jsx:679
 msgid "Remove passphrase in key slot $0?"
 msgstr "Ta bort lösenfrasen i nyckelfack $0?"
 
@@ -5509,6 +5555,7 @@ msgstr "Ta bort zon $0"
 msgid "Removing"
 msgstr "Tar bort"
 
+#: pkg/storaged/crypto-keyslots.jsx:280
 #: pkg/lib/cockpit-components-install-dialog.jsx:189
 msgid "Removing $0"
 msgstr "Tar bort $0"
@@ -5525,7 +5572,7 @@ msgstr ""
 msgid "Removing $target from RAID device"
 msgstr "Tar bort $target från RAID-enheten"
 
-#: pkg/storaged/crypto-keyslots.jsx:446
+#: pkg/storaged/crypto-keyslots.jsx:663
 msgid ""
 "Removing a passphrase without confirmation of another passphrase may prevent "
 "unlocking or key management, if other passphrases are forgotten or lost."
@@ -5591,8 +5638,8 @@ msgstr "Upprepa"
 msgid "Repeat monthly"
 msgstr "Upprepa månadsvis"
 
-#: pkg/storaged/crypto-keyslots.jsx:286 pkg/storaged/crypto-keyslots.jsx:298
-#: pkg/storaged/crypto-keyslots.jsx:342
+#: pkg/storaged/crypto-keyslots.jsx:480 pkg/storaged/crypto-keyslots.jsx:492
+#: pkg/storaged/crypto-keyslots.jsx:537
 msgid "Repeat passphrase"
 msgstr "Upprepa lösenfrasen"
 
@@ -5801,11 +5848,11 @@ msgstr "SELinux systemstatus är okänd."
 msgid "SELinux troubleshoot"
 msgstr "SELinux-felsökning"
 
-#: pkg/storaged/crypto-keyslots.jsx:394
+#: pkg/storaged/crypto-keyslots.jsx:597
 msgid "SHA1"
 msgstr "SHA1"
 
-#: pkg/storaged/crypto-keyslots.jsx:391
+#: pkg/storaged/crypto-keyslots.jsx:594
 msgid "SHA256"
 msgstr "SHA256"
 
@@ -5860,8 +5907,8 @@ msgstr "Lördagar"
 #: pkg/networkmanager/dialogs-common.jsx:152 pkg/metrics/metrics.jsx:1274
 #: pkg/storaged/fsys-tab.jsx:374 pkg/storaged/fsys-tab.jsx:490
 #: pkg/storaged/crypto-tab.jsx:161 pkg/storaged/crypto-tab.jsx:205
-#: pkg/storaged/nfs-details.jsx:186 pkg/storaged/crypto-keyslots.jsx:346
-#: pkg/storaged/crypto-keyslots.jsx:365 pkg/kdump/kdump-view.jsx:324
+#: pkg/storaged/nfs-details.jsx:186 pkg/storaged/crypto-keyslots.jsx:541
+#: pkg/storaged/crypto-keyslots.jsx:560 pkg/kdump/kdump-view.jsx:324
 msgid "Save"
 msgstr "Spara"
 
@@ -5882,8 +5929,8 @@ msgstr "Spara utrymme genom att komprimera enskilda block med LZ4"
 msgid "Save space by storing identical data blocks just once"
 msgstr "Spara utrymme genom att lagra identiska datablock bara en gång"
 
-#: pkg/storaged/crypto-keyslots.jsx:312 pkg/storaged/crypto-keyslots.jsx:363
-#: pkg/storaged/crypto-keyslots.jsx:408
+#: pkg/storaged/crypto-keyslots.jsx:433 pkg/storaged/crypto-keyslots.jsx:506
+#: pkg/storaged/crypto-keyslots.jsx:558 pkg/storaged/crypto-keyslots.jsx:611
 msgid ""
 "Saving a new passphrase requires unlocking the disk. Please provide a "
 "current disk passphrase."
@@ -5988,11 +6035,11 @@ msgstr "Serveradressen får inte vara tom."
 msgid "Server cannot be empty."
 msgstr "Servern får inte vara tom."
 
-#: pkg/lib/cockpit.js:3987
+#: pkg/lib/cockpit.js:3975
 msgid "Server has closed the connection."
 msgstr "Servern har stängt förbindelsen."
 
-#: pkg/systemd/overview-cards/realmd.jsx:283
+#: pkg/systemd/overview-cards/realmd.jsx:284
 msgid "Server software"
 msgstr "Serverprogramvara"
 
@@ -6224,7 +6271,7 @@ msgstr "Hoppa till innehållet"
 msgid "Slot"
 msgstr "Plats"
 
-#: pkg/storaged/mdraid-details.jsx:123 pkg/storaged/crypto-keyslots.jsx:573
+#: pkg/storaged/mdraid-details.jsx:123 pkg/storaged/crypto-keyslots.jsx:790
 msgid "Slot $0"
 msgstr "Plats $0"
 
@@ -6471,7 +6518,7 @@ msgstr "Att prenumerera på systemd-signaler misslyckades: $0"
 msgid "Successfully copied to clipboard"
 msgstr "Kopierades till urklipp"
 
-#: pkg/storaged/crypto-keyslots.jsx:400
+#: pkg/storaged/crypto-keyslots.jsx:603
 msgid "Successfully copied to clipboard!"
 msgstr "Kopierade till urklipp!"
 
@@ -6591,7 +6638,7 @@ msgstr "TCP"
 msgid "Tablet"
 msgstr "Platta"
 
-#: pkg/storaged/crypto-keyslots.jsx:289
+#: pkg/storaged/crypto-keyslots.jsx:483
 msgid "Tang keyserver"
 msgstr "Tang-nyckelserver"
 
@@ -6641,8 +6688,20 @@ msgstr "Testa kdump-inställningar"
 msgid "Testing connection"
 msgstr "Testar anslutningen"
 
+#: pkg/storaged/crypto-keyslots.jsx:300
+#, fuzzy
+#| msgid "$0 is not available from any repository."
+msgid "The $0 package is not available from any repository."
+msgstr "$0 är inte tillgängligt från något förråd."
+
 #: pkg/storaged/stratis-panel.jsx:45
 msgid "The $0 package must be installed to create Stratis pools."
+msgstr "Paketet $0 måste installeras för att skapa Stratis-pooler."
+
+#: pkg/storaged/crypto-keyslots.jsx:295
+#, fuzzy
+#| msgid "The $0 package must be installed to create Stratis pools."
+msgid "The $0 package must be installed."
 msgstr "Paketet $0 måste installeras för att skapa Stratis-pooler."
 
 #: pkg/storaged/content-views.jsx:896
@@ -6716,7 +6775,7 @@ msgid ""
 msgstr ""
 "Skapandet av denna VDO-enhet avslutade inte och enheten kan inte användas."
 
-#: pkg/storaged/crypto-keyslots.jsx:550
+#: pkg/storaged/crypto-keyslots.jsx:767
 msgid ""
 "The currently logged in user is not permitted to see information about keys."
 msgstr ""
@@ -6802,6 +6861,10 @@ msgstr[1] "Följande tjänster kommer att startas om:"
 msgid "The full name must not contain colons."
 msgstr "Det fullständiga namnet får inte innehålla kolon."
 
+#: pkg/storaged/crypto-keyslots.jsx:317
+msgid "The initrd must be regenerated."
+msgstr ""
+
 #: pkg/shell/hosts_dialog.jsx:682
 msgid "The key password can not be empty"
 msgstr "Nyckellösenordet får inte vara tomt"
@@ -6818,7 +6881,7 @@ msgstr "Nyckeln du angav var inte giltig."
 msgid "The last disk of a RAID device cannot be removed."
 msgstr "Den sista disken i en RAID-enhet kan inte tas bort."
 
-#: pkg/storaged/crypto-keyslots.jsx:586
+#: pkg/storaged/crypto-keyslots.jsx:803
 msgid "The last key slot can not be removed"
 msgstr "Det sista nyckelfacket kan inte tas bort"
 
@@ -6887,9 +6950,21 @@ msgstr ""
 "Servern vägrade att autentisera ”$0” med lösenordsautentisering, och inga "
 "andra stödda autentiseringsmetoder är tillgängliga."
 
-#: pkg/lib/cockpit.js:3971
+#: pkg/lib/cockpit.js:3959
 msgid "The server refused to authenticate using any supported methods."
 msgstr "Servern vägrade att autentisera med några stödda metoder."
+
+#: pkg/storaged/crypto-keyslots.jsx:423
+msgid ""
+"The system does not currently support unlocking a filesystem with a Tang "
+"keyserver during boot."
+msgstr ""
+
+#: pkg/storaged/crypto-keyslots.jsx:422
+msgid ""
+"The system does not currently support unlocking the root filesystem with a "
+"Tang keyserver."
+msgstr ""
 
 #: pkg/systemd/hwinfo.jsx:72
 msgid "The user $0 is not permitted to change cpu security mitigations"
@@ -6953,6 +7028,10 @@ msgstr ""
 msgid "There was an unexpected error while connecting to the machine."
 msgstr "Det uppstod ett oväntat fel vid anslutning till maskinen."
 
+#: pkg/storaged/crypto-keyslots.jsx:427
+msgid "These additional steps are necessary:"
+msgstr ""
+
 #: pkg/storaged/dialog.jsx:1124
 msgid "These changes will be made:"
 msgstr "Dessa ändringar kommer att göras:"
@@ -7008,7 +7087,7 @@ msgstr "Denna logiska volym används inte helt av innehållet."
 msgid "This machine has already been added."
 msgstr "Denna maskin har redan lagts till."
 
-#: pkg/systemd/overview-cards/realmd.jsx:420
+#: pkg/systemd/overview-cards/realmd.jsx:421
 msgid "This may take a while"
 msgstr "Detta kan ta ett tag"
 
@@ -7187,7 +7266,7 @@ msgstr "Växla datumväljare"
 msgid "Toggle filters"
 msgstr "Växla filter"
 
-#: pkg/lib/cockpit.js:3993
+#: pkg/lib/cockpit.js:3981
 msgid "Too much data"
 msgstr "För mycket data"
 
@@ -7240,7 +7319,7 @@ msgstr "Felsök"
 msgid "Troubleshoot…"
 msgstr "Felsök…"
 
-#: pkg/storaged/crypto-keyslots.jsx:410
+#: pkg/storaged/crypto-keyslots.jsx:613
 msgid "Trust key"
 msgstr "Förtroendenyckel"
 
@@ -7454,7 +7533,7 @@ msgstr "Okänt värdnamn"
 msgid "Unknown service name"
 msgstr "Okänt tjänstnamn"
 
-#: pkg/storaged/crypto-keyslots.jsx:610
+#: pkg/storaged/crypto-keyslots.jsx:827
 msgid "Unknown type"
 msgstr "Okänd typ"
 
@@ -7484,7 +7563,7 @@ msgstr "Lås upp pool för att se filsystem."
 msgid "Unlocking $target"
 msgstr "Lås upp $target"
 
-#: pkg/storaged/crypto-keyslots.jsx:243
+#: pkg/storaged/crypto-keyslots.jsx:246
 msgid "Unlocking disk"
 msgstr "Låser upp disk"
 
@@ -7539,7 +7618,7 @@ msgstr "Volym som ej stöds"
 msgid "Until"
 msgstr "Tills"
 
-#: pkg/lib/cockpit.js:3973 pkg/lib/cockpit.js:3975
+#: pkg/lib/cockpit.js:3961 pkg/lib/cockpit.js:3963
 msgid "Untrusted host"
 msgstr "Ej betrodd värd"
 
@@ -7713,7 +7792,7 @@ msgstr "VLAN-ID"
 msgid "VLAN settings"
 msgstr "VLAN-inställningar"
 
-#: pkg/systemd/overview-cards/realmd.jsx:310
+#: pkg/systemd/overview-cards/realmd.jsx:311
 msgid "Validating address"
 msgstr "Validerar adress"
 
@@ -7733,7 +7812,7 @@ msgstr "Leverantör"
 msgid "Verified"
 msgstr "Verifierad"
 
-#: pkg/storaged/crypto-keyslots.jsx:386
+#: pkg/storaged/crypto-keyslots.jsx:589
 msgid "Verify key"
 msgstr "Verifiera nyckel"
 
@@ -7839,6 +7918,7 @@ msgstr "Väntar på inmatning…"
 msgid "Waiting for other programs to finish using the package manager..."
 msgstr "Väntar på att andra program skall sluta använda pakethanteraren …"
 
+#: pkg/storaged/crypto-keyslots.jsx:274
 #: pkg/lib/cockpit-components-install-dialog.jsx:148
 #: pkg/lib/cockpit-components-install-dialog.jsx:183
 msgid "Waiting for other software management operations to finish"
@@ -8015,11 +8095,11 @@ msgstr ""
 "Din server kommer stänga förbindelsen snart. Du kan återansluta efter att "
 "den har startat om."
 
-#: pkg/lib/cockpit.js:3963
+#: pkg/lib/cockpit.js:3951
 msgid "Your session has been terminated."
 msgstr "Din session har avslutats."
 
-#: pkg/lib/cockpit.js:3965
+#: pkg/lib/cockpit.js:3953
 msgid "Your session has expired. Please log in again."
 msgstr "Din session har gått ut. Logga in igen."
 
@@ -8851,9 +8931,6 @@ msgstr "zon"
 
 #~ msgid "Download report"
 #~ msgstr "Hämta en rapport"
-
-#~ msgid "Generating report"
-#~ msgstr "Genererar en rapport"
 
 #~ msgid "No archive has been created."
 #~ msgstr "Inget arkiv har skapats."

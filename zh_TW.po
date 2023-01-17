@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-13 03:00+0000\n"
+"POT-Creation-Date: 2023-01-16 02:53+0000\n"
 "PO-Revision-Date: 2021-11-05 13:05+0000\n"
 "Last-Translator: Martin Pitt <mpitt@redhat.com>\n"
 "Language-Team: Chinese (Traditional) <https://translate.fedoraproject.org/"
@@ -266,7 +266,7 @@ msgid "$0 service needs to be restarted"
 msgid_plural "$0 services need to be restarted"
 msgstr[0] "$0 服務發生錯誤"
 
-#: pkg/storaged/crypto-keyslots.jsx:624
+#: pkg/storaged/crypto-keyslots.jsx:841
 #, fuzzy
 #| msgid "$0 slots remain"
 msgid "$0 slot remains"
@@ -702,8 +702,8 @@ msgstr "適應性傳輸負載平衡"
 #: pkg/storaged/mdraid-details.jsx:159 pkg/storaged/stratis-details.jsx:148
 #: pkg/storaged/nfs-panel.jsx:65 pkg/storaged/iscsi-panel.jsx:140
 #: pkg/storaged/iscsi-panel.jsx:164 pkg/storaged/iscsi-panel.jsx:259
-#: pkg/storaged/nfs-details.jsx:186 pkg/storaged/crypto-keyslots.jsx:314
-#: pkg/storaged/crypto-keyslots.jsx:627 pkg/shell/credentials.jsx:187
+#: pkg/storaged/nfs-details.jsx:186 pkg/storaged/crypto-keyslots.jsx:508
+#: pkg/storaged/crypto-keyslots.jsx:844 pkg/shell/credentials.jsx:187
 #: pkg/shell/hosts_dialog.jsx:248
 msgid "Add"
 msgstr "加入"
@@ -712,6 +712,10 @@ msgstr "加入"
 #: pkg/lib/cockpit-components-firewalld-request.jsx:148
 msgid "Add $0"
 msgstr "新增 $0"
+
+#: pkg/storaged/crypto-keyslots.jsx:417
+msgid "Add Network Bound Disk Encryption"
+msgstr ""
 
 #: pkg/networkmanager/network-main.jsx:178
 msgid "Add VLAN"
@@ -752,7 +756,7 @@ msgstr "新增iSCSI門戶"
 msgid "Add item"
 msgstr "新增團隊"
 
-#: pkg/users/authorized-keys-panel.js:120 pkg/storaged/crypto-keyslots.jsx:280
+#: pkg/users/authorized-keys-panel.js:120 pkg/storaged/crypto-keyslots.jsx:474
 #: pkg/shell/credentials.jsx:93
 msgid "Add key"
 msgstr "新增密鑰"
@@ -806,6 +810,16 @@ msgstr "新增團隊"
 msgid "Add zone"
 msgstr "新增區域"
 
+#: pkg/storaged/crypto-keyslots.jsx:370
+#, fuzzy
+#| msgid "Encryption options"
+msgid "Adding \"$0\" to encryption options"
+msgstr "加密選項"
+
+#: pkg/storaged/crypto-keyslots.jsx:359
+msgid "Adding \"$0\" to filesystem options"
+msgstr ""
+
 #: pkg/networkmanager/network-interface-members.jsx:177
 #, fuzzy
 #| msgid ""
@@ -822,13 +836,17 @@ msgid ""
 "of any runtime-only configuration!"
 msgstr ""
 
-#: pkg/users/authorized-keys.js:112
+#: pkg/users/authorized-keys.js:112 pkg/storaged/crypto-keyslots.jsx:440
 msgid "Adding key"
 msgstr "新增密鑰"
 
 #: pkg/storaged/jobs-panel.jsx:80
 msgid "Adding physical volume to $target"
 msgstr "新增物理捲到 $target"
+
+#: pkg/storaged/crypto-keyslots.jsx:331
+msgid "Adding rd.neednet=1 to kernel command line"
+msgstr ""
 
 #: pkg/networkmanager/network-interface.jsx:317
 msgid "Additional DNS $val"
@@ -864,11 +882,11 @@ msgstr "位址"
 msgid "Address $val"
 msgstr "位址 $val"
 
-#: pkg/storaged/crypto-keyslots.jsx:271
+#: pkg/storaged/crypto-keyslots.jsx:465
 msgid "Address cannot be empty"
 msgstr "位址不能空白"
 
-#: pkg/storaged/crypto-keyslots.jsx:273
+#: pkg/storaged/crypto-keyslots.jsx:467
 msgid "Address is not a valid URL"
 msgstr "位址不是有效的URL"
 
@@ -902,7 +920,7 @@ msgstr "高級TCA"
 msgid "After"
 msgstr "封底"
 
-#: pkg/systemd/overview-cards/realmd.jsx:303
+#: pkg/systemd/overview-cards/realmd.jsx:304
 msgid ""
 "After leaving the domain, only users with local credentials will be able to "
 "log into this machine. This may also affect other services as DNS resolution "
@@ -1362,7 +1380,7 @@ msgstr ""
 #: pkg/systemd/services/service-details.jsx:707
 #: pkg/systemd/overview-cards/motdCard.jsx:67
 #: pkg/systemd/overview-cards/configurationCard.jsx:280
-#: pkg/systemd/overview-cards/realmd.jsx:419
+#: pkg/systemd/overview-cards/realmd.jsx:420
 #: pkg/systemd/overview-cards/cryptoPolicies.jsx:180 pkg/apps/utils.jsx:66
 #: pkg/networkmanager/dialogs-common.jsx:155
 #: pkg/networkmanager/firewall.jsx:604 pkg/networkmanager/firewall.jsx:808
@@ -1399,7 +1417,7 @@ msgstr "大小不能是負面的"
 msgid "Cannot connect to an unknown host"
 msgstr "無法連接到未知機器"
 
-#: pkg/lib/cockpit.js:3985
+#: pkg/lib/cockpit.js:3973
 msgid "Cannot forward login credentials"
 msgstr "無法轉發登錄憑據"
 
@@ -1441,7 +1459,7 @@ msgstr "更改主機名"
 msgid "Change iSCSI initiator name"
 msgstr "更改iSCSI啟動器名稱"
 
-#: pkg/storaged/crypto-keyslots.jsx:335
+#: pkg/storaged/crypto-keyslots.jsx:530
 msgid "Change passphrase"
 msgstr "更改密碼"
 
@@ -1503,6 +1521,16 @@ msgstr "檢查RAID設備 $target"
 msgid "Checking and repairing RAID device $target"
 msgstr "檢查和修復RAID設備 $target"
 
+#: pkg/storaged/crypto-keyslots.jsx:289
+#, fuzzy
+#| msgid "Checking $target"
+msgid "Checking for $0 package"
+msgstr "檢查 $target"
+
+#: pkg/storaged/crypto-keyslots.jsx:310
+msgid "Checking for NBDE support in the initrd"
+msgstr ""
+
 #: pkg/apps/application-list.jsx:123
 msgid "Checking for new applications"
 msgstr "檢查新的應用程式"
@@ -1562,13 +1590,13 @@ msgstr ""
 msgid "Cleartext device"
 msgstr "建立VDO設備"
 
-#: pkg/systemd/overview-cards/realmd.jsx:289
+#: pkg/systemd/overview-cards/realmd.jsx:290
 msgid "Client software"
 msgstr ""
 
 #: pkg/users/dialog-utils.js:58
 #: pkg/systemd/overview-cards/configurationCard.jsx:194
-#: pkg/systemd/overview-cards/realmd.jsx:263 pkg/apps/utils.jsx:84
+#: pkg/systemd/overview-cards/realmd.jsx:264 pkg/apps/utils.jsx:84
 #: pkg/networkmanager/interfaces.js:43 pkg/storaged/dialog.jsx:438
 #: pkg/lib/cockpit-components-modifications.jsx:78
 #: pkg/lib/cockpit-components-terminal.jsx:208 pkg/shell/credentials.jsx:84
@@ -1589,7 +1617,7 @@ msgstr ""
 msgid "Cockpit authentication is configured incorrectly."
 msgstr "駕駛艙身份驗證配置不正確。"
 
-#: pkg/lib/cockpit.js:3991
+#: pkg/lib/cockpit.js:3979
 msgid "Cockpit could not contact the given host."
 msgstr "駕駛艙無法聯繫給定的主人。"
 
@@ -1613,7 +1641,7 @@ msgstr ""
 msgid "Cockpit is an interactive Linux server admin interface."
 msgstr "Cockpit是一個交互式Linux伺服器管理界面。"
 
-#: pkg/lib/cockpit.js:3989
+#: pkg/lib/cockpit.js:3977
 msgid "Cockpit is not compatible with the software on the system."
 msgstr "駕駛艙與系統上的軟件不兼容。"
 
@@ -1621,7 +1649,7 @@ msgstr "駕駛艙與系統上的軟件不兼容。"
 msgid "Cockpit is not installed"
 msgstr "沒有安裝駕駛艙"
 
-#: pkg/lib/cockpit.js:3983
+#: pkg/lib/cockpit.js:3971
 msgid "Cockpit is not installed on the system."
 msgstr "系統上未安裝駕駛艙。"
 
@@ -1763,7 +1791,7 @@ msgstr "確認新密碼"
 msgid "Confirm removal of $0"
 msgstr ""
 
-#: pkg/storaged/crypto-keyslots.jsx:442
+#: pkg/storaged/crypto-keyslots.jsx:659
 #, fuzzy
 #| msgid "Confirm removal with passphrase"
 msgid "Confirm removal with an alternate passphrase"
@@ -1819,7 +1847,7 @@ msgstr "連接錯誤"
 msgid "Connection failed"
 msgstr ""
 
-#: pkg/lib/cockpit.js:3981
+#: pkg/lib/cockpit.js:3969
 msgid "Connection has timed out."
 msgstr "連接已超時。"
 
@@ -1831,7 +1859,7 @@ msgstr "連接將丟失"
 msgid "Consists of"
 msgstr "由組成"
 
-#: pkg/systemd/overview-cards/realmd.jsx:311
+#: pkg/systemd/overview-cards/realmd.jsx:312
 msgid "Contacted domain"
 msgstr ""
 
@@ -1884,7 +1912,7 @@ msgstr ""
 msgid "Copy"
 msgstr ""
 
-#: pkg/systemd/logs.jsx:416 pkg/storaged/crypto-keyslots.jsx:399
+#: pkg/systemd/logs.jsx:416 pkg/storaged/crypto-keyslots.jsx:602
 #: pkg/lib/cockpit-components-modifications.jsx:75
 msgid "Copy to clipboard"
 msgstr ""
@@ -2337,7 +2365,7 @@ msgstr "可拆開"
 
 # translation auto-copied from project libreport, version master, document
 # libreport
-#: pkg/packagekit/updates.jsx:444 pkg/systemd/overview-cards/realmd.jsx:401
+#: pkg/packagekit/updates.jsx:444 pkg/systemd/overview-cards/realmd.jsx:402
 #: pkg/shell/credentials.jsx:112
 msgid "Details"
 msgstr "詳情"
@@ -2451,7 +2479,7 @@ msgstr "磁碟沒問題"
 msgid "Disk is failing"
 msgstr "$0 磁碟遺失"
 
-#: pkg/storaged/crypto-keyslots.jsx:197
+#: pkg/storaged/crypto-keyslots.jsx:200
 msgid "Disk passphrase"
 msgstr "磁碟密碼"
 
@@ -2496,36 +2524,36 @@ msgid "Does not automatically start"
 msgstr "自動連接"
 
 #: pkg/systemd/overview-cards/configurationCard.jsx:76
-#: pkg/systemd/overview-cards/realmd.jsx:269
+#: pkg/systemd/overview-cards/realmd.jsx:270
 msgid "Domain"
 msgstr "網域名稱"
 
-#: pkg/systemd/overview-cards/realmd.jsx:266
+#: pkg/systemd/overview-cards/realmd.jsx:267
 #, fuzzy
 #| msgid "Domain"
 msgctxt "dialog-title"
 msgid "Domain"
 msgstr "網域名稱"
 
-#: pkg/systemd/overview-cards/realmd.jsx:425
+#: pkg/systemd/overview-cards/realmd.jsx:426
 msgid "Domain address"
 msgstr "域名地址"
 
-#: pkg/systemd/overview-cards/realmd.jsx:433
+#: pkg/systemd/overview-cards/realmd.jsx:434
 msgid "Domain administrator name"
 msgstr "域管理員名稱"
 
-#: pkg/systemd/overview-cards/realmd.jsx:436
+#: pkg/systemd/overview-cards/realmd.jsx:437
 msgid "Domain administrator password"
 msgstr "域管理員密碼"
 
-#: pkg/systemd/overview-cards/realmd.jsx:312
+#: pkg/systemd/overview-cards/realmd.jsx:313
 #, fuzzy
 #| msgid "Domain $0 could not be contacted"
 msgid "Domain could not be contacted"
 msgstr "網域 $0 無法連接"
 
-#: pkg/systemd/overview-cards/realmd.jsx:313
+#: pkg/systemd/overview-cards/realmd.jsx:314
 #, fuzzy
 #| msgid "Domain $0 is not supported"
 msgid "Domain is not supported"
@@ -2551,6 +2579,7 @@ msgstr "下載"
 msgid "Downloading"
 msgstr "下載中"
 
+#: pkg/storaged/crypto-keyslots.jsx:278
 #: pkg/lib/cockpit-components-install-dialog.jsx:187
 msgid "Downloading $0"
 msgstr "下載 $0"
@@ -2569,7 +2598,7 @@ msgstr ""
 
 #: pkg/packagekit/kpatch.jsx:230 pkg/packagekit/autoupdates.jsx:407
 #: pkg/networkmanager/firewall.jsx:116 pkg/storaged/iscsi-panel.jsx:255
-#: pkg/storaged/nfs-details.jsx:305 pkg/storaged/crypto-keyslots.jsx:577
+#: pkg/storaged/nfs-details.jsx:305 pkg/storaged/crypto-keyslots.jsx:794
 #: pkg/shell/hosts.jsx:165 pkg/shell/indexes.jsx:352
 msgid "Edit"
 msgstr "編輯"
@@ -2579,7 +2608,7 @@ msgstr "編輯"
 msgid "Edit /etc/motd"
 msgstr "編輯"
 
-#: pkg/storaged/crypto-keyslots.jsx:356
+#: pkg/storaged/crypto-keyslots.jsx:551
 msgid "Edit Tang keyserver"
 msgstr "編輯Tang keyserver"
 
@@ -2625,7 +2654,7 @@ msgstr "編輯主機"
 msgid "Edit user"
 msgstr "編輯主機"
 
-#: pkg/storaged/crypto-keyslots.jsx:579
+#: pkg/storaged/crypto-keyslots.jsx:796
 msgid "Editing a key requires a free slot"
 msgstr "編輯密鑰需要一個空閒插槽"
 
@@ -2676,6 +2705,12 @@ msgstr ""
 #: pkg/networkmanager/firewall-switch.jsx:78
 msgid "Enabled"
 msgstr "已啟用"
+
+#: pkg/storaged/crypto-keyslots.jsx:378
+#, fuzzy
+#| msgid "Installing $0"
+msgid "Enabling $0"
+msgstr "正在安裝 $0"
 
 #: pkg/storaged/stratis-panel.jsx:138
 #, fuzzy
@@ -3068,6 +3103,10 @@ msgctxt "storage"
 msgid "Firmware version"
 msgstr "版本"
 
+#: pkg/storaged/crypto-keyslots.jsx:435
+msgid "Fix NBDE support"
+msgstr ""
+
 #: pkg/systemd/terminal.jsx:129 pkg/systemd/terminal.jsx:139
 #, fuzzy
 #| msgid "Chunk size"
@@ -3262,7 +3301,7 @@ msgstr "鎖定帳號"
 msgid "Host"
 msgstr "主機"
 
-#: pkg/lib/cockpit.js:3977
+#: pkg/lib/cockpit.js:3965
 msgid "Host key is incorrect"
 msgstr "主機密鑰不正確"
 
@@ -3496,11 +3535,12 @@ msgstr "已安裝"
 msgid "Installing"
 msgstr "安裝"
 
+#: pkg/storaged/crypto-keyslots.jsx:282
 #: pkg/lib/cockpit-components-install-dialog.jsx:191
 msgid "Installing $0"
 msgstr "正在安裝 $0"
 
-#: pkg/storaged/content-views.jsx:837
+#: pkg/storaged/content-views.jsx:837 pkg/storaged/crypto-keyslots.jsx:298
 #, fuzzy
 #| msgid "Installing $0"
 msgid "Installing $0 would remove $1."
@@ -3532,7 +3572,7 @@ msgstr "介面"
 msgid "Interfaces"
 msgstr "介面"
 
-#: pkg/lib/cockpit.js:3979
+#: pkg/lib/cockpit.js:3967
 msgid "Internal error"
 msgstr "內部錯誤"
 
@@ -3621,24 +3661,24 @@ msgid "Jobs"
 msgstr "工作"
 
 # ctx::sourcefile::Navigation Menu
-#: pkg/systemd/overview-cards/realmd.jsx:417
+#: pkg/systemd/overview-cards/realmd.jsx:418
 msgid "Join"
 msgstr "加入"
 
-#: pkg/systemd/overview-cards/realmd.jsx:423
+#: pkg/systemd/overview-cards/realmd.jsx:424
 #, fuzzy
 #| msgid "Join a domain"
 msgctxt "dialog-title"
 msgid "Join a domain"
 msgstr "加入網域"
 
-#: pkg/systemd/overview-cards/realmd.jsx:449
-#: pkg/systemd/overview-cards/realmd.jsx:471
+#: pkg/systemd/overview-cards/realmd.jsx:450
+#: pkg/systemd/overview-cards/realmd.jsx:472
 msgid "Join domain"
 msgstr "網域設定"
 
 # ctx::sourcefile::Navigation Menu
-#: pkg/systemd/overview-cards/realmd.jsx:416
+#: pkg/systemd/overview-cards/realmd.jsx:417
 #, fuzzy
 #| msgid "Join"
 msgid "Joining"
@@ -3720,27 +3760,27 @@ msgstr "內核轉儲"
 msgid "Key password"
 msgstr "新密碼"
 
-#: pkg/storaged/crypto-keyslots.jsx:611
+#: pkg/storaged/crypto-keyslots.jsx:828
 msgid "Key slots with unknown types can not be edited here"
 msgstr "此處無法編輯未知類型的鍵槽"
 
-#: pkg/storaged/crypto-keyslots.jsx:282
+#: pkg/storaged/crypto-keyslots.jsx:476
 msgid "Key source"
 msgstr "關鍵來源"
 
-#: pkg/storaged/crypto-keyslots.jsx:634 pkg/storaged/crypto-keyslots.jsx:637
+#: pkg/storaged/crypto-keyslots.jsx:851 pkg/storaged/crypto-keyslots.jsx:854
 msgid "Keys"
 msgstr "按鍵"
 
-#: pkg/storaged/crypto-keyslots.jsx:605
+#: pkg/storaged/crypto-keyslots.jsx:822
 msgid "Keyserver"
 msgstr "密鑰伺服器"
 
-#: pkg/storaged/crypto-keyslots.jsx:307 pkg/storaged/crypto-keyslots.jsx:358
+#: pkg/storaged/crypto-keyslots.jsx:501 pkg/storaged/crypto-keyslots.jsx:553
 msgid "Keyserver address"
 msgstr "密鑰伺服器地址"
 
-#: pkg/storaged/crypto-keyslots.jsx:489
+#: pkg/storaged/crypto-keyslots.jsx:706
 msgid "Keyserver removal may prevent unlocking $0."
 msgstr "密鑰伺服器刪除可能會阻止解鎖 $0。"
 
@@ -3812,15 +3852,15 @@ msgstr "上次登錄"
 msgid "Learn more"
 msgstr "Hairpin 模式"
 
-#: pkg/systemd/overview-cards/realmd.jsx:299
+#: pkg/systemd/overview-cards/realmd.jsx:300
 #, fuzzy
 #| msgid "Remove $0"
 msgid "Leave $0"
 msgstr "去掉 $0"
 
-#: pkg/systemd/overview-cards/realmd.jsx:296
-#: pkg/systemd/overview-cards/realmd.jsx:299
-#: pkg/systemd/overview-cards/realmd.jsx:301
+#: pkg/systemd/overview-cards/realmd.jsx:297
+#: pkg/systemd/overview-cards/realmd.jsx:300
+#: pkg/systemd/overview-cards/realmd.jsx:302
 msgid "Leave domain"
 msgstr "離開域名"
 
@@ -4109,11 +4149,11 @@ msgstr "上次登錄"
 msgid "Login again"
 msgstr "再次登錄"
 
-#: pkg/lib/cockpit.js:3969
+#: pkg/lib/cockpit.js:3957
 msgid "Login failed"
 msgstr "登錄失敗"
 
-#: pkg/systemd/overview-cards/realmd.jsx:275
+#: pkg/systemd/overview-cards/realmd.jsx:276
 msgid "Login format"
 msgstr ""
 
@@ -4185,7 +4225,7 @@ msgstr "主伺服器機箱"
 msgid "Maintenance"
 msgstr "非託管接口"
 
-#: pkg/storaged/crypto-keyslots.jsx:389
+#: pkg/storaged/crypto-keyslots.jsx:592
 #, fuzzy
 #| msgid "Make sure the key hash from the Tang server matches:"
 msgid ""
@@ -4275,7 +4315,7 @@ msgstr "手動"
 msgid "Manually"
 msgstr "手動"
 
-#: pkg/storaged/crypto-keyslots.jsx:398
+#: pkg/storaged/crypto-keyslots.jsx:601
 msgid "Manually check with SSH: "
 msgstr "用SSH手動檢查： "
 
@@ -4695,7 +4735,7 @@ msgstr "新增新的區域"
 msgid "New key password"
 msgstr "新密碼"
 
-#: pkg/storaged/crypto-keyslots.jsx:293 pkg/storaged/crypto-keyslots.jsx:340
+#: pkg/storaged/crypto-keyslots.jsx:487 pkg/storaged/crypto-keyslots.jsx:535
 msgid "New passphrase"
 msgstr "新密碼"
 
@@ -4729,7 +4769,7 @@ msgstr "沒有SELinux警報。"
 msgid "No applications installed or available."
 msgstr "沒有安裝或可用的應用程式"
 
-#: pkg/storaged/crypto-keyslots.jsx:624
+#: pkg/storaged/crypto-keyslots.jsx:841
 msgid "No available slots"
 msgstr "沒有可用的插槽"
 
@@ -4800,7 +4840,7 @@ msgstr "沒有檔案系統"
 msgid "No filesystems"
 msgstr "沒有檔案系統"
 
-#: pkg/storaged/crypto-keyslots.jsx:629
+#: pkg/storaged/crypto-keyslots.jsx:846
 msgid "No free key slots"
 msgstr "沒有免費的鑰匙槽"
 
@@ -4820,7 +4860,7 @@ msgstr "未設置iSCSI目標"
 msgid "No installation package found for this application."
 msgstr "找不到此應用程式的安裝包。"
 
-#: pkg/storaged/crypto-keyslots.jsx:554
+#: pkg/storaged/crypto-keyslots.jsx:771
 msgid "No keys added"
 msgstr "沒有新增密鑰"
 
@@ -4956,13 +4996,13 @@ msgstr "已安裝"
 msgid "Not mounted"
 msgstr "沒裝"
 
-#: pkg/systemd/overview-cards/realmd.jsx:448
+#: pkg/systemd/overview-cards/realmd.jsx:449
 #, fuzzy
 #| msgid "The user <b>$0</b> is not permitted to modify realms"
 msgid "Not permitted to configure realms"
 msgstr "用戶 <b>$0</b> 不允許修改領域"
 
-#: pkg/lib/cockpit.js:3967
+#: pkg/lib/cockpit.js:3955
 msgid "Not permitted to perform this action."
 msgstr "不允許執行此操作。"
 
@@ -5030,7 +5070,7 @@ msgstr "$0 發生"
 msgid "Ok"
 msgstr "確定"
 
-#: pkg/storaged/crypto-keyslots.jsx:337
+#: pkg/storaged/crypto-keyslots.jsx:532
 msgid "Old passphrase"
 msgstr "舊密碼"
 
@@ -5243,12 +5283,12 @@ msgstr "被動"
 #: pkg/storaged/fsys-tab.jsx:346 pkg/storaged/stratis-panel.jsx:141
 #: pkg/storaged/format-dialog.jsx:266 pkg/storaged/format-dialog.jsx:292
 #: pkg/storaged/stratis-details.jsx:132 pkg/storaged/stratis-details.jsx:703
-#: pkg/storaged/content-views.jsx:269 pkg/storaged/crypto-keyslots.jsx:288
-#: pkg/storaged/crypto-keyslots.jsx:600
+#: pkg/storaged/content-views.jsx:269 pkg/storaged/crypto-keyslots.jsx:482
+#: pkg/storaged/crypto-keyslots.jsx:817
 msgid "Passphrase"
 msgstr "密碼"
 
-#: pkg/storaged/crypto-keyslots.jsx:425
+#: pkg/storaged/crypto-keyslots.jsx:642
 #, fuzzy
 #| msgid "Passphrase cannot be empty"
 msgid "Passphrase can not be empty"
@@ -5256,24 +5296,24 @@ msgstr "密碼短語不能為空"
 
 #: pkg/storaged/fsys-tab.jsx:349 pkg/storaged/stratis-panel.jsx:145
 #: pkg/storaged/format-dialog.jsx:270 pkg/storaged/format-dialog.jsx:296
-#: pkg/storaged/stratis-details.jsx:135 pkg/storaged/crypto-keyslots.jsx:200
-#: pkg/storaged/crypto-keyslots.jsx:296 pkg/storaged/crypto-keyslots.jsx:338
-#: pkg/storaged/crypto-keyslots.jsx:341
+#: pkg/storaged/stratis-details.jsx:135 pkg/storaged/crypto-keyslots.jsx:203
+#: pkg/storaged/crypto-keyslots.jsx:490 pkg/storaged/crypto-keyslots.jsx:533
+#: pkg/storaged/crypto-keyslots.jsx:536
 msgid "Passphrase cannot be empty"
 msgstr "密碼短語不能為空"
 
-#: pkg/storaged/crypto-keyslots.jsx:448
+#: pkg/storaged/crypto-keyslots.jsx:665
 #, fuzzy
 #| msgid "Passphrase cannot be empty"
 msgid "Passphrase from any other key slot"
 msgstr "密碼短語不能為空"
 
-#: pkg/storaged/crypto-keyslots.jsx:438
+#: pkg/storaged/crypto-keyslots.jsx:655
 msgid "Passphrase removal may prevent unlocking $0."
 msgstr "密碼短語刪除可能會阻止解鎖 $0。"
 
 #: pkg/storaged/stratis-panel.jsx:153 pkg/storaged/format-dialog.jsx:278
-#: pkg/storaged/crypto-keyslots.jsx:304 pkg/storaged/crypto-keyslots.jsx:343
+#: pkg/storaged/crypto-keyslots.jsx:498 pkg/storaged/crypto-keyslots.jsx:538
 msgid "Passphrases do not match"
 msgstr "密碼短語不匹配"
 
@@ -5844,6 +5884,12 @@ msgstr "拒絕連接。 Hostkey不匹配"
 msgid "Refusing to connect. Hostkey is unknown"
 msgstr "拒絕連接。 Hostkey未知"
 
+#: pkg/storaged/crypto-keyslots.jsx:320
+#, fuzzy
+#| msgid "Generating report"
+msgid "Regenerating initrd"
+msgstr "生成報告"
+
 #: pkg/packagekit/updates.jsx:1360
 msgid "Register…"
 msgstr "寄存器…"
@@ -5917,8 +5963,8 @@ msgstr "清除："
 #: pkg/users/authorized-keys-panel.js:172
 #: pkg/systemd/services/timer-dialog.jsx:369 pkg/apps/application.jsx:51
 #: pkg/storaged/vgroup-details.jsx:121 pkg/storaged/mdraid-details.jsx:145
-#: pkg/storaged/nfs-details.jsx:307 pkg/storaged/crypto-keyslots.jsx:469
-#: pkg/storaged/crypto-keyslots.jsx:504 pkg/storaged/crypto-keyslots.jsx:585
+#: pkg/storaged/nfs-details.jsx:307 pkg/storaged/crypto-keyslots.jsx:686
+#: pkg/storaged/crypto-keyslots.jsx:721 pkg/storaged/crypto-keyslots.jsx:802
 #: pkg/shell/hosts.jsx:168
 msgid "Remove"
 msgstr "移除"
@@ -5931,11 +5977,11 @@ msgstr "去掉 $0"
 msgid "Remove $0 service from $1 zone"
 msgstr ""
 
-#: pkg/storaged/crypto-keyslots.jsx:488
+#: pkg/storaged/crypto-keyslots.jsx:705
 msgid "Remove $0?"
 msgstr "去掉 $0？"
 
-#: pkg/storaged/crypto-keyslots.jsx:498
+#: pkg/storaged/crypto-keyslots.jsx:715
 #, fuzzy
 #| msgid "Remove Tang keyserver"
 msgid "Remove Tang keyserver?"
@@ -5960,7 +6006,7 @@ msgstr "刪除設備"
 msgid "Remove item"
 msgstr "刪除設備"
 
-#: pkg/storaged/crypto-keyslots.jsx:462
+#: pkg/storaged/crypto-keyslots.jsx:679
 #, fuzzy
 #| msgid "Remove passphrase in $0?"
 msgid "Remove passphrase in key slot $0?"
@@ -5980,6 +6026,7 @@ msgstr ""
 msgid "Removing"
 msgstr "移除"
 
+#: pkg/storaged/crypto-keyslots.jsx:280
 #: pkg/lib/cockpit-components-install-dialog.jsx:189
 msgid "Removing $0"
 msgstr "刪除 $0"
@@ -5998,7 +6045,7 @@ msgstr "刪除 <b>$0</b> 將斷開與伺服器的連接，並使管理UI不可�
 msgid "Removing $target from RAID device"
 msgstr "刪除 $target 來自RAID設備"
 
-#: pkg/storaged/crypto-keyslots.jsx:446
+#: pkg/storaged/crypto-keyslots.jsx:663
 msgid ""
 "Removing a passphrase without confirmation of another passphrase may prevent "
 "unlocking or key management, if other passphrases are forgotten or lost."
@@ -6067,8 +6114,8 @@ msgstr "每日重複"
 msgid "Repeat monthly"
 msgstr "重複每月"
 
-#: pkg/storaged/crypto-keyslots.jsx:286 pkg/storaged/crypto-keyslots.jsx:298
-#: pkg/storaged/crypto-keyslots.jsx:342
+#: pkg/storaged/crypto-keyslots.jsx:480 pkg/storaged/crypto-keyslots.jsx:492
+#: pkg/storaged/crypto-keyslots.jsx:537
 msgid "Repeat passphrase"
 msgstr "重複密碼"
 
@@ -6306,11 +6353,11 @@ msgstr "SELinux系統狀態未知。"
 msgid "SELinux troubleshoot"
 msgstr "SELinux故障排除"
 
-#: pkg/storaged/crypto-keyslots.jsx:394
+#: pkg/storaged/crypto-keyslots.jsx:597
 msgid "SHA1"
 msgstr ""
 
-#: pkg/storaged/crypto-keyslots.jsx:391
+#: pkg/storaged/crypto-keyslots.jsx:594
 msgid "SHA256"
 msgstr ""
 
@@ -6363,8 +6410,8 @@ msgstr ""
 #: pkg/networkmanager/dialogs-common.jsx:152 pkg/metrics/metrics.jsx:1274
 #: pkg/storaged/fsys-tab.jsx:374 pkg/storaged/fsys-tab.jsx:490
 #: pkg/storaged/crypto-tab.jsx:161 pkg/storaged/crypto-tab.jsx:205
-#: pkg/storaged/nfs-details.jsx:186 pkg/storaged/crypto-keyslots.jsx:346
-#: pkg/storaged/crypto-keyslots.jsx:365 pkg/kdump/kdump-view.jsx:324
+#: pkg/storaged/nfs-details.jsx:186 pkg/storaged/crypto-keyslots.jsx:541
+#: pkg/storaged/crypto-keyslots.jsx:560 pkg/kdump/kdump-view.jsx:324
 msgid "Save"
 msgstr "儲存"
 
@@ -6387,8 +6434,8 @@ msgstr ""
 msgid "Save space by storing identical data blocks just once"
 msgstr ""
 
-#: pkg/storaged/crypto-keyslots.jsx:312 pkg/storaged/crypto-keyslots.jsx:363
-#: pkg/storaged/crypto-keyslots.jsx:408
+#: pkg/storaged/crypto-keyslots.jsx:433 pkg/storaged/crypto-keyslots.jsx:506
+#: pkg/storaged/crypto-keyslots.jsx:558 pkg/storaged/crypto-keyslots.jsx:611
 msgid ""
 "Saving a new passphrase requires unlocking the disk. Please provide a "
 "current disk passphrase."
@@ -6505,11 +6552,11 @@ msgstr "伺服器地址不能為空。"
 msgid "Server cannot be empty."
 msgstr "伺服器不能為空。"
 
-#: pkg/lib/cockpit.js:3987
+#: pkg/lib/cockpit.js:3975
 msgid "Server has closed the connection."
 msgstr "伺服器已關閉連接。"
 
-#: pkg/systemd/overview-cards/realmd.jsx:283
+#: pkg/systemd/overview-cards/realmd.jsx:284
 msgid "Server software"
 msgstr ""
 
@@ -6755,7 +6802,7 @@ msgstr "內容"
 msgid "Slot"
 msgstr "插槽"
 
-#: pkg/storaged/mdraid-details.jsx:123 pkg/storaged/crypto-keyslots.jsx:573
+#: pkg/storaged/mdraid-details.jsx:123 pkg/storaged/crypto-keyslots.jsx:790
 msgid "Slot $0"
 msgstr "插槽 $0"
 
@@ -7020,7 +7067,7 @@ msgstr ""
 msgid "Successfully copied to clipboard"
 msgstr ""
 
-#: pkg/storaged/crypto-keyslots.jsx:400
+#: pkg/storaged/crypto-keyslots.jsx:603
 msgid "Successfully copied to clipboard!"
 msgstr ""
 
@@ -7165,7 +7212,7 @@ msgstr "TCP"
 msgid "Tablet"
 msgstr "面板"
 
-#: pkg/storaged/crypto-keyslots.jsx:289
+#: pkg/storaged/crypto-keyslots.jsx:483
 msgid "Tang keyserver"
 msgstr "唐鑰匙伺服器"
 
@@ -7215,9 +7262,21 @@ msgstr "測試kdump設置"
 msgid "Testing connection"
 msgstr "測試連接"
 
+#: pkg/storaged/crypto-keyslots.jsx:300
+#, fuzzy
+#| msgid "$0 is not available from any repository."
+msgid "The $0 package is not available from any repository."
+msgstr "$0 在任何存儲庫中都不可用。"
+
 #: pkg/storaged/stratis-panel.jsx:45
 msgid "The $0 package must be installed to create Stratis pools."
 msgstr ""
+
+#: pkg/storaged/crypto-keyslots.jsx:295
+#, fuzzy
+#| msgid "PackageKit is not installed"
+msgid "The $0 package must be installed."
+msgstr "未安裝PackageKit"
 
 #: pkg/storaged/content-views.jsx:896
 msgid "The $0 package will be installed to create VDO devices."
@@ -7280,7 +7339,7 @@ msgid ""
 "The creation of this VDO device did not finish and the device can't be used."
 msgstr "此VDO設備的建立未完成，無法使用該設備。"
 
-#: pkg/storaged/crypto-keyslots.jsx:550
+#: pkg/storaged/crypto-keyslots.jsx:767
 msgid ""
 "The currently logged in user is not permitted to see information about keys."
 msgstr "當前登錄的用戶不允許查看有關密鑰的訊息。"
@@ -7354,6 +7413,10 @@ msgstr[0] ""
 msgid "The full name must not contain colons."
 msgstr ""
 
+#: pkg/storaged/crypto-keyslots.jsx:317
+msgid "The initrd must be regenerated."
+msgstr ""
+
 #: pkg/shell/hosts_dialog.jsx:682
 #, fuzzy
 msgid "The key password can not be empty"
@@ -7372,7 +7435,7 @@ msgstr "您提供的密鑰無效。"
 msgid "The last disk of a RAID device cannot be removed."
 msgstr "無法刪除RAID設備的最後一個磁碟。"
 
-#: pkg/storaged/crypto-keyslots.jsx:586
+#: pkg/storaged/crypto-keyslots.jsx:803
 msgid "The last key slot can not be removed"
 msgstr "無法刪除最後一個密鑰槽"
 
@@ -7441,9 +7504,21 @@ msgid ""
 "no other supported authentication methods are available."
 msgstr "伺服器拒絕驗證'$0'使用密碼驗證，並且沒有其他支持的驗證方法可用。"
 
-#: pkg/lib/cockpit.js:3971
+#: pkg/lib/cockpit.js:3959
 msgid "The server refused to authenticate using any supported methods."
 msgstr "伺服器拒絕使用任何受支持的方法進行身份驗證。"
+
+#: pkg/storaged/crypto-keyslots.jsx:423
+msgid ""
+"The system does not currently support unlocking a filesystem with a Tang "
+"keyserver during boot."
+msgstr ""
+
+#: pkg/storaged/crypto-keyslots.jsx:422
+msgid ""
+"The system does not currently support unlocking the root filesystem with a "
+"Tang keyserver."
+msgstr ""
 
 #: pkg/systemd/hwinfo.jsx:72
 msgid "The user $0 is not permitted to change cpu security mitigations"
@@ -7498,6 +7573,10 @@ msgstr "其他地方沒有足夠的可用空間來移除此物理卷。至少 $0
 
 #: pkg/shell/failures.jsx:39
 msgid "There was an unexpected error while connecting to the machine."
+msgstr ""
+
+#: pkg/storaged/crypto-keyslots.jsx:427
+msgid "These additional steps are necessary:"
 msgstr ""
 
 #: pkg/storaged/dialog.jsx:1124
@@ -7562,7 +7641,7 @@ msgstr ""
 msgid "This machine has already been added."
 msgstr "這台機器已經新增。"
 
-#: pkg/systemd/overview-cards/realmd.jsx:420
+#: pkg/systemd/overview-cards/realmd.jsx:421
 msgid "This may take a while"
 msgstr "可能還要等一下"
 
@@ -7733,7 +7812,7 @@ msgstr ""
 msgid "Toggle filters"
 msgstr "顯示指紋"
 
-#: pkg/lib/cockpit.js:3993
+#: pkg/lib/cockpit.js:3981
 msgid "Too much data"
 msgstr "數據太多了"
 
@@ -7796,7 +7875,7 @@ msgstr "疑難排解"
 msgid "Troubleshoot…"
 msgstr "疑難排解"
 
-#: pkg/storaged/crypto-keyslots.jsx:410
+#: pkg/storaged/crypto-keyslots.jsx:613
 msgid "Trust key"
 msgstr "信任密鑰"
 
@@ -8020,7 +8099,7 @@ msgstr "未知的主機名"
 msgid "Unknown service name"
 msgstr ""
 
-#: pkg/storaged/crypto-keyslots.jsx:610
+#: pkg/storaged/crypto-keyslots.jsx:827
 msgid "Unknown type"
 msgstr "未知類型"
 
@@ -8059,7 +8138,7 @@ msgstr "用於檔案系統的塊設備"
 msgid "Unlocking $target"
 msgstr "解鎖 $target"
 
-#: pkg/storaged/crypto-keyslots.jsx:243
+#: pkg/storaged/crypto-keyslots.jsx:246
 #, fuzzy
 #| msgid "Unlocking disk..."
 msgid "Unlocking disk"
@@ -8119,7 +8198,7 @@ msgstr "音量不受支持"
 msgid "Until"
 msgstr ""
 
-#: pkg/lib/cockpit.js:3973 pkg/lib/cockpit.js:3975
+#: pkg/lib/cockpit.js:3961 pkg/lib/cockpit.js:3963
 msgid "Untrusted host"
 msgstr "不受信任的主機"
 
@@ -8331,7 +8410,7 @@ msgstr "VLAN Id"
 msgid "VLAN settings"
 msgstr "VLAN設置"
 
-#: pkg/systemd/overview-cards/realmd.jsx:310
+#: pkg/systemd/overview-cards/realmd.jsx:311
 msgid "Validating address"
 msgstr ""
 
@@ -8353,7 +8432,7 @@ msgstr "供應商"
 msgid "Verified"
 msgstr "驗證"
 
-#: pkg/storaged/crypto-keyslots.jsx:386
+#: pkg/storaged/crypto-keyslots.jsx:589
 msgid "Verify key"
 msgstr "驗證密鑰"
 
@@ -8475,6 +8554,7 @@ msgstr ""
 msgid "Waiting for other programs to finish using the package manager..."
 msgstr "等待其他程式完成使用包管理器..."
 
+#: pkg/storaged/crypto-keyslots.jsx:274
 #: pkg/lib/cockpit-components-install-dialog.jsx:148
 #: pkg/lib/cockpit-components-install-dialog.jsx:183
 msgid "Waiting for other software management operations to finish"
@@ -8651,11 +8731,11 @@ msgid ""
 "restarted."
 msgstr "您的伺服器很快就會關閉連接。您可以在重新啟動後重新連接。"
 
-#: pkg/lib/cockpit.js:3963
+#: pkg/lib/cockpit.js:3951
 msgid "Your session has been terminated."
 msgstr "您的會話已被終止。"
 
-#: pkg/lib/cockpit.js:3965
+#: pkg/lib/cockpit.js:3953
 msgid "Your session has expired. Please log in again."
 msgstr "您的會話已過期。請再次登錄。"
 
@@ -9545,9 +9625,6 @@ msgstr ""
 
 #~ msgid "Download report"
 #~ msgstr "下載報告"
-
-#~ msgid "Generating report"
-#~ msgstr "生成報告"
 
 #~ msgid "No archive has been created."
 #~ msgstr "沒有建立存檔。"
