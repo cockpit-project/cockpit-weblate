@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-13 02:52+0000\n"
+"POT-Creation-Date: 2023-03-15 02:51+0000\n"
 "PO-Revision-Date: 2020-05-05 03:40+0000\n"
 "Last-Translator: Adolfo Jayme Barrientos <fitoschido@gmail.com>\n"
 "Language-Team: Catalan <https://translate.fedoraproject.org/projects/cockpit/"
@@ -30,7 +30,7 @@ msgstr ""
 msgid "# of users"
 msgstr ""
 
-#: pkg/storaged/content-views.jsx:504
+#: pkg/storaged/content-views.jsx:514
 #, fuzzy
 #| msgid "Encrypted $0"
 msgid "$0 (encrypted)"
@@ -147,7 +147,7 @@ msgid_plural "$0 failed login attempts"
 msgstr[0] "Últim inici de sessió"
 msgstr[1] "Últim inici de sessió"
 
-#: pkg/storaged/content-views.jsx:456
+#: pkg/storaged/content-views.jsx:466
 #, fuzzy
 #| msgctxt "storage-id-desc"
 #| msgid "$0 file system"
@@ -185,11 +185,11 @@ msgid_plural "$0 hits, including important"
 msgstr[0] ""
 msgstr[1] ""
 
-#: pkg/storaged/format-dialog.jsx:176 pkg/storaged/vdo-details.jsx:129
+#: pkg/storaged/format-dialog.jsx:237 pkg/storaged/vdo-details.jsx:129
 #: pkg/storaged/vdo-details.jsx:163 pkg/storaged/mdraid-details.jsx:228
 #: pkg/storaged/mdraid-details.jsx:283 pkg/storaged/stratis-details.jsx:240
-#: pkg/storaged/stratis-details.jsx:541 pkg/storaged/vgroup-details.jsx:186
-#: pkg/storaged/content-views.jsx:371 pkg/storaged/content-views.jsx:679
+#: pkg/storaged/stratis-details.jsx:585 pkg/storaged/vgroup-details.jsx:186
+#: pkg/storaged/content-views.jsx:381 pkg/storaged/content-views.jsx:689
 #: pkg/storaged/lvol-tabs.jsx:227 pkg/storaged/lvol-tabs.jsx:294
 #, fuzzy
 #| msgid "$0 disk is missing"
@@ -198,7 +198,7 @@ msgid "$0 is in use"
 msgstr "falta $0 disc"
 
 #: pkg/lib/cockpit-components-install-dialog.jsx:158
-#: pkg/storaged/content-views.jsx:833
+#: pkg/storaged/content-views.jsx:843
 msgid "$0 is not available from any repository."
 msgstr ""
 
@@ -276,7 +276,7 @@ msgid_plural "$0 security fixes available"
 msgstr[0] "$1 correcció de seguretat"
 msgstr[1] "$1 correccions de seguretat"
 
-#: pkg/systemd/services/services.jsx:577
+#: pkg/systemd/services/services.jsx:602
 msgid "$0 service has failed"
 msgid_plural "$0 services have failed"
 msgstr[0] ""
@@ -346,7 +346,7 @@ msgstr ""
 msgid "$name (from $host)"
 msgstr "$name (de $host)"
 
-#: pkg/storaged/format-dialog.jsx:137 pkg/storaged/format-dialog.jsx:154
+#: pkg/storaged/format-dialog.jsx:198 pkg/storaged/format-dialog.jsx:215
 #, fuzzy
 #| msgid "recommended"
 msgid "(recommended)"
@@ -587,7 +587,7 @@ msgstr ""
 "Una versió compatible de Cockpit no està instal·lada a {{#strong}}{{host}}{{/"
 "strong}}."
 
-#: pkg/storaged/stratis-details.jsx:350
+#: pkg/storaged/stratis-details.jsx:354
 msgid "A filesystem with this name exists already in this pool."
 msgstr ""
 
@@ -682,7 +682,7 @@ msgstr "El compte no està disponible o no es pot editar."
 msgid "Accounts"
 msgstr "Comptes"
 
-#: pkg/storaged/dialog.jsx:1128
+#: pkg/storaged/dialog.jsx:1142
 #, fuzzy
 msgid "Action"
 msgstr "Aplicacions"
@@ -692,7 +692,7 @@ msgstr "Aplicacions"
 msgid "Actions"
 msgstr "Aplicacions"
 
-#: pkg/storaged/content-views.jsx:324
+#: pkg/storaged/content-views.jsx:334
 msgid "Activate"
 msgstr "Activa"
 
@@ -717,8 +717,8 @@ msgstr "Pàgines actives"
 msgid "Active since "
 msgstr ""
 
-#: pkg/systemd/services/services.jsx:799 pkg/systemd/services/services.jsx:800
-#: pkg/systemd/services/services.jsx:807
+#: pkg/systemd/services/services.jsx:824 pkg/systemd/services/services.jsx:825
+#: pkg/systemd/services/services.jsx:832
 #, fuzzy
 #| msgid "Activate"
 msgid "Active state"
@@ -970,7 +970,7 @@ msgstr ""
 msgid "Alert and above"
 msgstr ""
 
-#: pkg/systemd/services/services.jsx:225
+#: pkg/systemd/services/services.jsx:253
 #, fuzzy
 #| msgid "alias"
 msgid "Alias"
@@ -1061,6 +1061,10 @@ msgstr "Aplicació de les actualitzacions"
 msgid "Applying updates failed"
 msgstr "Ha fallat l'aplicació de les actualitzacions"
 
+#: pkg/storaged/format-dialog.jsx:108
+msgid "Appropriate for critical mounts, such as /var"
+msgstr ""
+
 #: pkg/shell/indexes.jsx:340
 msgid "Apps"
 msgstr ""
@@ -1073,6 +1077,13 @@ msgstr ""
 #: pkg/systemd/overview-cards/systemInformationCard.jsx:124
 msgid "Asset tag"
 msgstr ""
+
+#: pkg/storaged/format-dialog.jsx:363 pkg/storaged/fsys-tab.jsx:347
+#: pkg/storaged/stratis-details.jsx:382 pkg/storaged/stratis-details.jsx:533
+#, fuzzy
+#| msgid "Current boot"
+msgid "At boot"
+msgstr "Arrencada actual"
 
 #: pkg/storaged/mdraids-panel.jsx:132
 #, fuzzy
@@ -1238,11 +1249,11 @@ msgstr "Torna als comptes"
 msgid "Backing device"
 msgstr ""
 
-#: pkg/systemd/services/services.jsx:233
+#: pkg/systemd/services/services.jsx:261
 msgid "Bad"
 msgstr ""
 
-#: pkg/systemd/services/services.jsx:199
+#: pkg/systemd/services/services.jsx:227
 #, fuzzy
 #| msgid "Bridge settings"
 msgid "Bad setting"
@@ -1281,12 +1292,12 @@ msgstr ""
 msgid "Block"
 msgstr "Bloc"
 
-#: pkg/storaged/content-views.jsx:869
+#: pkg/storaged/content-views.jsx:879
 msgid "Block device for filesystems"
 msgstr "Dispositiu de blocs per al sistema de fitxers"
 
 #: pkg/storaged/stratis-panel.jsx:159 pkg/storaged/stratis-details.jsx:136
-#: pkg/storaged/stratis-details.jsx:215 pkg/storaged/stratis-details.jsx:748
+#: pkg/storaged/stratis-details.jsx:215 pkg/storaged/stratis-details.jsx:792
 #, fuzzy
 #| msgid "$0 block device"
 msgid "Block devices"
@@ -1310,6 +1321,14 @@ msgstr "Ajusts del pont"
 
 #: pkg/systemd/logs.jsx:356
 msgid "Boot"
+msgstr ""
+
+#: pkg/storaged/format-dialog.jsx:111
+msgid "Boot fails if filesystem does not mount, preventing remote access"
+msgstr ""
+
+#: pkg/storaged/format-dialog.jsx:122 pkg/storaged/format-dialog.jsx:133
+msgid "Boot still succeeds when filesystem does not mount"
 msgstr ""
 
 #: pkg/systemd/services/service-details.jsx:571
@@ -1574,11 +1593,11 @@ msgid "Checking for package updates..."
 msgstr ""
 
 #: pkg/lib/cockpit-components-install-dialog.jsx:150
-#: pkg/storaged/content-views.jsx:829
+#: pkg/storaged/content-views.jsx:839
 msgid "Checking installed software"
 msgstr ""
 
-#: pkg/storaged/fsys-tab.jsx:430 pkg/storaged/dialog.jsx:1137
+#: pkg/storaged/fsys-tab.jsx:475 pkg/storaged/dialog.jsx:1151
 #, fuzzy
 #| msgid "Checking for public keys"
 msgid "Checking related processes"
@@ -1635,7 +1654,7 @@ msgstr ""
 #: pkg/systemd/overview-cards/configurationCard.jsx:197
 #: pkg/shell/hosts_dialog.jsx:79 pkg/shell/credentials.jsx:81
 #: pkg/shell/shell-modals.jsx:168 pkg/shell/superuser.jsx:190
-#: pkg/shell/superuser.jsx:198 pkg/storaged/dialog.jsx:437
+#: pkg/shell/superuser.jsx:198 pkg/storaged/dialog.jsx:451
 #: pkg/users/dialog-utils.js:58 pkg/apps/utils.jsx:87
 msgid "Close"
 msgstr "Tanca"
@@ -1725,8 +1744,8 @@ msgstr "Color"
 msgid "Comma-separated ports, ranges, and services are accepted"
 msgstr ""
 
-#: pkg/systemd/services/timer-dialog.jsx:174 pkg/storaged/dialog.jsx:1198
-#: pkg/storaged/dialog.jsx:1217
+#: pkg/systemd/services/timer-dialog.jsx:174 pkg/storaged/dialog.jsx:1212
+#: pkg/storaged/dialog.jsx:1231
 msgid "Command"
 msgstr "Ordre"
 
@@ -1748,11 +1767,11 @@ msgstr "Ha fallat la comunicació amb tuned"
 msgid "Compact PCI"
 msgstr "PCI compacte"
 
-#: pkg/storaged/content-views.jsx:693
+#: pkg/storaged/content-views.jsx:703
 msgid "Compatible with all systems and devices (MBR)"
 msgstr "Compatible amb tots els sistemes i dispositius (MBR)"
 
-#: pkg/storaged/content-views.jsx:696
+#: pkg/storaged/content-views.jsx:706
 msgid "Compatible with modern system and hard disks > 2TB (GPT)"
 msgstr "Compatible amb els sistemes moderns i els discs durs > 2TB (GPT)"
 
@@ -1761,7 +1780,7 @@ msgid "Compress crash dumps to save space"
 msgstr "Comprimeix els estavellaments per estalviar espai"
 
 #: pkg/kdump/kdump-view.jsx:170 pkg/storaged/vdo-details.jsx:321
-#: pkg/storaged/content-views.jsx:960 pkg/storaged/lvol-tabs.jsx:558
+#: pkg/storaged/content-views.jsx:970 pkg/storaged/lvol-tabs.jsx:558
 msgid "Compression"
 msgstr "Compressió"
 
@@ -1795,13 +1814,13 @@ msgstr "S'està configurant"
 msgid "Configuring system settings"
 msgstr "Canvia els ajusts"
 
-#: pkg/storaged/format-dialog.jsx:274 pkg/storaged/stratis-panel.jsx:149
+#: pkg/storaged/format-dialog.jsx:329 pkg/storaged/stratis-panel.jsx:149
 #: pkg/users/account-create-dialog.js:64
 msgid "Confirm"
 msgstr "Confirmació"
 
 #: pkg/systemd/services/service-details.jsx:712
-#: pkg/storaged/stratis-details.jsx:549
+#: pkg/storaged/stratis-details.jsx:593
 #, fuzzy
 #| msgid "Please confirm deletion of $0"
 msgid "Confirm deletion of $0"
@@ -1867,7 +1886,7 @@ msgstr "Connecta't a"
 msgid "Connecting to SETroubleshoot daemon..."
 msgstr "S'està connectant al dimoni de SETroubleshoot..."
 
-#: pkg/systemd/services/services.jsx:267
+#: pkg/systemd/services/services.jsx:295
 #, fuzzy
 #| msgid "Connection failed"
 msgid "Connecting to dbus failed: $0"
@@ -1906,7 +1925,7 @@ msgstr ""
 msgid "Contains:"
 msgstr "Contenidor:"
 
-#: pkg/storaged/content-views.jsx:743 pkg/storaged/content-views.jsx:753
+#: pkg/storaged/content-views.jsx:753 pkg/storaged/content-views.jsx:763
 msgid "Content"
 msgstr "Contingut"
 
@@ -1979,10 +1998,9 @@ msgstr ""
 
 #: pkg/lib/cockpit-components-file-autocomplete.jsx:187
 #: pkg/storaged/mdraids-panel.jsx:139 pkg/storaged/vgroups-panel.jsx:89
-#: pkg/storaged/stratis-panel.jsx:170 pkg/storaged/stratis-details.jsx:388
-#: pkg/storaged/content-views.jsx:196 pkg/storaged/content-views.jsx:311
-#: pkg/storaged/content-views.jsx:976 pkg/users/account-create-dialog.js:292
-#: pkg/users/group-create-dialog.js:149
+#: pkg/storaged/stratis-panel.jsx:170 pkg/storaged/content-views.jsx:206
+#: pkg/storaged/content-views.jsx:321 pkg/storaged/content-views.jsx:986
+#: pkg/users/account-create-dialog.js:292 pkg/users/group-create-dialog.js:149
 msgid "Create"
 msgstr "Crea"
 
@@ -2006,7 +2024,7 @@ msgstr "Crea un volum disgregat"
 msgid "Create a new SSH key and authorize it"
 msgstr ""
 
-#: pkg/storaged/stratis-details.jsx:487
+#: pkg/storaged/stratis-details.jsx:511
 #, fuzzy
 #| msgid "Creating snapshot of $target"
 msgid "Create a snapshot of filesystem $0"
@@ -2016,11 +2034,17 @@ msgstr "S'està creant una instantània de $target"
 msgid "Create account with weak password"
 msgstr ""
 
+#: pkg/storaged/format-dialog.jsx:405 pkg/storaged/stratis-details.jsx:411
+#, fuzzy
+#| msgid "Create new account"
+msgid "Create and mount"
+msgstr "Crea un compte nou"
+
 #: pkg/storaged/things-panel.jsx:77
 msgid "Create devices"
 msgstr ""
 
-#: pkg/storaged/stratis-details.jsx:357
+#: pkg/storaged/stratis-details.jsx:361
 #, fuzzy
 #| msgid "Filesystem"
 msgid "Create filesystem"
@@ -2030,7 +2054,7 @@ msgstr "Sistema de fitxers"
 msgid "Create it"
 msgstr "Crea-ho"
 
-#: pkg/storaged/content-views.jsx:884
+#: pkg/storaged/content-views.jsx:894
 msgid "Create logical volume"
 msgstr "Crea un volum lògic"
 
@@ -2038,7 +2062,7 @@ msgstr "Crea un volum lògic"
 msgid "Create new account"
 msgstr "Crea un compte nou"
 
-#: pkg/storaged/stratis-details.jsx:647
+#: pkg/storaged/stratis-details.jsx:691
 #, fuzzy
 #| msgid "Filesystem"
 msgid "Create new filesystem"
@@ -2050,7 +2074,7 @@ msgstr "Sistema de fitxers"
 msgid "Create new group"
 msgstr "Crea un grup de volums"
 
-#: pkg/storaged/content-views.jsx:1006
+#: pkg/storaged/content-views.jsx:1016
 msgid "Create new logical volume"
 msgstr "Crea un volum lògic nou"
 
@@ -2058,25 +2082,41 @@ msgstr "Crea un volum lògic nou"
 msgid "Create new task file with this content."
 msgstr ""
 
-#: pkg/storaged/format-dialog.jsx:310 pkg/storaged/content-views.jsx:597
-#: pkg/storaged/content-views.jsx:605
+#: pkg/storaged/format-dialog.jsx:407 pkg/storaged/stratis-details.jsx:412
+#, fuzzy
+#| msgid "Create"
+msgid "Create only"
+msgstr "Crea"
+
+#: pkg/storaged/content-views.jsx:607 pkg/storaged/content-views.jsx:615
 msgid "Create partition"
 msgstr "Crea una partició"
 
-#: pkg/storaged/format-dialog.jsx:121
+#: pkg/storaged/format-dialog.jsx:182
 msgid "Create partition on $0"
 msgstr "Crea la partició a $0"
 
-#: pkg/storaged/content-views.jsx:735
+#: pkg/storaged/content-views.jsx:745
 msgid "Create partition table"
 msgstr ""
 
-#: pkg/storaged/stratis-details.jsx:519 pkg/storaged/content-views.jsx:305
-#: pkg/storaged/content-views.jsx:328
+#: pkg/storaged/content-views.jsx:315 pkg/storaged/content-views.jsx:338
 msgid "Create snapshot"
 msgstr "Crea una instantània"
 
-#: pkg/storaged/content-views.jsx:180 pkg/storaged/content-views.jsx:207
+#: pkg/storaged/stratis-details.jsx:562
+#, fuzzy
+#| msgid "Create snapshot"
+msgid "Create snapshot and mount"
+msgstr "Crea una instantània"
+
+#: pkg/storaged/stratis-details.jsx:563
+#, fuzzy
+#| msgid "Create snapshot"
+msgid "Create snapshot only"
+msgstr "Crea una instantània"
+
+#: pkg/storaged/content-views.jsx:190 pkg/storaged/content-views.jsx:217
 msgid "Create thin volume"
 msgstr "Crea un volum disgregat"
 
@@ -2103,7 +2143,7 @@ msgstr "S'està creant el grup de volums $target"
 msgid "Creating RAID device $target"
 msgstr "S'està creant el dispositiu RAID $target"
 
-#: pkg/storaged/content-views.jsx:985
+#: pkg/storaged/content-views.jsx:995
 #, fuzzy
 #| msgid "Create VDO device"
 msgid "Creating VDO device"
@@ -2170,7 +2210,7 @@ msgstr "Arrencada actual"
 msgid "Current top CPU usage"
 msgstr "Arrencada actual"
 
-#: pkg/storaged/dialog.jsx:1092
+#: pkg/storaged/dialog.jsx:1106
 #, fuzzy
 msgid "Currently in use"
 msgstr "Arrencada actual"
@@ -2181,8 +2221,8 @@ msgstr "Arrencada actual"
 msgid "Custom crypto policy"
 msgstr "Opcions personalitzades de xifrat"
 
-#: pkg/storaged/format-dialog.jsx:257 pkg/storaged/fsys-tab.jsx:338
-#: pkg/storaged/stratis-details.jsx:383 pkg/storaged/stratis-details.jsx:514
+#: pkg/storaged/format-dialog.jsx:396 pkg/storaged/fsys-tab.jsx:344
+#: pkg/storaged/stratis-details.jsx:379 pkg/storaged/stratis-details.jsx:530
 #: pkg/storaged/nfs-details.jsx:166
 msgid "Custom mount options"
 msgstr "Opcions personalitzades de muntatge"
@@ -2245,7 +2285,7 @@ msgid ""
 "prefixed with '-' or '+'"
 msgstr ""
 
-#: pkg/storaged/content-views.jsx:322
+#: pkg/storaged/content-views.jsx:332
 msgid "Deactivate"
 msgstr "Desactiva"
 
@@ -2265,7 +2305,7 @@ msgstr ""
 msgid "Decrease by one"
 msgstr ""
 
-#: pkg/storaged/vdo-details.jsx:330 pkg/storaged/content-views.jsx:965
+#: pkg/storaged/vdo-details.jsx:330 pkg/storaged/content-views.jsx:975
 #: pkg/storaged/lvol-tabs.jsx:565
 msgid "Deduplication"
 msgstr "Deduplicació"
@@ -2293,10 +2333,10 @@ msgstr "La mida ha de ser un número"
 #: pkg/systemd/services/service-details.jsx:718
 #: pkg/storaged/vdo-details.jsx:201 pkg/storaged/vdo-details.jsx:267
 #: pkg/storaged/mdraid-details.jsx:293 pkg/storaged/mdraid-details.jsx:319
-#: pkg/storaged/stratis-details.jsx:252 pkg/storaged/stratis-details.jsx:417
-#: pkg/storaged/stratis-details.jsx:553 pkg/storaged/stratis-details.jsx:601
+#: pkg/storaged/stratis-details.jsx:252 pkg/storaged/stratis-details.jsx:441
+#: pkg/storaged/stratis-details.jsx:597 pkg/storaged/stratis-details.jsx:645
 #: pkg/storaged/vgroup-details.jsx:198 pkg/storaged/vgroup-details.jsx:224
-#: pkg/storaged/content-views.jsx:382 pkg/storaged/content-views.jsx:409
+#: pkg/storaged/content-views.jsx:392 pkg/storaged/content-views.jsx:419
 #: pkg/users/account-details.js:254 pkg/users/delete-account-dialog.js:60
 #: pkg/users/delete-group-dialog.js:51 pkg/sosreport/index.jsx:356
 #: pkg/sosreport/index.jsx:468
@@ -2350,17 +2390,17 @@ msgstr "S'està suprimint el grup de volums $target"
 msgid "Deleting a Stratis pool will erase all data it contains."
 msgstr "La supressió d'un contenidor n'esborrarà totes les dades."
 
-#: pkg/storaged/stratis-details.jsx:552
+#: pkg/storaged/stratis-details.jsx:596
 #, fuzzy
 #| msgid "Deleting a partition will delete all data in it."
 msgid "Deleting a filesystem will delete all data in it."
 msgstr "La supressió d'una partició n'esborrarà totes les dades."
 
-#: pkg/storaged/content-views.jsx:360
+#: pkg/storaged/content-views.jsx:370
 msgid "Deleting a logical volume will delete all data in it."
 msgstr "La supressió d'un volum lògic n'esborrarà totes les dades."
 
-#: pkg/storaged/content-views.jsx:363
+#: pkg/storaged/content-views.jsx:373
 msgid "Deleting a partition will delete all data in it."
 msgstr "La supressió d'una partició n'esborrarà totes les dades."
 
@@ -2387,7 +2427,7 @@ msgid "Deletion will remove the following files:"
 msgstr ""
 
 #: pkg/networkmanager/firewall.jsx:698 pkg/networkmanager/firewall.jsx:842
-#: pkg/systemd/services/timer-dialog.jsx:165 pkg/storaged/dialog.jsx:1218
+#: pkg/systemd/services/timer-dialog.jsx:165 pkg/storaged/dialog.jsx:1232
 msgid "Description"
 msgstr "Descripció"
 
@@ -2408,8 +2448,8 @@ msgstr "Detalls"
 msgid "Development"
 msgstr "Desenvolupament"
 
-#: pkg/storaged/crypto-panel.jsx:85 pkg/storaged/dialog.jsx:1048
-#: pkg/storaged/dialog.jsx:1126 pkg/metrics/metrics.jsx:672
+#: pkg/storaged/crypto-panel.jsx:85 pkg/storaged/dialog.jsx:1062
+#: pkg/storaged/dialog.jsx:1140 pkg/metrics/metrics.jsx:672
 msgid "Device"
 msgstr "Dispositiu"
 
@@ -2427,7 +2467,7 @@ msgctxt "storage"
 msgid "Device file"
 msgstr "Fitxer de dispositiu"
 
-#: pkg/storaged/content-views.jsx:734
+#: pkg/storaged/content-views.jsx:744
 msgid "Device is read-only"
 msgstr "El dispositiu és de només lectura"
 
@@ -2462,7 +2502,7 @@ msgstr "Inhabilita tuned"
 
 #: pkg/networkmanager/firewall-switch.jsx:80
 #: pkg/networkmanager/ip-settings.jsx:44 pkg/networkmanager/ip-settings.jsx:55
-#: pkg/systemd/services/services.jsx:222 pkg/systemd/services/services.jsx:658
+#: pkg/systemd/services/services.jsx:250 pkg/systemd/services/services.jsx:683
 #: pkg/systemd/services/service-details.jsx:443
 #: pkg/packagekit/autoupdates.jsx:336 pkg/packagekit/kpatch.jsx:250
 msgid "Disabled"
@@ -2540,7 +2580,14 @@ msgstr "Tanca les pàgines seleccionades"
 msgid "Display language"
 msgstr "Idioma de visualització"
 
-#: pkg/storaged/fsys-tab.jsx:649 pkg/storaged/fsys-tab.jsx:661
+#: pkg/storaged/format-dialog.jsx:383 pkg/storaged/fsys-tab.jsx:366
+#: pkg/storaged/stratis-details.jsx:401 pkg/storaged/stratis-details.jsx:552
+#, fuzzy
+#| msgid "Not mounted"
+msgid "Do not mount"
+msgstr "No muntat"
+
+#: pkg/storaged/fsys-tab.jsx:704 pkg/storaged/fsys-tab.jsx:716
 msgid "Do not mount automatically on boot"
 msgstr ""
 
@@ -2552,6 +2599,10 @@ msgstr ""
 #, fuzzy
 msgid "Does not automatically start"
 msgstr "Connecta automàticament"
+
+#: pkg/storaged/format-dialog.jsx:141
+msgid "Does not mount during boot"
+msgstr ""
 
 #: pkg/systemd/overview-cards/realmd.jsx:268
 #: pkg/systemd/overview-cards/configurationCard.jsx:79
@@ -2729,8 +2780,8 @@ msgid "Enable the firewall"
 msgstr ""
 
 #: pkg/networkmanager/firewall-switch.jsx:80
-#: pkg/systemd/services/services.jsx:220 pkg/systemd/services/services.jsx:221
-#: pkg/systemd/services/services.jsx:657 pkg/packagekit/kpatch.jsx:253
+#: pkg/systemd/services/services.jsx:248 pkg/systemd/services/services.jsx:249
+#: pkg/systemd/services/services.jsx:682 pkg/packagekit/kpatch.jsx:253
 msgid "Enabled"
 msgstr "Habilitat"
 
@@ -2752,7 +2803,7 @@ msgstr "$0 xifrat"
 msgid "Encrypted $0"
 msgstr "$0 xifrat"
 
-#: pkg/storaged/stratis-details.jsx:412
+#: pkg/storaged/stratis-details.jsx:436
 #, fuzzy
 #| msgid "Encrypted partition of $0"
 msgid "Encrypted Stratis pool $0"
@@ -2774,11 +2825,11 @@ msgstr ""
 msgid "Encrypted volumes need to be unlocked before they can be resized."
 msgstr ""
 
-#: pkg/storaged/format-dialog.jsx:260 pkg/storaged/content-views.jsx:238
+#: pkg/storaged/format-dialog.jsx:315 pkg/storaged/content-views.jsx:248
 msgid "Encryption"
 msgstr "Xifratge"
 
-#: pkg/storaged/crypto-tab.jsx:194 pkg/storaged/format-dialog.jsx:301
+#: pkg/storaged/crypto-tab.jsx:194 pkg/storaged/format-dialog.jsx:356
 msgid "Encryption options"
 msgstr "Opcions del xifratge"
 
@@ -2829,9 +2880,9 @@ msgstr "S'està esborrant $target"
 msgid "Errata"
 msgstr "Fe d'errates:"
 
-#: pkg/systemd/services/services.jsx:200
+#: pkg/systemd/services/services.jsx:228
 #: pkg/systemd/services/service-details.jsx:281 pkg/storaged/multipath.jsx:59
-#: pkg/storaged/stratis-details.jsx:676 pkg/storaged/things-panel.jsx:57
+#: pkg/storaged/stratis-details.jsx:720 pkg/storaged/things-panel.jsx:57
 #: pkg/storaged/storage-controls.jsx:88 pkg/storaged/storage-controls.jsx:165
 #: pkg/apps/utils.jsx:81 pkg/sosreport/index.jsx:379
 msgid "Error"
@@ -2931,7 +2982,7 @@ msgstr ""
 msgid "Extended information"
 msgstr ""
 
-#: pkg/storaged/format-dialog.jsx:143 pkg/storaged/content-views.jsx:627
+#: pkg/storaged/format-dialog.jsx:204 pkg/storaged/content-views.jsx:637
 msgid "Extended partition"
 msgstr "Partició estesa"
 
@@ -3047,7 +3098,7 @@ msgstr "Ha fallat el canvi de contrasenya"
 msgid "Failed to save settings"
 msgstr "No es poden aplicar els ajusts: $0"
 
-#: pkg/systemd/services/services.jsx:211
+#: pkg/systemd/services/services.jsx:239
 #: pkg/systemd/services/service-details.jsx:452
 msgid "Failed to start"
 msgstr ""
@@ -3056,42 +3107,42 @@ msgstr ""
 msgid "Failed to switch profile"
 msgstr "Ha fallat el canvi de perfil"
 
-#: pkg/systemd/services/services.jsx:815 pkg/systemd/services/services.jsx:816
-#: pkg/systemd/services/services.jsx:823
+#: pkg/systemd/services/services.jsx:840 pkg/systemd/services/services.jsx:841
+#: pkg/systemd/services/services.jsx:848
 #, fuzzy
 #| msgid "Filesystem"
 msgid "File state"
 msgstr "Sistema de fitxers"
 
-#: pkg/storaged/stratis-details.jsx:568 pkg/storaged/content-views.jsx:223
-#: pkg/storaged/content-views.jsx:237
+#: pkg/storaged/stratis-details.jsx:612 pkg/storaged/content-views.jsx:233
+#: pkg/storaged/content-views.jsx:247
 msgid "Filesystem"
 msgstr "Sistema de fitxers"
 
-#: pkg/storaged/content-views.jsx:445
+#: pkg/storaged/content-views.jsx:455
 #, fuzzy
 #| msgid "Filesystem name"
 msgctxt "storage-id-desc"
 msgid "Filesystem (encrypted)"
 msgstr "Nom del sistema de fitxers"
 
-#: pkg/storaged/fsys-tab.jsx:691
+#: pkg/storaged/fsys-tab.jsx:746
 #, fuzzy
 #| msgid "Filesystems"
 msgid "Filesystem is locked"
 msgstr "Sistemes de fitxers"
 
-#: pkg/storaged/fsys-tab.jsx:480
+#: pkg/storaged/fsys-tab.jsx:525
 msgid "Filesystem name"
 msgstr "Nom del sistema de fitxers"
 
 #: pkg/storaged/fsys-panel.jsx:170 pkg/storaged/fsys-panel.jsx:173
-#: pkg/storaged/stratis-details.jsx:645 pkg/storaged/stratis-details.jsx:652
-#: pkg/storaged/stratis-details.jsx:781 pkg/storaged/stratis-details.jsx:785
+#: pkg/storaged/stratis-details.jsx:689 pkg/storaged/stratis-details.jsx:696
+#: pkg/storaged/stratis-details.jsx:825 pkg/storaged/stratis-details.jsx:829
 msgid "Filesystems"
 msgstr "Sistemes de fitxers"
 
-#: pkg/systemd/services/services.jsx:791
+#: pkg/systemd/services/services.jsx:816
 #, fuzzy
 msgid "Filter by name or description"
 msgstr "cerqueu pel nom, per l'espai de noms o per la descripció"
@@ -3158,16 +3209,27 @@ msgstr "Força la supressió"
 msgid "Force password change"
 msgstr "Obliga el canvi de contrasenya"
 
-#: pkg/storaged/format-dialog.jsx:310 pkg/storaged/content-views.jsx:403
-#: pkg/storaged/content-views.jsx:405
+#: pkg/storaged/content-views.jsx:413 pkg/storaged/content-views.jsx:415
 msgid "Format"
 msgstr "Formata"
 
-#: pkg/storaged/format-dialog.jsx:123
+#: pkg/storaged/format-dialog.jsx:184
 msgid "Format $0"
 msgstr "Formata $0"
 
-#: pkg/storaged/format-dialog.jsx:311
+#: pkg/storaged/format-dialog.jsx:405
+#, fuzzy
+#| msgid "Stop and unmount"
+msgid "Format and mount"
+msgstr "Atura i desmunta"
+
+#: pkg/storaged/format-dialog.jsx:407
+#, fuzzy
+#| msgid "Format"
+msgid "Format only"
+msgstr "Formata"
+
+#: pkg/storaged/format-dialog.jsx:406
 #, fuzzy
 #| msgid "Formatting a disk will erase all data on it."
 msgid "Formatting erases all data on a storage device."
@@ -3185,7 +3247,7 @@ msgstr ""
 msgid "Free"
 msgstr "Lliure"
 
-#: pkg/storaged/content-views.jsx:611
+#: pkg/storaged/content-views.jsx:621
 msgid "Free space"
 msgstr "Espai lliure"
 
@@ -3225,7 +3287,7 @@ msgstr "Passarel·la:"
 msgid "General"
 msgstr "General"
 
-#: pkg/systemd/services/services.jsx:231
+#: pkg/systemd/services/services.jsx:259
 #, fuzzy
 #| msgid "General"
 msgid "Generated"
@@ -3419,14 +3481,6 @@ msgid ""
 "not connect and contact your administrator."
 msgstr ""
 
-#: pkg/storaged/format-dialog.jsx:87
-msgid ""
-"If this option is checked, the filesystem will not be mounted during the "
-"next boot even if it was mounted before it.  This is useful if mounting "
-"during boot is not possible, such as when a passphrase is required to unlock "
-"the filesystem but booting is unattended."
-msgstr ""
-
 #: pkg/networkmanager/ip-settings.jsx:53 pkg/packagekit/updates.jsx:683
 #: pkg/packagekit/updates.jsx:760
 msgid "Ignore"
@@ -3453,7 +3507,7 @@ msgstr "En sincronització"
 msgid "Inactive"
 msgstr "Inactiu"
 
-#: pkg/storaged/content-views.jsx:807
+#: pkg/storaged/content-views.jsx:817
 msgid "Inactive volume"
 msgstr "Volum inactiu"
 
@@ -3466,7 +3520,7 @@ msgid ""
 "Incoming requests are blocked by default. Outgoing requests are not blocked."
 msgstr ""
 
-#: pkg/storaged/fsys-tab.jsx:670
+#: pkg/storaged/fsys-tab.jsx:725
 msgid "Inconsistent filesystem mount"
 msgstr ""
 
@@ -3478,7 +3532,7 @@ msgstr ""
 msgid "Index memory"
 msgstr ""
 
-#: pkg/systemd/services/services.jsx:230
+#: pkg/systemd/services/services.jsx:258
 #, fuzzy
 #| msgid "direct"
 msgid "Indirect"
@@ -3492,19 +3546,19 @@ msgstr ""
 msgid "Info and above"
 msgstr ""
 
-#: pkg/storaged/content-views.jsx:709
+#: pkg/storaged/content-views.jsx:719
 #, fuzzy
 #| msgid "Initializing..."
 msgid "Initialize"
 msgstr "S'està inicialitzant..."
 
-#: pkg/storaged/content-views.jsx:686
+#: pkg/storaged/content-views.jsx:696
 #, fuzzy
 #| msgid "Initializing..."
 msgid "Initialize disk $0"
 msgstr "S'està inicialitzant..."
 
-#: pkg/storaged/content-views.jsx:710
+#: pkg/storaged/content-views.jsx:720
 #, fuzzy
 #| msgid "Formatting a disk will erase all data on it."
 msgid "Initializing erases all data on a disk."
@@ -3573,11 +3627,11 @@ msgstr "S'està instal·lant"
 msgid "Installing $0"
 msgstr ""
 
-#: pkg/storaged/content-views.jsx:837 pkg/storaged/crypto-keyslots.jsx:299
+#: pkg/storaged/content-views.jsx:847 pkg/storaged/crypto-keyslots.jsx:299
 msgid "Installing $0 would remove $1."
 msgstr ""
 
-#: pkg/storaged/content-views.jsx:839
+#: pkg/storaged/content-views.jsx:849
 #, fuzzy
 #| msgid "Installing"
 msgid "Installing packages"
@@ -3612,7 +3666,7 @@ msgstr "Error intern"
 msgid "Internal error: Invalid challenge header"
 msgstr ""
 
-#: pkg/systemd/services/services.jsx:229
+#: pkg/systemd/services/services.jsx:257
 #, fuzzy
 #| msgid "Invalid key"
 msgid "Invalid"
@@ -3824,7 +3878,7 @@ msgstr "Clau LACP"
 msgid "LEGACY with Active Directory interoperability."
 msgstr ""
 
-#: pkg/storaged/content-views.jsx:463 pkg/storaged/content-views.jsx:480
+#: pkg/storaged/content-views.jsx:473 pkg/storaged/content-views.jsx:490
 #, fuzzy
 #| msgid "RAID member"
 msgid "LVM2 member"
@@ -3879,8 +3933,8 @@ msgstr "Última comprovació: fa $0"
 msgid "Last successful login:"
 msgstr "Últim inici de sessió"
 
-#: pkg/lib/cockpit-components-dialog.jsx:219
-#: pkg/lib/cockpit-components-dialog.jsx:226 pkg/networkmanager/bond.jsx:152
+#: pkg/lib/cockpit-components-dialog.jsx:224
+#: pkg/lib/cockpit-components-dialog.jsx:231 pkg/networkmanager/bond.jsx:152
 #: pkg/systemd/overview-cards/cryptoPolicies.jsx:51
 #: pkg/systemd/overview-cards/cryptoPolicies.jsx:164 pkg/tuned/dialog.jsx:291
 #, fuzzy
@@ -3951,7 +4005,7 @@ msgstr "Retard de l'aixecament de l'enllaç"
 msgid "Link watch"
 msgstr "Observació de l'enllaç"
 
-#: pkg/systemd/services/services.jsx:223 pkg/systemd/services/services.jsx:224
+#: pkg/systemd/services/services.jsx:251 pkg/systemd/services/services.jsx:252
 #, fuzzy
 #| msgid "Links"
 msgid "Linked"
@@ -3961,12 +4015,12 @@ msgstr "Enllaços"
 msgid "Listen"
 msgstr ""
 
-#: pkg/systemd/services/services.jsx:654
+#: pkg/systemd/services/services.jsx:679
 #, fuzzy
 msgid "Listing units"
 msgstr "Serveis del sistema"
 
-#: pkg/systemd/services/services.jsx:498
+#: pkg/systemd/services/services.jsx:524
 #, fuzzy
 msgid "Listing units failed: $0"
 msgstr "Última comprovació: fa $0"
@@ -4020,7 +4074,7 @@ msgstr "S'està carregant..."
 msgid "Loading of SSH keys failed"
 msgstr "Ha fallat la càrrega de les actualitzacions disponibles"
 
-#: pkg/systemd/services/services.jsx:635
+#: pkg/systemd/services/services.jsx:660
 #, fuzzy
 #| msgid "Loading available updates failed"
 msgid "Loading of units failed"
@@ -4036,14 +4090,14 @@ msgstr "S'està carregant..."
 msgid "Loading system modifications..."
 msgstr ""
 
-#: pkg/systemd/services/service.jsx:134
+#: pkg/systemd/services/service.jsx:130
 #, fuzzy
 #| msgid "Login failed"
 msgid "Loading unit failed"
 msgstr "Ha fallat l'inici de sessió"
 
 #: pkg/kdump/kdump-view.jsx:341 pkg/systemd/logDetails.jsx:176
-#: pkg/systemd/services/services.jsx:654 pkg/systemd/services/service.jsx:137
+#: pkg/systemd/services/services.jsx:679 pkg/systemd/services/service.jsx:133
 #: pkg/systemd/logsJournal.jsx:268 pkg/storaged/devices.jsx:68
 #: pkg/users/account-details.js:188 pkg/users/accounts-list.js:346
 #: pkg/users/accounts-list.js:370 pkg/users/accounts-list.js:486
@@ -4063,12 +4117,12 @@ msgstr "Sistema de fitxers local"
 msgid "Local mount point"
 msgstr "Punt de muntatge local"
 
-#: pkg/kdump/kdump-view.jsx:155 pkg/storaged/dialog.jsx:1049
-#: pkg/storaged/dialog.jsx:1127
+#: pkg/kdump/kdump-view.jsx:155 pkg/storaged/dialog.jsx:1063
+#: pkg/storaged/dialog.jsx:1141
 msgid "Location"
 msgstr "Ubicació"
 
-#: pkg/storaged/content-views.jsx:284 pkg/users/lock-account-dialog.js:36
+#: pkg/storaged/content-views.jsx:294 pkg/users/lock-account-dialog.js:36
 msgid "Lock"
 msgstr "Bloqueja"
 
@@ -4088,14 +4142,14 @@ msgstr "Bloqueja el compte"
 msgid "Locked devices"
 msgstr "Dispositiu de blocs $0"
 
-#: pkg/storaged/stratis-panel.jsx:73 pkg/storaged/stratis-details.jsx:762
+#: pkg/storaged/stratis-panel.jsx:73 pkg/storaged/stratis-details.jsx:806
 #, fuzzy
 #| msgctxt "storage-id-desc"
 #| msgid "Encrypted data"
 msgid "Locked encrypted Stratis pool"
 msgstr "Dades xifrades"
 
-#: pkg/storaged/content-views.jsx:453
+#: pkg/storaged/content-views.jsx:463
 #, fuzzy
 #| msgctxt "storage-id-desc"
 #| msgid "Encrypted data"
@@ -4145,7 +4199,7 @@ msgstr "Autenticat"
 msgid "Logical"
 msgstr "Lògica"
 
-#: pkg/storaged/vdo-details.jsx:224 pkg/storaged/content-views.jsx:944
+#: pkg/storaged/vdo-details.jsx:224 pkg/storaged/content-views.jsx:954
 msgid "Logical size"
 msgstr "Mida lògica"
 
@@ -4161,7 +4215,7 @@ msgstr "Volum lògic (instantània)"
 msgid "Logical volume of $0"
 msgstr "Volum lògic de $0"
 
-#: pkg/storaged/content-views.jsx:1013 pkg/storaged/content-views.jsx:1018
+#: pkg/storaged/content-views.jsx:1023 pkg/storaged/content-views.jsx:1028
 #, fuzzy
 msgid "Logical volumes"
 msgstr "Volum lògic"
@@ -4242,7 +4296,7 @@ msgstr "Empremtes de les claus SSH de la màquina"
 msgid "Main server chassis"
 msgstr ""
 
-#: pkg/systemd/services/services.jsx:214
+#: pkg/systemd/services/services.jsx:242
 #, fuzzy
 #| msgid "Unmanaged interfaces"
 msgid "Maintenance"
@@ -4348,7 +4402,7 @@ msgstr "S'està ficant $target com a defectuós"
 msgid "Mask service"
 msgstr ""
 
-#: pkg/systemd/services/services.jsx:226 pkg/systemd/services/services.jsx:227
+#: pkg/systemd/services/services.jsx:254 pkg/systemd/services/services.jsx:255
 #: pkg/systemd/services/service-details.jsx:433
 msgid "Masked"
 msgstr ""
@@ -4387,7 +4441,7 @@ msgstr ""
 msgid "Memory usage"
 msgstr "Ús de la memòria: "
 
-#: pkg/systemd/services/services.jsx:201
+#: pkg/systemd/services/services.jsx:229
 msgid "Merged"
 msgstr ""
 
@@ -4497,14 +4551,19 @@ msgstr ""
 msgid "More info..."
 msgstr "Més informació"
 
-#: pkg/storaged/fsys-panel.jsx:179 pkg/storaged/fsys-tab.jsx:371
-#: pkg/storaged/stratis-details.jsx:593 pkg/storaged/stratis-details.jsx:594
-#: pkg/storaged/content-views.jsx:289 pkg/storaged/content-views.jsx:416
+#: pkg/storaged/fsys-panel.jsx:179 pkg/storaged/fsys-tab.jsx:400
+#: pkg/storaged/stratis-details.jsx:637 pkg/storaged/stratis-details.jsx:638
+#: pkg/storaged/content-views.jsx:299 pkg/storaged/content-views.jsx:426
 #: pkg/storaged/nfs-details.jsx:295
 msgid "Mount"
 msgstr "Munta"
 
-#: pkg/storaged/fsys-tab.jsx:653
+#: pkg/storaged/format-dialog.jsx:379 pkg/storaged/fsys-tab.jsx:362
+#: pkg/storaged/stratis-details.jsx:397 pkg/storaged/stratis-details.jsx:548
+msgid "Mount after network becomes available, ignore failure"
+msgstr ""
+
+#: pkg/storaged/fsys-tab.jsx:708
 msgid "Mount also automatically on boot"
 msgstr ""
 
@@ -4512,36 +4571,40 @@ msgstr ""
 msgid "Mount at boot"
 msgstr "Munta a l'arrencada"
 
-#: pkg/storaged/fsys-tab.jsx:645 pkg/storaged/fsys-tab.jsx:657
+#: pkg/storaged/fsys-tab.jsx:700 pkg/storaged/fsys-tab.jsx:712
 msgid "Mount automatically on $0 on boot"
 msgstr ""
 
-#: pkg/storaged/fsys-tab.jsx:367
+#: pkg/storaged/format-dialog.jsx:371 pkg/storaged/fsys-tab.jsx:354
+#: pkg/storaged/stratis-details.jsx:389 pkg/storaged/stratis-details.jsx:540
+msgid "Mount before services start"
+msgstr ""
+
+#: pkg/storaged/fsys-tab.jsx:396
 msgid "Mount configuration"
 msgstr ""
 
-#: pkg/storaged/fsys-tab.jsx:365
+#: pkg/storaged/fsys-tab.jsx:394
 msgid "Mount filesystem"
 msgstr ""
 
-#: pkg/storaged/format-dialog.jsx:250 pkg/storaged/fsys-tab.jsx:650
-#: pkg/storaged/stratis-details.jsx:376 pkg/storaged/stratis-details.jsx:507
+#: pkg/storaged/fsys-tab.jsx:705
 msgid "Mount now"
 msgstr ""
 
-#: pkg/storaged/fsys-tab.jsx:646
+#: pkg/storaged/fsys-tab.jsx:701
 msgid "Mount on $0 now"
 msgstr ""
 
-#: pkg/storaged/format-dialog.jsx:240 pkg/storaged/fsys-tab.jsx:324
-#: pkg/storaged/stratis-details.jsx:367 pkg/storaged/stratis-details.jsx:498
+#: pkg/storaged/format-dialog.jsx:387 pkg/storaged/fsys-tab.jsx:336
+#: pkg/storaged/stratis-details.jsx:371 pkg/storaged/stratis-details.jsx:522
 #: pkg/storaged/nfs-details.jsx:161
 msgid "Mount options"
 msgstr "Opcions de muntatge"
 
-#: pkg/storaged/format-dialog.jsx:234 pkg/storaged/fsys-tab.jsx:319
-#: pkg/storaged/fsys-tab.jsx:699 pkg/storaged/stratis-details.jsx:363
-#: pkg/storaged/stratis-details.jsx:494 pkg/storaged/nfs-panel.jsx:103
+#: pkg/storaged/format-dialog.jsx:293 pkg/storaged/fsys-tab.jsx:331
+#: pkg/storaged/fsys-tab.jsx:754 pkg/storaged/stratis-details.jsx:367
+#: pkg/storaged/stratis-details.jsx:518 pkg/storaged/nfs-panel.jsx:103
 #: pkg/storaged/nfs-details.jsx:317
 msgid "Mount point"
 msgstr "Punt de muntatge"
@@ -4562,15 +4625,32 @@ msgstr ""
 msgid "Mount point must start with \"/\"."
 msgstr "El punt de muntatge ha de començar amb «/»."
 
-#: pkg/storaged/format-dialog.jsx:251 pkg/storaged/fsys-tab.jsx:332
-#: pkg/storaged/stratis-details.jsx:377 pkg/storaged/stratis-details.jsx:508
+#: pkg/storaged/format-dialog.jsx:395 pkg/storaged/fsys-tab.jsx:343
+#: pkg/storaged/stratis-details.jsx:378 pkg/storaged/stratis-details.jsx:529
 #: pkg/storaged/nfs-details.jsx:165
 msgid "Mount read only"
 msgstr "Munta només de lectura"
 
+#: pkg/storaged/format-dialog.jsx:375 pkg/storaged/fsys-tab.jsx:358
+#: pkg/storaged/stratis-details.jsx:393 pkg/storaged/stratis-details.jsx:544
+msgid "Mount without waiting, ignore failure"
+msgstr ""
+
 #: pkg/storaged/jobs-panel.jsx:48
 msgid "Mounting $target"
 msgstr "S'està muntat $target"
+
+#: pkg/storaged/format-dialog.jsx:105
+msgid "Mounts before services start"
+msgstr ""
+
+#: pkg/storaged/format-dialog.jsx:119
+msgid "Mounts in parallel with services"
+msgstr ""
+
+#: pkg/storaged/format-dialog.jsx:130
+msgid "Mounts in parallel with services, but after network is available"
+msgstr ""
 
 #: pkg/lib/machine-info.js:84
 msgid "Multi-system chassis"
@@ -4606,17 +4686,17 @@ msgstr "Servidor NTP"
 #: pkg/networkmanager/network-main.jsx:198
 #: pkg/networkmanager/dialogs-common.jsx:138 pkg/systemd/hwinfo.jsx:88
 #: pkg/systemd/services/timer-dialog.jsx:156 pkg/shell/credentials.jsx:101
-#: pkg/storaged/format-dialog.jsx:213 pkg/storaged/mdraids-panel.jsx:74
-#: pkg/storaged/vgroups-panel.jsx:73 pkg/storaged/fsys-tab.jsx:482
-#: pkg/storaged/fsys-tab.jsx:685 pkg/storaged/stratis-panel.jsx:130
+#: pkg/storaged/format-dialog.jsx:288 pkg/storaged/mdraids-panel.jsx:74
+#: pkg/storaged/vgroups-panel.jsx:73 pkg/storaged/fsys-tab.jsx:527
+#: pkg/storaged/fsys-tab.jsx:740 pkg/storaged/stratis-panel.jsx:130
 #: pkg/storaged/iscsi-panel.jsx:127 pkg/storaged/iscsi-panel.jsx:184
 #: pkg/storaged/crypto-panel.jsx:84 pkg/storaged/stratis-details.jsx:271
-#: pkg/storaged/stratis-details.jsx:359 pkg/storaged/stratis-details.jsx:466
-#: pkg/storaged/stratis-details.jsx:489 pkg/storaged/stratis-details.jsx:653
-#: pkg/storaged/stratis-details.jsx:786 pkg/storaged/vgroup-details.jsx:162
-#: pkg/storaged/content-views.jsx:182 pkg/storaged/content-views.jsx:307
-#: pkg/storaged/content-views.jsx:754 pkg/storaged/content-views.jsx:886
-#: pkg/storaged/content-views.jsx:1019 pkg/storaged/part-tab.jsx:35
+#: pkg/storaged/stratis-details.jsx:363 pkg/storaged/stratis-details.jsx:490
+#: pkg/storaged/stratis-details.jsx:513 pkg/storaged/stratis-details.jsx:697
+#: pkg/storaged/stratis-details.jsx:830 pkg/storaged/vgroup-details.jsx:162
+#: pkg/storaged/content-views.jsx:192 pkg/storaged/content-views.jsx:317
+#: pkg/storaged/content-views.jsx:764 pkg/storaged/content-views.jsx:896
+#: pkg/storaged/content-views.jsx:1029 pkg/storaged/part-tab.jsx:35
 #: pkg/storaged/lvol-tabs.jsx:43 pkg/storaged/lvol-tabs.jsx:414
 #: pkg/storaged/lvol-tabs.jsx:475 pkg/storaged/lvol-tabs.jsx:533
 #: pkg/users/authorized-keys-panel.js:130 pkg/users/group-create-dialog.js:38
@@ -4624,7 +4704,7 @@ msgstr "Servidor NTP"
 msgid "Name"
 msgstr "Nom"
 
-#: pkg/storaged/stratis-details.jsx:224 pkg/storaged/stratis-details.jsx:346
+#: pkg/storaged/stratis-details.jsx:224 pkg/storaged/stratis-details.jsx:350
 msgid "Name can not be empty."
 msgstr "El nom no pot estar en blanc."
 
@@ -4736,13 +4816,6 @@ msgstr "Mai venç la contrasenya"
 msgid "Never logged in"
 msgstr "Autenticat"
 
-#: pkg/storaged/format-dialog.jsx:253 pkg/storaged/fsys-tab.jsx:334
-#: pkg/storaged/stratis-details.jsx:379 pkg/storaged/stratis-details.jsx:510
-#, fuzzy
-#| msgid "Mount at boot"
-msgid "Never mount at boot"
-msgstr "Munta a l'arrencada"
-
 #: pkg/storaged/nfs-details.jsx:126
 msgid "New NFS mount"
 msgstr "Muntatge NFS nou"
@@ -4853,16 +4926,16 @@ msgstr "No hi ha disponible cap disc."
 msgid "No drives attached"
 msgstr "Sense unitats connectades"
 
-#: pkg/storaged/format-dialog.jsx:159
+#: pkg/storaged/format-dialog.jsx:220
 #, fuzzy
 msgid "No encryption"
 msgstr "Descripció"
 
-#: pkg/storaged/format-dialog.jsx:141
+#: pkg/storaged/format-dialog.jsx:202
 msgid "No filesystem"
 msgstr "Sense sistema de fitxers"
 
-#: pkg/storaged/stratis-details.jsx:651
+#: pkg/storaged/stratis-details.jsx:695
 #, fuzzy
 #| msgid "No filesystem"
 msgid "No filesystems"
@@ -4872,7 +4945,7 @@ msgstr "Sense sistema de fitxers"
 msgid "No free key slots"
 msgstr ""
 
-#: pkg/storaged/content-views.jsx:1001
+#: pkg/storaged/content-views.jsx:1011
 msgid "No free space"
 msgstr "Sense espai lliure"
 
@@ -4898,12 +4971,12 @@ msgstr "No s'ha trobat cap paquet d'instal·lació per a aquesta aplicació."
 msgid "No keys added"
 msgstr ""
 
-#: pkg/systemd/services/service.jsx:178
+#: pkg/systemd/services/service.jsx:172
 #, fuzzy
 msgid "No log entries"
 msgstr "Carrega les entrades anteriors"
 
-#: pkg/storaged/content-views.jsx:1017
+#: pkg/storaged/content-views.jsx:1027
 msgid "No logical volumes"
 msgstr "Sense volums lògics"
 
@@ -4931,7 +5004,7 @@ msgstr ""
 "kernel (p. ex. a /etc/default/grub) per reservar memòria en temps "
 "d'arrencada. Exemple: crashkernel=512M"
 
-#: pkg/storaged/content-views.jsx:698
+#: pkg/storaged/content-views.jsx:708
 msgid "No partitioning"
 msgstr "Sense particionatge"
 
@@ -5016,7 +5089,7 @@ msgstr "No connectat"
 msgid "Not enough space to grow."
 msgstr ""
 
-#: pkg/systemd/services/services.jsx:198 pkg/storaged/details.jsx:135
+#: pkg/systemd/services/services.jsx:226 pkg/storaged/details.jsx:135
 msgid "Not found"
 msgstr "No s'ha trobat"
 
@@ -5048,8 +5121,8 @@ msgstr "No a punt"
 msgid "Not registered"
 msgstr ""
 
-#: pkg/systemd/services/services.jsx:210 pkg/systemd/services/services.jsx:213
-#: pkg/systemd/services/services.jsx:668
+#: pkg/systemd/services/services.jsx:238 pkg/systemd/services/services.jsx:241
+#: pkg/systemd/services/services.jsx:693
 #: pkg/systemd/services/service-details.jsx:473
 #: pkg/storaged/mdraid-details.jsx:348
 msgid "Not running"
@@ -5166,7 +5239,7 @@ msgid "Optical drive"
 msgstr "Unitat òptica"
 
 #: pkg/networkmanager/bridge.jsx:103 pkg/storaged/crypto-tab.jsx:251
-#: pkg/storaged/content-views.jsx:954 pkg/users/account-details.js:282
+#: pkg/storaged/content-views.jsx:964 pkg/users/account-details.js:282
 #: pkg/sosreport/index.jsx:317
 msgid "Options"
 msgstr "Opcions"
@@ -5185,7 +5258,7 @@ msgid ""
 "password authentication is not allowed."
 msgstr ""
 
-#: pkg/storaged/content-views.jsx:491
+#: pkg/storaged/content-views.jsx:501
 msgctxt "storage-id-desc"
 msgid "Other data"
 msgstr "Altres dades"
@@ -5207,13 +5280,13 @@ msgstr ""
 msgid "Overview"
 msgstr "Visió de conjunt"
 
-#: pkg/storaged/format-dialog.jsx:228 pkg/storaged/content-views.jsx:701
+#: pkg/storaged/format-dialog.jsx:309 pkg/storaged/content-views.jsx:711
 #, fuzzy
 #| msgid "Overview"
 msgid "Overwrite"
 msgstr "Visió de conjunt"
 
-#: pkg/storaged/format-dialog.jsx:231 pkg/storaged/content-views.jsx:704
+#: pkg/storaged/format-dialog.jsx:312 pkg/storaged/content-views.jsx:714
 #, fuzzy
 #| msgid "Overwrite existing data with zeros"
 msgid "Overwrite existing data with zeros (slower)"
@@ -5223,7 +5296,7 @@ msgstr "Sobreescriu les dades existents amb zeros"
 msgid "PCI"
 msgstr "PCI"
 
-#: pkg/storaged/dialog.jsx:1197
+#: pkg/storaged/dialog.jsx:1211
 #, fuzzy
 #| msgid "PCI"
 msgid "PID"
@@ -5278,7 +5351,7 @@ msgstr ""
 msgid "Part of $0"
 msgstr "Part de"
 
-#: pkg/storaged/content-views.jsx:217
+#: pkg/storaged/content-views.jsx:227
 msgid "Partition"
 msgstr "Partició"
 
@@ -5286,17 +5359,17 @@ msgstr "Partició"
 msgid "Partition of $0"
 msgstr "Partició de $0"
 
-#: pkg/storaged/content-views.jsx:773
+#: pkg/storaged/content-views.jsx:783
 #, fuzzy
 #| msgid "$0 block device"
 msgid "Partitioned block device"
 msgstr "Dispositiu de blocs $0"
 
-#: pkg/storaged/content-views.jsx:689
+#: pkg/storaged/content-views.jsx:699
 msgid "Partitioning"
 msgstr "Particionatge"
 
-#: pkg/storaged/content-views.jsx:741
+#: pkg/storaged/content-views.jsx:751
 #, fuzzy
 #| msgid "Partition"
 msgid "Partitions"
@@ -5306,10 +5379,10 @@ msgstr "Partició"
 msgid "Passive"
 msgstr "Passiu"
 
-#: pkg/storaged/format-dialog.jsx:266 pkg/storaged/format-dialog.jsx:292
-#: pkg/storaged/fsys-tab.jsx:345 pkg/storaged/stratis-panel.jsx:141
-#: pkg/storaged/stratis-details.jsx:131 pkg/storaged/stratis-details.jsx:702
-#: pkg/storaged/content-views.jsx:269 pkg/storaged/crypto-keyslots.jsx:483
+#: pkg/storaged/format-dialog.jsx:321 pkg/storaged/format-dialog.jsx:347
+#: pkg/storaged/fsys-tab.jsx:374 pkg/storaged/stratis-panel.jsx:141
+#: pkg/storaged/stratis-details.jsx:131 pkg/storaged/stratis-details.jsx:746
+#: pkg/storaged/content-views.jsx:279 pkg/storaged/crypto-keyslots.jsx:483
 #: pkg/storaged/crypto-keyslots.jsx:818
 msgid "Passphrase"
 msgstr "Contrasenya"
@@ -5320,8 +5393,8 @@ msgstr "Contrasenya"
 msgid "Passphrase can not be empty"
 msgstr "La contrasenya no pot estar en blanc"
 
-#: pkg/storaged/format-dialog.jsx:270 pkg/storaged/format-dialog.jsx:296
-#: pkg/storaged/fsys-tab.jsx:348 pkg/storaged/stratis-panel.jsx:145
+#: pkg/storaged/format-dialog.jsx:325 pkg/storaged/format-dialog.jsx:351
+#: pkg/storaged/fsys-tab.jsx:377 pkg/storaged/stratis-panel.jsx:145
 #: pkg/storaged/stratis-details.jsx:134 pkg/storaged/crypto-keyslots.jsx:204
 #: pkg/storaged/crypto-keyslots.jsx:491 pkg/storaged/crypto-keyslots.jsx:534
 #: pkg/storaged/crypto-keyslots.jsx:537
@@ -5338,7 +5411,7 @@ msgstr "La contrasenya no pot estar en blanc"
 msgid "Passphrase removal may prevent unlocking $0."
 msgstr ""
 
-#: pkg/storaged/format-dialog.jsx:278 pkg/storaged/stratis-panel.jsx:153
+#: pkg/storaged/format-dialog.jsx:333 pkg/storaged/stratis-panel.jsx:153
 #: pkg/storaged/crypto-keyslots.jsx:499 pkg/storaged/crypto-keyslots.jsx:539
 msgid "Passphrases do not match"
 msgstr "Les contrasenyes no coincideixen"
@@ -5467,7 +5540,7 @@ msgstr "Suprimeix $0"
 
 #: pkg/storaged/vdo-details.jsx:198 pkg/storaged/mdraid-details.jsx:290
 #: pkg/storaged/stratis-details.jsx:248 pkg/storaged/vgroup-details.jsx:194
-#: pkg/storaged/content-views.jsx:378
+#: pkg/storaged/content-views.jsx:388
 msgid "Permanently delete $0?"
 msgstr ""
 
@@ -5542,7 +5615,7 @@ msgstr "Si us plau, especifiqueu una data de venciment"
 msgid "Please specify the host to connect to"
 msgstr ""
 
-#: pkg/storaged/content-views.jsx:206
+#: pkg/storaged/content-views.jsx:216
 msgid "Pool"
 msgstr "Agrupació"
 
@@ -5550,11 +5623,11 @@ msgstr "Agrupació"
 msgid "Pool for thin logical volumes"
 msgstr "Agrupació per als volums lògics disgregats"
 
-#: pkg/storaged/content-views.jsx:788
+#: pkg/storaged/content-views.jsx:798
 msgid "Pool for thin volumes"
 msgstr "Agrupació per als volums disgregats"
 
-#: pkg/storaged/content-views.jsx:871
+#: pkg/storaged/content-views.jsx:881
 msgid "Pool for thinly provisioned volumes"
 msgstr ""
 
@@ -5635,7 +5708,7 @@ msgstr "Detalls del problema"
 msgid "Problem info"
 msgstr "Informació del problema"
 
-#: pkg/storaged/dialog.jsx:1081
+#: pkg/storaged/dialog.jsx:1095
 msgid "Processes using the location"
 msgstr ""
 
@@ -5669,7 +5742,7 @@ msgid ""
 "interoperability."
 msgstr ""
 
-#: pkg/storaged/stratis-details.jsx:697
+#: pkg/storaged/stratis-details.jsx:741
 msgid "Provide the passphrase for the pool on these block devices:"
 msgstr ""
 
@@ -5677,7 +5750,7 @@ msgstr ""
 msgid "Public key"
 msgstr "Clau pública"
 
-#: pkg/storaged/content-views.jsx:891
+#: pkg/storaged/content-views.jsx:901
 msgid "Purpose"
 msgstr "Propòsit"
 
@@ -5755,7 +5828,7 @@ msgctxt "storage"
 msgid "RAID level"
 msgstr "Nivell RAID"
 
-#: pkg/storaged/content-views.jsx:470 pkg/storaged/content-views.jsx:485
+#: pkg/storaged/content-views.jsx:480 pkg/storaged/content-views.jsx:495
 msgid "RAID member"
 msgstr "Membre RAID"
 
@@ -5919,15 +5992,15 @@ msgstr "S'està generant l'informe"
 msgid "Register…"
 msgstr "Registra..."
 
-#: pkg/storaged/dialog.jsx:1153
+#: pkg/storaged/dialog.jsx:1167
 msgid "Related processes and services will be forcefully stopped."
 msgstr ""
 
-#: pkg/storaged/dialog.jsx:1155
+#: pkg/storaged/dialog.jsx:1169
 msgid "Related processes will be forcefully stopped."
 msgstr ""
 
-#: pkg/storaged/dialog.jsx:1157
+#: pkg/storaged/dialog.jsx:1171
 msgid "Related services will be forcefully stopped."
 msgstr ""
 
@@ -5939,7 +6012,7 @@ msgstr "Recarrega"
 msgid "Reload propagated from"
 msgstr ""
 
-#: pkg/systemd/services/services.jsx:209
+#: pkg/systemd/services/services.jsx:237
 #, fuzzy
 #| msgid "Reading"
 msgid "Reloading"
@@ -6080,8 +6153,8 @@ msgstr ""
 msgid "Removing the zone will remove all services within it."
 msgstr ""
 
-#: pkg/storaged/stratis-details.jsx:278 pkg/storaged/stratis-details.jsx:416
-#: pkg/storaged/stratis-details.jsx:473 pkg/storaged/stratis-details.jsx:599
+#: pkg/storaged/stratis-details.jsx:278 pkg/storaged/stratis-details.jsx:440
+#: pkg/storaged/stratis-details.jsx:497 pkg/storaged/stratis-details.jsx:643
 #: pkg/storaged/vgroup-details.jsx:169 pkg/storaged/vgroup-details.jsx:222
 #: pkg/storaged/lvol-tabs.jsx:47
 msgid "Rename"
@@ -6093,7 +6166,7 @@ msgstr "Reanomena"
 msgid "Rename Stratis pool"
 msgstr "Restableix l'agrupació d'emmagatzematge"
 
-#: pkg/storaged/stratis-details.jsx:464
+#: pkg/storaged/stratis-details.jsx:488
 #, fuzzy
 #| msgid "Filesystem"
 msgid "Rename filesystem"
@@ -6262,13 +6335,13 @@ msgstr "S'està restaurant la connexió"
 msgid "Resume"
 msgstr ""
 
-#: pkg/storaged/format-dialog.jsx:167
+#: pkg/storaged/format-dialog.jsx:228
 #, fuzzy
 #| msgid "Restoring connection"
 msgid "Reuse existing encryption"
 msgstr "S'està restaurant la connexió"
 
-#: pkg/storaged/format-dialog.jsx:164
+#: pkg/storaged/format-dialog.jsx:225
 msgid "Reuse existing encryption ($0)"
 msgstr ""
 
@@ -6316,14 +6389,14 @@ msgstr "Baixa l'informe"
 msgid "Runner"
 msgstr "Runner"
 
-#: pkg/systemd/services/services.jsx:208 pkg/systemd/services/services.jsx:212
-#: pkg/systemd/services/services.jsx:667
+#: pkg/systemd/services/services.jsx:236 pkg/systemd/services/services.jsx:240
+#: pkg/systemd/services/services.jsx:692
 #: pkg/systemd/services/service-details.jsx:465
 #: pkg/storaged/mdraid-details.jsx:348
 msgid "Running"
 msgstr "En execució"
 
-#: pkg/storaged/dialog.jsx:1200 pkg/storaged/dialog.jsx:1219
+#: pkg/storaged/dialog.jsx:1214 pkg/storaged/dialog.jsx:1233
 msgid "Runtime"
 msgstr ""
 
@@ -6408,8 +6481,8 @@ msgstr ""
 
 #: pkg/kdump/kdump-view.jsx:326 pkg/networkmanager/dialogs-common.jsx:156
 #: pkg/systemd/services/timer-dialog.jsx:147 pkg/storaged/crypto-tab.jsx:156
-#: pkg/storaged/crypto-tab.jsx:200 pkg/storaged/fsys-tab.jsx:373
-#: pkg/storaged/fsys-tab.jsx:489 pkg/storaged/crypto-keyslots.jsx:542
+#: pkg/storaged/crypto-tab.jsx:200 pkg/storaged/fsys-tab.jsx:402
+#: pkg/storaged/fsys-tab.jsx:534 pkg/storaged/crypto-keyslots.jsx:542
 #: pkg/storaged/crypto-keyslots.jsx:561 pkg/storaged/nfs-details.jsx:181
 #: pkg/packagekit/kpatch.jsx:307 pkg/metrics/metrics.jsx:1280
 msgid "Save"
@@ -6426,11 +6499,11 @@ msgstr ""
 msgid "Save changes"
 msgstr "Obliga el canvi"
 
-#: pkg/storaged/content-views.jsx:961
+#: pkg/storaged/content-views.jsx:971
 msgid "Save space by compressing individual blocks with LZ4"
 msgstr ""
 
-#: pkg/storaged/content-views.jsx:966
+#: pkg/storaged/content-views.jsx:976
 msgid "Save space by storing identical data blocks just once"
 msgstr ""
 
@@ -6560,7 +6633,7 @@ msgstr "El servidor ha tancat la connexió."
 msgid "Server software"
 msgstr ""
 
-#: pkg/networkmanager/firewall.jsx:211 pkg/storaged/dialog.jsx:1216
+#: pkg/networkmanager/firewall.jsx:211 pkg/storaged/dialog.jsx:1230
 #: pkg/metrics/metrics.jsx:737 pkg/metrics/metrics.jsx:770
 msgid "Service"
 msgstr "Servei"
@@ -6585,17 +6658,17 @@ msgstr "El servei està aturat"
 msgid "Service is stopping"
 msgstr "El servei s'està aturant"
 
-#: pkg/systemd/services/service.jsx:178
+#: pkg/systemd/services/service.jsx:172
 msgid "Service logs"
 msgstr "Registres del servei"
 
 #: pkg/systemd/services.html:4 pkg/networkmanager/firewall.jsx:621
 #: pkg/systemd/services/service-tabs.jsx:40
-#: pkg/systemd/services/service.jsx:168 pkg/systemd/manifest.json:0
+#: pkg/systemd/services/service.jsx:155 pkg/systemd/manifest.json:0
 msgid "Services"
 msgstr "Serveis"
 
-#: pkg/storaged/dialog.jsx:1067
+#: pkg/storaged/dialog.jsx:1081
 #, fuzzy
 #| msgid "Service is starting"
 msgid "Services using the location"
@@ -6753,10 +6826,10 @@ msgid "Single rank"
 msgstr ""
 
 #: pkg/systemd/hwinfo.jsx:307 pkg/storaged/fsys-panel.jsx:180
-#: pkg/storaged/format-dialog.jsx:220 pkg/storaged/stratis-details.jsx:653
-#: pkg/storaged/stratis-details.jsx:786 pkg/storaged/content-views.jsx:187
-#: pkg/storaged/content-views.jsx:754 pkg/storaged/content-views.jsx:929
-#: pkg/storaged/content-views.jsx:937 pkg/storaged/content-views.jsx:1019
+#: pkg/storaged/format-dialog.jsx:301 pkg/storaged/stratis-details.jsx:697
+#: pkg/storaged/stratis-details.jsx:830 pkg/storaged/content-views.jsx:197
+#: pkg/storaged/content-views.jsx:764 pkg/storaged/content-views.jsx:939
+#: pkg/storaged/content-views.jsx:947 pkg/storaged/content-views.jsx:1029
 #: pkg/storaged/nfs-panel.jsx:104 pkg/storaged/part-tab.jsx:40
 #: pkg/storaged/nfs-details.jsx:322 pkg/storaged/lvol-tabs.jsx:237
 #: pkg/storaged/lvol-tabs.jsx:304 pkg/storaged/lvol-tabs.jsx:424
@@ -6764,23 +6837,23 @@ msgstr ""
 msgid "Size"
 msgstr "Mida"
 
-#: pkg/storaged/dialog.jsx:984
+#: pkg/storaged/dialog.jsx:998
 msgid "Size cannot be negative"
 msgstr "La mida no pot ser negativa"
 
-#: pkg/storaged/dialog.jsx:982
+#: pkg/storaged/dialog.jsx:996
 msgid "Size cannot be zero"
 msgstr "La mida no pot ser zero"
 
-#: pkg/storaged/dialog.jsx:986
+#: pkg/storaged/dialog.jsx:1000
 msgid "Size is too large"
 msgstr "La mida és massa gran"
 
-#: pkg/storaged/dialog.jsx:980
+#: pkg/storaged/dialog.jsx:994
 msgid "Size must be a number"
 msgstr "La mida ha de ser un número"
 
-#: pkg/storaged/dialog.jsx:988
+#: pkg/storaged/dialog.jsx:1002
 msgid "Size must be at least $0"
 msgstr "La mida com a mínim ha de ser $0"
 
@@ -6801,7 +6874,7 @@ msgstr "Ranura"
 msgid "Slot $0"
 msgstr ""
 
-#: pkg/storaged/stratis-details.jsx:600
+#: pkg/storaged/stratis-details.jsx:644
 #, fuzzy
 msgid "Snapshot"
 msgstr "Crea una instantània"
@@ -6881,7 +6954,7 @@ msgstr "Estable"
 
 #: pkg/systemd/services/service-details.jsx:144
 #: pkg/storaged/vdo-details.jsx:264 pkg/storaged/mdraid-details.jsx:316
-#: pkg/storaged/content-views.jsx:344
+#: pkg/storaged/content-views.jsx:354
 msgid "Start"
 msgstr "Inicia"
 
@@ -6930,7 +7003,7 @@ msgctxt "storage"
 msgid "State"
 msgstr "Estat"
 
-#: pkg/systemd/services/services.jsx:228 pkg/systemd/services/services.jsx:659
+#: pkg/systemd/services/services.jsx:256 pkg/systemd/services/services.jsx:684
 #: pkg/systemd/services/service-details.jsx:483
 msgid "Static"
 msgstr "Estàtic"
@@ -6950,7 +7023,7 @@ msgstr ""
 
 #: pkg/systemd/services/service-details.jsx:140
 #: pkg/storaged/vdo-details.jsx:141 pkg/storaged/vdo-details.jsx:263
-#: pkg/storaged/mdraid-details.jsx:315 pkg/storaged/content-views.jsx:342
+#: pkg/storaged/mdraid-details.jsx:315 pkg/storaged/content-views.jsx:352
 msgid "Stop"
 msgstr "Atura"
 
@@ -7001,7 +7074,7 @@ msgstr ""
 msgid "Storage logs"
 msgstr "Registres de l'emmagatzematge"
 
-#: pkg/storaged/format-dialog.jsx:289
+#: pkg/storaged/format-dialog.jsx:344
 msgid "Store passphrase"
 msgstr "Emmagatzema la contrasenya"
 
@@ -7010,8 +7083,8 @@ msgstr "Emmagatzema la contrasenya"
 msgid "Stored passphrase"
 msgstr "Contrasenya emmagatzemada"
 
-#: pkg/storaged/content-views.jsx:448 pkg/storaged/content-views.jsx:475
-#: pkg/storaged/content-views.jsx:482
+#: pkg/storaged/content-views.jsx:458 pkg/storaged/content-views.jsx:485
+#: pkg/storaged/content-views.jsx:492
 #, fuzzy
 #| msgid "Interfaces"
 msgid "Stratis member"
@@ -7024,14 +7097,14 @@ msgstr "Interfícies"
 msgid "Stratis pool"
 msgstr "Agrupació d'emmagatzematge"
 
-#: pkg/storaged/stratis-details.jsx:412
+#: pkg/storaged/stratis-details.jsx:436
 #, fuzzy
 #| msgid "Storage pool"
 #| msgid_plural "Storage pools"
 msgid "Stratis pool $0"
 msgstr "Agrupació d'emmagatzematge"
 
-#: pkg/systemd/services/services.jsx:196
+#: pkg/systemd/services/services.jsx:224
 msgid "Stub"
 msgstr ""
 
@@ -7047,7 +7120,7 @@ msgstr ""
 msgid "Sub-Notebook"
 msgstr ""
 
-#: pkg/systemd/services/services.jsx:264
+#: pkg/systemd/services/services.jsx:292
 msgid "Subscribing to systemd signals failed: $0"
 msgstr ""
 
@@ -7067,7 +7140,7 @@ msgstr ""
 msgid "Support is installed."
 msgstr ""
 
-#: pkg/storaged/content-views.jsx:228 pkg/metrics/metrics.jsx:127
+#: pkg/storaged/content-views.jsx:238 pkg/metrics/metrics.jsx:127
 #: pkg/metrics/metrics.jsx:606 pkg/metrics/metrics.jsx:1729
 msgid "Swap"
 msgstr "Intercanvi"
@@ -7078,7 +7151,7 @@ msgstr "Intercanvi"
 msgid "Swap out"
 msgstr "Intercanvi utilitzat"
 
-#: pkg/storaged/content-views.jsx:489 pkg/storaged/content-views.jsx:498
+#: pkg/storaged/content-views.jsx:499 pkg/storaged/content-views.jsx:508
 msgctxt "storage-id-desc"
 msgid "Swap space"
 msgstr "Espai d'intercanvi"
@@ -7140,7 +7213,7 @@ msgstr "Sincronitza"
 msgid "Synchronizing RAID device $target"
 msgstr "Sincronització del dispositiu RAID $target"
 
-#: pkg/systemd/services/services.jsx:882 pkg/shell/indexes.jsx:343
+#: pkg/systemd/services/services.jsx:907 pkg/shell/indexes.jsx:343
 #: pkg/shell/nav.jsx:46
 msgid "System"
 msgstr "Sistema"
@@ -7245,7 +7318,7 @@ msgstr ""
 msgid "The $0 package must be installed."
 msgstr "PackageKit no està instal·lat"
 
-#: pkg/storaged/content-views.jsx:896
+#: pkg/storaged/content-views.jsx:906
 msgid "The $0 package will be installed to create VDO devices."
 msgstr ""
 
@@ -7315,7 +7388,7 @@ msgid ""
 "The currently logged in user is not permitted to see information about keys."
 msgstr ""
 
-#: pkg/storaged/format-dialog.jsx:299
+#: pkg/storaged/format-dialog.jsx:354
 msgid ""
 "The disk needs to be unlocked before formatting.  Please provide a existing "
 "passphrase."
@@ -7325,48 +7398,48 @@ msgstr ""
 msgid "The file $0 will be deleted."
 msgstr ""
 
-#: pkg/storaged/fsys-tab.jsx:528
+#: pkg/storaged/fsys-tab.jsx:579
 msgid "The filesystem has no permanent mount point."
 msgstr ""
 
-#: pkg/storaged/fsys-tab.jsx:359
+#: pkg/storaged/fsys-tab.jsx:388
 msgid "The filesystem is already mounted at $0. Proceeding will unmount it."
 msgstr ""
 
-#: pkg/storaged/fsys-tab.jsx:660
+#: pkg/storaged/fsys-tab.jsx:715
 msgid ""
 "The filesystem is configured to be automatically mounted on boot but its "
 "encryption container will not be unlocked at that time."
 msgstr ""
 
-#: pkg/storaged/fsys-tab.jsx:652
+#: pkg/storaged/fsys-tab.jsx:707
 msgid ""
 "The filesystem is currently mounted but will not be mounted after the next "
 "boot."
 msgstr ""
 
-#: pkg/storaged/fsys-tab.jsx:644
+#: pkg/storaged/fsys-tab.jsx:699
 msgid ""
 "The filesystem is currently mounted on $0 but will be mounted on $1 on the "
 "next boot."
 msgstr ""
 
-#: pkg/storaged/fsys-tab.jsx:656
+#: pkg/storaged/fsys-tab.jsx:711
 msgid ""
 "The filesystem is currently mounted on $0 but will not be mounted after the "
 "next boot."
 msgstr ""
 
-#: pkg/storaged/fsys-tab.jsx:648
+#: pkg/storaged/fsys-tab.jsx:703
 msgid ""
 "The filesystem is currently not mounted but will be mounted on the next boot."
 msgstr ""
 
-#: pkg/storaged/fsys-tab.jsx:530
+#: pkg/storaged/fsys-tab.jsx:581
 msgid "The filesystem is not mounted."
 msgstr ""
 
-#: pkg/storaged/fsys-tab.jsx:533
+#: pkg/storaged/fsys-tab.jsx:584
 msgid ""
 "The filesystem will be unlocked and mounted on the next boot. This might "
 "require inputting a passphrase."
@@ -7430,15 +7503,15 @@ msgstr ""
 msgid "The last physical volume of a volume group cannot be removed."
 msgstr "No es pot treure l'últim volum físic d'un grup de volums."
 
-#: pkg/storaged/dialog.jsx:1234
+#: pkg/storaged/dialog.jsx:1248
 msgid "The listed processes and services will be forcefully stopped."
 msgstr ""
 
-#: pkg/storaged/dialog.jsx:1236
+#: pkg/storaged/dialog.jsx:1250
 msgid "The listed processes will be forcefully stopped."
 msgstr ""
 
-#: pkg/storaged/dialog.jsx:1238
+#: pkg/storaged/dialog.jsx:1252
 msgid "The listed services will be forcefully stopped."
 msgstr ""
 
@@ -7452,11 +7525,11 @@ msgstr ""
 msgid "The machine is rebooting"
 msgstr "La màquina s'està reiniciant"
 
-#: pkg/storaged/dialog.jsx:1193
+#: pkg/storaged/dialog.jsx:1207
 msgid "The mount point $0 is in use by these processes:"
 msgstr ""
 
-#: pkg/storaged/dialog.jsx:1212
+#: pkg/storaged/dialog.jsx:1226
 msgid "The mount point $0 is in use by these services:"
 msgstr ""
 
@@ -7576,7 +7649,7 @@ msgstr ""
 msgid "These additional steps are necessary:"
 msgstr ""
 
-#: pkg/storaged/dialog.jsx:1123
+#: pkg/storaged/dialog.jsx:1137
 msgid "These changes will be made:"
 msgstr ""
 
@@ -7596,7 +7669,7 @@ msgstr ""
 msgid "This device cannot be managed here."
 msgstr "Aquest dispositiu no es pot gestionar aquí."
 
-#: pkg/storaged/dialog.jsx:1045
+#: pkg/storaged/dialog.jsx:1059
 #, fuzzy
 #| msgid "This device is currently used for VDO devices."
 msgid "This device is currently in use."
@@ -7640,7 +7713,7 @@ msgstr "La màquina ja ha estat afegida."
 msgid "This may take a while"
 msgstr "Això pot trigar una estona"
 
-#: pkg/storaged/stratis-details.jsx:677
+#: pkg/storaged/stratis-details.jsx:721
 msgid ""
 "This pool can not be unlocked here because its key description is not in the "
 "expected format."
@@ -7800,7 +7873,7 @@ msgstr ""
 msgid "Toggle date picker"
 msgstr ""
 
-#: pkg/systemd/logs.jsx:190 pkg/systemd/services/services.jsx:786
+#: pkg/systemd/logs.jsx:190 pkg/systemd/services/services.jsx:811
 #, fuzzy
 msgid "Toggle filters"
 msgstr "Mostra les empremtes"
@@ -7833,7 +7906,7 @@ msgstr ""
 msgid "Tower"
 msgstr "Torre"
 
-#: pkg/systemd/services/services.jsx:232
+#: pkg/systemd/services/services.jsx:260
 msgid "Transient"
 msgstr ""
 
@@ -7918,8 +7991,8 @@ msgstr ""
 
 #: pkg/systemd/hwinfo.jsx:83 pkg/systemd/hwinfo.jsx:307
 #: pkg/shell/credentials.jsx:199 pkg/storaged/fsys-panel.jsx:178
-#: pkg/storaged/format-dialog.jsx:218 pkg/storaged/unrecognized-tab.jsx:36
-#: pkg/storaged/content-views.jsx:754 pkg/storaged/content-views.jsx:1019
+#: pkg/storaged/format-dialog.jsx:299 pkg/storaged/unrecognized-tab.jsx:36
+#: pkg/storaged/content-views.jsx:764 pkg/storaged/content-views.jsx:1029
 #: pkg/storaged/part-tab.jsx:50 pkg/packagekit/autoupdates.jsx:271
 msgid "Type"
 msgstr "Tipus"
@@ -7937,8 +8010,8 @@ msgstr "UDP"
 msgid "UUID"
 msgstr "UUID"
 
-#: pkg/storaged/mdraid-details.jsx:330 pkg/storaged/stratis-details.jsx:423
-#: pkg/storaged/stratis-details.jsx:770 pkg/storaged/vgroup-details.jsx:230
+#: pkg/storaged/mdraid-details.jsx:330 pkg/storaged/stratis-details.jsx:447
+#: pkg/storaged/stratis-details.jsx:814 pkg/storaged/vgroup-details.jsx:230
 #, fuzzy
 msgctxt "storage"
 msgid "UUID"
@@ -8085,19 +8158,19 @@ msgstr ""
 msgid "Unknown type"
 msgstr ""
 
-#: pkg/shell/credentials.jsx:312 pkg/storaged/stratis-details.jsx:705
-#: pkg/storaged/stratis-details.jsx:764 pkg/storaged/content-views.jsx:267
-#: pkg/storaged/content-views.jsx:272 pkg/storaged/content-views.jsx:291
+#: pkg/shell/credentials.jsx:312 pkg/storaged/stratis-details.jsx:749
+#: pkg/storaged/stratis-details.jsx:808 pkg/storaged/content-views.jsx:277
+#: pkg/storaged/content-views.jsx:282 pkg/storaged/content-views.jsx:301
 msgid "Unlock"
 msgstr "Desbloqueja"
 
-#: pkg/storaged/fsys-tab.jsx:662
+#: pkg/storaged/fsys-tab.jsx:717
 #, fuzzy
 #| msgid "Unlock at boot"
 msgid "Unlock automatically on boot"
 msgstr "Desbloqueja a l'arrencada"
 
-#: pkg/storaged/stratis-details.jsx:694
+#: pkg/storaged/stratis-details.jsx:738
 #, fuzzy
 #| msgctxt "storage-id-desc"
 #| msgid "Encrypted data"
@@ -8110,7 +8183,7 @@ msgstr "Dades xifrades"
 msgid "Unlock key $0"
 msgstr "Clau de desbloqueig"
 
-#: pkg/storaged/stratis-details.jsx:784
+#: pkg/storaged/stratis-details.jsx:828
 #, fuzzy
 #| msgid "Block device for filesystems"
 msgid "Unlock pool to see filesystems."
@@ -8131,18 +8204,18 @@ msgstr "S'està desbloquejant $target"
 msgid "Unmanaged interfaces"
 msgstr "Interfícies sense gestionar"
 
-#: pkg/storaged/fsys-tab.jsx:372 pkg/storaged/stratis-details.jsx:598
-#: pkg/storaged/content-views.jsx:414 pkg/storaged/nfs-details.jsx:294
+#: pkg/storaged/fsys-tab.jsx:401 pkg/storaged/stratis-details.jsx:642
+#: pkg/storaged/content-views.jsx:424 pkg/storaged/nfs-details.jsx:294
 msgid "Unmount"
 msgstr "Desmunta"
 
-#: pkg/storaged/fsys-tab.jsx:366
+#: pkg/storaged/fsys-tab.jsx:395
 #, fuzzy
 #| msgid "Unable to unmount filesystem"
 msgid "Unmount filesystem $0"
 msgstr "No es pot desmuntar el sistema de fitxers"
 
-#: pkg/storaged/fsys-tab.jsx:654 pkg/storaged/fsys-tab.jsx:658
+#: pkg/storaged/fsys-tab.jsx:709 pkg/storaged/fsys-tab.jsx:713
 msgid "Unmount now"
 msgstr ""
 
@@ -8159,11 +8232,11 @@ msgstr "Sense nom"
 msgid "Unpin unit"
 msgstr "Serveis del sistema"
 
-#: pkg/storaged/content-views.jsx:231
+#: pkg/storaged/content-views.jsx:241
 msgid "Unrecognized data"
 msgstr "Dades no reconegudes"
 
-#: pkg/storaged/content-views.jsx:500
+#: pkg/storaged/content-views.jsx:510
 msgctxt "storage-id-desc"
 msgid "Unrecognized data"
 msgstr "Dades no reconegudes"
@@ -8172,7 +8245,7 @@ msgstr "Dades no reconegudes"
 msgid "Unrecognized data can not be made smaller here."
 msgstr ""
 
-#: pkg/storaged/content-views.jsx:807
+#: pkg/storaged/content-views.jsx:817
 msgid "Unsupported volume"
 msgstr "Volum no admès"
 
@@ -8252,7 +8325,7 @@ msgstr ""
 msgid "Usage"
 msgstr "Ús"
 
-#: pkg/storaged/stratis-details.jsx:428
+#: pkg/storaged/stratis-details.jsx:452
 #, fuzzy
 #| msgid "Usage"
 msgctxt "storage"
@@ -8266,8 +8339,8 @@ msgstr "Ús"
 msgid "Usage of $0"
 msgstr "Ús de $0 nucli de CPU"
 
-#: pkg/networkmanager/dialogs-common.jsx:99 pkg/storaged/dialog.jsx:567
-#: pkg/storaged/dialog.jsx:1050
+#: pkg/networkmanager/dialogs-common.jsx:99 pkg/storaged/dialog.jsx:581
+#: pkg/storaged/dialog.jsx:1064
 #, fuzzy
 #| msgid "Used"
 msgid "Use"
@@ -8311,14 +8384,19 @@ msgstr "Últim inici de sessió"
 msgid "Used"
 msgstr "Utilitzat"
 
-#: pkg/storaged/stratis-details.jsx:653 pkg/storaged/stratis-details.jsx:786
-#: pkg/storaged/content-views.jsx:754 pkg/storaged/content-views.jsx:1019
+#: pkg/storaged/stratis-details.jsx:697 pkg/storaged/stratis-details.jsx:830
+#: pkg/storaged/content-views.jsx:764 pkg/storaged/content-views.jsx:1029
 #, fuzzy
 #| msgid "Used"
 msgid "Used for"
 msgstr "Utilitzat"
 
-#: pkg/systemd/services/services.jsx:886 pkg/storaged/dialog.jsx:1199
+#: pkg/storaged/format-dialog.jsx:144
+msgid ""
+"Useful for mounts that are optional or need interaction (such as passphrases)"
+msgstr ""
+
+#: pkg/systemd/services/services.jsx:911 pkg/storaged/dialog.jsx:1213
 msgid "User"
 msgstr "Usuari"
 
@@ -8344,7 +8422,7 @@ msgstr ""
 msgid "Using Tang server"
 msgstr ""
 
-#: pkg/storaged/content-views.jsx:494
+#: pkg/storaged/content-views.jsx:504
 msgctxt "storage-id-desc"
 msgid "VDO backing"
 msgstr ""
@@ -8361,11 +8439,11 @@ msgstr "Dispositiu VDO"
 msgid "VDO device $0"
 msgstr "Dispositiu VDO $0"
 
-#: pkg/storaged/content-views.jsx:881
+#: pkg/storaged/content-views.jsx:891
 msgid "VDO filesystem volume (compression/deduplication)"
 msgstr ""
 
-#: pkg/storaged/content-views.jsx:212
+#: pkg/storaged/content-views.jsx:222
 #, fuzzy
 #| msgid "Pool"
 msgid "VDO pool"
@@ -8491,7 +8569,7 @@ msgstr "Contrasenya de l'administrador"
 msgid "Visit firewall"
 msgstr "Tallafoc"
 
-#: pkg/storaged/content-views.jsx:209
+#: pkg/storaged/content-views.jsx:219
 msgid "Volume"
 msgstr "Volum"
 
@@ -8746,6 +8824,12 @@ msgstr ""
 msgid "addon"
 msgstr ""
 
+#: pkg/storaged/fsys-tab.jsx:563
+#, fuzzy
+#| msgid "network"
+msgid "after network"
+msgstr "xarxa"
+
 #: pkg/apps/manifest.json:0
 msgid "apps"
 msgstr ""
@@ -8771,7 +8855,7 @@ msgstr ""
 msgid "average: $0%"
 msgstr ""
 
-#: pkg/storaged/dialog.jsx:1026
+#: pkg/storaged/dialog.jsx:1040
 #, fuzzy
 #| msgid "Create VDO device"
 msgid "backing device for VDO device"
@@ -8848,10 +8932,10 @@ msgstr ""
 msgid "debug"
 msgstr ""
 
-#: pkg/storaged/format-dialog.jsx:172 pkg/storaged/vdo-details.jsx:159
+#: pkg/storaged/format-dialog.jsx:233 pkg/storaged/vdo-details.jsx:159
 #: pkg/storaged/mdraid-details.jsx:279 pkg/storaged/stratis-details.jsx:236
-#: pkg/storaged/stratis-details.jsx:537 pkg/storaged/vgroup-details.jsx:182
-#: pkg/storaged/content-views.jsx:367 pkg/storaged/content-views.jsx:675
+#: pkg/storaged/stratis-details.jsx:581 pkg/storaged/vgroup-details.jsx:182
+#: pkg/storaged/content-views.jsx:377 pkg/storaged/content-views.jsx:685
 #, fuzzy
 #| msgid "Delete"
 msgid "delete"
@@ -8891,7 +8975,7 @@ msgstr ""
 #: pkg/networkmanager/network-interface.jsx:361
 #: pkg/systemd/overview-cards/configurationCard.jsx:54
 #: pkg/storaged/crypto-tab.jsx:246 pkg/storaged/crypto-tab.jsx:255
-#: pkg/storaged/fsys-tab.jsx:692 pkg/storaged/fsys-tab.jsx:707
+#: pkg/storaged/fsys-tab.jsx:747 pkg/storaged/fsys-tab.jsx:762
 #: pkg/storaged/lvol-tabs.jsx:418 pkg/storaged/lvol-tabs.jsx:479
 #: pkg/users/account-details.js:307 pkg/users/account-details.js:339
 msgid "edit"
@@ -8990,7 +9074,7 @@ msgstr ""
 msgid "for current kernel only"
 msgstr "Munta només de lectura"
 
-#: pkg/storaged/format-dialog.jsx:172 pkg/storaged/manifest.json:0
+#: pkg/storaged/format-dialog.jsx:233 pkg/storaged/manifest.json:0
 msgid "format"
 msgstr ""
 
@@ -9035,6 +9119,12 @@ msgstr "amfitrió"
 msgid "iSCSI targets"
 msgstr "Destinacions iSCSI"
 
+#: pkg/storaged/fsys-tab.jsx:565
+#, fuzzy
+#| msgid "On failure"
+msgid "ignore failure"
+msgstr "Amb la fallada"
+
 #: pkg/shell/shell-modals.jsx:175
 msgid "in most browsers"
 msgstr ""
@@ -9045,7 +9135,7 @@ msgstr ""
 msgid "inconsistent"
 msgstr "Contingut"
 
-#: pkg/storaged/content-views.jsx:675
+#: pkg/storaged/content-views.jsx:685
 #, fuzzy
 #| msgid "Initializing..."
 msgid "initialize"
@@ -9127,13 +9217,13 @@ msgstr ""
 msgid "max: $0%"
 msgstr ""
 
-#: pkg/storaged/dialog.jsx:1025
+#: pkg/storaged/dialog.jsx:1039
 #, fuzzy
 #| msgid "Member of RAID device"
 msgid "member of RAID device"
 msgstr "Membre del dispositiu RAID"
 
-#: pkg/storaged/dialog.jsx:1027
+#: pkg/storaged/dialog.jsx:1041
 #, fuzzy
 #| msgid "Reset Storage Pool"
 msgid "member of Stratis pool"
@@ -9175,10 +9265,10 @@ msgstr ""
 msgid "network"
 msgstr "xarxa"
 
-#: pkg/storaged/fsys-tab.jsx:515
+#: pkg/storaged/fsys-tab.jsx:561
 #, fuzzy
 #| msgid "Mount at boot"
-msgid "never mounted at boot"
+msgid "never mount at boot"
 msgstr "Munta a l'arrencada"
 
 #: pkg/storaged/manifest.json:0
@@ -9277,7 +9367,7 @@ msgstr ""
 msgid "performance"
 msgstr "Permanent"
 
-#: pkg/storaged/dialog.jsx:1024
+#: pkg/storaged/dialog.jsx:1038
 #, fuzzy
 #| msgid "Create volume group"
 msgid "physical volume of LVM2 volume group"
@@ -9321,7 +9411,7 @@ msgstr ""
 msgid "ram"
 msgstr ""
 
-#: pkg/storaged/fsys-tab.jsx:513
+#: pkg/storaged/fsys-tab.jsx:559
 msgid "read only"
 msgstr ""
 
@@ -9431,6 +9521,12 @@ msgstr ""
 msgid "stop"
 msgstr ""
 
+#: pkg/storaged/fsys-tab.jsx:567
+#, fuzzy
+#| msgid "On failure"
+msgid "stop boot on failure"
+msgstr "Amb la fallada"
+
 #: pkg/metrics/metrics.jsx:109
 #, fuzzy
 #| msgid "yes"
@@ -9481,7 +9577,7 @@ msgstr "udp"
 msgid "unit"
 msgstr ""
 
-#: pkg/systemd/services/services.jsx:531 pkg/systemd/services/services.jsx:542
+#: pkg/systemd/services/services.jsx:557 pkg/systemd/services/services.jsx:567
 #: pkg/systemd/hw-detect.js:129
 msgid "unknown"
 msgstr "desconegut"
@@ -9545,6 +9641,11 @@ msgstr ""
 #: pkg/networkmanager/manifest.json:0
 msgid "zone"
 msgstr ""
+
+#, fuzzy
+#~| msgid "Mount at boot"
+#~ msgid "Never mount at boot"
+#~ msgstr "Munta a l'arrencada"
 
 #, fuzzy
 #~| msgid "Not found"
