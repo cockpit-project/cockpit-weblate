@@ -28,7 +28,7 @@ msgstr ""
 "#-#-#-#-#  cockpit.js.pot (PACKAGE VERSION)  #-#-#-#-#\n"
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-17 02:50+0000\n"
+"POT-Creation-Date: 2023-03-18 02:50+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -46,7 +46,7 @@ msgstr ""
 "#-#-#-#-#  cockpit.appstream.pot (PACKAGE VERSION)  #-#-#-#-#\n"
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-17 02:50+0000\n"
+"POT-Creation-Date: 2023-03-18 02:50+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -57,7 +57,7 @@ msgstr ""
 "#-#-#-#-#  cockpit.polkit.pot (PACKAGE VERSION)  #-#-#-#-#\n"
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-17 02:50+0000\n"
+"POT-Creation-Date: 2023-03-18 02:50+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1360,7 +1360,7 @@ msgstr ""
 
 #: pkg/static/login.html:148 pkg/playground/translate.html:39
 #: pkg/lib/cockpit-components-shutdown.jsx:192
-#: pkg/lib/cockpit-components-dialog.jsx:131
+#: pkg/lib/cockpit-components-dialog.jsx:131 pkg/kdump/kdump-view.jsx:155
 #: pkg/networkmanager/firewall.jsx:606 pkg/networkmanager/firewall.jsx:810
 #: pkg/networkmanager/firewall.jsx:905
 #: pkg/networkmanager/dialogs-common.jsx:159 pkg/systemd/hwinfo.jsx:239
@@ -1679,11 +1679,11 @@ msgstr ""
 msgid "Compatible with modern system and hard disks > 2TB (GPT)"
 msgstr ""
 
-#: pkg/kdump/kdump-view.jsx:175
+#: pkg/kdump/kdump-view.jsx:240
 msgid "Compress crash dumps to save space"
 msgstr ""
 
-#: pkg/kdump/kdump-view.jsx:170 pkg/storaged/vdo-details.jsx:321
+#: pkg/kdump/kdump-view.jsx:235 pkg/storaged/vdo-details.jsx:321
 #: pkg/storaged/content-views.jsx:970 pkg/storaged/lvol-tabs.jsx:558
 msgid "Compression"
 msgstr ""
@@ -1864,7 +1864,7 @@ msgstr ""
 msgid "Could not contact $0"
 msgstr ""
 
-#: pkg/kdump/kdump-view.jsx:309 pkg/kdump/kdump-view.jsx:513
+#: pkg/kdump/kdump-view.jsx:141 pkg/kdump/kdump-view.jsx:489
 msgid "Crash dump location"
 msgstr ""
 
@@ -1872,7 +1872,7 @@ msgstr ""
 msgid "Crash reporting"
 msgstr ""
 
-#: pkg/kdump/kdump-view.jsx:276
+#: pkg/kdump/kdump-view.jsx:285
 msgid "Crash system"
 msgstr ""
 
@@ -2304,8 +2304,8 @@ msgstr ""
 msgid "Diagnostic reports"
 msgstr ""
 
-#: pkg/kdump/kdump-view.jsx:83 pkg/kdump/kdump-view.jsx:108
-#: pkg/kdump/kdump-view.jsx:136
+#: pkg/kdump/kdump-view.jsx:175 pkg/kdump/kdump-view.jsx:196
+#: pkg/kdump/kdump-view.jsx:224
 msgid "Directory"
 msgstr ""
 
@@ -2325,7 +2325,7 @@ msgstr ""
 msgid "Disable tuned"
 msgstr ""
 
-#: pkg/networkmanager/firewall-switch.jsx:80
+#: pkg/kdump/kdump-view.jsx:463 pkg/networkmanager/firewall-switch.jsx:80
 #: pkg/networkmanager/ip-settings.jsx:44 pkg/networkmanager/ip-settings.jsx:55
 #: pkg/systemd/services.jsx:251 pkg/systemd/services.jsx:691
 #: pkg/systemd/service-details.jsx:443 pkg/packagekit/autoupdates.jsx:336
@@ -2568,9 +2568,9 @@ msgstr ""
 msgid "Enable the firewall"
 msgstr ""
 
-#: pkg/networkmanager/firewall-switch.jsx:80 pkg/systemd/services.jsx:249
-#: pkg/systemd/services.jsx:250 pkg/systemd/services.jsx:690
-#: pkg/packagekit/kpatch.jsx:253
+#: pkg/kdump/kdump-view.jsx:463 pkg/networkmanager/firewall-switch.jsx:80
+#: pkg/systemd/services.jsx:249 pkg/systemd/services.jsx:250
+#: pkg/systemd/services.jsx:690 pkg/packagekit/kpatch.jsx:253
 msgid "Enabled"
 msgstr ""
 
@@ -2731,7 +2731,7 @@ msgstr ""
 msgid "Expire account on $0"
 msgstr ""
 
-#: pkg/kdump/kdump-view.jsx:103
+#: pkg/kdump/kdump-view.jsx:191
 msgid "Export"
 msgstr ""
 
@@ -3037,7 +3037,7 @@ msgstr ""
 msgid "Group name"
 msgstr ""
 
-#: pkg/users/account-details.js:457 pkg/users/accounts-list.js:322
+#: pkg/users/account-details.js:463 pkg/users/accounts-list.js:322
 #: pkg/users/accounts-list.js:326
 msgid "Groups"
 msgstr ""
@@ -3103,6 +3103,10 @@ msgstr ""
 
 #: pkg/packagekit/history.jsx:107
 msgid "History package count"
+msgstr ""
+
+#: pkg/users/account-details.js:345
+msgid "Home directory"
 msgstr ""
 
 #: pkg/shell/hosts_dialog.jsx:249 pkg/shell/hosts.jsx:190
@@ -3477,7 +3481,7 @@ msgstr ""
 msgid "Jump to"
 msgstr ""
 
-#: pkg/kdump/kdump-view.jsx:440
+#: pkg/kdump/kdump-view.jsx:413
 msgid ""
 "Kdump service not installed. Please ensure package kexec-tools is installed."
 msgstr ""
@@ -3486,7 +3490,7 @@ msgstr ""
 msgid "Keep connection"
 msgstr ""
 
-#: pkg/kdump/kdump-view.jsx:486
+#: pkg/kdump/kdump-view.jsx:459
 msgid "Kernel crash dump"
 msgstr ""
 
@@ -3727,7 +3731,7 @@ msgstr ""
 msgid "Loading unit failed"
 msgstr ""
 
-#: pkg/kdump/kdump-view.jsx:341 pkg/systemd/services.jsx:687
+#: pkg/kdump/kdump-view.jsx:314 pkg/systemd/services.jsx:687
 #: pkg/systemd/logDetails.jsx:176 pkg/systemd/logsJournal.jsx:268
 #: pkg/systemd/service.jsx:133 pkg/storaged/storaged.jsx:68
 #: pkg/users/account-details.js:188 pkg/users/accounts-list.js:327
@@ -3740,7 +3744,7 @@ msgstr ""
 msgid "Local accounts"
 msgstr ""
 
-#: pkg/kdump/kdump-view.jsx:147
+#: pkg/kdump/kdump-view.jsx:166
 msgid "Local filesystem"
 msgstr ""
 
@@ -3748,7 +3752,7 @@ msgstr ""
 msgid "Local mount point"
 msgstr ""
 
-#: pkg/kdump/kdump-view.jsx:155 pkg/storaged/dialog.jsx:1063
+#: pkg/kdump/kdump-view.jsx:162 pkg/storaged/dialog.jsx:1063
 #: pkg/storaged/dialog.jsx:1141
 msgid "Location"
 msgstr ""
@@ -4435,7 +4439,7 @@ msgstr ""
 msgid "No carrier"
 msgstr ""
 
-#: pkg/kdump/kdump-view.jsx:376
+#: pkg/kdump/kdump-view.jsx:349
 msgid "No configuration found"
 msgstr ""
 
@@ -4538,7 +4542,7 @@ msgstr ""
 msgid "No media inserted"
 msgstr ""
 
-#: pkg/kdump/kdump-view.jsx:425
+#: pkg/kdump/kdump-view.jsx:398
 msgid ""
 "No memory reserved. Append a crashkernel option to the kernel command line "
 "(e.g. in /etc/default/grub) to reserve memory at boot time. Example: "
@@ -4587,7 +4591,7 @@ msgstr ""
 msgid "No user name specified"
 msgstr ""
 
-#: pkg/kdump/kdump-view.jsx:396 pkg/networkmanager/firewall.jsx:850
+#: pkg/kdump/kdump-view.jsx:369 pkg/networkmanager/firewall.jsx:850
 #: pkg/systemd/overview-cards/tuned-dialog.jsx:232
 msgid "None"
 msgstr ""
@@ -4714,7 +4718,7 @@ msgstr ""
 msgid "Old password not accepted"
 msgstr ""
 
-#: pkg/kdump/kdump-view.jsx:368
+#: pkg/kdump/kdump-view.jsx:341
 msgid "On a mounted device"
 msgstr ""
 
@@ -5343,7 +5347,7 @@ msgstr ""
 msgid "Rank"
 msgstr ""
 
-#: pkg/kdump/kdump-view.jsx:364
+#: pkg/kdump/kdump-view.jsx:337
 msgid "Raw to a device"
 msgstr ""
 
@@ -5363,7 +5367,7 @@ msgstr ""
 msgid "Reading"
 msgstr ""
 
-#: pkg/kdump/kdump-view.jsx:390
+#: pkg/kdump/kdump-view.jsx:363
 msgid "Reading..."
 msgstr ""
 
@@ -5493,23 +5497,23 @@ msgstr ""
 msgid "Reloading the state of remaining services"
 msgstr ""
 
-#: pkg/kdump/kdump-view.jsx:374
+#: pkg/kdump/kdump-view.jsx:347
 msgid "Remote over CIFS/SMB"
 msgstr ""
 
-#: pkg/kdump/kdump-view.jsx:370
+#: pkg/kdump/kdump-view.jsx:343
 msgid "Remote over FTP"
 msgstr ""
 
-#: pkg/kdump/kdump-view.jsx:148 pkg/kdump/kdump-view.jsx:361
+#: pkg/kdump/kdump-view.jsx:170 pkg/kdump/kdump-view.jsx:334
 msgid "Remote over NFS"
 msgstr ""
 
-#: pkg/kdump/kdump-view.jsx:372
+#: pkg/kdump/kdump-view.jsx:345
 msgid "Remote over SFTP"
 msgstr ""
 
-#: pkg/kdump/kdump-view.jsx:149 pkg/kdump/kdump-view.jsx:358
+#: pkg/kdump/kdump-view.jsx:168 pkg/kdump/kdump-view.jsx:331
 msgid "Remote over SSH"
 msgstr ""
 
@@ -5742,7 +5746,7 @@ msgstr ""
 msgid "Requisite of"
 msgstr ""
 
-#: pkg/kdump/kdump-view.jsx:506
+#: pkg/kdump/kdump-view.jsx:482
 msgid "Reserved memory"
 msgstr ""
 
@@ -5888,8 +5892,12 @@ msgid ""
 "SOS reporting collects system information to help with diagnosing problems."
 msgstr ""
 
-#: pkg/shell/hosts_dialog.jsx:830
+#: pkg/kdump/kdump-view.jsx:214 pkg/shell/hosts_dialog.jsx:830
 msgid "SSH key"
+msgstr ""
+
+#: pkg/kdump/kdump-view.jsx:84
+msgid "SSH key isn't a path"
 msgstr ""
 
 #: pkg/shell/topnav.jsx:211 pkg/shell/credentials.jsx:79
@@ -5922,12 +5930,12 @@ msgstr ""
 msgid "Saturdays"
 msgstr ""
 
-#: pkg/kdump/kdump-view.jsx:326 pkg/networkmanager/dialogs-common.jsx:156
-#: pkg/systemd/timer-dialog.jsx:147 pkg/storaged/crypto-tab.jsx:156
-#: pkg/storaged/crypto-tab.jsx:200 pkg/storaged/fsys-tab.jsx:402
-#: pkg/storaged/fsys-tab.jsx:534 pkg/storaged/crypto-keyslots.jsx:542
-#: pkg/storaged/crypto-keyslots.jsx:561 pkg/storaged/nfs-details.jsx:181
-#: pkg/packagekit/kpatch.jsx:307 pkg/metrics/metrics.jsx:1315
+#: pkg/networkmanager/dialogs-common.jsx:156 pkg/systemd/timer-dialog.jsx:147
+#: pkg/storaged/crypto-tab.jsx:156 pkg/storaged/crypto-tab.jsx:200
+#: pkg/storaged/fsys-tab.jsx:402 pkg/storaged/fsys-tab.jsx:534
+#: pkg/storaged/crypto-keyslots.jsx:542 pkg/storaged/crypto-keyslots.jsx:561
+#: pkg/storaged/nfs-details.jsx:181 pkg/packagekit/kpatch.jsx:307
+#: pkg/metrics/metrics.jsx:1315
 msgid "Save"
 msgstr ""
 
@@ -5935,7 +5943,7 @@ msgstr ""
 msgid "Save and reboot"
 msgstr ""
 
-#: pkg/systemd/overview-cards/motdCard.jsx:61
+#: pkg/kdump/kdump-view.jsx:149 pkg/systemd/overview-cards/motdCard.jsx:61
 #: pkg/packagekit/autoupdates.jsx:261
 msgid "Save changes"
 msgstr ""
@@ -6038,8 +6046,8 @@ msgctxt "storage"
 msgid "Serial number"
 msgstr ""
 
-#: pkg/static/login.html:166 pkg/kdump/kdump-view.jsx:98
-#: pkg/kdump/kdump-view.jsx:124 pkg/networkmanager/ip-settings.jsx:245
+#: pkg/static/login.html:166 pkg/kdump/kdump-view.jsx:186
+#: pkg/kdump/kdump-view.jsx:208 pkg/networkmanager/ip-settings.jsx:245
 #: pkg/storaged/nfs-panel.jsx:102 pkg/storaged/nfs-details.jsx:312
 msgid "Server"
 msgstr ""
@@ -6069,23 +6077,23 @@ msgstr ""
 msgid "Service"
 msgstr ""
 
-#: pkg/kdump/kdump-view.jsx:419
+#: pkg/kdump/kdump-view.jsx:392
 msgid "Service has an error"
 msgstr ""
 
-#: pkg/kdump/kdump-view.jsx:415
+#: pkg/kdump/kdump-view.jsx:388
 msgid "Service is running"
 msgstr ""
 
-#: pkg/kdump/kdump-view.jsx:421
+#: pkg/kdump/kdump-view.jsx:394
 msgid "Service is starting"
 msgstr ""
 
-#: pkg/kdump/kdump-view.jsx:417
+#: pkg/kdump/kdump-view.jsx:390
 msgid "Service is stopped"
 msgstr ""
 
-#: pkg/kdump/kdump-view.jsx:423
+#: pkg/kdump/kdump-view.jsx:396
 msgid "Service is stopping"
 msgstr ""
 
@@ -6163,6 +6171,10 @@ msgstr ""
 
 #: pkg/networkmanager/ip-settings.jsx:43 pkg/networkmanager/ip-settings.jsx:54
 msgid "Shared"
+msgstr ""
+
+#: pkg/users/account-details.js:348
+msgid "Shell"
 msgstr ""
 
 #: pkg/lib/cockpit-components-modifications.jsx:91
@@ -6423,7 +6435,7 @@ msgstr ""
 msgid "Static"
 msgstr ""
 
-#: pkg/kdump/kdump-view.jsx:496 pkg/networkmanager/network-interface.jsx:266
+#: pkg/kdump/kdump-view.jsx:472 pkg/networkmanager/network-interface.jsx:266
 #: pkg/systemd/service-details.jsx:654 pkg/packagekit/updates.jsx:905
 msgid "Status"
 msgstr ""
@@ -6682,15 +6694,15 @@ msgstr ""
 msgid "Terminate session"
 msgstr ""
 
-#: pkg/kdump/kdump-view.jsx:456 pkg/kdump/kdump-view.jsx:464
+#: pkg/kdump/kdump-view.jsx:429 pkg/kdump/kdump-view.jsx:437
 msgid "Test configuration"
 msgstr ""
 
-#: pkg/kdump/kdump-view.jsx:460
+#: pkg/kdump/kdump-view.jsx:433
 msgid "Test is only available while the kdump service is running."
 msgstr ""
 
-#: pkg/kdump/kdump-view.jsx:266
+#: pkg/kdump/kdump-view.jsx:275
 msgid "Test kdump settings"
 msgstr ""
 
@@ -6961,7 +6973,7 @@ msgstr ""
 msgid "The user $0 is not permitted to change crypto policies"
 msgstr ""
 
-#: pkg/users/account-details.js:450
+#: pkg/users/account-details.js:456
 msgid ""
 "The user must log out and log back in for the new configuration to take "
 "effect."
@@ -7123,14 +7135,14 @@ msgstr ""
 msgid "This will allow you to log in without password in the future."
 msgstr ""
 
-#: pkg/kdump/kdump-view.jsx:268
+#: pkg/kdump/kdump-view.jsx:277
 msgid ""
 "This will test kdump settings by crashing the kernel and thereby the system. "
 "Depending on the settings, the system may not automatically reboot and the "
 "process may take a while."
 msgstr ""
 
-#: pkg/kdump/kdump-view.jsx:469
+#: pkg/kdump/kdump-view.jsx:442
 msgid "This will test the kdump configuration by crashing the kernel."
 msgstr ""
 
@@ -7391,11 +7403,11 @@ msgstr ""
 msgid "Unable to run fix: $0"
 msgstr ""
 
-#: pkg/kdump/kdump-view.jsx:246
+#: pkg/kdump/kdump-view.jsx:129
 msgid "Unable to save settings"
 msgstr ""
 
-#: pkg/kdump/kdump-view.jsx:250
+#: pkg/kdump/kdump-view.jsx:134
 msgid "Unable to save settings: $0"
 msgstr ""
 
@@ -7415,7 +7427,7 @@ msgstr ""
 msgid "Unavailable packages"
 msgstr ""
 
-#: pkg/users/account-details.js:451
+#: pkg/users/account-details.js:457
 msgid "Undo"
 msgstr ""
 
@@ -8157,7 +8169,7 @@ msgstr ""
 msgid "crash"
 msgstr ""
 
-#: pkg/kdump/kdump-view.jsx:477
+#: pkg/kdump/kdump-view.jsx:450
 msgid "crashkernel not configured in the kernel command line"
 msgstr ""
 
@@ -8356,7 +8368,7 @@ msgstr ""
 msgid "interface"
 msgstr ""
 
-#: pkg/kdump/kdump-view.jsx:349
+#: pkg/kdump/kdump-view.jsx:322
 msgid "invalid: multiple targets defined"
 msgstr ""
 
@@ -8384,7 +8396,7 @@ msgstr ""
 msgid "kdump"
 msgstr ""
 
-#: pkg/kdump/kdump-view.jsx:473
+#: pkg/kdump/kdump-view.jsx:446
 msgid "kdump status"
 msgstr ""
 
@@ -8392,7 +8404,7 @@ msgstr ""
 msgid "keys"
 msgstr ""
 
-#: pkg/kdump/kdump-view.jsx:353 pkg/kdump/kdump-view.jsx:355
+#: pkg/kdump/kdump-view.jsx:326 pkg/kdump/kdump-view.jsx:328
 msgid "locally in $0"
 msgstr ""
 
@@ -8448,7 +8460,7 @@ msgstr ""
 msgid "mkfs"
 msgstr ""
 
-#: pkg/kdump/kdump-view.jsx:436
+#: pkg/kdump/kdump-view.jsx:409
 msgid "more details"
 msgstr ""
 
@@ -8684,10 +8696,6 @@ msgstr ""
 
 #: pkg/systemd/manifest.json:0 pkg/users/manifest.json:0
 msgid "ssh"
-msgstr ""
-
-#: pkg/kdump/kdump-view.jsx:130
-msgid "ssh key"
 msgstr ""
 
 #: pkg/kdump/kdump-client.js:135
