@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-23 02:48+0000\n"
-"PO-Revision-Date: 2023-03-18 12:20+0000\n"
-"Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
+"PO-Revision-Date: 2023-03-30 07:20+0000\n"
+"Last-Translator: Ville-Pekka Vainio <vpvainio@iki.fi>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/cockpit/"
 "main/fi/>\n"
 "Language: fi\n"
@@ -1926,10 +1926,8 @@ msgid "Create a snapshot of filesystem $0"
 msgstr "Luodaan tilannevedos tiedostojärjestelmästä $0"
 
 #: pkg/users/account-create-dialog.js:416
-#, fuzzy
-#| msgid "Create account with weak password"
 msgid "Create account with non-unique UID"
-msgstr "Luo tili heikolla salasanalla"
+msgstr "Luo tili käyttäjänumerolla (UID), joka ei ole ainutkertainen"
 
 #: pkg/users/account-create-dialog.js:391
 msgid "Create account with weak password"
@@ -3153,10 +3151,8 @@ msgid "History package count"
 msgstr "Historian pakettien määrä"
 
 #: pkg/users/account-details.js:339
-#, fuzzy
-#| msgid "Directory"
 msgid "Home directory"
-msgstr "Hakemisto"
+msgstr "Kotihakemisto"
 
 #: pkg/shell/hosts.jsx:190 pkg/shell/hosts_dialog.jsx:249
 msgid "Host"
@@ -4469,10 +4465,8 @@ msgid "New key password"
 msgstr "Uuden avaimen salasana"
 
 #: pkg/users/rename-group-dialog.jsx:35
-#, fuzzy
-#| msgid "Rename"
 msgid "New name"
-msgstr "Nimeä uudelleen"
+msgstr "Uusi nimi"
 
 #: pkg/storaged/crypto-keyslots.jsx:488 pkg/storaged/crypto-keyslots.jsx:536
 msgid "New passphrase"
@@ -4566,7 +4560,7 @@ msgstr "Ei salausta"
 
 #: pkg/metrics/metrics.jsx:1171
 msgid "No events"
-msgstr ""
+msgstr "Ei tapahtumia"
 
 #: pkg/storaged/format-dialog.jsx:202
 msgid "No filesystem"
@@ -5740,16 +5734,12 @@ msgid "Rename filesystem"
 msgstr "Nimeä uudelleen tiedostojärjestelmä"
 
 #: pkg/users/group-actions.jsx:39
-#, fuzzy
-#| msgid "Rename volume group"
 msgid "Rename group"
-msgstr "Nimeä uudelleen taltioryhmä"
+msgstr "Nimeä ryhmä uudelleen"
 
 #: pkg/users/rename-group-dialog.jsx:60
-#, fuzzy
-#| msgid "Volume group $0"
 msgid "Rename group $0"
-msgstr "Taltioryhmä $0"
+msgstr "Nimeä uudelleen ryhmä $0"
 
 #: pkg/storaged/lvol-tabs.jsx:41
 msgid "Rename logical volume"
@@ -5766,6 +5756,8 @@ msgstr "Nimetään uudelleen $target"
 #: pkg/users/rename-group-dialog.jsx:39
 msgid "Renaming a group may affect sudo and similar rules"
 msgstr ""
+"Ryhmän nimen vaihtaminen saattaa vaikuttaa sudoon ja muihin vastaaviin "
+"sääntöihin"
 
 #: pkg/storaged/jobs-panel.jsx:53
 msgid "Repairing $target"
@@ -6012,10 +6004,8 @@ msgid "SSH key"
 msgstr "SSH-avain"
 
 #: pkg/kdump/kdump-view.jsx:84
-#, fuzzy
-#| msgid "ssh key isn't a path"
 msgid "SSH key isn't a path"
-msgstr "ssh-avain ei ole polku"
+msgstr "SSH-avain ei ole polku"
 
 #: pkg/shell/topnav.jsx:211 pkg/shell/credentials.jsx:79
 #: pkg/shell/credentials.jsx:95
@@ -6130,7 +6120,7 @@ msgstr "Poistaa turvallisesti $target"
 
 #: src/appstream/org.cockpit-project.cockpit-selinux.metainfo.xml.in:6
 msgid "Security Enhanced Linux configuration and troubleshooting"
-msgstr ""
+msgstr "Security Enhanced Linuxin asetukset ja ongelmanratkaisu"
 
 #: pkg/packagekit/updates.jsx:1423
 msgid "Security updates available"
@@ -6300,10 +6290,8 @@ msgid "Shared"
 msgstr "Jaettu"
 
 #: pkg/users/account-details.js:342
-#, fuzzy
-#| msgid "shell"
 msgid "Shell"
-msgstr "komentotulkki"
+msgstr "Komentotulkki"
 
 #: pkg/lib/cockpit-components-modifications.jsx:91
 msgid "Shell script"
@@ -7941,32 +7929,24 @@ msgid "User"
 msgstr "Käyttäjä"
 
 #: pkg/users/account-create-dialog.js:65
-#, fuzzy
-#| msgid "User"
 msgid "User ID"
-msgstr "Käyttäjä"
+msgstr "Käyttäjänumero"
 
 #: pkg/users/account-create-dialog.js:153
-#, fuzzy
-#| msgid "This volume is already used by another VM."
 msgid "User ID is already used by another user"
-msgstr "Tätä taltiota käyttää jo toinen virtuaalikone."
+msgstr "Tätä käyttäjänumeroa käyttää jo toinen käyttäjä"
 
 #: pkg/users/account-create-dialog.js:143
-#, fuzzy
-#| msgid "The group ID must be positive integer"
 msgid "User ID must be a positive integer"
-msgstr "Ryhmän ID:n tulee olla positiivinen kokonaisluku"
+msgstr "Käyttäjän ID-numeron tulee olla positiivinen kokonaisluku"
 
 #: pkg/users/account-create-dialog.js:149
 msgid "User ID must not be higher than $0"
-msgstr ""
+msgstr "Käyttäjän ID-numero ei saa olla suurempi kuin $0"
 
 #: pkg/users/account-create-dialog.js:146
-#, fuzzy
-#| msgid "Name cannot be longer than $0 bytes"
 msgid "User ID must not be lower than $0"
-msgstr "Nimi voi olla enintään $0 tavua pitkä"
+msgstr "Käyttäjän ID-numero ei saa olla pienempi kuin $0"
 
 #: pkg/static/login.html:101 pkg/users/account-create-dialog.js:56
 #: pkg/users/account-details.js:275 pkg/shell/hosts_dialog.jsx:258
