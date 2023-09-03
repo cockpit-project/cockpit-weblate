@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-09-01 02:47+0000\n"
-"PO-Revision-Date: 2023-08-13 13:39+0000\n"
+"PO-Revision-Date: 2023-09-03 12:07+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
 "cockpit/main/uk/>\n"
@@ -1268,10 +1268,8 @@ msgid "Block"
 msgstr "Блок"
 
 #: pkg/storaged/others-panel.jsx:41
-#, fuzzy
-#| msgid "Block devices"
 msgid "Block device"
-msgstr "Блокові пристрої"
+msgstr "Блоковий пристрій"
 
 #: pkg/storaged/content-views.jsx:857
 msgid "Block device for filesystems"
@@ -2707,16 +2705,12 @@ msgid "Encrypt data"
 msgstr "Зашифрувати дані"
 
 #: pkg/storaged/stratis-panel.jsx:168
-#, fuzzy
-#| msgid "Edit Tang keyserver"
 msgid "Encrypt data with a Tang keyserver"
-msgstr "Редагувати сервер ключів Tang"
+msgstr "Зашифрувати дані за допомогою сервера ключів Tang"
 
 #: pkg/storaged/stratis-panel.jsx:139
-#, fuzzy
-#| msgid "Encryption passphrase"
 msgid "Encrypt data with a passphrase"
-msgstr "Пароль шифрування"
+msgstr "Зашифрувати дані за допомогою пароля шифрування"
 
 #: pkg/sosreport/sosreport.jsx:448
 msgid "Encrypted"
@@ -3207,10 +3201,8 @@ msgid "Grow logical volume"
 msgstr "Збільшити логічний том"
 
 #: pkg/storaged/stratis-details.jsx:654
-#, fuzzy
-#| msgid "Grow to take all space"
 msgid "Grow the pool to take all space"
-msgstr "Збільшити так, щоб використати усе місце"
+msgstr "Збільшити буфер так, щоб використати усе місце"
 
 #: pkg/storaged/vdo-details.jsx:115
 msgid "Grow to take all space"
@@ -4109,10 +4101,8 @@ msgid "Maintenance"
 msgstr "Супровід"
 
 #: pkg/storaged/stratis-panel.jsx:184
-#, fuzzy
-#| msgid "Rename filesystem"
 msgid "Manage filesystem sizes"
-msgstr "Перейменувати файлову систему"
+msgstr "Керування розмірами файлової системи"
 
 #: src/appstream/org.cockpit-project.cockpit-storaged.metainfo.xml.in:6
 msgid "Manage storage"
@@ -4834,16 +4824,12 @@ msgid "Not connected to host"
 msgstr "Не з'єднано із вузлом"
 
 #: pkg/storaged/stratis-details.jsx:312
-#, fuzzy
-#| msgid "Not enough space to grow."
 msgid "Not enough space"
-msgstr "Недостатньо місця для росту."
+msgstr "Недостатньо місця"
 
 #: pkg/storaged/stratis-details.jsx:893
-#, fuzzy
-#| msgid "Block device for filesystems"
 msgid "Not enough space for new filesystems"
-msgstr "Блоковий пристрій для файлових систем"
+msgstr "Недостатньо місця для нових файлових систем"
 
 #: pkg/storaged/lvol-tabs.jsx:419
 msgid "Not enough space to grow."
@@ -6058,12 +6044,16 @@ msgid ""
 "Results of the crash will be copied through $0 to $1 as $2, if kdump is "
 "properly configured."
 msgstr ""
+"Результати обробки даних аварії буде скопійовано за допомогою $0 до $1 як $"
+"2, якщо належним чином налаштовано kdump."
 
 #: pkg/kdump/kdump-view.jsx:275
 msgid ""
 "Results of the crash will be stored in $0 as $1, if kdump is properly "
 "configured."
 msgstr ""
+"Результати обробки даних аварії буде збережено до $0 як $1, якщо належним "
+"чином налаштовано kdump."
 
 #: pkg/systemd/logs.jsx:263
 msgid "Resume"
@@ -6640,6 +6630,8 @@ msgid ""
 "Some block devices of this pool have grown in size after the pool was "
 "created. The pool can be safely grown to use the newly available space."
 msgstr ""
+"Після створення буфера зріс розмір деяких блокових пристроїв у цьому буфері. "
+"Розмір буфера можна безпечно збільшити з метою використання доданого місця."
 
 #: pkg/packagekit/updates.jsx:97
 msgid ""
@@ -6831,10 +6823,8 @@ msgid "Stored passphrase"
 msgstr "Збережений пароль"
 
 #: pkg/storaged/lvol-tabs.jsx:123 pkg/storaged/lvol-tabs.jsx:207
-#, fuzzy
-#| msgid "VDO backing devices can not be made smaller"
 msgid "Stratis blockdevs can not be made smaller"
-msgstr "Пристрої резервного копіювання VDO не можна звужувати"
+msgstr "Блокові пристрої Stratis не можна звужувати"
 
 #: pkg/storaged/content-views.jsx:458 pkg/storaged/content-views.jsx:485
 #: pkg/storaged/content-views.jsx:492
@@ -7039,19 +7029,15 @@ msgid "Test kdump settings"
 msgstr "Перевірити параметри kdump"
 
 #: pkg/kdump/kdump-view.jsx:293
-#, fuzzy
-#| msgid ""
-#| "This will test kdump settings by crashing the kernel and thereby the "
-#| "system. Depending on the settings, the system may not automatically "
-#| "reboot and the process may take a while."
 msgid ""
 "Test kdump settings by crashing the kernel. This may take a while and the "
 "system might not automatically reboot. Do not purposefully crash the system "
 "while any important task is running."
 msgstr ""
-"Виконати тестування параметрів kdump, аварійно завершивши роботу ядра, а "
-"отже і системи. Залежно від параметрів, система може автоматично "
-"перезавантажитися, що потребуватиме певного часу."
+"Виконати тестування параметрів kdump, аварійно завершивши роботу ядра. "
+"Процедура може бути досить тривалою, а система може не перезавантажитися "
+"автоматично. Не виконуйте навмисного аварійного завершення роботи системи, "
+"якщо система виконує хоч якесь важливе завдання."
 
 #: pkg/networkmanager/networkmanager.jsx:65
 msgid "Testing connection"
@@ -7426,6 +7412,8 @@ msgid ""
 "There is not enough space in the pool to make a snapshot of this filesystem. "
 "At least $0 are required but only $1 are available."
 msgstr ""
+"У буфері даних недостатньо вільного місця для створення знімка цієї файлової "
+"системи. Потрібно принаймні $0, а доступними є лише $1."
 
 #: pkg/shell/failures.jsx:42
 msgid "There was an unexpected error while connecting to the machine."
@@ -7520,16 +7508,14 @@ msgstr ""
 "Цей пароль є єдиним способом розблокування буфера, його не можна вилучати."
 
 #: pkg/storaged/stratis-details.jsx:651
-#, fuzzy
-#| msgid "This VDO device does not use all of its backing device."
 msgid "This pool does not use all the space on its block devices."
-msgstr "Цей пристрій VDO не використовує увесь об'єм резервного пристрою."
+msgstr ""
+"Цей буфер даних не використовує усе доступне місце на його блокових "
+"пристроях."
 
 #: pkg/storaged/stratis-details.jsx:664
-#, fuzzy
-#| msgid "The RAID array is in a degraded state"
 msgid "This pool is in a degraded state."
-msgstr "Масив RAID перебуває у стані із погіршеними властивостями"
+msgstr "Цей буфер перебуває у стані із погіршеними властивостями."
 
 #: pkg/packagekit/updates.jsx:1363
 msgid "This system is not registered"
@@ -8344,10 +8330,8 @@ msgid "View login history"
 msgstr "Переглянути журнал входів"
 
 #: pkg/storaged/stratis-details.jsx:666
-#, fuzzy
-#| msgid "View all logs"
 msgid "View logs"
-msgstr "Переглянути усі журнали"
+msgstr "Переглянути журнали"
 
 #: pkg/systemd/overview-cards/usageCard.jsx:160
 msgid "View metrics and history"
@@ -8492,6 +8476,14 @@ msgid ""
 "to know the maximum size for each filesystem in advance and creation of "
 "snapshots is limited."
 msgstr ""
+"Якщо позначено цей пункт, новий буфер не дозволятиме надмірного "
+"резервування. Вам потрібно буде вказати максимальний розмір для кожної "
+"файлової системи, яку буде створено у буфері. Після створення не можна буде "
+"збільшувати розмір файлових систем. Сума усіх максимальних розмірів не може "
+"перевищувати розмір буфера. Перевагою цього варіанта є те, що файлові "
+"системи у буфері не зможуть збільшувати свої розміри у непередбачений "
+"спосіб. Недоліком є те, що вам наперед потрібно знати максимальний розмір "
+"кожної файлової системи, а можливості створення знімків буде обмежено."
 
 #: pkg/systemd/terminal.jsx:176
 msgid "White"
