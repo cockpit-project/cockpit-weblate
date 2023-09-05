@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-04 02:47+0000\n"
+"POT-Creation-Date: 2023-09-05 02:47+0000\n"
 "PO-Revision-Date: 2023-08-18 13:30+0000\n"
 "Last-Translator: Fábio Rodrigues Ribeiro <farribeiro@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
@@ -733,6 +733,7 @@ msgstr "Transmissão dinâmica de balanceamento de carga"
 #: pkg/storaged/iscsi-panel.jsx:259 pkg/storaged/nfs-details.jsx:180
 #: pkg/storaged/vgroup-details.jsx:73 pkg/storaged/vgroup-details.jsx:124
 #: pkg/shell/credentials.jsx:184 pkg/shell/hosts_dialog.jsx:256
+#: pkg/networkmanager/dialogs-common.jsx:156
 #: pkg/users/authorized-keys-panel.js:68 pkg/systemd/timer-dialog.jsx:367
 msgid "Add"
 msgstr "Adicionar"
@@ -750,7 +751,7 @@ msgstr "Adicionar Criptografia de Disco Limitada à Rede"
 msgid "Add Tang keyserver"
 msgstr "Adicionar Servidor de chaves Tang"
 
-#: pkg/networkmanager/network-main.jsx:144
+#: pkg/networkmanager/network-main.jsx:144 pkg/networkmanager/vlan.jsx:91
 msgid "Add VLAN"
 msgstr "Adicionar VLAN"
 
@@ -770,11 +771,11 @@ msgstr "Adicionar uma nova zona"
 msgid "Add block devices"
 msgstr "$0 Dispositivos de Bloco"
 
-#: pkg/networkmanager/network-main.jsx:141
+#: pkg/networkmanager/network-main.jsx:141 pkg/networkmanager/bond.jsx:135
 msgid "Add bond"
 msgstr "Adicionar Vínculo"
 
-#: pkg/networkmanager/network-main.jsx:143
+#: pkg/networkmanager/network-main.jsx:143 pkg/networkmanager/bridge.jsx:96
 msgid "Add bridge"
 msgstr "Adicionar Ponte"
 
@@ -843,7 +844,7 @@ msgstr "Adicionar serviços para zona $0"
 msgid "Add services to zone $0"
 msgstr "Adicionar serviços na zona $0"
 
-#: pkg/networkmanager/network-main.jsx:142
+#: pkg/networkmanager/network-main.jsx:142 pkg/networkmanager/team.jsx:154
 msgid "Add team"
 msgstr "Adicionar Equipe"
 
@@ -1051,7 +1052,7 @@ msgstr "Aparência"
 msgid "Applications"
 msgstr "Aplicações"
 
-#: pkg/apps/application-list.jsx:159
+#: pkg/apps/application-list.jsx:163
 msgid "Applications list"
 msgstr "Lista de aplicações"
 
@@ -1273,7 +1274,7 @@ msgstr "Blade"
 msgid "Bad setting"
 msgstr "Configurações de Bond"
 
-#: pkg/networkmanager/team.jsx:167
+#: pkg/networkmanager/team.jsx:168
 msgid "Balancer"
 msgstr "Balanceador"
 
@@ -1327,12 +1328,6 @@ msgstr "Bloqueado"
 msgid "Bond"
 msgstr "Bond"
 
-#: pkg/networkmanager/bond.jsx:135
-#, fuzzy
-#| msgid "Bridge settings"
-msgid "Bond settings"
-msgstr "Configurações de Bond"
-
 #: pkg/systemd/logs.jsx:356
 msgid "Boot"
 msgstr "Inicialização"
@@ -1362,10 +1357,6 @@ msgstr "Bridge porta"
 #: pkg/networkmanager/bridgeport.jsx:78
 msgid "Bridge port settings"
 msgstr "Configurações da Porta de Ponte"
-
-#: pkg/networkmanager/bridge.jsx:96
-msgid "Bridge settings"
-msgstr "Configurações de Ponte"
 
 #: pkg/networkmanager/bond.jsx:46 pkg/networkmanager/team.jsx:44
 msgid "Broadcast"
@@ -2731,6 +2722,24 @@ msgstr "Editar /etc/motd"
 msgid "Edit Tang keyserver"
 msgstr "Editar o servidor de chaves Tang"
 
+#: pkg/networkmanager/vlan.jsx:91
+#, fuzzy
+#| msgid "VLAN settings"
+msgid "Edit VLAN settings"
+msgstr "Configurações VLAN"
+
+#: pkg/networkmanager/bond.jsx:135
+#, fuzzy
+#| msgid "Bridge settings"
+msgid "Edit bond settings"
+msgstr "Configurações de Bond"
+
+#: pkg/networkmanager/bridge.jsx:96
+#, fuzzy
+#| msgid "Bridge settings"
+msgid "Edit bridge settings"
+msgstr "Configurações de Ponte"
+
 #: pkg/networkmanager/firewall.jsx:596
 #, fuzzy
 #| msgid "Add services to $0 zone"
@@ -2762,6 +2771,12 @@ msgstr "Editar Serviço"
 #| msgid "Edit server"
 msgid "Edit service $0"
 msgstr "Editar Servidor"
+
+#: pkg/networkmanager/team.jsx:154
+#, fuzzy
+#| msgid "Team settings"
+msgid "Edit team settings"
+msgstr "Configurações da Equipe"
 
 #: pkg/users/accounts-list.js:59
 #, fuzzy
@@ -3694,7 +3709,7 @@ msgstr "Membros da interface"
 
 #: pkg/networkmanager/network-main.jsx:179
 #: pkg/networkmanager/network-interface-members.jsx:203
-#: pkg/networkmanager/firewall.jsx:863 pkg/networkmanager/bond.jsx:164
+#: pkg/networkmanager/firewall.jsx:863 pkg/networkmanager/bond.jsx:165
 msgid "Interfaces"
 msgstr "Interfaces"
 
@@ -4024,7 +4039,7 @@ msgstr ""
 msgid "Limits"
 msgstr "Limitar acesso"
 
-#: pkg/networkmanager/bond.jsx:200 pkg/networkmanager/team.jsx:194
+#: pkg/networkmanager/bond.jsx:201 pkg/networkmanager/team.jsx:195
 msgid "Link down delay"
 msgstr "Link down atraso"
 
@@ -4032,15 +4047,15 @@ msgstr "Link down atraso"
 msgid "Link local"
 msgstr "Link Local"
 
-#: pkg/networkmanager/bond.jsx:187
+#: pkg/networkmanager/bond.jsx:188
 msgid "Link monitoring"
 msgstr "Monitoramento de Link"
 
-#: pkg/networkmanager/bond.jsx:197 pkg/networkmanager/team.jsx:191
+#: pkg/networkmanager/bond.jsx:198 pkg/networkmanager/team.jsx:192
 msgid "Link up delay"
 msgstr "Link up atraso"
 
-#: pkg/networkmanager/team.jsx:184
+#: pkg/networkmanager/team.jsx:185
 msgid "Link watch"
 msgstr "Link para assistir"
 
@@ -4294,7 +4309,7 @@ msgstr "Desktop de baixo perfil"
 msgid "Lunch box"
 msgstr "Lunch box"
 
-#: pkg/networkmanager/mac.jsx:73 pkg/networkmanager/bond.jsx:167
+#: pkg/networkmanager/mac.jsx:73 pkg/networkmanager/bond.jsx:168
 msgid "MAC"
 msgstr "MAC"
 
@@ -4532,7 +4547,7 @@ msgstr "Minutos"
 msgid "Mitigations"
 msgstr ""
 
-#: pkg/networkmanager/bond.jsx:170
+#: pkg/networkmanager/bond.jsx:171
 msgid "Mode"
 msgstr "Modo"
 
@@ -4555,11 +4570,11 @@ msgstr "Modificando $target"
 msgid "Mondays"
 msgstr "Segundas"
 
-#: pkg/networkmanager/bond.jsx:193
+#: pkg/networkmanager/bond.jsx:194
 msgid "Monitoring interval"
 msgstr "Monitorando Intervalo"
 
-#: pkg/networkmanager/bond.jsx:204
+#: pkg/networkmanager/bond.jsx:205
 msgid "Monitoring targets"
 msgstr "Alvod e Monitoramento"
 
@@ -4870,7 +4885,7 @@ msgstr "Nenhum volume NFS montado"
 msgid "No SELinux alerts."
 msgstr "Nenhum alerta SELinux."
 
-#: pkg/apps/application-list.jsx:156
+#: pkg/apps/application-list.jsx:160
 msgid "No applications installed or available."
 msgstr "Nenhum aplicativo instalado ou disponível."
 
@@ -5252,7 +5267,7 @@ msgid "Optical drive"
 msgstr "Drive óptico"
 
 #: pkg/storaged/crypto-tab.jsx:250 pkg/storaged/content-views.jsx:942
-#: pkg/storaged/stratis-panel.jsx:133 pkg/networkmanager/bridge.jsx:103
+#: pkg/storaged/stratis-panel.jsx:133 pkg/networkmanager/bridge.jsx:104
 #: pkg/users/account-details.js:277 pkg/sosreport/sosreport.jsx:317
 msgid "Options"
 msgstr "Opções"
@@ -5343,7 +5358,7 @@ msgstr "Pacotes"
 msgid "Page name"
 msgstr "Nome da página"
 
-#: pkg/networkmanager/vlan.jsx:94
+#: pkg/networkmanager/vlan.jsx:95
 msgid "Parent"
 msgstr "Parente"
 
@@ -5586,11 +5601,11 @@ msgstr ""
 msgid "Pin unit"
 msgstr "Serviços do Sistema"
 
-#: pkg/networkmanager/team.jsx:199
+#: pkg/networkmanager/team.jsx:200
 msgid "Ping interval"
 msgstr "Intervalo de Ping"
 
-#: pkg/networkmanager/team.jsx:202
+#: pkg/networkmanager/team.jsx:203
 msgid "Ping target"
 msgstr "Alvo do Ping"
 
@@ -5658,7 +5673,7 @@ msgid "Portable"
 msgstr "Portatil"
 
 #: pkg/networkmanager/network-interface-members.jsx:203
-#: pkg/networkmanager/team.jsx:158 pkg/networkmanager/bridge.jsx:100
+#: pkg/networkmanager/team.jsx:159 pkg/networkmanager/bridge.jsx:101
 msgid "Ports"
 msgstr "Portas"
 
@@ -5693,7 +5708,7 @@ msgstr "Nome de Host Bonito"
 msgid "Previous boot"
 msgstr ""
 
-#: pkg/networkmanager/bond.jsx:176 pkg/networkmanager/team.jsx:173
+#: pkg/networkmanager/bond.jsx:177 pkg/networkmanager/team.jsx:174
 msgid "Primary"
 msgstr "Primário"
 
@@ -6440,7 +6455,7 @@ msgstr ""
 msgid "Run report"
 msgstr "Relatório"
 
-#: pkg/networkmanager/team.jsx:161
+#: pkg/networkmanager/team.jsx:162
 msgid "Runner"
 msgstr "Executor"
 
@@ -6515,20 +6530,20 @@ msgstr "chave ssh não é um caminho"
 msgid "SSH keys"
 msgstr "Chave SSH"
 
-#: pkg/networkmanager/bridge.jsx:109
+#: pkg/networkmanager/bridge.jsx:110
 msgid "STP forward delay"
 msgstr "STP Atraso de Redirecionamento"
 
-#: pkg/networkmanager/bridge.jsx:112
+#: pkg/networkmanager/bridge.jsx:113
 #, fuzzy
 msgid "STP hello time"
 msgstr "tempo hello STP"
 
-#: pkg/networkmanager/bridge.jsx:115
+#: pkg/networkmanager/bridge.jsx:116
 msgid "STP maximum message age"
 msgstr "STP Máxima permanência de mensagem"
 
-#: pkg/networkmanager/bridge.jsx:106
+#: pkg/networkmanager/bridge.jsx:107
 msgid "STP priority"
 msgstr "STP Prioridade"
 
@@ -7016,7 +7031,7 @@ msgstr "Computador com economia de espaço"
 msgid "Spanning tree protocol"
 msgstr "Protocolo Spanning tree"
 
-#: pkg/networkmanager/bridge.jsx:104
+#: pkg/networkmanager/bridge.jsx:105
 #, fuzzy
 msgid "Spanning tree protocol (STP)"
 msgstr "Protocolo Spanning tree (STP)"
@@ -7392,10 +7407,6 @@ msgstr "Porta da Equipe"
 #: pkg/networkmanager/teamport.jsx:82
 msgid "Team port settings"
 msgstr "Configurações da Porta da Equipe"
-
-#: pkg/networkmanager/team.jsx:154
-msgid "Team settings"
-msgstr "Configurações da Equipe"
 
 #: pkg/systemd/terminal.html:4 pkg/systemd/manifest.json:0
 msgid "Terminal"
@@ -8649,14 +8660,10 @@ msgstr "Pool"
 msgid "VLAN"
 msgstr "VLAN"
 
-#: pkg/networkmanager/vlan.jsx:104
+#: pkg/networkmanager/vlan.jsx:105
 #, fuzzy
 msgid "VLAN ID"
 msgstr "VLAN Id"
-
-#: pkg/networkmanager/vlan.jsx:91
-msgid "VLAN settings"
-msgstr "Configurações VLAN"
 
 #: pkg/systemd/overview-cards/realmd.jsx:385
 msgid "Validating address"

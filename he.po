@@ -24,7 +24,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-04 02:47+0000\n"
+"POT-Creation-Date: 2023-09-05 02:47+0000\n"
 "PO-Revision-Date: 2023-06-04 09:20+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://translate.fedoraproject.org/projects/cockpit/"
@@ -760,6 +760,7 @@ msgstr "איזון עומס העברה מסתגל"
 #: pkg/storaged/iscsi-panel.jsx:259 pkg/storaged/nfs-details.jsx:180
 #: pkg/storaged/vgroup-details.jsx:73 pkg/storaged/vgroup-details.jsx:124
 #: pkg/shell/credentials.jsx:184 pkg/shell/hosts_dialog.jsx:256
+#: pkg/networkmanager/dialogs-common.jsx:156
 #: pkg/users/authorized-keys-panel.js:68 pkg/systemd/timer-dialog.jsx:367
 msgid "Add"
 msgstr "הוספה"
@@ -779,7 +780,7 @@ msgstr "הוספת הצפנת כונן תלוית רשת"
 msgid "Add Tang keyserver"
 msgstr "שרת מפתחות Tang"
 
-#: pkg/networkmanager/network-main.jsx:144
+#: pkg/networkmanager/network-main.jsx:144 pkg/networkmanager/vlan.jsx:91
 msgid "Add VLAN"
 msgstr "הוספת VLAN"
 
@@ -797,11 +798,11 @@ msgstr "הוספת אזור חדש"
 msgid "Add block devices"
 msgstr "הוספת התקני בלוק"
 
-#: pkg/networkmanager/network-main.jsx:141
+#: pkg/networkmanager/network-main.jsx:141 pkg/networkmanager/bond.jsx:135
 msgid "Add bond"
 msgstr "הוספת מאגד"
 
-#: pkg/networkmanager/network-main.jsx:143
+#: pkg/networkmanager/network-main.jsx:143 pkg/networkmanager/bridge.jsx:96
 msgid "Add bridge"
 msgstr "הוספת גשר"
 
@@ -873,7 +874,7 @@ msgstr "הוספת שירותים לאזור $0"
 msgid "Add services to zone $0"
 msgstr "הוספת שירותים לאזור $0"
 
-#: pkg/networkmanager/network-main.jsx:142
+#: pkg/networkmanager/network-main.jsx:142 pkg/networkmanager/team.jsx:154
 msgid "Add team"
 msgstr "הוספת צוות"
 
@@ -1072,7 +1073,7 @@ msgstr "מראה"
 msgid "Applications"
 msgstr "יישומים"
 
-#: pkg/apps/application-list.jsx:159
+#: pkg/apps/application-list.jsx:163
 msgid "Applications list"
 msgstr "רשימת יישומים"
 
@@ -1281,7 +1282,7 @@ msgstr "פסול"
 msgid "Bad setting"
 msgstr "הגדרה פסולה"
 
-#: pkg/networkmanager/team.jsx:167
+#: pkg/networkmanager/team.jsx:168
 msgid "Balancer"
 msgstr "מאזן"
 
@@ -1334,10 +1335,6 @@ msgstr "חסום"
 msgid "Bond"
 msgstr "מאגד"
 
-#: pkg/networkmanager/bond.jsx:135
-msgid "Bond settings"
-msgstr "הגדרות מאגד"
-
 #: pkg/systemd/logs.jsx:356
 msgid "Boot"
 msgstr "עלייה"
@@ -1367,10 +1364,6 @@ msgstr "פתחת גשר"
 #: pkg/networkmanager/bridgeport.jsx:78
 msgid "Bridge port settings"
 msgstr "הגדרות פתחת גשר"
-
-#: pkg/networkmanager/bridge.jsx:96
-msgid "Bridge settings"
-msgstr "הגדרות גשר"
 
 #: pkg/networkmanager/bond.jsx:46 pkg/networkmanager/team.jsx:44
 msgid "Broadcast"
@@ -2649,6 +2642,24 @@ msgstr "עריכת ‎/etc/motd"
 msgid "Edit Tang keyserver"
 msgstr "עריכת שרת מפתחות Tang"
 
+#: pkg/networkmanager/vlan.jsx:91
+#, fuzzy
+#| msgid "VLAN settings"
+msgid "Edit VLAN settings"
+msgstr "הגדרות VLAN"
+
+#: pkg/networkmanager/bond.jsx:135
+#, fuzzy
+#| msgid "Bond settings"
+msgid "Edit bond settings"
+msgstr "הגדרות מאגד"
+
+#: pkg/networkmanager/bridge.jsx:96
+#, fuzzy
+#| msgid "Bridge settings"
+msgid "Edit bridge settings"
+msgstr "הגדרות גשר"
+
 #: pkg/networkmanager/firewall.jsx:596
 msgid "Edit custom service in $0 zone"
 msgstr "עריכת שירות משלך באזור $0"
@@ -2676,6 +2687,12 @@ msgstr "עריכת שירות"
 #: pkg/networkmanager/firewall.jsx:119
 msgid "Edit service $0"
 msgstr "עריכת השירות $0"
+
+#: pkg/networkmanager/team.jsx:154
+#, fuzzy
+#| msgid "Team settings"
+msgid "Edit team settings"
+msgstr "הגדרות ציוות"
 
 #: pkg/users/accounts-list.js:59
 msgid "Edit user"
@@ -3557,7 +3574,7 @@ msgstr "חברים במנשק"
 
 #: pkg/networkmanager/network-main.jsx:179
 #: pkg/networkmanager/network-interface-members.jsx:203
-#: pkg/networkmanager/firewall.jsx:863 pkg/networkmanager/bond.jsx:164
+#: pkg/networkmanager/firewall.jsx:863 pkg/networkmanager/bond.jsx:165
 msgid "Interfaces"
 msgstr "מנשקים"
 
@@ -3863,7 +3880,7 @@ msgstr ""
 msgid "Limits"
 msgstr "הגבלות"
 
-#: pkg/networkmanager/bond.jsx:200 pkg/networkmanager/team.jsx:194
+#: pkg/networkmanager/bond.jsx:201 pkg/networkmanager/team.jsx:195
 msgid "Link down delay"
 msgstr "השהיית קטיעת קישור"
 
@@ -3871,15 +3888,15 @@ msgstr "השהיית קטיעת קישור"
 msgid "Link local"
 msgstr "קישור מקומי"
 
-#: pkg/networkmanager/bond.jsx:187
+#: pkg/networkmanager/bond.jsx:188
 msgid "Link monitoring"
 msgstr "מעקב אחר קישורים"
 
-#: pkg/networkmanager/bond.jsx:197 pkg/networkmanager/team.jsx:191
+#: pkg/networkmanager/bond.jsx:198 pkg/networkmanager/team.jsx:192
 msgid "Link up delay"
 msgstr "השהיית חיבור קישור"
 
-#: pkg/networkmanager/team.jsx:184
+#: pkg/networkmanager/team.jsx:185
 msgid "Link watch"
 msgstr "עקיבה אחר קישורים"
 
@@ -4101,7 +4118,7 @@ msgstr "מחשב שולחני עם פרופיל נמוך"
 msgid "Lunch box"
 msgstr "קופסת אוכל"
 
-#: pkg/networkmanager/mac.jsx:73 pkg/networkmanager/bond.jsx:167
+#: pkg/networkmanager/mac.jsx:73 pkg/networkmanager/bond.jsx:168
 msgid "MAC"
 msgstr "MAC"
 
@@ -4318,7 +4335,7 @@ msgstr "דקות"
 msgid "Mitigations"
 msgstr "אפחותים"
 
-#: pkg/networkmanager/bond.jsx:170
+#: pkg/networkmanager/bond.jsx:171
 msgid "Mode"
 msgstr "מצב"
 
@@ -4341,11 +4358,11 @@ msgstr "מתבצע שינוי ב־$target"
 msgid "Mondays"
 msgstr "ימי שני"
 
-#: pkg/networkmanager/bond.jsx:193
+#: pkg/networkmanager/bond.jsx:194
 msgid "Monitoring interval"
 msgstr "הפרש בין דגימות מעקב"
 
-#: pkg/networkmanager/bond.jsx:204
+#: pkg/networkmanager/bond.jsx:205
 msgid "Monitoring targets"
 msgstr "יעדי מעקב"
 
@@ -4646,7 +4663,7 @@ msgstr "לא הוקמו עיגוני NFS"
 msgid "No SELinux alerts."
 msgstr "אין אזעקות SELinux."
 
-#: pkg/apps/application-list.jsx:156
+#: pkg/apps/application-list.jsx:160
 msgid "No applications installed or available."
 msgstr "אף יישום לא מותקן או זמין."
 
@@ -5011,7 +5028,7 @@ msgid "Optical drive"
 msgstr "כונן אופטי"
 
 #: pkg/storaged/crypto-tab.jsx:250 pkg/storaged/content-views.jsx:942
-#: pkg/storaged/stratis-panel.jsx:133 pkg/networkmanager/bridge.jsx:103
+#: pkg/storaged/stratis-panel.jsx:133 pkg/networkmanager/bridge.jsx:104
 #: pkg/users/account-details.js:277 pkg/sosreport/sosreport.jsx:317
 msgid "Options"
 msgstr "אפשרויות"
@@ -5098,7 +5115,7 @@ msgstr "חבילות"
 msgid "Page name"
 msgstr "שם העמוד"
 
-#: pkg/networkmanager/vlan.jsx:94
+#: pkg/networkmanager/vlan.jsx:95
 msgid "Parent"
 msgstr "הורה"
 
@@ -5332,11 +5349,11 @@ msgstr "בחירת תאריך"
 msgid "Pin unit"
 msgstr "נעיצת יחידה"
 
-#: pkg/networkmanager/team.jsx:199
+#: pkg/networkmanager/team.jsx:200
 msgid "Ping interval"
 msgstr "הפרש בין פינגים"
 
-#: pkg/networkmanager/team.jsx:202
+#: pkg/networkmanager/team.jsx:203
 msgid "Ping target"
 msgstr "יעד פינג"
 
@@ -5403,7 +5420,7 @@ msgid "Portable"
 msgstr "נייד"
 
 #: pkg/networkmanager/network-interface-members.jsx:203
-#: pkg/networkmanager/team.jsx:158 pkg/networkmanager/bridge.jsx:100
+#: pkg/networkmanager/team.jsx:159 pkg/networkmanager/bridge.jsx:101
 msgid "Ports"
 msgstr "פתחות"
 
@@ -5436,7 +5453,7 @@ msgstr "שם מארח יפה"
 msgid "Previous boot"
 msgstr "עלייה קודמת"
 
-#: pkg/networkmanager/bond.jsx:176 pkg/networkmanager/team.jsx:173
+#: pkg/networkmanager/bond.jsx:177 pkg/networkmanager/team.jsx:174
 msgid "Primary"
 msgstr "עיקרי"
 
@@ -6125,7 +6142,7 @@ msgstr "להריץ על"
 msgid "Run report"
 msgstr "הרצת דוח"
 
-#: pkg/networkmanager/team.jsx:161
+#: pkg/networkmanager/team.jsx:162
 msgid "Runner"
 msgstr "שליח"
 
@@ -6198,19 +6215,19 @@ msgstr "מפתח ה־SSH אינו נתיב"
 msgid "SSH keys"
 msgstr "מפתחות SSH"
 
-#: pkg/networkmanager/bridge.jsx:109
+#: pkg/networkmanager/bridge.jsx:110
 msgid "STP forward delay"
 msgstr "השהיית העברת STP"
 
-#: pkg/networkmanager/bridge.jsx:112
+#: pkg/networkmanager/bridge.jsx:113
 msgid "STP hello time"
 msgstr "זמן Hello של STP"
 
-#: pkg/networkmanager/bridge.jsx:115
+#: pkg/networkmanager/bridge.jsx:116
 msgid "STP maximum message age"
 msgstr "גיל ההודעה המרבי של STP"
 
-#: pkg/networkmanager/bridge.jsx:106
+#: pkg/networkmanager/bridge.jsx:107
 msgid "STP priority"
 msgstr "עדיפות STP"
 
@@ -6679,7 +6696,7 @@ msgstr "מחשב חסכוני במקום"
 msgid "Spanning tree protocol"
 msgstr "פרוטוקול העץ הפורש"
 
-#: pkg/networkmanager/bridge.jsx:104
+#: pkg/networkmanager/bridge.jsx:105
 msgid "Spanning tree protocol (STP)"
 msgstr "פרוטוקול העץ הפורש (STP)"
 
@@ -7018,10 +7035,6 @@ msgstr "פתחת ציוות"
 #: pkg/networkmanager/teamport.jsx:82
 msgid "Team port settings"
 msgstr "הגדרות פתחת ציוות"
-
-#: pkg/networkmanager/team.jsx:154
-msgid "Team settings"
-msgstr "הגדרות ציוות"
 
 #: pkg/systemd/terminal.html:4 pkg/systemd/manifest.json:0
 msgid "Terminal"
@@ -8215,13 +8228,9 @@ msgstr "מאגר VDO"
 msgid "VLAN"
 msgstr "VLAN"
 
-#: pkg/networkmanager/vlan.jsx:104
+#: pkg/networkmanager/vlan.jsx:105
 msgid "VLAN ID"
 msgstr "מזהה VLAN"
-
-#: pkg/networkmanager/vlan.jsx:91
-msgid "VLAN settings"
-msgstr "הגדרות VLAN"
 
 #: pkg/systemd/overview-cards/realmd.jsx:385
 msgid "Validating address"

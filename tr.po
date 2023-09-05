@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-04 02:47+0000\n"
+"POT-Creation-Date: 2023-09-05 02:47+0000\n"
 "PO-Revision-Date: 2023-09-03 12:07+0000\n"
 "Last-Translator: Burak Yavuz <hitowerdigit@hotmail.com>\n"
 "Language-Team: Turkish <https://translate.fedoraproject.org/projects/cockpit/"
@@ -702,6 +702,7 @@ msgstr "Uyarlanabilir iletim yükü dengeleme"
 #: pkg/storaged/iscsi-panel.jsx:259 pkg/storaged/nfs-details.jsx:180
 #: pkg/storaged/vgroup-details.jsx:73 pkg/storaged/vgroup-details.jsx:124
 #: pkg/shell/credentials.jsx:184 pkg/shell/hosts_dialog.jsx:256
+#: pkg/networkmanager/dialogs-common.jsx:156
 #: pkg/users/authorized-keys-panel.js:68 pkg/systemd/timer-dialog.jsx:367
 msgid "Add"
 msgstr "Ekle"
@@ -719,7 +720,7 @@ msgstr "Ağa Bağlı Disk Şifrelemesi ekle"
 msgid "Add Tang keyserver"
 msgstr "Tang anahtar sunucusu ekle"
 
-#: pkg/networkmanager/network-main.jsx:144
+#: pkg/networkmanager/network-main.jsx:144 pkg/networkmanager/vlan.jsx:91
 msgid "Add VLAN"
 msgstr "VLAN ekle"
 
@@ -735,11 +736,11 @@ msgstr "Yeni bir bölge ekle"
 msgid "Add block devices"
 msgstr "Blok aygıtlarını ekle"
 
-#: pkg/networkmanager/network-main.jsx:141
+#: pkg/networkmanager/network-main.jsx:141 pkg/networkmanager/bond.jsx:135
 msgid "Add bond"
 msgstr "Birleştirme (Bond) ekle"
 
-#: pkg/networkmanager/network-main.jsx:143
+#: pkg/networkmanager/network-main.jsx:143 pkg/networkmanager/bridge.jsx:96
 msgid "Add bridge"
 msgstr "Köprü ekle"
 
@@ -807,7 +808,7 @@ msgstr "$0 bölgesine hizmetleri ekle"
 msgid "Add services to zone $0"
 msgstr "$0 bölgesine hizmetleri ekle"
 
-#: pkg/networkmanager/network-main.jsx:142
+#: pkg/networkmanager/network-main.jsx:142 pkg/networkmanager/team.jsx:154
 msgid "Add team"
 msgstr "Takım ekle"
 
@@ -1007,7 +1008,7 @@ msgstr "Görünüm"
 msgid "Applications"
 msgstr "Uygulamalar"
 
-#: pkg/apps/application-list.jsx:159
+#: pkg/apps/application-list.jsx:163
 msgid "Applications list"
 msgstr "Uygulamalar listesi"
 
@@ -1216,7 +1217,7 @@ msgstr "Hatalı"
 msgid "Bad setting"
 msgstr "Hatalı ayar"
 
-#: pkg/networkmanager/team.jsx:167
+#: pkg/networkmanager/team.jsx:168
 msgid "Balancer"
 msgstr "Dengeleyici"
 
@@ -1267,10 +1268,6 @@ msgstr "Engellendi"
 msgid "Bond"
 msgstr "Birleştirme (Bond)"
 
-#: pkg/networkmanager/bond.jsx:135
-msgid "Bond settings"
-msgstr "Birleştirme ayarları"
-
 #: pkg/systemd/logs.jsx:356
 msgid "Boot"
 msgstr "Önyükleme"
@@ -1301,10 +1298,6 @@ msgstr "Köprü bağlantı noktası"
 #: pkg/networkmanager/bridgeport.jsx:78
 msgid "Bridge port settings"
 msgstr "Köprü bağlantı noktası ayarları"
-
-#: pkg/networkmanager/bridge.jsx:96
-msgid "Bridge settings"
-msgstr "Köprü ayarları"
 
 #: pkg/networkmanager/bond.jsx:46 pkg/networkmanager/team.jsx:44
 msgid "Broadcast"
@@ -2579,6 +2572,24 @@ msgstr "/etc/motd'yi düzenle"
 msgid "Edit Tang keyserver"
 msgstr "Tang anahtar sunucusunu düzenle"
 
+#: pkg/networkmanager/vlan.jsx:91
+#, fuzzy
+#| msgid "VLAN settings"
+msgid "Edit VLAN settings"
+msgstr "VLAN ayarları"
+
+#: pkg/networkmanager/bond.jsx:135
+#, fuzzy
+#| msgid "Bond settings"
+msgid "Edit bond settings"
+msgstr "Birleştirme ayarları"
+
+#: pkg/networkmanager/bridge.jsx:96
+#, fuzzy
+#| msgid "Bridge settings"
+msgid "Edit bridge settings"
+msgstr "Köprü ayarları"
+
 #: pkg/networkmanager/firewall.jsx:596
 msgid "Edit custom service in $0 zone"
 msgstr "$0 bölgesinde özel hizmeti düzenle"
@@ -2606,6 +2617,12 @@ msgstr "Hizmeti düzenle"
 #: pkg/networkmanager/firewall.jsx:119
 msgid "Edit service $0"
 msgstr "$0 hizmetini düzenle"
+
+#: pkg/networkmanager/team.jsx:154
+#, fuzzy
+#| msgid "Team settings"
+msgid "Edit team settings"
+msgstr "Takım ayarları"
 
 #: pkg/users/accounts-list.js:59
 msgid "Edit user"
@@ -3487,7 +3504,7 @@ msgstr "Arayüz üyeleri"
 
 #: pkg/networkmanager/network-main.jsx:179
 #: pkg/networkmanager/network-interface-members.jsx:203
-#: pkg/networkmanager/firewall.jsx:863 pkg/networkmanager/bond.jsx:164
+#: pkg/networkmanager/firewall.jsx:863 pkg/networkmanager/bond.jsx:165
 msgid "Interfaces"
 msgstr "Arayüzler"
 
@@ -3793,7 +3810,7 @@ msgstr ""
 msgid "Limits"
 msgstr "Sınırlar"
 
-#: pkg/networkmanager/bond.jsx:200 pkg/networkmanager/team.jsx:194
+#: pkg/networkmanager/bond.jsx:201 pkg/networkmanager/team.jsx:195
 msgid "Link down delay"
 msgstr "Bağlantı kapanma gecikmesi"
 
@@ -3801,15 +3818,15 @@ msgstr "Bağlantı kapanma gecikmesi"
 msgid "Link local"
 msgstr "Yerel bağlantı"
 
-#: pkg/networkmanager/bond.jsx:187
+#: pkg/networkmanager/bond.jsx:188
 msgid "Link monitoring"
 msgstr "Bağlantı izleme"
 
-#: pkg/networkmanager/bond.jsx:197 pkg/networkmanager/team.jsx:191
+#: pkg/networkmanager/bond.jsx:198 pkg/networkmanager/team.jsx:192
 msgid "Link up delay"
 msgstr "Bağlantı açılma gecikmesi"
 
-#: pkg/networkmanager/team.jsx:184
+#: pkg/networkmanager/team.jsx:185
 msgid "Link watch"
 msgstr "Bağlantı izleme"
 
@@ -4031,7 +4048,7 @@ msgstr "Düşük profilli masaüstü"
 msgid "Lunch box"
 msgstr "Lunch box"
 
-#: pkg/networkmanager/mac.jsx:73 pkg/networkmanager/bond.jsx:167
+#: pkg/networkmanager/mac.jsx:73 pkg/networkmanager/bond.jsx:168
 msgid "MAC"
 msgstr "MAC"
 
@@ -4245,7 +4262,7 @@ msgstr "Dakika"
 msgid "Mitigations"
 msgstr "Risk azaltmaları"
 
-#: pkg/networkmanager/bond.jsx:170
+#: pkg/networkmanager/bond.jsx:171
 msgid "Mode"
 msgstr "Kip"
 
@@ -4268,11 +4285,11 @@ msgstr "$target değiştiriliyor"
 msgid "Mondays"
 msgstr "Pazartesi günleri"
 
-#: pkg/networkmanager/bond.jsx:193
+#: pkg/networkmanager/bond.jsx:194
 msgid "Monitoring interval"
 msgstr "İzleme aralığı"
 
-#: pkg/networkmanager/bond.jsx:204
+#: pkg/networkmanager/bond.jsx:205
 msgid "Monitoring targets"
 msgstr "İzleme hedefleri"
 
@@ -4574,7 +4591,7 @@ msgstr "NFS bağlama noktası ayarlanmadı"
 msgid "No SELinux alerts."
 msgstr "SELinux uyarıları yok."
 
-#: pkg/apps/application-list.jsx:156
+#: pkg/apps/application-list.jsx:160
 msgid "No applications installed or available."
 msgstr "Yüklü veya kullanılabilir uygulamalar yok."
 
@@ -4939,7 +4956,7 @@ msgid "Optical drive"
 msgstr "Optik sürücü"
 
 #: pkg/storaged/crypto-tab.jsx:250 pkg/storaged/content-views.jsx:942
-#: pkg/storaged/stratis-panel.jsx:133 pkg/networkmanager/bridge.jsx:103
+#: pkg/storaged/stratis-panel.jsx:133 pkg/networkmanager/bridge.jsx:104
 #: pkg/users/account-details.js:277 pkg/sosreport/sosreport.jsx:317
 msgid "Options"
 msgstr "Seçenekler"
@@ -5026,7 +5043,7 @@ msgstr "Paketler"
 msgid "Page name"
 msgstr "Sayfa adı"
 
-#: pkg/networkmanager/vlan.jsx:94
+#: pkg/networkmanager/vlan.jsx:95
 msgid "Parent"
 msgstr "Üst öğe"
 
@@ -5260,11 +5277,11 @@ msgstr "Tarih seçin"
 msgid "Pin unit"
 msgstr "Birimi sabitle"
 
-#: pkg/networkmanager/team.jsx:199
+#: pkg/networkmanager/team.jsx:200
 msgid "Ping interval"
 msgstr "Ping aralığı"
 
-#: pkg/networkmanager/team.jsx:202
+#: pkg/networkmanager/team.jsx:203
 msgid "Ping target"
 msgstr "Ping hedefi"
 
@@ -5329,7 +5346,7 @@ msgid "Portable"
 msgstr "Taşınabilir"
 
 #: pkg/networkmanager/network-interface-members.jsx:203
-#: pkg/networkmanager/team.jsx:158 pkg/networkmanager/bridge.jsx:100
+#: pkg/networkmanager/team.jsx:159 pkg/networkmanager/bridge.jsx:101
 msgid "Ports"
 msgstr "Bağlantı noktaları"
 
@@ -5362,7 +5379,7 @@ msgstr "Okunaklı anamakine adı"
 msgid "Previous boot"
 msgstr "Önceki önyükleme"
 
-#: pkg/networkmanager/bond.jsx:176 pkg/networkmanager/team.jsx:173
+#: pkg/networkmanager/bond.jsx:177 pkg/networkmanager/team.jsx:174
 msgid "Primary"
 msgstr "Birincil"
 
@@ -6055,7 +6072,7 @@ msgstr "Çalıştırma tarihi"
 msgid "Run report"
 msgstr "Raporu çalıştır"
 
-#: pkg/networkmanager/team.jsx:161
+#: pkg/networkmanager/team.jsx:162
 msgid "Runner"
 msgstr "Çalıştırıcı"
 
@@ -6130,19 +6147,19 @@ msgstr "SSH anahtarı bir yol değildir"
 msgid "SSH keys"
 msgstr "SSH anahtarları"
 
-#: pkg/networkmanager/bridge.jsx:109
+#: pkg/networkmanager/bridge.jsx:110
 msgid "STP forward delay"
 msgstr "STP yönlendirme gecikmesi"
 
-#: pkg/networkmanager/bridge.jsx:112
+#: pkg/networkmanager/bridge.jsx:113
 msgid "STP hello time"
 msgstr "STP merhaba süresi"
 
-#: pkg/networkmanager/bridge.jsx:115
+#: pkg/networkmanager/bridge.jsx:116
 msgid "STP maximum message age"
 msgstr "STP en fazla ileti yaşı"
 
-#: pkg/networkmanager/bridge.jsx:106
+#: pkg/networkmanager/bridge.jsx:107
 msgid "STP priority"
 msgstr "STP önceliği"
 
@@ -6615,7 +6632,7 @@ msgstr "Yerden kazandıran bilgisayar"
 msgid "Spanning tree protocol"
 msgstr "Spanning tree protokolü"
 
-#: pkg/networkmanager/bridge.jsx:104
+#: pkg/networkmanager/bridge.jsx:105
 msgid "Spanning tree protocol (STP)"
 msgstr "Spanning tree protokolü (STP)"
 
@@ -6958,10 +6975,6 @@ msgstr "Takım bağlantı noktası"
 #: pkg/networkmanager/teamport.jsx:82
 msgid "Team port settings"
 msgstr "Takım bağlantı noktası ayarları"
-
-#: pkg/networkmanager/team.jsx:154
-msgid "Team settings"
-msgstr "Takım ayarları"
 
 #: pkg/systemd/terminal.html:4 pkg/systemd/manifest.json:0
 msgid "Terminal"
@@ -8207,13 +8220,9 @@ msgstr "VDO havuzu"
 msgid "VLAN"
 msgstr "VLAN"
 
-#: pkg/networkmanager/vlan.jsx:104
+#: pkg/networkmanager/vlan.jsx:105
 msgid "VLAN ID"
 msgstr "VLAN kimliği"
-
-#: pkg/networkmanager/vlan.jsx:91
-msgid "VLAN settings"
-msgstr "VLAN ayarları"
 
 #: pkg/systemd/overview-cards/realmd.jsx:385
 msgid "Validating address"

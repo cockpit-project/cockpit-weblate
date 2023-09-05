@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-04 02:47+0000\n"
+"POT-Creation-Date: 2023-09-05 02:47+0000\n"
 "PO-Revision-Date: 2023-09-05 05:52+0000\n"
 "Last-Translator: Mie Yamamoto <myamamot@redhat.com>\n"
 "Language-Team: Japanese <https://translate.fedoraproject.org/projects/"
@@ -670,6 +670,7 @@ msgstr "適応送信のロードバランス"
 #: pkg/storaged/iscsi-panel.jsx:259 pkg/storaged/nfs-details.jsx:180
 #: pkg/storaged/vgroup-details.jsx:73 pkg/storaged/vgroup-details.jsx:124
 #: pkg/shell/credentials.jsx:184 pkg/shell/hosts_dialog.jsx:256
+#: pkg/networkmanager/dialogs-common.jsx:156
 #: pkg/users/authorized-keys-panel.js:68 pkg/systemd/timer-dialog.jsx:367
 msgid "Add"
 msgstr "追加"
@@ -687,7 +688,7 @@ msgstr "ネットワークバウンドディスクの暗号化追加"
 msgid "Add Tang keyserver"
 msgstr "Tang キーサーバーの追加"
 
-#: pkg/networkmanager/network-main.jsx:144
+#: pkg/networkmanager/network-main.jsx:144 pkg/networkmanager/vlan.jsx:91
 msgid "Add VLAN"
 msgstr "VLAN の追加"
 
@@ -703,11 +704,11 @@ msgstr "新規ゾーンの追加"
 msgid "Add block devices"
 msgstr "ブロックデバイスの追加"
 
-#: pkg/networkmanager/network-main.jsx:141
+#: pkg/networkmanager/network-main.jsx:141 pkg/networkmanager/bond.jsx:135
 msgid "Add bond"
 msgstr "ボンディングの追加"
 
-#: pkg/networkmanager/network-main.jsx:143
+#: pkg/networkmanager/network-main.jsx:143 pkg/networkmanager/bridge.jsx:96
 msgid "Add bridge"
 msgstr "ブリッジの追加"
 
@@ -775,7 +776,7 @@ msgstr "$0 ゾーンにサービスを追加"
 msgid "Add services to zone $0"
 msgstr "ゾーン $0 にサービスを追加"
 
-#: pkg/networkmanager/network-main.jsx:142
+#: pkg/networkmanager/network-main.jsx:142 pkg/networkmanager/team.jsx:154
 msgid "Add team"
 msgstr "チームの追加"
 
@@ -971,7 +972,7 @@ msgstr "外観"
 msgid "Applications"
 msgstr "アプリケーション"
 
-#: pkg/apps/application-list.jsx:159
+#: pkg/apps/application-list.jsx:163
 msgid "Applications list"
 msgstr "アプリケーションリスト"
 
@@ -1177,7 +1178,7 @@ msgstr "正しくない"
 msgid "Bad setting"
 msgstr "正しくない設定"
 
-#: pkg/networkmanager/team.jsx:167
+#: pkg/networkmanager/team.jsx:168
 msgid "Balancer"
 msgstr "バランサー"
 
@@ -1228,10 +1229,6 @@ msgstr "ブロック済み"
 msgid "Bond"
 msgstr "ボンディング"
 
-#: pkg/networkmanager/bond.jsx:135
-msgid "Bond settings"
-msgstr "ボンディング設定"
-
 #: pkg/systemd/logs.jsx:356
 msgid "Boot"
 msgstr "ブート"
@@ -1263,10 +1260,6 @@ msgstr "ブリッジポート"
 #: pkg/networkmanager/bridgeport.jsx:78
 msgid "Bridge port settings"
 msgstr "ブリッジポート設定"
-
-#: pkg/networkmanager/bridge.jsx:96
-msgid "Bridge settings"
-msgstr "ブリッジ設定"
 
 #: pkg/networkmanager/bond.jsx:46 pkg/networkmanager/team.jsx:44
 msgid "Broadcast"
@@ -2544,6 +2537,24 @@ msgstr "/etc/motd を編集する"
 msgid "Edit Tang keyserver"
 msgstr "Tang キーサーバーを編集する"
 
+#: pkg/networkmanager/vlan.jsx:91
+#, fuzzy
+#| msgid "VLAN settings"
+msgid "Edit VLAN settings"
+msgstr "VLAN 設定"
+
+#: pkg/networkmanager/bond.jsx:135
+#, fuzzy
+#| msgid "Bond settings"
+msgid "Edit bond settings"
+msgstr "ボンディング設定"
+
+#: pkg/networkmanager/bridge.jsx:96
+#, fuzzy
+#| msgid "Bridge settings"
+msgid "Edit bridge settings"
+msgstr "ブリッジ設定"
+
 #: pkg/networkmanager/firewall.jsx:596
 msgid "Edit custom service in $0 zone"
 msgstr "$0 ゾーンでカスタムサービスを編集する"
@@ -2571,6 +2582,12 @@ msgstr "サービスの編集"
 #: pkg/networkmanager/firewall.jsx:119
 msgid "Edit service $0"
 msgstr "サービス $0 を編集する"
+
+#: pkg/networkmanager/team.jsx:154
+#, fuzzy
+#| msgid "Team settings"
+msgid "Edit team settings"
+msgstr "チーム設定"
 
 #: pkg/users/accounts-list.js:59
 msgid "Edit user"
@@ -3452,7 +3469,7 @@ msgstr "インターフェースメンバー"
 
 #: pkg/networkmanager/network-main.jsx:179
 #: pkg/networkmanager/network-interface-members.jsx:203
-#: pkg/networkmanager/firewall.jsx:863 pkg/networkmanager/bond.jsx:164
+#: pkg/networkmanager/firewall.jsx:863 pkg/networkmanager/bond.jsx:165
 msgid "Interfaces"
 msgstr "インターフェース"
 
@@ -3758,7 +3775,7 @@ msgstr ""
 msgid "Limits"
 msgstr "制限"
 
-#: pkg/networkmanager/bond.jsx:200 pkg/networkmanager/team.jsx:194
+#: pkg/networkmanager/bond.jsx:201 pkg/networkmanager/team.jsx:195
 msgid "Link down delay"
 msgstr "リンクダウンの遅延"
 
@@ -3766,15 +3783,15 @@ msgstr "リンクダウンの遅延"
 msgid "Link local"
 msgstr "ローカルリンク"
 
-#: pkg/networkmanager/bond.jsx:187
+#: pkg/networkmanager/bond.jsx:188
 msgid "Link monitoring"
 msgstr "リンクのモニタリング"
 
-#: pkg/networkmanager/bond.jsx:197 pkg/networkmanager/team.jsx:191
+#: pkg/networkmanager/bond.jsx:198 pkg/networkmanager/team.jsx:192
 msgid "Link up delay"
 msgstr "リンクアップの遅延"
 
-#: pkg/networkmanager/team.jsx:184
+#: pkg/networkmanager/team.jsx:185
 msgid "Link watch"
 msgstr "リンクの監視"
 
@@ -3996,7 +4013,7 @@ msgstr "低プロファイルデスクトップ"
 msgid "Lunch box"
 msgstr "ランチボックス"
 
-#: pkg/networkmanager/mac.jsx:73 pkg/networkmanager/bond.jsx:167
+#: pkg/networkmanager/mac.jsx:73 pkg/networkmanager/bond.jsx:168
 msgid "MAC"
 msgstr "MAC"
 
@@ -4210,7 +4227,7 @@ msgstr "分"
 msgid "Mitigations"
 msgstr "緩和"
 
-#: pkg/networkmanager/bond.jsx:170
+#: pkg/networkmanager/bond.jsx:171
 msgid "Mode"
 msgstr "モード"
 
@@ -4233,11 +4250,11 @@ msgstr "$target の変更"
 msgid "Mondays"
 msgstr "毎週月曜日"
 
-#: pkg/networkmanager/bond.jsx:193
+#: pkg/networkmanager/bond.jsx:194
 msgid "Monitoring interval"
 msgstr "監視間隔"
 
-#: pkg/networkmanager/bond.jsx:204
+#: pkg/networkmanager/bond.jsx:205
 msgid "Monitoring targets"
 msgstr "ターゲットの監視"
 
@@ -4540,7 +4557,7 @@ msgstr "NFS マウントが設定されていません"
 msgid "No SELinux alerts."
 msgstr "SELinux アラートがありません。"
 
-#: pkg/apps/application-list.jsx:156
+#: pkg/apps/application-list.jsx:160
 msgid "No applications installed or available."
 msgstr "アプリケーションがインストールされていないか、利用できません。"
 
@@ -4905,7 +4922,7 @@ msgid "Optical drive"
 msgstr "光学ドライブ"
 
 #: pkg/storaged/crypto-tab.jsx:250 pkg/storaged/content-views.jsx:942
-#: pkg/storaged/stratis-panel.jsx:133 pkg/networkmanager/bridge.jsx:103
+#: pkg/storaged/stratis-panel.jsx:133 pkg/networkmanager/bridge.jsx:104
 #: pkg/users/account-details.js:277 pkg/sosreport/sosreport.jsx:317
 msgid "Options"
 msgstr "オプション"
@@ -4991,7 +5008,7 @@ msgstr "パッケージ"
 msgid "Page name"
 msgstr "ページ名"
 
-#: pkg/networkmanager/vlan.jsx:94
+#: pkg/networkmanager/vlan.jsx:95
 msgid "Parent"
 msgstr "親"
 
@@ -5225,11 +5242,11 @@ msgstr "日付けの選択"
 msgid "Pin unit"
 msgstr "ユニットを固定する"
 
-#: pkg/networkmanager/team.jsx:199
+#: pkg/networkmanager/team.jsx:200
 msgid "Ping interval"
 msgstr "Ping 間隔"
 
-#: pkg/networkmanager/team.jsx:202
+#: pkg/networkmanager/team.jsx:203
 msgid "Ping target"
 msgstr "Ping ターゲット"
 
@@ -5294,7 +5311,7 @@ msgid "Portable"
 msgstr "ポータブル"
 
 #: pkg/networkmanager/network-interface-members.jsx:203
-#: pkg/networkmanager/team.jsx:158 pkg/networkmanager/bridge.jsx:100
+#: pkg/networkmanager/team.jsx:159 pkg/networkmanager/bridge.jsx:101
 msgid "Ports"
 msgstr "ポート"
 
@@ -5327,7 +5344,7 @@ msgstr "プリティホスト名"
 msgid "Previous boot"
 msgstr "以前のブート"
 
-#: pkg/networkmanager/bond.jsx:176 pkg/networkmanager/team.jsx:173
+#: pkg/networkmanager/bond.jsx:177 pkg/networkmanager/team.jsx:174
 msgid "Primary"
 msgstr "プライマリ"
 
@@ -5963,15 +5980,17 @@ msgstr "接続の復元"
 msgid ""
 "Results of the crash will be copied through $0 to $1 as $2, if kdump is "
 "properly configured."
-msgstr "kdump が正しく設定されている場合は、クラッシュの結果が $0 から $1 に $2 "
-"としてコピーされます。"
+msgstr ""
+"kdump が正しく設定されている場合は、クラッシュの結果が $0 から $1 に $2 とし"
+"てコピーされます。"
 
 #: pkg/kdump/kdump-view.jsx:275
 msgid ""
 "Results of the crash will be stored in $0 as $1, if kdump is properly "
 "configured."
-msgstr "kdump が正しく設定されている場合は、クラッシュの結果が $0 に $1 "
-"として保存されます。"
+msgstr ""
+"kdump が正しく設定されている場合は、クラッシュの結果が $0 に $1 として保存さ"
+"れます。"
 
 #: pkg/systemd/logs.jsx:263
 msgid "Resume"
@@ -6017,7 +6036,7 @@ msgstr "以下で実行"
 msgid "Run report"
 msgstr "レポートを実行する"
 
-#: pkg/networkmanager/team.jsx:161
+#: pkg/networkmanager/team.jsx:162
 msgid "Runner"
 msgstr "ランナー"
 
@@ -6090,19 +6109,19 @@ msgstr "SSH キーはパスではありません"
 msgid "SSH keys"
 msgstr "SSH キー"
 
-#: pkg/networkmanager/bridge.jsx:109
+#: pkg/networkmanager/bridge.jsx:110
 msgid "STP forward delay"
 msgstr "STP フォワード遅延"
 
-#: pkg/networkmanager/bridge.jsx:112
+#: pkg/networkmanager/bridge.jsx:113
 msgid "STP hello time"
 msgstr "STP Hello タイム"
 
-#: pkg/networkmanager/bridge.jsx:115
+#: pkg/networkmanager/bridge.jsx:116
 msgid "STP maximum message age"
 msgstr "STP メッセージ最大期間"
 
-#: pkg/networkmanager/bridge.jsx:106
+#: pkg/networkmanager/bridge.jsx:107
 msgid "STP priority"
 msgstr "STP 優先度"
 
@@ -6567,7 +6586,7 @@ msgstr "省スペースコンピューター"
 msgid "Spanning tree protocol"
 msgstr "スパニング ツリープロトコル"
 
-#: pkg/networkmanager/bridge.jsx:104
+#: pkg/networkmanager/bridge.jsx:105
 msgid "Spanning tree protocol (STP)"
 msgstr "スパニング ツリープロトコル (STP)"
 
@@ -6910,10 +6929,6 @@ msgstr "Team ポート"
 #: pkg/networkmanager/teamport.jsx:82
 msgid "Team port settings"
 msgstr "チームポート設定"
-
-#: pkg/networkmanager/team.jsx:154
-msgid "Team settings"
-msgstr "チーム設定"
 
 #: pkg/systemd/terminal.html:4 pkg/systemd/manifest.json:0
 msgid "Terminal"
@@ -8153,13 +8168,9 @@ msgstr "VDO プール"
 msgid "VLAN"
 msgstr "VLAN"
 
-#: pkg/networkmanager/vlan.jsx:104
+#: pkg/networkmanager/vlan.jsx:105
 msgid "VLAN ID"
 msgstr "VLAN ID"
-
-#: pkg/networkmanager/vlan.jsx:91
-msgid "VLAN settings"
-msgstr "VLAN 設定"
 
 #: pkg/systemd/overview-cards/realmd.jsx:385
 msgid "Validating address"

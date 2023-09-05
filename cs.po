@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-04 02:47+0000\n"
+"POT-Creation-Date: 2023-09-05 02:47+0000\n"
 "PO-Revision-Date: 2023-09-04 17:21+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://translate.fedoraproject.org/projects/cockpit/"
@@ -729,6 +729,7 @@ msgstr "Přizpůsobující se rozkládání přenosové zátěže odesílání"
 #: pkg/storaged/iscsi-panel.jsx:259 pkg/storaged/nfs-details.jsx:180
 #: pkg/storaged/vgroup-details.jsx:73 pkg/storaged/vgroup-details.jsx:124
 #: pkg/shell/credentials.jsx:184 pkg/shell/hosts_dialog.jsx:256
+#: pkg/networkmanager/dialogs-common.jsx:156
 #: pkg/users/authorized-keys-panel.js:68 pkg/systemd/timer-dialog.jsx:367
 msgid "Add"
 msgstr "Přidat"
@@ -746,7 +747,7 @@ msgstr "Přidat šifrování disku vázané na síť"
 msgid "Add Tang keyserver"
 msgstr "Přidat Tang server s klíči"
 
-#: pkg/networkmanager/network-main.jsx:144
+#: pkg/networkmanager/network-main.jsx:144 pkg/networkmanager/vlan.jsx:91
 msgid "Add VLAN"
 msgstr "Přidat VLAN"
 
@@ -762,11 +763,11 @@ msgstr "Přidat novou zónu"
 msgid "Add block devices"
 msgstr "Přidat blokové zařízení"
 
-#: pkg/networkmanager/network-main.jsx:141
+#: pkg/networkmanager/network-main.jsx:141 pkg/networkmanager/bond.jsx:135
 msgid "Add bond"
 msgstr "Přidat sloučení linek"
 
-#: pkg/networkmanager/network-main.jsx:143
+#: pkg/networkmanager/network-main.jsx:143 pkg/networkmanager/bridge.jsx:96
 msgid "Add bridge"
 msgstr "Přidat síťový most"
 
@@ -834,7 +835,7 @@ msgstr "Přidat služby do zóny $0"
 msgid "Add services to zone $0"
 msgstr "Přidat služby do zóny $0"
 
-#: pkg/networkmanager/network-main.jsx:142
+#: pkg/networkmanager/network-main.jsx:142 pkg/networkmanager/team.jsx:154
 msgid "Add team"
 msgstr "Přidat tým"
 
@@ -1037,7 +1038,7 @@ msgstr "Vzhled"
 msgid "Applications"
 msgstr "Aplikace"
 
-#: pkg/apps/application-list.jsx:159
+#: pkg/apps/application-list.jsx:163
 msgid "Applications list"
 msgstr "Seznam aplikací"
 
@@ -1253,7 +1254,7 @@ msgstr "Chybné"
 msgid "Bad setting"
 msgstr "Chybné nastavení"
 
-#: pkg/networkmanager/team.jsx:167
+#: pkg/networkmanager/team.jsx:168
 msgid "Balancer"
 msgstr "Rozkládání zátěže"
 
@@ -1306,10 +1307,6 @@ msgstr "Blokované"
 msgid "Bond"
 msgstr "Vazba"
 
-#: pkg/networkmanager/bond.jsx:135
-msgid "Bond settings"
-msgstr "Nastavení spřažení"
-
 #: pkg/systemd/logs.jsx:356
 msgid "Boot"
 msgstr "Zavedení systému"
@@ -1344,10 +1341,6 @@ msgstr "Port mostu"
 #: pkg/networkmanager/bridgeport.jsx:78
 msgid "Bridge port settings"
 msgstr "Nastavení portu mostu"
-
-#: pkg/networkmanager/bridge.jsx:96
-msgid "Bridge settings"
-msgstr "Nastavení mostu"
 
 # auto translated by TM merge from project: tvtime, version: 1.0.7, DocId:
 # tvtime
@@ -2685,6 +2678,24 @@ msgstr "Upravit soubor /etc/motd"
 msgid "Edit Tang keyserver"
 msgstr "Upravit Tang server s klíči"
 
+#: pkg/networkmanager/vlan.jsx:91
+#, fuzzy
+#| msgid "VLAN settings"
+msgid "Edit VLAN settings"
+msgstr "Nastavení VLAN"
+
+#: pkg/networkmanager/bond.jsx:135
+#, fuzzy
+#| msgid "Bond settings"
+msgid "Edit bond settings"
+msgstr "Nastavení spřažení"
+
+#: pkg/networkmanager/bridge.jsx:96
+#, fuzzy
+#| msgid "Bridge settings"
+msgid "Edit bridge settings"
+msgstr "Nastavení mostu"
+
 #: pkg/networkmanager/firewall.jsx:596
 msgid "Edit custom service in $0 zone"
 msgstr "Upravit uživatelsky určenou službu v zóně $0"
@@ -2716,6 +2727,12 @@ msgstr "Upravit službu"
 #: pkg/networkmanager/firewall.jsx:119
 msgid "Edit service $0"
 msgstr "Upravit službu $0"
+
+#: pkg/networkmanager/team.jsx:154
+#, fuzzy
+#| msgid "Team settings"
+msgid "Edit team settings"
+msgstr "Nastavení týmu"
 
 #: pkg/users/accounts-list.js:59
 msgid "Edit user"
@@ -3666,7 +3683,7 @@ msgstr "Čísla rozhraní"
 # po/firewalld
 #: pkg/networkmanager/network-main.jsx:179
 #: pkg/networkmanager/network-interface-members.jsx:203
-#: pkg/networkmanager/firewall.jsx:863 pkg/networkmanager/bond.jsx:164
+#: pkg/networkmanager/firewall.jsx:863 pkg/networkmanager/bond.jsx:165
 msgid "Interfaces"
 msgstr "Rozhraní"
 
@@ -3986,7 +4003,7 @@ msgstr ""
 msgid "Limits"
 msgstr "Limity"
 
-#: pkg/networkmanager/bond.jsx:200 pkg/networkmanager/team.jsx:194
+#: pkg/networkmanager/bond.jsx:201 pkg/networkmanager/team.jsx:195
 msgid "Link down delay"
 msgstr "Prodleva neaktivní linky"
 
@@ -3994,15 +4011,15 @@ msgstr "Prodleva neaktivní linky"
 msgid "Link local"
 msgstr "Lokální propoj"
 
-#: pkg/networkmanager/bond.jsx:187
+#: pkg/networkmanager/bond.jsx:188
 msgid "Link monitoring"
 msgstr "Monitorování linky"
 
-#: pkg/networkmanager/bond.jsx:197 pkg/networkmanager/team.jsx:191
+#: pkg/networkmanager/bond.jsx:198 pkg/networkmanager/team.jsx:192
 msgid "Link up delay"
 msgstr "Prodleva aktivní linky"
 
-#: pkg/networkmanager/team.jsx:184
+#: pkg/networkmanager/team.jsx:185
 msgid "Link watch"
 msgstr "Hlídání linky"
 
@@ -4238,7 +4255,7 @@ msgstr "Nízký desktop"
 msgid "Lunch box"
 msgstr "Kufříkový počítač"
 
-#: pkg/networkmanager/mac.jsx:73 pkg/networkmanager/bond.jsx:167
+#: pkg/networkmanager/mac.jsx:73 pkg/networkmanager/bond.jsx:168
 msgid "MAC"
 msgstr "MAC"
 
@@ -4467,7 +4484,7 @@ msgstr "Minut"
 msgid "Mitigations"
 msgstr "Zmírnění dopadu"
 
-#: pkg/networkmanager/bond.jsx:170
+#: pkg/networkmanager/bond.jsx:171
 msgid "Mode"
 msgstr "Režim"
 
@@ -4494,11 +4511,11 @@ msgstr "Upravuje se $target"
 msgid "Mondays"
 msgstr "Pondělky"
 
-#: pkg/networkmanager/bond.jsx:193
+#: pkg/networkmanager/bond.jsx:194
 msgid "Monitoring interval"
 msgstr "Interval monitorování"
 
-#: pkg/networkmanager/bond.jsx:204
+#: pkg/networkmanager/bond.jsx:205
 msgid "Monitoring targets"
 msgstr "Cíle monitorování"
 
@@ -4813,7 +4830,7 @@ msgstr "Nejsou nastavená žádná NFS připojení"
 msgid "No SELinux alerts."
 msgstr "Žádné výstrahy SELinux."
 
-#: pkg/apps/application-list.jsx:156
+#: pkg/apps/application-list.jsx:160
 msgid "No applications installed or available."
 msgstr "Nejsou nainstalované ani dostupné žádné aplikace."
 
@@ -5191,7 +5208,7 @@ msgstr "Mechanika optických disků"
 # auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId:
 # po/ipa
 #: pkg/storaged/crypto-tab.jsx:250 pkg/storaged/content-views.jsx:942
-#: pkg/storaged/stratis-panel.jsx:133 pkg/networkmanager/bridge.jsx:103
+#: pkg/storaged/stratis-panel.jsx:133 pkg/networkmanager/bridge.jsx:104
 #: pkg/users/account-details.js:277 pkg/sosreport/sosreport.jsx:317
 msgid "Options"
 msgstr "Přepínače"
@@ -5290,7 +5307,7 @@ msgstr "Název stránky"
 
 # auto translated by TM merge from project: anaconda, version: f25, DocId:
 # main
-#: pkg/networkmanager/vlan.jsx:94
+#: pkg/networkmanager/vlan.jsx:95
 msgid "Parent"
 msgstr "Nadřazené"
 
@@ -5550,11 +5567,11 @@ msgstr "Vyberte datum"
 msgid "Pin unit"
 msgstr "Připnout jednotku"
 
-#: pkg/networkmanager/team.jsx:199
+#: pkg/networkmanager/team.jsx:200
 msgid "Ping interval"
 msgstr "Interval pro ping"
 
-#: pkg/networkmanager/team.jsx:202
+#: pkg/networkmanager/team.jsx:203
 msgid "Ping target"
 msgstr "Cíl pro ping"
 
@@ -5627,7 +5644,7 @@ msgstr "Přenosný"
 # auto translated by TM merge from project: firewalld, version: master, DocId:
 # po/firewalld
 #: pkg/networkmanager/network-interface-members.jsx:203
-#: pkg/networkmanager/team.jsx:158 pkg/networkmanager/bridge.jsx:100
+#: pkg/networkmanager/team.jsx:159 pkg/networkmanager/bridge.jsx:101
 msgid "Ports"
 msgstr "Porty"
 
@@ -5665,7 +5682,7 @@ msgstr "Předchozí zavedení"
 
 # auto translated by TM merge from project: blivet-gui, version: f23-branch,
 # DocId: blivet-gui
-#: pkg/networkmanager/bond.jsx:176 pkg/networkmanager/team.jsx:173
+#: pkg/networkmanager/bond.jsx:177 pkg/networkmanager/team.jsx:174
 msgid "Primary"
 msgstr "Primární"
 
@@ -6376,7 +6393,7 @@ msgstr "Spustit na"
 msgid "Run report"
 msgstr "Vytvořit výkaz"
 
-#: pkg/networkmanager/team.jsx:161
+#: pkg/networkmanager/team.jsx:162
 msgid "Runner"
 msgstr "Spouštěč"
 
@@ -6453,19 +6470,19 @@ msgstr "V kolonce ssh klíč není vyplněné jeho umístění"
 msgid "SSH keys"
 msgstr "SSH klíče"
 
-#: pkg/networkmanager/bridge.jsx:109
+#: pkg/networkmanager/bridge.jsx:110
 msgid "STP forward delay"
 msgstr "STP prodleva přeposílání"
 
-#: pkg/networkmanager/bridge.jsx:112
+#: pkg/networkmanager/bridge.jsx:113
 msgid "STP hello time"
 msgstr "STP uvítací doba"
 
-#: pkg/networkmanager/bridge.jsx:115
+#: pkg/networkmanager/bridge.jsx:116
 msgid "STP maximum message age"
 msgstr "STP maximální stáří zprávy"
 
-#: pkg/networkmanager/bridge.jsx:106
+#: pkg/networkmanager/bridge.jsx:107
 msgid "STP priority"
 msgstr "STP priorita"
 
@@ -6959,7 +6976,7 @@ msgstr "Prostorově úsporný počítač"
 msgid "Spanning tree protocol"
 msgstr "Spanning tree protocol"
 
-#: pkg/networkmanager/bridge.jsx:104
+#: pkg/networkmanager/bridge.jsx:105
 msgid "Spanning tree protocol (STP)"
 msgstr "Spanning tree protocol (STP)"
 
@@ -7320,10 +7337,6 @@ msgstr "Port týmu"
 #: pkg/networkmanager/teamport.jsx:82
 msgid "Team port settings"
 msgstr "Nastavení portu týmu"
-
-#: pkg/networkmanager/team.jsx:154
-msgid "Team settings"
-msgstr "Nastavení týmu"
 
 #: pkg/systemd/terminal.html:4 pkg/systemd/manifest.json:0
 msgid "Terminal"
@@ -8598,13 +8611,9 @@ msgstr "VDO fond"
 msgid "VLAN"
 msgstr "VLAN"
 
-#: pkg/networkmanager/vlan.jsx:104
+#: pkg/networkmanager/vlan.jsx:105
 msgid "VLAN ID"
 msgstr "Identif. VLAN"
-
-#: pkg/networkmanager/vlan.jsx:91
-msgid "VLAN settings"
-msgstr "Nastavení VLAN"
 
 #: pkg/systemd/overview-cards/realmd.jsx:385
 msgid "Validating address"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-04 02:47+0000\n"
+"POT-Creation-Date: 2023-09-05 02:47+0000\n"
 "PO-Revision-Date: 2023-09-04 17:21+0000\n"
 "Last-Translator: Luna Jernberg <bittin@reimu.nl>\n"
 "Language-Team: Swedish <https://translate.fedoraproject.org/projects/cockpit/"
@@ -693,6 +693,7 @@ msgstr "Adaptiv lastbalansering av sändning"
 #: pkg/storaged/iscsi-panel.jsx:259 pkg/storaged/nfs-details.jsx:180
 #: pkg/storaged/vgroup-details.jsx:73 pkg/storaged/vgroup-details.jsx:124
 #: pkg/shell/credentials.jsx:184 pkg/shell/hosts_dialog.jsx:256
+#: pkg/networkmanager/dialogs-common.jsx:156
 #: pkg/users/authorized-keys-panel.js:68 pkg/systemd/timer-dialog.jsx:367
 msgid "Add"
 msgstr "Lägg till"
@@ -710,7 +711,7 @@ msgstr "Lägg till nätverksbunden diskkryptering"
 msgid "Add Tang keyserver"
 msgstr "Lägg till Tang-nyckelserver"
 
-#: pkg/networkmanager/network-main.jsx:144
+#: pkg/networkmanager/network-main.jsx:144 pkg/networkmanager/vlan.jsx:91
 msgid "Add VLAN"
 msgstr "Lägg till VLAN"
 
@@ -726,11 +727,11 @@ msgstr "Lägg till zon"
 msgid "Add block devices"
 msgstr "Lägg till blockenheter"
 
-#: pkg/networkmanager/network-main.jsx:141
+#: pkg/networkmanager/network-main.jsx:141 pkg/networkmanager/bond.jsx:135
 msgid "Add bond"
 msgstr "Lägg till bindning"
 
-#: pkg/networkmanager/network-main.jsx:143
+#: pkg/networkmanager/network-main.jsx:143 pkg/networkmanager/bridge.jsx:96
 msgid "Add bridge"
 msgstr "Lägg till brygga"
 
@@ -798,7 +799,7 @@ msgstr "Lägg till tjänster till zonen $0"
 msgid "Add services to zone $0"
 msgstr "Lägg till tjänster till zon $0"
 
-#: pkg/networkmanager/network-main.jsx:142
+#: pkg/networkmanager/network-main.jsx:142 pkg/networkmanager/team.jsx:154
 msgid "Add team"
 msgstr "Lägg till team"
 
@@ -995,7 +996,7 @@ msgstr "Utseende"
 msgid "Applications"
 msgstr "Program"
 
-#: pkg/apps/application-list.jsx:159
+#: pkg/apps/application-list.jsx:163
 msgid "Applications list"
 msgstr "Programlista"
 
@@ -1204,7 +1205,7 @@ msgstr "Dålig"
 msgid "Bad setting"
 msgstr "Dålig inställning"
 
-#: pkg/networkmanager/team.jsx:167
+#: pkg/networkmanager/team.jsx:168
 msgid "Balancer"
 msgstr "Balanserare"
 
@@ -1255,10 +1256,6 @@ msgstr "Blockerat"
 msgid "Bond"
 msgstr "Binda"
 
-#: pkg/networkmanager/bond.jsx:135
-msgid "Bond settings"
-msgstr "Bindinställningar"
-
 #: pkg/systemd/logs.jsx:356
 msgid "Boot"
 msgstr "Start"
@@ -1290,10 +1287,6 @@ msgstr "Bryggport"
 #: pkg/networkmanager/bridgeport.jsx:78
 msgid "Bridge port settings"
 msgstr "Bryggportinställningar"
-
-#: pkg/networkmanager/bridge.jsx:96
-msgid "Bridge settings"
-msgstr "Brygginställningar"
 
 #: pkg/networkmanager/bond.jsx:46 pkg/networkmanager/team.jsx:44
 msgid "Broadcast"
@@ -2567,6 +2560,24 @@ msgstr "Redigera /etc/motd"
 msgid "Edit Tang keyserver"
 msgstr "Redigera Tang-nyckelserver"
 
+#: pkg/networkmanager/vlan.jsx:91
+#, fuzzy
+#| msgid "VLAN settings"
+msgid "Edit VLAN settings"
+msgstr "VLAN-inställningar"
+
+#: pkg/networkmanager/bond.jsx:135
+#, fuzzy
+#| msgid "Bond settings"
+msgid "Edit bond settings"
+msgstr "Bindinställningar"
+
+#: pkg/networkmanager/bridge.jsx:96
+#, fuzzy
+#| msgid "Bridge settings"
+msgid "Edit bridge settings"
+msgstr "Brygginställningar"
+
 #: pkg/networkmanager/firewall.jsx:596
 msgid "Edit custom service in $0 zone"
 msgstr "Redigera anpassad tjänst i $0 zon"
@@ -2594,6 +2605,12 @@ msgstr "Redigera tjänst"
 #: pkg/networkmanager/firewall.jsx:119
 msgid "Edit service $0"
 msgstr "Redigera tjänst $0"
+
+#: pkg/networkmanager/team.jsx:154
+#, fuzzy
+#| msgid "Team settings"
+msgid "Edit team settings"
+msgstr "Team-inställningar"
 
 #: pkg/users/accounts-list.js:59
 msgid "Edit user"
@@ -3471,7 +3488,7 @@ msgstr "Gränssnittsmedlemmar"
 
 #: pkg/networkmanager/network-main.jsx:179
 #: pkg/networkmanager/network-interface-members.jsx:203
-#: pkg/networkmanager/firewall.jsx:863 pkg/networkmanager/bond.jsx:164
+#: pkg/networkmanager/firewall.jsx:863 pkg/networkmanager/bond.jsx:165
 msgid "Interfaces"
 msgstr "Gränssnitt"
 
@@ -3777,7 +3794,7 @@ msgstr ""
 msgid "Limits"
 msgstr "Begränsningar"
 
-#: pkg/networkmanager/bond.jsx:200 pkg/networkmanager/team.jsx:194
+#: pkg/networkmanager/bond.jsx:201 pkg/networkmanager/team.jsx:195
 msgid "Link down delay"
 msgstr "Fördröjning när länk nere"
 
@@ -3785,15 +3802,15 @@ msgstr "Fördröjning när länk nere"
 msgid "Link local"
 msgstr "Länklokal"
 
-#: pkg/networkmanager/bond.jsx:187
+#: pkg/networkmanager/bond.jsx:188
 msgid "Link monitoring"
 msgstr "Länkövervakning"
 
-#: pkg/networkmanager/bond.jsx:197 pkg/networkmanager/team.jsx:191
+#: pkg/networkmanager/bond.jsx:198 pkg/networkmanager/team.jsx:192
 msgid "Link up delay"
 msgstr "Fördröjning när länk uppe"
 
-#: pkg/networkmanager/team.jsx:184
+#: pkg/networkmanager/team.jsx:185
 msgid "Link watch"
 msgstr "Länkbetraktelse"
 
@@ -4015,7 +4032,7 @@ msgstr "Lågprofilskrivbord"
 msgid "Lunch box"
 msgstr "Lunchlåda"
 
-#: pkg/networkmanager/mac.jsx:73 pkg/networkmanager/bond.jsx:167
+#: pkg/networkmanager/mac.jsx:73 pkg/networkmanager/bond.jsx:168
 msgid "MAC"
 msgstr "MAC"
 
@@ -4229,7 +4246,7 @@ msgstr "Minuter"
 msgid "Mitigations"
 msgstr "Rättningar"
 
-#: pkg/networkmanager/bond.jsx:170
+#: pkg/networkmanager/bond.jsx:171
 msgid "Mode"
 msgstr "Läge"
 
@@ -4252,11 +4269,11 @@ msgstr "Modifiera $target"
 msgid "Mondays"
 msgstr "Måndagar"
 
-#: pkg/networkmanager/bond.jsx:193
+#: pkg/networkmanager/bond.jsx:194
 msgid "Monitoring interval"
 msgstr "Övervakningsintervall"
 
-#: pkg/networkmanager/bond.jsx:204
+#: pkg/networkmanager/bond.jsx:205
 msgid "Monitoring targets"
 msgstr "Övervakningsmål"
 
@@ -4557,7 +4574,7 @@ msgstr "Inga NFS-monteringar uppsatta"
 msgid "No SELinux alerts."
 msgstr "Inga SELinux-larm."
 
-#: pkg/apps/application-list.jsx:156
+#: pkg/apps/application-list.jsx:160
 msgid "No applications installed or available."
 msgstr "Inga program installerade eller tillgängliga."
 
@@ -4921,7 +4938,7 @@ msgid "Optical drive"
 msgstr "Optisk enhet"
 
 #: pkg/storaged/crypto-tab.jsx:250 pkg/storaged/content-views.jsx:942
-#: pkg/storaged/stratis-panel.jsx:133 pkg/networkmanager/bridge.jsx:103
+#: pkg/storaged/stratis-panel.jsx:133 pkg/networkmanager/bridge.jsx:104
 #: pkg/users/account-details.js:277 pkg/sosreport/sosreport.jsx:317
 msgid "Options"
 msgstr "Alternativ"
@@ -5008,7 +5025,7 @@ msgstr "Paket"
 msgid "Page name"
 msgstr "Sidnamn"
 
-#: pkg/networkmanager/vlan.jsx:94
+#: pkg/networkmanager/vlan.jsx:95
 msgid "Parent"
 msgstr "Förälder"
 
@@ -5241,11 +5258,11 @@ msgstr "Välj datum"
 msgid "Pin unit"
 msgstr "Fäst enhet"
 
-#: pkg/networkmanager/team.jsx:199
+#: pkg/networkmanager/team.jsx:200
 msgid "Ping interval"
 msgstr "Ping-intervall"
 
-#: pkg/networkmanager/team.jsx:202
+#: pkg/networkmanager/team.jsx:203
 msgid "Ping target"
 msgstr "Ping-mål"
 
@@ -5310,7 +5327,7 @@ msgid "Portable"
 msgstr "Bärbar"
 
 #: pkg/networkmanager/network-interface-members.jsx:203
-#: pkg/networkmanager/team.jsx:158 pkg/networkmanager/bridge.jsx:100
+#: pkg/networkmanager/team.jsx:159 pkg/networkmanager/bridge.jsx:101
 msgid "Ports"
 msgstr "Portar"
 
@@ -5343,7 +5360,7 @@ msgstr "Snyggt värdnamn"
 msgid "Previous boot"
 msgstr "Tidigare uppstart"
 
-#: pkg/networkmanager/bond.jsx:176 pkg/networkmanager/team.jsx:173
+#: pkg/networkmanager/bond.jsx:177 pkg/networkmanager/team.jsx:174
 msgid "Primary"
 msgstr "Primär"
 
@@ -6037,7 +6054,7 @@ msgstr "Kör på"
 msgid "Run report"
 msgstr "Kör en rapport"
 
-#: pkg/networkmanager/team.jsx:161
+#: pkg/networkmanager/team.jsx:162
 msgid "Runner"
 msgstr "Körare"
 
@@ -6112,19 +6129,19 @@ msgstr "SSH-nyckel är inte en sökväg"
 msgid "SSH keys"
 msgstr "SSH-nycklar"
 
-#: pkg/networkmanager/bridge.jsx:109
+#: pkg/networkmanager/bridge.jsx:110
 msgid "STP forward delay"
 msgstr "Fördröjning av STP-vidarebefordran"
 
-#: pkg/networkmanager/bridge.jsx:112
+#: pkg/networkmanager/bridge.jsx:113
 msgid "STP hello time"
 msgstr "STP Hello-tid"
 
-#: pkg/networkmanager/bridge.jsx:115
+#: pkg/networkmanager/bridge.jsx:116
 msgid "STP maximum message age"
 msgstr "STP maximal meddelandeålder"
 
-#: pkg/networkmanager/bridge.jsx:106
+#: pkg/networkmanager/bridge.jsx:107
 msgid "STP priority"
 msgstr "STP-prioritet"
 
@@ -6596,7 +6613,7 @@ msgstr "Utrymmessparande dator"
 msgid "Spanning tree protocol"
 msgstr "Uppspännande-träd-protokollet"
 
-#: pkg/networkmanager/bridge.jsx:104
+#: pkg/networkmanager/bridge.jsx:105
 msgid "Spanning tree protocol (STP)"
 msgstr "Uppspännande-träd-protokollet (STP)"
 
@@ -6937,10 +6954,6 @@ msgstr "Team-port"
 #: pkg/networkmanager/teamport.jsx:82
 msgid "Team port settings"
 msgstr "Team-portsinställningar"
-
-#: pkg/networkmanager/team.jsx:154
-msgid "Team settings"
-msgstr "Team-inställningar"
 
 #: pkg/systemd/terminal.html:4 pkg/systemd/manifest.json:0
 msgid "Terminal"
@@ -8177,13 +8190,9 @@ msgstr "VDO Pool"
 msgid "VLAN"
 msgstr "VLAN"
 
-#: pkg/networkmanager/vlan.jsx:104
+#: pkg/networkmanager/vlan.jsx:105
 msgid "VLAN ID"
 msgstr "VLAN-ID"
-
-#: pkg/networkmanager/vlan.jsx:91
-msgid "VLAN settings"
-msgstr "VLAN-inställningar"
 
 #: pkg/systemd/overview-cards/realmd.jsx:385
 msgid "Validating address"

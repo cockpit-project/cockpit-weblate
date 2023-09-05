@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-04 02:47+0000\n"
+"POT-Creation-Date: 2023-09-05 02:47+0000\n"
 "PO-Revision-Date: 2023-08-04 18:21+0000\n"
 "Last-Translator: Ville-Pekka Vainio <vpvainio@iki.fi>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/cockpit/"
@@ -698,6 +698,7 @@ msgstr "Mukautuva lähtevän kuorman tasaus"
 #: pkg/storaged/iscsi-panel.jsx:259 pkg/storaged/nfs-details.jsx:180
 #: pkg/storaged/vgroup-details.jsx:73 pkg/storaged/vgroup-details.jsx:124
 #: pkg/shell/credentials.jsx:184 pkg/shell/hosts_dialog.jsx:256
+#: pkg/networkmanager/dialogs-common.jsx:156
 #: pkg/users/authorized-keys-panel.js:68 pkg/systemd/timer-dialog.jsx:367
 msgid "Add"
 msgstr "Lisää"
@@ -717,7 +718,7 @@ msgstr "Lisää verkkoon sidottu levyn salaus"
 msgid "Add Tang keyserver"
 msgstr "Tang-avainpalvelin"
 
-#: pkg/networkmanager/network-main.jsx:144
+#: pkg/networkmanager/network-main.jsx:144 pkg/networkmanager/vlan.jsx:91
 msgid "Add VLAN"
 msgstr "Lisää VLAN"
 
@@ -735,11 +736,11 @@ msgstr "Lisää uusi vyöhyke"
 msgid "Add block devices"
 msgstr "Lisää lohkolaitteita"
 
-#: pkg/networkmanager/network-main.jsx:141
+#: pkg/networkmanager/network-main.jsx:141 pkg/networkmanager/bond.jsx:135
 msgid "Add bond"
 msgstr "Lisää sidos"
 
-#: pkg/networkmanager/network-main.jsx:143
+#: pkg/networkmanager/network-main.jsx:143 pkg/networkmanager/bridge.jsx:96
 msgid "Add bridge"
 msgstr "Lisää silta"
 
@@ -811,7 +812,7 @@ msgstr "Lisää palveluja vyöhykkeeseen $0"
 msgid "Add services to zone $0"
 msgstr "Lisää palveluja vyöhykkeeseen $0"
 
-#: pkg/networkmanager/network-main.jsx:142
+#: pkg/networkmanager/network-main.jsx:142 pkg/networkmanager/team.jsx:154
 msgid "Add team"
 msgstr "Lisää joukkue"
 
@@ -1015,7 +1016,7 @@ msgstr "Ulkomuoto"
 msgid "Applications"
 msgstr "Sovellukset"
 
-#: pkg/apps/application-list.jsx:159
+#: pkg/apps/application-list.jsx:163
 msgid "Applications list"
 msgstr "Sovellusten luettelo"
 
@@ -1224,7 +1225,7 @@ msgstr "Huono"
 msgid "Bad setting"
 msgstr "Huono asetus"
 
-#: pkg/networkmanager/team.jsx:167
+#: pkg/networkmanager/team.jsx:168
 msgid "Balancer"
 msgstr "Tasapainottaja"
 
@@ -1277,10 +1278,6 @@ msgstr "Estetty"
 msgid "Bond"
 msgstr "Side"
 
-#: pkg/networkmanager/bond.jsx:135
-msgid "Bond settings"
-msgstr "Sidoksen asetukset"
-
 #: pkg/systemd/logs.jsx:356
 msgid "Boot"
 msgstr "Käynnistys"
@@ -1312,10 +1309,6 @@ msgstr "Sillan portti"
 #: pkg/networkmanager/bridgeport.jsx:78
 msgid "Bridge port settings"
 msgstr "Sillan porttiasetukset"
-
-#: pkg/networkmanager/bridge.jsx:96
-msgid "Bridge settings"
-msgstr "Sillan asetukset"
 
 #: pkg/networkmanager/bond.jsx:46 pkg/networkmanager/team.jsx:44
 msgid "Broadcast"
@@ -2592,6 +2585,24 @@ msgstr "Muokkaa /etc/motd"
 msgid "Edit Tang keyserver"
 msgstr "Muokkaa Tang-avainpalvelinta"
 
+#: pkg/networkmanager/vlan.jsx:91
+#, fuzzy
+#| msgid "VLAN settings"
+msgid "Edit VLAN settings"
+msgstr "VLAN-asetukset"
+
+#: pkg/networkmanager/bond.jsx:135
+#, fuzzy
+#| msgid "Bond settings"
+msgid "Edit bond settings"
+msgstr "Sidoksen asetukset"
+
+#: pkg/networkmanager/bridge.jsx:96
+#, fuzzy
+#| msgid "Bridge settings"
+msgid "Edit bridge settings"
+msgstr "Sillan asetukset"
+
 #: pkg/networkmanager/firewall.jsx:596
 msgid "Edit custom service in $0 zone"
 msgstr "Muokkaa mukautettua palvelua $0-vyöhykkeellä"
@@ -2619,6 +2630,12 @@ msgstr "Muokkaa palvelua"
 #: pkg/networkmanager/firewall.jsx:119
 msgid "Edit service $0"
 msgstr "Muokkaa palvelua $0"
+
+#: pkg/networkmanager/team.jsx:154
+#, fuzzy
+#| msgid "Team settings"
+msgid "Edit team settings"
+msgstr "Joukkueen asetukset"
 
 #: pkg/users/accounts-list.js:59
 msgid "Edit user"
@@ -3504,7 +3521,7 @@ msgstr "Liitännän jäsenet"
 
 #: pkg/networkmanager/network-main.jsx:179
 #: pkg/networkmanager/network-interface-members.jsx:203
-#: pkg/networkmanager/firewall.jsx:863 pkg/networkmanager/bond.jsx:164
+#: pkg/networkmanager/firewall.jsx:863 pkg/networkmanager/bond.jsx:165
 msgid "Interfaces"
 msgstr "Liitännät"
 
@@ -3812,7 +3829,7 @@ msgstr ""
 msgid "Limits"
 msgstr "Rajat"
 
-#: pkg/networkmanager/bond.jsx:200 pkg/networkmanager/team.jsx:194
+#: pkg/networkmanager/bond.jsx:201 pkg/networkmanager/team.jsx:195
 msgid "Link down delay"
 msgstr "Linkki alas -viive"
 
@@ -3820,15 +3837,15 @@ msgstr "Linkki alas -viive"
 msgid "Link local"
 msgstr "Yksityisosoite"
 
-#: pkg/networkmanager/bond.jsx:187
+#: pkg/networkmanager/bond.jsx:188
 msgid "Link monitoring"
 msgstr "Linkin valvonta"
 
-#: pkg/networkmanager/bond.jsx:197 pkg/networkmanager/team.jsx:191
+#: pkg/networkmanager/bond.jsx:198 pkg/networkmanager/team.jsx:192
 msgid "Link up delay"
 msgstr "Linkki ylös -viive"
 
-#: pkg/networkmanager/team.jsx:184
+#: pkg/networkmanager/team.jsx:185
 msgid "Link watch"
 msgstr "Linkin seuranta"
 
@@ -4050,7 +4067,7 @@ msgstr "Matalan tason työpöytä"
 msgid "Lunch box"
 msgstr "Eväslaatikko"
 
-#: pkg/networkmanager/mac.jsx:73 pkg/networkmanager/bond.jsx:167
+#: pkg/networkmanager/mac.jsx:73 pkg/networkmanager/bond.jsx:168
 msgid "MAC"
 msgstr "MAC"
 
@@ -4266,7 +4283,7 @@ msgstr "Minuutit"
 msgid "Mitigations"
 msgstr "Lievennykset"
 
-#: pkg/networkmanager/bond.jsx:170
+#: pkg/networkmanager/bond.jsx:171
 msgid "Mode"
 msgstr "Tila"
 
@@ -4289,11 +4306,11 @@ msgstr "Muokataan $target"
 msgid "Mondays"
 msgstr "Maanantai"
 
-#: pkg/networkmanager/bond.jsx:193
+#: pkg/networkmanager/bond.jsx:194
 msgid "Monitoring interval"
 msgstr "Monitorointiväli"
 
-#: pkg/networkmanager/bond.jsx:204
+#: pkg/networkmanager/bond.jsx:205
 msgid "Monitoring targets"
 msgstr "Kohteiden seuranta"
 
@@ -4596,7 +4613,7 @@ msgstr "Yhtään NFS-liitosta ei ole asetettu"
 msgid "No SELinux alerts."
 msgstr "Ei SELinux-hälytyksiä."
 
-#: pkg/apps/application-list.jsx:156
+#: pkg/apps/application-list.jsx:160
 msgid "No applications installed or available."
 msgstr "Ei sovelluksia asennettuna tai saatavilla."
 
@@ -4965,7 +4982,7 @@ msgid "Optical drive"
 msgstr "Optinen asema"
 
 #: pkg/storaged/crypto-tab.jsx:250 pkg/storaged/content-views.jsx:942
-#: pkg/storaged/stratis-panel.jsx:133 pkg/networkmanager/bridge.jsx:103
+#: pkg/storaged/stratis-panel.jsx:133 pkg/networkmanager/bridge.jsx:104
 #: pkg/users/account-details.js:277 pkg/sosreport/sosreport.jsx:317
 msgid "Options"
 msgstr "Valinnat"
@@ -5052,7 +5069,7 @@ msgstr "Paketit"
 msgid "Page name"
 msgstr "Sivun nimi"
 
-#: pkg/networkmanager/vlan.jsx:94
+#: pkg/networkmanager/vlan.jsx:95
 msgid "Parent"
 msgstr "Vanhemmat"
 
@@ -5288,11 +5305,11 @@ msgstr "Valitse päivämäärä"
 msgid "Pin unit"
 msgstr "Merkitse yksikkö"
 
-#: pkg/networkmanager/team.jsx:199
+#: pkg/networkmanager/team.jsx:200
 msgid "Ping interval"
 msgstr "Ping-väli"
 
-#: pkg/networkmanager/team.jsx:202
+#: pkg/networkmanager/team.jsx:203
 msgid "Ping target"
 msgstr "Pingin kohteet"
 
@@ -5359,7 +5376,7 @@ msgid "Portable"
 msgstr "Kannettava"
 
 #: pkg/networkmanager/network-interface-members.jsx:203
-#: pkg/networkmanager/team.jsx:158 pkg/networkmanager/bridge.jsx:100
+#: pkg/networkmanager/team.jsx:159 pkg/networkmanager/bridge.jsx:101
 msgid "Ports"
 msgstr "Portit"
 
@@ -5392,7 +5409,7 @@ msgstr "Tyylikäs konenimi"
 msgid "Previous boot"
 msgstr "Edellinen käynnistys"
 
-#: pkg/networkmanager/bond.jsx:176 pkg/networkmanager/team.jsx:173
+#: pkg/networkmanager/bond.jsx:177 pkg/networkmanager/team.jsx:174
 msgid "Primary"
 msgstr "Ensisijainen"
 
@@ -6086,7 +6103,7 @@ msgstr "Aja kohteessa"
 msgid "Run report"
 msgstr "Tee raportti"
 
-#: pkg/networkmanager/team.jsx:161
+#: pkg/networkmanager/team.jsx:162
 msgid "Runner"
 msgstr "Suorittaja"
 
@@ -6161,19 +6178,19 @@ msgstr "SSH-avain ei ole polku"
 msgid "SSH keys"
 msgstr "SSH-avaimet"
 
-#: pkg/networkmanager/bridge.jsx:109
+#: pkg/networkmanager/bridge.jsx:110
 msgid "STP forward delay"
 msgstr "STP-ohjauksen viive"
 
-#: pkg/networkmanager/bridge.jsx:112
+#: pkg/networkmanager/bridge.jsx:113
 msgid "STP hello time"
 msgstr "STP-hello-aika"
 
-#: pkg/networkmanager/bridge.jsx:115
+#: pkg/networkmanager/bridge.jsx:116
 msgid "STP maximum message age"
 msgstr "STP-viestin enimmäisikä"
 
-#: pkg/networkmanager/bridge.jsx:106
+#: pkg/networkmanager/bridge.jsx:107
 msgid "STP priority"
 msgstr "STP:n prioriteetti"
 
@@ -6641,7 +6658,7 @@ msgstr "Tilaa säästävä tietokone"
 msgid "Spanning tree protocol"
 msgstr "Spanning tree -protokolla"
 
-#: pkg/networkmanager/bridge.jsx:104
+#: pkg/networkmanager/bridge.jsx:105
 msgid "Spanning tree protocol (STP)"
 msgstr "Spanning tree -protokolla (STP)"
 
@@ -6986,10 +7003,6 @@ msgstr "Joukkueen portti"
 #: pkg/networkmanager/teamport.jsx:82
 msgid "Team port settings"
 msgstr "Joukkueen portin asetukset"
-
-#: pkg/networkmanager/team.jsx:154
-msgid "Team settings"
-msgstr "Joukkueen asetukset"
 
 #: pkg/systemd/terminal.html:4 pkg/systemd/manifest.json:0
 msgid "Terminal"
@@ -8221,13 +8234,9 @@ msgstr "VDO-varanto"
 msgid "VLAN"
 msgstr "VLAN"
 
-#: pkg/networkmanager/vlan.jsx:104
+#: pkg/networkmanager/vlan.jsx:105
 msgid "VLAN ID"
 msgstr "VLAN-tunnus"
-
-#: pkg/networkmanager/vlan.jsx:91
-msgid "VLAN settings"
-msgstr "VLAN-asetukset"
 
 #: pkg/systemd/overview-cards/realmd.jsx:385
 msgid "Validating address"

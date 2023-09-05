@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-04 02:47+0000\n"
+"POT-Creation-Date: 2023-09-05 02:47+0000\n"
 "PO-Revision-Date: 2023-09-03 12:07+0000\n"
 "Last-Translator: yangyangdaji <1504305527@qq.com>\n"
 "Language-Team: Chinese (Traditional) <https://translate.fedoraproject.org/"
@@ -723,6 +723,7 @@ msgstr "適應性傳輸負載平衡"
 #: pkg/storaged/iscsi-panel.jsx:259 pkg/storaged/nfs-details.jsx:180
 #: pkg/storaged/vgroup-details.jsx:73 pkg/storaged/vgroup-details.jsx:124
 #: pkg/shell/credentials.jsx:184 pkg/shell/hosts_dialog.jsx:256
+#: pkg/networkmanager/dialogs-common.jsx:156
 #: pkg/users/authorized-keys-panel.js:68 pkg/systemd/timer-dialog.jsx:367
 msgid "Add"
 msgstr "加入"
@@ -742,7 +743,7 @@ msgstr ""
 msgid "Add Tang keyserver"
 msgstr "唐鑰匙伺服器"
 
-#: pkg/networkmanager/network-main.jsx:144
+#: pkg/networkmanager/network-main.jsx:144 pkg/networkmanager/vlan.jsx:91
 msgid "Add VLAN"
 msgstr "新增虛擬網路"
 
@@ -762,11 +763,11 @@ msgstr "新增新的區域"
 msgid "Add block devices"
 msgstr "$0 區塊裝置"
 
-#: pkg/networkmanager/network-main.jsx:141
+#: pkg/networkmanager/network-main.jsx:141 pkg/networkmanager/bond.jsx:135
 msgid "Add bond"
 msgstr "新增債券"
 
-#: pkg/networkmanager/network-main.jsx:143
+#: pkg/networkmanager/network-main.jsx:143 pkg/networkmanager/bridge.jsx:96
 msgid "Add bridge"
 msgstr "新增橋接"
 
@@ -845,7 +846,7 @@ msgstr "新增服務到 $0 區域"
 msgid "Add services to zone $0"
 msgstr "新增服務到 $0 區域"
 
-#: pkg/networkmanager/network-main.jsx:142
+#: pkg/networkmanager/network-main.jsx:142 pkg/networkmanager/team.jsx:154
 msgid "Add team"
 msgstr "新增團隊"
 
@@ -1048,7 +1049,7 @@ msgstr "配色："
 msgid "Applications"
 msgstr "應用程式"
 
-#: pkg/apps/application-list.jsx:159
+#: pkg/apps/application-list.jsx:163
 #, fuzzy
 msgid "Applications list"
 msgstr "應用程式"
@@ -1283,7 +1284,7 @@ msgstr "刀鋒"
 msgid "Bad setting"
 msgstr "橋設置"
 
-#: pkg/networkmanager/team.jsx:167
+#: pkg/networkmanager/team.jsx:168
 msgid "Balancer"
 msgstr "平衡器"
 
@@ -1336,12 +1337,6 @@ msgstr "阻止"
 msgid "Bond"
 msgstr "綁定網路"
 
-#: pkg/networkmanager/bond.jsx:135
-#, fuzzy
-#| msgid "Bridge settings"
-msgid "Bond settings"
-msgstr "橋設置"
-
 #: pkg/systemd/logs.jsx:356
 msgid "Boot"
 msgstr ""
@@ -1371,10 +1366,6 @@ msgstr "橋接"
 #: pkg/networkmanager/bridgeport.jsx:78
 msgid "Bridge port settings"
 msgstr "網橋端口設置"
-
-#: pkg/networkmanager/bridge.jsx:96
-msgid "Bridge settings"
-msgstr "橋設置"
 
 #: pkg/networkmanager/bond.jsx:46 pkg/networkmanager/team.jsx:44
 msgid "Broadcast"
@@ -2767,6 +2758,24 @@ msgstr "編輯"
 msgid "Edit Tang keyserver"
 msgstr "編輯Tang keyserver"
 
+#: pkg/networkmanager/vlan.jsx:91
+#, fuzzy
+#| msgid "VLAN settings"
+msgid "Edit VLAN settings"
+msgstr "VLAN設置"
+
+#: pkg/networkmanager/bond.jsx:135
+#, fuzzy
+#| msgid "Bridge settings"
+msgid "Edit bond settings"
+msgstr "橋設置"
+
+#: pkg/networkmanager/bridge.jsx:96
+#, fuzzy
+#| msgid "Bridge settings"
+msgid "Edit bridge settings"
+msgstr "橋設置"
+
 #: pkg/networkmanager/firewall.jsx:596
 #, fuzzy
 #| msgid "Add services to $0 zone"
@@ -2802,6 +2811,12 @@ msgstr "編輯主機"
 #| msgid "Edit server"
 msgid "Edit service $0"
 msgstr "編輯主機"
+
+#: pkg/networkmanager/team.jsx:154
+#, fuzzy
+#| msgid "Team settings"
+msgid "Edit team settings"
+msgstr "團隊設置"
 
 #: pkg/users/accounts-list.js:59
 #, fuzzy
@@ -3784,7 +3799,7 @@ msgstr "介面"
 
 #: pkg/networkmanager/network-main.jsx:179
 #: pkg/networkmanager/network-interface-members.jsx:203
-#: pkg/networkmanager/firewall.jsx:863 pkg/networkmanager/bond.jsx:164
+#: pkg/networkmanager/firewall.jsx:863 pkg/networkmanager/bond.jsx:165
 msgid "Interfaces"
 msgstr "介面"
 
@@ -4124,7 +4139,7 @@ msgstr ""
 msgid "Limits"
 msgstr ""
 
-#: pkg/networkmanager/bond.jsx:200 pkg/networkmanager/team.jsx:194
+#: pkg/networkmanager/bond.jsx:201 pkg/networkmanager/team.jsx:195
 msgid "Link down delay"
 msgstr "斷線延遲"
 
@@ -4132,15 +4147,15 @@ msgstr "斷線延遲"
 msgid "Link local"
 msgstr "鏈接本地"
 
-#: pkg/networkmanager/bond.jsx:187
+#: pkg/networkmanager/bond.jsx:188
 msgid "Link monitoring"
 msgstr "鏈接監控"
 
-#: pkg/networkmanager/bond.jsx:197 pkg/networkmanager/team.jsx:191
+#: pkg/networkmanager/bond.jsx:198 pkg/networkmanager/team.jsx:192
 msgid "Link up delay"
 msgstr "連線延遲"
 
-#: pkg/networkmanager/team.jsx:184
+#: pkg/networkmanager/team.jsx:185
 msgid "Link watch"
 msgstr "Link watch"
 
@@ -4400,7 +4415,7 @@ msgstr "午餐盒"
 
 # translation auto-copied from project Satellite6 Hammer CLI Foreman, version
 # 6.1, document hammer-cli-foreman
-#: pkg/networkmanager/mac.jsx:73 pkg/networkmanager/bond.jsx:167
+#: pkg/networkmanager/mac.jsx:73 pkg/networkmanager/bond.jsx:168
 msgid "MAC"
 msgstr "MAC"
 
@@ -4646,7 +4661,7 @@ msgstr "分"
 msgid "Mitigations"
 msgstr ""
 
-#: pkg/networkmanager/bond.jsx:170
+#: pkg/networkmanager/bond.jsx:171
 msgid "Mode"
 msgstr "模式"
 
@@ -4670,11 +4685,11 @@ msgstr "修改 $target"
 msgid "Mondays"
 msgstr ""
 
-#: pkg/networkmanager/bond.jsx:193
+#: pkg/networkmanager/bond.jsx:194
 msgid "Monitoring interval"
 msgstr "監控間隔"
 
-#: pkg/networkmanager/bond.jsx:204
+#: pkg/networkmanager/bond.jsx:205
 msgid "Monitoring targets"
 msgstr "監控目標"
 
@@ -5001,7 +5016,7 @@ msgstr "沒有設置NFS掛載"
 msgid "No SELinux alerts."
 msgstr "沒有SELinux警報。"
 
-#: pkg/apps/application-list.jsx:156
+#: pkg/apps/application-list.jsx:160
 #, fuzzy
 #| msgid "No applications installed or available"
 msgid "No applications installed or available."
@@ -5398,7 +5413,7 @@ msgstr "光驅"
 # translation auto-copied from project subscription-manager, version 1.11.X,
 # document keys
 #: pkg/storaged/crypto-tab.jsx:250 pkg/storaged/content-views.jsx:942
-#: pkg/storaged/stratis-panel.jsx:133 pkg/networkmanager/bridge.jsx:103
+#: pkg/storaged/stratis-panel.jsx:133 pkg/networkmanager/bridge.jsx:104
 #: pkg/users/account-details.js:277 pkg/sosreport/sosreport.jsx:317
 msgid "Options"
 msgstr "選項"
@@ -5498,7 +5513,7 @@ msgstr "$0 軟體包"
 msgid "Page name"
 msgstr "使用者名稱"
 
-#: pkg/networkmanager/vlan.jsx:94
+#: pkg/networkmanager/vlan.jsx:95
 msgid "Parent"
 msgstr "父層"
 
@@ -5757,11 +5772,11 @@ msgstr ""
 msgid "Pin unit"
 msgstr "系統時間"
 
-#: pkg/networkmanager/team.jsx:199
+#: pkg/networkmanager/team.jsx:200
 msgid "Ping interval"
 msgstr "Ping間隔"
 
-#: pkg/networkmanager/team.jsx:202
+#: pkg/networkmanager/team.jsx:203
 msgid "Ping target"
 msgstr "Ping目標"
 
@@ -5828,7 +5843,7 @@ msgid "Portable"
 msgstr "手提"
 
 #: pkg/networkmanager/network-interface-members.jsx:203
-#: pkg/networkmanager/team.jsx:158 pkg/networkmanager/bridge.jsx:100
+#: pkg/networkmanager/team.jsx:159 pkg/networkmanager/bridge.jsx:101
 msgid "Ports"
 msgstr "連接埠"
 
@@ -5863,7 +5878,7 @@ msgstr "漂亮的主機名"
 msgid "Previous boot"
 msgstr ""
 
-#: pkg/networkmanager/bond.jsx:176 pkg/networkmanager/team.jsx:173
+#: pkg/networkmanager/bond.jsx:177 pkg/networkmanager/team.jsx:174
 msgid "Primary"
 msgstr "主要"
 
@@ -6625,7 +6640,7 @@ msgstr ""
 msgid "Run report"
 msgstr "回報"
 
-#: pkg/networkmanager/team.jsx:161
+#: pkg/networkmanager/team.jsx:162
 msgid "Runner"
 msgstr "跑步者"
 
@@ -6702,19 +6717,19 @@ msgstr "ssh鍵不是路徑"
 msgid "SSH keys"
 msgstr "按鍵"
 
-#: pkg/networkmanager/bridge.jsx:109
+#: pkg/networkmanager/bridge.jsx:110
 msgid "STP forward delay"
 msgstr "STP前向延遲"
 
-#: pkg/networkmanager/bridge.jsx:112
+#: pkg/networkmanager/bridge.jsx:113
 msgid "STP hello time"
 msgstr "STP你好時間"
 
-#: pkg/networkmanager/bridge.jsx:115
+#: pkg/networkmanager/bridge.jsx:116
 msgid "STP maximum message age"
 msgstr "STP最大消息時間"
 
-#: pkg/networkmanager/bridge.jsx:106
+#: pkg/networkmanager/bridge.jsx:107
 msgid "STP priority"
 msgstr "STP優先權"
 
@@ -7209,7 +7224,7 @@ msgstr "節省空間的計算機"
 msgid "Spanning tree protocol"
 msgstr "生成樹協議"
 
-#: pkg/networkmanager/bridge.jsx:104
+#: pkg/networkmanager/bridge.jsx:105
 msgid "Spanning tree protocol (STP)"
 msgstr "生成樹協議（STP）"
 
@@ -7601,10 +7616,6 @@ msgstr "團隊連接埠"
 #: pkg/networkmanager/teamport.jsx:82
 msgid "Team port settings"
 msgstr "團隊端口設置"
-
-#: pkg/networkmanager/team.jsx:154
-msgid "Team settings"
-msgstr "團隊設置"
 
 #: pkg/systemd/terminal.html:4 pkg/systemd/manifest.json:0
 msgid "Terminal"
@@ -8876,14 +8887,10 @@ msgstr "集池"
 msgid "VLAN"
 msgstr "VLAN"
 
-#: pkg/networkmanager/vlan.jsx:104
+#: pkg/networkmanager/vlan.jsx:105
 #, fuzzy
 msgid "VLAN ID"
 msgstr "VLAN Id"
-
-#: pkg/networkmanager/vlan.jsx:91
-msgid "VLAN settings"
-msgstr "VLAN設置"
 
 #: pkg/systemd/overview-cards/realmd.jsx:385
 msgid "Validating address"
