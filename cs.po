@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-09-16 02:47+0000\n"
-"PO-Revision-Date: 2023-09-16 09:28+0000\n"
+"PO-Revision-Date: 2023-09-17 21:35+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://translate.fedoraproject.org/projects/cockpit/"
 "main/cs/>\n"
@@ -949,10 +949,8 @@ msgid "Addresses"
 msgstr "Adresy"
 
 #: pkg/networkmanager/wireguard.jsx:52
-#, fuzzy
-#| msgid "Address cannot be empty"
 msgid "Addresses are not formatted correctly"
-msgstr "Adresu je třeba vyplnit"
+msgstr "Adresy nemají správný formát"
 
 #: src/bridge/org.cockpit-project.cockpit-bridge.policy.in:10
 msgid "Administration with Cockpit Web Console"
@@ -1023,10 +1021,8 @@ msgid "Allow running (unmask)"
 msgstr "Umožnit spouštění (odmaskovat)"
 
 #: pkg/networkmanager/wireguard.jsx:318
-#, fuzzy
-#| msgid "Allowed addresses"
 msgid "Allowed IPs"
-msgstr "Adresy, které umožněny"
+msgstr "IP adresy, které umožněny"
 
 #: pkg/networkmanager/firewall.jsx:204 pkg/networkmanager/firewall.jsx:880
 msgid "Allowed addresses"
@@ -2709,7 +2705,7 @@ msgstr "Upravit nastavení VLAN"
 
 #: pkg/networkmanager/wireguard.jsx:205
 msgid "Edit WireGuard VPN"
-msgstr ""
+msgstr "Upravit WireGuard VPN"
 
 #: pkg/networkmanager/bond.jsx:135
 msgid "Edit bond settings"
@@ -2888,8 +2884,6 @@ msgid "Ended"
 msgstr "Ukončeno"
 
 #: pkg/networkmanager/wireguard.jsx:309
-#, fuzzy
-#| msgid "Entrypoint"
 msgid "Endpoint"
 msgstr "Koncový bod"
 
@@ -2898,6 +2892,8 @@ msgid ""
 "Endpoint acting as a \"server\" need to be specified as host:port, otherwise "
 "it can be left empty."
 msgstr ""
+"Je třeba zadat koncový bod sloužící jako „server“ v podobě stroj:port, jinak "
+"je možné ponechat nevyplněné."
 
 #: pkg/selinux/setroubleshoot-view.jsx:262
 msgid "Enforcing"
@@ -3486,10 +3482,8 @@ msgid "IPv4"
 msgstr "IPv4"
 
 #: pkg/networkmanager/wireguard.jsx:252
-#, fuzzy
-#| msgid "IPv4 address"
 msgid "IPv4 addresses"
-msgstr "IPv4 adresa"
+msgstr "IPv4 adresy"
 
 #: pkg/networkmanager/ip-settings.jsx:151
 msgid "IPv4 settings"
@@ -4071,16 +4065,12 @@ msgid "Listen"
 msgstr "Očekávat spojení"
 
 #: pkg/networkmanager/wireguard.jsx:242
-#, fuzzy
-#| msgid "Listen"
 msgid "Listen port"
-msgstr "Očekávat spojení"
+msgstr "Port na kterém očekávat spojení"
 
 #: pkg/networkmanager/wireguard.jsx:149
-#, fuzzy
-#| msgid "Size must be a number"
 msgid "Listen port must be a number"
-msgstr "Je třeba, aby velikost byla číslo"
+msgstr "Je třeba, aby port, na kterém očekávat spojení, bylo číslo"
 
 #: pkg/systemd/services.jsx:683
 msgid "Listing units"
@@ -4694,7 +4684,7 @@ msgstr "Zařízení s vícero cestami (multipath)"
 #: pkg/networkmanager/wireguard.jsx:256
 msgid ""
 "Multiple addresses can be specified using commas or spaces as delimiters."
-msgstr ""
+msgstr "Je možné zadat vícero adres (oddělovaných čárkami nebo mezerami)."
 
 #: pkg/storaged/nfs-details.jsx:125
 msgid "NFS mount"
@@ -5027,10 +5017,8 @@ msgid "No partitioning"
 msgstr "Žádný oddíl"
 
 #: pkg/networkmanager/wireguard.jsx:341
-#, fuzzy
-#| msgid "No keys added"
 msgid "No peers added."
-msgstr "Nepřidány žádné klíče"
+msgstr "Nepřidány žádné protějšky."
 
 #: pkg/users/account-create-dialog.js:168
 msgid "No real name specified"
@@ -5517,10 +5505,8 @@ msgid "Paste error"
 msgstr "Chyba vkládání"
 
 #: pkg/networkmanager/wireguard.jsx:215
-#, fuzzy
-#| msgid "Use existing"
 msgid "Paste existing key"
-msgstr "Použít existující"
+msgstr "Vložit existující klíč"
 
 #: pkg/users/authorized-keys-panel.js:41
 msgid "Paste the contents of your public SSH key file here"
@@ -5576,22 +5562,28 @@ msgstr "Pozastavit"
 #: pkg/networkmanager/wireguard.jsx:160
 msgid "Peer #$0 has invalid endpoint port. Port must be a number."
 msgstr ""
+"Protějšek č.$0 nemá platný port koncového bodu. Je třeba, aby port bylo "
+"číslo."
 
 #: pkg/networkmanager/wireguard.jsx:156
 msgid ""
 "Peer #$0 has invalid endpoint. It must be specified as host:port, e.g. "
 "1.2.3.4:51820 or example.com:51820"
 msgstr ""
+"Protějšek č.$0 nemá platný port koncového bodu. Je třeba, aby bylo zadáno "
+"jako stroj:port, např. 1.2.3.4:51820 nebo example.com:51820"
 
 #: pkg/networkmanager/wireguard.jsx:268
 msgid "Peers"
-msgstr ""
+msgstr "Protějšky"
 
 #: pkg/networkmanager/wireguard.jsx:273
 msgid ""
 "Peers are other machines that connect with this one. Public keys from other "
 "machines will be shared with each other."
 msgstr ""
+"Protějšky jsou ostatní stroje, které se připojují k tomuto. Veřejné klíč z "
+"ostatních strojů budou sdíleny mezi sebou."
 
 #: pkg/metrics/metrics.jsx:1471
 msgid ""
@@ -5789,10 +5781,8 @@ msgid "Priority $priority"
 msgstr "Priorita $priority"
 
 #: pkg/networkmanager/wireguard.jsx:213
-#, fuzzy
-#| msgid "Private"
 msgid "Private key"
-msgstr "Soukromé"
+msgstr "Soukromý klíč"
 
 #: pkg/shell/superuser.jsx:194
 msgid "Problem becoming administrator"
@@ -5855,7 +5845,7 @@ msgstr "Veřejná část klíče"
 
 #: pkg/networkmanager/wireguard.jsx:240
 msgid "Public key will be generated when a valid private key is entered"
-msgstr ""
+msgstr "Veřejný klíč bude vytvořen v okamžiku zadání platného soukromého"
 
 #: pkg/storaged/content-views.jsx:880
 msgid "Purpose"
@@ -6085,10 +6075,8 @@ msgstr "Odmítá se připojit. Klíč stroje není znám"
 # auto translated by TM merge from project: Cockpit, version: rhel-7.4, DocId:
 # cockpit
 #: pkg/networkmanager/wireguard.jsx:224
-#, fuzzy
-#| msgid "Generated"
 msgid "Regenerate"
-msgstr "Vytvořeno"
+msgstr "Znovu vytvořit"
 
 #: pkg/storaged/crypto-keyslots.jsx:336
 msgid "Regenerating initrd"
@@ -8960,11 +8948,11 @@ msgstr "Bílá"
 
 #: pkg/networkmanager/wireguard.jsx:247
 msgid "Will be set to \"Automatic\""
-msgstr ""
+msgstr "Bude nastaveno na „Automaticky“"
 
 #: pkg/networkmanager/network-interface.jsx:573
 msgid "WireGuard"
-msgstr ""
+msgstr "WireGuard"
 
 #: pkg/storaged/drive-details.jsx:81
 msgctxt "storage"
@@ -9893,10 +9881,8 @@ msgid "warning"
 msgstr "varování"
 
 #: pkg/networkmanager/wireguard.jsx:84
-#, fuzzy
-#| msgid "PackageKit is not installed"
 msgid "wireguard-tools package is not installed"
-msgstr "PackageKit není nainstalovaný"
+msgstr "balíček wireguard-tools není nainstalovaný"
 
 # auto translated by TM merge from project: Pulseaudio, version: master,
 # DocId: pulseaudio.pot
