@@ -28,7 +28,7 @@ msgstr ""
 "#-#-#-#-#  cockpit.js.pot (PACKAGE VERSION)  #-#-#-#-#\n"
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-02 02:47+0000\n"
+"POT-Creation-Date: 2023-10-03 02:47+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -46,7 +46,7 @@ msgstr ""
 "#-#-#-#-#  cockpit.appstream.pot (PACKAGE VERSION)  #-#-#-#-#\n"
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-02 02:47+0000\n"
+"POT-Creation-Date: 2023-10-03 02:47+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -57,7 +57,7 @@ msgstr ""
 "#-#-#-#-#  cockpit.polkit.pot (PACKAGE VERSION)  #-#-#-#-#\n"
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-02 02:47+0000\n"
+"POT-Creation-Date: 2023-10-03 02:47+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -179,15 +179,15 @@ msgctxt "storage-id-desc"
 msgid "$0 filesystem"
 msgstr ""
 
-#: pkg/storaged/resize.jsx:166
+#: pkg/storaged/resize.jsx:175
 msgid "$0 filesystems can not be made larger."
 msgstr ""
 
-#: pkg/storaged/resize.jsx:163
+#: pkg/storaged/resize.jsx:172
 msgid "$0 filesystems can not be made smaller."
 msgstr ""
 
-#: pkg/storaged/resize.jsx:159
+#: pkg/storaged/resize.jsx:168
 msgid "$0 filesystems can not be resized here."
 msgstr ""
 
@@ -214,7 +214,7 @@ msgstr ""
 #: pkg/storaged/vgroup-details.jsx:160 pkg/storaged/format-dialog.jsx:213
 #: pkg/storaged/content-views.jsx:349 pkg/storaged/content-views.jsx:647
 #: pkg/storaged/mdraid-details.jsx:170 pkg/storaged/mdraid-details.jsx:226
-#: pkg/storaged/resize.jsx:215 pkg/storaged/resize.jsx:282
+#: pkg/storaged/resize.jsx:262 pkg/storaged/resize.jsx:344
 #: pkg/storaged/vdo-details.jsx:128 pkg/storaged/vdo-details.jsx:162
 #: pkg/storaged/stratis-details.jsx:396 pkg/storaged/stratis-details.jsx:583
 msgid "$0 is in use"
@@ -2710,7 +2710,7 @@ msgstr ""
 msgid "Encrypted partition of $0"
 msgstr ""
 
-#: pkg/storaged/resize.jsx:150
+#: pkg/storaged/resize.jsx:159
 msgid "Encrypted volumes need to be unlocked before they can be resized."
 msgstr ""
 
@@ -3157,13 +3157,14 @@ msgstr ""
 msgid "Groups"
 msgstr ""
 
-#: pkg/storaged/lvol-tabs.jsx:103 pkg/storaged/lvol-tabs.jsx:163
-#: pkg/storaged/lvol-tabs.jsx:219 pkg/storaged/resize.jsx:252
-#: pkg/storaged/vdo-details.jsx:233 pkg/storaged/vdo-details.jsx:311
+#: pkg/storaged/part-tab.jsx:64 pkg/storaged/lvol-tabs.jsx:103
+#: pkg/storaged/lvol-tabs.jsx:163 pkg/storaged/lvol-tabs.jsx:219
+#: pkg/storaged/resize.jsx:299 pkg/storaged/vdo-details.jsx:233
+#: pkg/storaged/vdo-details.jsx:311
 msgid "Grow"
 msgstr ""
 
-#: pkg/storaged/lvol-tabs.jsx:120
+#: pkg/storaged/part-tab.jsx:90 pkg/storaged/lvol-tabs.jsx:120
 msgid "Grow content"
 msgstr ""
 
@@ -3171,8 +3172,12 @@ msgstr ""
 msgid "Grow logical size of $0"
 msgstr ""
 
-#: pkg/storaged/resize.jsx:248
+#: pkg/storaged/resize.jsx:241
 msgid "Grow logical volume"
+msgstr ""
+
+#: pkg/storaged/resize.jsx:249
+msgid "Grow partition"
 msgstr ""
 
 #: pkg/storaged/stratis-details.jsx:655
@@ -4428,7 +4433,7 @@ msgstr ""
 #: pkg/storaged/content-views.jsx:161 pkg/storaged/content-views.jsx:285
 #: pkg/storaged/content-views.jsx:729 pkg/storaged/content-views.jsx:842
 #: pkg/storaged/content-views.jsx:992 pkg/storaged/fsys-tab.jsx:523
-#: pkg/storaged/fsys-tab.jsx:736 pkg/storaged/part-tab.jsx:35
+#: pkg/storaged/fsys-tab.jsx:736 pkg/storaged/part-tab.jsx:54
 #: pkg/storaged/iscsi-panel.jsx:117 pkg/storaged/iscsi-panel.jsx:174
 #: pkg/storaged/crypto-panel.jsx:81 pkg/storaged/stratis-panel.jsx:119
 #: pkg/storaged/lvol-tabs.jsx:37 pkg/storaged/lvol-tabs.jsx:88
@@ -4653,6 +4658,10 @@ msgstr ""
 
 #: pkg/storaged/content-views.jsx:975
 msgid "No free space"
+msgstr ""
+
+#: pkg/storaged/part-tab.jsx:39
+msgid "No free space after this partition"
 msgstr ""
 
 #: pkg/users/group-create-dialog.js:62
@@ -5046,6 +5055,10 @@ msgstr ""
 msgid "Partition of $0"
 msgstr ""
 
+#: pkg/storaged/part-tab.jsx:85
+msgid "Partition size is $0. Content size is $1."
+msgstr ""
+
 #: pkg/storaged/content-views.jsx:748
 msgid "Partitioned block device"
 msgstr ""
@@ -5265,7 +5278,7 @@ msgstr ""
 msgid "Physical volumes"
 msgstr ""
 
-#: pkg/storaged/resize.jsx:178
+#: pkg/storaged/resize.jsx:187
 msgid "Physical volumes can not be resized here."
 msgstr ""
 
@@ -5988,7 +6001,7 @@ msgstr ""
 msgid "Resizing $target"
 msgstr ""
 
-#: pkg/storaged/resize.jsx:241 pkg/storaged/resize.jsx:335
+#: pkg/storaged/resize.jsx:288 pkg/storaged/resize.jsx:397
 msgid ""
 "Resizing an encrypted filesystem requires unlocking the disk. Please provide "
 "a current disk passphrase."
@@ -6474,12 +6487,17 @@ msgstr ""
 msgid "Show relationships"
 msgstr ""
 
-#: pkg/storaged/lvol-tabs.jsx:102 pkg/storaged/resize.jsx:346
+#: pkg/storaged/part-tab.jsx:63 pkg/storaged/lvol-tabs.jsx:102
+#: pkg/storaged/resize.jsx:408
 msgid "Shrink"
 msgstr ""
 
-#: pkg/storaged/resize.jsx:342
+#: pkg/storaged/resize.jsx:326
 msgid "Shrink logical volume"
+msgstr ""
+
+#: pkg/storaged/part-tab.jsx:89 pkg/storaged/resize.jsx:332
+msgid "Shrink partition"
 msgstr ""
 
 #: pkg/storaged/lvol-tabs.jsx:119
@@ -6507,10 +6525,10 @@ msgstr ""
 #: pkg/storaged/format-dialog.jsx:283 pkg/storaged/content-views.jsx:166
 #: pkg/storaged/content-views.jsx:729 pkg/storaged/content-views.jsx:885
 #: pkg/storaged/content-views.jsx:893 pkg/storaged/content-views.jsx:992
-#: pkg/storaged/nfs-details.jsx:318 pkg/storaged/part-tab.jsx:40
+#: pkg/storaged/nfs-details.jsx:318 pkg/storaged/part-tab.jsx:59
 #: pkg/storaged/lvol-tabs.jsx:98 pkg/storaged/lvol-tabs.jsx:159
-#: pkg/storaged/lvol-tabs.jsx:215 pkg/storaged/resize.jsx:225
-#: pkg/storaged/resize.jsx:292 pkg/storaged/nfs-panel.jsx:101
+#: pkg/storaged/lvol-tabs.jsx:215 pkg/storaged/resize.jsx:272
+#: pkg/storaged/resize.jsx:354 pkg/storaged/nfs-panel.jsx:101
 #: pkg/storaged/stratis-details.jsx:507 pkg/storaged/stratis-details.jsx:904
 #: pkg/storaged/stratis-details.jsx:1047
 msgid "Size"
@@ -6774,7 +6792,7 @@ msgstr ""
 msgid "Stored passphrase"
 msgstr ""
 
-#: pkg/storaged/resize.jsx:102 pkg/storaged/resize.jsx:175
+#: pkg/storaged/resize.jsx:109 pkg/storaged/resize.jsx:184
 msgid "Stratis blockdevs can not be made smaller"
 msgstr ""
 
@@ -7375,6 +7393,10 @@ msgstr ""
 msgid "This may take a while"
 msgstr ""
 
+#: pkg/storaged/part-tab.jsx:84
+msgid "This partition is not completely used by its content."
+msgstr ""
+
 #: pkg/storaged/stratis-details.jsx:849
 msgid ""
 "This passphrase is the only way to unlock the pool and can not be removed."
@@ -7440,7 +7462,7 @@ msgstr ""
 msgid "This user name already exists"
 msgstr ""
 
-#: pkg/storaged/resize.jsx:200
+#: pkg/storaged/resize.jsx:209
 msgid "This volume needs to be activated before it can be resized."
 msgstr ""
 
@@ -7658,7 +7680,7 @@ msgstr ""
 #: pkg/systemd/hwinfo.jsx:81 pkg/systemd/hwinfo.jsx:291
 #: pkg/storaged/fsys-panel.jsx:182 pkg/storaged/format-dialog.jsx:281
 #: pkg/storaged/content-views.jsx:729 pkg/storaged/content-views.jsx:992
-#: pkg/storaged/part-tab.jsx:50 pkg/storaged/unrecognized-tab.jsx:36
+#: pkg/storaged/part-tab.jsx:75 pkg/storaged/unrecognized-tab.jsx:36
 msgid "Type"
 msgstr ""
 
@@ -7670,7 +7692,7 @@ msgstr ""
 msgid "UDP"
 msgstr ""
 
-#: pkg/storaged/part-tab.jsx:45
+#: pkg/storaged/part-tab.jsx:70
 msgid "UUID"
 msgstr ""
 
@@ -7876,7 +7898,7 @@ msgctxt "storage-id-desc"
 msgid "Unrecognized data"
 msgstr ""
 
-#: pkg/storaged/resize.jsx:107 pkg/storaged/resize.jsx:192
+#: pkg/storaged/resize.jsx:114 pkg/storaged/resize.jsx:201
 msgid "Unrecognized data can not be made smaller here."
 msgstr ""
 
@@ -8055,7 +8077,7 @@ msgctxt "storage-id-desc"
 msgid "VDO backing"
 msgstr ""
 
-#: pkg/storaged/resize.jsx:92 pkg/storaged/resize.jsx:185
+#: pkg/storaged/resize.jsx:99 pkg/storaged/resize.jsx:194
 msgid "VDO backing devices can not be made smaller"
 msgstr ""
 
@@ -8690,7 +8712,7 @@ msgstr ""
 msgid "graphs"
 msgstr ""
 
-#: pkg/storaged/resize.jsx:211
+#: pkg/storaged/resize.jsx:258
 msgid "grow"
 msgstr ""
 
@@ -9036,7 +9058,7 @@ msgstr ""
 msgid "show more"
 msgstr ""
 
-#: pkg/storaged/resize.jsx:278
+#: pkg/storaged/resize.jsx:340
 msgid "shrink"
 msgstr ""
 
