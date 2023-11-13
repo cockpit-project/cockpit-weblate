@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-11-08 02:46+0000\n"
-"PO-Revision-Date: 2023-10-18 08:36+0000\n"
+"PO-Revision-Date: 2023-11-13 13:37+0000\n"
 "Last-Translator: Luna Jernberg <bittin@reimu.nl>\n"
 "Language-Team: Swedish <https://translate.fedoraproject.org/projects/cockpit/"
 "main/sv/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.0.2\n"
+"X-Generator: Weblate 5.1.1\n"
 
 #: pkg/static/login.html:61
 msgid "            Bypass browser check          "
@@ -268,10 +268,8 @@ msgstr[0] "$0 spik"
 msgstr[1] "$0 spikar"
 
 #: pkg/storaged/lvol-tabs.jsx:166
-#, fuzzy
-#| msgid "Not synchronized"
 msgid "$0 synchronized"
-msgstr "Inte synkroniserad"
+msgstr "$0 synkroniserad"
 
 #: pkg/metrics/metrics.jsx:722 pkg/metrics/metrics.jsx:884
 #: pkg/metrics/metrics.jsx:950
@@ -607,10 +605,8 @@ msgid "A spare disk needs to be added first before this disk can be removed."
 msgstr "En reservdisk behöver läggas till först före denna disk kan tas bort."
 
 #: pkg/storaged/vgroup-details.jsx:225
-#, fuzzy
-#| msgid "Physical volumes can not be resized here."
 msgid "A volume group with missing physical volumes can not be renamed."
-msgstr "Storleken på fysiska volymer kan inte ändras här."
+msgstr "En volymgrupp med saknade fysiska volymer kan inte döpas om."
 
 #: pkg/networkmanager/bond.jsx:55
 msgid "ARP"
@@ -637,10 +633,8 @@ msgid "Accept key and log in"
 msgstr "Acceptera nyckel och logga in"
 
 #: pkg/lib/cockpit-components-password.jsx:100
-#, fuzzy
-#| msgid "Set password"
 msgid "Acceptable password"
-msgstr "Sätt lösenord"
+msgstr "Acceptabelt lösenord"
 
 #: pkg/users/expiration-dialogs.js:108
 msgid "Account expiration"
@@ -997,7 +991,7 @@ msgstr "Alla"
 
 #: pkg/storaged/content-views.jsx:1006
 msgid "All $0 selected physical volumes are needed for the choosen layout."
-msgstr ""
+msgstr "Alla $0 valda fysiska volymer behövs för den valda layouten."
 
 #: pkg/packagekit/autoupdates.jsx:287
 msgid "All updates"
@@ -1021,7 +1015,7 @@ msgstr "Tillåtna adresser"
 
 #: pkg/storaged/content-views.jsx:345
 msgid "An additional $0 must be selected"
-msgstr ""
+msgstr "Ytterligare $0 måste väljas"
 
 #: pkg/lib/cockpit-components-modifications.jsx:88
 msgid "Ansible"
@@ -2244,18 +2238,26 @@ msgid ""
 "selected physical volumes, to improve both reliability and performance. At "
 "least four volumes need to be selected."
 msgstr ""
+"Data kommer att lagras som två kopior och även på ett alternerande sätt på "
+"de valda fysiska volymerna, för att förbättra både tillförlitlighet och "
+"prestanda. Minst fyra volymer måste väljas."
 
 #: pkg/storaged/content-views.jsx:990
 msgid ""
 "Data will be stored as two or more copies on the selected physical volumes, "
 "to improve reliability. At least two volumes need to be selected."
 msgstr ""
+"Data kommer att lagras som två eller flera kopior på de valda fysiska "
+"volymerna, för att förbättra tillförlitligheten. Minst två volymer måste "
+"väljas."
 
 #: pkg/storaged/content-views.jsx:989
 msgid ""
 "Data will be stored on the selected physical volumes in an alternating "
 "fashion to improve performance. At least two volumes need to be selected."
 msgstr ""
+"Data kommer att lagras på de valda fysiska volymerna på ett alternerande "
+"sätt för att förbättra prestandan. Minst två volymer måste väljas."
 
 #: pkg/storaged/content-views.jsx:992
 msgid ""
@@ -2263,6 +2265,8 @@ msgid ""
 "be lost without affecting the data. At least three volumes need to be "
 "selected."
 msgstr ""
+"Data kommer att lagras på de valda fysiska volymerna så att en av dem kan gå "
+"förlorad utan att data påverkas. Minst tre volymer måste väljas."
 
 #: pkg/storaged/content-views.jsx:993
 msgid ""
@@ -2270,6 +2274,9 @@ msgid ""
 "be lost without affecting the data. Data is also stored in an alternating "
 "fashion to improve performance. At least three volumes need to be selected."
 msgstr ""
+"Data kommer att lagras på de valda fysiska volymerna så att en av dem kan gå "
+"förlorad utan att data påverkas. Data lagras också på ett alternerande sätt "
+"för att förbättra prestandan. Minst tre volymer måste väljas."
 
 #: pkg/storaged/content-views.jsx:994
 msgid ""
@@ -2278,12 +2285,18 @@ msgid ""
 "stored in an alternating fashion to improve performance. At least five "
 "volumes need to be selected."
 msgstr ""
+"Data kommer att lagras på de valda fysiska volymerna så att upp till två av "
+"dem kan gå förlorade samtidigt utan att data påverkas. Data lagras också på "
+"ett alternerande sätt för att förbättra prestandan. Minst fem volymer måste "
+"väljas."
 
 #: pkg/storaged/content-views.jsx:988
 msgid ""
 "Data will be stored on the selected physical volumes without any additional "
 "redundancy or performance improvements."
 msgstr ""
+"Data kommer att lagras på de valda fysiska volymerna utan ytterligare "
+"redundans eller prestandaförbättringar."
 
 #: pkg/systemd/logs.jsx:330
 msgid ""
@@ -2318,10 +2331,8 @@ msgid "Decrease by one"
 msgstr "Minska med en"
 
 #: pkg/storaged/lvol-tabs.jsx:215
-#, fuzzy
-#| msgid "RAID 4 (dedicated parity)"
 msgid "Dedicated parity (RAID 4)"
-msgstr "RAID 4 (dedikerad paritet)"
+msgstr "Dedikerad paritet (RAID 4)"
 
 #: pkg/storaged/content-views.jsx:1082 pkg/storaged/lvol-tabs.jsx:405
 #: pkg/storaged/vdo-details.jsx:330
@@ -2554,11 +2565,8 @@ msgid "Disks usage"
 msgstr "Diskanvändning"
 
 #: pkg/storaged/vgroup-details.jsx:310
-#, fuzzy
-#| msgid "Dismiss $0 alert"
-#| msgid_plural "Dismiss $0 alerts"
 msgid "Dismiss"
-msgstr "Avfärda $0 larm"
+msgstr "Avfärda"
 
 #: pkg/selinux/setroubleshoot-view.jsx:398
 msgid "Dismiss $0 alert"
@@ -2575,10 +2583,8 @@ msgid "Display language"
 msgstr "Visningsspråk"
 
 #: pkg/storaged/content-views.jsx:935 pkg/storaged/lvol-tabs.jsx:216
-#, fuzzy
-#| msgid "RAID 5 (distributed parity)"
 msgid "Distributed parity (RAID 5)"
-msgstr "RAID 5 (distribuerad paritet)"
+msgstr "Distribuerad paritet (RAID 5)"
 
 #: pkg/storaged/stratis-details.jsx:367 pkg/storaged/stratis-details.jsx:552
 #: pkg/storaged/fsys-tab.jsx:347 pkg/storaged/format-dialog.jsx:366
@@ -2636,10 +2642,8 @@ msgid "Don't repeat"
 msgstr "Upprepa inte"
 
 #: pkg/storaged/content-views.jsx:940 pkg/storaged/lvol-tabs.jsx:217
-#, fuzzy
-#| msgid "RAID 6 (double distributed parity)"
 msgid "Double distributed parity (RAID 6)"
-msgstr "RAID 6 (dubbel distribuerad paritet)"
+msgstr "Dubbel distribuerad paritet (RAID 6)"
 
 #: pkg/sosreport/sosreport.jsx:460 pkg/sosreport/sosreport.jsx:466
 msgid "Download"
@@ -2943,13 +2947,15 @@ msgstr "Ethtool"
 
 #: pkg/storaged/resize.jsx:352
 msgid "Exactly $0 physical volumes must be selected"
-msgstr ""
+msgstr "Exakt $0 fysiska volymer måste väljas"
 
 #: pkg/storaged/resize.jsx:419
 msgid ""
 "Exactly $0 physical volumes need to be selected, one for each stripe of the "
 "logical volume."
 msgstr ""
+"Exakt $0 fysiska volymer måste väljas, en för varje remsa av den logiska "
+"volymen."
 
 #: pkg/networkmanager/firewall.jsx:687
 msgid "Example: 22,ssh,8080,5900-5910"
@@ -3358,16 +3364,12 @@ msgid "Help"
 msgstr "Hjälp"
 
 #: pkg/lib/cockpit-components-password.jsx:178
-#, fuzzy
-#| msgid "Confirm password"
 msgid "Hide confirmation password"
-msgstr "Bekräfta lösenord"
+msgstr "Dölj bekräftelselösenord"
 
 #: pkg/lib/cockpit-components-password.jsx:138
-#, fuzzy
-#| msgid "Use password"
 msgid "Hide password"
-msgstr "Använd lösenord"
+msgstr "Dölj lösenord"
 
 #: pkg/systemd/abrtLog.jsx:128
 msgid "Hierarchy ID"
@@ -3972,7 +3974,7 @@ msgstr "Begränsningar"
 
 #: pkg/storaged/content-views.jsx:915
 msgid "Linear"
-msgstr ""
+msgstr "Linjär"
 
 #: pkg/networkmanager/bond.jsx:201 pkg/networkmanager/team.jsx:195
 msgid "Link down delay"
@@ -4437,7 +4439,7 @@ msgstr "Minuter"
 
 #: pkg/storaged/content-views.jsx:925 pkg/storaged/lvol-tabs.jsx:213
 msgid "Mirrored (RAID 1)"
-msgstr ""
+msgstr "Speglad (RAID 1)"
 
 #: pkg/systemd/hwinfo.jsx:69
 msgid "Mitigations"
@@ -4749,6 +4751,8 @@ msgid ""
 "New logical volumes can not be created while a volume group is missing "
 "physical volumes."
 msgstr ""
+"Nya logiska volymer kan inte skapas medan en volymgrupp saknar fysiska "
+"volymer."
 
 #: pkg/users/rename-group-dialog.jsx:35
 msgid "New name"
@@ -5496,8 +5500,6 @@ msgstr "Fysiskt"
 
 #: pkg/storaged/content-views.jsx:353 pkg/storaged/content-views.jsx:1028
 #: pkg/storaged/resize.jsx:345
-#, fuzzy
-#| msgid "Physical volumes"
 msgid "Physical Volumes"
 msgstr "Fysiska volymer"
 
@@ -5506,12 +5508,11 @@ msgid "Physical volumes"
 msgstr "Fysiska volymer"
 
 #: pkg/storaged/vgroup-details.jsx:99
-#, fuzzy
-#| msgid "Physical volumes can not be resized here."
 msgid ""
 "Physical volumes can not be removed while a volume group is missing physical "
 "volumes."
-msgstr "Storleken på fysiska volymer kan inte ändras här."
+msgstr ""
+"Fysiska volymer kan inte tas bort medan en volymgrupp saknar fysiska volymer."
 
 #: pkg/storaged/resize.jsx:201
 msgid "Physical volumes can not be resized here."
@@ -5794,7 +5795,7 @@ msgstr "RAID-medlem"
 
 #: pkg/storaged/content-views.jsx:1036
 msgid "RAID10 needs an even number of physical volumes"
-msgstr ""
+msgstr "RAID10 behöver ett jämnt antal fysiska volymer"
 
 #: pkg/metrics/metrics.jsx:888
 msgid "RAM"
@@ -6049,10 +6050,8 @@ msgid "Remove item"
 msgstr "Ta bort post"
 
 #: pkg/storaged/vgroup-details.jsx:283
-#, fuzzy
-#| msgid "Removing physical volume from $target"
 msgid "Remove missing physical volumes?"
-msgstr "Tar bort den fysiska volymen från $target"
+msgstr "Ta bort saknade fysiska volymer?"
 
 #: pkg/storaged/crypto-keyslots.jsx:714
 msgid "Remove passphrase in key slot $0?"
@@ -6158,13 +6157,11 @@ msgstr "Att byta namn på en grupp kan påverka sudo och liknande regler"
 
 #: pkg/storaged/content-views.jsx:360 pkg/storaged/content-views.jsx:371
 msgid "Repair"
-msgstr ""
+msgstr "Reparera"
 
 #: pkg/storaged/content-views.jsx:349
-#, fuzzy
-#| msgid "Rename logical volume"
 msgid "Repair logical volume $0"
-msgstr "Byt namn på en logisk volym"
+msgstr "Reparera logisk volym $0"
 
 #: pkg/storaged/jobs-panel.jsx:52
 msgid "Repairing $target"
@@ -6582,6 +6579,8 @@ msgid ""
 "Select the physical volumes that should be used to repair the logical "
 "volume. At leat $0 are needed."
 msgstr ""
+"Välj de fysiska volymer som ska användas för att reparera den logiska "
+"volymen. Minst $0 behövs."
 
 #: pkg/systemd/reporting.jsx:264
 msgid "Send"
@@ -6762,10 +6761,8 @@ msgid "Show all threads"
 msgstr "Visa alla trådar"
 
 #: pkg/lib/cockpit-components-password.jsx:178
-#, fuzzy
-#| msgid "Confirm password"
 msgid "Show confirmation password"
-msgstr "Bekräfta lösenord"
+msgstr "Visa bekräftelselösenord"
 
 #: pkg/systemd/overview-cards/configurationCard.jsx:96
 msgid "Show fingerprints"
@@ -7128,21 +7125,19 @@ msgstr "Stratis-pool $0"
 
 #: pkg/storaged/content-views.jsx:920 pkg/storaged/lvol-tabs.jsx:212
 msgid "Striped (RAID 0)"
-msgstr ""
+msgstr "Remsa (Raid 0)"
 
 #: pkg/storaged/content-views.jsx:930 pkg/storaged/lvol-tabs.jsx:214
 msgid "Striped and mirrored (RAID 10)"
-msgstr ""
+msgstr "Remsad och speglad (Raid 10)"
 
 #: pkg/storaged/lvol-tabs.jsx:161
 msgid "Stripes"
-msgstr ""
+msgstr "Remsor"
 
 #: pkg/lib/cockpit-components-password.jsx:96
-#, fuzzy
-#| msgid "Set password"
 msgid "Strong password"
-msgstr "Sätt lösenord"
+msgstr "Starkt lösenord"
 
 #: pkg/systemd/services.jsx:220
 msgid "Stub"
@@ -7718,6 +7713,9 @@ msgid ""
 "least $0 are needed on physical volumes that are not already used for this "
 "logical volume."
 msgstr ""
+"Det finns inte tillräckligt med utrymme som kan användas för reparation. "
+"Minst $0 behövs för fysiska volymer som inte redan används för denna logiska "
+"volym."
 
 #: pkg/storaged/stratis-details.jsx:317
 msgid ""
@@ -7802,18 +7800,25 @@ msgid ""
 "This logical volume has lost some of its physical volumes and can no longer "
 "be used. You need to delete it and create a new one to take its place."
 msgstr ""
+"Denna logiska volym har förlorat några av sina fysiska volymer och kan inte "
+"längre användas. Du måste ta bort den och skapa en ny för att ta dess plats."
 
 #: pkg/storaged/lvol-tabs.jsx:72
 msgid ""
 "This logical volume has lost some of its physical volumes but has not lost "
 "any data yet. You should repair it to restore its original redundancy."
 msgstr ""
+"Denna logiska volym har förlorat några av sina fysiska volymer men har inte "
+"förlorat några data ännu. Du bör reparera den för att återställa den "
+"ursprungliga redundansen."
 
 #: pkg/storaged/lvol-tabs.jsx:74
 msgid ""
 "This logical volume has lost some of its physical volumes but might not have "
 "lost any data yet. You might be able to repair it."
 msgstr ""
+"Denna logiska volym har förlorat några av sina fysiska volymer men kanske "
+"inte har förlorat någon data ännu. Du kanske kan reparera den."
 
 #: pkg/storaged/lvol-tabs.jsx:263
 msgid "This logical volume is not completely used by its content."
@@ -7914,7 +7919,7 @@ msgstr "Detta användarnamn finns redan"
 
 #: pkg/storaged/vgroup-details.jsx:311
 msgid "This volume group is missing some physical volumes."
-msgstr ""
+msgstr "Den här volymgruppen saknar några fysiska volymer."
 
 #: pkg/storaged/resize.jsx:223
 msgid "This volume needs to be activated before it can be resized."
@@ -8234,10 +8239,8 @@ msgid "Unable to remove mount"
 msgstr "Kan inte ta bort monteringen"
 
 #: pkg/storaged/content-views.jsx:335
-#, fuzzy
-#| msgid "Encrypted logical volume of $0"
 msgid "Unable to repair logical volume $0"
-msgstr "Krypterad logisk volym av $0"
+msgstr "Kunde inte reparera logisk volym $0"
 
 #: pkg/selinux/setroubleshoot-client.js:145
 msgid "Unable to run fix: $0"
@@ -8756,10 +8759,8 @@ msgid "Warning and above"
 msgstr "Varning och högre"
 
 #: pkg/lib/cockpit-components-password.jsx:104
-#, fuzzy
-#| msgid "Set weak password"
 msgid "Weak password"
-msgstr "Ställ in ett svagt lösenord"
+msgstr "Svagt lösenord"
 
 #: pkg/shell/shell-modals.jsx:64 pkg/shell/manifest.json:0
 msgid "Web Console"
