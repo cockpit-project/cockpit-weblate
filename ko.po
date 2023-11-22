@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-11-21 02:47+0000\n"
-"PO-Revision-Date: 2023-11-13 13:37+0000\n"
+"PO-Revision-Date: 2023-11-22 21:01+0000\n"
 "Last-Translator: 김인수 <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/cockpit/"
 "main/ko/>\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.1.1\n"
+"X-Generator: Weblate 5.2.1\n"
 
 #: pkg/static/login.html:61
 msgid "            Bypass browser check          "
@@ -2068,11 +2068,11 @@ msgstr "LVM2 볼륨 그룹 $target 생성 중"
 
 #: pkg/storaged/jobs-panel.jsx:66
 msgid "Creating RAID device $target"
-msgstr "저장소 장치 $target 생성 중"
+msgstr "레이드 장치 $target 생성 중"
 
 #: pkg/storaged/content-views.jsx:1134
 msgid "Creating VDO device"
-msgstr "VDO 장치 생성하기"
+msgstr "VDO 장치 생성 중"
 
 #: pkg/storaged/jobs-panel.jsx:54
 msgid "Creating filesystem on $target"
@@ -2203,18 +2203,23 @@ msgid ""
 "selected physical volumes, to improve both reliability and performance. At "
 "least four volumes need to be selected."
 msgstr ""
+"자료는 안정성과 성능을 모두 향상시키기 위해 선택한 물리적 볼륨에 두 개의 "
+"복사본으로 교대로 저장됩니다. 선택하려면 적어도 4개의 볼륨이 필요합니다."
 
 #: pkg/storaged/content-views.jsx:992
 msgid ""
 "Data will be stored as two or more copies on the selected physical volumes, "
 "to improve reliability. At least two volumes need to be selected."
 msgstr ""
+"자료는 안정성을 향상시키기 위해 선택한 물리적 볼륨에 두 개 이상의 복사본으로 "
+"저장됩니다. 선택하려면 적어도 2개의 볼륨이 필요합니다."
 
 #: pkg/storaged/content-views.jsx:991
 msgid ""
 "Data will be stored on the selected physical volumes in an alternating "
 "fashion to improve performance. At least two volumes need to be selected."
-msgstr ""
+msgstr "자료는 성능을 모두 향상시키기 위해 교대로 선택한 물리적 볼륨에 저장됩니다. "
+"선택하려면 적어도 2개의 볼륨이 필요합니다."
 
 #: pkg/storaged/content-views.jsx:994
 msgid ""
@@ -2222,6 +2227,8 @@ msgid ""
 "be lost without affecting the data. At least three volumes need to be "
 "selected."
 msgstr ""
+"자료는 선택한 물리적 볼륨에 저장되므로 그 중 하나가 손실되어도 영향을 주지 "
+"않습니다. 선택하려면 최소한 3개의 볼륨이 필요합니다."
 
 #: pkg/storaged/content-views.jsx:995
 msgid ""
@@ -2229,6 +2236,9 @@ msgid ""
 "be lost without affecting the data. Data is also stored in an alternating "
 "fashion to improve performance. At least three volumes need to be selected."
 msgstr ""
+"자료는 선택한 물리적 볼륨에 저장되므로 그 중 하나가 손실되어도 영향을 주지 "
+"않습니다. 자료는 또한 성능을 향상하기 위해 교차 저장됩니다. 선택하려면 "
+"최소한 3개의 볼륨이 필요합니다."
 
 #: pkg/storaged/content-views.jsx:996
 msgid ""
@@ -2237,12 +2247,15 @@ msgid ""
 "stored in an alternating fashion to improve performance. At least five "
 "volumes need to be selected."
 msgstr ""
+"자료는 선택한 물리적 볼륨에 저장되므로 그 중 두 개가 손실되어도 영향을 주지 "
+"않습니다. 자료는 또한 성능을 향상하기 위해 교차 저장됩니다. 선택하려면 "
+"최소한 5개의 볼륨이 필요합니다."
 
 #: pkg/storaged/content-views.jsx:990
 msgid ""
 "Data will be stored on the selected physical volumes without any additional "
 "redundancy or performance improvements."
-msgstr ""
+msgstr "자료는 어떤 추가적인 중복 또는 성능 개선없이 선택된 물리 볼륨에 저장됩니다."
 
 #: pkg/systemd/logs.jsx:330
 msgid ""
@@ -2895,13 +2908,13 @@ msgstr "Ethtool"
 
 #: pkg/storaged/resize.jsx:352
 msgid "Exactly $0 physical volumes must be selected"
-msgstr ""
+msgstr "정확히 $0 물리 볼륨이 선택되어야 합니다"
 
 #: pkg/storaged/resize.jsx:419
 msgid ""
 "Exactly $0 physical volumes need to be selected, one for each stripe of the "
 "logical volume."
-msgstr ""
+msgstr "정확히 $0 물리 볼륨은 논리 볼륨의 개별 스트라이프 마다 선택되어야 합니다."
 
 #: pkg/networkmanager/firewall.jsx:687
 msgid "Example: 22,ssh,8080,5900-5910"
@@ -3869,7 +3882,7 @@ msgstr "마지막으로 성공한 로그인:"
 
 #: pkg/storaged/content-views.jsx:1042 pkg/storaged/lvol-tabs.jsx:236
 msgid "Layout"
-msgstr ""
+msgstr "배열"
 
 #: pkg/networkmanager/bond.jsx:152
 #: pkg/systemd/overview-cards/tuned-dialog.jsx:291
@@ -3924,7 +3937,7 @@ msgstr "제한"
 
 #: pkg/storaged/content-views.jsx:917
 msgid "Linear"
-msgstr ""
+msgstr "선형성"
 
 #: pkg/networkmanager/team.jsx:195 pkg/networkmanager/bond.jsx:201
 msgid "Link down delay"
@@ -4398,7 +4411,7 @@ msgstr "분"
 
 #: pkg/storaged/content-views.jsx:927 pkg/storaged/lvol-tabs.jsx:213
 msgid "Mirrored (RAID 1)"
-msgstr ""
+msgstr "미러 (레이드 1)"
 
 #: pkg/systemd/hwinfo.jsx:69
 msgid "Mitigations"
@@ -4707,7 +4720,8 @@ msgstr "신규 키 비밀번호"
 msgid ""
 "New logical volumes can not be created while a volume group is missing "
 "physical volumes."
-msgstr ""
+msgstr "신규 논리 볼륨은 볼륨 그룹이 물리적 볼륨이 누락되었을 때에 제거 될 수 "
+"없습니다."
 
 #: pkg/users/rename-group-dialog.jsx:35
 msgid "New name"
@@ -5474,12 +5488,10 @@ msgid "Physical volumes"
 msgstr "물리 볼륨"
 
 #: pkg/storaged/vgroup-details.jsx:99
-#, fuzzy
-#| msgid "Physical volumes can not be resized here."
 msgid ""
 "Physical volumes can not be removed while a volume group is missing physical "
 "volumes."
-msgstr "여기에서는 물리적 볼륨 크기를 변경할 수 없습니다."
+msgstr "물리 볼륨은 볼륨 그룹이 물리적 볼륨이 누락되었을 때에 제거 될 수 없습니다."
 
 #: pkg/storaged/resize.jsx:201
 msgid "Physical volumes can not be resized here."
@@ -5763,7 +5775,7 @@ msgstr "레이드 구성요소"
 
 #: pkg/storaged/content-views.jsx:1038
 msgid "RAID10 needs an even number of physical volumes"
-msgstr ""
+msgstr "레이드10은 짝수의 물리 볼륨이 필요합니다"
 
 #: pkg/metrics/metrics.jsx:888
 msgid "RAM"
@@ -6124,13 +6136,11 @@ msgstr "그룹 이름변경은 sudo 및 유사 규칙에 영향을 줍니다"
 
 #: pkg/storaged/content-views.jsx:360 pkg/storaged/content-views.jsx:371
 msgid "Repair"
-msgstr ""
+msgstr "복구"
 
 #: pkg/storaged/content-views.jsx:349
-#, fuzzy
-#| msgid "Rename logical volume"
 msgid "Repair logical volume $0"
-msgstr "논리 볼륨 이름 변경"
+msgstr "논리 볼륨 $0를 복구합니다"
 
 #: pkg/storaged/jobs-panel.jsx:52
 msgid "Repairing $target"
@@ -6544,7 +6554,8 @@ msgstr "선택 방법"
 msgid ""
 "Select the physical volumes that should be used to repair the logical "
 "volume. At leat $0 are needed."
-msgstr ""
+msgstr "논리 볼륨을 복구하는데 사용해야 하는 물리 볼륨을 선택합니다. 적어도 $0가 "
+"필요합니다."
 
 #: pkg/systemd/reporting.jsx:264
 msgid "Send"
@@ -6726,10 +6737,8 @@ msgid "Show all threads"
 msgstr "모든 스레드 표시"
 
 #: pkg/lib/cockpit-components-password.jsx:179
-#, fuzzy
-#| msgid "Confirm password"
 msgid "Show confirmation password"
-msgstr "비밀번호 확인"
+msgstr "비밀번호 확인을 표시합니다"
 
 #: pkg/systemd/overview-cards/configurationCard.jsx:96
 msgid "Show fingerprints"
@@ -7092,21 +7101,19 @@ msgstr "스트라티스 풀 $0"
 
 #: pkg/storaged/content-views.jsx:922 pkg/storaged/lvol-tabs.jsx:212
 msgid "Striped (RAID 0)"
-msgstr ""
+msgstr "스트라이프 (레이드 0)"
 
 #: pkg/storaged/content-views.jsx:932 pkg/storaged/lvol-tabs.jsx:214
 msgid "Striped and mirrored (RAID 10)"
-msgstr ""
+msgstr "미러된 스트라이프 (레이드 10)"
 
 #: pkg/storaged/lvol-tabs.jsx:161
 msgid "Stripes"
-msgstr ""
+msgstr "스트라이프"
 
 #: pkg/lib/cockpit-components-password.jsx:97
-#, fuzzy
-#| msgid "Set password"
 msgid "Strong password"
-msgstr "비밀번호 설정"
+msgstr "강력한 비밀번호"
 
 #: pkg/systemd/services.jsx:220
 msgid "Stub"
@@ -7661,6 +7668,8 @@ msgid ""
 "least $0 are needed on physical volumes that are not already used for this "
 "logical volume."
 msgstr ""
+"복구를 위해 사용 가능한 여유 공간이 충분하지 않습니다. 적어도 $0가 해당 논리 "
+"볼륨을 위해 사용되지 않는 물리 볼륨에서 필요합니다."
 
 #: pkg/storaged/stratis-details.jsx:317
 msgid ""
@@ -7742,18 +7751,23 @@ msgid ""
 "This logical volume has lost some of its physical volumes and can no longer "
 "be used. You need to delete it and create a new one to take its place."
 msgstr ""
+"이와 같은 논리 볼륨은 물리 볼륨의 일부를 손실하여 더 이상 사용될 수 "
+"없습니다. 이를 삭제하고 신규로 생성하고 이를 대체하세요."
 
 #: pkg/storaged/lvol-tabs.jsx:72
 msgid ""
 "This logical volume has lost some of its physical volumes but has not lost "
 "any data yet. You should repair it to restore its original redundancy."
 msgstr ""
+"이와 같은 논리 볼륨은 아직 자료를 손실하지 않았지만 물리 볼륨의 일부를 "
+"손실하였습니다. 원래의 중복된 부분을 복원하려면 이를 복구하세요."
 
 #: pkg/storaged/lvol-tabs.jsx:74
 msgid ""
 "This logical volume has lost some of its physical volumes but might not have "
 "lost any data yet. You might be able to repair it."
-msgstr ""
+msgstr "이와 같은 논리 볼륨은 아직 자료를 손실하지 않았지만 물리 볼륨의 일부를 "
+"손실하였습니다. 당신은 이를 복구 할 수 있습니다."
 
 #: pkg/storaged/lvol-tabs.jsx:263
 msgid "This logical volume is not completely used by its content."
@@ -7850,7 +7864,7 @@ msgstr "이 사용자 이름이 이미 존재합니다"
 
 #: pkg/storaged/vgroup-details.jsx:313
 msgid "This volume group is missing some physical volumes."
-msgstr ""
+msgstr "이와 같은 볼륨 그룹은 일부 물리 볼륨이 없습니다."
 
 #: pkg/storaged/resize.jsx:223
 msgid "This volume needs to be activated before it can be resized."
@@ -8170,10 +8184,8 @@ msgid "Unable to remove mount"
 msgstr "적재를 제거 할 수 없습니다"
 
 #: pkg/storaged/content-views.jsx:335
-#, fuzzy
-#| msgid "Encrypted logical volume of $0"
 msgid "Unable to repair logical volume $0"
-msgstr "암호화된 $0의 논리 볼륨"
+msgstr "논리 볼륨 $0를 복구 할 수 없음"
 
 #: pkg/selinux/setroubleshoot-client.js:145
 msgid "Unable to run fix: $0"
