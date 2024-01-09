@@ -21,7 +21,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-07 02:47+0000\n"
+"POT-Creation-Date: 2024-01-09 02:47+0000\n"
 "PO-Revision-Date: 2023-06-23 09:20+0000\n"
 "Last-Translator: Alain Nussbaumer <alain.nussbaumer@alleluia.ch>\n"
 "Language-Team: French <https://translate.fedoraproject.org/projects/cockpit/"
@@ -141,7 +141,7 @@ msgid_plural "$0 failed login attempts"
 msgstr[0] "$0 échec de la tentative de connexion"
 msgstr[1] "$0 échec des tentatives de connexion"
 
-#: pkg/storaged/filesystem/filesystem.jsx:97
+#: pkg/storaged/filesystem/filesystem.jsx:91
 #, fuzzy
 #| msgctxt "storage-id-desc"
 #| msgid "$0 filesystem"
@@ -332,10 +332,8 @@ msgstr "$name (de $host )"
 msgid "(Not part of target)"
 msgstr "Création de la partition $target"
 
-#: pkg/storaged/nfs/nfs.jsx:294 pkg/storaged/filesystem/filesystem.jsx:92
-#: pkg/storaged/filesystem/filesystem.jsx:94
-#: pkg/storaged/stratis/filesystem.jsx:192
-#: pkg/storaged/stratis/filesystem.jsx:194
+#: pkg/storaged/nfs/nfs.jsx:294 pkg/storaged/filesystem/utils.jsx:189
+#: pkg/storaged/filesystem/utils.jsx:191
 #, fuzzy
 #| msgid "Not mounted"
 msgid "(not mounted)"
@@ -2497,7 +2495,7 @@ msgstr "Le retard doit correspondre à un nombre"
 #: pkg/storaged/legacy-vdo/legacy-vdo.jsx:122
 #: pkg/storaged/legacy-vdo/legacy-vdo.jsx:152
 #: pkg/storaged/stratis/filesystem.jsx:173
-#: pkg/storaged/stratis/filesystem.jsx:215 pkg/storaged/stratis/pool.jsx:173
+#: pkg/storaged/stratis/filesystem.jsx:209 pkg/storaged/stratis/pool.jsx:173
 #: pkg/storaged/mdraid/mdraid.jsx:126 pkg/storaged/mdraid/mdraid.jsx:236
 msgid "Delete"
 msgstr "Supprimer"
@@ -3274,15 +3272,15 @@ msgstr "Échec du changement de profil"
 msgid "File state"
 msgstr "État du fichier"
 
-#: pkg/storaged/filesystem/filesystem.jsx:97
+#: pkg/storaged/filesystem/filesystem.jsx:91
 msgid "Filesystem"
 msgstr "Système de fichiers"
 
-#: pkg/storaged/filesystem/filesystem.jsx:148
+#: pkg/storaged/filesystem/filesystem.jsx:142
 msgid "Filesystem is locked"
 msgstr "Le système de fichiers est verrouillé"
 
-#: pkg/storaged/filesystem/filesystem.jsx:121
+#: pkg/storaged/filesystem/filesystem.jsx:115
 msgid "Filesystem name"
 msgstr "Nom du système de fichiers"
 
@@ -3360,7 +3358,7 @@ msgstr "Forcer la modification de mot de passe"
 
 #: pkg/storaged/crypto/locked-encrypted-data.jsx:38
 #: pkg/storaged/lvm2/physical-volume.jsx:50
-#: pkg/storaged/filesystem/filesystem.jsx:108 pkg/storaged/swap/swap.jsx:51
+#: pkg/storaged/filesystem/filesystem.jsx:102 pkg/storaged/swap/swap.jsx:51
 #: pkg/storaged/stratis/blockdev.jsx:48 pkg/storaged/mdraid/mdraid-disk.jsx:47
 #: pkg/storaged/block/format-dialog.jsx:405
 #: pkg/storaged/block/unrecognized-data.jsx:41
@@ -4764,8 +4762,8 @@ msgid "More info..."
 msgstr "Plus d’infos..."
 
 #: pkg/storaged/nfs/nfs.jsx:310 pkg/storaged/filesystem/mounting-dialog.jsx:265
-#: pkg/storaged/filesystem/filesystem.jsx:107
-#: pkg/storaged/stratis/filesystem.jsx:213
+#: pkg/storaged/filesystem/filesystem.jsx:101
+#: pkg/storaged/stratis/filesystem.jsx:207
 msgid "Mount"
 msgstr "Monter"
 
@@ -4817,9 +4815,9 @@ msgid "Mount options"
 msgstr "Options de montage"
 
 #: pkg/storaged/nfs/nfs.jsx:329 pkg/storaged/filesystem/mounting-dialog.jsx:203
-#: pkg/storaged/filesystem/filesystem.jsx:151
+#: pkg/storaged/filesystem/filesystem.jsx:145
 #: pkg/storaged/stratis/filesystem.jsx:91
-#: pkg/storaged/stratis/filesystem.jsx:262 pkg/storaged/stratis/pool.jsx:91
+#: pkg/storaged/stratis/filesystem.jsx:256 pkg/storaged/stratis/pool.jsx:91
 #: pkg/storaged/block/format-dialog.jsx:286
 msgid "Mount point"
 msgstr "Point de montage"
@@ -4916,11 +4914,11 @@ msgstr "Serveur NTP"
 #: pkg/storaged/lvm2/thin-pool-logical-volume.jsx:138
 #: pkg/storaged/iscsi/create-dialog.jsx:111
 #: pkg/storaged/iscsi/create-dialog.jsx:168
-#: pkg/storaged/filesystem/filesystem.jsx:123
-#: pkg/storaged/filesystem/filesystem.jsx:145
+#: pkg/storaged/filesystem/filesystem.jsx:117
+#: pkg/storaged/filesystem/filesystem.jsx:139
 #: pkg/storaged/stratis/filesystem.jsx:86
-#: pkg/storaged/stratis/filesystem.jsx:233
-#: pkg/storaged/stratis/filesystem.jsx:257
+#: pkg/storaged/stratis/filesystem.jsx:227
+#: pkg/storaged/stratis/filesystem.jsx:251
 #: pkg/storaged/stratis/create-dialog.jsx:50 pkg/storaged/stratis/pool.jsx:80
 #: pkg/storaged/stratis/pool.jsx:190 pkg/storaged/stratis/pool.jsx:538
 #: pkg/storaged/mdraid/mdraid.jsx:298 pkg/storaged/mdraid/create-dialog.jsx:47
@@ -6438,7 +6436,7 @@ msgstr "La suppression de la zone supprime tous les services qui s’y trouvent.
 #: pkg/storaged/lvm2/block-logical-volume.jsx:53
 #: pkg/storaged/lvm2/block-logical-volume.jsx:242
 #: pkg/storaged/lvm2/volume-group.jsx:71
-#: pkg/storaged/stratis/filesystem.jsx:240 pkg/storaged/stratis/pool.jsx:197
+#: pkg/storaged/stratis/filesystem.jsx:234 pkg/storaged/stratis/pool.jsx:197
 msgid "Rename"
 msgstr "Renommer"
 
@@ -6446,7 +6444,7 @@ msgstr "Renommer"
 msgid "Rename Stratis pool"
 msgstr "Renommer le pool Stratis"
 
-#: pkg/storaged/stratis/filesystem.jsx:231
+#: pkg/storaged/stratis/filesystem.jsx:225
 msgid "Rename filesystem"
 msgstr "Renommer le système de fichiers"
 
@@ -6791,7 +6789,7 @@ msgstr "Samedis"
 #: pkg/storaged/crypto/encryption.jsx:195 pkg/storaged/crypto/keyslots.jsx:495
 #: pkg/storaged/crypto/keyslots.jsx:514
 #: pkg/storaged/filesystem/mounting-dialog.jsx:267
-#: pkg/storaged/filesystem/filesystem.jsx:130 pkg/storaged/stratis/pool.jsx:408
+#: pkg/storaged/filesystem/filesystem.jsx:124 pkg/storaged/stratis/pool.jsx:408
 #: pkg/storaged/stratis/pool.jsx:437 pkg/storaged/stratis/pool.jsx:492
 msgid "Save"
 msgstr "Enregistrer"
@@ -7194,7 +7192,7 @@ msgstr "Emplacement"
 msgid "Slot $0"
 msgstr "Emplacement $0"
 
-#: pkg/storaged/stratis/filesystem.jsx:214
+#: pkg/storaged/stratis/filesystem.jsx:208
 msgid "Snapshot"
 msgstr "Instantané"
 
@@ -7437,7 +7435,7 @@ msgstr "Ajouter des blocs de périphériques"
 msgid "Stratis blockdevs can not be made smaller"
 msgstr "Les sauvegardes VDO ne peuvent pas être plus petits"
 
-#: pkg/storaged/stratis/filesystem.jsx:197
+#: pkg/storaged/stratis/filesystem.jsx:191
 #, fuzzy
 #| msgid "Create filesystem"
 msgid "Stratis filesystem"
@@ -8721,8 +8719,8 @@ msgid "Unmanaged interfaces"
 msgstr "Interfaces non gérées"
 
 #: pkg/storaged/nfs/nfs.jsx:309 pkg/storaged/filesystem/mounting-dialog.jsx:266
-#: pkg/storaged/filesystem/filesystem.jsx:106
-#: pkg/storaged/stratis/filesystem.jsx:212
+#: pkg/storaged/filesystem/filesystem.jsx:100
+#: pkg/storaged/stratis/filesystem.jsx:206
 msgid "Unmount"
 msgstr "Démonter"
 
@@ -8831,8 +8829,8 @@ msgstr "Durée de fonctionnement"
 #: pkg/systemd/overview-cards/usageCard.jsx:127 pkg/metrics/metrics.jsx:1949
 #: pkg/metrics/metrics.jsx:1950 pkg/metrics/metrics.jsx:1951
 #: pkg/metrics/metrics.jsx:1952 pkg/storaged/lvm2/physical-volume.jsx:119
-#: pkg/storaged/filesystem/filesystem.jsx:156
-#: pkg/storaged/stratis/filesystem.jsx:266 pkg/storaged/stratis/pool.jsx:545
+#: pkg/storaged/filesystem/filesystem.jsx:150
+#: pkg/storaged/stratis/filesystem.jsx:260 pkg/storaged/stratis/pool.jsx:545
 #: pkg/storaged/block/unrecognized-data.jsx:51
 msgid "Usage"
 msgstr "Utilisation"
@@ -9519,8 +9517,8 @@ msgstr "disque"
 #: pkg/storaged/lvm2/volume-group.jsx:384
 #: pkg/storaged/lvm2/thin-pool-logical-volume.jsx:141
 #: pkg/storaged/filesystem/utils.jsx:173
-#: pkg/storaged/filesystem/filesystem.jsx:149
-#: pkg/storaged/stratis/filesystem.jsx:260 pkg/storaged/stratis/pool.jsx:541
+#: pkg/storaged/filesystem/filesystem.jsx:143
+#: pkg/storaged/stratis/filesystem.jsx:254 pkg/storaged/stratis/pool.jsx:541
 msgid "edit"
 msgstr "modifier"
 

@@ -26,7 +26,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-07 02:47+0000\n"
+"POT-Creation-Date: 2024-01-09 02:47+0000\n"
 "PO-Revision-Date: 2024-01-07 14:36+0000\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://translate.fedoraproject.org/projects/"
@@ -138,7 +138,7 @@ msgid_plural "$0 failed login attempts"
 msgstr[0] "შესვლის $0 წარუმატებელი მცდელობა"
 msgstr[1] "შესვლის $0 ცალი წარუმატებელი მცდელობა"
 
-#: pkg/storaged/filesystem/filesystem.jsx:97
+#: pkg/storaged/filesystem/filesystem.jsx:91
 msgid "$0 filesystem"
 msgstr "ფაილური სისტემა $0"
 
@@ -320,10 +320,8 @@ msgstr "$name ($host-დან)"
 msgid "(Not part of target)"
 msgstr "(სამიზნის ნაწილი არაა)"
 
-#: pkg/storaged/nfs/nfs.jsx:294 pkg/storaged/filesystem/filesystem.jsx:92
-#: pkg/storaged/filesystem/filesystem.jsx:94
-#: pkg/storaged/stratis/filesystem.jsx:192
-#: pkg/storaged/stratis/filesystem.jsx:194
+#: pkg/storaged/nfs/nfs.jsx:294 pkg/storaged/filesystem/utils.jsx:189
+#: pkg/storaged/filesystem/utils.jsx:191
 msgid "(not mounted)"
 msgstr "(მიმაგრებული არაა)"
 
@@ -2412,7 +2410,7 @@ msgstr "დაყოვნება რიცხვი უნდა იყოს
 #: pkg/storaged/legacy-vdo/legacy-vdo.jsx:122
 #: pkg/storaged/legacy-vdo/legacy-vdo.jsx:152
 #: pkg/storaged/stratis/filesystem.jsx:173
-#: pkg/storaged/stratis/filesystem.jsx:215 pkg/storaged/stratis/pool.jsx:173
+#: pkg/storaged/stratis/filesystem.jsx:209 pkg/storaged/stratis/pool.jsx:173
 #: pkg/storaged/mdraid/mdraid.jsx:126 pkg/storaged/mdraid/mdraid.jsx:236
 msgid "Delete"
 msgstr "წაშლა"
@@ -3159,15 +3157,15 @@ msgstr "პროფილის გადართვის შეცდომ�
 msgid "File state"
 msgstr "ფაილის მდგომარეობა"
 
-#: pkg/storaged/filesystem/filesystem.jsx:97
+#: pkg/storaged/filesystem/filesystem.jsx:91
 msgid "Filesystem"
 msgstr "ფაილური სისტემა"
 
-#: pkg/storaged/filesystem/filesystem.jsx:148
+#: pkg/storaged/filesystem/filesystem.jsx:142
 msgid "Filesystem is locked"
 msgstr "ფაილური სისტემა ჩაკეტილია"
 
-#: pkg/storaged/filesystem/filesystem.jsx:121
+#: pkg/storaged/filesystem/filesystem.jsx:115
 msgid "Filesystem name"
 msgstr "ფაილური სისტემის სახელი"
 
@@ -3238,7 +3236,7 @@ msgstr "პაროლის ძალით შეცვლა"
 
 #: pkg/storaged/crypto/locked-encrypted-data.jsx:38
 #: pkg/storaged/lvm2/physical-volume.jsx:50
-#: pkg/storaged/filesystem/filesystem.jsx:108 pkg/storaged/swap/swap.jsx:51
+#: pkg/storaged/filesystem/filesystem.jsx:102 pkg/storaged/swap/swap.jsx:51
 #: pkg/storaged/stratis/blockdev.jsx:48 pkg/storaged/mdraid/mdraid-disk.jsx:47
 #: pkg/storaged/block/format-dialog.jsx:405
 #: pkg/storaged/block/unrecognized-data.jsx:41
@@ -4586,8 +4584,8 @@ msgid "More info..."
 msgstr "მეტი ინფორმაცია..."
 
 #: pkg/storaged/nfs/nfs.jsx:310 pkg/storaged/filesystem/mounting-dialog.jsx:265
-#: pkg/storaged/filesystem/filesystem.jsx:107
-#: pkg/storaged/stratis/filesystem.jsx:213
+#: pkg/storaged/filesystem/filesystem.jsx:101
+#: pkg/storaged/stratis/filesystem.jsx:207
 msgid "Mount"
 msgstr "მიმაგრება"
 
@@ -4639,9 +4637,9 @@ msgid "Mount options"
 msgstr "მიმაგრების მორგება"
 
 #: pkg/storaged/nfs/nfs.jsx:329 pkg/storaged/filesystem/mounting-dialog.jsx:203
-#: pkg/storaged/filesystem/filesystem.jsx:151
+#: pkg/storaged/filesystem/filesystem.jsx:145
 #: pkg/storaged/stratis/filesystem.jsx:91
-#: pkg/storaged/stratis/filesystem.jsx:262 pkg/storaged/stratis/pool.jsx:91
+#: pkg/storaged/stratis/filesystem.jsx:256 pkg/storaged/stratis/pool.jsx:91
 #: pkg/storaged/block/format-dialog.jsx:286
 msgid "Mount point"
 msgstr "მიმაგრების წერტილი"
@@ -4733,11 +4731,11 @@ msgstr "NTP სერვერი"
 #: pkg/storaged/lvm2/thin-pool-logical-volume.jsx:138
 #: pkg/storaged/iscsi/create-dialog.jsx:111
 #: pkg/storaged/iscsi/create-dialog.jsx:168
-#: pkg/storaged/filesystem/filesystem.jsx:123
-#: pkg/storaged/filesystem/filesystem.jsx:145
+#: pkg/storaged/filesystem/filesystem.jsx:117
+#: pkg/storaged/filesystem/filesystem.jsx:139
 #: pkg/storaged/stratis/filesystem.jsx:86
-#: pkg/storaged/stratis/filesystem.jsx:233
-#: pkg/storaged/stratis/filesystem.jsx:257
+#: pkg/storaged/stratis/filesystem.jsx:227
+#: pkg/storaged/stratis/filesystem.jsx:251
 #: pkg/storaged/stratis/create-dialog.jsx:50 pkg/storaged/stratis/pool.jsx:80
 #: pkg/storaged/stratis/pool.jsx:190 pkg/storaged/stratis/pool.jsx:538
 #: pkg/storaged/mdraid/mdraid.jsx:298 pkg/storaged/mdraid/create-dialog.jsx:47
@@ -6196,7 +6194,7 @@ msgstr "ზონის წაშლა მასში მყოფი სე�
 #: pkg/storaged/lvm2/block-logical-volume.jsx:53
 #: pkg/storaged/lvm2/block-logical-volume.jsx:242
 #: pkg/storaged/lvm2/volume-group.jsx:71
-#: pkg/storaged/stratis/filesystem.jsx:240 pkg/storaged/stratis/pool.jsx:197
+#: pkg/storaged/stratis/filesystem.jsx:234 pkg/storaged/stratis/pool.jsx:197
 msgid "Rename"
 msgstr "სახელის გადარქმევა"
 
@@ -6204,7 +6202,7 @@ msgstr "სახელის გადარქმევა"
 msgid "Rename Stratis pool"
 msgstr "Stratis-ის პულისთვის სახელის გადარქმევა"
 
-#: pkg/storaged/stratis/filesystem.jsx:231
+#: pkg/storaged/stratis/filesystem.jsx:225
 msgid "Rename filesystem"
 msgstr "ფაილური სისტემის სახელის გადარქმევა"
 
@@ -6550,7 +6548,7 @@ msgstr "შაბათობით"
 #: pkg/storaged/crypto/encryption.jsx:195 pkg/storaged/crypto/keyslots.jsx:495
 #: pkg/storaged/crypto/keyslots.jsx:514
 #: pkg/storaged/filesystem/mounting-dialog.jsx:267
-#: pkg/storaged/filesystem/filesystem.jsx:130 pkg/storaged/stratis/pool.jsx:408
+#: pkg/storaged/filesystem/filesystem.jsx:124 pkg/storaged/stratis/pool.jsx:408
 #: pkg/storaged/stratis/pool.jsx:437 pkg/storaged/stratis/pool.jsx:492
 msgid "Save"
 msgstr "შენახვა"
@@ -6944,7 +6942,7 @@ msgstr "სლოტი"
 msgid "Slot $0"
 msgstr "სლოტი $0"
 
-#: pkg/storaged/stratis/filesystem.jsx:214
+#: pkg/storaged/stratis/filesystem.jsx:208
 msgid "Snapshot"
 msgstr "სწრაფი ასლი"
 
@@ -7174,7 +7172,7 @@ msgstr "Stratis-ის ბლოკური მოწყობილობე�
 msgid "Stratis blockdevs can not be made smaller"
 msgstr "Stratis ბლოკური მოწყობილობები მეტად ვეღარ დაპატარავდება"
 
-#: pkg/storaged/stratis/filesystem.jsx:197
+#: pkg/storaged/stratis/filesystem.jsx:191
 msgid "Stratis filesystem"
 msgstr "Stratis-ის ფაილური სისტემა"
 
@@ -8405,8 +8403,8 @@ msgid "Unmanaged interfaces"
 msgstr "უმართავი ინტერფეისები"
 
 #: pkg/storaged/nfs/nfs.jsx:309 pkg/storaged/filesystem/mounting-dialog.jsx:266
-#: pkg/storaged/filesystem/filesystem.jsx:106
-#: pkg/storaged/stratis/filesystem.jsx:212
+#: pkg/storaged/filesystem/filesystem.jsx:100
+#: pkg/storaged/stratis/filesystem.jsx:206
 msgid "Unmount"
 msgstr "მოძრობა"
 
@@ -8511,8 +8509,8 @@ msgstr "ჩართულია"
 #: pkg/systemd/overview-cards/usageCard.jsx:127 pkg/metrics/metrics.jsx:1949
 #: pkg/metrics/metrics.jsx:1950 pkg/metrics/metrics.jsx:1951
 #: pkg/metrics/metrics.jsx:1952 pkg/storaged/lvm2/physical-volume.jsx:119
-#: pkg/storaged/filesystem/filesystem.jsx:156
-#: pkg/storaged/stratis/filesystem.jsx:266 pkg/storaged/stratis/pool.jsx:545
+#: pkg/storaged/filesystem/filesystem.jsx:150
+#: pkg/storaged/stratis/filesystem.jsx:260 pkg/storaged/stratis/pool.jsx:545
 #: pkg/storaged/block/unrecognized-data.jsx:51
 msgid "Usage"
 msgstr "გამოყენება"
@@ -9177,8 +9175,8 @@ msgstr "დისკი"
 #: pkg/storaged/lvm2/volume-group.jsx:384
 #: pkg/storaged/lvm2/thin-pool-logical-volume.jsx:141
 #: pkg/storaged/filesystem/utils.jsx:173
-#: pkg/storaged/filesystem/filesystem.jsx:149
-#: pkg/storaged/stratis/filesystem.jsx:260 pkg/storaged/stratis/pool.jsx:541
+#: pkg/storaged/filesystem/filesystem.jsx:143
+#: pkg/storaged/stratis/filesystem.jsx:254 pkg/storaged/stratis/pool.jsx:541
 msgid "edit"
 msgstr "ჩასწორება"
 
