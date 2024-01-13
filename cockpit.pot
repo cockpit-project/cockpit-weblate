@@ -28,7 +28,7 @@ msgstr ""
 "#-#-#-#-#  cockpit.js.pot (PACKAGE VERSION)  #-#-#-#-#\n"
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-12 02:47+0000\n"
+"POT-Creation-Date: 2024-01-13 02:47+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -46,7 +46,7 @@ msgstr ""
 "#-#-#-#-#  cockpit.appstream.pot (PACKAGE VERSION)  #-#-#-#-#\n"
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-12 02:47+0000\n"
+"POT-Creation-Date: 2024-01-13 02:47+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -57,7 +57,7 @@ msgstr ""
 "#-#-#-#-#  cockpit.polkit.pot (PACKAGE VERSION)  #-#-#-#-#\n"
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-12 02:47+0000\n"
+"POT-Creation-Date: 2024-01-13 02:47+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -190,7 +190,7 @@ msgstr[1] ""
 msgid "$0 is an existing file"
 msgstr ""
 
-#: pkg/storaged/partitions/partition.jsx:43
+#: pkg/storaged/partitions/partition.jsx:47
 #: pkg/storaged/partitions/format-disk-dialog.jsx:39
 #: pkg/storaged/lvm2/block-logical-volume.jsx:68
 #: pkg/storaged/lvm2/block-logical-volume.jsx:151
@@ -1254,6 +1254,10 @@ msgstr ""
 msgid "BIOS"
 msgstr ""
 
+#: pkg/storaged/partitions/partition.jsx:114
+msgid "BIOS boot partition"
+msgstr ""
+
 #: pkg/systemd/hwinfo.jsx:108
 msgid "BIOS date"
 msgstr ""
@@ -1464,7 +1468,7 @@ msgstr ""
 msgid "Cannot connect to an unknown host"
 msgstr ""
 
-#: pkg/lib/cockpit.js:3870
+#: pkg/lib/cockpit.js:3875
 msgid "Cannot forward login credentials"
 msgstr ""
 
@@ -1547,6 +1551,10 @@ msgid ""
 "Changed keys are often the result of an operating system reinstallation. "
 "However, an unexpected change may indicate a third-party attempt to "
 "intercept your connection."
+msgstr ""
+
+#: pkg/storaged/partitions/partition.jsx:188
+msgid "Changing partition types might prevent the system from booting."
 msgstr ""
 
 #: pkg/networkmanager/interfaces.js:1655
@@ -1676,7 +1684,7 @@ msgstr ""
 msgid "Cockpit configuration of NetworkManager and Firewalld"
 msgstr ""
 
-#: pkg/lib/cockpit.js:3876
+#: pkg/lib/cockpit.js:3881
 msgid "Cockpit could not contact the given host."
 msgstr ""
 
@@ -1697,7 +1705,7 @@ msgstr ""
 msgid "Cockpit is an interactive Linux server admin interface."
 msgstr ""
 
-#: pkg/lib/cockpit.js:3874
+#: pkg/lib/cockpit.js:3879
 msgid "Cockpit is not compatible with the software on the system."
 msgstr ""
 
@@ -1705,7 +1713,7 @@ msgstr ""
 msgid "Cockpit is not installed"
 msgstr ""
 
-#: pkg/lib/cockpit.js:3868
+#: pkg/lib/cockpit.js:3873
 msgid "Cockpit is not installed on the system."
 msgstr ""
 
@@ -1886,7 +1894,7 @@ msgstr ""
 msgid "Connection failed"
 msgstr ""
 
-#: pkg/lib/cockpit.js:3866
+#: pkg/lib/cockpit.js:3871
 msgid "Connection has timed out."
 msgstr ""
 
@@ -2179,6 +2187,10 @@ msgstr ""
 msgid "Currently in use"
 msgstr ""
 
+#: pkg/storaged/partitions/partition.jsx:146
+msgid "Custom"
+msgstr ""
+
 #: pkg/systemd/overview-cards/cryptoPolicies.jsx:142
 msgid "Custom cryptographic policy"
 msgstr ""
@@ -2191,6 +2203,10 @@ msgstr ""
 
 #: pkg/networkmanager/firewall.jsx:639
 msgid "Custom ports"
+msgstr ""
+
+#: pkg/storaged/partitions/partition.jsx:180
+msgid "Custom type"
 msgstr ""
 
 #: pkg/networkmanager/firewall.jsx:839
@@ -2348,8 +2364,8 @@ msgstr ""
 #: pkg/sosreport/sosreport.jsx:470 pkg/users/account-details.js:227
 #: pkg/users/delete-account-dialog.js:60 pkg/users/delete-group-dialog.js:51
 #: pkg/systemd/service-details.jsx:150 pkg/systemd/service-details.jsx:719
-#: pkg/systemd/abrtLog.jsx:290 pkg/storaged/partitions/partition.jsx:54
-#: pkg/storaged/partitions/partition.jsx:100
+#: pkg/systemd/abrtLog.jsx:290 pkg/storaged/partitions/partition.jsx:58
+#: pkg/storaged/partitions/partition.jsx:104
 #: pkg/storaged/partitions/partition-table.jsx:61
 #: pkg/storaged/lvm2/block-logical-volume.jsx:79
 #: pkg/storaged/lvm2/block-logical-volume.jsx:222
@@ -2416,7 +2432,7 @@ msgstr ""
 msgid "Deleting a logical volume will delete all data in it."
 msgstr ""
 
-#: pkg/storaged/partitions/partition.jsx:53
+#: pkg/storaged/partitions/partition.jsx:57
 msgid "Deleting a partition will delete all data in it."
 msgstr ""
 
@@ -2670,6 +2686,11 @@ msgstr ""
 
 #: pkg/systemd/hw-detect.js:92 pkg/lib/machine-info.js:240
 msgid "Dual rank"
+msgstr ""
+
+#: pkg/storaged/partitions/partition.jsx:115
+#: pkg/storaged/partitions/partition.jsx:123
+msgid "EFI system partition"
 msgstr ""
 
 #: pkg/networkmanager/firewall.jsx:119 pkg/shell/hosts.jsx:167
@@ -3273,7 +3294,7 @@ msgstr ""
 msgid "Groups"
 msgstr ""
 
-#: pkg/storaged/partitions/partition.jsx:95
+#: pkg/storaged/partitions/partition.jsx:99
 #: pkg/storaged/lvm2/block-logical-volume.jsx:211
 #: pkg/storaged/lvm2/vdo-pool.jsx:48
 #: pkg/storaged/lvm2/thin-pool-logical-volume.jsx:104
@@ -3282,7 +3303,7 @@ msgstr ""
 msgid "Grow"
 msgstr ""
 
-#: pkg/storaged/partitions/partition.jsx:134
+#: pkg/storaged/partitions/partition.jsx:213
 #: pkg/storaged/lvm2/block-logical-volume.jsx:281
 msgid "Grow content"
 msgstr ""
@@ -3368,7 +3389,7 @@ msgstr ""
 msgid "Host"
 msgstr ""
 
-#: pkg/lib/cockpit.js:3862
+#: pkg/lib/cockpit.js:3867
 msgid "Host key is incorrect"
 msgstr ""
 
@@ -3637,7 +3658,7 @@ msgstr ""
 msgid "Interfaces"
 msgstr ""
 
-#: pkg/lib/cockpit.js:3864
+#: pkg/lib/cockpit.js:3869
 msgid "Internal error"
 msgstr ""
 
@@ -3991,6 +4012,16 @@ msgstr ""
 msgid "Linked"
 msgstr ""
 
+#: pkg/storaged/partitions/partition.jsx:118
+#: pkg/storaged/partitions/partition.jsx:125
+msgid "Linux filesystem data"
+msgstr ""
+
+#: pkg/storaged/partitions/partition.jsx:117
+#: pkg/storaged/partitions/partition.jsx:124
+msgid "Linux swap space"
+msgstr ""
+
 #: pkg/systemd/service-details.jsx:670
 msgid "Listen"
 msgstr ""
@@ -4148,6 +4179,11 @@ msgstr ""
 msgid "Logical"
 msgstr ""
 
+#: pkg/storaged/partitions/partition.jsx:119
+#: pkg/storaged/partitions/partition.jsx:126
+msgid "Logical Volume Manager partition"
+msgstr ""
+
 #: pkg/storaged/lvm2/create-logical-volume-dialog.jsx:213
 #: pkg/storaged/legacy-vdo/legacy-vdo.jsx:249
 msgid "Logical size"
@@ -4173,7 +4209,7 @@ msgstr ""
 msgid "Login again"
 msgstr ""
 
-#: pkg/lib/cockpit.js:3854
+#: pkg/lib/cockpit.js:3859
 msgid "Login failed"
 msgstr ""
 
@@ -4630,7 +4666,7 @@ msgstr ""
 #: pkg/networkmanager/dialogs-common.jsx:142 pkg/shell/credentials.jsx:101
 #: pkg/users/group-create-dialog.js:39 pkg/users/authorized-keys-panel.js:128
 #: pkg/packagekit/updates.jsx:448 pkg/systemd/hwinfo.jsx:86
-#: pkg/systemd/timer-dialog.jsx:157 pkg/storaged/partitions/partition.jsx:140
+#: pkg/systemd/timer-dialog.jsx:157 pkg/storaged/partitions/partition.jsx:219
 #: pkg/storaged/lvm2/block-logical-volume.jsx:49
 #: pkg/storaged/lvm2/block-logical-volume.jsx:238
 #: pkg/storaged/lvm2/block-logical-volume.jsx:286
@@ -4882,7 +4918,7 @@ msgstr ""
 msgid "No free space"
 msgstr ""
 
-#: pkg/storaged/partitions/partition.jsx:75
+#: pkg/storaged/partitions/partition.jsx:79
 msgid "No free space after this partition"
 msgstr ""
 
@@ -5056,7 +5092,7 @@ msgstr ""
 msgid "Not permitted to configure realms"
 msgstr ""
 
-#: pkg/lib/cockpit.js:3852
+#: pkg/lib/cockpit.js:3857
 msgid "Not permitted to perform this action."
 msgstr ""
 
@@ -5269,7 +5305,7 @@ msgstr ""
 msgid "Part of $0"
 msgstr ""
 
-#: pkg/storaged/partitions/partition.jsx:79
+#: pkg/storaged/partitions/partition.jsx:83
 msgid "Partition"
 msgstr ""
 
@@ -5277,7 +5313,7 @@ msgstr ""
 msgid "Partition of $0"
 msgstr ""
 
-#: pkg/storaged/partitions/partition.jsx:126
+#: pkg/storaged/partitions/partition.jsx:205
 msgid "Partition size is $0. Content size is $1."
 msgstr ""
 
@@ -5475,7 +5511,7 @@ msgstr ""
 msgid "Permanently delete $0 group?"
 msgstr ""
 
-#: pkg/storaged/partitions/partition.jsx:50
+#: pkg/storaged/partitions/partition.jsx:54
 #: pkg/storaged/lvm2/volume-group.jsx:93
 #: pkg/storaged/legacy-vdo/legacy-vdo.jsx:119 pkg/storaged/stratis/pool.jsx:169
 #: pkg/storaged/mdraid/mdraid.jsx:123
@@ -5594,6 +5630,10 @@ msgstr ""
 #: pkg/networkmanager/network-interface-members.jsx:203
 #: pkg/networkmanager/bridge.jsx:101
 msgid "Ports"
+msgstr ""
+
+#: pkg/storaged/partitions/partition.jsx:116
+msgid "PowerPC PReP boot partition"
 msgstr ""
 
 #: pkg/networkmanager/ip-settings.jsx:194
@@ -6419,7 +6459,8 @@ msgstr ""
 
 #: pkg/networkmanager/dialogs-common.jsx:160 pkg/packagekit/kpatch.jsx:307
 #: pkg/systemd/timer-dialog.jsx:148 pkg/metrics/metrics.jsx:1478
-#: pkg/storaged/nfs/nfs.jsx:188 pkg/storaged/crypto/encryption.jsx:168
+#: pkg/storaged/partitions/partition.jsx:189 pkg/storaged/nfs/nfs.jsx:188
+#: pkg/storaged/crypto/encryption.jsx:168
 #: pkg/storaged/crypto/encryption.jsx:195 pkg/storaged/crypto/keyslots.jsx:495
 #: pkg/storaged/crypto/keyslots.jsx:514
 #: pkg/storaged/filesystem/mounting-dialog.jsx:267
@@ -6562,7 +6603,7 @@ msgstr ""
 msgid "Server cannot be empty."
 msgstr ""
 
-#: pkg/lib/cockpit.js:3872
+#: pkg/lib/cockpit.js:3877
 msgid "Server has closed the connection."
 msgstr ""
 
@@ -6625,6 +6666,10 @@ msgstr ""
 
 #: pkg/systemd/overview-cards/configurationCard.jsx:55
 msgid "Set hostname"
+msgstr ""
+
+#: pkg/storaged/partitions/partition.jsx:173
+msgid "Set partition type of $0"
 msgstr ""
 
 #: pkg/users/account-details.js:301 pkg/users/password-dialogs.js:226
@@ -6725,7 +6770,7 @@ msgstr ""
 msgid "Show relationships"
 msgstr ""
 
-#: pkg/storaged/partitions/partition.jsx:89
+#: pkg/storaged/partitions/partition.jsx:93
 #: pkg/storaged/lvm2/block-logical-volume.jsx:205
 #: pkg/storaged/block/resize.jsx:629
 msgid "Shrink"
@@ -6735,7 +6780,7 @@ msgstr ""
 msgid "Shrink logical volume"
 msgstr ""
 
-#: pkg/storaged/partitions/partition.jsx:131 pkg/storaged/block/resize.jsx:551
+#: pkg/storaged/partitions/partition.jsx:210 pkg/storaged/block/resize.jsx:551
 msgid "Shrink partition"
 msgstr ""
 
@@ -6760,7 +6805,7 @@ msgstr ""
 msgid "Single rank"
 msgstr ""
 
-#: pkg/systemd/hwinfo.jsx:291 pkg/storaged/partitions/partition.jsx:144
+#: pkg/systemd/hwinfo.jsx:291 pkg/storaged/partitions/partition.jsx:227
 #: pkg/storaged/nfs/nfs.jsx:330 pkg/storaged/pages.jsx:705
 #: pkg/storaged/lvm2/block-logical-volume.jsx:291
 #: pkg/storaged/lvm2/vdo-pool.jsx:79
@@ -7494,7 +7539,7 @@ msgid ""
 "no other supported authentication methods are available."
 msgstr ""
 
-#: pkg/lib/cockpit.js:3856
+#: pkg/lib/cockpit.js:3861
 msgid "The server refused to authenticate using any supported methods."
 msgstr ""
 
@@ -7670,7 +7715,7 @@ msgstr ""
 msgid "This may take a while"
 msgstr ""
 
-#: pkg/storaged/partitions/partition.jsx:125
+#: pkg/storaged/partitions/partition.jsx:204
 msgid "This partition is not completely used by its content."
 msgstr ""
 
@@ -7848,7 +7893,7 @@ msgstr ""
 msgid "Toggle filters"
 msgstr ""
 
-#: pkg/lib/cockpit.js:3878
+#: pkg/lib/cockpit.js:3883
 msgid "Too much data"
 msgstr ""
 
@@ -7957,10 +8002,23 @@ msgstr ""
 
 #: pkg/shell/credentials.jsx:199 pkg/packagekit/autoupdates.jsx:279
 #: pkg/systemd/hwinfo.jsx:81 pkg/systemd/hwinfo.jsx:291
-#: pkg/storaged/partitions/partition.jsx:142 pkg/storaged/pages.jsx:703
+#: pkg/storaged/partitions/partition.jsx:175
+#: pkg/storaged/partitions/partition.jsx:221 pkg/storaged/pages.jsx:703
 #: pkg/storaged/block/format-dialog.jsx:297
 #: pkg/storaged/block/unrecognized-data.jsx:52
 msgid "Type"
+msgstr ""
+
+#: pkg/storaged/partitions/partition.jsx:165
+msgid "Type can only contain the characters 0 to 9, A to F, and \"-\"."
+msgstr ""
+
+#: pkg/storaged/partitions/partition.jsx:168
+msgid "Type must be of the form NNNNNNNN-NNNN-NNNN-NNNN-NNNNNNNNNNNN."
+msgstr ""
+
+#: pkg/storaged/partitions/partition.jsx:152
+msgid "Type must contain exactly two hexadecimal characters (0 to 9, A to F)."
 msgstr ""
 
 #: pkg/systemd/logs.jsx:402
@@ -7971,7 +8029,7 @@ msgstr ""
 msgid "UDP"
 msgstr ""
 
-#: pkg/storaged/partitions/partition.jsx:141
+#: pkg/storaged/partitions/partition.jsx:220
 #: pkg/storaged/lvm2/volume-group.jsx:386
 #: pkg/storaged/lvm2/physical-volume.jsx:117 pkg/storaged/stratis/pool.jsx:543
 #: pkg/storaged/stratis/stopped-pool.jsx:127 pkg/storaged/mdraid/mdraid.jsx:304
@@ -8200,7 +8258,7 @@ msgstr ""
 msgid "Until"
 msgstr ""
 
-#: pkg/lib/cockpit.js:3858 pkg/lib/cockpit.js:3860
+#: pkg/lib/cockpit.js:3863 pkg/lib/cockpit.js:3865
 msgid "Untrusted host"
 msgstr ""
 
@@ -8700,11 +8758,11 @@ msgid ""
 "restarted."
 msgstr ""
 
-#: pkg/lib/cockpit.js:3848
+#: pkg/lib/cockpit.js:3853
 msgid "Your session has been terminated."
 msgstr ""
 
-#: pkg/lib/cockpit.js:3850
+#: pkg/lib/cockpit.js:3855
 msgid "Your session has expired. Please log in again."
 msgstr ""
 
@@ -8859,7 +8917,7 @@ msgstr ""
 msgid "debug"
 msgstr ""
 
-#: pkg/storaged/partitions/partition.jsx:39
+#: pkg/storaged/partitions/partition.jsx:43
 #: pkg/storaged/partitions/format-disk-dialog.jsx:35
 #: pkg/storaged/lvm2/block-logical-volume.jsx:64
 #: pkg/storaged/lvm2/volume-group.jsx:81 pkg/storaged/lvm2/volume-group.jsx:331
@@ -8901,6 +8959,7 @@ msgstr ""
 #: pkg/networkmanager/dialogs-common.jsx:262 pkg/users/account-details.js:291
 #: pkg/users/account-details.js:321
 #: pkg/systemd/overview-cards/configurationCard.jsx:55
+#: pkg/storaged/partitions/partition.jsx:224
 #: pkg/storaged/crypto/encryption.jsx:233
 #: pkg/storaged/crypto/encryption.jsx:236
 #: pkg/storaged/lvm2/block-logical-volume.jsx:288
