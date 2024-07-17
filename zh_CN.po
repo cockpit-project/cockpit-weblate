@@ -20,8 +20,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-15 02:51+0000\n"
-"PO-Revision-Date: 2024-07-10 19:38+0000\n"
-"Last-Translator: Martin Pitt <mpitt@redhat.com>\n"
+"PO-Revision-Date: 2024-07-17 01:38+0000\n"
+"Last-Translator: Shuo Wang <fuowanghappy@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
 "projects/cockpit/main/zh_CN/>\n"
 "Language: zh_CN\n"
@@ -260,10 +260,8 @@ msgid "$0 used of $1 ($2 saved)"
 msgstr "已使用 $0，共 $1（已保存 $2）"
 
 #: pkg/storaged/dialog.jsx:1360
-#, fuzzy
-#| msgid "$0 total"
 msgid "$0 used, $1 total"
-msgstr "$0 总计"
+msgstr "已使用 $0 ，共 $1"
 
 #: pkg/lib/cockpit-components-plot.jsx:223
 msgid "$0 week"
@@ -1456,7 +1454,7 @@ msgstr "载体"
 
 #: pkg/storaged/pages.jsx:713
 msgid "Category"
-msgstr ""
+msgstr "种类"
 
 #: pkg/systemd/overview-cards/configurationCard.jsx:279
 #: pkg/lib/serverTime.js:721 pkg/storaged/iscsi/create-dialog.jsx:171
@@ -1566,10 +1564,8 @@ msgid "Checking and repairing MDRAID device $target"
 msgstr "检查并修复 MDRAID 设备 $target"
 
 #: pkg/storaged/dialog.jsx:1344
-#, fuzzy
-#| msgid "Creating filesystem on $target"
 msgid "Checking filesystem usage"
-msgstr "在 $target 中创建文件系统"
+msgstr "正在检查文件系统使用量"
 
 #: pkg/storaged/crypto/keyslots.jsx:267
 msgid "Checking for $0 package"
@@ -2499,10 +2495,8 @@ msgid "Device"
 msgstr "设备"
 
 #: pkg/storaged/dialog.jsx:1364 pkg/storaged/dialog.jsx:1372
-#, fuzzy
-#| msgid "Unrecognized data"
 msgid "Device contains unrecognized data"
-msgstr "无法识别的数据"
+msgstr "设备含有无法识别的数据"
 
 #: pkg/storaged/legacy-vdo/legacy-vdo.jsx:287 pkg/storaged/drive/drive.jsx:132
 #: pkg/storaged/block/other.jsx:62
@@ -2784,7 +2778,7 @@ msgstr "编辑服务 $0"
 
 #: pkg/networkmanager/team.jsx:154
 msgid "Edit team settings"
-msgstr "编辑团队设置"
+msgstr "编辑组合设置"
 
 #: pkg/users/accounts-list.js:59
 msgid "Edit user"
@@ -3443,7 +3437,7 @@ msgstr "如何检查"
 
 #: pkg/storaged/dialog.jsx:1381
 msgid "I confirm I want to lose this data forever"
-msgstr ""
+msgstr "我确认我想永远丢失这些数据"
 
 #: pkg/systemd/hwinfo.jsx:291 pkg/networkmanager/firewall.jsx:696
 #: pkg/storaged/btrfs/subvolume.jsx:437 pkg/storaged/pages.jsx:714
@@ -3527,7 +3521,7 @@ msgstr "忽略"
 
 #: pkg/storaged/dialog.jsx:1316
 msgid "Important data might be deleted:"
-msgstr ""
+msgstr "重要数据可能会被删除："
 
 #: pkg/metrics/metrics.jsx:816
 msgid "In"
@@ -4203,11 +4197,8 @@ msgid "Locked data"
 msgstr "锁定的数据"
 
 #: pkg/storaged/dialog.jsx:1368
-#, fuzzy
-#| msgctxt "storage-id-desc"
-#| msgid "Locked encrypted data"
 msgid "Locked encrypted device might contain data"
-msgstr "锁住加密的数据"
+msgstr "已锁定的加密设备可能含有数据"
 
 #: pkg/storaged/jobs-panel.jsx:43
 msgid "Locking $target"
@@ -4420,7 +4411,7 @@ msgstr "管理网络桥接"
 
 #: pkg/networkmanager/manifest.json:0
 msgid "Managing networking teams"
-msgstr "管理网络团队"
+msgstr "管理网络组合"
 
 #: pkg/storaged/manifest.json:0
 msgid "Managing partitions"
@@ -5078,10 +5069,8 @@ msgid "No rule hits"
 msgstr "无规则命中"
 
 #: pkg/storaged/btrfs/subvolume.jsx:464
-#, fuzzy
-#| msgid "No snapshots"
 msgid "No snapshots found"
-msgstr "没有快照"
+msgstr "找不到快照"
 
 #: pkg/storaged/overview/overview.jsx:190
 msgid "No storage found"
@@ -7393,15 +7382,15 @@ msgstr "目标"
 #: pkg/networkmanager/network-interface.jsx:189
 #: pkg/networkmanager/network-interface.jsx:453
 msgid "Team"
-msgstr "组"
+msgstr "组合"
 
 #: pkg/networkmanager/network-interface.jsx:483
 msgid "Team port"
-msgstr "组端口"
+msgstr "组合端口"
 
 #: pkg/networkmanager/teamport.jsx:82
 msgid "Team port settings"
-msgstr "组端口设置"
+msgstr "组合端口设置"
 
 #: pkg/systemd/terminal.html:4 pkg/systemd/manifest.json:0
 msgid "Terminal"
@@ -7928,8 +7917,8 @@ msgid ""
 "firewalls using NetworkManager and Firewalld. NetworkManager is incompatible "
 "with Ubuntu's default systemd-networkd and Debian's ifupdown scripts."
 msgstr ""
-"此工具使用 NetworkManager 和 Firewalld 管理网络，如绑定、网桥、团队、VLAN 和"
-"防火墙等。NetworkManager 与 Ubuntu 的默认 systemd-networkd 和 Debian 的 "
+"此工具使用 NetworkManager 和 Firewalld 管理网络，如绑定、网桥、组合、VLAN "
+"和防火墙等。NetworkManager 与 Ubuntu 默认的 systemd-networkd 以及 Debian 的 "
 "ifupdown 脚本不兼容。"
 
 #: pkg/systemd/service-details.jsx:347
@@ -9324,7 +9313,7 @@ msgstr "忽略失败"
 
 #: pkg/lib/timeformat.ts:60
 msgid "in less than a minute"
-msgstr ""
+msgstr "一分钟内"
 
 #: pkg/shell/shell-modals.jsx:195
 msgid "in most browsers"
@@ -9390,7 +9379,7 @@ msgstr "补丁"
 
 #: pkg/lib/timeformat.ts:58
 msgid "less than a minute ago"
-msgstr ""
+msgstr "不到一分钟前"
 
 #: pkg/users/manifest.json:0
 msgid "login"
@@ -9745,7 +9734,7 @@ msgstr "tcp"
 
 #: pkg/networkmanager/manifest.json:0
 msgid "team"
-msgstr "组"
+msgstr "组合"
 
 #: pkg/systemd/manifest.json:0
 msgid "time"
