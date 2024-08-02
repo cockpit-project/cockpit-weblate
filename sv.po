@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-30 02:50+0000\n"
+"POT-Creation-Date: 2024-08-02 02:50+0000\n"
 "PO-Revision-Date: 2024-07-22 10:38+0000\n"
 "Last-Translator: Luna Jernberg <bittin@reimu.nl>\n"
 "Language-Team: Swedish <https://translate.fedoraproject.org/projects/cockpit/"
@@ -161,7 +161,8 @@ msgstr "$0 används"
 msgid "$0 is not available from any repository."
 msgstr "$0 är inte tillgängligt från något förråd."
 
-#: pkg/shell/hosts_dialog.jsx:464 pkg/static/login.js:759
+#: pkg/lib/cockpit-connect-ssh.tsx:125 pkg/shell/hosts_dialog.jsx:463
+#: pkg/static/login.js:759
 msgid "$0 key changed"
 msgstr "$0 nyckel ändrad"
 
@@ -540,7 +541,7 @@ msgstr "8:e"
 msgid "9th"
 msgstr "9:e"
 
-#: pkg/shell/hosts_dialog.jsx:98
+#: pkg/lib/cockpit-connect-ssh.tsx:520 pkg/shell/hosts_dialog.jsx:97
 msgid "A compatible version of Cockpit is not installed on $0."
 msgstr "Ingen kompatibel version av Cockpit är installerad på $0."
 
@@ -565,7 +566,7 @@ msgstr ""
 "En bindning kombinerar flera nätverksportar till en logisk port med högre "
 "hastighet eller tillförlitlighet."
 
-#: pkg/shell/hosts_dialog.jsx:795
+#: pkg/lib/cockpit-connect-ssh.tsx:413 pkg/shell/hosts_dialog.jsx:794
 msgid ""
 "A new SSH key at $0 will be created for $1 on $2 and it will be added to the "
 "$3 file of $4 on $5."
@@ -695,7 +696,7 @@ msgstr "Adaptiv lastbalansering av sändning"
 #: pkg/storaged/iscsi/create-dialog.jsx:120
 #: pkg/storaged/iscsi/create-dialog.jsx:144 pkg/storaged/stratis/pool.jsx:216
 #: pkg/storaged/nfs/nfs.jsx:188 pkg/shell/credentials.jsx:182
-#: pkg/shell/hosts_dialog.jsx:252 pkg/networkmanager/dialogs-common.jsx:160
+#: pkg/shell/hosts_dialog.jsx:251 pkg/networkmanager/dialogs-common.jsx:160
 #: pkg/systemd/timer-dialog.jsx:367 pkg/users/authorized-keys-panel.js:68
 msgid "Add"
 msgstr "Lägg till"
@@ -781,7 +782,7 @@ msgstr "Lägg till nyckelserver"
 msgid "Add member"
 msgstr "Lägg till medlem"
 
-#: pkg/shell/hosts.jsx:216 pkg/shell/hosts_dialog.jsx:251
+#: pkg/shell/hosts.jsx:203 pkg/shell/hosts_dialog.jsx:250
 msgid "Add new host"
 msgstr "Lägg till ny värd"
 
@@ -979,7 +980,7 @@ msgstr "Efter systemstart"
 msgid "Alert"
 msgstr "Larm"
 
-#: pkg/systemd/logs.jsx:66
+#: pkg/systemd/logs.jsx:65
 msgid "Alert and above"
 msgstr "Larm och högre"
 
@@ -987,8 +988,8 @@ msgstr "Larm och högre"
 msgid "Alias"
 msgstr "alias"
 
-#: pkg/systemd/logs.jsx:111 pkg/systemd/logs.jsx:127 pkg/systemd/logs.jsx:156
-#: pkg/systemd/logs.jsx:293 pkg/systemd/logs.jsx:319
+#: pkg/systemd/logs.jsx:110 pkg/systemd/logs.jsx:126 pkg/systemd/logs.jsx:155
+#: pkg/systemd/logs.jsx:294 pkg/systemd/logs.jsx:320
 msgid "All"
 msgstr "Alla"
 
@@ -1028,7 +1029,7 @@ msgstr "Ansible"
 msgid "Ansible roles documentation"
 msgstr "Dokumentation för Ansibleroller"
 
-#: pkg/systemd/logs.jsx:382
+#: pkg/systemd/logs.jsx:386
 msgid ""
 "Any text string in the logs messages can be filtered. The string can also be "
 "in the form of a regular expression. Also supports filtering by message log "
@@ -1089,7 +1090,7 @@ msgstr "Att lägga på uppdateringar misslyckades"
 msgid "Appropriate for critical mounts, such as /var"
 msgstr "Lämplig för kritiska monteringar, såsom /var"
 
-#: pkg/shell/indexes.jsx:340
+#: pkg/shell/indexes.jsx:354
 msgid "Apps"
 msgstr "Program"
 
@@ -1152,7 +1153,8 @@ msgstr "Autentisera"
 msgid "Authenticating"
 msgstr "Autentiserar"
 
-#: pkg/shell/hosts_dialog.jsx:840 pkg/users/account-create-dialog.js:112
+#: pkg/lib/cockpit-connect-ssh.tsx:436 pkg/shell/hosts_dialog.jsx:839
+#: pkg/users/account-create-dialog.js:112
 msgid "Authentication"
 msgstr "Autentisering"
 
@@ -1176,7 +1178,7 @@ msgstr ""
 msgid "Authentication required"
 msgstr "Autentisering krävs"
 
-#: pkg/shell/hosts_dialog.jsx:826
+#: pkg/lib/cockpit-connect-ssh.tsx:425 pkg/shell/hosts_dialog.jsx:825
 msgid "Authorize SSH key"
 msgstr "Auktorisera SSH-nyckel"
 
@@ -1196,7 +1198,7 @@ msgstr "Automatisk"
 msgid "Automatic (DHCP only)"
 msgstr "Automatiskt (endast DHCP)"
 
-#: pkg/shell/hosts_dialog.jsx:870
+#: pkg/shell/hosts_dialog.jsx:869
 msgid "Automatic login"
 msgstr "Automatisk inloggning"
 
@@ -1308,7 +1310,7 @@ msgstr "Blockerat"
 msgid "Bond"
 msgstr "Binda"
 
-#: pkg/systemd/logs.jsx:357
+#: pkg/systemd/logs.jsx:360
 msgid "Boot"
 msgstr "Start"
 
@@ -1366,7 +1368,7 @@ msgstr "Fel"
 msgid "Bus expansion chassis"
 msgstr "Bussexpansionschassi"
 
-#: pkg/shell/hosts_dialog.jsx:811
+#: pkg/shell/hosts_dialog.jsx:810
 msgid ""
 "By changing the password of the SSH key $0 to the login password of $1 on "
 "$2, the key will be automatically made available and you can log in to $3 "
@@ -1410,7 +1412,7 @@ msgstr "CVE"
 msgid "Cache"
 msgstr "Cache"
 
-#: pkg/shell/hosts_dialog.jsx:262
+#: pkg/shell/hosts_dialog.jsx:261
 msgid "Can be a hostname, IP address, alias name, or ssh:// URI"
 msgstr "Kan vara ett värdnamn, IP-adress, aliasnamn eller ssh:// URI"
 
@@ -1419,6 +1421,7 @@ msgid "Can not find any logs using the current combination of filters."
 msgstr "Hittade inga loggar med dessa filter aktiva."
 
 #: pkg/playground/translate.html:39 pkg/static/login.html:141
+#: pkg/lib/cockpit-connect-ssh.tsx:180 pkg/lib/cockpit-connect-ssh.tsx:491
 #: pkg/lib/cockpit-components-shutdown.jsx:193
 #: pkg/lib/cockpit-components-dialog.jsx:131 pkg/storaged/jobs-panel.jsx:140
 #: pkg/metrics/metrics.jsx:1489 pkg/packagekit/autoupdates.jsx:400
@@ -1426,9 +1429,9 @@ msgstr "Hittade inga loggar med dessa filter aktiva."
 #: pkg/packagekit/kpatch.jsx:315 pkg/sosreport/sosreport.jsx:297
 #: pkg/sosreport/sosreport.jsx:382 pkg/apps/utils.jsx:69
 #: pkg/shell/credentials.jsx:311 pkg/shell/active-pages-modal.jsx:98
-#: pkg/shell/shell-modals.jsx:115 pkg/shell/hosts_dialog.jsx:285
-#: pkg/shell/hosts_dialog.jsx:382 pkg/shell/hosts_dialog.jsx:514
-#: pkg/shell/hosts_dialog.jsx:891 pkg/shell/superuser.jsx:182
+#: pkg/shell/shell-modals.jsx:115 pkg/shell/hosts_dialog.jsx:284
+#: pkg/shell/hosts_dialog.jsx:381 pkg/shell/hosts_dialog.jsx:513
+#: pkg/shell/hosts_dialog.jsx:890 pkg/shell/superuser.jsx:182
 #: pkg/shell/superuser.jsx:219 pkg/shell/superuser.jsx:264
 #: pkg/networkmanager/firewall.jsx:613 pkg/networkmanager/firewall.jsx:814
 #: pkg/networkmanager/firewall.jsx:913
@@ -1456,7 +1459,7 @@ msgstr "Avbryt omstart"
 msgid "Cannot be enabled"
 msgstr "Kan inte slås på"
 
-#: pkg/shell/indexes.jsx:467
+#: pkg/shell/indexes.jsx:487
 msgid "Cannot connect to an unknown host"
 msgstr "Kan inte ansluta till en okänd maskin"
 
@@ -1539,7 +1542,7 @@ msgstr "Ändra skal"
 msgid "Change system time"
 msgstr "Ändra systemtid"
 
-#: pkg/shell/hosts_dialog.jsx:809
+#: pkg/shell/hosts_dialog.jsx:808
 msgid "Change the password of $0"
 msgstr "Ändra lösenord av $0"
 
@@ -1547,7 +1550,8 @@ msgstr "Ändra lösenord av $0"
 msgid "Change the settings"
 msgstr "Ändra inställningarna"
 
-#: pkg/static/login.html:81 pkg/shell/hosts_dialog.jsx:473
+#: pkg/static/login.html:81 pkg/lib/cockpit-connect-ssh.tsx:131
+#: pkg/shell/hosts_dialog.jsx:472
 msgid ""
 "Changed keys are often the result of an operating system reinstallation. "
 "However, an unexpected change may indicate a third-party attempt to "
@@ -1669,10 +1673,11 @@ msgstr "Klar text enhet"
 msgid "Client software"
 msgstr "Klientprogramvara"
 
+#: pkg/lib/cockpit-connect-ssh.tsx:515
 #: pkg/lib/cockpit-components-modifications.jsx:76
 #: pkg/lib/cockpit-components-terminal.jsx:230 pkg/storaged/dialog.jsx:485
 #: pkg/apps/utils.jsx:87 pkg/shell/credentials.jsx:79
-#: pkg/shell/shell-modals.jsx:188 pkg/shell/hosts_dialog.jsx:92
+#: pkg/shell/shell-modals.jsx:188 pkg/shell/hosts_dialog.jsx:91
 #: pkg/shell/superuser.jsx:190 pkg/shell/superuser.jsx:198
 #: pkg/networkmanager/interfaces.js:43
 #: pkg/systemd/overview-cards/configurationCard.jsx:195
@@ -1726,7 +1731,7 @@ msgstr "Cockpit är ett interaktivt administratörsgränssnitt för Linuxservrar
 msgid "Cockpit is not compatible with the software on the system."
 msgstr "Cockpit är inte kompatibelt med programvaran på systemet."
 
-#: pkg/shell/hosts_dialog.jsx:89
+#: pkg/lib/cockpit-connect-ssh.tsx:512 pkg/shell/hosts_dialog.jsx:88
 msgid "Cockpit is not installed"
 msgstr "Cockpit är inte installerat"
 
@@ -1764,7 +1769,7 @@ msgstr "Samla kärnkraschdumpar"
 msgid "Collect metrics"
 msgstr "Samla in mätvärden"
 
-#: pkg/shell/hosts_dialog.jsx:269
+#: pkg/shell/hosts_dialog.jsx:268
 msgid "Color"
 msgstr "Färg"
 
@@ -1849,11 +1854,11 @@ msgstr "Bekräfta"
 msgid "Confirm deletion of $0"
 msgstr "Bekräfta raderingen av $0"
 
-#: pkg/shell/hosts_dialog.jsx:801
+#: pkg/lib/cockpit-connect-ssh.tsx:418 pkg/shell/hosts_dialog.jsx:800
 msgid "Confirm key password"
 msgstr "Bekräfta lösenord för nyckel"
 
-#: pkg/shell/hosts_dialog.jsx:817
+#: pkg/shell/hosts_dialog.jsx:816
 msgid "Confirm new key password"
 msgstr "Bekräfta nytt lösenord för nyckel"
 
@@ -1905,11 +1910,18 @@ msgstr "Anslut till SETroubleshoot-demonen …"
 msgid "Connecting to dbus failed: $0"
 msgstr "Anslutningen till dbus misslyckades: $0"
 
-#: pkg/shell/indexes.jsx:462
+#: pkg/shell/hosts.jsx:211
+msgid ""
+"Connecting to remote hosts inside of a web console session is deprecated and "
+"will be removed in the future. You can still connect to your existing hosts "
+"for now."
+msgstr ""
+
+#: pkg/shell/indexes.jsx:482
 msgid "Connecting to the machine"
 msgstr "Ansluter till maskinen"
 
-#: pkg/shell/hosts.jsx:163
+#: pkg/shell/hosts.jsx:185
 msgid "Connection error"
 msgstr "Anslutningsfel"
 
@@ -1962,21 +1974,25 @@ msgstr "Styrenhet"
 msgid "Convertible"
 msgstr "Konvertibel"
 
+#: pkg/lib/cockpit-connect-ssh.tsx:133 pkg/lib/cockpit-connect-ssh.tsx:136
+#: pkg/lib/cockpit-connect-ssh.tsx:151 pkg/lib/cockpit-connect-ssh.tsx:153
 #: pkg/shell/credentials.jsx:210 pkg/shell/failures.jsx:43
-#: pkg/shell/hosts_dialog.jsx:475 pkg/shell/hosts_dialog.jsx:478
-#: pkg/shell/hosts_dialog.jsx:493 pkg/shell/hosts_dialog.jsx:495
+#: pkg/shell/hosts_dialog.jsx:474 pkg/shell/hosts_dialog.jsx:477
+#: pkg/shell/hosts_dialog.jsx:492 pkg/shell/hosts_dialog.jsx:494
 msgid "Copied"
 msgstr "Kopierade"
 
+#: pkg/lib/cockpit-connect-ssh.tsx:133 pkg/lib/cockpit-connect-ssh.tsx:136
+#: pkg/lib/cockpit-connect-ssh.tsx:151 pkg/lib/cockpit-connect-ssh.tsx:153
 #: pkg/lib/cockpit-components-terminal.jsx:211 pkg/shell/credentials.jsx:210
-#: pkg/shell/failures.jsx:43 pkg/shell/hosts_dialog.jsx:475
-#: pkg/shell/hosts_dialog.jsx:478 pkg/shell/hosts_dialog.jsx:493
-#: pkg/shell/hosts_dialog.jsx:495
+#: pkg/shell/failures.jsx:43 pkg/shell/hosts_dialog.jsx:474
+#: pkg/shell/hosts_dialog.jsx:477 pkg/shell/hosts_dialog.jsx:492
+#: pkg/shell/hosts_dialog.jsx:494
 msgid "Copy"
 msgstr "Kopiera"
 
 #: pkg/lib/cockpit-components-modifications.jsx:73
-#: pkg/storaged/crypto/tang.jsx:117 pkg/systemd/logs.jsx:417
+#: pkg/storaged/crypto/tang.jsx:117 pkg/systemd/logs.jsx:423
 msgid "Copy to clipboard"
 msgstr "Kopiera till urklipp"
 
@@ -1984,7 +2000,7 @@ msgstr "Kopiera till urklipp"
 msgid "Core $0"
 msgstr "Kärna $0"
 
-#: pkg/shell/hosts_dialog.jsx:356
+#: pkg/shell/hosts_dialog.jsx:355
 msgid "Could not contact $0"
 msgstr "Kunde inte kontakta $0"
 
@@ -2030,7 +2046,7 @@ msgstr "Skapa en RAID-enhet"
 msgid "Create Stratis pool"
 msgstr "Skapa Stratis lagringspool"
 
-#: pkg/shell/hosts_dialog.jsx:793
+#: pkg/lib/cockpit-connect-ssh.tsx:411 pkg/shell/hosts_dialog.jsx:792
 msgid "Create a new SSH key and authorize it"
 msgstr "Skapa en ny SSH-nyckel och auktorisera den"
 
@@ -2186,7 +2202,7 @@ msgstr ""
 "Att skapa detta $0 kommer bryta anslutningen till servern, och kommer göra "
 "administrationsgränssnittet otillgängligt."
 
-#: pkg/systemd/logs.jsx:67
+#: pkg/systemd/logs.jsx:66
 msgid "Critical and above"
 msgstr "Kritisk och högre"
 
@@ -2216,7 +2232,7 @@ msgstr "Ctrl+Insert"
 msgid "Ctrl-Shift-I"
 msgstr "Ctrl-Skift-J"
 
-#: pkg/systemd/logs.jsx:58
+#: pkg/systemd/logs.jsx:57
 msgid "Current boot"
 msgstr "Nuvarande uppstart"
 
@@ -2363,7 +2379,7 @@ msgstr ""
 "Data kommer att lagras på de valda fysiska volymerna utan ytterligare "
 "redundans eller prestandaförbättringar."
 
-#: pkg/systemd/logs.jsx:331
+#: pkg/systemd/logs.jsx:332
 msgid ""
 "Date specifications should be of the format YYYY-MM-DD hh:mm:ss. "
 "Alternatively the strings 'yesterday', 'today', 'tomorrow' are understood. "
@@ -2393,7 +2409,7 @@ msgstr "Avaktiverar"
 msgid "Deactivating $target"
 msgstr "Avaktiverar $target"
 
-#: pkg/systemd/logs.jsx:72
+#: pkg/systemd/logs.jsx:71
 msgid "Debug and above"
 msgstr "Felsökning och högre"
 
@@ -2526,6 +2542,12 @@ msgstr "Om du raderar raderas all data på denna undervolym och alla dess barn."
 msgid "Deletion will remove the following files:"
 msgstr "Radering kommer ta bort följande filer:"
 
+#: pkg/shell/hosts.jsx:213
+#, fuzzy
+#| msgid "Created"
+msgid "Deprecated"
+msgstr "Skapad"
+
 #: pkg/storaged/dialog.jsx:1440 pkg/networkmanager/firewall.jsx:702
 #: pkg/networkmanager/firewall.jsx:846 pkg/systemd/timer-dialog.jsx:166
 msgid "Description"
@@ -2620,7 +2642,7 @@ msgstr "Hindra körning (göm)"
 msgid "Disconnect"
 msgstr "Koppla ifrån"
 
-#: pkg/shell/indexes.jsx:160
+#: pkg/shell/indexes.jsx:174
 msgid "Disconnected"
 msgstr "Frånkopplad"
 
@@ -2773,7 +2795,7 @@ msgstr "EFI-systempartition"
 
 #: pkg/storaged/crypto/keyslots.jsx:763 pkg/storaged/nfs/nfs.jsx:312
 #: pkg/packagekit/autoupdates.jsx:533 pkg/packagekit/kpatch.jsx:234
-#: pkg/shell/hosts.jsx:167 pkg/shell/indexes.jsx:352
+#: pkg/shell/hosts.jsx:189 pkg/shell/indexes.jsx:366
 #: pkg/networkmanager/firewall.jsx:115 pkg/kdump/kdump-view.jsx:476
 msgid "Edit"
 msgstr "Redigera"
@@ -2806,11 +2828,11 @@ msgstr "Redigera brygginställningar"
 msgid "Edit custom service in $0 zone"
 msgstr "Redigera anpassad tjänst i $0 zon"
 
-#: pkg/shell/hosts_dialog.jsx:251
+#: pkg/shell/hosts_dialog.jsx:250
 msgid "Edit host"
 msgstr "Redigera värd"
 
-#: pkg/shell/hosts.jsx:215
+#: pkg/shell/hosts.jsx:255
 msgid "Edit hosts"
 msgstr "Redigera värdar"
 
@@ -2996,7 +3018,7 @@ msgstr "Errata"
 msgid "Error"
 msgstr "Fel"
 
-#: pkg/systemd/logs.jsx:68
+#: pkg/systemd/logs.jsx:67
 msgid "Error and above"
 msgstr "Fel och högre"
 
@@ -3102,7 +3124,7 @@ msgstr "FIPS med ytterligare begränsningar av allmänna kriterier."
 msgid "Failed"
 msgstr "Misslyckades"
 
-#: pkg/shell/hosts_dialog.jsx:219
+#: pkg/shell/hosts_dialog.jsx:218
 msgid "Failed to add machine: $0"
 msgstr "Misslyckades att lägga till en maskin: $0"
 
@@ -3140,7 +3162,7 @@ msgstr "Misslyckades att avaktivera tuned"
 msgid "Failed to disable tuned profile"
 msgstr "Misslyckades med att avaktivera en tuned-profil"
 
-#: pkg/shell/hosts_dialog.jsx:337
+#: pkg/shell/hosts_dialog.jsx:336
 msgid "Failed to edit machine: $0"
 msgstr "Misslyckades att redigera en maskin: $0"
 
@@ -3234,7 +3256,7 @@ msgstr "Filtrera menyalternativ"
 msgid "Filter services"
 msgstr "Filtrera tjänster"
 
-#: pkg/systemd/logs.jsx:237
+#: pkg/systemd/logs.jsx:236
 msgid "Filters"
 msgstr "Filter"
 
@@ -3317,7 +3339,7 @@ msgstr "Bildrutenummer"
 msgid "Free space"
 msgstr "Ledigt utrymme"
 
-#: pkg/systemd/logs.jsx:379
+#: pkg/systemd/logs.jsx:384
 msgid "Free-form search"
 msgstr "Friformssökning"
 
@@ -3470,7 +3492,7 @@ msgstr "Historiepaketantal"
 msgid "Home directory"
 msgstr "Hemkatalog"
 
-#: pkg/shell/hosts.jsx:192 pkg/shell/hosts_dialog.jsx:255
+#: pkg/shell/hosts.jsx:232 pkg/shell/hosts_dialog.jsx:254
 msgid "Host"
 msgstr "Värd"
 
@@ -3478,11 +3500,17 @@ msgstr "Värd"
 msgid "Host key is incorrect"
 msgstr "Värdnyckeln är felaktig"
 
+#: pkg/shell/hosts.jsx:210
+#, fuzzy
+#| msgid "Domain is not supported"
+msgid "Host switching is not supported"
+msgstr "Domän stödjs inte"
+
 #: pkg/systemd/overview-cards/configurationCard.jsx:66
 msgid "Hostname"
 msgstr "Värdnamn"
 
-#: pkg/shell/hosts.jsx:152
+#: pkg/shell/hosts.jsx:174
 msgid "Hosts"
 msgstr "Värdar"
 
@@ -3554,7 +3582,7 @@ msgstr "IPv6"
 msgid "IPv6 settings"
 msgstr "IPv6-inställningar"
 
-#: pkg/systemd/logs.jsx:224
+#: pkg/systemd/logs.jsx:223
 msgid "Identifier"
 msgstr "Identifierare"
 
@@ -3574,7 +3602,7 @@ msgstr ""
 "Om fingeravtrycket stämmer, klicka på \"Acceptera nyckel och logga in\". "
 "Annars, logga inte in och kontakta din administratör."
 
-#: pkg/shell/hosts_dialog.jsx:480
+#: pkg/lib/cockpit-connect-ssh.tsx:138 pkg/shell/hosts_dialog.jsx:479
 msgid ""
 "If the fingerprint matches, click 'Trust and add host'. Otherwise, do not "
 "connect and contact your administrator."
@@ -3599,7 +3627,7 @@ msgstr "In"
 msgid "In a terminal, run: "
 msgstr "I en terminal, kör: "
 
-#: pkg/shell/hosts_dialog.jsx:806 pkg/shell/hosts_dialog.jsx:823
+#: pkg/shell/hosts_dialog.jsx:805 pkg/shell/hosts_dialog.jsx:822
 msgid ""
 "In order to allow log in to $0 as $1 without password in the future, use the "
 "login password of $2 on $3 as the key password, or leave the key password "
@@ -3654,7 +3682,7 @@ msgstr "Indirekt"
 msgid "Info"
 msgstr "Information"
 
-#: pkg/systemd/logs.jsx:71
+#: pkg/systemd/logs.jsx:70
 msgid "Info and above"
 msgstr "Info och högre"
 
@@ -3849,7 +3877,7 @@ msgstr "Felaktigt användarnamn eller lösenord"
 msgid "IoT gateway"
 msgstr "IoT-gateway"
 
-#: pkg/shell/hosts_dialog.jsx:362
+#: pkg/shell/hosts_dialog.jsx:361
 msgid "Is sshd running on a different port?"
 msgstr "Kör sshd på en annan port?"
 
@@ -3943,7 +3971,8 @@ msgstr "Kärn-live-patch-inställningar"
 msgid "Kernel live patching"
 msgstr "Kärn-live-patchning"
 
-#: pkg/shell/hosts_dialog.jsx:796 pkg/shell/hosts_dialog.jsx:861
+#: pkg/lib/cockpit-connect-ssh.tsx:414 pkg/lib/cockpit-connect-ssh.tsx:459
+#: pkg/shell/hosts_dialog.jsx:795 pkg/shell/hosts_dialog.jsx:860
 msgid "Key password"
 msgstr "Nyckellösenord"
 
@@ -4018,11 +4047,11 @@ msgstr "Etikett"
 msgid "Laptop"
 msgstr "Bärbar dator"
 
-#: pkg/systemd/logs.jsx:60
+#: pkg/systemd/logs.jsx:59
 msgid "Last 24 hours"
 msgstr "Senaste 24 timmarna"
 
-#: pkg/systemd/logs.jsx:61
+#: pkg/systemd/logs.jsx:60
 msgid "Last 7 days"
 msgstr "Senaste 7 dagarna"
 
@@ -4274,12 +4303,13 @@ msgstr "Låst krypterad enhet kan innehålla data"
 msgid "Locking $target"
 msgstr "Låser $target"
 
-#: pkg/static/login.html:139 pkg/shell/failures.jsx:73
-#: pkg/shell/hosts_dialog.jsx:764 pkg/static/login.js:668
+#: pkg/static/login.html:139 pkg/lib/cockpit-connect-ssh.tsx:390
+#: pkg/shell/failures.jsx:73 pkg/shell/hosts_dialog.jsx:763
+#: pkg/static/login.js:668
 msgid "Log in"
 msgstr "Logga in"
 
-#: pkg/shell/hosts_dialog.jsx:763
+#: pkg/lib/cockpit-connect-ssh.tsx:389 pkg/shell/hosts_dialog.jsx:762
 msgid "Log in to $0"
 msgstr "Logga in till $0"
 
@@ -4431,7 +4461,7 @@ msgstr "Huvudserverchassi"
 msgid "Maintenance"
 msgstr "Underhåll"
 
-#: pkg/shell/hosts_dialog.jsx:497
+#: pkg/shell/hosts_dialog.jsx:496
 msgid "Malicious pages on a remote machine may affect other connected hosts"
 msgstr "Skadliga sidor på en fjärrdator kan påverka andra anslutna värdar"
 
@@ -4931,11 +4961,11 @@ msgstr "Ny NFS-montering"
 msgid "New host"
 msgstr "Ny värd"
 
-#: pkg/shell/hosts_dialog.jsx:464
+#: pkg/shell/hosts_dialog.jsx:463
 msgid "New host: $0"
 msgstr "Ny värd: $0"
 
-#: pkg/shell/hosts_dialog.jsx:812
+#: pkg/shell/hosts_dialog.jsx:811
 msgid "New key password"
 msgstr "Nytt nyckellösenord"
 
@@ -5124,7 +5154,7 @@ msgstr "Inga fysiska volymer hittades"
 msgid "No real name specified"
 msgstr "Inget verkligt namn angivet"
 
-#: pkg/shell/nav.jsx:157 pkg/systemd/logs.jsx:316
+#: pkg/shell/nav.jsx:157 pkg/systemd/logs.jsx:317
 msgid "No results found"
 msgstr "Inga resultat funna"
 
@@ -5202,7 +5232,7 @@ msgstr "Inte ansluten"
 msgid "Not connected to Insights"
 msgstr "Inte ansluten till Insights"
 
-#: pkg/shell/indexes.jsx:465
+#: pkg/shell/indexes.jsx:485
 msgid "Not connected to host"
 msgstr "Inte ansluten till värd"
 
@@ -5270,7 +5300,7 @@ msgstr "Observera"
 msgid "Notebook"
 msgstr "Bärbar (notebook)"
 
-#: pkg/systemd/logs.jsx:70
+#: pkg/systemd/logs.jsx:69
 msgid "Notice and above"
 msgstr "Notering och högre"
 
@@ -5335,7 +5365,7 @@ msgstr "Endast $0 av $1 används."
 msgid "Only alphabets, numbers, : , _ , . , @ , - are allowed"
 msgstr "Endast alfabetet, siffror, :, _, ., @, - är tillåtna"
 
-#: pkg/systemd/logs.jsx:65
+#: pkg/systemd/logs.jsx:64
 msgid "Only emergency"
 msgstr "Endast nödläge"
 
@@ -5520,10 +5550,11 @@ msgstr "Att ta bort lösenfrasen kan förhindra upplåsning av $0."
 msgid "Passphrases do not match"
 msgstr "Lösenfraserna stämmer inte överens"
 
-#: pkg/static/login.html:99 pkg/storaged/iscsi/create-dialog.jsx:34
+#: pkg/static/login.html:99 pkg/lib/cockpit-connect-ssh.tsx:442
+#: pkg/lib/cockpit-connect-ssh.tsx:452 pkg/storaged/iscsi/create-dialog.jsx:34
 #: pkg/storaged/iscsi/create-dialog.jsx:140 pkg/shell/credentials.jsx:117
 #: pkg/shell/credentials.jsx:260 pkg/shell/credentials.jsx:316
-#: pkg/shell/hosts_dialog.jsx:845 pkg/shell/hosts_dialog.jsx:854
+#: pkg/shell/hosts_dialog.jsx:844 pkg/shell/hosts_dialog.jsx:853
 #: pkg/shell/superuser.jsx:144 pkg/users/account-details.js:290
 #: pkg/users/account-create-dialog.js:139
 msgid "Password"
@@ -5775,7 +5806,7 @@ msgstr "Pool för tunt underhållna volymer"
 msgid "Pool passphrase"
 msgstr "Pool lösenfras"
 
-#: pkg/storaged/iscsi/create-dialog.jsx:111 pkg/shell/hosts_dialog.jsx:365
+#: pkg/storaged/iscsi/create-dialog.jsx:111 pkg/shell/hosts_dialog.jsx:364
 msgid "Port"
 msgstr "Port"
 
@@ -5817,7 +5848,7 @@ msgstr "Bevara"
 msgid "Pretty host name"
 msgstr "Snyggt värdnamn"
 
-#: pkg/systemd/logs.jsx:59
+#: pkg/systemd/logs.jsx:58
 msgid "Previous boot"
 msgstr "Tidigare uppstart"
 
@@ -5826,7 +5857,7 @@ msgid "Primary"
 msgstr "Primär"
 
 #: pkg/networkmanager/bridgeport.jsx:80 pkg/networkmanager/teamport.jsx:84
-#: pkg/systemd/logs.jsx:208
+#: pkg/systemd/logs.jsx:207
 msgid "Priority"
 msgstr "Prioritet"
 
@@ -6001,7 +6032,8 @@ msgstr "Rå till en enhet"
 msgid "Read"
 msgstr "Läs"
 
-#: pkg/metrics/metrics.jsx:1480 pkg/systemd/hwinfo.jsx:206
+#: pkg/metrics/metrics.jsx:1480 pkg/shell/hosts.jsx:206
+#: pkg/systemd/hwinfo.jsx:206
 msgid "Read more..."
 msgstr "Läs mer..."
 
@@ -6186,7 +6218,7 @@ msgstr "Borttagningar:"
 #: pkg/storaged/lvm2/volume-group.jsx:349 pkg/storaged/stratis/pool.jsx:440
 #: pkg/storaged/stratis/pool.jsx:497 pkg/storaged/stratis/pool.jsx:532
 #: pkg/storaged/stratis/pool.jsx:550 pkg/storaged/nfs/nfs.jsx:315
-#: pkg/apps/application.jsx:50 pkg/shell/hosts.jsx:170
+#: pkg/apps/application.jsx:50 pkg/shell/hosts.jsx:192
 #: pkg/systemd/timer-dialog.jsx:361 pkg/users/authorized-keys-panel.js:142
 #: pkg/users/authorized-keys-panel.js:150
 msgid "Remove"
@@ -6442,7 +6474,7 @@ msgstr ""
 msgid "Reserved memory"
 msgstr "Reserverat minne"
 
-#: pkg/systemd/terminal.jsx:183 pkg/systemd/logs.jsx:406
+#: pkg/systemd/terminal.jsx:183 pkg/systemd/logs.jsx:412
 msgid "Reset"
 msgstr "Återställ"
 
@@ -6552,7 +6584,7 @@ msgstr "Kör på"
 msgid "Run report"
 msgstr "Kör en rapport"
 
-#: pkg/shell/hosts_dialog.jsx:492
+#: pkg/lib/cockpit-connect-ssh.tsx:150 pkg/shell/hosts_dialog.jsx:491
 msgid ""
 "Run this command over a trusted network or physically on the remote machine:"
 msgstr ""
@@ -6617,13 +6649,20 @@ msgstr ""
 "SOS-rapportering samlar systeminformation för att hjälpa till med "
 "diagnostisering av problem."
 
-#: pkg/shell/hosts_dialog.jsx:850 pkg/kdump/kdump-view.jsx:295
+#: pkg/lib/cockpit-connect-ssh.tsx:448 pkg/shell/hosts_dialog.jsx:849
+#: pkg/kdump/kdump-view.jsx:295
 msgid "SSH key"
 msgstr "SSH-nyckel"
 
 #: pkg/kdump/kdump-view.jsx:164
 msgid "SSH key isn't a path"
 msgstr "SSH-nyckel är inte en sökväg"
+
+#: pkg/lib/cockpit-connect-ssh.tsx:468
+#, fuzzy
+#| msgid "SSH key"
+msgid "SSH key login"
+msgstr "SSH-nyckel"
 
 #: pkg/shell/credentials.jsx:77 pkg/shell/credentials.jsx:93
 #: pkg/shell/topnav.jsx:229
@@ -6708,7 +6747,7 @@ msgstr "Schemalagd omstart till $0"
 msgid "Sealed-case PC"
 msgstr "PC med slutet hölje"
 
-#: pkg/shell/nav.jsx:139 pkg/systemd/logs.jsx:407
+#: pkg/shell/nav.jsx:139 pkg/systemd/logs.jsx:413
 msgid "Search"
 msgstr "Sök"
 
@@ -6760,7 +6799,7 @@ msgstr "Säkerhetsuppdateringar kommer att tillämpas $0 vid $1"
 msgid "Select"
 msgstr "Välj"
 
-#: pkg/systemd/logs.jsx:322
+#: pkg/systemd/logs.jsx:323
 msgid "Select a identifier"
 msgstr "Välj en identifierare"
 
@@ -6849,7 +6888,7 @@ msgstr "Session"
 msgid "Session is about to expire"
 msgstr "Sessionen är på väg att löpa ut"
 
-#: pkg/shell/hosts_dialog.jsx:252
+#: pkg/shell/hosts_dialog.jsx:251
 msgid "Set"
 msgstr "Sätt"
 
@@ -6937,15 +6976,15 @@ msgstr "Visa bekräftelselösenord"
 msgid "Show fingerprints"
 msgstr "Visa fingeravtryck"
 
-#: pkg/systemd/logs.jsx:380
+#: pkg/systemd/logs.jsx:385
 msgid "Show messages containing given string."
 msgstr "Visa meddelanden som innehåller en given sträng."
 
-#: pkg/systemd/logs.jsx:369
+#: pkg/systemd/logs.jsx:373
 msgid "Show messages for the specified systemd unit."
 msgstr "Visa meddelande för den angivna systemd-enheten."
 
-#: pkg/systemd/logs.jsx:358
+#: pkg/systemd/logs.jsx:361
 msgid "Show messages from a specific boot."
 msgstr "Visa meddelanden från en specifik start."
 
@@ -6987,7 +7026,7 @@ msgstr "Stäng av"
 msgid "Shutdown"
 msgstr "Stäng av"
 
-#: pkg/systemd/logs.jsx:335
+#: pkg/systemd/logs.jsx:336
 msgid "Since"
 msgstr "Sedan"
 
@@ -7164,11 +7203,11 @@ msgstr "Starta multipath"
 msgid "Start service"
 msgstr "Starta tjänst"
 
-#: pkg/systemd/logs.jsx:336
+#: pkg/systemd/logs.jsx:337
 msgid "Start showing entries on or newer than the specified date."
 msgstr "Börja visa poster på eller nyare än det angivna datumet."
 
-#: pkg/systemd/logs.jsx:347
+#: pkg/systemd/logs.jsx:349
 msgid "Start showing entries on or older than the specified date."
 msgstr "Börja visa poster på eller äldre än det angivna datumet."
 
@@ -7231,7 +7270,7 @@ msgstr "Stoppa och avmontera"
 msgid "Stop device"
 msgstr "Stoppa enhet"
 
-#: pkg/shell/hosts.jsx:215
+#: pkg/shell/hosts.jsx:255
 msgid "Stop editing hosts"
 msgstr "Sluta redigera värdar"
 
@@ -7347,7 +7386,7 @@ msgstr "Undervolym måste monteras"
 msgid "Subvolume needs to be mounted writable"
 msgstr "Undervolym måste monteras skrivbar"
 
-#: pkg/systemd/logs.jsx:415
+#: pkg/systemd/logs.jsx:421
 msgid "Successfully copied to clipboard"
 msgstr "Kopierades till urklipp"
 
@@ -7428,7 +7467,7 @@ msgstr "Synkroniserar"
 msgid "Synchronizing MDRAID device $target"
 msgstr "Synkroniserar MDRAID-enheten $target"
 
-#: pkg/shell/nav.jsx:46 pkg/shell/indexes.jsx:343 pkg/systemd/services.jsx:912
+#: pkg/shell/nav.jsx:46 pkg/shell/indexes.jsx:357 pkg/systemd/services.jsx:912
 msgid "System"
 msgstr "System"
 
@@ -7541,7 +7580,7 @@ msgstr "Paketet $0 måste vara installerat."
 msgid "The $0 package will be installed to create VDO devices."
 msgstr "Paketet $0 kommer att installeras för att skapa VDO-enheter."
 
-#: pkg/shell/hosts_dialog.jsx:159
+#: pkg/shell/hosts_dialog.jsx:158
 msgid "The IP address or hostname cannot contain whitespace."
 msgstr "IP-adressen eller värdnamnet får inte innehålla blanktecken."
 
@@ -7553,12 +7592,12 @@ msgstr "MDRAID-enheten är i ett degraderat tillstånd"
 msgid "The MDRAID device must be running"
 msgstr "MDRAID-enheten måste vara igång"
 
-#: pkg/shell/hosts_dialog.jsx:828
+#: pkg/lib/cockpit-connect-ssh.tsx:426 pkg/shell/hosts_dialog.jsx:827
 msgid "The SSH key $0 of $1 on $2 will be added to the $3 file of $4 on $5."
 msgstr ""
 "SSH-nyckeln $0 av $1 på $2 kommer att läggas till $3-filen på $4 på $5."
 
-#: pkg/shell/hosts_dialog.jsx:865
+#: pkg/lib/cockpit-connect-ssh.tsx:463 pkg/shell/hosts_dialog.jsx:864
 msgid ""
 "The SSH key $0 will be made available for the remainder of the session and "
 "will be available for login to other hosts as well."
@@ -7566,7 +7605,7 @@ msgstr ""
 "SSH-nyckeln $0 kommer att göras tillgänglig för resten av sessionen och "
 "kommer att vara tillgänglig för inloggning även för andra värdar."
 
-#: pkg/shell/hosts_dialog.jsx:773
+#: pkg/lib/cockpit-connect-ssh.tsx:398 pkg/shell/hosts_dialog.jsx:772
 msgid ""
 "The SSH key for logging in to $0 is protected by a password, and the host "
 "does not allow logging in with a password. Please provide the password of "
@@ -7576,7 +7615,7 @@ msgstr ""
 "tillåter inte inloggning med ett lösenord. Vänligen ange lösenordet för "
 "nyckeln på $1."
 
-#: pkg/shell/hosts_dialog.jsx:778
+#: pkg/lib/cockpit-connect-ssh.tsx:400 pkg/shell/hosts_dialog.jsx:777
 msgid ""
 "The SSH key for logging in to $0 is protected. You can log in with either "
 "your login password or by providing the password of the key at $1."
@@ -7680,7 +7719,7 @@ msgstr ""
 "Filsystemet kommer att låsas upp och monteras vid nästa uppstart. Detta kan "
 "kräva att du matar in en lösenfras."
 
-#: pkg/shell/hosts_dialog.jsx:494
+#: pkg/lib/cockpit-connect-ssh.tsx:152 pkg/shell/hosts_dialog.jsx:493
 msgid "The fingerprint should match:"
 msgstr "Fingeravtrycket ska matcha:"
 
@@ -7718,11 +7757,12 @@ msgstr ""
 msgid "The initrd must be regenerated."
 msgstr "Initrd måste återskapas."
 
-#: pkg/shell/hosts_dialog.jsx:695
+#: pkg/lib/cockpit-connect-ssh.tsx:342 pkg/shell/hosts_dialog.jsx:694
 msgid "The key password can not be empty"
 msgstr "Nyckellösenordet får inte vara tomt"
 
-#: pkg/shell/hosts_dialog.jsx:698 pkg/shell/hosts_dialog.jsx:704
+#: pkg/lib/cockpit-connect-ssh.tsx:344 pkg/shell/hosts_dialog.jsx:697
+#: pkg/shell/hosts_dialog.jsx:703
 msgid "The key passwords do not match"
 msgstr "Nyckellösenorden stämmer inte överens"
 
@@ -7750,7 +7790,7 @@ msgstr "De listade tjänsterna kommer att tvingas stoppa."
 msgid "The logged in user is not permitted to view system modifications"
 msgstr "Den inloggade användaren har inte tillåtelse att se systemändringar"
 
-#: pkg/shell/indexes.jsx:459
+#: pkg/shell/indexes.jsx:479
 msgid "The machine is rebooting"
 msgstr "Maskinen startar om"
 
@@ -7762,11 +7802,11 @@ msgstr "Monteringspunkten $0 används av dessa processer:"
 msgid "The mount point $0 is in use by these services:"
 msgstr "Monteringspunkten $0 används av dessa tjänster:"
 
-#: pkg/shell/hosts_dialog.jsx:701
+#: pkg/shell/hosts_dialog.jsx:700
 msgid "The new key password can not be empty"
 msgstr "Det nya nyckellösenordet får inte vara tomt"
 
-#: pkg/shell/hosts_dialog.jsx:679
+#: pkg/lib/cockpit-connect-ssh.tsx:336 pkg/shell/hosts_dialog.jsx:678
 msgid "The password can not be empty"
 msgstr "Lösenordet får inte vara tomt"
 
@@ -7774,7 +7814,8 @@ msgstr "Lösenordet får inte vara tomt"
 msgid "The passwords do not match"
 msgstr "Lösenorden stämmer inte överens"
 
-#: pkg/static/login.html:89 pkg/shell/hosts_dialog.jsx:479
+#: pkg/static/login.html:89 pkg/lib/cockpit-connect-ssh.tsx:137
+#: pkg/shell/hosts_dialog.jsx:478
 msgid ""
 "The resulting fingerprint is fine to share via public methods, including "
 "email."
@@ -7782,7 +7823,7 @@ msgstr ""
 "Det resulterande fingeravtrycket går bra att dela via offentliga metoder, "
 "inklusive e-post."
 
-#: pkg/shell/hosts_dialog.jsx:484
+#: pkg/lib/cockpit-connect-ssh.tsx:142 pkg/shell/hosts_dialog.jsx:483
 msgid ""
 "The resulting fingerprint is fine to share via public methods, including "
 "email. If you are asking someone else to do the verification for you, they "
@@ -7997,7 +8038,7 @@ msgstr ""
 msgid "This logical volume is not completely used by its content."
 msgstr "Denna logiska volym används inte helt av innehållet."
 
-#: pkg/shell/hosts_dialog.jsx:165
+#: pkg/shell/hosts_dialog.jsx:164
 msgid "This machine has already been added."
 msgstr "Denna maskin har redan lagts till."
 
@@ -8099,7 +8140,7 @@ msgid "This web browser is too old to run the Web Console (missing $0)"
 msgstr ""
 "Den här webbläsaren är för gammal för att köra webbkonsolen ($0 saknas)"
 
-#: pkg/systemd/logs.jsx:360
+#: pkg/systemd/logs.jsx:362
 msgid ""
 "This will add a match for '_BOOT_ID='. If not specified the logs for the "
 "current boot will be shown. If the boot ID is omitted, a positive offset "
@@ -8117,7 +8158,7 @@ msgstr ""
 "kronologisk ordning, 2 den andra och så vidare; medan -0 är sista "
 "uppstarten, -1 uppstarten före det, och så vidare."
 
-#: pkg/systemd/logs.jsx:371
+#: pkg/systemd/logs.jsx:374
 msgid ""
 "This will add match for '_SYSTEMD_UNIT=', 'COREDUMP_UNIT=' and 'UNIT=' to "
 "find all possible messages for the given unit. Can contain more units "
@@ -8127,7 +8168,7 @@ msgstr ""
 "och ”UNIT=” för att hitta alla möjliga meddelanden för den angivna enheten. "
 "Kan innehålla flera enheter separerade av komma. "
 
-#: pkg/shell/hosts_dialog.jsx:829
+#: pkg/shell/hosts_dialog.jsx:828
 msgid "This will allow you to log in without password in the future."
 msgstr "Detta gör att du kan logga in utan lösenord i framtiden."
 
@@ -8147,7 +8188,7 @@ msgstr "Torsdagar"
 msgid "Tier"
 msgstr "Nivå"
 
-#: pkg/packagekit/history.jsx:112 pkg/systemd/logs.jsx:201
+#: pkg/packagekit/history.jsx:112 pkg/systemd/logs.jsx:200
 msgid "Time"
 msgstr "Tid"
 
@@ -8175,7 +8216,8 @@ msgstr ""
 "Tips: gör så att ditt nyckellösenord stämmer med ditt inloggningslösenord "
 "för att automatiskt autentisera mot andra system."
 
-#: pkg/static/login.html:84 pkg/shell/hosts_dialog.jsx:474
+#: pkg/static/login.html:84 pkg/lib/cockpit-connect-ssh.tsx:132
+#: pkg/shell/hosts_dialog.jsx:473
 msgid ""
 "To ensure that your connection is not intercepted by a malicious third-"
 "party, please verify the host key fingerprint:"
@@ -8192,7 +8234,8 @@ msgstr ""
 "Hat, antingen genom att använda Red Hats kundportal eller en lokal "
 "prenumerationsserver."
 
-#: pkg/shell/hosts_dialog.jsx:477 pkg/static/login.js:768
+#: pkg/lib/cockpit-connect-ssh.tsx:135 pkg/shell/hosts_dialog.jsx:476
+#: pkg/static/login.js:768
 msgid ""
 "To verify a fingerprint, run the following on $0 while physically sitting at "
 "the machine or through a trusted network:"
@@ -8213,7 +8256,7 @@ msgstr "Växla"
 msgid "Toggle date picker"
 msgstr "Växla datumväljare"
 
-#: pkg/systemd/services.jsx:815 pkg/systemd/logs.jsx:190
+#: pkg/systemd/services.jsx:815 pkg/systemd/logs.jsx:189
 msgid "Toggle filters"
 msgstr "Växla filter"
 
@@ -8221,7 +8264,7 @@ msgstr "Växla filter"
 msgid "Too much data"
 msgstr "För mycket data"
 
-#: pkg/shell/indexes.jsx:346
+#: pkg/shell/indexes.jsx:360
 msgid "Tools"
 msgstr "Verktyg"
 
@@ -8273,7 +8316,7 @@ msgstr "Felsök"
 msgid "Troubleshoot…"
 msgstr "Felsök…"
 
-#: pkg/shell/hosts_dialog.jsx:466
+#: pkg/lib/cockpit-connect-ssh.tsx:127 pkg/shell/hosts_dialog.jsx:465
 msgid "Trust and add host"
 msgstr "Lita på och lägg till värd"
 
@@ -8349,7 +8392,7 @@ msgid "Type must contain exactly two hexadecimal characters (0 to 9, A to F)."
 msgstr ""
 "Typ måste innehålla exakt två hexadecimala tecken (0 till 9, A till F)."
 
-#: pkg/systemd/logs.jsx:403
+#: pkg/systemd/logs.jsx:409
 msgid "Type to filter"
 msgstr "Skriv för att filtrera"
 
@@ -8373,11 +8416,11 @@ msgstr "Kan inte verkställa denna lösning automatiskt"
 msgid "Unable to connect to that address"
 msgstr "Kan inte ansluta till den adressen"
 
-#: pkg/shell/hosts_dialog.jsx:361
+#: pkg/shell/hosts_dialog.jsx:360
 msgid "Unable to contact $0."
 msgstr "Det går inte att kontakta $0."
 
-#: pkg/shell/hosts_dialog.jsx:236
+#: pkg/shell/hosts_dialog.jsx:235
 msgid ""
 "Unable to contact the given host $0. Make sure it has ssh running on port "
 "$1, or specify another port in the address."
@@ -8390,7 +8433,20 @@ msgstr ""
 msgid "Unable to get alert details."
 msgstr "Kan inte ta bort larmdetaljer."
 
-#: pkg/shell/hosts_dialog.jsx:770
+#: pkg/lib/cockpit-connect-ssh.tsx:396
+#, fuzzy
+#| msgid ""
+#| "Unable to log in to $0 using SSH key authentication. Please provide the "
+#| "password. You may want to set up your SSH keys for automatic login."
+msgid ""
+"Unable to log in to $0 using SSH key authentication. Please provide the "
+"password."
+msgstr ""
+"Det går inte att logga in på $0 med SSH-nyckelautentisering. Ange "
+"lösenordet. Du kanske vill ställa in dina SSH-nycklar för automatisk "
+"inloggning."
+
+#: pkg/shell/hosts_dialog.jsx:769
 msgid ""
 "Unable to log in to $0 using SSH key authentication. Please provide the "
 "password. You may want to set up your SSH keys for automatic login."
@@ -8399,7 +8455,7 @@ msgstr ""
 "lösenordet. Du kanske vill ställa in dina SSH-nycklar för automatisk "
 "inloggning."
 
-#: pkg/shell/hosts_dialog.jsx:768
+#: pkg/lib/cockpit-connect-ssh.tsx:394 pkg/shell/hosts_dialog.jsx:767
 msgid ""
 "Unable to log in to $0. The host does not accept password login or any of "
 "your SSH keys."
@@ -8465,7 +8521,7 @@ msgid "Unformatted data"
 msgstr "Oformaterad data"
 
 #: pkg/systemd/services-list.jsx:39 pkg/systemd/services-list.jsx:44
-#: pkg/systemd/logs.jsx:368
+#: pkg/systemd/logs.jsx:372
 msgid "Unit"
 msgstr "Enhet"
 
@@ -8502,6 +8558,12 @@ msgstr "Okänd konfiguration"
 #: pkg/storaged/iscsi/create-dialog.jsx:69
 msgid "Unknown host name"
 msgstr "Okänt värdnamn"
+
+#: pkg/lib/cockpit-connect-ssh.tsx:125
+#, fuzzy
+#| msgid "Unknown host key"
+msgid "Unknown host: $0"
+msgstr "Okänd värdnyckel"
 
 #: pkg/networkmanager/firewall.jsx:477
 msgid "Unknown service name"
@@ -8590,7 +8652,7 @@ msgstr "Okända data får inte göras mindre här."
 msgid "Unsupported logical volume"
 msgstr "Den logiska volymen stöds inte"
 
-#: pkg/systemd/logs.jsx:346
+#: pkg/systemd/logs.jsx:348
 msgid "Until"
 msgstr "Tills"
 
@@ -8602,7 +8664,7 @@ msgstr "Ej betrodd värd"
 msgid "Up since"
 msgstr "Uppe sedan"
 
-#: pkg/shell/hosts_dialog.jsx:357
+#: pkg/shell/hosts_dialog.jsx:356
 msgid "Update"
 msgstr "Uppdatera"
 
@@ -8733,7 +8795,7 @@ msgstr "Användar-ID måste inte vara högre än $0"
 msgid "User ID must not be lower than $0"
 msgstr "Användar-ID får inte vara lägre än $0"
 
-#: pkg/static/login.html:94 pkg/shell/hosts_dialog.jsx:264
+#: pkg/static/login.html:94 pkg/shell/hosts_dialog.jsx:263
 #: pkg/users/account-details.js:256 pkg/users/account-create-dialog.js:76
 msgid "User name"
 msgstr "Användarnamn"
@@ -8793,7 +8855,7 @@ msgstr "Leverantör"
 msgid "Verified"
 msgstr "Verifierad"
 
-#: pkg/shell/hosts_dialog.jsx:489
+#: pkg/lib/cockpit-connect-ssh.tsx:147 pkg/shell/hosts_dialog.jsx:488
 msgid "Verify fingerprint"
 msgstr "Verifiera fingeravtryck"
 
@@ -8927,7 +8989,7 @@ msgstr "Önskat av"
 msgid "Wants"
 msgstr "Önskar"
 
-#: pkg/systemd/logs.jsx:69
+#: pkg/systemd/logs.jsx:68
 msgid "Warning and above"
 msgstr "Varning och högre"
 
@@ -8971,7 +9033,7 @@ msgstr "Veckor"
 msgid "When"
 msgstr "När"
 
-#: pkg/shell/hosts_dialog.jsx:267
+#: pkg/shell/hosts_dialog.jsx:266
 msgid "When empty, connect with the current user"
 msgstr "När tomt, anslut med den aktuella användaren"
 
@@ -9050,7 +9112,8 @@ msgstr "Årligen"
 msgid "Yes"
 msgstr "Ja"
 
-#: pkg/shell/hosts_dialog.jsx:488 pkg/static/login.js:765
+#: pkg/lib/cockpit-connect-ssh.tsx:146 pkg/shell/hosts_dialog.jsx:487
+#: pkg/static/login.js:765
 msgid "You are connecting to $0 for the first time."
 msgstr "Du ansluter till $0 för första gången."
 
@@ -9074,7 +9137,7 @@ msgstr "Du har blivit utloggad på grund av inaktivitet."
 msgid "You may try to load older entries."
 msgstr "Du kan försöka ladda äldre poster."
 
-#: pkg/shell/hosts_dialog.jsx:774 pkg/shell/hosts_dialog.jsx:779
+#: pkg/shell/hosts_dialog.jsx:773 pkg/shell/hosts_dialog.jsx:778
 msgid "You may want to change the password of the key for automatic login."
 msgstr "Du kanske vill ändra lösenordet för nyckeln för automatisk inloggning."
 
@@ -9541,7 +9604,7 @@ msgstr "iscsi"
 msgid "journal"
 msgstr "journal"
 
-#: pkg/systemd/logs.jsx:413
+#: pkg/systemd/logs.jsx:419
 msgid "journalctl manpage"
 msgstr "journalctl mansida"
 
@@ -11838,9 +11901,6 @@ msgstr "zon"
 #~ "Nyckeln för {{#strong}}{{host}}{{/strong}} stämmer inte med den tidigare "
 #~ "använda nyckeln.  Om inte denna maskin ersattes nyligen är det troligt "
 #~ "att någon försöker attackera din förbindelse till denna maskin."
-
-#~ msgid "Unknown host key"
-#~ msgstr "Okänd värdnyckel"
 
 #~ msgid "Address:"
 #~ msgstr "Adress:"

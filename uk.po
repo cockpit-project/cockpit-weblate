@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-30 02:50+0000\n"
+"POT-Creation-Date: 2024-08-02 02:50+0000\n"
 "PO-Revision-Date: 2024-07-19 17:38+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
@@ -173,7 +173,8 @@ msgstr "$0 використовується"
 msgid "$0 is not available from any repository."
 msgstr "$0 немає у жодному зі сховищ."
 
-#: pkg/shell/hosts_dialog.jsx:464 pkg/static/login.js:759
+#: pkg/lib/cockpit-connect-ssh.tsx:125 pkg/shell/hosts_dialog.jsx:463
+#: pkg/static/login.js:759
 msgid "$0 key changed"
 msgstr "Змінено ключ $0"
 
@@ -568,7 +569,7 @@ msgstr "8"
 msgid "9th"
 msgstr "9-е"
 
-#: pkg/shell/hosts_dialog.jsx:98
+#: pkg/lib/cockpit-connect-ssh.tsx:520 pkg/shell/hosts_dialog.jsx:97
 msgid "A compatible version of Cockpit is not installed on $0."
 msgstr "На $0 не встановлено сумісної версії Cockpit."
 
@@ -595,7 +596,7 @@ msgstr ""
 "Мережевий зв'язок поєднує декілька інтерфейсів мережі у один логічний "
 "інтерфейс із вищою пропускною здатністю або вищим рівнем резервування."
 
-#: pkg/shell/hosts_dialog.jsx:795
+#: pkg/lib/cockpit-connect-ssh.tsx:413 pkg/shell/hosts_dialog.jsx:794
 msgid ""
 "A new SSH key at $0 will be created for $1 on $2 and it will be added to the "
 "$3 file of $4 on $5."
@@ -726,7 +727,7 @@ msgstr "Адаптивне урівноваження навантаження �
 #: pkg/storaged/iscsi/create-dialog.jsx:120
 #: pkg/storaged/iscsi/create-dialog.jsx:144 pkg/storaged/stratis/pool.jsx:216
 #: pkg/storaged/nfs/nfs.jsx:188 pkg/shell/credentials.jsx:182
-#: pkg/shell/hosts_dialog.jsx:252 pkg/networkmanager/dialogs-common.jsx:160
+#: pkg/shell/hosts_dialog.jsx:251 pkg/networkmanager/dialogs-common.jsx:160
 #: pkg/systemd/timer-dialog.jsx:367 pkg/users/authorized-keys-panel.js:68
 msgid "Add"
 msgstr "Додати"
@@ -812,7 +813,7 @@ msgstr "Додати сервер ключів"
 msgid "Add member"
 msgstr "Додати учасника"
 
-#: pkg/shell/hosts.jsx:216 pkg/shell/hosts_dialog.jsx:251
+#: pkg/shell/hosts.jsx:203 pkg/shell/hosts_dialog.jsx:250
 msgid "Add new host"
 msgstr "Додати новий вузол"
 
@@ -1012,7 +1013,7 @@ msgstr "Після завантаження системи"
 msgid "Alert"
 msgstr "Попередження"
 
-#: pkg/systemd/logs.jsx:66
+#: pkg/systemd/logs.jsx:65
 msgid "Alert and above"
 msgstr "Тривога і вище"
 
@@ -1020,8 +1021,8 @@ msgstr "Тривога і вище"
 msgid "Alias"
 msgstr "Псевдонім"
 
-#: pkg/systemd/logs.jsx:111 pkg/systemd/logs.jsx:127 pkg/systemd/logs.jsx:156
-#: pkg/systemd/logs.jsx:293 pkg/systemd/logs.jsx:319
+#: pkg/systemd/logs.jsx:110 pkg/systemd/logs.jsx:126 pkg/systemd/logs.jsx:155
+#: pkg/systemd/logs.jsx:294 pkg/systemd/logs.jsx:320
 msgid "All"
 msgstr "Всі"
 
@@ -1061,7 +1062,7 @@ msgstr "Ansible"
 msgid "Ansible roles documentation"
 msgstr "Документація з ролей Ansible"
 
-#: pkg/systemd/logs.jsx:382
+#: pkg/systemd/logs.jsx:386
 msgid ""
 "Any text string in the logs messages can be filtered. The string can also be "
 "in the form of a regular expression. Also supports filtering by message log "
@@ -1123,7 +1124,7 @@ msgstr "Не вдалося застосувати оновлення"
 msgid "Appropriate for critical mounts, such as /var"
 msgstr "Придатне для критичних монтувань, зокрема /var"
 
-#: pkg/shell/indexes.jsx:340
+#: pkg/shell/indexes.jsx:354
 msgid "Apps"
 msgstr "Програми"
 
@@ -1187,7 +1188,8 @@ msgstr "Розпізнавання"
 msgid "Authenticating"
 msgstr "Автентифікація"
 
-#: pkg/shell/hosts_dialog.jsx:840 pkg/users/account-create-dialog.js:112
+#: pkg/lib/cockpit-connect-ssh.tsx:436 pkg/shell/hosts_dialog.jsx:839
+#: pkg/users/account-create-dialog.js:112
 msgid "Authentication"
 msgstr "Розпізнавання"
 
@@ -1211,7 +1213,7 @@ msgstr ""
 msgid "Authentication required"
 msgstr "Слід пройти розпізнавання"
 
-#: pkg/shell/hosts_dialog.jsx:826
+#: pkg/lib/cockpit-connect-ssh.tsx:425 pkg/shell/hosts_dialog.jsx:825
 msgid "Authorize SSH key"
 msgstr "Уповноважити ключ SSH"
 
@@ -1231,7 +1233,7 @@ msgstr "Автоматично"
 msgid "Automatic (DHCP only)"
 msgstr "Автоматично (лише DHCP)"
 
-#: pkg/shell/hosts_dialog.jsx:870
+#: pkg/shell/hosts_dialog.jsx:869
 msgid "Automatic login"
 msgstr "Автоматичний вхід"
 
@@ -1343,7 +1345,7 @@ msgstr "Заблоковано"
 msgid "Bond"
 msgstr "Прив’язка"
 
-#: pkg/systemd/logs.jsx:357
+#: pkg/systemd/logs.jsx:360
 msgid "Boot"
 msgstr "Завантаження"
 
@@ -1401,7 +1403,7 @@ msgstr "Вади"
 msgid "Bus expansion chassis"
 msgstr "Апаратний блок розширення каналу"
 
-#: pkg/shell/hosts_dialog.jsx:811
+#: pkg/shell/hosts_dialog.jsx:810
 msgid ""
 "By changing the password of the SSH key $0 to the login password of $1 on "
 "$2, the key will be automatically made available and you can log in to $3 "
@@ -1445,7 +1447,7 @@ msgstr "CVE"
 msgid "Cache"
 msgstr "Кеш"
 
-#: pkg/shell/hosts_dialog.jsx:262
+#: pkg/shell/hosts_dialog.jsx:261
 msgid "Can be a hostname, IP address, alias name, or ssh:// URI"
 msgstr ""
 "Це може бути назва вузла, IP-адреса, альтернативна назва або адреса ssh://"
@@ -1455,6 +1457,7 @@ msgid "Can not find any logs using the current combination of filters."
 msgstr "Не вдалося знайти журналів на основі поточної комбінації фільтрів."
 
 #: pkg/playground/translate.html:39 pkg/static/login.html:141
+#: pkg/lib/cockpit-connect-ssh.tsx:180 pkg/lib/cockpit-connect-ssh.tsx:491
 #: pkg/lib/cockpit-components-shutdown.jsx:193
 #: pkg/lib/cockpit-components-dialog.jsx:131 pkg/storaged/jobs-panel.jsx:140
 #: pkg/metrics/metrics.jsx:1489 pkg/packagekit/autoupdates.jsx:400
@@ -1462,9 +1465,9 @@ msgstr "Не вдалося знайти журналів на основі по
 #: pkg/packagekit/kpatch.jsx:315 pkg/sosreport/sosreport.jsx:297
 #: pkg/sosreport/sosreport.jsx:382 pkg/apps/utils.jsx:69
 #: pkg/shell/credentials.jsx:311 pkg/shell/active-pages-modal.jsx:98
-#: pkg/shell/shell-modals.jsx:115 pkg/shell/hosts_dialog.jsx:285
-#: pkg/shell/hosts_dialog.jsx:382 pkg/shell/hosts_dialog.jsx:514
-#: pkg/shell/hosts_dialog.jsx:891 pkg/shell/superuser.jsx:182
+#: pkg/shell/shell-modals.jsx:115 pkg/shell/hosts_dialog.jsx:284
+#: pkg/shell/hosts_dialog.jsx:381 pkg/shell/hosts_dialog.jsx:513
+#: pkg/shell/hosts_dialog.jsx:890 pkg/shell/superuser.jsx:182
 #: pkg/shell/superuser.jsx:219 pkg/shell/superuser.jsx:264
 #: pkg/networkmanager/firewall.jsx:613 pkg/networkmanager/firewall.jsx:814
 #: pkg/networkmanager/firewall.jsx:913
@@ -1492,7 +1495,7 @@ msgstr "Скасувати перезавантаження"
 msgid "Cannot be enabled"
 msgstr "Не може бути увімкнено"
 
-#: pkg/shell/indexes.jsx:467
+#: pkg/shell/indexes.jsx:487
 msgid "Cannot connect to an unknown host"
 msgstr "Не вдалося з'єднатися зі невідомим вузлом"
 
@@ -1574,7 +1577,7 @@ msgstr "Змінити оболонку"
 msgid "Change system time"
 msgstr "Змінити системний час"
 
-#: pkg/shell/hosts_dialog.jsx:809
+#: pkg/shell/hosts_dialog.jsx:808
 msgid "Change the password of $0"
 msgstr "Змінити пароль до $0"
 
@@ -1582,7 +1585,8 @@ msgstr "Змінити пароль до $0"
 msgid "Change the settings"
 msgstr "Змінити параметри"
 
-#: pkg/static/login.html:81 pkg/shell/hosts_dialog.jsx:473
+#: pkg/static/login.html:81 pkg/lib/cockpit-connect-ssh.tsx:131
+#: pkg/shell/hosts_dialog.jsx:472
 msgid ""
 "Changed keys are often the result of an operating system reinstallation. "
 "However, an unexpected change may indicate a third-party attempt to "
@@ -1704,10 +1708,11 @@ msgstr "Пристрій Cleartext"
 msgid "Client software"
 msgstr "Клієнтське програмне забезпечення"
 
+#: pkg/lib/cockpit-connect-ssh.tsx:515
 #: pkg/lib/cockpit-components-modifications.jsx:76
 #: pkg/lib/cockpit-components-terminal.jsx:230 pkg/storaged/dialog.jsx:485
 #: pkg/apps/utils.jsx:87 pkg/shell/credentials.jsx:79
-#: pkg/shell/shell-modals.jsx:188 pkg/shell/hosts_dialog.jsx:92
+#: pkg/shell/shell-modals.jsx:188 pkg/shell/hosts_dialog.jsx:91
 #: pkg/shell/superuser.jsx:190 pkg/shell/superuser.jsx:198
 #: pkg/networkmanager/interfaces.js:43
 #: pkg/systemd/overview-cards/configurationCard.jsx:195
@@ -1762,7 +1767,7 @@ msgstr "Cockpit — інтерактивний інтерфейс адмініс
 msgid "Cockpit is not compatible with the software on the system."
 msgstr "Cockpit є несумісним із програмним забезпеченням цієї системи."
 
-#: pkg/shell/hosts_dialog.jsx:89
+#: pkg/lib/cockpit-connect-ssh.tsx:512 pkg/shell/hosts_dialog.jsx:88
 msgid "Cockpit is not installed"
 msgstr "Cockpit не встановлено"
 
@@ -1801,7 +1806,7 @@ msgstr "Збирати дампи аварій ядра"
 msgid "Collect metrics"
 msgstr "Зібрати метрику"
 
-#: pkg/shell/hosts_dialog.jsx:269
+#: pkg/shell/hosts_dialog.jsx:268
 msgid "Color"
 msgstr "Колір"
 
@@ -1886,11 +1891,11 @@ msgstr "Підтвердити"
 msgid "Confirm deletion of $0"
 msgstr "Підтвердьте вилучення $0"
 
-#: pkg/shell/hosts_dialog.jsx:801
+#: pkg/lib/cockpit-connect-ssh.tsx:418 pkg/shell/hosts_dialog.jsx:800
 msgid "Confirm key password"
 msgstr "Підтвердження пароля до ключа"
 
-#: pkg/shell/hosts_dialog.jsx:817
+#: pkg/shell/hosts_dialog.jsx:816
 msgid "Confirm new key password"
 msgstr "Підтвердження нового пароля до ключа"
 
@@ -1942,11 +1947,18 @@ msgstr "Встановлюємо з’єднання із фоновою слу�
 msgid "Connecting to dbus failed: $0"
 msgstr "Не вдалося встановити з'єднання із dbus: $0"
 
-#: pkg/shell/indexes.jsx:462
+#: pkg/shell/hosts.jsx:211
+msgid ""
+"Connecting to remote hosts inside of a web console session is deprecated and "
+"will be removed in the future. You can still connect to your existing hosts "
+"for now."
+msgstr ""
+
+#: pkg/shell/indexes.jsx:482
 msgid "Connecting to the machine"
 msgstr "Встановлюємо з’єднання із комп’ютером"
 
-#: pkg/shell/hosts.jsx:163
+#: pkg/shell/hosts.jsx:185
 msgid "Connection error"
 msgstr "Помилка з'єднання"
 
@@ -1999,21 +2011,25 @@ msgstr "Контролер"
 msgid "Convertible"
 msgstr "Змінюваний"
 
+#: pkg/lib/cockpit-connect-ssh.tsx:133 pkg/lib/cockpit-connect-ssh.tsx:136
+#: pkg/lib/cockpit-connect-ssh.tsx:151 pkg/lib/cockpit-connect-ssh.tsx:153
 #: pkg/shell/credentials.jsx:210 pkg/shell/failures.jsx:43
-#: pkg/shell/hosts_dialog.jsx:475 pkg/shell/hosts_dialog.jsx:478
-#: pkg/shell/hosts_dialog.jsx:493 pkg/shell/hosts_dialog.jsx:495
+#: pkg/shell/hosts_dialog.jsx:474 pkg/shell/hosts_dialog.jsx:477
+#: pkg/shell/hosts_dialog.jsx:492 pkg/shell/hosts_dialog.jsx:494
 msgid "Copied"
 msgstr "Скопійовано"
 
+#: pkg/lib/cockpit-connect-ssh.tsx:133 pkg/lib/cockpit-connect-ssh.tsx:136
+#: pkg/lib/cockpit-connect-ssh.tsx:151 pkg/lib/cockpit-connect-ssh.tsx:153
 #: pkg/lib/cockpit-components-terminal.jsx:211 pkg/shell/credentials.jsx:210
-#: pkg/shell/failures.jsx:43 pkg/shell/hosts_dialog.jsx:475
-#: pkg/shell/hosts_dialog.jsx:478 pkg/shell/hosts_dialog.jsx:493
-#: pkg/shell/hosts_dialog.jsx:495
+#: pkg/shell/failures.jsx:43 pkg/shell/hosts_dialog.jsx:474
+#: pkg/shell/hosts_dialog.jsx:477 pkg/shell/hosts_dialog.jsx:492
+#: pkg/shell/hosts_dialog.jsx:494
 msgid "Copy"
 msgstr "Копіювати"
 
 #: pkg/lib/cockpit-components-modifications.jsx:73
-#: pkg/storaged/crypto/tang.jsx:117 pkg/systemd/logs.jsx:417
+#: pkg/storaged/crypto/tang.jsx:117 pkg/systemd/logs.jsx:423
 msgid "Copy to clipboard"
 msgstr "Копіювати до буфера"
 
@@ -2021,7 +2037,7 @@ msgstr "Копіювати до буфера"
 msgid "Core $0"
 msgstr "Ядро $0"
 
-#: pkg/shell/hosts_dialog.jsx:356
+#: pkg/shell/hosts_dialog.jsx:355
 msgid "Could not contact $0"
 msgstr "Не вдалося встановити зв’язок із $0"
 
@@ -2067,7 +2083,7 @@ msgstr "Створити пристрій RAID"
 msgid "Create Stratis pool"
 msgstr "Створити буфер Stratis"
 
-#: pkg/shell/hosts_dialog.jsx:793
+#: pkg/lib/cockpit-connect-ssh.tsx:411 pkg/shell/hosts_dialog.jsx:792
 msgid "Create a new SSH key and authorize it"
 msgstr "Створити ключ SSH і уповноважити його"
 
@@ -2223,7 +2239,7 @@ msgstr ""
 "Створення цієї $0 призведе до розірвання з’єднання із сервером і зробить "
 "адміністративний інтерфейс користувача недоступним."
 
-#: pkg/systemd/logs.jsx:67
+#: pkg/systemd/logs.jsx:66
 msgid "Critical and above"
 msgstr "Критичні і вище"
 
@@ -2253,7 +2269,7 @@ msgstr "Ctrl+Insert"
 msgid "Ctrl-Shift-I"
 msgstr "Ctrl-Shift-I"
 
-#: pkg/systemd/logs.jsx:58
+#: pkg/systemd/logs.jsx:57
 msgid "Current boot"
 msgstr "Поточне завантаження"
 
@@ -2398,7 +2414,7 @@ msgstr ""
 "Дані буде збережено на вибраних фізичних томах без будь-якої надлишковості "
 "або підвищення швидкодії."
 
-#: pkg/systemd/logs.jsx:331
+#: pkg/systemd/logs.jsx:332
 msgid ""
 "Date specifications should be of the format YYYY-MM-DD hh:mm:ss. "
 "Alternatively the strings 'yesterday', 'today', 'tomorrow' are understood. "
@@ -2428,7 +2444,7 @@ msgstr "Деактивація"
 msgid "Deactivating $target"
 msgstr "Деактивуємо $target"
 
-#: pkg/systemd/logs.jsx:72
+#: pkg/systemd/logs.jsx:71
 msgid "Debug and above"
 msgstr "Діагностика і вище"
 
@@ -2570,6 +2586,12 @@ msgstr ""
 msgid "Deletion will remove the following files:"
 msgstr "У результаті вилучення буде усунено такі файли:"
 
+#: pkg/shell/hosts.jsx:213
+#, fuzzy
+#| msgid "Created"
+msgid "Deprecated"
+msgstr "Створено"
+
 #: pkg/storaged/dialog.jsx:1440 pkg/networkmanager/firewall.jsx:702
 #: pkg/networkmanager/firewall.jsx:846 pkg/systemd/timer-dialog.jsx:166
 msgid "Description"
@@ -2664,7 +2686,7 @@ msgstr "Заборонити запуск (замаскувати)"
 msgid "Disconnect"
 msgstr "Від’єднатися"
 
-#: pkg/shell/indexes.jsx:160
+#: pkg/shell/indexes.jsx:174
 msgid "Disconnected"
 msgstr "Роз'єднано"
 
@@ -2818,7 +2840,7 @@ msgstr "Системний розділ EFI"
 
 #: pkg/storaged/crypto/keyslots.jsx:763 pkg/storaged/nfs/nfs.jsx:312
 #: pkg/packagekit/autoupdates.jsx:533 pkg/packagekit/kpatch.jsx:234
-#: pkg/shell/hosts.jsx:167 pkg/shell/indexes.jsx:352
+#: pkg/shell/hosts.jsx:189 pkg/shell/indexes.jsx:366
 #: pkg/networkmanager/firewall.jsx:115 pkg/kdump/kdump-view.jsx:476
 msgid "Edit"
 msgstr "Змінити"
@@ -2851,11 +2873,11 @@ msgstr "Редагувати параметри містка"
 msgid "Edit custom service in $0 zone"
 msgstr "Редагувати нетипову службу у зоні $0"
 
-#: pkg/shell/hosts_dialog.jsx:251
+#: pkg/shell/hosts_dialog.jsx:250
 msgid "Edit host"
 msgstr "Редагувати вузол"
 
-#: pkg/shell/hosts.jsx:215
+#: pkg/shell/hosts.jsx:255
 msgid "Edit hosts"
 msgstr "Редагувати вузли"
 
@@ -3041,7 +3063,7 @@ msgstr "Відомі помилки"
 msgid "Error"
 msgstr "Помилка"
 
-#: pkg/systemd/logs.jsx:68
+#: pkg/systemd/logs.jsx:67
 msgid "Error and above"
 msgstr "Помилка і вище"
 
@@ -3147,7 +3169,7 @@ msgstr "FIPS із подальшими обмеженнями загальних
 msgid "Failed"
 msgstr "Помилка"
 
-#: pkg/shell/hosts_dialog.jsx:219
+#: pkg/shell/hosts_dialog.jsx:218
 msgid "Failed to add machine: $0"
 msgstr "Не вдалося додати комп’ютер: $0"
 
@@ -3185,7 +3207,7 @@ msgstr "Не вдалося вимкнути tuned"
 msgid "Failed to disable tuned profile"
 msgstr "Не вдалося вимкнути профіль tuned"
 
-#: pkg/shell/hosts_dialog.jsx:337
+#: pkg/shell/hosts_dialog.jsx:336
 msgid "Failed to edit machine: $0"
 msgstr "Не вдалося змінити запис комп’ютера: $0"
 
@@ -3279,7 +3301,7 @@ msgstr "Фільтрувати пункти меню"
 msgid "Filter services"
 msgstr "Фільтрувати служби"
 
-#: pkg/systemd/logs.jsx:237
+#: pkg/systemd/logs.jsx:236
 msgid "Filters"
 msgstr "Фільтри"
 
@@ -3364,7 +3386,7 @@ msgstr "Кількість кадрів"
 msgid "Free space"
 msgstr "Вільне місце"
 
-#: pkg/systemd/logs.jsx:379
+#: pkg/systemd/logs.jsx:384
 msgid "Free-form search"
 msgstr "Пошук із довільним критерієм"
 
@@ -3518,7 +3540,7 @@ msgstr "Кількість пакунків у журналі"
 msgid "Home directory"
 msgstr "Домашній каталог"
 
-#: pkg/shell/hosts.jsx:192 pkg/shell/hosts_dialog.jsx:255
+#: pkg/shell/hosts.jsx:232 pkg/shell/hosts_dialog.jsx:254
 msgid "Host"
 msgstr "Вузол"
 
@@ -3526,11 +3548,17 @@ msgstr "Вузол"
 msgid "Host key is incorrect"
 msgstr "Ключ вузла є неправильним"
 
+#: pkg/shell/hosts.jsx:210
+#, fuzzy
+#| msgid "Domain is not supported"
+msgid "Host switching is not supported"
+msgstr "Підтримки домену не передбачено"
+
 #: pkg/systemd/overview-cards/configurationCard.jsx:66
 msgid "Hostname"
 msgstr "Назва вузла"
 
-#: pkg/shell/hosts.jsx:152
+#: pkg/shell/hosts.jsx:174
 msgid "Hosts"
 msgstr "Вузли"
 
@@ -3603,7 +3631,7 @@ msgstr "IPv6"
 msgid "IPv6 settings"
 msgstr "Параметри IPv6"
 
-#: pkg/systemd/logs.jsx:224
+#: pkg/systemd/logs.jsx:223
 msgid "Identifier"
 msgstr "Ідентифікатор"
 
@@ -3623,7 +3651,7 @@ msgstr ""
 "Якщо відбиток є відповідним, натисніть «Прийняти ключ і увійти». Якщо ж це "
 "не так, не входьте і повідомте про подію адміністратору."
 
-#: pkg/shell/hosts_dialog.jsx:480
+#: pkg/lib/cockpit-connect-ssh.tsx:138 pkg/shell/hosts_dialog.jsx:479
 msgid ""
 "If the fingerprint matches, click 'Trust and add host'. Otherwise, do not "
 "connect and contact your administrator."
@@ -3648,7 +3676,7 @@ msgstr "Вхід"
 msgid "In a terminal, run: "
 msgstr "У терміналі віддайте таку команду: "
 
-#: pkg/shell/hosts_dialog.jsx:806 pkg/shell/hosts_dialog.jsx:823
+#: pkg/shell/hosts_dialog.jsx:805 pkg/shell/hosts_dialog.jsx:822
 msgid ""
 "In order to allow log in to $0 as $1 without password in the future, use the "
 "login password of $2 on $3 as the key password, or leave the key password "
@@ -3701,7 +3729,7 @@ msgstr "Опосередкований"
 msgid "Info"
 msgstr "Інформація"
 
-#: pkg/systemd/logs.jsx:71
+#: pkg/systemd/logs.jsx:70
 msgid "Info and above"
 msgstr "Інформація і вище"
 
@@ -3901,7 +3929,7 @@ msgstr "Некоректне ім’я користувача чи пароль"
 msgid "IoT gateway"
 msgstr "Шлюз IoT"
 
-#: pkg/shell/hosts_dialog.jsx:362
+#: pkg/shell/hosts_dialog.jsx:361
 msgid "Is sshd running on a different port?"
 msgstr "sshd працює на іншому порті?"
 
@@ -3995,7 +4023,8 @@ msgstr "Параметри інтерактивних латок до ядра"
 msgid "Kernel live patching"
 msgstr "Інтерактивне латання ядра"
 
-#: pkg/shell/hosts_dialog.jsx:796 pkg/shell/hosts_dialog.jsx:861
+#: pkg/lib/cockpit-connect-ssh.tsx:414 pkg/lib/cockpit-connect-ssh.tsx:459
+#: pkg/shell/hosts_dialog.jsx:795 pkg/shell/hosts_dialog.jsx:860
 msgid "Key password"
 msgstr "Пароль до ключа"
 
@@ -4070,11 +4099,11 @@ msgstr "Мітка"
 msgid "Laptop"
 msgstr "Переносний ПК"
 
-#: pkg/systemd/logs.jsx:60
+#: pkg/systemd/logs.jsx:59
 msgid "Last 24 hours"
 msgstr "Попередні 24 години"
 
-#: pkg/systemd/logs.jsx:61
+#: pkg/systemd/logs.jsx:60
 msgid "Last 7 days"
 msgstr "Попередні 7 днів"
 
@@ -4326,12 +4355,13 @@ msgstr "На заблокованому зашифрованому пристр�
 msgid "Locking $target"
 msgstr "Блокуємо $target"
 
-#: pkg/static/login.html:139 pkg/shell/failures.jsx:73
-#: pkg/shell/hosts_dialog.jsx:764 pkg/static/login.js:668
+#: pkg/static/login.html:139 pkg/lib/cockpit-connect-ssh.tsx:390
+#: pkg/shell/failures.jsx:73 pkg/shell/hosts_dialog.jsx:763
+#: pkg/static/login.js:668
 msgid "Log in"
 msgstr "Увійти"
 
-#: pkg/shell/hosts_dialog.jsx:763
+#: pkg/lib/cockpit-connect-ssh.tsx:389 pkg/shell/hosts_dialog.jsx:762
 msgid "Log in to $0"
 msgstr "Увійти до $0"
 
@@ -4483,7 +4513,7 @@ msgstr "Апаратний блок основного сервера"
 msgid "Maintenance"
 msgstr "Супровід"
 
-#: pkg/shell/hosts_dialog.jsx:497
+#: pkg/shell/hosts_dialog.jsx:496
 msgid "Malicious pages on a remote machine may affect other connected hosts"
 msgstr ""
 "Сторінки зловмисників на віддаленому комп'ютері можуть впливати на роботу на "
@@ -4987,11 +5017,11 @@ msgstr "Нове монтування NFS"
 msgid "New host"
 msgstr "Новий вузол"
 
-#: pkg/shell/hosts_dialog.jsx:464
+#: pkg/shell/hosts_dialog.jsx:463
 msgid "New host: $0"
 msgstr "Новий вузол: $0"
 
-#: pkg/shell/hosts_dialog.jsx:812
+#: pkg/shell/hosts_dialog.jsx:811
 msgid "New key password"
 msgstr "Новий пароль до ключа"
 
@@ -5180,7 +5210,7 @@ msgstr "Не знайдено фізичних томів"
 msgid "No real name specified"
 msgstr "Не вказано справжнього імені"
 
-#: pkg/shell/nav.jsx:157 pkg/systemd/logs.jsx:316
+#: pkg/shell/nav.jsx:157 pkg/systemd/logs.jsx:317
 msgid "No results found"
 msgstr "Нічого не знайдено"
 
@@ -5258,7 +5288,7 @@ msgstr "Не з’єднано"
 msgid "Not connected to Insights"
 msgstr "Не з'єднано із Insights"
 
-#: pkg/shell/indexes.jsx:465
+#: pkg/shell/indexes.jsx:485
 msgid "Not connected to host"
 msgstr "Не з'єднано із вузлом"
 
@@ -5326,7 +5356,7 @@ msgstr "Примітка"
 msgid "Notebook"
 msgstr "Ноутбук"
 
-#: pkg/systemd/logs.jsx:70
+#: pkg/systemd/logs.jsx:69
 msgid "Notice and above"
 msgstr "Зауваження і вище"
 
@@ -5391,7 +5421,7 @@ msgstr "Використано лише $0 з $1."
 msgid "Only alphabets, numbers, : , _ , . , @ , - are allowed"
 msgstr "Можна використовувати лише літери, цифри, : , _ , . , @ , -"
 
-#: pkg/systemd/logs.jsx:65
+#: pkg/systemd/logs.jsx:64
 msgid "Only emergency"
 msgstr "Лише критичне"
 
@@ -5579,10 +5609,11 @@ msgstr "Вилучення пароля може завадити розблок
 msgid "Passphrases do not match"
 msgstr "Паролі не збігаються"
 
-#: pkg/static/login.html:99 pkg/storaged/iscsi/create-dialog.jsx:34
+#: pkg/static/login.html:99 pkg/lib/cockpit-connect-ssh.tsx:442
+#: pkg/lib/cockpit-connect-ssh.tsx:452 pkg/storaged/iscsi/create-dialog.jsx:34
 #: pkg/storaged/iscsi/create-dialog.jsx:140 pkg/shell/credentials.jsx:117
 #: pkg/shell/credentials.jsx:260 pkg/shell/credentials.jsx:316
-#: pkg/shell/hosts_dialog.jsx:845 pkg/shell/hosts_dialog.jsx:854
+#: pkg/shell/hosts_dialog.jsx:844 pkg/shell/hosts_dialog.jsx:853
 #: pkg/shell/superuser.jsx:144 pkg/users/account-details.js:290
 #: pkg/users/account-create-dialog.js:139
 msgid "Password"
@@ -5836,7 +5867,7 @@ msgstr "Буфер для тонких резервованих томів"
 msgid "Pool passphrase"
 msgstr "Пароль до буфера"
 
-#: pkg/storaged/iscsi/create-dialog.jsx:111 pkg/shell/hosts_dialog.jsx:365
+#: pkg/storaged/iscsi/create-dialog.jsx:111 pkg/shell/hosts_dialog.jsx:364
 msgid "Port"
 msgstr "Порт"
 
@@ -5878,7 +5909,7 @@ msgstr "Зберегти"
 msgid "Pretty host name"
 msgstr "Зручна назва вузла"
 
-#: pkg/systemd/logs.jsx:59
+#: pkg/systemd/logs.jsx:58
 msgid "Previous boot"
 msgstr "Попереднє завантаження"
 
@@ -5887,7 +5918,7 @@ msgid "Primary"
 msgstr "Основний"
 
 #: pkg/networkmanager/bridgeport.jsx:80 pkg/networkmanager/teamport.jsx:84
-#: pkg/systemd/logs.jsx:208
+#: pkg/systemd/logs.jsx:207
 msgid "Priority"
 msgstr "Пріоритетність"
 
@@ -6063,7 +6094,8 @@ msgstr "Без обробки на пристрій"
 msgid "Read"
 msgstr "Читання"
 
-#: pkg/metrics/metrics.jsx:1480 pkg/systemd/hwinfo.jsx:206
+#: pkg/metrics/metrics.jsx:1480 pkg/shell/hosts.jsx:206
+#: pkg/systemd/hwinfo.jsx:206
 msgid "Read more..."
 msgstr "Докладніше…"
 
@@ -6248,7 +6280,7 @@ msgstr "Вилучення:"
 #: pkg/storaged/lvm2/volume-group.jsx:349 pkg/storaged/stratis/pool.jsx:440
 #: pkg/storaged/stratis/pool.jsx:497 pkg/storaged/stratis/pool.jsx:532
 #: pkg/storaged/stratis/pool.jsx:550 pkg/storaged/nfs/nfs.jsx:315
-#: pkg/apps/application.jsx:50 pkg/shell/hosts.jsx:170
+#: pkg/apps/application.jsx:50 pkg/shell/hosts.jsx:192
 #: pkg/systemd/timer-dialog.jsx:361 pkg/users/authorized-keys-panel.js:142
 #: pkg/users/authorized-keys-panel.js:150
 msgid "Remove"
@@ -6505,7 +6537,7 @@ msgstr ""
 msgid "Reserved memory"
 msgstr "Зарезервована пам’ять"
 
-#: pkg/systemd/terminal.jsx:183 pkg/systemd/logs.jsx:406
+#: pkg/systemd/terminal.jsx:183 pkg/systemd/logs.jsx:412
 msgid "Reset"
 msgstr "Скинути"
 
@@ -6615,7 +6647,7 @@ msgstr "Запустити на"
 msgid "Run report"
 msgstr "Запустити звітування"
 
-#: pkg/shell/hosts_dialog.jsx:492
+#: pkg/lib/cockpit-connect-ssh.tsx:150 pkg/shell/hosts_dialog.jsx:491
 msgid ""
 "Run this command over a trusted network or physically on the remote machine:"
 msgstr ""
@@ -6679,13 +6711,20 @@ msgstr ""
 "SOS-звітування збирає дані щодо системи для того, щоб допомогти у "
 "діагностуванні проблем."
 
-#: pkg/shell/hosts_dialog.jsx:850 pkg/kdump/kdump-view.jsx:295
+#: pkg/lib/cockpit-connect-ssh.tsx:448 pkg/shell/hosts_dialog.jsx:849
+#: pkg/kdump/kdump-view.jsx:295
 msgid "SSH key"
 msgstr "Ключ SSH"
 
 #: pkg/kdump/kdump-view.jsx:164
 msgid "SSH key isn't a path"
 msgstr "Ключ SSH не вказано у форматі шляху"
+
+#: pkg/lib/cockpit-connect-ssh.tsx:468
+#, fuzzy
+#| msgid "SSH key"
+msgid "SSH key login"
+msgstr "Ключ SSH"
 
 #: pkg/shell/credentials.jsx:77 pkg/shell/credentials.jsx:93
 #: pkg/shell/topnav.jsx:229
@@ -6770,7 +6809,7 @@ msgstr "Заплановане перезавантаження о $0"
 msgid "Sealed-case PC"
 msgstr "ПК з опломбованим корпусом"
 
-#: pkg/shell/nav.jsx:139 pkg/systemd/logs.jsx:407
+#: pkg/shell/nav.jsx:139 pkg/systemd/logs.jsx:413
 msgid "Search"
 msgstr "Пошук"
 
@@ -6822,7 +6861,7 @@ msgstr "Оновлення безпеки буде застосовано $0 о 
 msgid "Select"
 msgstr "Вибрати"
 
-#: pkg/systemd/logs.jsx:322
+#: pkg/systemd/logs.jsx:323
 msgid "Select a identifier"
 msgstr "Виберіть ідентифікатор"
 
@@ -6911,7 +6950,7 @@ msgstr "Сеанс"
 msgid "Session is about to expire"
 msgstr "Строк дії сеансу вичерпується"
 
-#: pkg/shell/hosts_dialog.jsx:252
+#: pkg/shell/hosts_dialog.jsx:251
 msgid "Set"
 msgstr "Встановити"
 
@@ -6999,15 +7038,15 @@ msgstr "Показати підтвердження пароля"
 msgid "Show fingerprints"
 msgstr "Показати відбитки"
 
-#: pkg/systemd/logs.jsx:380
+#: pkg/systemd/logs.jsx:385
 msgid "Show messages containing given string."
 msgstr "Показати повідомлення, які містять вказаний рядок."
 
-#: pkg/systemd/logs.jsx:369
+#: pkg/systemd/logs.jsx:373
 msgid "Show messages for the specified systemd unit."
 msgstr "Показати повідомлення для вказаного модуля systemd."
 
-#: pkg/systemd/logs.jsx:358
+#: pkg/systemd/logs.jsx:361
 msgid "Show messages from a specific boot."
 msgstr "Показати повідомлення з вказаного завантаження."
 
@@ -7049,7 +7088,7 @@ msgstr "Вимкнути"
 msgid "Shutdown"
 msgstr "Вимкнути"
 
-#: pkg/systemd/logs.jsx:335
+#: pkg/systemd/logs.jsx:336
 msgid "Since"
 msgstr "З"
 
@@ -7227,11 +7266,11 @@ msgstr "Запустити Multipath"
 msgid "Start service"
 msgstr "Запустити службу"
 
-#: pkg/systemd/logs.jsx:336
+#: pkg/systemd/logs.jsx:337
 msgid "Start showing entries on or newer than the specified date."
 msgstr "Почати показ записів, дата яких є рівною вказаній або новішою за неї."
 
-#: pkg/systemd/logs.jsx:347
+#: pkg/systemd/logs.jsx:349
 msgid "Start showing entries on or older than the specified date."
 msgstr ""
 "Показати показ записів, дата яких є рівною вказаній або старішою за неї."
@@ -7295,7 +7334,7 @@ msgstr "Зупинити і демонтувати"
 msgid "Stop device"
 msgstr "Зупинити пристрій"
 
-#: pkg/shell/hosts.jsx:215
+#: pkg/shell/hosts.jsx:255
 msgid "Stop editing hosts"
 msgstr "Припинити редагування вузлів"
 
@@ -7411,7 +7450,7 @@ msgstr "Підтом має бути змонтовано"
 msgid "Subvolume needs to be mounted writable"
 msgstr "Підтом має бути змонтовано для запису"
 
-#: pkg/systemd/logs.jsx:415
+#: pkg/systemd/logs.jsx:421
 msgid "Successfully copied to clipboard"
 msgstr "Успішно скопійовано до буфера обміну"
 
@@ -7492,7 +7531,7 @@ msgstr "Синхронізація"
 msgid "Synchronizing MDRAID device $target"
 msgstr "Синхронізуємо пристрій MDRAID $target"
 
-#: pkg/shell/nav.jsx:46 pkg/shell/indexes.jsx:343 pkg/systemd/services.jsx:912
+#: pkg/shell/nav.jsx:46 pkg/shell/indexes.jsx:357 pkg/systemd/services.jsx:912
 msgid "System"
 msgstr "Система"
 
@@ -7606,7 +7645,7 @@ msgstr "Має бути встановлено пакунок $0."
 msgid "The $0 package will be installed to create VDO devices."
 msgstr "Для створення пристроїв VDO буде встановлено пакунок $0."
 
-#: pkg/shell/hosts_dialog.jsx:159
+#: pkg/shell/hosts_dialog.jsx:158
 msgid "The IP address or hostname cannot contain whitespace."
 msgstr "У IP-адресі або назві вузла не повинно бути пробілів."
 
@@ -7618,11 +7657,11 @@ msgstr "Пристрій MDRAID перебуває у стані із погір
 msgid "The MDRAID device must be running"
 msgstr "Пристрій MDRAID має працювати"
 
-#: pkg/shell/hosts_dialog.jsx:828
+#: pkg/lib/cockpit-connect-ssh.tsx:426 pkg/shell/hosts_dialog.jsx:827
 msgid "The SSH key $0 of $1 on $2 will be added to the $3 file of $4 on $5."
 msgstr "Ключ SSH $0 $1 на $2 буде додано до файла $3 $4 на $5."
 
-#: pkg/shell/hosts_dialog.jsx:865
+#: pkg/lib/cockpit-connect-ssh.tsx:463 pkg/shell/hosts_dialog.jsx:864
 msgid ""
 "The SSH key $0 will be made available for the remainder of the session and "
 "will be available for login to other hosts as well."
@@ -7630,7 +7669,7 @@ msgstr ""
 "Ключ SSH $0 буде доступним протягом решти сеансу і також буде доступним для "
 "входу на інші вузли."
 
-#: pkg/shell/hosts_dialog.jsx:773
+#: pkg/lib/cockpit-connect-ssh.tsx:398 pkg/shell/hosts_dialog.jsx:772
 msgid ""
 "The SSH key for logging in to $0 is protected by a password, and the host "
 "does not allow logging in with a password. Please provide the password of "
@@ -7639,7 +7678,7 @@ msgstr ""
 "Ключ SSH для входу до $0 захищено паролем, а на вузлі заборонено вхід без "
 "пароля. Буль ласка, вкажіть пароль до ключа у $1."
 
-#: pkg/shell/hosts_dialog.jsx:778
+#: pkg/lib/cockpit-connect-ssh.tsx:400 pkg/shell/hosts_dialog.jsx:777
 msgid ""
 "The SSH key for logging in to $0 is protected. You can log in with either "
 "your login password or by providing the password of the key at $1."
@@ -7745,7 +7784,7 @@ msgstr ""
 "Файлову систему буде розблоковано і змонтовано під час наступного "
 "завантаження. Це може потребувати введення пароля."
 
-#: pkg/shell/hosts_dialog.jsx:494
+#: pkg/lib/cockpit-connect-ssh.tsx:152 pkg/shell/hosts_dialog.jsx:493
 msgid "The fingerprint should match:"
 msgstr "Відбиток має збігатися:"
 
@@ -7784,11 +7823,12 @@ msgstr ""
 msgid "The initrd must be regenerated."
 msgstr "initrd має бути створено повторно."
 
-#: pkg/shell/hosts_dialog.jsx:695
+#: pkg/lib/cockpit-connect-ssh.tsx:342 pkg/shell/hosts_dialog.jsx:694
 msgid "The key password can not be empty"
 msgstr "Пароль до ключа не може бути порожнім"
 
-#: pkg/shell/hosts_dialog.jsx:698 pkg/shell/hosts_dialog.jsx:704
+#: pkg/lib/cockpit-connect-ssh.tsx:344 pkg/shell/hosts_dialog.jsx:697
+#: pkg/shell/hosts_dialog.jsx:703
 msgid "The key passwords do not match"
 msgstr "Паролі до ключа не збігаються"
 
@@ -7818,7 +7858,7 @@ msgstr ""
 "Користувач, який увійшов до системи, не має права переглядати модифікації "
 "системи"
 
-#: pkg/shell/indexes.jsx:459
+#: pkg/shell/indexes.jsx:479
 msgid "The machine is rebooting"
 msgstr "Комп’ютер перезавантажується"
 
@@ -7830,11 +7870,11 @@ msgstr "Точка монтування $0 перебуває у користу�
 msgid "The mount point $0 is in use by these services:"
 msgstr "Точка монтування $0 перебуває у користуванні такими службами:"
 
-#: pkg/shell/hosts_dialog.jsx:701
+#: pkg/shell/hosts_dialog.jsx:700
 msgid "The new key password can not be empty"
 msgstr "Новий пароль до ключа не може бути порожнім"
 
-#: pkg/shell/hosts_dialog.jsx:679
+#: pkg/lib/cockpit-connect-ssh.tsx:336 pkg/shell/hosts_dialog.jsx:678
 msgid "The password can not be empty"
 msgstr "Пароль не може бути порожнім"
 
@@ -7842,7 +7882,8 @@ msgstr "Пароль не може бути порожнім"
 msgid "The passwords do not match"
 msgstr "Паролі не збігаються"
 
-#: pkg/static/login.html:89 pkg/shell/hosts_dialog.jsx:479
+#: pkg/static/login.html:89 pkg/lib/cockpit-connect-ssh.tsx:137
+#: pkg/shell/hosts_dialog.jsx:478
 msgid ""
 "The resulting fingerprint is fine to share via public methods, including "
 "email."
@@ -7850,7 +7891,7 @@ msgstr ""
 "Відбиток-результат можна поширювати у спосіб із загальним доступом, зокрема "
 "електронною поштою."
 
-#: pkg/shell/hosts_dialog.jsx:484
+#: pkg/lib/cockpit-connect-ssh.tsx:142 pkg/shell/hosts_dialog.jsx:483
 msgid ""
 "The resulting fingerprint is fine to share via public methods, including "
 "email. If you are asking someone else to do the verification for you, they "
@@ -8073,7 +8114,7 @@ msgstr ""
 "Місце на цьому логічному томі не повністю використано даними, які на ньому "
 "зберігаються."
 
-#: pkg/shell/hosts_dialog.jsx:165
+#: pkg/shell/hosts_dialog.jsx:164
 msgid "This machine has already been added."
 msgstr "Цей комп’ютер вже було додано."
 
@@ -8178,7 +8219,7 @@ msgstr ""
 "Ця програма для перегляду інтернету є надто старою для роботи з вебконсоллю "
 "(не вистачає можливості $0)"
 
-#: pkg/systemd/logs.jsx:360
+#: pkg/systemd/logs.jsx:362
 msgid ""
 "This will add a match for '_BOOT_ID='. If not specified the logs for the "
 "current boot will be shown. If the boot ID is omitted, a positive offset "
@@ -8196,7 +8237,7 @@ msgstr ""
 "хронологічному порядку, 2 — друге завантаження тощо; а -0 — останнє "
 "завантаження, -1 — завантаження перед останнім тощо."
 
-#: pkg/systemd/logs.jsx:371
+#: pkg/systemd/logs.jsx:374
 msgid ""
 "This will add match for '_SYSTEMD_UNIT=', 'COREDUMP_UNIT=' and 'UNIT=' to "
 "find all possible messages for the given unit. Can contain more units "
@@ -8206,7 +8247,7 @@ msgstr ""
 "пошуку усіх можливих повідомлень для вказаного модуля. Запис може містити "
 "декілька записів модулів, які слід відокремлювати комами. "
 
-#: pkg/shell/hosts_dialog.jsx:829
+#: pkg/shell/hosts_dialog.jsx:828
 msgid "This will allow you to log in without password in the future."
 msgstr "Це надасть вам змогу надалі входити без пароля."
 
@@ -8226,7 +8267,7 @@ msgstr "Четверги"
 msgid "Tier"
 msgstr "Клас"
 
-#: pkg/packagekit/history.jsx:112 pkg/systemd/logs.jsx:201
+#: pkg/packagekit/history.jsx:112 pkg/systemd/logs.jsx:200
 msgid "Time"
 msgstr "Час"
 
@@ -8254,7 +8295,8 @@ msgstr ""
 "Підказка: для автоматичного розпізнавання на інших системах встановіть "
 "однаковий пароль для ключа і для входу до системи."
 
-#: pkg/static/login.html:84 pkg/shell/hosts_dialog.jsx:474
+#: pkg/static/login.html:84 pkg/lib/cockpit-connect-ssh.tsx:132
+#: pkg/shell/hosts_dialog.jsx:473
 msgid ""
 "To ensure that your connection is not intercepted by a malicious third-"
 "party, please verify the host key fingerprint:"
@@ -8271,7 +8313,8 @@ msgstr ""
 "зареєструвати у Red Hat або за допомогою порталу клієнтів Red Hat, або за "
 "допомогою локального сервера передплати."
 
-#: pkg/shell/hosts_dialog.jsx:477 pkg/static/login.js:768
+#: pkg/lib/cockpit-connect-ssh.tsx:135 pkg/shell/hosts_dialog.jsx:476
+#: pkg/static/login.js:768
 msgid ""
 "To verify a fingerprint, run the following on $0 while physically sitting at "
 "the machine or through a trusted network:"
@@ -8292,7 +8335,7 @@ msgstr "Перемкнути"
 msgid "Toggle date picker"
 msgstr "Перемкнути засіб вибору дати"
 
-#: pkg/systemd/services.jsx:815 pkg/systemd/logs.jsx:190
+#: pkg/systemd/services.jsx:815 pkg/systemd/logs.jsx:189
 msgid "Toggle filters"
 msgstr "Перемкнути фільтри"
 
@@ -8300,7 +8343,7 @@ msgstr "Перемкнути фільтри"
 msgid "Too much data"
 msgstr "Забагато даних"
 
-#: pkg/shell/indexes.jsx:346
+#: pkg/shell/indexes.jsx:360
 msgid "Tools"
 msgstr "Інструменти"
 
@@ -8352,7 +8395,7 @@ msgstr "Діагностика проблем"
 msgid "Troubleshoot…"
 msgstr "Діагностика проблем…"
 
-#: pkg/shell/hosts_dialog.jsx:466
+#: pkg/lib/cockpit-connect-ssh.tsx:127 pkg/shell/hosts_dialog.jsx:465
 msgid "Trust and add host"
 msgstr "Довіряти і додати вузол"
 
@@ -8428,7 +8471,7 @@ msgid "Type must contain exactly two hexadecimal characters (0 to 9, A to F)."
 msgstr ""
 "Тип має містити точно дві шістнадцяткові цифри (від 0 до 9 або від A до F)."
 
-#: pkg/systemd/logs.jsx:403
+#: pkg/systemd/logs.jsx:409
 msgid "Type to filter"
 msgstr "Введіть щось для фільтрування"
 
@@ -8452,11 +8495,11 @@ msgstr "Не вдалося застосувати це рішення у авт
 msgid "Unable to connect to that address"
 msgstr "Не вдалося встановити з’єднання із цією адресою"
 
-#: pkg/shell/hosts_dialog.jsx:361
+#: pkg/shell/hosts_dialog.jsx:360
 msgid "Unable to contact $0."
 msgstr "Не вдалося встановити зв'язок із $0."
 
-#: pkg/shell/hosts_dialog.jsx:236
+#: pkg/shell/hosts_dialog.jsx:235
 msgid ""
 "Unable to contact the given host $0. Make sure it has ssh running on port "
 "$1, or specify another port in the address."
@@ -8469,7 +8512,20 @@ msgstr ""
 msgid "Unable to get alert details."
 msgstr "Не вдалося отримати параметри нагадувань."
 
-#: pkg/shell/hosts_dialog.jsx:770
+#: pkg/lib/cockpit-connect-ssh.tsx:396
+#, fuzzy
+#| msgid ""
+#| "Unable to log in to $0 using SSH key authentication. Please provide the "
+#| "password. You may want to set up your SSH keys for automatic login."
+msgid ""
+"Unable to log in to $0 using SSH key authentication. Please provide the "
+"password."
+msgstr ""
+"Не вдалося увійти до $0 за допомогою розпізнавання за ключем SSH. Будь "
+"ласка, вкажіть пароль. Ви можете налаштувати ваші ключі SSH для "
+"автоматичного входу до системи."
+
+#: pkg/shell/hosts_dialog.jsx:769
 msgid ""
 "Unable to log in to $0 using SSH key authentication. Please provide the "
 "password. You may want to set up your SSH keys for automatic login."
@@ -8478,7 +8534,7 @@ msgstr ""
 "ласка, вкажіть пароль. Ви можете налаштувати ваші ключі SSH для "
 "автоматичного входу до системи."
 
-#: pkg/shell/hosts_dialog.jsx:768
+#: pkg/lib/cockpit-connect-ssh.tsx:394 pkg/shell/hosts_dialog.jsx:767
 msgid ""
 "Unable to log in to $0. The host does not accept password login or any of "
 "your SSH keys."
@@ -8544,7 +8600,7 @@ msgid "Unformatted data"
 msgstr "Неформатовані дані"
 
 #: pkg/systemd/services-list.jsx:39 pkg/systemd/services-list.jsx:44
-#: pkg/systemd/logs.jsx:368
+#: pkg/systemd/logs.jsx:372
 msgid "Unit"
 msgstr "Модуль"
 
@@ -8581,6 +8637,12 @@ msgstr "Невідомі налаштування"
 #: pkg/storaged/iscsi/create-dialog.jsx:69
 msgid "Unknown host name"
 msgstr "Невідома назва вузла"
+
+#: pkg/lib/cockpit-connect-ssh.tsx:125
+#, fuzzy
+#| msgid "Unknown host key"
+msgid "Unknown host: $0"
+msgstr "Невідомий ключ вузла"
 
 #: pkg/networkmanager/firewall.jsx:477
 msgid "Unknown service name"
@@ -8669,7 +8731,7 @@ msgstr "Тут не можна зменшити об'єм нерозпізнан
 msgid "Unsupported logical volume"
 msgstr "Непідтримуваний логічний том"
 
-#: pkg/systemd/logs.jsx:346
+#: pkg/systemd/logs.jsx:348
 msgid "Until"
 msgstr "До"
 
@@ -8681,7 +8743,7 @@ msgstr "Ненадійний вузол"
 msgid "Up since"
 msgstr "Працює з"
 
-#: pkg/shell/hosts_dialog.jsx:357
+#: pkg/shell/hosts_dialog.jsx:356
 msgid "Update"
 msgstr "Оновити"
 
@@ -8812,7 +8874,7 @@ msgstr "Ідентифікатор користувача має бути чис
 msgid "User ID must not be lower than $0"
 msgstr "Ідентифікатор користувача не повинен бути меншим за $0"
 
-#: pkg/static/login.html:94 pkg/shell/hosts_dialog.jsx:264
+#: pkg/static/login.html:94 pkg/shell/hosts_dialog.jsx:263
 #: pkg/users/account-details.js:256 pkg/users/account-create-dialog.js:76
 msgid "User name"
 msgstr "Ім'я користувача"
@@ -8872,7 +8934,7 @@ msgstr "Постачальник"
 msgid "Verified"
 msgstr "Перевірено"
 
-#: pkg/shell/hosts_dialog.jsx:489
+#: pkg/lib/cockpit-connect-ssh.tsx:147 pkg/shell/hosts_dialog.jsx:488
 msgid "Verify fingerprint"
 msgstr "Перевірити відбиток"
 
@@ -9008,7 +9070,7 @@ msgstr "Бажаний для"
 msgid "Wants"
 msgstr "Бажає"
 
-#: pkg/systemd/logs.jsx:69
+#: pkg/systemd/logs.jsx:68
 msgid "Warning and above"
 msgstr "Попередження і вище"
 
@@ -9052,7 +9114,7 @@ msgstr "Тижні"
 msgid "When"
 msgstr "Якщо"
 
-#: pkg/shell/hosts_dialog.jsx:267
+#: pkg/shell/hosts_dialog.jsx:266
 msgid "When empty, connect with the current user"
 msgstr "Якщо не вказано, з'єднатися із поточним користувачем"
 
@@ -9131,7 +9193,8 @@ msgstr "Щорічно"
 msgid "Yes"
 msgstr "Так"
 
-#: pkg/shell/hosts_dialog.jsx:488 pkg/static/login.js:765
+#: pkg/lib/cockpit-connect-ssh.tsx:146 pkg/shell/hosts_dialog.jsx:487
+#: pkg/static/login.js:765
 msgid "You are connecting to $0 for the first time."
 msgstr "Ви вперше встановлюєте з'єднання із $0."
 
@@ -9155,7 +9218,7 @@ msgstr "Вашого користувача було викинуто із си�
 msgid "You may try to load older entries."
 msgstr "Ви можете спробувати завантажити старіші записи."
 
-#: pkg/shell/hosts_dialog.jsx:774 pkg/shell/hosts_dialog.jsx:779
+#: pkg/shell/hosts_dialog.jsx:773 pkg/shell/hosts_dialog.jsx:778
 msgid "You may want to change the password of the key for automatic login."
 msgstr "Ви можете змінити пароль до ключа для автоматичного входу до системи."
 
@@ -9627,7 +9690,7 @@ msgstr "iscsi"
 msgid "journal"
 msgstr "журнал"
 
-#: pkg/systemd/logs.jsx:413
+#: pkg/systemd/logs.jsx:419
 msgid "journalctl manpage"
 msgstr "сторінка підручника з journalctl"
 
@@ -12235,9 +12298,6 @@ msgstr "зона"
 #~ "Ключ {{#strong}}{{host}}{{/strong}} не відповідає раніше використаному "
 #~ "ключу. Якщо нещодавно ніхто не міняв цього комп’ютера, ймовірною причиною "
 #~ "є спроба атаки на ваше з’єднання із цим комп’ютером."
-
-#~ msgid "Unknown host key"
-#~ msgstr "Невідомий ключ вузла"
 
 #~ msgid "Address:"
 #~ msgstr "Адреса:"

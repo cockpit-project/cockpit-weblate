@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-30 02:50+0000\n"
+"POT-Creation-Date: 2024-08-02 02:50+0000\n"
 "PO-Revision-Date: 2020-05-05 03:40+0000\n"
 "Last-Translator: Adolfo Jayme Barrientos <fitoschido@gmail.com>\n"
 "Language-Team: Catalan <https://translate.fedoraproject.org/projects/cockpit/"
@@ -190,7 +190,8 @@ msgstr "falta $0 disc"
 msgid "$0 is not available from any repository."
 msgstr ""
 
-#: pkg/shell/hosts_dialog.jsx:464 pkg/static/login.js:759
+#: pkg/lib/cockpit-connect-ssh.tsx:125 pkg/shell/hosts_dialog.jsx:463
+#: pkg/static/login.js:759
 #, fuzzy
 #| msgid "Force change"
 msgid "$0 key changed"
@@ -600,7 +601,7 @@ msgstr "8è"
 msgid "9th"
 msgstr "9è"
 
-#: pkg/shell/hosts_dialog.jsx:98
+#: pkg/lib/cockpit-connect-ssh.tsx:520 pkg/shell/hosts_dialog.jsx:97
 #, fuzzy
 #| msgid ""
 #| "A compatible version of Cockpit is not installed on {{#strong}}{{host}}{{/"
@@ -631,7 +632,7 @@ msgid ""
 "interface with higher throughput or redundancy."
 msgstr ""
 
-#: pkg/shell/hosts_dialog.jsx:795
+#: pkg/lib/cockpit-connect-ssh.tsx:413 pkg/shell/hosts_dialog.jsx:794
 msgid ""
 "A new SSH key at $0 will be created for $1 on $2 and it will be added to the "
 "$3 file of $4 on $5."
@@ -766,7 +767,7 @@ msgstr "Balanceig de càrrega de transmissió adaptativa"
 #: pkg/storaged/iscsi/create-dialog.jsx:120
 #: pkg/storaged/iscsi/create-dialog.jsx:144 pkg/storaged/stratis/pool.jsx:216
 #: pkg/storaged/nfs/nfs.jsx:188 pkg/shell/credentials.jsx:182
-#: pkg/shell/hosts_dialog.jsx:252 pkg/networkmanager/dialogs-common.jsx:160
+#: pkg/shell/hosts_dialog.jsx:251 pkg/networkmanager/dialogs-common.jsx:160
 #: pkg/systemd/timer-dialog.jsx:367 pkg/users/authorized-keys-panel.js:68
 msgid "Add"
 msgstr "Afegeix"
@@ -868,7 +869,7 @@ msgstr "Afegeix serveis"
 msgid "Add member"
 msgstr "Membre RAID"
 
-#: pkg/shell/hosts.jsx:216 pkg/shell/hosts_dialog.jsx:251
+#: pkg/shell/hosts.jsx:203 pkg/shell/hosts_dialog.jsx:250
 #, fuzzy
 msgid "Add new host"
 msgstr "Afegeix una zona nova"
@@ -1075,7 +1076,7 @@ msgstr "Després de l'arrencada del sistema"
 msgid "Alert"
 msgstr ""
 
-#: pkg/systemd/logs.jsx:66
+#: pkg/systemd/logs.jsx:65
 msgid "Alert and above"
 msgstr ""
 
@@ -1085,8 +1086,8 @@ msgstr ""
 msgid "Alias"
 msgstr "àlies"
 
-#: pkg/systemd/logs.jsx:111 pkg/systemd/logs.jsx:127 pkg/systemd/logs.jsx:156
-#: pkg/systemd/logs.jsx:293 pkg/systemd/logs.jsx:319
+#: pkg/systemd/logs.jsx:110 pkg/systemd/logs.jsx:126 pkg/systemd/logs.jsx:155
+#: pkg/systemd/logs.jsx:294 pkg/systemd/logs.jsx:320
 msgid "All"
 msgstr "Tots"
 
@@ -1128,7 +1129,7 @@ msgstr ""
 msgid "Ansible roles documentation"
 msgstr ""
 
-#: pkg/systemd/logs.jsx:382
+#: pkg/systemd/logs.jsx:386
 msgid ""
 "Any text string in the logs messages can be filtered. The string can also be "
 "in the form of a regular expression. Also supports filtering by message log "
@@ -1190,7 +1191,7 @@ msgstr "Ha fallat l'aplicació de les actualitzacions"
 msgid "Appropriate for critical mounts, such as /var"
 msgstr ""
 
-#: pkg/shell/indexes.jsx:340
+#: pkg/shell/indexes.jsx:354
 msgid "Apps"
 msgstr ""
 
@@ -1264,7 +1265,8 @@ msgstr "S'està autenticant"
 msgid "Authenticating"
 msgstr "S'està autenticant"
 
-#: pkg/shell/hosts_dialog.jsx:840 pkg/users/account-create-dialog.js:112
+#: pkg/lib/cockpit-connect-ssh.tsx:436 pkg/shell/hosts_dialog.jsx:839
+#: pkg/users/account-create-dialog.js:112
 msgid "Authentication"
 msgstr "Autenticació"
 
@@ -1291,7 +1293,7 @@ msgstr ""
 msgid "Authentication required"
 msgstr "Autenticació requerida"
 
-#: pkg/shell/hosts_dialog.jsx:826
+#: pkg/lib/cockpit-connect-ssh.tsx:425 pkg/shell/hosts_dialog.jsx:825
 #, fuzzy
 msgid "Authorize SSH key"
 msgstr "Claus SSH públiques autoritzades"
@@ -1312,7 +1314,7 @@ msgstr "Automàtic"
 msgid "Automatic (DHCP only)"
 msgstr "Automàtica, tan sols DHCP"
 
-#: pkg/shell/hosts_dialog.jsx:870
+#: pkg/shell/hosts_dialog.jsx:869
 #, fuzzy
 msgid "Automatic login"
 msgstr "Automàtic"
@@ -1435,7 +1437,7 @@ msgstr "Bloquejat"
 msgid "Bond"
 msgstr "Enllaç"
 
-#: pkg/systemd/logs.jsx:357
+#: pkg/systemd/logs.jsx:360
 msgid "Boot"
 msgstr ""
 
@@ -1492,7 +1494,7 @@ msgstr "Errors de programari:"
 msgid "Bus expansion chassis"
 msgstr ""
 
-#: pkg/shell/hosts_dialog.jsx:811
+#: pkg/shell/hosts_dialog.jsx:810
 msgid ""
 "By changing the password of the SSH key $0 to the login password of $1 on "
 "$2, the key will be automatically made available and you can log in to $3 "
@@ -1537,7 +1539,7 @@ msgstr ""
 msgid "Cache"
 msgstr "Memòria cau"
 
-#: pkg/shell/hosts_dialog.jsx:262
+#: pkg/shell/hosts_dialog.jsx:261
 msgid "Can be a hostname, IP address, alias name, or ssh:// URI"
 msgstr ""
 
@@ -1546,6 +1548,7 @@ msgid "Can not find any logs using the current combination of filters."
 msgstr ""
 
 #: pkg/playground/translate.html:39 pkg/static/login.html:141
+#: pkg/lib/cockpit-connect-ssh.tsx:180 pkg/lib/cockpit-connect-ssh.tsx:491
 #: pkg/lib/cockpit-components-shutdown.jsx:193
 #: pkg/lib/cockpit-components-dialog.jsx:131 pkg/storaged/jobs-panel.jsx:140
 #: pkg/metrics/metrics.jsx:1489 pkg/packagekit/autoupdates.jsx:400
@@ -1553,9 +1556,9 @@ msgstr ""
 #: pkg/packagekit/kpatch.jsx:315 pkg/sosreport/sosreport.jsx:297
 #: pkg/sosreport/sosreport.jsx:382 pkg/apps/utils.jsx:69
 #: pkg/shell/credentials.jsx:311 pkg/shell/active-pages-modal.jsx:98
-#: pkg/shell/shell-modals.jsx:115 pkg/shell/hosts_dialog.jsx:285
-#: pkg/shell/hosts_dialog.jsx:382 pkg/shell/hosts_dialog.jsx:514
-#: pkg/shell/hosts_dialog.jsx:891 pkg/shell/superuser.jsx:182
+#: pkg/shell/shell-modals.jsx:115 pkg/shell/hosts_dialog.jsx:284
+#: pkg/shell/hosts_dialog.jsx:381 pkg/shell/hosts_dialog.jsx:513
+#: pkg/shell/hosts_dialog.jsx:890 pkg/shell/superuser.jsx:182
 #: pkg/shell/superuser.jsx:219 pkg/shell/superuser.jsx:264
 #: pkg/networkmanager/firewall.jsx:613 pkg/networkmanager/firewall.jsx:814
 #: pkg/networkmanager/firewall.jsx:913
@@ -1586,7 +1589,7 @@ msgstr "Força el reinici"
 msgid "Cannot be enabled"
 msgstr "La mida no pot ser negativa"
 
-#: pkg/shell/indexes.jsx:467
+#: pkg/shell/indexes.jsx:487
 #, fuzzy
 msgid "Cannot connect to an unknown host"
 msgstr "No es pot connectar a una màquina desconeguda"
@@ -1677,7 +1680,7 @@ msgstr "Canvia"
 msgid "Change system time"
 msgstr "Canvia l'hora del sistema"
 
-#: pkg/shell/hosts_dialog.jsx:809
+#: pkg/shell/hosts_dialog.jsx:808
 #, fuzzy
 msgid "Change the password of $0"
 msgstr "Canvia la contrasenya"
@@ -1686,7 +1689,8 @@ msgstr "Canvia la contrasenya"
 msgid "Change the settings"
 msgstr "Canvia els ajusts"
 
-#: pkg/static/login.html:81 pkg/shell/hosts_dialog.jsx:473
+#: pkg/static/login.html:81 pkg/lib/cockpit-connect-ssh.tsx:131
+#: pkg/shell/hosts_dialog.jsx:472
 msgid ""
 "Changed keys are often the result of an operating system reinstallation. "
 "However, an unexpected change may indicate a third-party attempt to "
@@ -1814,10 +1818,11 @@ msgstr "Crea un dispositiu VDO"
 msgid "Client software"
 msgstr ""
 
+#: pkg/lib/cockpit-connect-ssh.tsx:515
 #: pkg/lib/cockpit-components-modifications.jsx:76
 #: pkg/lib/cockpit-components-terminal.jsx:230 pkg/storaged/dialog.jsx:485
 #: pkg/apps/utils.jsx:87 pkg/shell/credentials.jsx:79
-#: pkg/shell/shell-modals.jsx:188 pkg/shell/hosts_dialog.jsx:92
+#: pkg/shell/shell-modals.jsx:188 pkg/shell/hosts_dialog.jsx:91
 #: pkg/shell/superuser.jsx:190 pkg/shell/superuser.jsx:198
 #: pkg/networkmanager/interfaces.js:43
 #: pkg/systemd/overview-cards/configurationCard.jsx:195
@@ -1873,7 +1878,7 @@ msgstr ""
 msgid "Cockpit is not compatible with the software on the system."
 msgstr "Cockpit no és compatible amb el programari del sistema."
 
-#: pkg/shell/hosts_dialog.jsx:89
+#: pkg/lib/cockpit-connect-ssh.tsx:512 pkg/shell/hosts_dialog.jsx:88
 msgid "Cockpit is not installed"
 msgstr "Cockpit no està instal·lat"
 
@@ -1916,7 +1921,7 @@ msgstr "Bolcat del kernel"
 msgid "Collect metrics"
 msgstr "Intents:"
 
-#: pkg/shell/hosts_dialog.jsx:269
+#: pkg/shell/hosts_dialog.jsx:268
 msgid "Color"
 msgstr "Color"
 
@@ -2007,12 +2012,12 @@ msgstr "Confirmació"
 msgid "Confirm deletion of $0"
 msgstr "Si us plau, confirmeu la supressió de $0"
 
-#: pkg/shell/hosts_dialog.jsx:801
+#: pkg/lib/cockpit-connect-ssh.tsx:418 pkg/shell/hosts_dialog.jsx:800
 #, fuzzy
 msgid "Confirm key password"
 msgstr "Confirmació de la contrasenya nova"
 
-#: pkg/shell/hosts_dialog.jsx:817
+#: pkg/shell/hosts_dialog.jsx:816
 #, fuzzy
 msgid "Confirm new key password"
 msgstr "Confirmació de la contrasenya nova"
@@ -2073,11 +2078,18 @@ msgstr "S'està connectant al dimoni de SETroubleshoot..."
 msgid "Connecting to dbus failed: $0"
 msgstr "La connexió ha fallat"
 
-#: pkg/shell/indexes.jsx:462
+#: pkg/shell/hosts.jsx:211
+msgid ""
+"Connecting to remote hosts inside of a web console session is deprecated and "
+"will be removed in the future. You can still connect to your existing hosts "
+"for now."
+msgstr ""
+
+#: pkg/shell/indexes.jsx:482
 msgid "Connecting to the machine"
 msgstr "S'està connectant a la màquina"
 
-#: pkg/shell/hosts.jsx:163
+#: pkg/shell/hosts.jsx:185
 msgid "Connection error"
 msgstr "Error de connexió"
 
@@ -2135,21 +2147,25 @@ msgstr "Control"
 msgid "Convertible"
 msgstr "Convertible"
 
+#: pkg/lib/cockpit-connect-ssh.tsx:133 pkg/lib/cockpit-connect-ssh.tsx:136
+#: pkg/lib/cockpit-connect-ssh.tsx:151 pkg/lib/cockpit-connect-ssh.tsx:153
 #: pkg/shell/credentials.jsx:210 pkg/shell/failures.jsx:43
-#: pkg/shell/hosts_dialog.jsx:475 pkg/shell/hosts_dialog.jsx:478
-#: pkg/shell/hosts_dialog.jsx:493 pkg/shell/hosts_dialog.jsx:495
+#: pkg/shell/hosts_dialog.jsx:474 pkg/shell/hosts_dialog.jsx:477
+#: pkg/shell/hosts_dialog.jsx:492 pkg/shell/hosts_dialog.jsx:494
 msgid "Copied"
 msgstr ""
 
+#: pkg/lib/cockpit-connect-ssh.tsx:133 pkg/lib/cockpit-connect-ssh.tsx:136
+#: pkg/lib/cockpit-connect-ssh.tsx:151 pkg/lib/cockpit-connect-ssh.tsx:153
 #: pkg/lib/cockpit-components-terminal.jsx:211 pkg/shell/credentials.jsx:210
-#: pkg/shell/failures.jsx:43 pkg/shell/hosts_dialog.jsx:475
-#: pkg/shell/hosts_dialog.jsx:478 pkg/shell/hosts_dialog.jsx:493
-#: pkg/shell/hosts_dialog.jsx:495
+#: pkg/shell/failures.jsx:43 pkg/shell/hosts_dialog.jsx:474
+#: pkg/shell/hosts_dialog.jsx:477 pkg/shell/hosts_dialog.jsx:492
+#: pkg/shell/hosts_dialog.jsx:494
 msgid "Copy"
 msgstr ""
 
 #: pkg/lib/cockpit-components-modifications.jsx:73
-#: pkg/storaged/crypto/tang.jsx:117 pkg/systemd/logs.jsx:417
+#: pkg/storaged/crypto/tang.jsx:117 pkg/systemd/logs.jsx:423
 msgid "Copy to clipboard"
 msgstr ""
 
@@ -2159,7 +2175,7 @@ msgstr ""
 msgid "Core $0"
 msgstr "Suprimeix $0"
 
-#: pkg/shell/hosts_dialog.jsx:356
+#: pkg/shell/hosts_dialog.jsx:355
 #, fuzzy
 #| msgid "Could not contact {{host}}"
 msgid "Could not contact $0"
@@ -2213,7 +2229,7 @@ msgstr "Crea un dispositiu RAID"
 msgid "Create Stratis pool"
 msgstr "Crea un volum disgregat"
 
-#: pkg/shell/hosts_dialog.jsx:793
+#: pkg/lib/cockpit-connect-ssh.tsx:411 pkg/shell/hosts_dialog.jsx:792
 msgid "Create a new SSH key and authorize it"
 msgstr ""
 
@@ -2397,7 +2413,7 @@ msgid ""
 "administration UI unavailable."
 msgstr ""
 
-#: pkg/systemd/logs.jsx:67
+#: pkg/systemd/logs.jsx:66
 msgid "Critical and above"
 msgstr ""
 
@@ -2428,7 +2444,7 @@ msgstr ""
 msgid "Ctrl-Shift-I"
 msgstr ""
 
-#: pkg/systemd/logs.jsx:58
+#: pkg/systemd/logs.jsx:57
 msgid "Current boot"
 msgstr "Arrencada actual"
 
@@ -2567,7 +2583,7 @@ msgid ""
 "redundancy or performance improvements."
 msgstr ""
 
-#: pkg/systemd/logs.jsx:331
+#: pkg/systemd/logs.jsx:332
 msgid ""
 "Date specifications should be of the format YYYY-MM-DD hh:mm:ss. "
 "Alternatively the strings 'yesterday', 'today', 'tomorrow' are understood. "
@@ -2595,7 +2611,7 @@ msgstr "S'està desactivant"
 msgid "Deactivating $target"
 msgstr "S'està desactivant $target"
 
-#: pkg/systemd/logs.jsx:72
+#: pkg/systemd/logs.jsx:71
 msgid "Debug and above"
 msgstr ""
 
@@ -2750,6 +2766,12 @@ msgstr "Si suprimiu un dispositiu VDO, s'esborraran totes les dades."
 msgid "Deletion will remove the following files:"
 msgstr ""
 
+#: pkg/shell/hosts.jsx:213
+#, fuzzy
+#| msgid "Created"
+msgid "Deprecated"
+msgstr "Creat"
+
 #: pkg/storaged/dialog.jsx:1440 pkg/networkmanager/firewall.jsx:702
 #: pkg/networkmanager/firewall.jsx:846 pkg/systemd/timer-dialog.jsx:166
 msgid "Description"
@@ -2850,7 +2872,7 @@ msgstr ""
 msgid "Disconnect"
 msgstr "Desconnecta"
 
-#: pkg/shell/indexes.jsx:160
+#: pkg/shell/indexes.jsx:174
 msgid "Disconnected"
 msgstr "Desconnectat"
 
@@ -3025,7 +3047,7 @@ msgstr "Partició estesa"
 
 #: pkg/storaged/crypto/keyslots.jsx:763 pkg/storaged/nfs/nfs.jsx:312
 #: pkg/packagekit/autoupdates.jsx:533 pkg/packagekit/kpatch.jsx:234
-#: pkg/shell/hosts.jsx:167 pkg/shell/indexes.jsx:352
+#: pkg/shell/hosts.jsx:189 pkg/shell/indexes.jsx:366
 #: pkg/networkmanager/firewall.jsx:115 pkg/kdump/kdump-view.jsx:476
 msgid "Edit"
 msgstr "Edita"
@@ -3065,12 +3087,12 @@ msgstr "Ajusts del pont"
 msgid "Edit custom service in $0 zone"
 msgstr ""
 
-#: pkg/shell/hosts_dialog.jsx:251
+#: pkg/shell/hosts_dialog.jsx:250
 #, fuzzy
 msgid "Edit host"
 msgstr "Edita"
 
-#: pkg/shell/hosts.jsx:215
+#: pkg/shell/hosts.jsx:255
 msgid "Edit hosts"
 msgstr ""
 
@@ -3286,7 +3308,7 @@ msgstr "Fe d'errates:"
 msgid "Error"
 msgstr "Error"
 
-#: pkg/systemd/logs.jsx:68
+#: pkg/systemd/logs.jsx:67
 msgid "Error and above"
 msgstr ""
 
@@ -3400,7 +3422,7 @@ msgstr ""
 msgid "Failed"
 msgstr "Ha fallat"
 
-#: pkg/shell/hosts_dialog.jsx:219
+#: pkg/shell/hosts_dialog.jsx:218
 msgid "Failed to add machine: $0"
 msgstr "No s'ha pogut afegir la màquina: $0"
 
@@ -3442,7 +3464,7 @@ msgstr "Ha fallat la inhabilitació de tuned"
 msgid "Failed to disable tuned profile"
 msgstr "Ha fallat la inhabilitació del perfil de tuned"
 
-#: pkg/shell/hosts_dialog.jsx:337
+#: pkg/shell/hosts_dialog.jsx:336
 msgid "Failed to edit machine: $0"
 msgstr "Ha fallat l'edició de la màquina: $0"
 
@@ -3555,7 +3577,7 @@ msgstr "Filtra els serveis"
 msgid "Filter services"
 msgstr "Filtra els serveis"
 
-#: pkg/systemd/logs.jsx:237
+#: pkg/systemd/logs.jsx:236
 #, fuzzy
 #| msgid "Filter services"
 msgid "Filters"
@@ -3651,7 +3673,7 @@ msgstr ""
 msgid "Free space"
 msgstr "Espai lliure"
 
-#: pkg/systemd/logs.jsx:379
+#: pkg/systemd/logs.jsx:384
 #, fuzzy
 #| msgid "Free space"
 msgid "Free-form search"
@@ -3826,7 +3848,7 @@ msgstr "Bloqueja el compte"
 msgid "Home directory"
 msgstr "Directori"
 
-#: pkg/shell/hosts.jsx:192 pkg/shell/hosts_dialog.jsx:255
+#: pkg/shell/hosts.jsx:232 pkg/shell/hosts_dialog.jsx:254
 msgid "Host"
 msgstr "Amfitrió"
 
@@ -3834,11 +3856,17 @@ msgstr "Amfitrió"
 msgid "Host key is incorrect"
 msgstr "La clau d'amfitrió és incorrecta"
 
+#: pkg/shell/hosts.jsx:210
+#, fuzzy
+#| msgid "Domain $0 is not supported"
+msgid "Host switching is not supported"
+msgstr "El domini $0 no és compatible"
+
 #: pkg/systemd/overview-cards/configurationCard.jsx:66
 msgid "Hostname"
 msgstr ""
 
-#: pkg/shell/hosts.jsx:152
+#: pkg/shell/hosts.jsx:174
 #, fuzzy
 msgid "Hosts"
 msgstr "Amfitrió"
@@ -3912,7 +3940,7 @@ msgstr "IPv6"
 msgid "IPv6 settings"
 msgstr "Ajusts d'IPv6"
 
-#: pkg/systemd/logs.jsx:224
+#: pkg/systemd/logs.jsx:223
 msgid "Identifier"
 msgstr ""
 
@@ -3928,7 +3956,7 @@ msgid ""
 "not log in and contact your administrator."
 msgstr ""
 
-#: pkg/shell/hosts_dialog.jsx:480
+#: pkg/lib/cockpit-connect-ssh.tsx:138 pkg/shell/hosts_dialog.jsx:479
 msgid ""
 "If the fingerprint matches, click 'Trust and add host'. Otherwise, do not "
 "connect and contact your administrator."
@@ -3951,7 +3979,7 @@ msgstr ""
 msgid "In a terminal, run: "
 msgstr ""
 
-#: pkg/shell/hosts_dialog.jsx:806 pkg/shell/hosts_dialog.jsx:823
+#: pkg/shell/hosts_dialog.jsx:805 pkg/shell/hosts_dialog.jsx:822
 msgid ""
 "In order to allow log in to $0 as $1 without password in the future, use the "
 "login password of $2 on $3 as the key password, or leave the key password "
@@ -4005,7 +4033,7 @@ msgstr "directe"
 msgid "Info"
 msgstr ""
 
-#: pkg/systemd/logs.jsx:71
+#: pkg/systemd/logs.jsx:70
 msgid "Info and above"
 msgstr ""
 
@@ -4226,7 +4254,7 @@ msgstr "El nom d'usuari o la contrasenya no són vàlids"
 msgid "IoT gateway"
 msgstr ""
 
-#: pkg/shell/hosts_dialog.jsx:362
+#: pkg/shell/hosts_dialog.jsx:361
 msgid "Is sshd running on a different port?"
 msgstr "S'està executant sshd en un port diferent?"
 
@@ -4338,7 +4366,8 @@ msgstr "Canvia els ajusts"
 msgid "Kernel live patching"
 msgstr "Bolcat del kernel"
 
-#: pkg/shell/hosts_dialog.jsx:796 pkg/shell/hosts_dialog.jsx:861
+#: pkg/lib/cockpit-connect-ssh.tsx:414 pkg/lib/cockpit-connect-ssh.tsx:459
+#: pkg/shell/hosts_dialog.jsx:795 pkg/shell/hosts_dialog.jsx:860
 #, fuzzy
 msgid "Key password"
 msgstr "Contrasenya nova"
@@ -4427,11 +4456,11 @@ msgstr ""
 msgid "Laptop"
 msgstr ""
 
-#: pkg/systemd/logs.jsx:60
+#: pkg/systemd/logs.jsx:59
 msgid "Last 24 hours"
 msgstr "Les últimes 24 hores"
 
-#: pkg/systemd/logs.jsx:61
+#: pkg/systemd/logs.jsx:60
 msgid "Last 7 days"
 msgstr "Els últims 7 dies"
 
@@ -4731,12 +4760,13 @@ msgstr "Dades xifrades"
 msgid "Locking $target"
 msgstr "S'està bloquejant $target"
 
-#: pkg/static/login.html:139 pkg/shell/failures.jsx:73
-#: pkg/shell/hosts_dialog.jsx:764 pkg/static/login.js:668
+#: pkg/static/login.html:139 pkg/lib/cockpit-connect-ssh.tsx:390
+#: pkg/shell/failures.jsx:73 pkg/shell/hosts_dialog.jsx:763
+#: pkg/static/login.js:668
 msgid "Log in"
 msgstr "Inicia la sessió"
 
-#: pkg/shell/hosts_dialog.jsx:763
+#: pkg/lib/cockpit-connect-ssh.tsx:389 pkg/shell/hosts_dialog.jsx:762
 #, fuzzy
 #| msgid "Go to"
 msgid "Log in to $0"
@@ -4912,7 +4942,7 @@ msgstr ""
 msgid "Maintenance"
 msgstr "Interfícies sense gestionar"
 
-#: pkg/shell/hosts_dialog.jsx:497
+#: pkg/shell/hosts_dialog.jsx:496
 msgid "Malicious pages on a remote machine may affect other connected hosts"
 msgstr ""
 
@@ -5472,12 +5502,12 @@ msgstr "Muntatge NFS nou"
 msgid "New host"
 msgstr "Afegeix una zona nova"
 
-#: pkg/shell/hosts_dialog.jsx:464
+#: pkg/shell/hosts_dialog.jsx:463
 #, fuzzy
 msgid "New host: $0"
 msgstr "Afegeix una zona nova"
 
-#: pkg/shell/hosts_dialog.jsx:812
+#: pkg/shell/hosts_dialog.jsx:811
 #, fuzzy
 msgid "New key password"
 msgstr "Contrasenya nova"
@@ -5699,7 +5729,7 @@ msgstr "Volums físics"
 msgid "No real name specified"
 msgstr "Sense especificar el nom real"
 
-#: pkg/shell/nav.jsx:157 pkg/systemd/logs.jsx:316
+#: pkg/shell/nav.jsx:157 pkg/systemd/logs.jsx:317
 msgid "No results found"
 msgstr ""
 
@@ -5786,7 +5816,7 @@ msgstr "No connectat"
 msgid "Not connected to Insights"
 msgstr ""
 
-#: pkg/shell/indexes.jsx:465
+#: pkg/shell/indexes.jsx:485
 #, fuzzy
 msgid "Not connected to host"
 msgstr "No connectat"
@@ -5869,7 +5899,7 @@ msgstr "Nota"
 msgid "Notebook"
 msgstr ""
 
-#: pkg/systemd/logs.jsx:70
+#: pkg/systemd/logs.jsx:69
 msgid "Notice and above"
 msgstr ""
 
@@ -5937,7 +5967,7 @@ msgstr "Només s'utilitzen $0 de $1."
 msgid "Only alphabets, numbers, : , _ , . , @ , - are allowed"
 msgstr "Només es permeten lletres, números, : , _ , . , @ , -."
 
-#: pkg/systemd/logs.jsx:65
+#: pkg/systemd/logs.jsx:64
 msgid "Only emergency"
 msgstr "Només emergències"
 
@@ -6136,10 +6166,11 @@ msgstr ""
 msgid "Passphrases do not match"
 msgstr "Les contrasenyes no coincideixen"
 
-#: pkg/static/login.html:99 pkg/storaged/iscsi/create-dialog.jsx:34
+#: pkg/static/login.html:99 pkg/lib/cockpit-connect-ssh.tsx:442
+#: pkg/lib/cockpit-connect-ssh.tsx:452 pkg/storaged/iscsi/create-dialog.jsx:34
 #: pkg/storaged/iscsi/create-dialog.jsx:140 pkg/shell/credentials.jsx:117
 #: pkg/shell/credentials.jsx:260 pkg/shell/credentials.jsx:316
-#: pkg/shell/hosts_dialog.jsx:845 pkg/shell/hosts_dialog.jsx:854
+#: pkg/shell/hosts_dialog.jsx:844 pkg/shell/hosts_dialog.jsx:853
 #: pkg/shell/superuser.jsx:144 pkg/users/account-details.js:290
 #: pkg/users/account-create-dialog.js:139
 msgid "Password"
@@ -6413,7 +6444,7 @@ msgstr ""
 msgid "Pool passphrase"
 msgstr "Contrasenya"
 
-#: pkg/storaged/iscsi/create-dialog.jsx:111 pkg/shell/hosts_dialog.jsx:365
+#: pkg/storaged/iscsi/create-dialog.jsx:111 pkg/shell/hosts_dialog.jsx:364
 msgid "Port"
 msgstr "Port"
 
@@ -6459,7 +6490,7 @@ msgstr "Preserva"
 msgid "Pretty host name"
 msgstr "Nom d'amfitrió bonic"
 
-#: pkg/systemd/logs.jsx:59
+#: pkg/systemd/logs.jsx:58
 msgid "Previous boot"
 msgstr ""
 
@@ -6468,7 +6499,7 @@ msgid "Primary"
 msgstr "Principal"
 
 #: pkg/networkmanager/bridgeport.jsx:80 pkg/networkmanager/teamport.jsx:84
-#: pkg/systemd/logs.jsx:208
+#: pkg/systemd/logs.jsx:207
 msgid "Priority"
 msgstr "Prioritat"
 
@@ -6645,7 +6676,8 @@ msgstr ""
 msgid "Read"
 msgstr "A punt"
 
-#: pkg/metrics/metrics.jsx:1480 pkg/systemd/hwinfo.jsx:206
+#: pkg/metrics/metrics.jsx:1480 pkg/shell/hosts.jsx:206
+#: pkg/systemd/hwinfo.jsx:206
 msgid "Read more..."
 msgstr ""
 
@@ -6856,7 +6888,7 @@ msgstr ""
 #: pkg/storaged/lvm2/volume-group.jsx:349 pkg/storaged/stratis/pool.jsx:440
 #: pkg/storaged/stratis/pool.jsx:497 pkg/storaged/stratis/pool.jsx:532
 #: pkg/storaged/stratis/pool.jsx:550 pkg/storaged/nfs/nfs.jsx:315
-#: pkg/apps/application.jsx:50 pkg/shell/hosts.jsx:170
+#: pkg/apps/application.jsx:50 pkg/shell/hosts.jsx:192
 #: pkg/systemd/timer-dialog.jsx:361 pkg/users/authorized-keys-panel.js:142
 #: pkg/users/authorized-keys-panel.js:150
 msgid "Remove"
@@ -7130,7 +7162,7 @@ msgstr ""
 msgid "Reserved memory"
 msgstr "Memòria reservada"
 
-#: pkg/systemd/terminal.jsx:183 pkg/systemd/logs.jsx:406
+#: pkg/systemd/terminal.jsx:183 pkg/systemd/logs.jsx:412
 msgid "Reset"
 msgstr "Restableix"
 
@@ -7251,7 +7283,7 @@ msgstr ""
 msgid "Run report"
 msgstr "Baixa l'informe"
 
-#: pkg/shell/hosts_dialog.jsx:492
+#: pkg/lib/cockpit-connect-ssh.tsx:150 pkg/shell/hosts_dialog.jsx:491
 msgid ""
 "Run this command over a trusted network or physically on the remote machine:"
 msgstr ""
@@ -7312,12 +7344,17 @@ msgid ""
 "SOS reporting collects system information to help with diagnosing problems."
 msgstr ""
 
-#: pkg/shell/hosts_dialog.jsx:850 pkg/kdump/kdump-view.jsx:295
+#: pkg/lib/cockpit-connect-ssh.tsx:448 pkg/shell/hosts_dialog.jsx:849
+#: pkg/kdump/kdump-view.jsx:295
 msgid "SSH key"
 msgstr ""
 
 #: pkg/kdump/kdump-view.jsx:164
 msgid "SSH key isn't a path"
+msgstr ""
+
+#: pkg/lib/cockpit-connect-ssh.tsx:468
+msgid "SSH key login"
 msgstr ""
 
 #: pkg/shell/credentials.jsx:77 pkg/shell/credentials.jsx:93
@@ -7401,7 +7438,7 @@ msgstr ""
 msgid "Sealed-case PC"
 msgstr ""
 
-#: pkg/shell/nav.jsx:139 pkg/systemd/logs.jsx:407
+#: pkg/shell/nav.jsx:139 pkg/systemd/logs.jsx:413
 msgid "Search"
 msgstr ""
 
@@ -7459,7 +7496,7 @@ msgstr ""
 msgid "Select"
 msgstr "Selecciona"
 
-#: pkg/systemd/logs.jsx:322
+#: pkg/systemd/logs.jsx:323
 #, fuzzy
 #| msgid "select container"
 msgid "Select a identifier"
@@ -7554,7 +7591,7 @@ msgstr "Sessió"
 msgid "Session is about to expire"
 msgstr ""
 
-#: pkg/shell/hosts_dialog.jsx:252
+#: pkg/shell/hosts_dialog.jsx:251
 msgid "Set"
 msgstr "Estableix"
 
@@ -7651,15 +7688,15 @@ msgstr "Confirmació de la contrasenya nova"
 msgid "Show fingerprints"
 msgstr "Mostra les empremtes"
 
-#: pkg/systemd/logs.jsx:380
+#: pkg/systemd/logs.jsx:385
 msgid "Show messages containing given string."
 msgstr ""
 
-#: pkg/systemd/logs.jsx:369
+#: pkg/systemd/logs.jsx:373
 msgid "Show messages for the specified systemd unit."
 msgstr ""
 
-#: pkg/systemd/logs.jsx:358
+#: pkg/systemd/logs.jsx:361
 msgid "Show messages from a specific boot."
 msgstr ""
 
@@ -7705,7 +7742,7 @@ msgstr "Apaga"
 msgid "Shutdown"
 msgstr "Atura"
 
-#: pkg/systemd/logs.jsx:335
+#: pkg/systemd/logs.jsx:336
 msgid "Since"
 msgstr ""
 
@@ -7882,11 +7919,11 @@ msgstr "Inicia el multicamí"
 msgid "Start service"
 msgstr ""
 
-#: pkg/systemd/logs.jsx:336
+#: pkg/systemd/logs.jsx:337
 msgid "Start showing entries on or newer than the specified date."
 msgstr ""
 
-#: pkg/systemd/logs.jsx:347
+#: pkg/systemd/logs.jsx:349
 msgid "Start showing entries on or older than the specified date."
 msgstr ""
 
@@ -7953,7 +7990,7 @@ msgstr "Atura i desmunta"
 msgid "Stop device"
 msgstr "Atura el dispositiu"
 
-#: pkg/shell/hosts.jsx:215
+#: pkg/shell/hosts.jsx:255
 msgid "Stop editing hosts"
 msgstr ""
 
@@ -8090,7 +8127,7 @@ msgstr ""
 msgid "Subvolume needs to be mounted writable"
 msgstr ""
 
-#: pkg/systemd/logs.jsx:415
+#: pkg/systemd/logs.jsx:421
 msgid "Successfully copied to clipboard"
 msgstr ""
 
@@ -8178,7 +8215,7 @@ msgstr "Sincronitza"
 msgid "Synchronizing MDRAID device $target"
 msgstr "Sincronització del dispositiu RAID $target"
 
-#: pkg/shell/nav.jsx:46 pkg/shell/indexes.jsx:343 pkg/systemd/services.jsx:912
+#: pkg/shell/nav.jsx:46 pkg/shell/indexes.jsx:357 pkg/systemd/services.jsx:912
 msgid "System"
 msgstr "Sistema"
 
@@ -8301,7 +8338,7 @@ msgstr "PackageKit no està instal·lat"
 msgid "The $0 package will be installed to create VDO devices."
 msgstr ""
 
-#: pkg/shell/hosts_dialog.jsx:159
+#: pkg/shell/hosts_dialog.jsx:158
 #, fuzzy
 msgid "The IP address or hostname cannot contain whitespace."
 msgstr "L'adreça IP o el nom d'amfitrió no poden contenir espais en blanc."
@@ -8316,24 +8353,24 @@ msgstr ""
 msgid "The MDRAID device must be running"
 msgstr "La MV està en execució."
 
-#: pkg/shell/hosts_dialog.jsx:828
+#: pkg/lib/cockpit-connect-ssh.tsx:426 pkg/shell/hosts_dialog.jsx:827
 msgid "The SSH key $0 of $1 on $2 will be added to the $3 file of $4 on $5."
 msgstr ""
 
-#: pkg/shell/hosts_dialog.jsx:865
+#: pkg/lib/cockpit-connect-ssh.tsx:463 pkg/shell/hosts_dialog.jsx:864
 msgid ""
 "The SSH key $0 will be made available for the remainder of the session and "
 "will be available for login to other hosts as well."
 msgstr ""
 
-#: pkg/shell/hosts_dialog.jsx:773
+#: pkg/lib/cockpit-connect-ssh.tsx:398 pkg/shell/hosts_dialog.jsx:772
 msgid ""
 "The SSH key for logging in to $0 is protected by a password, and the host "
 "does not allow logging in with a password. Please provide the password of "
 "the key at $1."
 msgstr ""
 
-#: pkg/shell/hosts_dialog.jsx:778
+#: pkg/lib/cockpit-connect-ssh.tsx:400 pkg/shell/hosts_dialog.jsx:777
 msgid ""
 "The SSH key for logging in to $0 is protected. You can log in with either "
 "your login password or by providing the password of the key at $1."
@@ -8422,7 +8459,7 @@ msgid ""
 "require inputting a passphrase."
 msgstr ""
 
-#: pkg/shell/hosts_dialog.jsx:494
+#: pkg/lib/cockpit-connect-ssh.tsx:152 pkg/shell/hosts_dialog.jsx:493
 #, fuzzy
 #| msgid "Show fingerprints"
 msgid "The fingerprint should match:"
@@ -8466,12 +8503,13 @@ msgstr ""
 msgid "The initrd must be regenerated."
 msgstr ""
 
-#: pkg/shell/hosts_dialog.jsx:695
+#: pkg/lib/cockpit-connect-ssh.tsx:342 pkg/shell/hosts_dialog.jsx:694
 #, fuzzy
 msgid "The key password can not be empty"
 msgstr "Aquest camp no pot estar en blanc."
 
-#: pkg/shell/hosts_dialog.jsx:698 pkg/shell/hosts_dialog.jsx:704
+#: pkg/lib/cockpit-connect-ssh.tsx:344 pkg/shell/hosts_dialog.jsx:697
+#: pkg/shell/hosts_dialog.jsx:703
 #, fuzzy
 msgid "The key passwords do not match"
 msgstr "Les contrasenyes no coincideixen"
@@ -8500,7 +8538,7 @@ msgstr ""
 msgid "The logged in user is not permitted to view system modifications"
 msgstr ""
 
-#: pkg/shell/indexes.jsx:459
+#: pkg/shell/indexes.jsx:479
 #, fuzzy
 #| msgid "The machine is restarting"
 msgid "The machine is rebooting"
@@ -8514,12 +8552,12 @@ msgstr ""
 msgid "The mount point $0 is in use by these services:"
 msgstr ""
 
-#: pkg/shell/hosts_dialog.jsx:701
+#: pkg/shell/hosts_dialog.jsx:700
 #, fuzzy
 msgid "The new key password can not be empty"
 msgstr "Aquest camp no pot estar en blanc."
 
-#: pkg/shell/hosts_dialog.jsx:679
+#: pkg/lib/cockpit-connect-ssh.tsx:336 pkg/shell/hosts_dialog.jsx:678
 #, fuzzy
 msgid "The password can not be empty"
 msgstr "Aquest camp no pot estar en blanc."
@@ -8528,13 +8566,14 @@ msgstr "Aquest camp no pot estar en blanc."
 msgid "The passwords do not match"
 msgstr "Les contrasenyes no coincideixen"
 
-#: pkg/static/login.html:89 pkg/shell/hosts_dialog.jsx:479
+#: pkg/static/login.html:89 pkg/lib/cockpit-connect-ssh.tsx:137
+#: pkg/shell/hosts_dialog.jsx:478
 msgid ""
 "The resulting fingerprint is fine to share via public methods, including "
 "email."
 msgstr ""
 
-#: pkg/shell/hosts_dialog.jsx:484
+#: pkg/lib/cockpit-connect-ssh.tsx:142 pkg/shell/hosts_dialog.jsx:483
 msgid ""
 "The resulting fingerprint is fine to share via public methods, including "
 "email. If you are asking someone else to do the verification for you, they "
@@ -8737,7 +8776,7 @@ msgstr ""
 msgid "This logical volume is not completely used by its content."
 msgstr ""
 
-#: pkg/shell/hosts_dialog.jsx:165
+#: pkg/shell/hosts_dialog.jsx:164
 msgid "This machine has already been added."
 msgstr "La màquina ja ha estat afegida."
 
@@ -8824,7 +8863,7 @@ msgstr ""
 msgid "This web browser is too old to run the Web Console (missing $0)"
 msgstr "Aquest navegador web és massa antic per executar Cockpit (falta $0)"
 
-#: pkg/systemd/logs.jsx:360
+#: pkg/systemd/logs.jsx:362
 msgid ""
 "This will add a match for '_BOOT_ID='. If not specified the logs for the "
 "current boot will be shown. If the boot ID is omitted, a positive offset "
@@ -8835,14 +8874,14 @@ msgid ""
 "the boot before last, and so on."
 msgstr ""
 
-#: pkg/systemd/logs.jsx:371
+#: pkg/systemd/logs.jsx:374
 msgid ""
 "This will add match for '_SYSTEMD_UNIT=', 'COREDUMP_UNIT=' and 'UNIT=' to "
 "find all possible messages for the given unit. Can contain more units "
 "separated by comma. "
 msgstr ""
 
-#: pkg/shell/hosts_dialog.jsx:829
+#: pkg/shell/hosts_dialog.jsx:828
 msgid "This will allow you to log in without password in the future."
 msgstr ""
 
@@ -8860,7 +8899,7 @@ msgstr ""
 msgid "Tier"
 msgstr ""
 
-#: pkg/packagekit/history.jsx:112 pkg/systemd/logs.jsx:201
+#: pkg/packagekit/history.jsx:112 pkg/systemd/logs.jsx:200
 #, fuzzy
 msgid "Time"
 msgstr "Temporitzadors"
@@ -8894,7 +8933,8 @@ msgstr ""
 "contrasenya d'inici de sessió per autenticar automàticament contra altres "
 "sistemes."
 
-#: pkg/static/login.html:84 pkg/shell/hosts_dialog.jsx:474
+#: pkg/static/login.html:84 pkg/lib/cockpit-connect-ssh.tsx:132
+#: pkg/shell/hosts_dialog.jsx:473
 msgid ""
 "To ensure that your connection is not intercepted by a malicious third-"
 "party, please verify the host key fingerprint:"
@@ -8909,7 +8949,8 @@ msgstr ""
 "registrat a Red Hat, ja sigui utilitzant Red Hat Customer Portal o un "
 "servidor de subscripció local."
 
-#: pkg/shell/hosts_dialog.jsx:477 pkg/static/login.js:768
+#: pkg/lib/cockpit-connect-ssh.tsx:135 pkg/shell/hosts_dialog.jsx:476
+#: pkg/static/login.js:768
 msgid ""
 "To verify a fingerprint, run the following on $0 while physically sitting at "
 "the machine or through a trusted network:"
@@ -8928,7 +8969,7 @@ msgstr ""
 msgid "Toggle date picker"
 msgstr ""
 
-#: pkg/systemd/services.jsx:815 pkg/systemd/logs.jsx:190
+#: pkg/systemd/services.jsx:815 pkg/systemd/logs.jsx:189
 #, fuzzy
 msgid "Toggle filters"
 msgstr "Mostra les empremtes"
@@ -8937,7 +8978,7 @@ msgstr "Mostra les empremtes"
 msgid "Too much data"
 msgstr "Hi ha massa dades"
 
-#: pkg/shell/indexes.jsx:346
+#: pkg/shell/indexes.jsx:360
 msgid "Tools"
 msgstr ""
 
@@ -9001,7 +9042,7 @@ msgstr "Soluciona el problema"
 msgid "Troubleshoot…"
 msgstr "Soluciona el problema"
 
-#: pkg/shell/hosts_dialog.jsx:466
+#: pkg/lib/cockpit-connect-ssh.tsx:127 pkg/shell/hosts_dialog.jsx:465
 #, fuzzy
 #| msgid "Untrusted host"
 msgid "Trust and add host"
@@ -9078,7 +9119,7 @@ msgstr ""
 msgid "Type must contain exactly two hexadecimal characters (0 to 9, A to F)."
 msgstr ""
 
-#: pkg/systemd/logs.jsx:403
+#: pkg/systemd/logs.jsx:409
 #, fuzzy
 msgid "Type to filter"
 msgstr "Teclegeu per filtrar..."
@@ -9103,13 +9144,13 @@ msgstr "No es pot aplicar automàticament aquesta solució"
 msgid "Unable to connect to that address"
 msgstr "No es pot connectar a aquesta adreça"
 
-#: pkg/shell/hosts_dialog.jsx:361
+#: pkg/shell/hosts_dialog.jsx:360
 #, fuzzy
 #| msgid "Unable to get alert: $0"
 msgid "Unable to contact $0."
 msgstr "No es pot obtenir l'alerta: $0"
 
-#: pkg/shell/hosts_dialog.jsx:236
+#: pkg/shell/hosts_dialog.jsx:235
 msgid ""
 "Unable to contact the given host $0. Make sure it has ssh running on port "
 "$1, or specify another port in the address."
@@ -9120,13 +9161,19 @@ msgstr ""
 msgid "Unable to get alert details."
 msgstr "No es poden obtenir els detalls de l'alerta."
 
-#: pkg/shell/hosts_dialog.jsx:770
+#: pkg/lib/cockpit-connect-ssh.tsx:396
+msgid ""
+"Unable to log in to $0 using SSH key authentication. Please provide the "
+"password."
+msgstr ""
+
+#: pkg/shell/hosts_dialog.jsx:769
 msgid ""
 "Unable to log in to $0 using SSH key authentication. Please provide the "
 "password. You may want to set up your SSH keys for automatic login."
 msgstr ""
 
-#: pkg/shell/hosts_dialog.jsx:768
+#: pkg/lib/cockpit-connect-ssh.tsx:394 pkg/shell/hosts_dialog.jsx:767
 msgid ""
 "Unable to log in to $0. The host does not accept password login or any of "
 "your SSH keys."
@@ -9202,7 +9249,7 @@ msgid "Unformatted data"
 msgstr "Dades no reconegudes"
 
 #: pkg/systemd/services-list.jsx:39 pkg/systemd/services-list.jsx:44
-#: pkg/systemd/logs.jsx:368
+#: pkg/systemd/logs.jsx:372
 msgid "Unit"
 msgstr ""
 
@@ -9239,6 +9286,12 @@ msgstr "Configuració desconeguda"
 #: pkg/storaged/iscsi/create-dialog.jsx:69
 msgid "Unknown host name"
 msgstr "Nom d'amfitrió desconegut"
+
+#: pkg/lib/cockpit-connect-ssh.tsx:125
+#, fuzzy
+#| msgid "Unknown host key"
+msgid "Unknown host: $0"
+msgstr "Clau desconeguda d'amfitrió"
 
 #: pkg/networkmanager/firewall.jsx:477
 msgid "Unknown service name"
@@ -9343,7 +9396,7 @@ msgstr ""
 msgid "Unsupported logical volume"
 msgstr "Volum no admès"
 
-#: pkg/systemd/logs.jsx:346
+#: pkg/systemd/logs.jsx:348
 msgid "Until"
 msgstr ""
 
@@ -9355,7 +9408,7 @@ msgstr "Amfitrió no fiable"
 msgid "Up since"
 msgstr ""
 
-#: pkg/shell/hosts_dialog.jsx:357
+#: pkg/shell/hosts_dialog.jsx:356
 msgid "Update"
 msgstr "Actualitza"
 
@@ -9514,7 +9567,7 @@ msgstr ""
 msgid "User ID must not be lower than $0"
 msgstr ""
 
-#: pkg/static/login.html:94 pkg/shell/hosts_dialog.jsx:264
+#: pkg/static/login.html:94 pkg/shell/hosts_dialog.jsx:263
 #: pkg/users/account-details.js:256 pkg/users/account-create-dialog.js:76
 msgid "User name"
 msgstr "Nom d'usuari"
@@ -9575,7 +9628,7 @@ msgstr "Fabricant"
 msgid "Verified"
 msgstr "Verificat"
 
-#: pkg/shell/hosts_dialog.jsx:489
+#: pkg/lib/cockpit-connect-ssh.tsx:147 pkg/shell/hosts_dialog.jsx:488
 #, fuzzy
 #| msgid "Fingerprint"
 msgid "Verify fingerprint"
@@ -9726,7 +9779,7 @@ msgstr ""
 msgid "Wants"
 msgstr ""
 
-#: pkg/systemd/logs.jsx:69
+#: pkg/systemd/logs.jsx:68
 msgid "Warning and above"
 msgstr ""
 
@@ -9777,7 +9830,7 @@ msgstr "Setmanes"
 msgid "When"
 msgstr ""
 
-#: pkg/shell/hosts_dialog.jsx:267
+#: pkg/shell/hosts_dialog.jsx:266
 msgid "When empty, connect with the current user"
 msgstr ""
 
@@ -9847,7 +9900,8 @@ msgstr ""
 msgid "Yes"
 msgstr "Sí"
 
-#: pkg/shell/hosts_dialog.jsx:488 pkg/static/login.js:765
+#: pkg/lib/cockpit-connect-ssh.tsx:146 pkg/shell/hosts_dialog.jsx:487
+#: pkg/static/login.js:765
 msgid "You are connecting to $0 for the first time."
 msgstr ""
 
@@ -9871,7 +9925,7 @@ msgstr ""
 msgid "You may try to load older entries."
 msgstr ""
 
-#: pkg/shell/hosts_dialog.jsx:774 pkg/shell/hosts_dialog.jsx:779
+#: pkg/shell/hosts_dialog.jsx:773 pkg/shell/hosts_dialog.jsx:778
 msgid "You may want to change the password of the key for automatic login."
 msgstr ""
 
@@ -10397,7 +10451,7 @@ msgstr ""
 msgid "journal"
 msgstr ""
 
-#: pkg/systemd/logs.jsx:413
+#: pkg/systemd/logs.jsx:419
 msgid "journalctl manpage"
 msgstr ""
 
@@ -12020,9 +12074,6 @@ msgstr ""
 
 #~ msgid "Incorrect host key"
 #~ msgstr "Clau d'amfitrió incorrecta"
-
-#~ msgid "Unknown host key"
-#~ msgstr "Clau desconeguda d'amfitrió"
 
 #~ msgid "Address:"
 #~ msgstr "Adreça:"
