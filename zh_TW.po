@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-08-03 02:49+0000\n"
-"PO-Revision-Date: 2024-08-03 03:38+0000\n"
+"PO-Revision-Date: 2024-08-03 05:06+0000\n"
 "Last-Translator: JW Wang <v72807647@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://translate.fedoraproject.org/"
 "projects/cockpit/main/zh_TW/>\n"
@@ -961,10 +961,8 @@ msgid "All"
 msgstr "全部"
 
 #: pkg/storaged/lvm2/create-logical-volume-dialog.jsx:158
-#, fuzzy
-#| msgid "All $0 selected physical volumes are needed for the choosen layout."
 msgid "All $0 selected physical volumes are needed for the chosen layout."
-msgstr "所選擇的布局需要所有已選擇的 $0 磁碟區。"
+msgstr "所選的配置需要全部 $0 個已選擇的實體磁碟區。"
 
 #: pkg/packagekit/autoupdates.jsx:421
 msgid "All updates"
@@ -1868,7 +1866,8 @@ msgid ""
 "Connecting to remote hosts inside of a web console session is deprecated and "
 "will be removed in the future. You can still connect to your existing hosts "
 "for now."
-msgstr ""
+msgstr "在網頁控制台的工作階段內連線到遠端主機的功能已經廢止，且未來將會被移除。您目"
+"前仍可連線到已設定的主機。"
 
 #: pkg/shell/indexes.jsx:482
 msgid "Connecting to the machine"
@@ -2485,10 +2484,8 @@ msgstr "刪除時將會移除下列檔案："
 # translation auto-copied from project subscription-manager, version 1.11.X,
 # document keys
 #: pkg/shell/hosts.jsx:213
-#, fuzzy
-#| msgid "Created"
 msgid "Deprecated"
-msgstr "已建立"
+msgstr "已廢止"
 
 #: pkg/networkmanager/firewall.jsx:702 pkg/networkmanager/firewall.jsx:846
 #: pkg/storaged/dialog.jsx:1440 pkg/systemd/timer-dialog.jsx:166
@@ -3445,10 +3442,8 @@ msgid "Host key is incorrect"
 msgstr "主機金鑰不正確"
 
 #: pkg/shell/hosts.jsx:210
-#, fuzzy
-#| msgid "Domain is not supported"
 msgid "Host switching is not supported"
-msgstr "網域不被支援"
+msgstr "不支援主機切換"
 
 #: pkg/systemd/overview-cards/configurationCard.jsx:66
 msgid "Hostname"
@@ -6603,10 +6598,8 @@ msgid "SSH key isn't a path"
 msgstr "SSH 金鑰不是路徑"
 
 #: pkg/lib/cockpit-connect-ssh.tsx:468
-#, fuzzy
-#| msgid "SSH key"
 msgid "SSH key login"
-msgstr "SSH 金鑰"
+msgstr "SSH 金鑰登入"
 
 #: pkg/shell/credentials.jsx:77 pkg/shell/credentials.jsx:93
 #: pkg/shell/topnav.jsx:229
@@ -6747,14 +6740,10 @@ msgid "Select method"
 msgstr "選擇方法"
 
 #: pkg/storaged/lvm2/block-logical-volume.jsx:127
-#, fuzzy
-#| msgid ""
-#| "Select the physical volumes that should be used to repair the logical "
-#| "volume. At leat $0 are needed."
 msgid ""
 "Select the physical volumes that should be used to repair the logical "
 "volume. At least $0 are needed."
-msgstr "選擇要被用來修復邏輯磁碟區的實體磁碟區。至少需要 $0 個。"
+msgstr "選擇要用來修復邏輯磁碟區的實體磁碟區。至少需要 $0 個。"
 
 #: pkg/systemd/reporting.jsx:265
 msgid "Send"
@@ -7859,16 +7848,11 @@ msgid "Thinly provisioned LVM2 logical volumes"
 msgstr "精簡佈建的 LVM2 邏輯磁碟區"
 
 #: pkg/storaged/mdraid/mdraid.jsx:284
-#, fuzzy
-#| msgid ""
-#| "This MDRAID device has no write-intent bitmap. Such a bitmap can reduce "
-#| "sychronization times significantly."
 msgid ""
 "This MDRAID device has no write-intent bitmap. Such a bitmap can reduce "
 "synchronization times significantly."
-msgstr ""
-"此 MDRAID 裝置沒有 write-intent bitmap。這樣的 bitmap 可以大幅減少同步所需時"
-"間。"
+msgstr "此 MDRAID 裝置沒有 write-intent bitmap。這樣的 bitmap "
+"可以大幅減少同步所需時間。"
 
 #: pkg/storaged/nfs/nfs.jsx:111
 msgid "This NFS mount is in use and only its options can be changed."
@@ -8316,16 +8300,10 @@ msgid "Unable to get alert details."
 msgstr "無法獲取警報詳細訊息。"
 
 #: pkg/lib/cockpit-connect-ssh.tsx:396
-#, fuzzy
-#| msgid ""
-#| "Unable to log in to $0 using SSH key authentication. Please provide the "
-#| "password. You may want to set up your SSH keys for automatic login."
 msgid ""
 "Unable to log in to $0 using SSH key authentication. Please provide the "
 "password."
-msgstr ""
-"無法使用 SSH 金鑰驗證登入 $0。請提供密碼。您可能會想要設定您的 SSH 金鑰以自動"
-"登入。"
+msgstr "無法使用 SSH 金鑰驗證登入 $0。請提供密碼。"
 
 #: pkg/shell/hosts_dialog.jsx:769
 msgid ""
@@ -8438,10 +8416,8 @@ msgid "Unknown host name"
 msgstr "未知的主機名"
 
 #: pkg/lib/cockpit-connect-ssh.tsx:125
-#, fuzzy
-#| msgid "Unknown host key"
 msgid "Unknown host: $0"
-msgstr "未知的主機密鑰"
+msgstr "未知的主機： $0"
 
 #: pkg/networkmanager/firewall.jsx:477
 msgid "Unknown service name"
@@ -8944,10 +8920,11 @@ msgid ""
 "to know the maximum size for each filesystem in advance and creation of "
 "snapshots is limited."
 msgstr ""
-"當勾選此選項時，新的池將不會允許超額佈建。您需要為池中每個新建立的檔案系統指"
-"定最大大小。檔案系統無法在建立後被擴展。快照在建立時會被完整配置。所有最大大"
-"小的總和不可超過池的大小。這個選項的優點是池中的檔案系統不會意外的用盡空間。"
-"缺點則是您需要預先知道每個檔案系統的最大大小、且快照的建立會受到限制。"
+"當勾選此選項時，新的集區將不會允許超額佈建。您需要為集區中每個新建立的檔案系"
+"統指定最大大小。檔案系統無法在建立後被擴展。快照在建立時會被完整配置。所有最"
+"大大小的總和不可超過集區的大小。這個選項的優點是集區中的檔案系統不會意外的用"
+"盡空間。缺點則是您需要預先知道每個檔案系統的最大大小、且快照的建立會受到限制"
+"。"
 
 #: pkg/systemd/terminal.jsx:176
 msgid "White"
@@ -9540,7 +9517,7 @@ msgstr "MDRAID 裝置的成員"
 
 #: pkg/storaged/dialog.jsx:1143
 msgid "member of Stratis pool"
-msgstr "Stratis 池的成員"
+msgstr "Stratis 集區的成員"
 
 #: pkg/systemd/manifest.json:0
 msgid "memory"
