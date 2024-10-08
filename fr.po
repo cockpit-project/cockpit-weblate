@@ -22,7 +22,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-10-06 03:01+0000\n"
-"PO-Revision-Date: 2024-10-03 03:28+0000\n"
+"PO-Revision-Date: 2024-10-08 06:36+0000\n"
 "Last-Translator: Léane GRASSER <leane.grasser@proton.me>\n"
 "Language-Team: French <https://translate.fedoraproject.org/projects/cockpit/"
 "main/fr/>\n"
@@ -886,7 +886,7 @@ msgid ""
 "Adding a keyserver requires unlocking the pool. Please provide the existing "
 "pool passphrase."
 msgstr ""
-"L'ajout d'un serveur de clés requiert le déverrouillage du pool. Veuillez "
+"L'ajout d'un serveur de clés nécessite de déverrouiller le pool. Veuillez "
 "fournir la phrase secrète actuelle du pool."
 
 #: pkg/networkmanager/firewall.jsx:607
@@ -1158,10 +1158,8 @@ msgid "At least one disk is needed."
 msgstr "Au moins un disque est nécessaire."
 
 #: pkg/storaged/btrfs/subvolume.jsx:379
-#, fuzzy
-#| msgid "Subvolume needs to be mounted"
 msgid "At least one subvolume needs to be mounted"
-msgstr "Le sous-volume doit être monté"
+msgstr "Au moins 1 sous-volume doit être monté"
 
 #: pkg/systemd/timer-dialog.jsx:262
 msgid "At minute"
@@ -3276,10 +3274,8 @@ msgid "Filesystem is locked"
 msgstr "Le système de fichiers est verrouillé"
 
 #: pkg/storaged/btrfs/volume.jsx:129
-#, fuzzy
-#| msgid "Filesystem is locked"
 msgid "Filesystem is mounted read-only"
-msgstr "Le système de fichiers est verrouillé"
+msgstr "Le système de fichiers est monté en lecture seule"
 
 #: pkg/storaged/filesystem/filesystem.jsx:117
 msgid "Filesystem name"
@@ -3767,10 +3763,8 @@ msgid "Install NFS support"
 msgstr "Installer la prise en charge NFS"
 
 #: pkg/metrics/metrics.jsx:1849
-#, fuzzy
-#| msgid "Install NFS support"
 msgid "Install PCP support"
-msgstr "Installer la prise en charge NFS"
+msgstr "Installer la prise en charge PCP"
 
 #: pkg/storaged/overview/overview.jsx:121
 msgid "Install Stratis support"
@@ -4348,10 +4342,8 @@ msgid "Lock $0"
 msgstr "Verrouillage $0"
 
 #: pkg/storaged/crypto/actions.jsx:78
-#, fuzzy
-#| msgid "Lock $0"
 msgid "Lock $0?"
-msgstr "Verrouillage $0"
+msgstr "Verrouiller $0 ?"
 
 #: pkg/users/accounts-list.js:74
 msgid "Lock account"
@@ -5519,10 +5511,8 @@ msgid "PCI"
 msgstr "PCI"
 
 #: pkg/metrics/metrics.jsx:1848
-#, fuzzy
-#| msgid "Package cockpit-pcp is missing for metrics history"
 msgid "PCP is missing for metrics history"
-msgstr "Le paquet cockpit-pcp est manquant pour l’historique des métriques"
+msgstr "L'historique des métriques requiert PCP"
 
 #: pkg/storaged/dialog.jsx:1429
 msgid "PID"
@@ -6387,8 +6377,8 @@ msgid ""
 "unlocking or key management, if other passphrases are forgotten or lost."
 msgstr ""
 "La suppression d’une phrase secrète sans confirmation d’une autre phrase "
-"secrète peut empêcher le déverrouillage ou la gestion des clés, si d’autres "
-"phrases secrète sont oubliées ou perdues."
+"secrète peut empêcher le déverrouillage ou la gestion des clés, si les "
+"autres phrases secrètes sont oubliées ou perdues."
 
 #: pkg/storaged/jobs-panel.jsx:79
 msgid "Removing physical volume from $target"
@@ -6580,8 +6570,9 @@ msgid ""
 "Resizing an encrypted filesystem requires unlocking the disk. Please provide "
 "a current disk passphrase."
 msgstr ""
-"Il faut déverrouiller le disque pour pouvoir redimensionner un système de "
-"fichier chiffré. Veuillez fournir une phrase secrète actuelle."
+"Le redimensionnement d'un système de fichiers chiffré nécessite le "
+"déverrouillage du disque. Veuillez fournir la phrase secrète du disque "
+"actuel."
 
 #: pkg/systemd/service-details.jsx:137
 msgid "Restart"
@@ -6820,8 +6811,8 @@ msgid ""
 "Saving a new passphrase requires unlocking the disk. Please provide a "
 "current disk passphrase."
 msgstr ""
-"Pour enregistrer une nouvelle phrase secrète, il faut déverrouiller le "
-"disque. Veuillez fournir une phrase secrète actuelle."
+"L'enregistrement d'une nouvelle phrase secrète nécessite le déverrouillage "
+"du disque. Veuillez fournir la phrase secrète du disque actuel."
 
 #: pkg/systemd/overview-cards/shutdownStatus.jsx:89
 msgid "Scheduled poweroff at $0"
@@ -7872,10 +7863,8 @@ msgid "The last key slot can not be removed"
 msgstr "Le dernier logement de clé ne peut pas être retiré"
 
 #: pkg/storaged/btrfs/subvolume.jsx:382
-#, fuzzy
-#| msgid "The last key slot can not be removed"
 msgid "The last mounted subvolume can not be deleted"
-msgstr "Le dernier logement de clé ne peut pas être retiré"
+msgstr "Le dernier sous-volume monté ne peut pas être supprimé"
 
 #: pkg/storaged/dialog.jsx:1467
 msgid "The listed processes and services will be forcefully stopped."
@@ -7959,7 +7948,7 @@ msgid ""
 "The system does not currently support unlocking a filesystem with a Tang "
 "keyserver during boot."
 msgstr ""
-"Le système ne prend pas actuellement en charge le déverrouillage d'un "
+"Le système ne prend actuellement pas en charge le déverrouillage d'un "
 "système de fichiers avec un serveur de clés Tang pendant le démarrage."
 
 #: pkg/storaged/crypto/keyslots.jsx:426
@@ -7967,7 +7956,7 @@ msgid ""
 "The system does not currently support unlocking the root filesystem with a "
 "Tang keyserver."
 msgstr ""
-"Le système ne prend pas actuellement en charge le déverrouillage du système "
+"Le système ne prend actuellement pas en charge le déverrouillage du système "
 "de fichiers racine avec un serveur de clés Tang."
 
 #: pkg/systemd/hwinfo.jsx:67
@@ -9264,7 +9253,8 @@ msgstr "Vous devez encore attendre avant de changer votre mot de passe"
 #: pkg/metrics/metrics.jsx:1838
 msgid "You need to relogin to be able to see metrics history"
 msgstr ""
-"Vous devez vous connecter à nouveau pour consulter l’historique des métriques"
+"Vous devez vous reconnecter afin de pouvoir consulter l’historique des "
+"métriques"
 
 #: pkg/shell/superuser.jsx:100
 msgid "You now have administrative access."
@@ -9747,10 +9737,8 @@ msgid "less than a minute ago"
 msgstr "il y a moins d'une minute"
 
 #: pkg/storaged/crypto/actions.jsx:67
-#, fuzzy
-#| msgid "Block"
 msgid "lock"
-msgstr "Bloc"
+msgstr "verrouiller"
 
 #: pkg/users/manifest.json:0
 msgid "login"
