@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-10-31 03:00+0000\n"
-"PO-Revision-Date: 2024-10-29 22:38+0000\n"
+"PO-Revision-Date: 2024-11-02 11:38+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://translate.fedoraproject.org/projects/cockpit/"
 "main/cs/>\n"
@@ -22,7 +22,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 5.7.2\n"
+"X-Generator: Weblate 5.8.2\n"
 
 #: pkg/users/accounts-list.js:231
 msgid "# of users"
@@ -1890,7 +1890,7 @@ msgstr "Kompatibilní s moderním systémem a pevnými disky > 2TB (GPT)"
 
 #: pkg/kdump/kdump-view.jsx:319
 msgid "Compress crash dumps to save space"
-msgstr "Komprimovat výpisy paměti z havárií pro úsporu místa"
+msgstr "Komprimovat výpisy paměti z pádů a šetřit tak místem"
 
 #: pkg/kdump/kdump-view.jsx:314
 #: pkg/storaged/lvm2/create-logical-volume-dialog.jsx:230
@@ -2085,7 +2085,7 @@ msgstr "Nedaří se kontaktovat $0"
 
 #: pkg/kdump/kdump-view.jsx:221 pkg/kdump/kdump-view.jsx:617
 msgid "Crash dump location"
-msgstr "Umístění výpisu paměti pádu"
+msgstr "Umístění výpisu paměti při pádu"
 
 #: pkg/systemd/reporting.jsx:431
 msgid "Crash reporting"
@@ -2187,7 +2187,7 @@ msgstr "Vytvořit nový logický svazek"
 
 #: pkg/lib/cockpit-components-modifications.jsx:92
 msgid "Create new task file with this content."
-msgstr "Vytvořit nový soubor s úlohou s tímto obsahem."
+msgstr "Vytvořte nový soubor s úlohou s tímto obsahem."
 
 #: pkg/storaged/lvm2/thin-pool-logical-volume.jsx:78
 msgid "Create new thinly provisioned logical volume"
@@ -2330,7 +2330,7 @@ msgstr "Nepoužíváno"
 
 #: pkg/kdump/kdump-view.jsx:535
 msgid "Currently not supported"
-msgstr "Zatím nepodporováno"
+msgstr "Zatím nenastaveno"
 
 #: pkg/storaged/partitions/partition.jsx:154
 msgid "Custom"
@@ -5501,7 +5501,7 @@ msgstr "Nebylo zadáno uživatelské jméno"
 #: pkg/systemd/overview-cards/tuned-dialog.jsx:224
 #: pkg/networkmanager/firewall.jsx:854 pkg/kdump/kdump-view.jsx:488
 msgid "None"
-msgstr "Žádný"
+msgstr "Žádné"
 
 #: pkg/lib/credentials.js:256
 msgid "Not a valid private key"
@@ -6840,9 +6840,10 @@ msgid ""
 "line. For example, append '$1' to $2  in $3 or use your distribution's "
 "kernel argument editor."
 msgstr ""
-"Vyhraďte paměť v okamžiku zavádění systému nastavením volby „$0“ příkazového "
-"řádku jádra systému. Například, připojte „$1“ k $2 v $3 nebo použijte editor "
-"argumentů jádra systému, poskytovaný vámi využívanou distribucí."
+"Vyhraďte paměť pro okamžik při zavádění systému a to nastavením volby „$0“ "
+"na příkazovém řádku jádra systému. Například, přidejte „$1“ za $2 v $3 nebo "
+"použijte editor argumentů jádra systému, poskytovaný vámi využívanou "
+"distribucí."
 
 #: pkg/kdump/kdump-view.jsx:610
 msgid "Reserved memory"
@@ -6896,14 +6897,14 @@ msgid ""
 "Results of the crash will be copied through $0 to $1 as $2, if kdump is "
 "properly configured."
 msgstr ""
-"Pokud je správně nastavený kdump, budou výsledky zkopírovány prostřednictvím "
+"Pokud je kdump správně nastavený, budou výsledky zkopírovány prostřednictvím "
 "$0 na $1 jako $2."
 
 #: pkg/kdump/kdump-view.jsx:357
 msgid ""
 "Results of the crash will be stored in $0 as $1, if kdump is properly "
 "configured."
-msgstr "Pokud je správně nastavený kdump, budou výsledky uloženy v $0 jako $1."
+msgstr "Pokud je kdump správně nastavený, budou výsledky uloženy v $0 jako $1."
 
 #: pkg/systemd/logs.jsx:263
 msgid "Resume"
@@ -7975,9 +7976,9 @@ msgid ""
 "system might not automatically reboot. Do not purposefully crash the system "
 "while any important task is running."
 msgstr ""
-"Vyzkoušet nastavení kdump vyvoláním havárie jádra systému. Může to chvíli "
-"trvat a může se stá, že systém se nerestartuje automaticky. Nevyvolávejte "
-"pád systému pokud je spuštěná nějaká důležitá úloha."
+"Vyzkoušet nastavení kdump vyvoláním pádu jádra systému. Může to chvíli trvat "
+"a může se stát, že systém se nerestartuje automaticky. Nevyvolávejte pád "
+"systému, pokud je spuštěná nějaká důležitá úloha."
 
 #: pkg/networkmanager/networkmanager.jsx:65
 msgid "Testing connection"
@@ -8499,8 +8500,8 @@ msgid ""
 "This tool configures the system to write kernel crash dumps. It supports the "
 "\"local\" (disk), \"ssh\", and \"nfs\" dump targets."
 msgstr ""
-"Tento nástroj nastavuje systém pro zapisování výpisů pádů jádra. Podporuje "
-"cíle výstupu „local“ (disk), „ssh“ a „nfs“."
+"Tento nástroj nastavuje systém tak, aby byly zapisovány výpisy pádů jádra. "
+"Podporuje cíle výstupu „local“ (disk), „ssh“ a „nfs“."
 
 #: src/appstream/org.cockpit_project.cockpit_sosreport.metainfo.xml.in:9
 msgid ""
@@ -8838,7 +8839,7 @@ msgstr "UUID"
 
 #: pkg/selinux/setroubleshoot-view.jsx:114
 msgid "Unable to apply this solution automatically"
-msgstr "Nedaří se automaticky uplatnit toto řešení"
+msgstr "Není možné toto řešení uplatnit automaticky"
 
 #: pkg/static/login.js:1018
 msgid "Unable to connect to that address"
