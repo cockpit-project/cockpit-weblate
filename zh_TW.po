@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-02 03:06+0000\n"
+"POT-Creation-Date: 2024-12-04 03:06+0000\n"
 "PO-Revision-Date: 2024-12-02 15:47+0000\n"
 "Last-Translator: JW Wang <v72807647@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://translate.fedoraproject.org/"
@@ -763,7 +763,7 @@ msgstr "新增金鑰伺服器"
 msgid "Add member"
 msgstr "新增成員"
 
-#: pkg/shell/hosts.jsx:209 pkg/shell/hosts_dialog.jsx:446
+#: pkg/shell/hosts.jsx:208 pkg/shell/hosts_dialog.jsx:446
 msgid "Add new host"
 msgstr "新增主機"
 
@@ -1032,7 +1032,7 @@ msgid "Application information is missing"
 msgstr "遺失應用程式資訊"
 
 #: pkg/apps/index.html:23 pkg/apps/application-list.jsx:174
-#: pkg/apps/application.jsx:146 pkg/apps/manifest.json:0
+#: pkg/apps/application.jsx:145 pkg/apps/manifest.json:0
 msgid "Applications"
 msgstr "應用程式"
 
@@ -1072,7 +1072,7 @@ msgstr "套用更新失敗"
 msgid "Appropriate for critical mounts, such as /var"
 msgstr "適合用於關鍵的掛載點，例如 /var"
 
-#: pkg/shell/nav.jsx:345
+#: pkg/shell/nav.jsx:352
 msgid "Apps"
 msgstr "應用程式"
 
@@ -1404,7 +1404,7 @@ msgstr "使用目前的篩選器組合無法找到任何紀錄檔。"
 #: pkg/networkmanager/dialogs-common.jsx:152
 #: pkg/networkmanager/firewall.jsx:613 pkg/networkmanager/firewall.jsx:814
 #: pkg/networkmanager/firewall.jsx:913 pkg/kdump/kdump-view.jsx:235
-#: pkg/apps/utils.jsx:69 pkg/lib/cockpit-components-shutdown.jsx:193
+#: pkg/apps/utils.tsx:92 pkg/lib/cockpit-components-shutdown.jsx:193
 #: pkg/lib/cockpit-components-dialog.jsx:131
 #: pkg/lib/cockpit-connect-ssh.tsx:180 pkg/lib/cockpit-connect-ssh.tsx:491
 #: pkg/packagekit/autoupdates.jsx:400 pkg/packagekit/updates.jsx:541
@@ -1593,10 +1593,6 @@ msgstr "正在檢查 $0 軟體包"
 msgid "Checking for NBDE support in the initrd"
 msgstr "正在確認 initrd 中的 NBDE 支援"
 
-#: pkg/apps/application-list.jsx:148
-msgid "Checking for new applications"
-msgstr "正在檢查新的應用程式"
-
 #: pkg/packagekit/updates.jsx:1389
 msgid "Checking for package updates..."
 msgstr "正在檢查軟體包更新…"
@@ -1638,7 +1634,13 @@ msgstr "清除所有篩選器"
 msgid "Clear filter"
 msgstr "清除篩選器"
 
-#: pkg/shell/nav.jsx:160
+#: pkg/lib/cockpit-components-multi-typeahead-select.tsx:347
+#, fuzzy
+#| msgid "Clear filter"
+msgid "Clear input value"
+msgstr "清除篩選器"
+
+#: pkg/shell/nav.jsx:164
 msgid "Clear search"
 msgstr "清除搜尋"
 
@@ -1652,7 +1654,7 @@ msgstr "客戶端軟體"
 
 #: pkg/systemd/overview-cards/configurationCard.jsx:195
 #: pkg/systemd/overview-cards/realmd.jsx:278
-#: pkg/networkmanager/interfaces.js:43 pkg/apps/utils.jsx:87
+#: pkg/networkmanager/interfaces.js:43 pkg/apps/utils.tsx:112
 #: pkg/lib/cockpit-components-terminal.jsx:241
 #: pkg/lib/cockpit-components-modifications.jsx:76
 #: pkg/lib/cockpit-connect-ssh.tsx:515 pkg/users/dialog-utils.js:58
@@ -1905,7 +1907,7 @@ msgstr "與 dbus 連線失敗： $0"
 msgid "Connecting to the machine"
 msgstr "正在連線至機器"
 
-#: pkg/shell/hosts.jsx:194
+#: pkg/shell/hosts.jsx:193
 msgid "Connection error"
 msgstr "連線錯誤"
 
@@ -1929,7 +1931,7 @@ msgstr "由組成"
 msgid "Contacted domain"
 msgstr "已聯絡的網域"
 
-#: pkg/shell/nav.jsx:232
+#: pkg/shell/nav.jsx:237
 msgid "Contains:"
 msgstr "包含："
 
@@ -2764,7 +2766,7 @@ msgstr "EFI 系統分割區"
 
 #: pkg/networkmanager/firewall.jsx:115 pkg/kdump/kdump-view.jsx:488
 #: pkg/packagekit/autoupdates.jsx:533 pkg/packagekit/kpatch.jsx:234
-#: pkg/shell/hosts.jsx:198 pkg/shell/nav.jsx:358 pkg/storaged/nfs/nfs.jsx:312
+#: pkg/shell/hosts.jsx:197 pkg/shell/nav.jsx:365 pkg/storaged/nfs/nfs.jsx:312
 #: pkg/storaged/crypto/keyslots.jsx:763
 msgid "Edit"
 msgstr "編輯"
@@ -2801,7 +2803,7 @@ msgstr "編輯 $0 區域的自訂服務"
 msgid "Edit host"
 msgstr "編輯主機"
 
-#: pkg/shell/hosts.jsx:248
+#: pkg/shell/hosts.jsx:247
 msgid "Edit hosts"
 msgstr "編輯多部主機"
 
@@ -2979,7 +2981,7 @@ msgid "Errata"
 msgstr "勘誤"
 
 #: pkg/systemd/services.jsx:224 pkg/systemd/service-details.jsx:274
-#: pkg/apps/utils.jsx:81 pkg/storaged/overview/overview.jsx:94
+#: pkg/apps/utils.tsx:106 pkg/storaged/overview/overview.jsx:94
 #: pkg/storaged/multipath.jsx:60 pkg/storaged/storage-controls.jsx:105
 #: pkg/storaged/storage-controls.jsx:158 pkg/sosreport/sosreport.jsx:396
 msgid "Error"
@@ -3344,7 +3346,7 @@ msgstr "產生的"
 msgid "Go to $0"
 msgstr "前往 $0"
 
-#: pkg/apps/application.jsx:109
+#: pkg/apps/application.jsx:108
 msgid "Go to application"
 msgstr "轉到應用程式"
 
@@ -3368,7 +3370,7 @@ msgstr "群組"
 msgid "Group name"
 msgstr "群組名稱"
 
-#: pkg/users/account-details.js:440 pkg/users/accounts-list.js:313
+#: pkg/users/account-details.js:419 pkg/users/accounts-list.js:313
 #: pkg/users/accounts-list.js:317
 msgid "Groups"
 msgstr "群組"
@@ -3464,7 +3466,7 @@ msgstr "歷史軟體包數量"
 msgid "Home directory"
 msgstr "家目錄"
 
-#: pkg/shell/hosts.jsx:225 pkg/shell/hosts_dialog.jsx:450
+#: pkg/shell/hosts.jsx:224 pkg/shell/hosts_dialog.jsx:450
 msgid "Host"
 msgstr "主機"
 
@@ -3488,7 +3490,7 @@ msgstr "主機金鑰未知"
 msgid "Hostname"
 msgstr "主機名稱"
 
-#: pkg/shell/hosts.jsx:183
+#: pkg/shell/hosts.jsx:182
 msgid "Hosts"
 msgstr "主機"
 
@@ -3679,7 +3681,7 @@ msgstr "初始化..."
 msgid "Insights: "
 msgstr "洞察： "
 
-#: pkg/apps/application-list.jsx:196 pkg/apps/application.jsx:52
+#: pkg/apps/application-list.jsx:196 pkg/apps/application.jsx:51
 #: pkg/lib/cockpit-components-install-dialog.jsx:126
 #: pkg/packagekit/kpatch.jsx:250
 msgid "Install"
@@ -3743,7 +3745,7 @@ msgstr ""
 msgid "Installed"
 msgstr "已安裝"
 
-#: pkg/apps/application.jsx:40 pkg/packagekit/updates.jsx:105
+#: pkg/apps/application.jsx:39 pkg/packagekit/updates.jsx:105
 msgid "Installing"
 msgstr "安裝"
 
@@ -5035,7 +5037,7 @@ msgstr "沒有延遲"
 msgid "No description available"
 msgstr "沒有可用的說明"
 
-#: pkg/apps/application.jsx:85
+#: pkg/apps/application.jsx:84
 msgid "No description provided."
 msgstr "沒有提供說明。"
 
@@ -5093,7 +5095,7 @@ msgstr "沒有指定群組名稱"
 msgid "No host keys found."
 msgstr "沒有找到主機金鑰。"
 
-#: pkg/apps/utils.jsx:77
+#: pkg/apps/utils.tsx:102
 msgid "No installation package found for this application."
 msgstr "找不到此應用程式的安裝軟體包。"
 
@@ -5147,8 +5149,9 @@ msgstr "未找到實體磁碟區"
 msgid "No real name specified"
 msgstr "沒有指定實名"
 
+#: pkg/lib/cockpit-components-multi-typeahead-select.tsx:117
 #: pkg/lib/cockpit-components-typeahead-select.tsx:205
-#: pkg/lib/cockpit-components-typeahead-select.tsx:206 pkg/shell/nav.jsx:159
+#: pkg/lib/cockpit-components-typeahead-select.tsx:206 pkg/shell/nav.jsx:163
 msgid "No results found"
 msgstr "沒有找到結果"
 
@@ -6210,9 +6213,9 @@ msgstr "遠端 SSH ， $0"
 msgid "Removals:"
 msgstr "移除："
 
-#: pkg/systemd/timer-dialog.jsx:361 pkg/apps/application.jsx:50
+#: pkg/systemd/timer-dialog.jsx:361 pkg/apps/application.jsx:49
 #: pkg/users/authorized-keys-panel.js:142
-#: pkg/users/authorized-keys-panel.js:150 pkg/shell/hosts.jsx:201
+#: pkg/users/authorized-keys-panel.js:150 pkg/shell/hosts.jsx:200
 #: pkg/storaged/lvm2/volume-group.jsx:326
 #: pkg/storaged/lvm2/physical-volume.jsx:88 pkg/storaged/nfs/nfs.jsx:315
 #: pkg/storaged/mdraid/mdraid-disk.jsx:98 pkg/storaged/crypto/keyslots.jsx:651
@@ -6275,7 +6278,7 @@ msgstr "移除 $0 區域"
 
 # translation auto-copied from project subscription-manager, version 1.11.X,
 # document keys
-#: pkg/apps/application.jsx:44
+#: pkg/apps/application.jsx:43
 msgid "Removing"
 msgstr "移除"
 
@@ -7276,7 +7279,7 @@ msgstr "停止和卸載"
 msgid "Stop device"
 msgstr "停止裝置"
 
-#: pkg/shell/hosts.jsx:248
+#: pkg/shell/hosts.jsx:247
 msgid "Stop editing hosts"
 msgstr "結束主機編輯"
 
@@ -7463,7 +7466,7 @@ msgstr "正在同步 MDRAID 裝置 $target"
 
 # translation auto-copied from project virt-manager, version 0.10.0, document
 # virt-manager
-#: pkg/systemd/services.jsx:912 pkg/shell/nav.jsx:48 pkg/shell/nav.jsx:348
+#: pkg/systemd/services.jsx:912 pkg/shell/nav.jsx:48 pkg/shell/nav.jsx:355
 msgid "System"
 msgstr "系統"
 
@@ -7839,7 +7842,7 @@ msgstr "使用者 <b>$0</b> 不被允許變更加密政策"
 msgid "The user $0 is not permitted to test crash the kernel"
 msgstr "$0 使用者不被允許測試核心當機"
 
-#: pkg/users/account-details.js:466
+#: pkg/users/account-details.js:442
 msgid ""
 "The user must log out and log back in for the new configuration to take "
 "effect."
@@ -8192,7 +8195,7 @@ msgstr "切換篩選器"
 msgid "Too much data"
 msgstr "資料過多"
 
-#: pkg/shell/nav.jsx:351
+#: pkg/shell/nav.jsx:358
 msgid "Tools"
 msgstr "工具"
 
@@ -8433,7 +8436,7 @@ msgstr "無法使用"
 msgid "Unavailable packages"
 msgstr "未提供的軟體包"
 
-#: pkg/users/account-details.js:467
+#: pkg/users/account-details.js:443
 msgid "Undo"
 msgstr "還原"
 
@@ -8477,7 +8480,7 @@ msgstr "未知“$0“"
 msgid "Unknown ($0)"
 msgstr "未知（$0）"
 
-#: pkg/apps/application.jsx:103
+#: pkg/apps/application.jsx:102
 msgid "Unknown application"
 msgstr "未知的申請"
 
@@ -8859,7 +8862,7 @@ msgstr "檢視指標度量與歷史紀錄"
 msgid "View per-disk throughput"
 msgstr "檢視每個硬碟的通量 (throughput)"
 
-#: pkg/apps/application.jsx:71
+#: pkg/apps/application.jsx:70
 msgid "View project website"
 msgstr "檢視專案網站"
 
@@ -8923,7 +8926,7 @@ msgstr "等待細節......"
 msgid "Waiting for input…"
 msgstr "正在等待輸入…"
 
-#: pkg/apps/utils.jsx:56
+#: pkg/apps/utils.tsx:79
 msgid "Waiting for other programs to finish using the package manager..."
 msgstr "等待其他程式結束使用軟體包管理器..."
 
@@ -10016,6 +10019,9 @@ msgstr "yum"
 #: pkg/networkmanager/manifest.json:0
 msgid "zone"
 msgstr "區域"
+
+#~ msgid "Checking for new applications"
+#~ msgstr "正在檢查新的應用程式"
 
 #~ msgid "Authentication failed: Server closed connection"
 #~ msgstr "驗證失敗：伺服器已中斷連線"

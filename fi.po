@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-02 03:06+0000\n"
+"POT-Creation-Date: 2024-12-04 03:06+0000\n"
 "PO-Revision-Date: 2024-11-22 05:38+0000\n"
 "Last-Translator: Ricky Tigg <ricky.tigg@gmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/cockpit/"
@@ -797,7 +797,7 @@ msgstr "Lisää avainpalvelin"
 msgid "Add member"
 msgstr "Lisää jäsen"
 
-#: pkg/shell/hosts.jsx:209 pkg/shell/hosts_dialog.jsx:446
+#: pkg/shell/hosts.jsx:208 pkg/shell/hosts_dialog.jsx:446
 msgid "Add new host"
 msgstr "Lisää uusi kone"
 
@@ -1077,7 +1077,7 @@ msgid "Application information is missing"
 msgstr "Sovellustiedot puuttuvat"
 
 #: pkg/apps/index.html:23 pkg/apps/application-list.jsx:174
-#: pkg/apps/application.jsx:146 pkg/apps/manifest.json:0
+#: pkg/apps/application.jsx:145 pkg/apps/manifest.json:0
 msgid "Applications"
 msgstr "Sovellukset"
 
@@ -1117,7 +1117,7 @@ msgstr "Päivitysten asentaminen epäonnistui"
 msgid "Appropriate for critical mounts, such as /var"
 msgstr "Soveltuu kriittisiin liitoksiin, kuten /var"
 
-#: pkg/shell/nav.jsx:345
+#: pkg/shell/nav.jsx:352
 msgid "Apps"
 msgstr "Sovellukset"
 
@@ -1454,7 +1454,7 @@ msgstr "Lokeja ei löydy käyttämällä nykyistä suodatinten yhdistelmää."
 #: pkg/networkmanager/dialogs-common.jsx:152
 #: pkg/networkmanager/firewall.jsx:613 pkg/networkmanager/firewall.jsx:814
 #: pkg/networkmanager/firewall.jsx:913 pkg/kdump/kdump-view.jsx:235
-#: pkg/apps/utils.jsx:69 pkg/lib/cockpit-components-shutdown.jsx:193
+#: pkg/apps/utils.tsx:92 pkg/lib/cockpit-components-shutdown.jsx:193
 #: pkg/lib/cockpit-components-dialog.jsx:131
 #: pkg/lib/cockpit-connect-ssh.tsx:180 pkg/lib/cockpit-connect-ssh.tsx:491
 #: pkg/packagekit/autoupdates.jsx:400 pkg/packagekit/updates.jsx:541
@@ -1651,10 +1651,6 @@ msgstr "Etsitään $0 pakettia"
 msgid "Checking for NBDE support in the initrd"
 msgstr "Tarkistetaan NBDE-tukea initrd:ssä"
 
-#: pkg/apps/application-list.jsx:148
-msgid "Checking for new applications"
-msgstr "Etsitään uusia sovelluksia"
-
 #: pkg/packagekit/updates.jsx:1389
 msgid "Checking for package updates..."
 msgstr "Tarkistetaan pakettipäivityksiä ..."
@@ -1696,7 +1692,13 @@ msgstr "Tyhjennä kaikki suodattimet"
 msgid "Clear filter"
 msgstr "Tyhjennä suodatin"
 
-#: pkg/shell/nav.jsx:160
+#: pkg/lib/cockpit-components-multi-typeahead-select.tsx:347
+#, fuzzy
+#| msgid "Clear filter"
+msgid "Clear input value"
+msgstr "Tyhjennä suodatin"
+
+#: pkg/shell/nav.jsx:164
 msgid "Clear search"
 msgstr "Tyhjennä haku"
 
@@ -1710,7 +1712,7 @@ msgstr "Asiakasohjelmisto"
 
 #: pkg/systemd/overview-cards/configurationCard.jsx:195
 #: pkg/systemd/overview-cards/realmd.jsx:278
-#: pkg/networkmanager/interfaces.js:43 pkg/apps/utils.jsx:87
+#: pkg/networkmanager/interfaces.js:43 pkg/apps/utils.tsx:112
 #: pkg/lib/cockpit-components-terminal.jsx:241
 #: pkg/lib/cockpit-components-modifications.jsx:76
 #: pkg/lib/cockpit-connect-ssh.tsx:515 pkg/users/dialog-utils.js:58
@@ -1968,7 +1970,7 @@ msgstr "Yhteyden muodostaminen dbus-verkkoon epäonnistui: $0"
 msgid "Connecting to the machine"
 msgstr "Yhdistetään koneeseen"
 
-#: pkg/shell/hosts.jsx:194
+#: pkg/shell/hosts.jsx:193
 msgid "Connection error"
 msgstr "Yhteysvirhe"
 
@@ -1992,7 +1994,7 @@ msgstr "Näistä koostuu"
 msgid "Contacted domain"
 msgstr "Toimialue, johon otettiin yhteyttä"
 
-#: pkg/shell/nav.jsx:232
+#: pkg/shell/nav.jsx:237
 msgid "Contains:"
 msgstr "Sisältää:"
 
@@ -2835,7 +2837,7 @@ msgstr "EFI-järjestelmäosio"
 
 #: pkg/networkmanager/firewall.jsx:115 pkg/kdump/kdump-view.jsx:488
 #: pkg/packagekit/autoupdates.jsx:533 pkg/packagekit/kpatch.jsx:234
-#: pkg/shell/hosts.jsx:198 pkg/shell/nav.jsx:358 pkg/storaged/nfs/nfs.jsx:312
+#: pkg/shell/hosts.jsx:197 pkg/shell/nav.jsx:365 pkg/storaged/nfs/nfs.jsx:312
 #: pkg/storaged/crypto/keyslots.jsx:763
 msgid "Edit"
 msgstr "Muokkaa"
@@ -2878,7 +2880,7 @@ msgstr "Muokkaa mukautettua palvelua $0-vyöhykkeellä"
 msgid "Edit host"
 msgstr "Muokkaa konetta"
 
-#: pkg/shell/hosts.jsx:248
+#: pkg/shell/hosts.jsx:247
 msgid "Edit hosts"
 msgstr "Muokkaa koneita"
 
@@ -3064,7 +3066,7 @@ msgid "Errata"
 msgstr "Virheet"
 
 #: pkg/systemd/services.jsx:224 pkg/systemd/service-details.jsx:274
-#: pkg/apps/utils.jsx:81 pkg/storaged/overview/overview.jsx:94
+#: pkg/apps/utils.tsx:106 pkg/storaged/overview/overview.jsx:94
 #: pkg/storaged/multipath.jsx:60 pkg/storaged/storage-controls.jsx:105
 #: pkg/storaged/storage-controls.jsx:158 pkg/sosreport/sosreport.jsx:396
 msgid "Error"
@@ -3436,7 +3438,7 @@ msgstr "Luotu"
 msgid "Go to $0"
 msgstr "Mene kohteeseen $0"
 
-#: pkg/apps/application.jsx:109
+#: pkg/apps/application.jsx:108
 msgid "Go to application"
 msgstr "Siirry sovellukseen"
 
@@ -3460,7 +3462,7 @@ msgstr "Ryhmä"
 msgid "Group name"
 msgstr "Ryhmän nimi"
 
-#: pkg/users/account-details.js:440 pkg/users/accounts-list.js:313
+#: pkg/users/account-details.js:419 pkg/users/accounts-list.js:313
 #: pkg/users/accounts-list.js:317
 msgid "Groups"
 msgstr "Ryhmät"
@@ -3565,7 +3567,7 @@ msgstr "Historian pakettien määrä"
 msgid "Home directory"
 msgstr "Kotihakemisto"
 
-#: pkg/shell/hosts.jsx:225 pkg/shell/hosts_dialog.jsx:450
+#: pkg/shell/hosts.jsx:224 pkg/shell/hosts_dialog.jsx:450
 msgid "Host"
 msgstr "Kone"
 
@@ -3595,7 +3597,7 @@ msgstr "Koneen avain on väärin"
 msgid "Hostname"
 msgstr "Koneen nimi"
 
-#: pkg/shell/hosts.jsx:183
+#: pkg/shell/hosts.jsx:182
 msgid "Hosts"
 msgstr "Koneet"
 
@@ -3789,7 +3791,7 @@ msgstr "Alustetaan ..."
 msgid "Insights: "
 msgstr "Oivalluksia: "
 
-#: pkg/apps/application-list.jsx:196 pkg/apps/application.jsx:52
+#: pkg/apps/application-list.jsx:196 pkg/apps/application.jsx:51
 #: pkg/lib/cockpit-components-install-dialog.jsx:126
 #: pkg/packagekit/kpatch.jsx:250
 msgid "Install"
@@ -3856,7 +3858,7 @@ msgstr ""
 msgid "Installed"
 msgstr "Asennettu"
 
-#: pkg/apps/application.jsx:40 pkg/packagekit/updates.jsx:105
+#: pkg/apps/application.jsx:39 pkg/packagekit/updates.jsx:105
 msgid "Installing"
 msgstr "Asennetaan"
 
@@ -5203,7 +5205,7 @@ msgstr "Ei viivettä"
 msgid "No description available"
 msgstr "Ei kuvausta saatavilla"
 
-#: pkg/apps/application.jsx:85
+#: pkg/apps/application.jsx:84
 msgid "No description provided."
 msgstr "Kuvausta ei annettu."
 
@@ -5269,7 +5271,7 @@ msgstr "Ryhmän nimeä ei ole määritetty"
 msgid "No host keys found."
 msgstr "Koneen avaimia ei löytynyt."
 
-#: pkg/apps/utils.jsx:77
+#: pkg/apps/utils.tsx:102
 msgid "No installation package found for this application."
 msgstr "Tälle sovellukselle ei löytynyt asennuspakettia."
 
@@ -5329,8 +5331,9 @@ msgstr "Fyysiset taltiot"
 msgid "No real name specified"
 msgstr "Oikeaa nimeä ei ole määritetty"
 
+#: pkg/lib/cockpit-components-multi-typeahead-select.tsx:117
 #: pkg/lib/cockpit-components-typeahead-select.tsx:205
-#: pkg/lib/cockpit-components-typeahead-select.tsx:206 pkg/shell/nav.jsx:159
+#: pkg/lib/cockpit-components-typeahead-select.tsx:206 pkg/shell/nav.jsx:163
 msgid "No results found"
 msgstr "Tuloksia ei löytynyt"
 
@@ -6427,9 +6430,9 @@ msgstr "Etäkäyttö SSH:n välityksellä"
 msgid "Removals:"
 msgstr "Poistot:"
 
-#: pkg/systemd/timer-dialog.jsx:361 pkg/apps/application.jsx:50
+#: pkg/systemd/timer-dialog.jsx:361 pkg/apps/application.jsx:49
 #: pkg/users/authorized-keys-panel.js:142
-#: pkg/users/authorized-keys-panel.js:150 pkg/shell/hosts.jsx:201
+#: pkg/users/authorized-keys-panel.js:150 pkg/shell/hosts.jsx:200
 #: pkg/storaged/lvm2/volume-group.jsx:326
 #: pkg/storaged/lvm2/physical-volume.jsx:88 pkg/storaged/nfs/nfs.jsx:315
 #: pkg/storaged/mdraid/mdraid-disk.jsx:98 pkg/storaged/crypto/keyslots.jsx:651
@@ -6492,7 +6495,7 @@ msgstr "Poista palvelu $0"
 msgid "Remove zone $0"
 msgstr "Poista vyöhyke $0"
 
-#: pkg/apps/application.jsx:44
+#: pkg/apps/application.jsx:43
 msgid "Removing"
 msgstr "Poistetaan"
 
@@ -7519,7 +7522,7 @@ msgstr "Pysäytä ja irrota"
 msgid "Stop device"
 msgstr "Pysäytä laite"
 
-#: pkg/shell/hosts.jsx:248
+#: pkg/shell/hosts.jsx:247
 msgid "Stop editing hosts"
 msgstr "Lopeta koneiden muokkaaminen"
 
@@ -7720,7 +7723,7 @@ msgstr "Synkronoidaan"
 msgid "Synchronizing MDRAID device $target"
 msgstr "Synkronoidaan MDRAID-laitetta $target"
 
-#: pkg/systemd/services.jsx:912 pkg/shell/nav.jsx:48 pkg/shell/nav.jsx:348
+#: pkg/systemd/services.jsx:912 pkg/shell/nav.jsx:48 pkg/shell/nav.jsx:355
 msgid "System"
 msgstr "Järjestelmä"
 
@@ -8143,7 +8146,7 @@ msgstr "Käyttäjällä $0 ei ole oikeutta muokata kryptografisia käytäntöjä
 msgid "The user $0 is not permitted to test crash the kernel"
 msgstr "Käyttäjällä <b>$0</b> ei ole oikeutta hallita palvelimia"
 
-#: pkg/users/account-details.js:466
+#: pkg/users/account-details.js:442
 msgid ""
 "The user must log out and log back in for the new configuration to take "
 "effect."
@@ -8531,7 +8534,7 @@ msgstr "Vaihda suodattimet"
 msgid "Too much data"
 msgstr "Liian paljon dataa"
 
-#: pkg/shell/nav.jsx:351
+#: pkg/shell/nav.jsx:358
 msgid "Tools"
 msgstr "Työkalut"
 
@@ -8786,7 +8789,7 @@ msgstr "Ei käytettävissä"
 msgid "Unavailable packages"
 msgstr "Ei käytettävissä olevia paketteja"
 
-#: pkg/users/account-details.js:467
+#: pkg/users/account-details.js:443
 msgid "Undo"
 msgstr "Kumoa"
 
@@ -8832,7 +8835,7 @@ msgstr "Tuntematon \"$0\""
 msgid "Unknown ($0)"
 msgstr "Tuntematon ($0)"
 
-#: pkg/apps/application.jsx:103
+#: pkg/apps/application.jsx:102
 msgid "Unknown application"
 msgstr "Tuntematon sovellus"
 
@@ -9222,7 +9225,7 @@ msgstr "Tarkastele tietoja ja historiaa"
 msgid "View per-disk throughput"
 msgstr "Näytä levykohtainen suorituskyky"
 
-#: pkg/apps/application.jsx:71
+#: pkg/apps/application.jsx:70
 msgid "View project website"
 msgstr "Näytä projektin verkkosivusto"
 
@@ -9291,7 +9294,7 @@ msgstr "Odotetaan lisätietoja..."
 msgid "Waiting for input…"
 msgstr "Odotetaan syötettä…"
 
-#: pkg/apps/utils.jsx:56
+#: pkg/apps/utils.tsx:79
 msgid "Waiting for other programs to finish using the package manager..."
 msgstr "Odotetaan muiden ohjelmien paketinhallinnan käyttämisen päättymistä..."
 
@@ -10416,6 +10419,9 @@ msgstr "yum"
 #: pkg/networkmanager/manifest.json:0
 msgid "zone"
 msgstr "vyöhyke"
+
+#~ msgid "Checking for new applications"
+#~ msgstr "Etsitään uusia sovelluksia"
 
 #~ msgid "Authentication failed: Server closed connection"
 #~ msgstr "Tunnistautuminen epäonnistui: Palvelin sulki yhteyden"

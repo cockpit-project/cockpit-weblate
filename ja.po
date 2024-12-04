@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-02 03:06+0000\n"
+"POT-Creation-Date: 2024-12-04 03:06+0000\n"
 "PO-Revision-Date: 2024-11-03 12:38+0000\n"
 "Last-Translator: Inci sakura <incisakura@icloud.com>\n"
 "Language-Team: Japanese <https://translate.fedoraproject.org/projects/"
@@ -773,7 +773,7 @@ msgstr "キーサーバーの追加"
 msgid "Add member"
 msgstr "メンバーの追加"
 
-#: pkg/shell/hosts.jsx:209 pkg/shell/hosts_dialog.jsx:446
+#: pkg/shell/hosts.jsx:208 pkg/shell/hosts_dialog.jsx:446
 msgid "Add new host"
 msgstr "新規ホストの追加"
 
@@ -1047,7 +1047,7 @@ msgid "Application information is missing"
 msgstr "アプリケーション情報が見つかりません"
 
 #: pkg/apps/index.html:23 pkg/apps/application-list.jsx:174
-#: pkg/apps/application.jsx:146 pkg/apps/manifest.json:0
+#: pkg/apps/application.jsx:145 pkg/apps/manifest.json:0
 msgid "Applications"
 msgstr "アプリケーション"
 
@@ -1087,7 +1087,7 @@ msgstr "アップデートの適用に失敗しました"
 msgid "Appropriate for critical mounts, such as /var"
 msgstr "/var などの重要なマウントに適しています"
 
-#: pkg/shell/nav.jsx:345
+#: pkg/shell/nav.jsx:352
 msgid "Apps"
 msgstr "アプリ"
 
@@ -1422,7 +1422,7 @@ msgstr ""
 #: pkg/networkmanager/dialogs-common.jsx:152
 #: pkg/networkmanager/firewall.jsx:613 pkg/networkmanager/firewall.jsx:814
 #: pkg/networkmanager/firewall.jsx:913 pkg/kdump/kdump-view.jsx:235
-#: pkg/apps/utils.jsx:69 pkg/lib/cockpit-components-shutdown.jsx:193
+#: pkg/apps/utils.tsx:92 pkg/lib/cockpit-components-shutdown.jsx:193
 #: pkg/lib/cockpit-components-dialog.jsx:131
 #: pkg/lib/cockpit-connect-ssh.tsx:180 pkg/lib/cockpit-connect-ssh.tsx:491
 #: pkg/packagekit/autoupdates.jsx:400 pkg/packagekit/updates.jsx:541
@@ -1617,10 +1617,6 @@ msgstr "$0 パッケージの確認中"
 msgid "Checking for NBDE support in the initrd"
 msgstr "initrd での NBDE サポートの確認中"
 
-#: pkg/apps/application-list.jsx:148
-msgid "Checking for new applications"
-msgstr "新しいアプリケーションの確認中"
-
 #: pkg/packagekit/updates.jsx:1389
 msgid "Checking for package updates..."
 msgstr "パッケージの更新を確認しています..."
@@ -1662,7 +1658,13 @@ msgstr "すべてのフィルターの消去"
 msgid "Clear filter"
 msgstr "フィルターを外す"
 
-#: pkg/shell/nav.jsx:160
+#: pkg/lib/cockpit-components-multi-typeahead-select.tsx:347
+#, fuzzy
+#| msgid "Clear filter"
+msgid "Clear input value"
+msgstr "フィルターを外す"
+
+#: pkg/shell/nav.jsx:164
 msgid "Clear search"
 msgstr "検索の消去"
 
@@ -1676,7 +1678,7 @@ msgstr "クライアントソフトウェア"
 
 #: pkg/systemd/overview-cards/configurationCard.jsx:195
 #: pkg/systemd/overview-cards/realmd.jsx:278
-#: pkg/networkmanager/interfaces.js:43 pkg/apps/utils.jsx:87
+#: pkg/networkmanager/interfaces.js:43 pkg/apps/utils.tsx:112
 #: pkg/lib/cockpit-components-terminal.jsx:241
 #: pkg/lib/cockpit-components-modifications.jsx:76
 #: pkg/lib/cockpit-connect-ssh.tsx:515 pkg/users/dialog-utils.js:58
@@ -1932,7 +1934,7 @@ msgstr "dbus への接続に失敗しました: $0"
 msgid "Connecting to the machine"
 msgstr "マシンへ接続中"
 
-#: pkg/shell/hosts.jsx:194
+#: pkg/shell/hosts.jsx:193
 msgid "Connection error"
 msgstr "接続エラー"
 
@@ -1956,7 +1958,7 @@ msgstr "構成するもの"
 msgid "Contacted domain"
 msgstr "接続されたドメイン"
 
-#: pkg/shell/nav.jsx:232
+#: pkg/shell/nav.jsx:237
 msgid "Contains:"
 msgstr "次を含む:"
 
@@ -2805,7 +2807,7 @@ msgstr "EFI システムパーティション"
 
 #: pkg/networkmanager/firewall.jsx:115 pkg/kdump/kdump-view.jsx:488
 #: pkg/packagekit/autoupdates.jsx:533 pkg/packagekit/kpatch.jsx:234
-#: pkg/shell/hosts.jsx:198 pkg/shell/nav.jsx:358 pkg/storaged/nfs/nfs.jsx:312
+#: pkg/shell/hosts.jsx:197 pkg/shell/nav.jsx:365 pkg/storaged/nfs/nfs.jsx:312
 #: pkg/storaged/crypto/keyslots.jsx:763
 msgid "Edit"
 msgstr "編集"
@@ -2842,7 +2844,7 @@ msgstr "$0 ゾーンでカスタムサービスを編集する"
 msgid "Edit host"
 msgstr "ホストを編集する"
 
-#: pkg/shell/hosts.jsx:248
+#: pkg/shell/hosts.jsx:247
 msgid "Edit hosts"
 msgstr "ホストを編集する"
 
@@ -3022,7 +3024,7 @@ msgid "Errata"
 msgstr "エラータ"
 
 #: pkg/systemd/services.jsx:224 pkg/systemd/service-details.jsx:274
-#: pkg/apps/utils.jsx:81 pkg/storaged/overview/overview.jsx:94
+#: pkg/apps/utils.tsx:106 pkg/storaged/overview/overview.jsx:94
 #: pkg/storaged/multipath.jsx:60 pkg/storaged/storage-controls.jsx:105
 #: pkg/storaged/storage-controls.jsx:158 pkg/sosreport/sosreport.jsx:396
 msgid "Error"
@@ -3387,7 +3389,7 @@ msgstr "生成しました"
 msgid "Go to $0"
 msgstr "$0 に移動"
 
-#: pkg/apps/application.jsx:109
+#: pkg/apps/application.jsx:108
 msgid "Go to application"
 msgstr "アプリケーションへ移動"
 
@@ -3411,7 +3413,7 @@ msgstr "グループ"
 msgid "Group name"
 msgstr "グループ名"
 
-#: pkg/users/account-details.js:440 pkg/users/accounts-list.js:313
+#: pkg/users/account-details.js:419 pkg/users/accounts-list.js:313
 #: pkg/users/accounts-list.js:317
 msgid "Groups"
 msgstr "グループ"
@@ -3507,7 +3509,7 @@ msgstr "履歴パッケージ数"
 msgid "Home directory"
 msgstr "ホームディレクトリー"
 
-#: pkg/shell/hosts.jsx:225 pkg/shell/hosts_dialog.jsx:450
+#: pkg/shell/hosts.jsx:224 pkg/shell/hosts_dialog.jsx:450
 msgid "Host"
 msgstr "ホスト"
 
@@ -3531,7 +3533,7 @@ msgstr "ホストキーが不明です"
 msgid "Hostname"
 msgstr "ホスト名"
 
-#: pkg/shell/hosts.jsx:183
+#: pkg/shell/hosts.jsx:182
 msgid "Hosts"
 msgstr "ホスト"
 
@@ -3728,7 +3730,7 @@ msgstr "初期化中..."
 msgid "Insights: "
 msgstr "Insights: "
 
-#: pkg/apps/application-list.jsx:196 pkg/apps/application.jsx:52
+#: pkg/apps/application-list.jsx:196 pkg/apps/application.jsx:51
 #: pkg/lib/cockpit-components-install-dialog.jsx:126
 #: pkg/packagekit/kpatch.jsx:250
 msgid "Install"
@@ -3792,7 +3794,7 @@ msgstr ""
 msgid "Installed"
 msgstr "インストール済み"
 
-#: pkg/apps/application.jsx:40 pkg/packagekit/updates.jsx:105
+#: pkg/apps/application.jsx:39 pkg/packagekit/updates.jsx:105
 msgid "Installing"
 msgstr "インストール中"
 
@@ -5087,7 +5089,7 @@ msgstr "遅延なし"
 msgid "No description available"
 msgstr "利用可能な説明はありません"
 
-#: pkg/apps/application.jsx:85
+#: pkg/apps/application.jsx:84
 msgid "No description provided."
 msgstr "説明が入力されていません。"
 
@@ -5145,7 +5147,7 @@ msgstr "グループ名が指定されていません"
 msgid "No host keys found."
 msgstr "ホストキーが見つかりません。"
 
-#: pkg/apps/utils.jsx:77
+#: pkg/apps/utils.tsx:102
 msgid "No installation package found for this application."
 msgstr "このアプリケーションのインストールパッケージが見つかりませんでした。"
 
@@ -5199,8 +5201,9 @@ msgstr "物理ボリュームが見つかりません"
 msgid "No real name specified"
 msgstr "実際の名前が指定されていません"
 
+#: pkg/lib/cockpit-components-multi-typeahead-select.tsx:117
 #: pkg/lib/cockpit-components-typeahead-select.tsx:205
-#: pkg/lib/cockpit-components-typeahead-select.tsx:206 pkg/shell/nav.jsx:159
+#: pkg/lib/cockpit-components-typeahead-select.tsx:206 pkg/shell/nav.jsx:163
 msgid "No results found"
 msgstr "結果が見つかりません"
 
@@ -6265,9 +6268,9 @@ msgstr "SSH 経由のリモート、$0"
 msgid "Removals:"
 msgstr "削除:"
 
-#: pkg/systemd/timer-dialog.jsx:361 pkg/apps/application.jsx:50
+#: pkg/systemd/timer-dialog.jsx:361 pkg/apps/application.jsx:49
 #: pkg/users/authorized-keys-panel.js:142
-#: pkg/users/authorized-keys-panel.js:150 pkg/shell/hosts.jsx:201
+#: pkg/users/authorized-keys-panel.js:150 pkg/shell/hosts.jsx:200
 #: pkg/storaged/lvm2/volume-group.jsx:326
 #: pkg/storaged/lvm2/physical-volume.jsx:88 pkg/storaged/nfs/nfs.jsx:315
 #: pkg/storaged/mdraid/mdraid-disk.jsx:98 pkg/storaged/crypto/keyslots.jsx:651
@@ -6328,7 +6331,7 @@ msgstr "サービス $0 を削除します"
 msgid "Remove zone $0"
 msgstr "ゾーン $0 を削除します"
 
-#: pkg/apps/application.jsx:44
+#: pkg/apps/application.jsx:43
 msgid "Removing"
 msgstr "削除中"
 
@@ -7330,7 +7333,7 @@ msgstr "停止してアンマウント"
 msgid "Stop device"
 msgstr "デバイスの停止"
 
-#: pkg/shell/hosts.jsx:248
+#: pkg/shell/hosts.jsx:247
 msgid "Stop editing hosts"
 msgstr "ホストの編集を停止"
 
@@ -7519,7 +7522,7 @@ msgstr "同期中"
 msgid "Synchronizing MDRAID device $target"
 msgstr "MDRAID デバイス $target の同期"
 
-#: pkg/systemd/services.jsx:912 pkg/shell/nav.jsx:48 pkg/shell/nav.jsx:348
+#: pkg/systemd/services.jsx:912 pkg/shell/nav.jsx:48 pkg/shell/nav.jsx:355
 msgid "System"
 msgstr "システム"
 
@@ -7926,7 +7929,7 @@ msgstr "ユーザー $0 は、暗号化ポリシーの変更を許可されて�
 msgid "The user $0 is not permitted to test crash the kernel"
 msgstr "ユーザー $0 は、カーネルクラッシュのテストを許可されていません"
 
-#: pkg/users/account-details.js:466
+#: pkg/users/account-details.js:442
 msgid ""
 "The user must log out and log back in for the new configuration to take "
 "effect."
@@ -8310,7 +8313,7 @@ msgstr "フィルターの切り替え"
 msgid "Too much data"
 msgstr "データが多すぎます"
 
-#: pkg/shell/nav.jsx:351
+#: pkg/shell/nav.jsx:358
 msgid "Tools"
 msgstr "ツール"
 
@@ -8559,7 +8562,7 @@ msgstr "利用できません"
 msgid "Unavailable packages"
 msgstr "利用できないパッケージ"
 
-#: pkg/users/account-details.js:467
+#: pkg/users/account-details.js:443
 msgid "Undo"
 msgstr "元に戻す"
 
@@ -8603,7 +8606,7 @@ msgstr "不明な \"$0\""
 msgid "Unknown ($0)"
 msgstr "不明な ($0)"
 
-#: pkg/apps/application.jsx:103
+#: pkg/apps/application.jsx:102
 msgid "Unknown application"
 msgstr "不明なアプリケーション"
 
@@ -8978,7 +8981,7 @@ msgstr "メトリックスおよび履歴の表示"
 msgid "View per-disk throughput"
 msgstr "ディスクごとのスループットの表示"
 
-#: pkg/apps/application.jsx:71
+#: pkg/apps/application.jsx:70
 msgid "View project website"
 msgstr "プロジェクト Web サイトの表示"
 
@@ -9042,7 +9045,7 @@ msgstr "詳細を待機中..."
 msgid "Waiting for input…"
 msgstr "入力を待機中…"
 
-#: pkg/apps/utils.jsx:56
+#: pkg/apps/utils.tsx:79
 msgid "Waiting for other programs to finish using the package manager..."
 msgstr ""
 "パッケージマネージャーを使用して、その他のプログラムを終了するのを待機中..."
@@ -10137,6 +10140,9 @@ msgstr "yum"
 #: pkg/networkmanager/manifest.json:0
 msgid "zone"
 msgstr "ゾーン"
+
+#~ msgid "Checking for new applications"
+#~ msgstr "新しいアプリケーションの確認中"
 
 #~ msgid "Authentication failed: Server closed connection"
 #~ msgstr "認証に失敗しました: サーバーの接続が切断されました"

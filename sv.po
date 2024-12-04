@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-02 03:06+0000\n"
+"POT-Creation-Date: 2024-12-04 03:06+0000\n"
 "PO-Revision-Date: 2024-12-02 15:47+0000\n"
 "Last-Translator: Luna Jernberg <bittin@reimu.nl>\n"
 "Language-Team: Swedish <https://translate.fedoraproject.org/projects/cockpit/"
@@ -792,7 +792,7 @@ msgstr "Lägg till nyckelserver"
 msgid "Add member"
 msgstr "Lägg till medlem"
 
-#: pkg/shell/hosts.jsx:209 pkg/shell/hosts_dialog.jsx:446
+#: pkg/shell/hosts.jsx:208 pkg/shell/hosts_dialog.jsx:446
 msgid "Add new host"
 msgstr "Lägg till ny värd"
 
@@ -1067,7 +1067,7 @@ msgid "Application information is missing"
 msgstr "Applikationinformation saknas"
 
 #: pkg/apps/index.html:23 pkg/apps/application-list.jsx:174
-#: pkg/apps/application.jsx:146 pkg/apps/manifest.json:0
+#: pkg/apps/application.jsx:145 pkg/apps/manifest.json:0
 msgid "Applications"
 msgstr "Program"
 
@@ -1107,7 +1107,7 @@ msgstr "Att lägga på uppdateringar misslyckades"
 msgid "Appropriate for critical mounts, such as /var"
 msgstr "Lämplig för kritiska monteringar, såsom /var"
 
-#: pkg/shell/nav.jsx:345
+#: pkg/shell/nav.jsx:352
 msgid "Apps"
 msgstr "Program"
 
@@ -1444,7 +1444,7 @@ msgstr "Hittade inga loggar med dessa filter aktiva."
 #: pkg/networkmanager/dialogs-common.jsx:152
 #: pkg/networkmanager/firewall.jsx:613 pkg/networkmanager/firewall.jsx:814
 #: pkg/networkmanager/firewall.jsx:913 pkg/kdump/kdump-view.jsx:235
-#: pkg/apps/utils.jsx:69 pkg/lib/cockpit-components-shutdown.jsx:193
+#: pkg/apps/utils.tsx:92 pkg/lib/cockpit-components-shutdown.jsx:193
 #: pkg/lib/cockpit-components-dialog.jsx:131
 #: pkg/lib/cockpit-connect-ssh.tsx:180 pkg/lib/cockpit-connect-ssh.tsx:491
 #: pkg/packagekit/autoupdates.jsx:400 pkg/packagekit/updates.jsx:541
@@ -1639,10 +1639,6 @@ msgstr "Söker efter $0 paket"
 msgid "Checking for NBDE support in the initrd"
 msgstr "Söker efter NBDE-stöd i initrd"
 
-#: pkg/apps/application-list.jsx:148
-msgid "Checking for new applications"
-msgstr "Kontrollerar om det finns nya program"
-
 #: pkg/packagekit/updates.jsx:1389
 msgid "Checking for package updates..."
 msgstr "Söker efter programuppdateringar..."
@@ -1684,7 +1680,13 @@ msgstr "Nollställ alla filter"
 msgid "Clear filter"
 msgstr "Rensa filter"
 
-#: pkg/shell/nav.jsx:160
+#: pkg/lib/cockpit-components-multi-typeahead-select.tsx:347
+#, fuzzy
+#| msgid "Clear filter"
+msgid "Clear input value"
+msgstr "Rensa filter"
+
+#: pkg/shell/nav.jsx:164
 msgid "Clear search"
 msgstr "Nollställ sökning"
 
@@ -1698,7 +1700,7 @@ msgstr "Klientprogramvara"
 
 #: pkg/systemd/overview-cards/configurationCard.jsx:195
 #: pkg/systemd/overview-cards/realmd.jsx:278
-#: pkg/networkmanager/interfaces.js:43 pkg/apps/utils.jsx:87
+#: pkg/networkmanager/interfaces.js:43 pkg/apps/utils.tsx:112
 #: pkg/lib/cockpit-components-terminal.jsx:241
 #: pkg/lib/cockpit-components-modifications.jsx:76
 #: pkg/lib/cockpit-connect-ssh.tsx:515 pkg/users/dialog-utils.js:58
@@ -1954,7 +1956,7 @@ msgstr "Anslutningen till dbus misslyckades: $0"
 msgid "Connecting to the machine"
 msgstr "Ansluter till maskinen"
 
-#: pkg/shell/hosts.jsx:194
+#: pkg/shell/hosts.jsx:193
 msgid "Connection error"
 msgstr "Anslutningsfel"
 
@@ -1978,7 +1980,7 @@ msgstr "Består av"
 msgid "Contacted domain"
 msgstr "Kontaktade domänen"
 
-#: pkg/shell/nav.jsx:232
+#: pkg/shell/nav.jsx:237
 msgid "Contains:"
 msgstr "Innehåller:"
 
@@ -2823,7 +2825,7 @@ msgstr "EFI-systempartition"
 
 #: pkg/networkmanager/firewall.jsx:115 pkg/kdump/kdump-view.jsx:488
 #: pkg/packagekit/autoupdates.jsx:533 pkg/packagekit/kpatch.jsx:234
-#: pkg/shell/hosts.jsx:198 pkg/shell/nav.jsx:358 pkg/storaged/nfs/nfs.jsx:312
+#: pkg/shell/hosts.jsx:197 pkg/shell/nav.jsx:365 pkg/storaged/nfs/nfs.jsx:312
 #: pkg/storaged/crypto/keyslots.jsx:763
 msgid "Edit"
 msgstr "Redigera"
@@ -2860,7 +2862,7 @@ msgstr "Redigera anpassad tjänst i $0 zon"
 msgid "Edit host"
 msgstr "Redigera värd"
 
-#: pkg/shell/hosts.jsx:248
+#: pkg/shell/hosts.jsx:247
 msgid "Edit hosts"
 msgstr "Redigera värdar"
 
@@ -3040,7 +3042,7 @@ msgid "Errata"
 msgstr "Errata"
 
 #: pkg/systemd/services.jsx:224 pkg/systemd/service-details.jsx:274
-#: pkg/apps/utils.jsx:81 pkg/storaged/overview/overview.jsx:94
+#: pkg/apps/utils.tsx:106 pkg/storaged/overview/overview.jsx:94
 #: pkg/storaged/multipath.jsx:60 pkg/storaged/storage-controls.jsx:105
 #: pkg/storaged/storage-controls.jsx:158 pkg/sosreport/sosreport.jsx:396
 msgid "Error"
@@ -3405,7 +3407,7 @@ msgstr "Genererad"
 msgid "Go to $0"
 msgstr "Gå till $0"
 
-#: pkg/apps/application.jsx:109
+#: pkg/apps/application.jsx:108
 msgid "Go to application"
 msgstr "Gå till programmet"
 
@@ -3429,7 +3431,7 @@ msgstr "Grupp"
 msgid "Group name"
 msgstr "Gruppnamn"
 
-#: pkg/users/account-details.js:440 pkg/users/accounts-list.js:313
+#: pkg/users/account-details.js:419 pkg/users/accounts-list.js:313
 #: pkg/users/accounts-list.js:317
 msgid "Groups"
 msgstr "Grupper"
@@ -3525,7 +3527,7 @@ msgstr "Historiepaketantal"
 msgid "Home directory"
 msgstr "Hemkatalog"
 
-#: pkg/shell/hosts.jsx:225 pkg/shell/hosts_dialog.jsx:450
+#: pkg/shell/hosts.jsx:224 pkg/shell/hosts_dialog.jsx:450
 msgid "Host"
 msgstr "Värd"
 
@@ -3549,7 +3551,7 @@ msgstr "Värdnyckeln är okänd"
 msgid "Hostname"
 msgstr "Värdnamn"
 
-#: pkg/shell/hosts.jsx:183
+#: pkg/shell/hosts.jsx:182
 msgid "Hosts"
 msgstr "Värdar"
 
@@ -3745,7 +3747,7 @@ msgstr "Initierar …"
 msgid "Insights: "
 msgstr "Detaljer: "
 
-#: pkg/apps/application-list.jsx:196 pkg/apps/application.jsx:52
+#: pkg/apps/application-list.jsx:196 pkg/apps/application.jsx:51
 #: pkg/lib/cockpit-components-install-dialog.jsx:126
 #: pkg/packagekit/kpatch.jsx:250
 msgid "Install"
@@ -3807,7 +3809,7 @@ msgstr ""
 msgid "Installed"
 msgstr "Installerad"
 
-#: pkg/apps/application.jsx:40 pkg/packagekit/updates.jsx:105
+#: pkg/apps/application.jsx:39 pkg/packagekit/updates.jsx:105
 msgid "Installing"
 msgstr "Installerar"
 
@@ -5098,7 +5100,7 @@ msgstr "Ingen fördröjning"
 msgid "No description available"
 msgstr "Ingen beskrivning finns"
 
-#: pkg/apps/application.jsx:85
+#: pkg/apps/application.jsx:84
 msgid "No description provided."
 msgstr "Ingen beskrivning tillhandahållen."
 
@@ -5156,7 +5158,7 @@ msgstr "Inget gruppnamn angivet"
 msgid "No host keys found."
 msgstr "Inga värdnycklar hittade."
 
-#: pkg/apps/utils.jsx:77
+#: pkg/apps/utils.tsx:102
 msgid "No installation package found for this application."
 msgstr "Inget installationspaket hittat för detta program."
 
@@ -5210,8 +5212,9 @@ msgstr "Inga fysiska volymer hittades"
 msgid "No real name specified"
 msgstr "Inget verkligt namn angivet"
 
+#: pkg/lib/cockpit-components-multi-typeahead-select.tsx:117
 #: pkg/lib/cockpit-components-typeahead-select.tsx:205
-#: pkg/lib/cockpit-components-typeahead-select.tsx:206 pkg/shell/nav.jsx:159
+#: pkg/lib/cockpit-components-typeahead-select.tsx:206 pkg/shell/nav.jsx:163
 msgid "No results found"
 msgstr "Inga resultat funna"
 
@@ -6273,9 +6276,9 @@ msgstr "Fjärr över SSH, $0"
 msgid "Removals:"
 msgstr "Borttagningar:"
 
-#: pkg/systemd/timer-dialog.jsx:361 pkg/apps/application.jsx:50
+#: pkg/systemd/timer-dialog.jsx:361 pkg/apps/application.jsx:49
 #: pkg/users/authorized-keys-panel.js:142
-#: pkg/users/authorized-keys-panel.js:150 pkg/shell/hosts.jsx:201
+#: pkg/users/authorized-keys-panel.js:150 pkg/shell/hosts.jsx:200
 #: pkg/storaged/lvm2/volume-group.jsx:326
 #: pkg/storaged/lvm2/physical-volume.jsx:88 pkg/storaged/nfs/nfs.jsx:315
 #: pkg/storaged/mdraid/mdraid-disk.jsx:98 pkg/storaged/crypto/keyslots.jsx:651
@@ -6336,7 +6339,7 @@ msgstr "Ta bort tjänst $0"
 msgid "Remove zone $0"
 msgstr "Ta bort zon $0"
 
-#: pkg/apps/application.jsx:44
+#: pkg/apps/application.jsx:43
 msgid "Removing"
 msgstr "Tar bort"
 
@@ -7342,7 +7345,7 @@ msgstr "Stoppa och avmontera"
 msgid "Stop device"
 msgstr "Stoppa enhet"
 
-#: pkg/shell/hosts.jsx:248
+#: pkg/shell/hosts.jsx:247
 msgid "Stop editing hosts"
 msgstr "Sluta redigera värdar"
 
@@ -7531,7 +7534,7 @@ msgstr "Synkroniserar"
 msgid "Synchronizing MDRAID device $target"
 msgstr "Synkroniserar MDRAID-enheten $target"
 
-#: pkg/systemd/services.jsx:912 pkg/shell/nav.jsx:48 pkg/shell/nav.jsx:348
+#: pkg/systemd/services.jsx:912 pkg/shell/nav.jsx:48 pkg/shell/nav.jsx:355
 msgid "System"
 msgstr "System"
 
@@ -7941,7 +7944,7 @@ msgstr "Användaren $0 har inte rättighet att ändra kryptografisk policy"
 msgid "The user $0 is not permitted to test crash the kernel"
 msgstr "Användaren $0 har inte tillåtelse att testa att krascha kärnan"
 
-#: pkg/users/account-details.js:466
+#: pkg/users/account-details.js:442
 msgid ""
 "The user must log out and log back in for the new configuration to take "
 "effect."
@@ -8326,7 +8329,7 @@ msgstr "Växla filter"
 msgid "Too much data"
 msgstr "För mycket data"
 
-#: pkg/shell/nav.jsx:351
+#: pkg/shell/nav.jsx:358
 msgid "Tools"
 msgstr "Verktyg"
 
@@ -8572,7 +8575,7 @@ msgstr "Otillgänglig"
 msgid "Unavailable packages"
 msgstr "Otillgängliga paket"
 
-#: pkg/users/account-details.js:467
+#: pkg/users/account-details.js:443
 msgid "Undo"
 msgstr "Ångra"
 
@@ -8616,7 +8619,7 @@ msgstr "Okänt ”$0”"
 msgid "Unknown ($0)"
 msgstr "Okänt ($0)"
 
-#: pkg/apps/application.jsx:103
+#: pkg/apps/application.jsx:102
 msgid "Unknown application"
 msgstr "Okänt program"
 
@@ -8992,7 +8995,7 @@ msgstr "Visa mätvärden och historik"
 msgid "View per-disk throughput"
 msgstr "Visa per disk genomströmning"
 
-#: pkg/apps/application.jsx:71
+#: pkg/apps/application.jsx:70
 msgid "View project website"
 msgstr "Visa projektwebbsajt"
 
@@ -9056,7 +9059,7 @@ msgstr "Väntar på detaljer …"
 msgid "Waiting for input…"
 msgstr "Väntar på inmatning…"
 
-#: pkg/apps/utils.jsx:56
+#: pkg/apps/utils.tsx:79
 msgid "Waiting for other programs to finish using the package manager..."
 msgstr "Väntar på att andra program skall sluta använda pakethanteraren …"
 
@@ -10153,6 +10156,9 @@ msgstr "yum"
 #: pkg/networkmanager/manifest.json:0
 msgid "zone"
 msgstr "zon"
+
+#~ msgid "Checking for new applications"
+#~ msgstr "Kontrollerar om det finns nya program"
 
 #~ msgid "Authentication failed: Server closed connection"
 #~ msgstr "Autentiseringen misslyckades: servern stängde ner förbindelsen"
