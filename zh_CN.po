@@ -20,8 +20,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-02-28 03:00+0000\n"
-"PO-Revision-Date: 2024-09-07 12:38+0000\n"
-"Last-Translator: Jelle van der Waa <jvanderw@redhat.com>\n"
+"PO-Revision-Date: 2025-02-28 05:37+0000\n"
+"Last-Translator: Martin Pitt <mpitt@redhat.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
 "projects/cockpit/main/zh_CN/>\n"
 "Language: zh_CN\n"
@@ -29,11 +29,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.7.2\n"
+"X-Generator: Weblate 5.10\n"
 
 #: pkg/users/accounts-list.js:231
 msgid "# of users"
-msgstr "用户数"
+msgstr "# 用户数"
 
 #: pkg/metrics/metrics.jsx:670
 msgid "$0 CPU"
@@ -108,10 +108,8 @@ msgid "$0 documentation"
 msgstr "$0 份文档"
 
 #: pkg/systemd/terminal.jsx:166
-#, fuzzy
-#| msgid "This image does not exist."
 msgid "$0 does not exist"
-msgstr "该镜像不存在。"
+msgstr "$0 不存在"
 
 #: pkg/static/login.js:469 pkg/static/login.js:1053
 msgid "$0 error"
@@ -119,16 +117,16 @@ msgstr "$0 个错误"
 
 #: pkg/lib/cockpit.js:1224
 msgid "$0 exited with code $1"
-msgstr "进程 $0 已退出，返回码为 $1"
+msgstr "$0 退出，返回码为 $1"
 
 #: pkg/lib/cockpit.js:1226
 msgid "$0 failed"
-msgstr "进程 $0 运行时出错"
+msgstr "$0 失败"
 
 #: pkg/systemd/overview-cards/lastLogin.tsx:119
 msgid "$0 failed login attempt"
 msgid_plural "$0 failed login attempts"
-msgstr[0] "$0 次登录失败"
+msgstr[0] "$0 尝试登录失败"
 
 #: pkg/storaged/filesystem/filesystem.jsx:91
 msgid "$0 filesystem"
@@ -168,10 +166,8 @@ msgid "$0 is in use"
 msgstr "$0 正在使用"
 
 #: pkg/systemd/terminal.jsx:162
-#, fuzzy
-#| msgid "Path to directory"
 msgid "$0 is not a directory"
-msgstr "指向目录的路径"
+msgstr "$0 不是目录"
 
 #: pkg/lib/cockpit-components-install-dialog.jsx:160
 #: pkg/storaged/lvm2/create-logical-volume-dialog.jsx:35
@@ -567,9 +563,8 @@ msgstr ""
 msgid ""
 "A new SSH key at $0 will be created for $1 on $2 and it will be added to the "
 "$3 file of $4 on $5."
-msgstr ""
-"将在 $2 上为 $1 在 $0 处创建一个新的 SSH 密钥，该密钥将被添加到 $5 上 $4 的"
-"$3 文件中。"
+msgstr "将在 $2 上为 $1 在 $0 处创建一个新的 SSH 密钥，该密钥将在 $5 上被添加到 $4 "
+"的 $3 文件中。"
 
 #: pkg/packagekit/updates.jsx:1529
 msgid "A package needs a system reboot for the updates to take effect:"
@@ -987,17 +982,15 @@ msgstr "所有更新"
 
 #: pkg/lib/machine-info.js:72
 msgid "All-in-one"
-msgstr "一体机"
+msgstr "一体化"
 
 #: pkg/storaged/stratis/pool.jsx:558
-#, fuzzy
-#| msgid "Allowed IPs"
 msgid "Allocated"
-msgstr "白名单IP地址"
+msgstr "已分配"
 
 #: pkg/storaged/stratis/pool.jsx:549
 msgid "Allow overprovisioning"
-msgstr ""
+msgstr "允许过度置备"
 
 #: pkg/systemd/service-details.jsx:127
 msgid "Allow running (unmask)"
@@ -1114,10 +1107,8 @@ msgid "At least one disk is needed."
 msgstr "至少需要 1 块磁盘。"
 
 #: pkg/storaged/btrfs/subvolume.jsx:383
-#, fuzzy
-#| msgid "Subvolume needs to be mounted"
 msgid "At least one subvolume needs to be mounted"
-msgstr "需要挂载的子卷"
+msgstr "至少需要挂载一个子卷"
 
 #: pkg/systemd/timer-dialog.jsx:262
 msgid "At minute"
@@ -1356,9 +1347,8 @@ msgid ""
 "By changing the password of the SSH key $0 to the login password of $1 on "
 "$2, the key will be automatically made available and you can log in to $3 "
 "without password in the future."
-msgstr ""
-"通过将 SSH 密钥 $0 的密码改为 $2 上 $1 的登录密码，密钥就会自动可用，您可以以"
-"后不需要密码就可以登陆到 $3 。"
+msgstr "通过将 SSH 密钥 $0 的密码改为 $2 上 $1 的登录密码，密钥会自动可用，"
+"您可以以后不需要密码就可以登陆到 $3 。"
 
 #: pkg/static/login.html:70
 msgid "Bypass browser check"
@@ -1482,10 +1472,8 @@ msgid "Change cryptographic policy"
 msgstr "更改加密策略"
 
 #: pkg/systemd/terminal.jsx:291
-#, fuzzy
-#| msgid "Home directory"
 msgid "Change directory"
-msgstr "家目录"
+msgstr "更改目录"
 
 #: pkg/systemd/overview-cards/configurationCard.jsx:277
 msgid "Change host name"
@@ -1553,7 +1541,7 @@ msgstr "更改分区类型可能会阻止系统引导。"
 msgid ""
 "Changing the directory will forcefully stop the currently running process. "
 "The process can also be stopped manually in the terminal before continuing."
-msgstr ""
+msgstr "更改目录将强制停止当前运行的进程。在继续之前，也可以手动在终端中停止进程。"
 
 #: pkg/networkmanager/interfaces.js:1655
 msgid ""
@@ -1644,10 +1632,8 @@ msgid "Clear filter"
 msgstr "清除过滤器"
 
 #: pkg/lib/cockpit-components-multi-typeahead-select.tsx:350
-#, fuzzy
-#| msgid "Clear filter"
 msgid "Clear input value"
-msgstr "清除过滤器"
+msgstr "清除输入值"
 
 #: pkg/shell/nav.tsx:222
 msgid "Clear search"
@@ -1886,10 +1872,8 @@ msgid "Connect to"
 msgstr "连接到"
 
 #: pkg/shell/hosts_dialog.jsx:262
-#, fuzzy
-#| msgid "Connect to"
 msgid "Connect to $0?"
-msgstr "连接到"
+msgstr "连接到 $0 ？"
 
 #: pkg/static/login.js:730
 msgid "Connect to:"
@@ -1899,7 +1883,8 @@ msgstr "连接到："
 msgid ""
 "Connected hosts can fully control each other. This includes running programs "
 "that could harm your system or steal data. Only connect to trusted machines."
-msgstr ""
+msgstr "连接的主机可以完全相互控制。这包括运行可能会损害您的系统或窃取数据的程序。仅"
+"连接到可信机器。"
 
 #: pkg/selinux/setroubleshoot-view.jsx:329
 msgid "Connecting to SETroubleshoot daemon..."
@@ -2014,10 +1999,8 @@ msgid "Create"
 msgstr "创建"
 
 #: pkg/lib/cockpit-components-file-autocomplete.jsx:177
-#, fuzzy
-#| msgid "Create"
 msgid "Create $0"
-msgstr "创建"
+msgstr "创建 $0"
 
 #: pkg/storaged/overview/overview.jsx:146
 msgid "Create LVM2 volume group"
@@ -3192,10 +3175,8 @@ msgid "Filesystem is locked"
 msgstr "文件系统被锁住"
 
 #: pkg/storaged/btrfs/volume.jsx:129
-#, fuzzy
-#| msgid "Filesystem is locked"
 msgid "Filesystem is mounted read-only"
-msgstr "文件系统被锁住"
+msgstr "文件系统被挂载为只读"
 
 #: pkg/storaged/filesystem/filesystem.jsx:117
 msgid "Filesystem name"
@@ -3455,26 +3436,20 @@ msgid "Host"
 msgstr "主机"
 
 #: pkg/static/login.js:1022
-#, fuzzy
-#| msgid "unknown"
 msgid "Host is unknown"
-msgstr "未知"
+msgstr "主机未知"
 
 #: pkg/lib/cockpit.js:2420
 msgid "Host key is incorrect"
 msgstr "主机密钥不正确"
 
 #: pkg/static/login.js:1033
-#, fuzzy
-#| msgid "Refusing to connect. Hostkey does not match"
 msgid "Hostkey does not match"
-msgstr "拒绝连接。主机密钥不匹配"
+msgstr "HostKey 不匹配"
 
 #: pkg/static/login.js:1020
-#, fuzzy
-#| msgid "Host key is incorrect"
 msgid "Hostkey is unknown"
-msgstr "主机密钥不正确"
+msgstr "HostKey 未知"
 
 #: pkg/systemd/overview-cards/configurationCard.jsx:66
 msgid "Hostname"
@@ -3679,10 +3654,8 @@ msgid "Install NFS support"
 msgstr "安装 NFS 支持"
 
 #: pkg/metrics/metrics.jsx:1823
-#, fuzzy
-#| msgid "Install NFS support"
 msgid "Install PCP support"
-msgstr "安装 NFS 支持"
+msgstr "安装 PCP 支持"
 
 #: pkg/storaged/overview/overview.jsx:121
 msgid "Install Stratis support"
@@ -3724,7 +3697,8 @@ msgstr "安装 $0 软件包。"
 msgid ""
 "Install the cockpit-system package (and optionally other cockpit packages) "
 "on $0 to enable web console access."
-msgstr ""
+msgstr "在 $0 上安装 cockpit-system 软件包（以及其他 cockpit 软件包）以启用 Web "
+"控制台访问。"
 
 #: pkg/packagekit/updates.jsx:111
 msgid "Installed"
@@ -3773,10 +3747,8 @@ msgid "Internal error: Invalid challenge header"
 msgstr "内部错误：无效的挑战字头部"
 
 #: pkg/static/login.js:868
-#, fuzzy
-#| msgid "Internal error"
 msgid "Internal protocol error"
-msgstr "内部错误"
+msgstr "内部协议错误"
 
 #: pkg/systemd/services.jsx:253
 msgid "Invalid"
@@ -4094,16 +4066,12 @@ msgid "Limit access"
 msgstr "限制访问"
 
 #: pkg/storaged/stratis/pool.jsx:119
-#, fuzzy
-#| msgid "Limits"
 msgid "Limit size"
-msgstr "限制"
+msgstr "限制大小"
 
 #: pkg/storaged/stratis/filesystem.jsx:213
-#, fuzzy
-#| msgid "Manage filesystem sizes"
 msgid "Limit virtual filesystem size"
-msgstr "管理文件系统大小"
+msgstr "限制虚拟文件系统大小"
 
 #: pkg/shell/superuser.tsx:330
 msgid "Limited access"
@@ -4263,13 +4231,11 @@ msgstr "锁定"
 
 #: pkg/users/lock-account-dialog.js:29
 msgid "Lock $0"
-msgstr "锁定$0"
+msgstr "锁定 $0"
 
 #: pkg/storaged/crypto/actions.jsx:78
-#, fuzzy
-#| msgid "Lock $0"
 msgid "Lock $0?"
-msgstr "锁定$0"
+msgstr "锁定 $0 ?"
 
 #: pkg/users/accounts-list.js:74
 msgid "Lock account"
@@ -5338,7 +5304,7 @@ msgstr ""
 
 #: pkg/storaged/legacy-vdo/legacy-vdo.jsx:240
 msgid "Only $0 of $1 are used."
-msgstr "仅使用 $1 的 $0。"
+msgstr "仅使用了 $1 的 $0。"
 
 #: pkg/systemd/timer-dialog.jsx:164
 msgid "Only alphabets, numbers, : , _ , . , @ , - are allowed"
@@ -5362,7 +5328,7 @@ msgstr "在防火墙中打开 pmproxy 服务以共享指标。"
 
 #: pkg/storaged/jobs-panel.jsx:89
 msgid "Operation '$operation' on $target"
-msgstr "$target 上的操作 '$operation'"
+msgstr "对 $target 的操作 '$operation'"
 
 #: pkg/networkmanager/bridge.jsx:104 pkg/users/account-details.js:263
 #: pkg/storaged/crypto/encryption.jsx:234
@@ -5396,10 +5362,8 @@ msgid "Out"
 msgstr "出"
 
 #: pkg/storaged/stratis/create-dialog.jsx:112 pkg/storaged/stratis/pool.jsx:547
-#, fuzzy
-#| msgid "version"
 msgid "Overprovisioning"
-msgstr "版本"
+msgstr "过度置备"
 
 #: pkg/metrics/metrics.jsx:2001 pkg/systemd/hwinfo.jsx:309
 #: pkg/systemd/manifest.json:0
@@ -5421,10 +5385,8 @@ msgid "PCI"
 msgstr "PCI"
 
 #: pkg/metrics/metrics.jsx:1822
-#, fuzzy
-#| msgid "Package cockpit-pcp is missing for metrics history"
 msgid "PCP is missing for metrics history"
-msgstr "指标历史记录缺少软件包 cockpit-pcp"
+msgstr "指标历史记录中缺少 PCP"
 
 #: pkg/storaged/dialog.jsx:1455
 msgid "PID"
@@ -5448,7 +5410,7 @@ msgstr "PackageKit 已报告错误码 $0"
 
 #: pkg/static/login.js:1049
 msgid "Packageless session unavailable"
-msgstr ""
+msgstr "无软件包会话不可用"
 
 #: pkg/packagekit/updates.jsx:363
 msgid "Packages"
@@ -6007,14 +5969,12 @@ msgid "Read"
 msgstr "读取"
 
 #: pkg/shell/hosts_dialog.jsx:283
-#, fuzzy
-#| msgid "Read more..."
 msgid "Read more"
-msgstr "了解更多..."
+msgstr "读取更多"
 
 #: pkg/metrics/metrics.jsx:1457 pkg/systemd/hwinfo.jsx:208
 msgid "Read more..."
-msgstr "了解更多..."
+msgstr "读取更多..."
 
 #: pkg/systemd/service-details.jsx:493
 msgid "Read-only"
@@ -6106,10 +6066,8 @@ msgid "Refreshing package information"
 msgstr "刷新软件包信息"
 
 #: pkg/static/login.js:1020 pkg/static/login.js:1022 pkg/static/login.js:1033
-#, fuzzy
-#| msgid "Restoring connection"
 msgid "Refusing to connect"
-msgstr "恢复连接"
+msgstr "拒绝连接"
 
 #: pkg/networkmanager/wireguard.jsx:224
 msgid "Regenerate"
@@ -6201,7 +6159,7 @@ msgstr "移除 $0"
 
 #: pkg/networkmanager/firewall.jsx:972
 msgid "Remove $0 service from $1 zone"
-msgstr "从 $1 区中删除 $0 服务"
+msgstr "从 $1 区域中删除 $0 服务"
 
 #: pkg/storaged/crypto/keyslots.jsx:671 pkg/storaged/stratis/pool.jsx:517
 msgid "Remove $0?"
@@ -6415,8 +6373,8 @@ msgid ""
 "line. For example, append '$1' to $2  in $3 or use your distribution's "
 "kernel argument editor."
 msgstr ""
-"通过在内核命令行中设置 '$0' 选项在引导时保留内存。例如，在 $3 中将 '$1' 附加"
-"到 $2，或使用您使用的发行版本的内核参数编辑器。"
+"通过在内核命令行中设置 '$0' 选项来在引导时保留内存。例如，在 $3 中将 '$1' "
+"追加到 $2，或使用您使用的发行版本的内核参数编辑器。"
 
 #: pkg/kdump/kdump-view.jsx:622
 msgid "Reserved memory"
@@ -6471,7 +6429,7 @@ msgstr "如果正确配置了 kdump，则崩溃结果将通过 $0 复制到 $1 �
 msgid ""
 "Results of the crash will be stored in $0 as $1, if kdump is properly "
 "configured."
-msgstr "如果 kdump 配置正确，崩溃的结果将作为 $1 存储在 $0 中。"
+msgstr "如果 kdump 配置正确，崩溃的结果将在 $0 中被存储为 $1。"
 
 #: pkg/systemd/logs.jsx:252
 msgid "Resume"
@@ -6543,7 +6501,7 @@ msgstr "正在运行"
 
 #: pkg/systemd/terminal.jsx:285
 msgid "Running process prevents directory change"
-msgstr ""
+msgstr "运行进程会防止目录更改"
 
 #: pkg/selinux/manifest.json:0
 #: src/appstream/org.cockpit_project.cockpit_selinux.metainfo.xml.in:5
@@ -6728,17 +6686,15 @@ msgstr "只包括安全更新"
 
 #: pkg/packagekit/autoupdates.jsx:491
 msgid "Security updates will be applied $0 at $1"
-msgstr "将在 $1 的 $0 处应用安全更新"
+msgstr "安全更新将在 $1 的 $0 处应用"
 
 #: pkg/shell/shell-modals.tsx:118
 msgid "Select"
 msgstr "选择"
 
 #: pkg/lib/cockpit-components-typeahead-select.tsx:209
-#, fuzzy
-#| msgid "Select a identifier"
 msgid "Select an option"
-msgstr "选择标识符"
+msgstr "选择一个选项"
 
 #: pkg/networkmanager/ip-settings.jsx:168
 msgid "Select method"
@@ -6779,14 +6735,12 @@ msgid "Server cannot be empty."
 msgstr "名称不能为空。"
 
 #: pkg/static/login.js:1016
-#, fuzzy
-#| msgid "Server has closed the connection."
 msgid "Server closed connection"
-msgstr "服务器关闭了连接。"
+msgstr "服务器关闭了连接"
 
 #: pkg/lib/cockpit.js:2430
 msgid "Server has closed the connection."
-msgstr "服务器关闭了连接。"
+msgstr "服务器已关闭了连接。"
 
 #: pkg/systemd/overview-cards/realmd.jsx:298
 msgid "Server software"
@@ -6834,14 +6788,12 @@ msgid "Set hostname"
 msgstr "设置主机名"
 
 #: pkg/storaged/stratis/pool.jsx:102
-#, fuzzy
-#| msgid "initialize"
 msgid "Set initial size"
-msgstr "初始化"
+msgstr "设置初始大小"
 
 #: pkg/storaged/stratis/filesystem.jsx:205
 msgid "Set limit of virtual filesystem size"
-msgstr ""
+msgstr "设置虚拟文件系统大小的限制"
 
 #: pkg/storaged/partitions/partition.jsx:181
 msgid "Set partition type of $0"
@@ -7671,10 +7623,8 @@ msgid "The last key slot can not be removed"
 msgstr "无法删除最后一个密钥槽"
 
 #: pkg/storaged/btrfs/subvolume.jsx:386
-#, fuzzy
-#| msgid "The last key slot can not be removed"
 msgid "The last mounted subvolume can not be deleted"
-msgstr "无法删除最后一个密钥槽"
+msgstr "最后一次挂载的子卷无法被删除"
 
 #: pkg/storaged/dialog.jsx:1493
 msgid "The listed processes and services will be forcefully stopped."
@@ -7952,12 +7902,11 @@ msgid ""
 msgstr "这个工具配置 SELinux 策略，帮助理解和解决策略违规。"
 
 #: src/appstream/org.cockpit_project.cockpit_kdump.metainfo.xml.in:8
-#, fuzzy
-#| msgid "This tool configures the system to write kernel crash dumps to disk."
 msgid ""
 "This tool configures the system to write kernel crash dumps. It supports the "
 "\"local\" (disk), \"ssh\", and \"nfs\" dump targets."
-msgstr "这个工具配置系统，以将内核崩溃转储写入磁盘。"
+msgstr "这个工具将系统配置为写内核崩溃转储。它支持\"local\" (磁盘)、\"ssh\"和\"nfs\""
+"转储目标。"
 
 #: src/appstream/org.cockpit_project.cockpit_sosreport.metainfo.xml.in:9
 msgid ""
@@ -8305,10 +8254,8 @@ msgid ""
 msgstr "无法登录到 $0 。主机不接受密码登录，或您的任何 SSH 密钥。"
 
 #: pkg/systemd/terminal.jsx:277
-#, fuzzy
-#| msgid "Path to directory"
 msgid "Unable to open directory"
-msgstr "指向目录的路径"
+msgstr "无法打开目录"
 
 #: pkg/storaged/iscsi/create-dialog.jsx:73
 msgid "Unable to reach server"
@@ -8578,10 +8525,8 @@ msgid "Use"
 msgstr "使用"
 
 #: pkg/networkmanager/dialogs-common.jsx:105 pkg/storaged/dialog.jsx:677
-#, fuzzy
-#| msgid "Core $0"
 msgid "Use $0"
-msgstr "内核 $0"
+msgstr "使用 $0"
 
 #: pkg/storaged/lvm2/vdo-pool.jsx:85 pkg/storaged/legacy-vdo/legacy-vdo.jsx:328
 msgid "Use compression"
@@ -8782,20 +8727,16 @@ msgstr "查看内存信息需要管理访问权限。"
 msgid ""
 "Virtual filesystem sizes are larger than the pool. Overprovisioning can not "
 "be disabled."
-msgstr ""
+msgstr "虚拟文件系统大小比池大。无法禁用过度置备。"
 
 #: pkg/storaged/stratis/filesystem.jsx:260
-#, fuzzy
-#| msgid "Virtual Machines"
 msgid "Virtual size"
-msgstr "虚拟机"
+msgstr "虚拟大小"
 
 #: pkg/storaged/stratis/filesystem.jsx:216
 #: pkg/storaged/stratis/filesystem.jsx:262
-#, fuzzy
-#| msgid "Virtual network"
 msgid "Virtual size limit"
-msgstr "虚拟网络"
+msgstr "虚拟大小限制"
 
 #: pkg/lib/cockpit-components-firewalld-request.jsx:117
 #: pkg/lib/cockpit-components-firewalld-request.jsx:153
@@ -8984,10 +8925,8 @@ msgid "You will be logged out in $0 seconds."
 msgstr "您将在$0秒钟后登出。"
 
 #: pkg/shell/hosts_dialog.jsx:266
-#, fuzzy
-#| msgid "You will be logged out in $0 seconds."
 msgid "You will be reminded once per session."
-msgstr "您将在$0秒钟后登出。"
+msgstr "每次会话您都将被提醒一次。"
 
 #: pkg/users/accounts-list.js:176
 msgid "Your account"
@@ -9457,10 +9396,8 @@ msgid "less than a minute ago"
 msgstr "少于一分钟前"
 
 #: pkg/storaged/crypto/actions.jsx:67
-#, fuzzy
-#| msgid "Block"
 msgid "lock"
-msgstr "块"
+msgstr "锁定"
 
 #: pkg/users/manifest.json:0
 msgid "login"
