@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-11 03:01+0000\n"
+"POT-Creation-Date: 2025-03-12 03:01+0000\n"
 "PO-Revision-Date: 2025-02-28 05:37+0000\n"
 "Last-Translator: Martin Pitt <mpitt@redhat.com>\n"
 "Language-Team: Japanese <https://translate.fedoraproject.org/projects/"
@@ -133,6 +133,13 @@ msgstr "$0 空き"
 msgid "$0 hour"
 msgid_plural "$0 hours"
 msgstr[0] "$0 時間"
+
+#: pkg/storaged/drive/smart-details.jsx:169
+#, fuzzy
+#| msgid "$0 hour"
+#| msgid_plural "$0 hours"
+msgid "$0 hours"
+msgstr "$0 時間"
 
 #: pkg/systemd/overview-cards/insights.jsx:202
 msgid "$0 important hit"
@@ -531,6 +538,10 @@ msgstr "9 日"
 msgid "A compatible version of Cockpit is not installed on $0."
 msgstr "Cockpit の互換バージョンが $0 にインストールされていません。"
 
+#: pkg/storaged/drive/smart-details.jsx:57
+msgid "A fatal error occurred during the self-test operation"
+msgstr ""
+
 #: pkg/storaged/stratis/utils.jsx:120
 msgid "A filesystem with this name exists already in this pool."
 msgstr "この名前のファイルシステムは、すでにこのプールに存在します。"
@@ -594,6 +605,34 @@ msgstr "ARP 監視"
 #: pkg/networkmanager/team.jsx:57
 msgid "ARP ping"
 msgstr "ARP ping"
+
+#: pkg/storaged/drive/smart-details.jsx:102
+msgid "Abort test"
+msgstr ""
+
+#: pkg/storaged/drive/smart-details.jsx:41
+msgid "Aborted"
+msgstr ""
+
+#: pkg/storaged/drive/smart-details.jsx:54
+msgid "Aborted by a Controller Level Reset"
+msgstr ""
+
+#: pkg/storaged/drive/smart-details.jsx:55
+msgid "Aborted due to a removal of a namespace from the namespace inventory"
+msgstr ""
+
+#: pkg/storaged/drive/smart-details.jsx:61
+msgid "Aborted due to a sanitize operation"
+msgstr ""
+
+#: pkg/storaged/drive/smart-details.jsx:56
+msgid "Aborted due to the processing of a Format NVM command"
+msgstr ""
+
+#: pkg/storaged/drive/smart-details.jsx:60
+msgid "Aborted for unknown reason"
+msgstr ""
 
 #: pkg/shell/topnav.tsx:174
 msgid "About Web Console"
@@ -979,6 +1018,12 @@ msgstr "すべて"
 msgid "All $0 selected physical volumes are needed for the chosen layout."
 msgstr "選択したレイアウトには、選択した $0 の物理ボリュームがすべて必要です。"
 
+#: pkg/storaged/drive/smart-details.jsx:69
+#, fuzzy
+#| msgid "Device is read-only"
+msgid "All media is in read-only mode"
+msgstr "デバイスは読み取り専用です"
+
 #: pkg/packagekit/autoupdates.jsx:421
 msgid "All updates"
 msgstr "すべてのアップデート"
@@ -1084,7 +1129,7 @@ msgstr "/var などの重要なマウントに適しています"
 msgid "Apps"
 msgstr "アプリ"
 
-#: pkg/storaged/drive/drive.jsx:102
+#: pkg/storaged/drive/smart-details.jsx:165
 msgid "Assessment"
 msgstr "評価"
 
@@ -1128,6 +1173,12 @@ msgstr "特定の時間"
 
 #: pkg/sosreport/sosreport.jsx:505
 msgid "Attributes"
+msgstr "属性"
+
+#: pkg/storaged/drive/smart-details.jsx:185
+#, fuzzy
+#| msgid "Attributes"
+msgid "Attributes failing"
 msgstr "属性"
 
 #: pkg/selinux/setroubleshoot-view.jsx:356
@@ -1456,7 +1507,7 @@ msgstr "realmd がこのシステムで利用できないため、ドメイン�
 msgid "Cannot schedule event in the past"
 msgstr "過去のイベントはスケジュールできません"
 
-#: pkg/storaged/drive/drive.jsx:125 pkg/storaged/lvm2/volume-group.jsx:366
+#: pkg/storaged/drive/drive.jsx:127 pkg/storaged/lvm2/volume-group.jsx:366
 #: pkg/storaged/mdraid/mdraid.jsx:303 pkg/storaged/btrfs/volume.jsx:150
 msgid "Capacity"
 msgstr "容量"
@@ -1797,6 +1848,15 @@ msgstr "すべてのシステムおよびデバイスとの互換性あり (MBR)
 msgid "Compatible with modern system and hard disks > 2TB (GPT)"
 msgstr ""
 "最新のシステムとの互換性があり、ハードディスクが 2TB よりも大きい (GPT)"
+
+#: pkg/storaged/drive/smart-details.jsx:58
+msgid ""
+"Completed with a segment that failed and the segment that failed is not known"
+msgstr ""
+
+#: pkg/storaged/drive/smart-details.jsx:59
+msgid "Completed with one or more failed segments"
+msgstr ""
 
 #: pkg/kdump/kdump-view.jsx:319
 msgid "Compress crash dumps to save space"
@@ -2427,6 +2487,10 @@ msgstr "重複"
 msgid "Default"
 msgstr "デフォルト"
 
+#: pkg/storaged/drive/smart-details.jsx:68
+msgid "Degraded"
+msgstr ""
+
 #: pkg/lib/cockpit-components-shutdown.jsx:201 pkg/systemd/timer-dialog.jsx:200
 #: pkg/systemd/timer-dialog.jsx:209
 msgid "Delay"
@@ -2575,10 +2639,14 @@ msgstr "デバイス"
 msgid "Device contains unrecognized data"
 msgstr "デバイスに識別できないデータがある"
 
-#: pkg/storaged/block/other.jsx:62 pkg/storaged/drive/drive.jsx:132
+#: pkg/storaged/block/other.jsx:62 pkg/storaged/drive/drive.jsx:133
 #: pkg/storaged/legacy-vdo/legacy-vdo.jsx:287
 msgid "Device file"
 msgstr "デバイスファイル"
+
+#: pkg/storaged/drive/drive.jsx:98
+msgid "Device health (SMART)"
+msgstr ""
 
 #: pkg/storaged/partitions/actions.jsx:27 pkg/storaged/block/actions.jsx:28
 msgid "Device is read-only"
@@ -2592,6 +2660,10 @@ msgstr "デバイス番号"
 #: src/appstream/org.cockpit_project.cockpit_sosreport.metainfo.xml.in:5
 msgid "Diagnostic reports"
 msgstr "診断レポート"
+
+#: pkg/storaged/drive/smart-details.jsx:46
+msgid "Did not complete"
+msgstr ""
 
 #: pkg/kdump/kdump-view.jsx:256 pkg/kdump/kdump-view.jsx:277
 #: pkg/kdump/kdump-view.jsx:303
@@ -2648,11 +2720,12 @@ msgstr "切断されています"
 msgid "Disk I/O"
 msgstr "ディスク I/O"
 
-#: pkg/storaged/drive/drive.jsx:106
+#: pkg/storaged/drive/smart-details.jsx:152
 msgid "Disk is OK"
 msgstr "ディスクは OK です"
 
-#: pkg/storaged/drive/drive.jsx:105
+#: pkg/storaged/drive/smart-details.jsx:144
+#: pkg/storaged/drive/smart-details.jsx:148
 msgid "Disk is failing"
 msgstr "ディスクで障害が発生中"
 
@@ -3115,6 +3188,32 @@ msgstr "さらにコモンクライテリアの制限がある FIPS。"
 msgid "Failed"
 msgstr "失敗"
 
+#: pkg/storaged/drive/smart-details.jsx:51
+msgid "Failed (Damaged)"
+msgstr ""
+
+#: pkg/storaged/drive/smart-details.jsx:48
+msgid "Failed (Electrical)"
+msgstr ""
+
+#: pkg/storaged/drive/smart-details.jsx:50
+#, fuzzy
+#| msgid "Failed"
+msgid "Failed (Read)"
+msgstr "失敗"
+
+#: pkg/storaged/drive/smart-details.jsx:49
+#, fuzzy
+#| msgid "Failed"
+msgid "Failed (Servo)"
+msgstr "失敗"
+
+#: pkg/storaged/drive/smart-details.jsx:47
+#, fuzzy
+#| msgid "Unknown"
+msgid "Failed (Unknown)"
+msgstr "不明"
+
 #: pkg/shell/hosts_dialog.jsx:408
 msgid "Failed to add machine: $0"
 msgstr "マシンの追加に失敗しました: $0"
@@ -3268,7 +3367,7 @@ msgstr "ファイアウォール"
 msgid "Firewall is not available"
 msgstr "ファイアウォールは利用できません"
 
-#: pkg/storaged/drive/drive.jsx:122
+#: pkg/storaged/drive/drive.jsx:124
 msgid "Firmware version"
 msgstr "ファームウェアバージョン"
 
@@ -3632,6 +3731,12 @@ msgstr ""
 "$2 のログインパスワードをキーパスワードとして使用するか、キーパスワードを空欄"
 "のままにしてください。"
 
+#: pkg/storaged/drive/smart-details.jsx:42
+#, fuzzy
+#| msgid "Progress: $0"
+msgid "In progress"
+msgstr "進行状況: $0"
+
 #: pkg/storaged/mdraid/mdraid-disk.jsx:69
 msgid "In sync"
 msgstr "同期"
@@ -3810,6 +3915,13 @@ msgstr "内部エラー: 無効なチャレンジヘッダー"
 #: pkg/static/login.js:871
 msgid "Internal protocol error"
 msgstr "内部プロトコル エラー"
+
+#: pkg/storaged/drive/smart-details.jsx:45
+#, fuzzy
+#| msgid "Interface"
+#| msgid_plural "Interfaces"
+msgid "Interrupted"
+msgstr "インターフェース"
 
 #: pkg/systemd/services.jsx:253
 msgid "Invalid"
@@ -4671,7 +4783,7 @@ msgstr "緩和"
 msgid "Mode"
 msgstr "モード"
 
-#: pkg/storaged/drive/drive.jsx:121
+#: pkg/storaged/drive/drive.jsx:123
 #: pkg/systemd/overview-cards/systemInformationCard.jsx:111
 #: pkg/systemd/hwinfo.jsx:279
 msgid "Model"
@@ -4809,7 +4921,7 @@ msgstr ""
 msgid "Multi-system chassis"
 msgstr "マルチシステムシャーシ"
 
-#: pkg/storaged/drive/drive.jsx:135
+#: pkg/storaged/drive/drive.jsx:136
 msgid "Multipathed devices"
 msgstr "マルチパスデバイス"
 
@@ -5145,7 +5257,7 @@ msgstr "ログが見つかりません"
 msgid "No matching results"
 msgstr "一致する結果はありません"
 
-#: pkg/storaged/drive/drive.jsx:128
+#: pkg/storaged/drive/drive.jsx:130
 msgid "No media inserted"
 msgstr "メディアが挿入されていません"
 
@@ -5321,6 +5433,10 @@ msgstr "ノートブック"
 #: pkg/systemd/logs.jsx:70
 msgid "Notice and above"
 msgstr "注意以上のレベル"
+
+#: pkg/storaged/drive/smart-details.jsx:175
+msgid "Number of bad sectors"
+msgstr ""
 
 #: pkg/sosreport/sosreport.jsx:335
 msgid "Obfuscate network addresses, hostnames, and usernames"
@@ -5745,6 +5861,12 @@ msgstr "サブボリューム $0 を完全に削除しますか？"
 msgid "Permission denied"
 msgstr "パーミッションが拒否されました"
 
+#: pkg/storaged/drive/smart-details.jsx:71
+#, fuzzy
+#| msgid "Filesystem is mounted read-only"
+msgid "Persistent memory has become read-only"
+msgstr "ファイルシステムは読み取り専用でマウントされています"
+
 #: pkg/storaged/legacy-vdo/legacy-vdo.jsx:292
 msgid "Physical"
 msgstr "物理"
@@ -5845,6 +5967,10 @@ msgstr "ポータブル"
 #: pkg/networkmanager/bridge.jsx:101 pkg/networkmanager/team.jsx:159
 msgid "Ports"
 msgstr "ポート"
+
+#: pkg/storaged/drive/smart-details.jsx:168
+msgid "Power on hours"
+msgstr ""
 
 #: pkg/storaged/partitions/partition.jsx:124
 msgid "PowerPC PReP boot partition"
@@ -6565,6 +6691,10 @@ msgstr "行の選択"
 msgid "Run at"
 msgstr "実行時刻"
 
+#: pkg/storaged/drive/smart-details.jsx:97
+msgid "Run extended test"
+msgstr ""
+
 #: pkg/sosreport/sosreport.jsx:308
 msgid "Run new report"
 msgstr "新規レポートを実行する"
@@ -6576,6 +6706,12 @@ msgstr "以下で実行"
 #: pkg/sosreport/sosreport.jsx:286 pkg/sosreport/sosreport.jsx:495
 msgid "Run report"
 msgstr "レポートを実行する"
+
+#: pkg/storaged/drive/smart-details.jsx:92
+#, fuzzy
+#| msgid "Run when host boots"
+msgid "Run short test"
+msgstr "ホスト起動時に実行します"
 
 #: pkg/lib/cockpit-connect-ssh.tsx:150 pkg/shell/hosts_dialog.jsx:686
 msgid ""
@@ -6805,13 +6941,19 @@ msgid ""
 msgstr ""
 "論理ボリュームの修復に使用する物理ボリュームを選択します。$0 以上が必要です。"
 
+#: pkg/storaged/drive/smart-details.jsx:171
+#, fuzzy
+#| msgid "SMART self-test of $target"
+msgid "Self-test status"
+msgstr "$target の SMART 自己テスト"
+
 #: pkg/networkmanager/network-interface-members.jsx:209
 #: pkg/networkmanager/network-main.jsx:187
 #: pkg/networkmanager/network-main.jsx:202
 msgid "Sending"
 msgstr "送信中"
 
-#: pkg/storaged/drive/drive.jsx:123
+#: pkg/storaged/drive/drive.jsx:125
 msgid "Serial number"
 msgstr "シリアルナンバー"
 
@@ -7163,6 +7305,10 @@ msgstr "スパニング ツリープロトコル (STP)"
 msgid "Spare"
 msgstr "スペア"
 
+#: pkg/storaged/drive/smart-details.jsx:66
+msgid "Spare capacity is below the threshold"
+msgstr ""
+
 #: pkg/lib/cockpit-components-shutdown.jsx:183
 msgid "Specific time"
 msgstr "特定の時間"
@@ -7367,6 +7513,12 @@ msgstr "サブノート"
 msgid "Subscribing to systemd signals failed: $0"
 msgstr "systemd シグナルへのサブスクライブに失敗しました: $0"
 
+#: pkg/storaged/drive/smart-details.jsx:40
+#, fuzzy
+#| msgid "Logout successful"
+msgid "Successful"
+msgstr "ログアウトが正常に行われました"
+
 #: pkg/systemd/logs.jsx:399
 msgid "Successfully copied to clipboard"
 msgstr "クリップボードへのコピーに成功しました"
@@ -7510,6 +7662,10 @@ msgstr "Team ポート"
 #: pkg/networkmanager/teamport.jsx:82
 msgid "Team port settings"
 msgstr "チームポート設定"
+
+#: pkg/storaged/drive/smart-details.jsx:67
+msgid "Temperature outside of recommended thresholds"
+msgstr ""
 
 #: pkg/systemd/terminal.html:4 pkg/systemd/manifest.json:0
 msgid "Terminal"
@@ -8820,7 +8976,7 @@ msgstr "アドレスの検証"
 msgid "Validating authentication token"
 msgstr "認証トークンの検証"
 
-#: pkg/storaged/drive/drive.jsx:120 pkg/systemd/hwinfo.jsx:280
+#: pkg/storaged/drive/drive.jsx:122 pkg/systemd/hwinfo.jsx:280
 msgid "Vendor"
 msgstr "ベンダー"
 
@@ -8926,6 +9082,10 @@ msgstr "仮想サイズ制限"
 #: pkg/lib/cockpit-components-firewalld-request.jsx:153
 msgid "Visit firewall"
 msgstr "ファイアウォールへのアクセス"
+
+#: pkg/storaged/drive/smart-details.jsx:70
+msgid "Volatile memory backup failed"
+msgstr ""
 
 #: pkg/storaged/lvm2/physical-volume.jsx:108
 msgid "Volume group"
@@ -9038,7 +9198,7 @@ msgstr "\"自動\" に設定されます"
 msgid "WireGuard"
 msgstr "WireGuard"
 
-#: pkg/storaged/drive/drive.jsx:124
+#: pkg/storaged/drive/drive.jsx:126
 msgid "World wide name"
 msgstr "World wide name"
 
@@ -11764,9 +11924,6 @@ msgstr "ゾーン"
 
 #~ msgid "Run unattended installation"
 #~ msgstr "無人インストール実行"
-
-#~ msgid "Run when host boots"
-#~ msgstr "ホスト起動時に実行します"
 
 #~ msgid "SPICE TLS port"
 #~ msgstr "SPICE TLS ポート"

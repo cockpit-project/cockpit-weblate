@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-11 03:01+0000\n"
+"POT-Creation-Date: 2025-03-12 03:01+0000\n"
 "PO-Revision-Date: 2025-02-28 05:37+0000\n"
 "Last-Translator: Martin Pitt <mpitt@redhat.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
@@ -140,6 +140,13 @@ msgstr "$0 可用"
 msgid "$0 hour"
 msgid_plural "$0 hours"
 msgstr[0] "$0 小时"
+
+#: pkg/storaged/drive/smart-details.jsx:169
+#, fuzzy
+#| msgid "$0 hour"
+#| msgid_plural "$0 hours"
+msgid "$0 hours"
+msgstr "$0 小时"
 
 #: pkg/systemd/overview-cards/insights.jsx:202
 msgid "$0 important hit"
@@ -538,6 +545,10 @@ msgstr "9 日"
 msgid "A compatible version of Cockpit is not installed on $0."
 msgstr "主机 $0 上找不到版本兼容的 Cockpit。"
 
+#: pkg/storaged/drive/smart-details.jsx:57
+msgid "A fatal error occurred during the self-test operation"
+msgstr ""
+
 #: pkg/storaged/stratis/utils.jsx:120
 msgid "A filesystem with this name exists already in this pool."
 msgstr "存储池中存在重名文件系统。"
@@ -598,6 +609,34 @@ msgstr "ARP 监控"
 #: pkg/networkmanager/team.jsx:57
 msgid "ARP ping"
 msgstr "ARP ping"
+
+#: pkg/storaged/drive/smart-details.jsx:102
+msgid "Abort test"
+msgstr ""
+
+#: pkg/storaged/drive/smart-details.jsx:41
+msgid "Aborted"
+msgstr ""
+
+#: pkg/storaged/drive/smart-details.jsx:54
+msgid "Aborted by a Controller Level Reset"
+msgstr ""
+
+#: pkg/storaged/drive/smart-details.jsx:55
+msgid "Aborted due to a removal of a namespace from the namespace inventory"
+msgstr ""
+
+#: pkg/storaged/drive/smart-details.jsx:61
+msgid "Aborted due to a sanitize operation"
+msgstr ""
+
+#: pkg/storaged/drive/smart-details.jsx:56
+msgid "Aborted due to the processing of a Format NVM command"
+msgstr ""
+
+#: pkg/storaged/drive/smart-details.jsx:60
+msgid "Aborted for unknown reason"
+msgstr ""
 
 #: pkg/shell/topnav.tsx:174
 msgid "About Web Console"
@@ -977,6 +1016,12 @@ msgstr "所有"
 msgid "All $0 selected physical volumes are needed for the chosen layout."
 msgstr "所选布局需要所有选定的 $0 物理卷。"
 
+#: pkg/storaged/drive/smart-details.jsx:69
+#, fuzzy
+#| msgid "Device is read-only"
+msgid "All media is in read-only mode"
+msgstr "设备只读"
+
 #: pkg/packagekit/autoupdates.jsx:421
 msgid "All updates"
 msgstr "所有更新"
@@ -1081,7 +1126,7 @@ msgstr "适用于关键挂载，如 /var"
 msgid "Apps"
 msgstr "应用程序"
 
-#: pkg/storaged/drive/drive.jsx:102
+#: pkg/storaged/drive/smart-details.jsx:165
 msgid "Assessment"
 msgstr "评估报告"
 
@@ -1125,6 +1170,12 @@ msgstr "在指定时间"
 
 #: pkg/sosreport/sosreport.jsx:505
 msgid "Attributes"
+msgstr "属性"
+
+#: pkg/storaged/drive/smart-details.jsx:185
+#, fuzzy
+#| msgid "Attributes"
+msgid "Attributes failing"
 msgstr "属性"
 
 #: pkg/selinux/setroubleshoot-view.jsx:356
@@ -1449,7 +1500,7 @@ msgstr "无法加入域，因为 realmd 在此系统上不可用"
 msgid "Cannot schedule event in the past"
 msgstr "无法调度以前的事件"
 
-#: pkg/storaged/drive/drive.jsx:125 pkg/storaged/lvm2/volume-group.jsx:366
+#: pkg/storaged/drive/drive.jsx:127 pkg/storaged/lvm2/volume-group.jsx:366
 #: pkg/storaged/mdraid/mdraid.jsx:303 pkg/storaged/btrfs/volume.jsx:150
 msgid "Capacity"
 msgstr "容量"
@@ -1778,6 +1829,15 @@ msgstr "兼容所有系统和设备 (MBR)"
 #: pkg/storaged/partitions/format-disk-dialog.jsx:56
 msgid "Compatible with modern system and hard disks > 2TB (GPT)"
 msgstr "兼容现代系统，且硬盘空间大于 2TB (GPT)"
+
+#: pkg/storaged/drive/smart-details.jsx:58
+msgid ""
+"Completed with a segment that failed and the segment that failed is not known"
+msgstr ""
+
+#: pkg/storaged/drive/smart-details.jsx:59
+msgid "Completed with one or more failed segments"
+msgstr ""
 
 #: pkg/kdump/kdump-view.jsx:319
 msgid "Compress crash dumps to save space"
@@ -2395,6 +2455,10 @@ msgstr "复制"
 msgid "Default"
 msgstr "默认"
 
+#: pkg/storaged/drive/smart-details.jsx:68
+msgid "Degraded"
+msgstr ""
+
 #: pkg/lib/cockpit-components-shutdown.jsx:201 pkg/systemd/timer-dialog.jsx:200
 #: pkg/systemd/timer-dialog.jsx:209
 msgid "Delay"
@@ -2535,10 +2599,14 @@ msgstr "设备"
 msgid "Device contains unrecognized data"
 msgstr "设备包含无法被识别的数据"
 
-#: pkg/storaged/block/other.jsx:62 pkg/storaged/drive/drive.jsx:132
+#: pkg/storaged/block/other.jsx:62 pkg/storaged/drive/drive.jsx:133
 #: pkg/storaged/legacy-vdo/legacy-vdo.jsx:287
 msgid "Device file"
 msgstr "设备文件"
+
+#: pkg/storaged/drive/drive.jsx:98
+msgid "Device health (SMART)"
+msgstr ""
 
 #: pkg/storaged/partitions/actions.jsx:27 pkg/storaged/block/actions.jsx:28
 msgid "Device is read-only"
@@ -2552,6 +2620,10 @@ msgstr "设备号"
 #: src/appstream/org.cockpit_project.cockpit_sosreport.metainfo.xml.in:5
 msgid "Diagnostic reports"
 msgstr "诊断报告"
+
+#: pkg/storaged/drive/smart-details.jsx:46
+msgid "Did not complete"
+msgstr ""
 
 #: pkg/kdump/kdump-view.jsx:256 pkg/kdump/kdump-view.jsx:277
 #: pkg/kdump/kdump-view.jsx:303
@@ -2608,11 +2680,12 @@ msgstr "已断开连接"
 msgid "Disk I/O"
 msgstr "磁盘 I/O"
 
-#: pkg/storaged/drive/drive.jsx:106
+#: pkg/storaged/drive/smart-details.jsx:152
 msgid "Disk is OK"
 msgstr "磁盘良好"
 
-#: pkg/storaged/drive/drive.jsx:105
+#: pkg/storaged/drive/smart-details.jsx:144
+#: pkg/storaged/drive/smart-details.jsx:148
 msgid "Disk is failing"
 msgstr "磁盘失败"
 
@@ -3071,6 +3144,32 @@ msgstr "具有进一步通用标准限制的 FIPS。"
 msgid "Failed"
 msgstr "已失败"
 
+#: pkg/storaged/drive/smart-details.jsx:51
+msgid "Failed (Damaged)"
+msgstr ""
+
+#: pkg/storaged/drive/smart-details.jsx:48
+msgid "Failed (Electrical)"
+msgstr ""
+
+#: pkg/storaged/drive/smart-details.jsx:50
+#, fuzzy
+#| msgid "Failed"
+msgid "Failed (Read)"
+msgstr "已失败"
+
+#: pkg/storaged/drive/smart-details.jsx:49
+#, fuzzy
+#| msgid "Failed"
+msgid "Failed (Servo)"
+msgstr "已失败"
+
+#: pkg/storaged/drive/smart-details.jsx:47
+#, fuzzy
+#| msgid "Unknown"
+msgid "Failed (Unknown)"
+msgstr "未知"
+
 #: pkg/shell/hosts_dialog.jsx:408
 msgid "Failed to add machine: $0"
 msgstr "添加主机失败: $0"
@@ -3223,7 +3322,7 @@ msgstr "防火墙"
 msgid "Firewall is not available"
 msgstr "防火墙不可用"
 
-#: pkg/storaged/drive/drive.jsx:122
+#: pkg/storaged/drive/drive.jsx:124
 msgid "Firmware version"
 msgstr "固件版本"
 
@@ -3580,6 +3679,12 @@ msgstr ""
 "为了以后不需要密码就可以以 $1 身份登录到 $0 ，请使用 $3 上 $2 的登录密码作为"
 "密钥密码，或者将密钥密码留空。"
 
+#: pkg/storaged/drive/smart-details.jsx:42
+#, fuzzy
+#| msgid "Progress: $0"
+msgid "In progress"
+msgstr "进度：$0"
+
 #: pkg/storaged/mdraid/mdraid-disk.jsx:69
 msgid "In sync"
 msgstr "同步中"
@@ -3754,6 +3859,13 @@ msgstr "内部错误：无效的挑战字头部"
 #: pkg/static/login.js:871
 msgid "Internal protocol error"
 msgstr "内部协议错误"
+
+#: pkg/storaged/drive/smart-details.jsx:45
+#, fuzzy
+#| msgid "Interface"
+#| msgid_plural "Interfaces"
+msgid "Interrupted"
+msgstr "接口"
 
 #: pkg/systemd/services.jsx:253
 msgid "Invalid"
@@ -4610,7 +4722,7 @@ msgstr "缓解"
 msgid "Mode"
 msgstr "模式"
 
-#: pkg/storaged/drive/drive.jsx:121
+#: pkg/storaged/drive/drive.jsx:123
 #: pkg/systemd/overview-cards/systemInformationCard.jsx:111
 #: pkg/systemd/hwinfo.jsx:279
 msgid "Model"
@@ -4746,7 +4858,7 @@ msgstr "与服务并行挂载，但是在网络可用后"
 msgid "Multi-system chassis"
 msgstr "多系统机箱"
 
-#: pkg/storaged/drive/drive.jsx:135
+#: pkg/storaged/drive/drive.jsx:136
 msgid "Multipathed devices"
 msgstr "多路径设备"
 
@@ -5080,7 +5192,7 @@ msgstr "没有找到日志"
 msgid "No matching results"
 msgstr "没有找到匹配的结果"
 
-#: pkg/storaged/drive/drive.jsx:128
+#: pkg/storaged/drive/drive.jsx:130
 msgid "No media inserted"
 msgstr "没有插入介质"
 
@@ -5254,6 +5366,10 @@ msgstr "笔记本"
 #: pkg/systemd/logs.jsx:70
 msgid "Notice and above"
 msgstr "Notice 及更高级别"
+
+#: pkg/storaged/drive/smart-details.jsx:175
+msgid "Number of bad sectors"
+msgstr ""
 
 #: pkg/sosreport/sosreport.jsx:335
 msgid "Obfuscate network addresses, hostnames, and usernames"
@@ -5669,6 +5785,12 @@ msgstr "永久删除子卷 $0？"
 msgid "Permission denied"
 msgstr "权限被拒绝"
 
+#: pkg/storaged/drive/smart-details.jsx:71
+#, fuzzy
+#| msgid "Filesystem is mounted read-only"
+msgid "Persistent memory has become read-only"
+msgstr "文件系统被挂载为只读"
+
 #: pkg/storaged/legacy-vdo/legacy-vdo.jsx:292
 msgid "Physical"
 msgstr "物理"
@@ -5769,6 +5891,10 @@ msgstr "手提"
 #: pkg/networkmanager/bridge.jsx:101 pkg/networkmanager/team.jsx:159
 msgid "Ports"
 msgstr "端口"
+
+#: pkg/storaged/drive/smart-details.jsx:168
+msgid "Power on hours"
+msgstr ""
 
 #: pkg/storaged/partitions/partition.jsx:124
 msgid "PowerPC PReP boot partition"
@@ -6477,6 +6603,10 @@ msgstr "行选择"
 msgid "Run at"
 msgstr "运行于"
 
+#: pkg/storaged/drive/smart-details.jsx:97
+msgid "Run extended test"
+msgstr ""
+
 #: pkg/sosreport/sosreport.jsx:308
 msgid "Run new report"
 msgstr "运行新报告"
@@ -6488,6 +6618,12 @@ msgstr "运行于"
 #: pkg/sosreport/sosreport.jsx:286 pkg/sosreport/sosreport.jsx:495
 msgid "Run report"
 msgstr "运行报告"
+
+#: pkg/storaged/drive/smart-details.jsx:92
+#, fuzzy
+#| msgid "Run when host boots"
+msgid "Run short test"
+msgstr "在主机引导时运行"
 
 #: pkg/lib/cockpit-connect-ssh.tsx:150 pkg/shell/hosts_dialog.jsx:686
 msgid ""
@@ -6711,13 +6847,19 @@ msgid ""
 "volume. At least $0 are needed."
 msgstr "选择应该用来修复逻辑卷的物理卷。最少需要 $0。"
 
+#: pkg/storaged/drive/smart-details.jsx:171
+#, fuzzy
+#| msgid "SMART self-test of $target"
+msgid "Self-test status"
+msgstr "$target SMART 自检"
+
 #: pkg/networkmanager/network-interface-members.jsx:209
 #: pkg/networkmanager/network-main.jsx:187
 #: pkg/networkmanager/network-main.jsx:202
 msgid "Sending"
 msgstr "发送"
 
-#: pkg/storaged/drive/drive.jsx:123
+#: pkg/storaged/drive/drive.jsx:125
 msgid "Serial number"
 msgstr "序列号"
 
@@ -7066,6 +7208,10 @@ msgstr "生成树协议 (STP)"
 msgid "Spare"
 msgstr "备用"
 
+#: pkg/storaged/drive/smart-details.jsx:66
+msgid "Spare capacity is below the threshold"
+msgstr ""
+
 #: pkg/lib/cockpit-components-shutdown.jsx:183
 msgid "Specific time"
 msgstr "指定时间"
@@ -7270,6 +7416,12 @@ msgstr "子笔记本"
 msgid "Subscribing to systemd signals failed: $0"
 msgstr "订阅 systemd 信号失败：$0"
 
+#: pkg/storaged/drive/smart-details.jsx:40
+#, fuzzy
+#| msgid "Logout successful"
+msgid "Successful"
+msgstr "注销成功"
+
 #: pkg/systemd/logs.jsx:399
 msgid "Successfully copied to clipboard"
 msgstr "成功复制到剪贴板"
@@ -7409,6 +7561,10 @@ msgstr "组合端口"
 #: pkg/networkmanager/teamport.jsx:82
 msgid "Team port settings"
 msgstr "组合端口设置"
+
+#: pkg/storaged/drive/smart-details.jsx:67
+msgid "Temperature outside of recommended thresholds"
+msgstr ""
 
 #: pkg/systemd/terminal.html:4 pkg/systemd/manifest.json:0
 msgid "Terminal"
@@ -8644,7 +8800,7 @@ msgstr "验证地址"
 msgid "Validating authentication token"
 msgstr "正在校验验证口令"
 
-#: pkg/storaged/drive/drive.jsx:120 pkg/systemd/hwinfo.jsx:280
+#: pkg/storaged/drive/drive.jsx:122 pkg/systemd/hwinfo.jsx:280
 msgid "Vendor"
 msgstr "厂商"
 
@@ -8748,6 +8904,10 @@ msgstr "虚拟大小限制"
 #: pkg/lib/cockpit-components-firewalld-request.jsx:153
 msgid "Visit firewall"
 msgstr "访问防火墙"
+
+#: pkg/storaged/drive/smart-details.jsx:70
+msgid "Volatile memory backup failed"
+msgstr ""
 
 #: pkg/storaged/lvm2/physical-volume.jsx:108
 msgid "Volume group"
@@ -8858,7 +9018,7 @@ msgstr "将设置为\"Automatic\""
 msgid "WireGuard"
 msgstr "WireGuard"
 
-#: pkg/storaged/drive/drive.jsx:124
+#: pkg/storaged/drive/drive.jsx:126
 msgid "World wide name"
 msgstr "全局范围名称"
 
@@ -11497,9 +11657,6 @@ msgstr "区"
 
 #~ msgid "Run unattended installation"
 #~ msgstr "执行无人值守安装"
-
-#~ msgid "Run when host boots"
-#~ msgstr "在主机引导时运行"
 
 #~ msgid "SPICE TLS port"
 #~ msgstr "SPICE TLS 端口"

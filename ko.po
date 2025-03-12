@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-11 03:01+0000\n"
+"POT-Creation-Date: 2025-03-12 03:01+0000\n"
 "PO-Revision-Date: 2025-03-08 01:36+0000\n"
 "Last-Translator: 김인수 <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/cockpit/"
@@ -132,6 +132,13 @@ msgstr "$0 공간"
 msgid "$0 hour"
 msgid_plural "$0 hours"
 msgstr[0] "$0 시"
+
+#: pkg/storaged/drive/smart-details.jsx:169
+#, fuzzy
+#| msgid "$0 hour"
+#| msgid_plural "$0 hours"
+msgid "$0 hours"
+msgstr "$0 시"
 
 #: pkg/systemd/overview-cards/insights.jsx:202
 msgid "$0 important hit"
@@ -530,6 +537,10 @@ msgstr "9일"
 msgid "A compatible version of Cockpit is not installed on $0."
 msgstr "호환 가능한 Cockpit 버전이 {{#strong}}에 설치되어 있지 않습니다."
 
+#: pkg/storaged/drive/smart-details.jsx:57
+msgid "A fatal error occurred during the self-test operation"
+msgstr ""
+
 #: pkg/storaged/stratis/utils.jsx:120
 msgid "A filesystem with this name exists already in this pool."
 msgstr "이 이름을 가진 파일 시스템이 이미 이 풀에 있습니다."
@@ -590,6 +601,34 @@ msgstr "ARP 모니터링"
 #: pkg/networkmanager/team.jsx:57
 msgid "ARP ping"
 msgstr "ARP 핑"
+
+#: pkg/storaged/drive/smart-details.jsx:102
+msgid "Abort test"
+msgstr ""
+
+#: pkg/storaged/drive/smart-details.jsx:41
+msgid "Aborted"
+msgstr ""
+
+#: pkg/storaged/drive/smart-details.jsx:54
+msgid "Aborted by a Controller Level Reset"
+msgstr ""
+
+#: pkg/storaged/drive/smart-details.jsx:55
+msgid "Aborted due to a removal of a namespace from the namespace inventory"
+msgstr ""
+
+#: pkg/storaged/drive/smart-details.jsx:61
+msgid "Aborted due to a sanitize operation"
+msgstr ""
+
+#: pkg/storaged/drive/smart-details.jsx:56
+msgid "Aborted due to the processing of a Format NVM command"
+msgstr ""
+
+#: pkg/storaged/drive/smart-details.jsx:60
+msgid "Aborted for unknown reason"
+msgstr ""
 
 #: pkg/shell/topnav.tsx:174
 msgid "About Web Console"
@@ -976,6 +1015,12 @@ msgstr "모두"
 msgid "All $0 selected physical volumes are needed for the chosen layout."
 msgstr "모든 $0의 선택된 물리 볼륨은 선택된 배열을 위해 필요합니다."
 
+#: pkg/storaged/drive/smart-details.jsx:69
+#, fuzzy
+#| msgid "Device is read-only"
+msgid "All media is in read-only mode"
+msgstr "장치는 읽기 전용입니다"
+
 #: pkg/packagekit/autoupdates.jsx:421
 msgid "All updates"
 msgstr "모든 최신화"
@@ -1081,7 +1126,7 @@ msgstr "/var와 같은 중요한 적재에 적절한"
 msgid "Apps"
 msgstr "앱"
 
-#: pkg/storaged/drive/drive.jsx:102
+#: pkg/storaged/drive/smart-details.jsx:165
 msgid "Assessment"
 msgstr "평가"
 
@@ -1125,6 +1170,12 @@ msgstr "특정 시간"
 
 #: pkg/sosreport/sosreport.jsx:505
 msgid "Attributes"
+msgstr "속성"
+
+#: pkg/storaged/drive/smart-details.jsx:185
+#, fuzzy
+#| msgid "Attributes"
+msgid "Attributes failing"
 msgstr "속성"
 
 #: pkg/selinux/setroubleshoot-view.jsx:356
@@ -1450,7 +1501,7 @@ msgstr "이 시스템에서 realmd를 사용할 수 없으므로 도메인에 �
 msgid "Cannot schedule event in the past"
 msgstr "이전 이벤트를 예약할 수 없습니다"
 
-#: pkg/storaged/drive/drive.jsx:125 pkg/storaged/lvm2/volume-group.jsx:366
+#: pkg/storaged/drive/drive.jsx:127 pkg/storaged/lvm2/volume-group.jsx:366
 #: pkg/storaged/mdraid/mdraid.jsx:303 pkg/storaged/btrfs/volume.jsx:150
 msgid "Capacity"
 msgstr "용량"
@@ -1785,6 +1836,15 @@ msgstr "모든 시스템과 장치와 호환됩니다 (MBR)"
 #: pkg/storaged/partitions/format-disk-dialog.jsx:56
 msgid "Compatible with modern system and hard disks > 2TB (GPT)"
 msgstr "최신 시스템과 2TB 이상의 하드 디스크와 호환됩니다 (GPT)"
+
+#: pkg/storaged/drive/smart-details.jsx:58
+msgid ""
+"Completed with a segment that failed and the segment that failed is not known"
+msgstr ""
+
+#: pkg/storaged/drive/smart-details.jsx:59
+msgid "Completed with one or more failed segments"
+msgstr ""
 
 #: pkg/kdump/kdump-view.jsx:319
 msgid "Compress crash dumps to save space"
@@ -2413,6 +2473,10 @@ msgstr "중복"
 msgid "Default"
 msgstr "기본"
 
+#: pkg/storaged/drive/smart-details.jsx:68
+msgid "Degraded"
+msgstr ""
+
 #: pkg/lib/cockpit-components-shutdown.jsx:201 pkg/systemd/timer-dialog.jsx:200
 #: pkg/systemd/timer-dialog.jsx:209
 msgid "Delay"
@@ -2557,10 +2621,14 @@ msgstr "장치"
 msgid "Device contains unrecognized data"
 msgstr "장치가 인식되지 않는 자료를 포함합니다"
 
-#: pkg/storaged/block/other.jsx:62 pkg/storaged/drive/drive.jsx:132
+#: pkg/storaged/block/other.jsx:62 pkg/storaged/drive/drive.jsx:133
 #: pkg/storaged/legacy-vdo/legacy-vdo.jsx:287
 msgid "Device file"
 msgstr "장치 파일"
+
+#: pkg/storaged/drive/drive.jsx:98
+msgid "Device health (SMART)"
+msgstr ""
 
 #: pkg/storaged/partitions/actions.jsx:27 pkg/storaged/block/actions.jsx:28
 msgid "Device is read-only"
@@ -2574,6 +2642,10 @@ msgstr "장치 번호"
 #: src/appstream/org.cockpit_project.cockpit_sosreport.metainfo.xml.in:5
 msgid "Diagnostic reports"
 msgstr "진단 보고서"
+
+#: pkg/storaged/drive/smart-details.jsx:46
+msgid "Did not complete"
+msgstr ""
 
 #: pkg/kdump/kdump-view.jsx:256 pkg/kdump/kdump-view.jsx:277
 #: pkg/kdump/kdump-view.jsx:303
@@ -2632,11 +2704,12 @@ msgstr "연결 해제됩니다"
 msgid "Disk I/O"
 msgstr "디스크 I/O"
 
-#: pkg/storaged/drive/drive.jsx:106
+#: pkg/storaged/drive/smart-details.jsx:152
 msgid "Disk is OK"
 msgstr "디스크는 정상입니다"
 
-#: pkg/storaged/drive/drive.jsx:105
+#: pkg/storaged/drive/smart-details.jsx:144
+#: pkg/storaged/drive/smart-details.jsx:148
 msgid "Disk is failing"
 msgstr "디스크에 오류가 났습니다"
 
@@ -3100,6 +3173,32 @@ msgstr "추가 공통 기준 제한 사항이 있는 FIPS."
 msgid "Failed"
 msgstr "실패함"
 
+#: pkg/storaged/drive/smart-details.jsx:51
+msgid "Failed (Damaged)"
+msgstr ""
+
+#: pkg/storaged/drive/smart-details.jsx:48
+msgid "Failed (Electrical)"
+msgstr ""
+
+#: pkg/storaged/drive/smart-details.jsx:50
+#, fuzzy
+#| msgid "Failed"
+msgid "Failed (Read)"
+msgstr "실패함"
+
+#: pkg/storaged/drive/smart-details.jsx:49
+#, fuzzy
+#| msgid "Failed"
+msgid "Failed (Servo)"
+msgstr "실패함"
+
+#: pkg/storaged/drive/smart-details.jsx:47
+#, fuzzy
+#| msgid "Unknown"
+msgid "Failed (Unknown)"
+msgstr "알 수 없음"
+
 #: pkg/shell/hosts_dialog.jsx:408
 msgid "Failed to add machine: $0"
 msgstr "컴퓨터를 추가하지 못했습니다: $0"
@@ -3253,7 +3352,7 @@ msgstr "방화벽"
 msgid "Firewall is not available"
 msgstr "방화벽을 사용 할 수 없습니다"
 
-#: pkg/storaged/drive/drive.jsx:122
+#: pkg/storaged/drive/drive.jsx:124
 msgid "Firmware version"
 msgstr "펌웨어 버전"
 
@@ -3616,6 +3715,12 @@ msgstr ""
 "추후 암호 없이 $0에 $1으로 로그인하려면, $2의 $3 로그인 비밀번호를 키 암호로 "
 "사용하거나 키 비밀번호를 비워 두세요."
 
+#: pkg/storaged/drive/smart-details.jsx:42
+#, fuzzy
+#| msgid "Progress: $0"
+msgid "In progress"
+msgstr "진행: $0"
+
 #: pkg/storaged/mdraid/mdraid-disk.jsx:69
 msgid "In sync"
 msgstr "동기화"
@@ -3794,6 +3899,13 @@ msgstr "내부 오류: 잘못된 챌린지 헤더"
 #: pkg/static/login.js:871
 msgid "Internal protocol error"
 msgstr "내부 통신규약 오류"
+
+#: pkg/storaged/drive/smart-details.jsx:45
+#, fuzzy
+#| msgid "Interface"
+#| msgid_plural "Interfaces"
+msgid "Interrupted"
+msgstr "연결장치"
 
 #: pkg/systemd/services.jsx:253
 msgid "Invalid"
@@ -4667,7 +4779,7 @@ msgstr "완화 방법"
 msgid "Mode"
 msgstr "방식"
 
-#: pkg/storaged/drive/drive.jsx:121
+#: pkg/storaged/drive/drive.jsx:123
 #: pkg/systemd/overview-cards/systemInformationCard.jsx:111
 #: pkg/systemd/hwinfo.jsx:279
 msgid "Model"
@@ -4803,7 +4915,7 @@ msgstr "서비스와 병행하여 적재, 하지만 네트워크가 가용해야
 msgid "Multi-system chassis"
 msgstr "멀티 시스템 섀시"
 
-#: pkg/storaged/drive/drive.jsx:135
+#: pkg/storaged/drive/drive.jsx:136
 msgid "Multipathed devices"
 msgstr "다중 경로 장치"
 
@@ -5137,7 +5249,7 @@ msgstr "기록을 찾을 수 없음"
 msgid "No matching results"
 msgstr "일치하는 결과를 찾을 수 없습니다"
 
-#: pkg/storaged/drive/drive.jsx:128
+#: pkg/storaged/drive/drive.jsx:130
 msgid "No media inserted"
 msgstr "미디어가 삽입되어 있지 않습니다"
 
@@ -5315,6 +5427,10 @@ msgstr "노트북"
 #: pkg/systemd/logs.jsx:70
 msgid "Notice and above"
 msgstr "알림 이상의 수준"
+
+#: pkg/storaged/drive/smart-details.jsx:175
+msgid "Number of bad sectors"
+msgstr ""
 
 #: pkg/sosreport/sosreport.jsx:335
 msgid "Obfuscate network addresses, hostnames, and usernames"
@@ -5742,6 +5858,12 @@ msgstr "영구적으로 하위볼륨 $0를 삭제 할까요?"
 msgid "Permission denied"
 msgstr "권한이 거부되었습니다"
 
+#: pkg/storaged/drive/smart-details.jsx:71
+#, fuzzy
+#| msgid "Filesystem is mounted read-only"
+msgid "Persistent memory has become read-only"
+msgstr "파일시스템이 읽기-전용으로 적재되었습니다"
+
 # translation auto-copied from project subscription-manager, version 1.11.X,
 # document keys
 #: pkg/storaged/legacy-vdo/legacy-vdo.jsx:292
@@ -5844,6 +5966,10 @@ msgstr "이동식"
 #: pkg/networkmanager/bridge.jsx:101 pkg/networkmanager/team.jsx:159
 msgid "Ports"
 msgstr "포트"
+
+#: pkg/storaged/drive/smart-details.jsx:168
+msgid "Power on hours"
+msgstr ""
 
 #: pkg/storaged/partitions/partition.jsx:124
 msgid "PowerPC PReP boot partition"
@@ -6564,6 +6690,10 @@ msgstr "행 선택"
 msgid "Run at"
 msgstr "다음에서 실행"
 
+#: pkg/storaged/drive/smart-details.jsx:97
+msgid "Run extended test"
+msgstr ""
+
 #: pkg/sosreport/sosreport.jsx:308
 msgid "Run new report"
 msgstr "신규 보고서 실행"
@@ -6575,6 +6705,12 @@ msgstr "다음 실행"
 #: pkg/sosreport/sosreport.jsx:286 pkg/sosreport/sosreport.jsx:495
 msgid "Run report"
 msgstr "보고서 실행"
+
+#: pkg/storaged/drive/smart-details.jsx:92
+#, fuzzy
+#| msgid "Run when host boots"
+msgid "Run short test"
+msgstr "호스트 부팅 시 실행"
 
 #: pkg/lib/cockpit-connect-ssh.tsx:150 pkg/shell/hosts_dialog.jsx:686
 msgid ""
@@ -6804,13 +6940,19 @@ msgstr ""
 "논리 볼륨을 복구하는데 사용해야 하는 물리 볼륨을 선택합니다. 적어도 $0가 필요"
 "합니다."
 
+#: pkg/storaged/drive/smart-details.jsx:171
+#, fuzzy
+#| msgid "SMART self-test of $target"
+msgid "Self-test status"
+msgstr "$target의 SMART 셀프 테스트"
+
 #: pkg/networkmanager/network-interface-members.jsx:209
 #: pkg/networkmanager/network-main.jsx:187
 #: pkg/networkmanager/network-main.jsx:202
 msgid "Sending"
 msgstr "전송중"
 
-#: pkg/storaged/drive/drive.jsx:123
+#: pkg/storaged/drive/drive.jsx:125
 msgid "Serial number"
 msgstr "일련 번호"
 
@@ -7170,6 +7312,10 @@ msgstr "스패닝 트리 통신규약(STP)"
 msgid "Spare"
 msgstr "예비"
 
+#: pkg/storaged/drive/smart-details.jsx:66
+msgid "Spare capacity is below the threshold"
+msgstr ""
+
 #: pkg/lib/cockpit-components-shutdown.jsx:183
 msgid "Specific time"
 msgstr "특정 시간"
@@ -7374,6 +7520,12 @@ msgstr "서브 노트북"
 msgid "Subscribing to systemd signals failed: $0"
 msgstr "systemd 신호 구독에 실패했습니다. $0"
 
+#: pkg/storaged/drive/smart-details.jsx:40
+#, fuzzy
+#| msgid "Logout successful"
+msgid "Successful"
+msgstr "성공적으로 로그아웃되었습니다"
+
 #: pkg/systemd/logs.jsx:399
 msgid "Successfully copied to clipboard"
 msgstr "성공적으로 클립보드로 복사됨"
@@ -7516,6 +7668,10 @@ msgstr "팀 포트"
 #: pkg/networkmanager/teamport.jsx:82
 msgid "Team port settings"
 msgstr "팀 포트 설정"
+
+#: pkg/storaged/drive/smart-details.jsx:67
+msgid "Temperature outside of recommended thresholds"
+msgstr ""
 
 #: pkg/systemd/terminal.html:4 pkg/systemd/manifest.json:0
 msgid "Terminal"
@@ -8804,7 +8960,7 @@ msgstr "인증 토큰 확인"
 
 # translation auto-copied from project subscription-manager, version 1.11.X,
 # document keys
-#: pkg/storaged/drive/drive.jsx:120 pkg/systemd/hwinfo.jsx:280
+#: pkg/storaged/drive/drive.jsx:122 pkg/systemd/hwinfo.jsx:280
 msgid "Vendor"
 msgstr "제조사"
 
@@ -8909,6 +9065,10 @@ msgstr "가상 크기 제한"
 #: pkg/lib/cockpit-components-firewalld-request.jsx:153
 msgid "Visit firewall"
 msgstr "방화벽 방문"
+
+#: pkg/storaged/drive/smart-details.jsx:70
+msgid "Volatile memory backup failed"
+msgstr ""
 
 #: pkg/storaged/lvm2/physical-volume.jsx:108
 msgid "Volume group"
@@ -9021,7 +9181,7 @@ msgstr "\"자동\"으로 설정됩니다"
 msgid "WireGuard"
 msgstr "와이어가드"
 
-#: pkg/storaged/drive/drive.jsx:124
+#: pkg/storaged/drive/drive.jsx:126
 msgid "World wide name"
 msgstr "고유 식별자"
 
@@ -11742,9 +11902,6 @@ msgstr "영역"
 
 #~ msgid "Run unattended installation"
 #~ msgstr "무인 설치 실행"
-
-#~ msgid "Run when host boots"
-#~ msgstr "호스트 부팅 시 실행"
 
 #~ msgid "SPICE TLS port"
 #~ msgstr "SPICE TLS 포트"

@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-11 03:01+0000\n"
+"POT-Creation-Date: 2025-03-12 03:01+0000\n"
 "PO-Revision-Date: 2024-12-16 19:38+0000\n"
 "Last-Translator: Jose Luis Pavón Pavón <jolupameister@gmail.com>\n"
 "Language-Team: Catalan <https://translate.fedoraproject.org/projects/cockpit/"
@@ -161,6 +161,13 @@ msgid "$0 hour"
 msgid_plural "$0 hours"
 msgstr[0] "$0 hora"
 msgstr[1] "$0 hores"
+
+#: pkg/storaged/drive/smart-details.jsx:169
+#, fuzzy
+#| msgid "$0 hour"
+#| msgid_plural "$0 hours"
+msgid "$0 hours"
+msgstr "$0 hora"
 
 #: pkg/systemd/overview-cards/insights.jsx:202
 msgid "$0 important hit"
@@ -621,6 +628,10 @@ msgstr ""
 "Una versió compatible de Cockpit no està instal·lada a {{#strong}}{{host}}{{/"
 "strong}}."
 
+#: pkg/storaged/drive/smart-details.jsx:57
+msgid "A fatal error occurred during the self-test operation"
+msgstr ""
+
 #: pkg/storaged/stratis/utils.jsx:120
 msgid "A filesystem with this name exists already in this pool."
 msgstr ""
@@ -685,6 +696,34 @@ msgstr "Monitoratge ARP"
 #: pkg/networkmanager/team.jsx:57
 msgid "ARP ping"
 msgstr "Ping ARP"
+
+#: pkg/storaged/drive/smart-details.jsx:102
+msgid "Abort test"
+msgstr ""
+
+#: pkg/storaged/drive/smart-details.jsx:41
+msgid "Aborted"
+msgstr ""
+
+#: pkg/storaged/drive/smart-details.jsx:54
+msgid "Aborted by a Controller Level Reset"
+msgstr ""
+
+#: pkg/storaged/drive/smart-details.jsx:55
+msgid "Aborted due to a removal of a namespace from the namespace inventory"
+msgstr ""
+
+#: pkg/storaged/drive/smart-details.jsx:61
+msgid "Aborted due to a sanitize operation"
+msgstr ""
+
+#: pkg/storaged/drive/smart-details.jsx:56
+msgid "Aborted due to the processing of a Format NVM command"
+msgstr ""
+
+#: pkg/storaged/drive/smart-details.jsx:60
+msgid "Aborted for unknown reason"
+msgstr ""
 
 #: pkg/shell/topnav.tsx:174
 #, fuzzy
@@ -1105,6 +1144,12 @@ msgstr "Tots"
 msgid "All $0 selected physical volumes are needed for the chosen layout."
 msgstr ""
 
+#: pkg/storaged/drive/smart-details.jsx:69
+#, fuzzy
+#| msgid "Device is read-only"
+msgid "All media is in read-only mode"
+msgstr "El dispositiu és de només lectura"
+
 #: pkg/packagekit/autoupdates.jsx:421
 #, fuzzy
 #| msgid "Apply all updates"
@@ -1213,7 +1258,7 @@ msgstr ""
 msgid "Apps"
 msgstr ""
 
-#: pkg/storaged/drive/drive.jsx:102
+#: pkg/storaged/drive/smart-details.jsx:165
 msgid "Assessment"
 msgstr ""
 
@@ -1271,6 +1316,13 @@ msgstr "A l'instant específic"
 #: pkg/sosreport/sosreport.jsx:505
 msgid "Attributes"
 msgstr ""
+
+#: pkg/storaged/drive/smart-details.jsx:185
+#, fuzzy
+#| msgid "$0 disk is missing"
+#| msgid_plural "$0 disks are missing"
+msgid "Attributes failing"
+msgstr "falta $0 disc"
 
 #: pkg/selinux/setroubleshoot-view.jsx:356
 msgid "Audit log"
@@ -1619,7 +1671,7 @@ msgstr ""
 msgid "Cannot schedule event in the past"
 msgstr "No es pot planificar un esdeveniment del passat"
 
-#: pkg/storaged/drive/drive.jsx:125 pkg/storaged/lvm2/volume-group.jsx:366
+#: pkg/storaged/drive/drive.jsx:127 pkg/storaged/lvm2/volume-group.jsx:366
 #: pkg/storaged/mdraid/mdraid.jsx:303 pkg/storaged/btrfs/volume.jsx:150
 msgid "Capacity"
 msgstr "Capacitat"
@@ -1983,6 +2035,15 @@ msgstr "Compatible amb tots els sistemes i dispositius (MBR)"
 #: pkg/storaged/partitions/format-disk-dialog.jsx:56
 msgid "Compatible with modern system and hard disks > 2TB (GPT)"
 msgstr "Compatible amb els sistemes moderns i els discs durs > 2TB (GPT)"
+
+#: pkg/storaged/drive/smart-details.jsx:58
+msgid ""
+"Completed with a segment that failed and the segment that failed is not known"
+msgstr ""
+
+#: pkg/storaged/drive/smart-details.jsx:59
+msgid "Completed with one or more failed segments"
+msgstr ""
 
 #: pkg/kdump/kdump-view.jsx:319
 msgid "Compress crash dumps to save space"
@@ -2663,6 +2724,10 @@ msgstr "Deduplicació"
 msgid "Default"
 msgstr "Predeterminat"
 
+#: pkg/storaged/drive/smart-details.jsx:68
+msgid "Degraded"
+msgstr ""
+
 #: pkg/lib/cockpit-components-shutdown.jsx:201 pkg/systemd/timer-dialog.jsx:200
 #: pkg/systemd/timer-dialog.jsx:209
 msgid "Delay"
@@ -2827,10 +2892,14 @@ msgstr "Dispositiu"
 msgid "Device contains unrecognized data"
 msgstr "Dades no reconegudes"
 
-#: pkg/storaged/block/other.jsx:62 pkg/storaged/drive/drive.jsx:132
+#: pkg/storaged/block/other.jsx:62 pkg/storaged/drive/drive.jsx:133
 #: pkg/storaged/legacy-vdo/legacy-vdo.jsx:287
 msgid "Device file"
 msgstr "Fitxer de dispositiu"
+
+#: pkg/storaged/drive/drive.jsx:98
+msgid "Device health (SMART)"
+msgstr ""
 
 #: pkg/storaged/partitions/actions.jsx:27 pkg/storaged/block/actions.jsx:28
 msgid "Device is read-only"
@@ -2846,6 +2915,10 @@ msgstr "Nom del servei"
 #: src/appstream/org.cockpit_project.cockpit_sosreport.metainfo.xml.in:5
 msgid "Diagnostic reports"
 msgstr "Informes de diagnòstic"
+
+#: pkg/storaged/drive/smart-details.jsx:46
+msgid "Did not complete"
+msgstr ""
 
 #: pkg/kdump/kdump-view.jsx:256 pkg/kdump/kdump-view.jsx:277
 #: pkg/kdump/kdump-view.jsx:303
@@ -2904,11 +2977,12 @@ msgstr "Desconnectat"
 msgid "Disk I/O"
 msgstr "E/S de disc"
 
-#: pkg/storaged/drive/drive.jsx:106
+#: pkg/storaged/drive/smart-details.jsx:152
 msgid "Disk is OK"
 msgstr "El disc està bé"
 
-#: pkg/storaged/drive/drive.jsx:105
+#: pkg/storaged/drive/smart-details.jsx:144
+#: pkg/storaged/drive/smart-details.jsx:148
 #, fuzzy
 #| msgid "$0 disk is missing"
 #| msgid_plural "$0 disks are missing"
@@ -3440,6 +3514,32 @@ msgstr ""
 msgid "Failed"
 msgstr "Ha fallat"
 
+#: pkg/storaged/drive/smart-details.jsx:51
+msgid "Failed (Damaged)"
+msgstr ""
+
+#: pkg/storaged/drive/smart-details.jsx:48
+msgid "Failed (Electrical)"
+msgstr ""
+
+#: pkg/storaged/drive/smart-details.jsx:50
+#, fuzzy
+#| msgid "Failed"
+msgid "Failed (Read)"
+msgstr "Ha fallat"
+
+#: pkg/storaged/drive/smart-details.jsx:49
+#, fuzzy
+#| msgid "Failed"
+msgid "Failed (Servo)"
+msgstr "Ha fallat"
+
+#: pkg/storaged/drive/smart-details.jsx:47
+#, fuzzy
+#| msgid "Unknown"
+msgid "Failed (Unknown)"
+msgstr "Desconegut"
+
 #: pkg/shell/hosts_dialog.jsx:408
 msgid "Failed to add machine: $0"
 msgstr "No s'ha pogut afegir la màquina: $0"
@@ -3620,7 +3720,7 @@ msgstr "Tallafoc"
 msgid "Firewall is not available"
 msgstr "El tallafoc no està disponible"
 
-#: pkg/storaged/drive/drive.jsx:122
+#: pkg/storaged/drive/drive.jsx:124
 #, fuzzy
 msgid "Firmware version"
 msgstr "Versió"
@@ -4015,6 +4115,10 @@ msgid ""
 "blank."
 msgstr ""
 
+#: pkg/storaged/drive/smart-details.jsx:42
+msgid "In progress"
+msgstr ""
+
 #: pkg/storaged/mdraid/mdraid-disk.jsx:69
 msgid "In sync"
 msgstr "En sincronització"
@@ -4219,6 +4323,12 @@ msgstr ""
 #| msgid "Internal error"
 msgid "Internal protocol error"
 msgstr "Error intern"
+
+#: pkg/storaged/drive/smart-details.jsx:45
+#, fuzzy
+#| msgid "Interfaces"
+msgid "Interrupted"
+msgstr "Interfícies"
 
 #: pkg/systemd/services.jsx:253
 #, fuzzy
@@ -5219,7 +5329,7 @@ msgstr ""
 msgid "Mode"
 msgstr "Mode"
 
-#: pkg/storaged/drive/drive.jsx:121
+#: pkg/storaged/drive/drive.jsx:123
 #: pkg/systemd/overview-cards/systemInformationCard.jsx:111
 #: pkg/systemd/hwinfo.jsx:279
 msgid "Model"
@@ -5359,7 +5469,7 @@ msgstr ""
 msgid "Multi-system chassis"
 msgstr ""
 
-#: pkg/storaged/drive/drive.jsx:135
+#: pkg/storaged/drive/drive.jsx:136
 #, fuzzy
 msgid "Multipathed devices"
 msgstr "Altres dispositius"
@@ -5750,7 +5860,7 @@ msgstr ""
 msgid "No matching results"
 msgstr ""
 
-#: pkg/storaged/drive/drive.jsx:128
+#: pkg/storaged/drive/drive.jsx:130
 msgid "No media inserted"
 msgstr "Sense mitjans inserits"
 
@@ -5953,6 +6063,10 @@ msgstr ""
 
 #: pkg/systemd/logs.jsx:70
 msgid "Notice and above"
+msgstr ""
+
+#: pkg/storaged/drive/smart-details.jsx:175
+msgid "Number of bad sectors"
 msgstr ""
 
 #: pkg/sosreport/sosreport.jsx:335
@@ -6405,6 +6519,12 @@ msgstr "Suprimeix $0"
 msgid "Permission denied"
 msgstr "Permís denegat"
 
+#: pkg/storaged/drive/smart-details.jsx:71
+#, fuzzy
+#| msgid "Filesystems"
+msgid "Persistent memory has become read-only"
+msgstr "Sistemes de fitxers"
+
 #: pkg/storaged/legacy-vdo/legacy-vdo.jsx:292
 msgid "Physical"
 msgstr ""
@@ -6514,6 +6634,10 @@ msgstr "Portable"
 #: pkg/networkmanager/bridge.jsx:101 pkg/networkmanager/team.jsx:159
 msgid "Ports"
 msgstr "Ports"
+
+#: pkg/storaged/drive/smart-details.jsx:168
+msgid "Power on hours"
+msgstr ""
 
 #: pkg/storaged/partitions/partition.jsx:124
 #, fuzzy
@@ -7298,6 +7422,10 @@ msgstr "Selecciona"
 msgid "Run at"
 msgstr "Executa la imatge"
 
+#: pkg/storaged/drive/smart-details.jsx:97
+msgid "Run extended test"
+msgstr ""
+
 #: pkg/sosreport/sosreport.jsx:308
 msgid "Run new report"
 msgstr ""
@@ -7311,6 +7439,10 @@ msgstr ""
 #| msgid "Download report"
 msgid "Run report"
 msgstr "Baixa l'informe"
+
+#: pkg/storaged/drive/smart-details.jsx:92
+msgid "Run short test"
+msgstr ""
 
 #: pkg/lib/cockpit-connect-ssh.tsx:150 pkg/shell/hosts_dialog.jsx:686
 msgid ""
@@ -7546,13 +7678,19 @@ msgid ""
 "volume. At least $0 are needed."
 msgstr ""
 
+#: pkg/storaged/drive/smart-details.jsx:171
+#, fuzzy
+#| msgid "SMART self-test of $target"
+msgid "Self-test status"
+msgstr "Autotest SMART de $target."
+
 #: pkg/networkmanager/network-interface-members.jsx:209
 #: pkg/networkmanager/network-main.jsx:187
 #: pkg/networkmanager/network-main.jsx:202
 msgid "Sending"
 msgstr "Enviament"
 
-#: pkg/storaged/drive/drive.jsx:123
+#: pkg/storaged/drive/drive.jsx:125
 #, fuzzy
 #| msgid "Serial console"
 msgid "Serial number"
@@ -7925,6 +8063,10 @@ msgstr "STP (Spanning tree protocol)"
 msgid "Spare"
 msgstr "Recanvi"
 
+#: pkg/storaged/drive/smart-details.jsx:66
+msgid "Spare capacity is below the threshold"
+msgstr ""
+
 #: pkg/lib/cockpit-components-shutdown.jsx:183
 msgid "Specific time"
 msgstr "Instant concret"
@@ -8154,6 +8296,12 @@ msgstr ""
 msgid "Subscribing to systemd signals failed: $0"
 msgstr ""
 
+#: pkg/storaged/drive/smart-details.jsx:40
+#, fuzzy
+#| msgid "Logout successful"
+msgid "Successful"
+msgstr "S'ha tancat la sessió amb èxit"
+
 #: pkg/systemd/logs.jsx:399
 msgid "Successfully copied to clipboard"
 msgstr ""
@@ -8307,6 +8455,10 @@ msgstr "Port de l'equip"
 #: pkg/networkmanager/teamport.jsx:82
 msgid "Team port settings"
 msgstr "Ajusts del port de l'equip"
+
+#: pkg/storaged/drive/smart-details.jsx:67
+msgid "Temperature outside of recommended thresholds"
+msgstr ""
 
 #: pkg/systemd/terminal.html:4 pkg/systemd/manifest.json:0
 msgid "Terminal"
@@ -9659,7 +9811,7 @@ msgstr ""
 msgid "Validating authentication token"
 msgstr "Validació del testimoni d'autenticació"
 
-#: pkg/storaged/drive/drive.jsx:120 pkg/systemd/hwinfo.jsx:280
+#: pkg/storaged/drive/drive.jsx:122 pkg/systemd/hwinfo.jsx:280
 msgid "Vendor"
 msgstr "Fabricant"
 
@@ -9780,6 +9932,10 @@ msgstr ""
 msgid "Visit firewall"
 msgstr "Tallafoc"
 
+#: pkg/storaged/drive/smart-details.jsx:70
+msgid "Volatile memory backup failed"
+msgstr ""
+
 #: pkg/storaged/lvm2/physical-volume.jsx:108
 msgid "Volume group"
 msgstr "Grup de volums"
@@ -9896,7 +10052,7 @@ msgstr ""
 msgid "WireGuard"
 msgstr ""
 
-#: pkg/storaged/drive/drive.jsx:124
+#: pkg/storaged/drive/drive.jsx:126
 msgid "World wide name"
 msgstr ""
 

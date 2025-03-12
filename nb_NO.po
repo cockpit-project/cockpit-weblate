@@ -26,7 +26,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-11 03:01+0000\n"
+"POT-Creation-Date: 2025-03-12 03:01+0000\n"
 "PO-Revision-Date: 2023-07-31 12:26+0000\n"
 "Last-Translator: yangyangdaji <1504305527@qq.com>\n"
 "Language-Team: Norwegian Bokmål <https://translate.fedoraproject.org/"
@@ -176,6 +176,13 @@ msgid "$0 hour"
 msgid_plural "$0 hours"
 msgstr[0] "$0 time"
 msgstr[1] "$0 timer"
+
+#: pkg/storaged/drive/smart-details.jsx:169
+#, fuzzy
+#| msgid "$0 hour"
+#| msgid_plural "$0 hours"
+msgid "$0 hours"
+msgstr "$0 time"
 
 #: pkg/systemd/overview-cards/insights.jsx:202
 msgid "$0 important hit"
@@ -622,6 +629,10 @@ msgstr ""
 "En kompatibel versjon av Cockpit er ikke installert på {{#strong}}{{host}}{{/"
 "strong}}."
 
+#: pkg/storaged/drive/smart-details.jsx:57
+msgid "A fatal error occurred during the self-test operation"
+msgstr ""
+
 #: pkg/storaged/stratis/utils.jsx:120
 msgid "A filesystem with this name exists already in this pool."
 msgstr ""
@@ -698,6 +709,34 @@ msgstr "ARP overvåking"
 #: pkg/networkmanager/team.jsx:57
 msgid "ARP ping"
 msgstr "ARP ping"
+
+#: pkg/storaged/drive/smart-details.jsx:102
+msgid "Abort test"
+msgstr ""
+
+#: pkg/storaged/drive/smart-details.jsx:41
+msgid "Aborted"
+msgstr ""
+
+#: pkg/storaged/drive/smart-details.jsx:54
+msgid "Aborted by a Controller Level Reset"
+msgstr ""
+
+#: pkg/storaged/drive/smart-details.jsx:55
+msgid "Aborted due to a removal of a namespace from the namespace inventory"
+msgstr ""
+
+#: pkg/storaged/drive/smart-details.jsx:61
+msgid "Aborted due to a sanitize operation"
+msgstr ""
+
+#: pkg/storaged/drive/smart-details.jsx:56
+msgid "Aborted due to the processing of a Format NVM command"
+msgstr ""
+
+#: pkg/storaged/drive/smart-details.jsx:60
+msgid "Aborted for unknown reason"
+msgstr ""
 
 #: pkg/shell/topnav.tsx:174
 msgid "About Web Console"
@@ -1134,6 +1173,12 @@ msgstr "Alle"
 msgid "All $0 selected physical volumes are needed for the chosen layout."
 msgstr ""
 
+#: pkg/storaged/drive/smart-details.jsx:69
+#, fuzzy
+#| msgid "Device is read-only"
+msgid "All media is in read-only mode"
+msgstr "Enheten er skrivebeskyttet"
+
 #: pkg/packagekit/autoupdates.jsx:421
 msgid "All updates"
 msgstr "Alle oppdateringer"
@@ -1243,7 +1288,7 @@ msgstr ""
 msgid "Apps"
 msgstr "Apper"
 
-#: pkg/storaged/drive/drive.jsx:102
+#: pkg/storaged/drive/smart-details.jsx:165
 #, fuzzy
 #| msgctxt "storage"
 #| msgid "Assessment"
@@ -1303,6 +1348,12 @@ msgstr "På et bestemt tidspunkt"
 #, fuzzy
 #| msgid "Edit $0 attributes"
 msgid "Attributes"
+msgstr "Rediger $0 attributter"
+
+#: pkg/storaged/drive/smart-details.jsx:185
+#, fuzzy
+#| msgid "Edit $0 attributes"
+msgid "Attributes failing"
 msgstr "Rediger $0 attributter"
 
 #: pkg/selinux/setroubleshoot-view.jsx:356
@@ -1657,7 +1708,7 @@ msgstr ""
 msgid "Cannot schedule event in the past"
 msgstr "Kan ikke tidsplanlegge hendelse i fortiden"
 
-#: pkg/storaged/drive/drive.jsx:125 pkg/storaged/lvm2/volume-group.jsx:366
+#: pkg/storaged/drive/drive.jsx:127 pkg/storaged/lvm2/volume-group.jsx:366
 #: pkg/storaged/mdraid/mdraid.jsx:303 pkg/storaged/btrfs/volume.jsx:150
 msgid "Capacity"
 msgstr "Kapasitet"
@@ -2025,6 +2076,15 @@ msgstr "Kompatibel med alle systemer og enheter (MBR)"
 #: pkg/storaged/partitions/format-disk-dialog.jsx:56
 msgid "Compatible with modern system and hard disks > 2TB (GPT)"
 msgstr "Kompatibel med moderne system og harddisker> 2TB (GPT)"
+
+#: pkg/storaged/drive/smart-details.jsx:58
+msgid ""
+"Completed with a segment that failed and the segment that failed is not known"
+msgstr ""
+
+#: pkg/storaged/drive/smart-details.jsx:59
+msgid "Completed with one or more failed segments"
+msgstr ""
 
 #: pkg/kdump/kdump-view.jsx:319
 msgid "Compress crash dumps to save space"
@@ -2711,6 +2771,10 @@ msgstr "Deduplisering"
 msgid "Default"
 msgstr ""
 
+#: pkg/storaged/drive/smart-details.jsx:68
+msgid "Degraded"
+msgstr ""
+
 #: pkg/lib/cockpit-components-shutdown.jsx:201 pkg/systemd/timer-dialog.jsx:200
 #: pkg/systemd/timer-dialog.jsx:209
 msgid "Delay"
@@ -2883,10 +2947,14 @@ msgstr "Enhet"
 msgid "Device contains unrecognized data"
 msgstr "Ukjente data"
 
-#: pkg/storaged/block/other.jsx:62 pkg/storaged/drive/drive.jsx:132
+#: pkg/storaged/block/other.jsx:62 pkg/storaged/drive/drive.jsx:133
 #: pkg/storaged/legacy-vdo/legacy-vdo.jsx:287
 msgid "Device file"
 msgstr "Enhetsfil"
+
+#: pkg/storaged/drive/drive.jsx:98
+msgid "Device health (SMART)"
+msgstr ""
 
 #: pkg/storaged/partitions/actions.jsx:27 pkg/storaged/block/actions.jsx:28
 msgid "Device is read-only"
@@ -2902,6 +2970,10 @@ msgstr "Tjeneste navn"
 #: src/appstream/org.cockpit_project.cockpit_sosreport.metainfo.xml.in:5
 msgid "Diagnostic reports"
 msgstr "Diagnose rapporter"
+
+#: pkg/storaged/drive/smart-details.jsx:46
+msgid "Did not complete"
+msgstr ""
 
 #: pkg/kdump/kdump-view.jsx:256 pkg/kdump/kdump-view.jsx:277
 #: pkg/kdump/kdump-view.jsx:303
@@ -2960,11 +3032,12 @@ msgstr "Frakoblet"
 msgid "Disk I/O"
 msgstr "Disk I/U"
 
-#: pkg/storaged/drive/drive.jsx:106
+#: pkg/storaged/drive/smart-details.jsx:152
 msgid "Disk is OK"
 msgstr "Disken er OK"
 
-#: pkg/storaged/drive/drive.jsx:105
+#: pkg/storaged/drive/smart-details.jsx:144
+#: pkg/storaged/drive/smart-details.jsx:148
 #, fuzzy
 #| msgid "$0 disk is missing"
 #| msgid_plural "$0 disks are missing"
@@ -3503,6 +3576,32 @@ msgstr ""
 msgid "Failed"
 msgstr "Feilet"
 
+#: pkg/storaged/drive/smart-details.jsx:51
+msgid "Failed (Damaged)"
+msgstr ""
+
+#: pkg/storaged/drive/smart-details.jsx:48
+msgid "Failed (Electrical)"
+msgstr ""
+
+#: pkg/storaged/drive/smart-details.jsx:50
+#, fuzzy
+#| msgid "Failed"
+msgid "Failed (Read)"
+msgstr "Feilet"
+
+#: pkg/storaged/drive/smart-details.jsx:49
+#, fuzzy
+#| msgid "Failed"
+msgid "Failed (Servo)"
+msgstr "Feilet"
+
+#: pkg/storaged/drive/smart-details.jsx:47
+#, fuzzy
+#| msgid "Unknown"
+msgid "Failed (Unknown)"
+msgstr "Ukjent"
+
 #: pkg/shell/hosts_dialog.jsx:408
 msgid "Failed to add machine: $0"
 msgstr "Kunne ikke legge til maskin: $0"
@@ -3682,7 +3781,7 @@ msgstr "Brannmur"
 msgid "Firewall is not available"
 msgstr "Brannmur er ikke tilgjengelig"
 
-#: pkg/storaged/drive/drive.jsx:122
+#: pkg/storaged/drive/drive.jsx:124
 #, fuzzy
 #| msgctxt "storage"
 #| msgid "Firmware version"
@@ -4091,6 +4190,10 @@ msgstr ""
 "bruk påloggingspassordet på ${luser} på ${lhost} som nøkkelpassord, eller la "
 "nøkkelpassordet være tomt."
 
+#: pkg/storaged/drive/smart-details.jsx:42
+msgid "In progress"
+msgstr ""
+
 #: pkg/storaged/mdraid/mdraid-disk.jsx:69
 msgid "In sync"
 msgstr "I synk"
@@ -4294,6 +4397,12 @@ msgstr ""
 #| msgid "Internal error"
 msgid "Internal protocol error"
 msgstr "Intern feil"
+
+#: pkg/storaged/drive/smart-details.jsx:45
+#, fuzzy
+#| msgid "Interface"
+msgid "Interrupted"
+msgstr "Grensesnitt"
 
 #: pkg/systemd/services.jsx:253
 #, fuzzy
@@ -5275,7 +5384,7 @@ msgstr ""
 msgid "Mode"
 msgstr "Modus"
 
-#: pkg/storaged/drive/drive.jsx:121
+#: pkg/storaged/drive/drive.jsx:123
 #: pkg/systemd/overview-cards/systemInformationCard.jsx:111
 #: pkg/systemd/hwinfo.jsx:279
 msgid "Model"
@@ -5413,7 +5522,7 @@ msgstr ""
 msgid "Multi-system chassis"
 msgstr ""
 
-#: pkg/storaged/drive/drive.jsx:135
+#: pkg/storaged/drive/drive.jsx:136
 #, fuzzy
 #| msgid "Other devices"
 msgid "Multipathed devices"
@@ -5785,7 +5894,7 @@ msgstr "Ingen logger funnet"
 msgid "No matching results"
 msgstr "Ingen samsvarende resultater"
 
-#: pkg/storaged/drive/drive.jsx:128
+#: pkg/storaged/drive/drive.jsx:130
 msgid "No media inserted"
 msgstr "Ingen medier satt inn"
 
@@ -5989,6 +6098,10 @@ msgstr ""
 #: pkg/systemd/logs.jsx:70
 msgid "Notice and above"
 msgstr "Notis og over"
+
+#: pkg/storaged/drive/smart-details.jsx:175
+msgid "Number of bad sectors"
+msgstr ""
 
 #: pkg/sosreport/sosreport.jsx:335
 msgid "Obfuscate network addresses, hostnames, and usernames"
@@ -6445,6 +6558,12 @@ msgstr "Slett $0 volum"
 msgid "Permission denied"
 msgstr "Ingen tilgang"
 
+#: pkg/storaged/drive/smart-details.jsx:71
+#, fuzzy
+#| msgid "Filesystems"
+msgid "Persistent memory has become read-only"
+msgstr "Filsystemer"
+
 #: pkg/storaged/legacy-vdo/legacy-vdo.jsx:292
 msgid "Physical"
 msgstr "Fysisk"
@@ -6557,6 +6676,10 @@ msgstr "Bærbar"
 #: pkg/networkmanager/bridge.jsx:101 pkg/networkmanager/team.jsx:159
 msgid "Ports"
 msgstr "Porter"
+
+#: pkg/storaged/drive/smart-details.jsx:168
+msgid "Power on hours"
+msgstr ""
 
 #: pkg/storaged/partitions/partition.jsx:124
 #, fuzzy
@@ -7346,6 +7469,10 @@ msgstr "Velg"
 msgid "Run at"
 msgstr ""
 
+#: pkg/storaged/drive/smart-details.jsx:97
+msgid "Run extended test"
+msgstr ""
+
 #: pkg/sosreport/sosreport.jsx:308
 #, fuzzy
 #| msgid "View report"
@@ -7361,6 +7488,12 @@ msgstr ""
 #| msgid "Report"
 msgid "Run report"
 msgstr "Rapport"
+
+#: pkg/storaged/drive/smart-details.jsx:92
+#, fuzzy
+#| msgid "Run when host boots"
+msgid "Run short test"
+msgstr "Kjør når verten starter"
 
 #: pkg/lib/cockpit-connect-ssh.tsx:150 pkg/shell/hosts_dialog.jsx:686
 msgid ""
@@ -7602,13 +7735,19 @@ msgid ""
 "volume. At least $0 are needed."
 msgstr ""
 
+#: pkg/storaged/drive/smart-details.jsx:171
+#, fuzzy
+#| msgid "SMART self-test of $target"
+msgid "Self-test status"
+msgstr "SMART selvtest av $target"
+
 #: pkg/networkmanager/network-interface-members.jsx:209
 #: pkg/networkmanager/network-main.jsx:187
 #: pkg/networkmanager/network-main.jsx:202
 msgid "Sending"
 msgstr "Sender"
 
-#: pkg/storaged/drive/drive.jsx:123
+#: pkg/storaged/drive/drive.jsx:125
 #, fuzzy
 #| msgctxt "storage"
 #| msgid "Serial number"
@@ -7990,6 +8129,10 @@ msgstr "Spanning tree protokoll (STP)"
 msgid "Spare"
 msgstr "Reserve"
 
+#: pkg/storaged/drive/smart-details.jsx:66
+msgid "Spare capacity is below the threshold"
+msgstr ""
+
 #: pkg/lib/cockpit-components-shutdown.jsx:183
 msgid "Specific time"
 msgstr "Spesifikk tid"
@@ -8218,6 +8361,12 @@ msgstr ""
 msgid "Subscribing to systemd signals failed: $0"
 msgstr ""
 
+#: pkg/storaged/drive/smart-details.jsx:40
+#, fuzzy
+#| msgid "access"
+msgid "Successful"
+msgstr "tilgang"
+
 #: pkg/systemd/logs.jsx:399
 #, fuzzy
 #| msgid "Copy to clipboard"
@@ -8381,6 +8530,10 @@ msgstr "Team port"
 #: pkg/networkmanager/teamport.jsx:82
 msgid "Team port settings"
 msgstr "Team Port innstillinger"
+
+#: pkg/storaged/drive/smart-details.jsx:67
+msgid "Temperature outside of recommended thresholds"
+msgstr ""
 
 #: pkg/systemd/terminal.html:4 pkg/systemd/manifest.json:0
 msgid "Terminal"
@@ -9791,7 +9944,7 @@ msgstr "Validerer adresse"
 msgid "Validating authentication token"
 msgstr "Validerer godkjenningstoken"
 
-#: pkg/storaged/drive/drive.jsx:120 pkg/systemd/hwinfo.jsx:280
+#: pkg/storaged/drive/drive.jsx:122 pkg/systemd/hwinfo.jsx:280
 msgid "Vendor"
 msgstr "Leverandør"
 
@@ -9924,6 +10077,10 @@ msgstr "Virtuelt nettverk"
 msgid "Visit firewall"
 msgstr "Brannmur"
 
+#: pkg/storaged/drive/smart-details.jsx:70
+msgid "Volatile memory backup failed"
+msgstr ""
+
 #: pkg/storaged/lvm2/physical-volume.jsx:108
 msgid "Volume group"
 msgstr "Volumgruppe"
@@ -10042,7 +10199,7 @@ msgstr ""
 msgid "WireGuard"
 msgstr ""
 
-#: pkg/storaged/drive/drive.jsx:124
+#: pkg/storaged/drive/drive.jsx:126
 msgid "World wide name"
 msgstr ""
 
@@ -12741,9 +12898,6 @@ msgstr "sone"
 
 #~ msgid "Run unattended installation"
 #~ msgstr "Kjør installasjon uten tilsyn"
-
-#~ msgid "Run when host boots"
-#~ msgstr "Kjør når verten starter"
 
 #~ msgid "SPICE TLS port"
 #~ msgstr "SPICE TLS-port"

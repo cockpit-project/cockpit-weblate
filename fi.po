@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-11 03:01+0000\n"
+"POT-Creation-Date: 2025-03-12 03:01+0000\n"
 "PO-Revision-Date: 2025-01-09 08:56+0000\n"
 "Last-Translator: Ricky Tigg <ricky.tigg@gmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/cockpit/"
@@ -137,6 +137,13 @@ msgid "$0 hour"
 msgid_plural "$0 hours"
 msgstr[0] "$0 tunti"
 msgstr[1] "$0 tuntia"
+
+#: pkg/storaged/drive/smart-details.jsx:169
+#, fuzzy
+#| msgid "$0 hour"
+#| msgid_plural "$0 hours"
+msgid "$0 hours"
+msgstr "$0 tunti"
 
 #: pkg/systemd/overview-cards/insights.jsx:202
 msgid "$0 important hit"
@@ -552,6 +559,10 @@ msgstr "9."
 msgid "A compatible version of Cockpit is not installed on $0."
 msgstr "Yhteensopivaa versiota Cockpitistä ei ole asennettu kohteessa $0."
 
+#: pkg/storaged/drive/smart-details.jsx:57
+msgid "A fatal error occurred during the self-test operation"
+msgstr ""
+
 #: pkg/storaged/stratis/utils.jsx:120
 msgid "A filesystem with this name exists already in this pool."
 msgstr "Tämänniminen tiedostojärjestelmä on jo tässä varannossa."
@@ -622,6 +633,34 @@ msgstr "ARP-monitorointi"
 #: pkg/networkmanager/team.jsx:57
 msgid "ARP ping"
 msgstr "ARP:n ping"
+
+#: pkg/storaged/drive/smart-details.jsx:102
+msgid "Abort test"
+msgstr ""
+
+#: pkg/storaged/drive/smart-details.jsx:41
+msgid "Aborted"
+msgstr ""
+
+#: pkg/storaged/drive/smart-details.jsx:54
+msgid "Aborted by a Controller Level Reset"
+msgstr ""
+
+#: pkg/storaged/drive/smart-details.jsx:55
+msgid "Aborted due to a removal of a namespace from the namespace inventory"
+msgstr ""
+
+#: pkg/storaged/drive/smart-details.jsx:61
+msgid "Aborted due to a sanitize operation"
+msgstr ""
+
+#: pkg/storaged/drive/smart-details.jsx:56
+msgid "Aborted due to the processing of a Format NVM command"
+msgstr ""
+
+#: pkg/storaged/drive/smart-details.jsx:60
+msgid "Aborted for unknown reason"
+msgstr ""
 
 #: pkg/shell/topnav.tsx:174
 msgid "About Web Console"
@@ -1010,6 +1049,12 @@ msgstr "Kaikki"
 msgid "All $0 selected physical volumes are needed for the chosen layout."
 msgstr "Kaikki $0 valitut fyysiset taltiot tarvitaan valittuun asetteluun."
 
+#: pkg/storaged/drive/smart-details.jsx:69
+#, fuzzy
+#| msgid "Device is read-only"
+msgid "All media is in read-only mode"
+msgstr "Laite on vain-luku-muotoa"
+
 #: pkg/packagekit/autoupdates.jsx:421
 msgid "All updates"
 msgstr "Kaikki päivitykset"
@@ -1116,7 +1161,7 @@ msgstr "Soveltuu kriittisiin liitoksiin, kuten /var"
 msgid "Apps"
 msgstr "Sovellukset"
 
-#: pkg/storaged/drive/drive.jsx:102
+#: pkg/storaged/drive/smart-details.jsx:165
 msgid "Assessment"
 msgstr "Arviointi"
 
@@ -1161,6 +1206,12 @@ msgstr "Tiettynä aikana"
 
 #: pkg/sosreport/sosreport.jsx:505
 msgid "Attributes"
+msgstr "Attribuutit"
+
+#: pkg/storaged/drive/smart-details.jsx:185
+#, fuzzy
+#| msgid "Attributes"
+msgid "Attributes failing"
 msgstr "Attribuutit"
 
 #: pkg/selinux/setroubleshoot-view.jsx:356
@@ -1492,7 +1543,7 @@ msgstr ""
 msgid "Cannot schedule event in the past"
 msgstr "Tapahtumaa ei voi aikatauluttaa menneisyyteen"
 
-#: pkg/storaged/drive/drive.jsx:125 pkg/storaged/lvm2/volume-group.jsx:366
+#: pkg/storaged/drive/drive.jsx:127 pkg/storaged/lvm2/volume-group.jsx:366
 #: pkg/storaged/mdraid/mdraid.jsx:303 pkg/storaged/btrfs/volume.jsx:150
 msgid "Capacity"
 msgstr "Koko"
@@ -1834,6 +1885,15 @@ msgstr "Yhteensopiva kaikkien järjestelmien ja laitteiden kanssa (MBR)"
 msgid "Compatible with modern system and hard disks > 2TB (GPT)"
 msgstr ""
 "Yhteensopiva modernien järjestelmien ja kovalevyjen kanssa > 2 Tt (GPT)"
+
+#: pkg/storaged/drive/smart-details.jsx:58
+msgid ""
+"Completed with a segment that failed and the segment that failed is not known"
+msgstr ""
+
+#: pkg/storaged/drive/smart-details.jsx:59
+msgid "Completed with one or more failed segments"
+msgstr ""
 
 #: pkg/kdump/kdump-view.jsx:319
 msgid "Compress crash dumps to save space"
@@ -2467,6 +2527,10 @@ msgstr "Päällekkäisyyden poisto"
 msgid "Default"
 msgstr "Oletus"
 
+#: pkg/storaged/drive/smart-details.jsx:68
+msgid "Degraded"
+msgstr ""
+
 #: pkg/lib/cockpit-components-shutdown.jsx:201 pkg/systemd/timer-dialog.jsx:200
 #: pkg/systemd/timer-dialog.jsx:209
 msgid "Delay"
@@ -2610,10 +2674,14 @@ msgstr "Laite"
 msgid "Device contains unrecognized data"
 msgstr "Laite sisältää tuntemattomia tietoja"
 
-#: pkg/storaged/block/other.jsx:62 pkg/storaged/drive/drive.jsx:132
+#: pkg/storaged/block/other.jsx:62 pkg/storaged/drive/drive.jsx:133
 #: pkg/storaged/legacy-vdo/legacy-vdo.jsx:287
 msgid "Device file"
 msgstr "Laitetiedosto"
+
+#: pkg/storaged/drive/drive.jsx:98
+msgid "Device health (SMART)"
+msgstr ""
 
 #: pkg/storaged/partitions/actions.jsx:27 pkg/storaged/block/actions.jsx:28
 msgid "Device is read-only"
@@ -2627,6 +2695,10 @@ msgstr "Laitenumero"
 #: src/appstream/org.cockpit_project.cockpit_sosreport.metainfo.xml.in:5
 msgid "Diagnostic reports"
 msgstr "Diagnostiikkaraportit"
+
+#: pkg/storaged/drive/smart-details.jsx:46
+msgid "Did not complete"
+msgstr ""
 
 #: pkg/kdump/kdump-view.jsx:256 pkg/kdump/kdump-view.jsx:277
 #: pkg/kdump/kdump-view.jsx:303
@@ -2683,11 +2755,12 @@ msgstr "Katkaistu"
 msgid "Disk I/O"
 msgstr "Levyn I/O"
 
-#: pkg/storaged/drive/drive.jsx:106
+#: pkg/storaged/drive/smart-details.jsx:152
 msgid "Disk is OK"
 msgstr "Levy on kunnossa"
 
-#: pkg/storaged/drive/drive.jsx:105
+#: pkg/storaged/drive/smart-details.jsx:144
+#: pkg/storaged/drive/smart-details.jsx:148
 msgid "Disk is failing"
 msgstr "Levy on rikkoutumassa"
 
@@ -3151,6 +3224,32 @@ msgstr "FIPS jossa muita yleisiä kriteerejä koskevia rajoituksia."
 msgid "Failed"
 msgstr "Epäonnistui"
 
+#: pkg/storaged/drive/smart-details.jsx:51
+msgid "Failed (Damaged)"
+msgstr ""
+
+#: pkg/storaged/drive/smart-details.jsx:48
+msgid "Failed (Electrical)"
+msgstr ""
+
+#: pkg/storaged/drive/smart-details.jsx:50
+#, fuzzy
+#| msgid "Failed"
+msgid "Failed (Read)"
+msgstr "Epäonnistui"
+
+#: pkg/storaged/drive/smart-details.jsx:49
+#, fuzzy
+#| msgid "Failed"
+msgid "Failed (Servo)"
+msgstr "Epäonnistui"
+
+#: pkg/storaged/drive/smart-details.jsx:47
+#, fuzzy
+#| msgid "Unknown"
+msgid "Failed (Unknown)"
+msgstr "Tuntematon"
+
 #: pkg/shell/hosts_dialog.jsx:408
 msgid "Failed to add machine: $0"
 msgstr "Ei voitu lisätä konetta: $0"
@@ -3304,7 +3403,7 @@ msgstr "Palomuuri"
 msgid "Firewall is not available"
 msgstr "Palomuuri ei ole saatavilla"
 
-#: pkg/storaged/drive/drive.jsx:122
+#: pkg/storaged/drive/drive.jsx:124
 msgid "Firmware version"
 msgstr "Laiteohjelmiston versio"
 
@@ -3668,6 +3767,12 @@ msgstr ""
 "salasanaa tulevaisuudessa, käytä käyttäjän $2 sisäänkirjautumissalasanaa "
 "koneen $3 avainsalasanana tai jätä avaimen salasana tyhjäksi."
 
+#: pkg/storaged/drive/smart-details.jsx:42
+#, fuzzy
+#| msgid "Progress: $0"
+msgid "In progress"
+msgstr "Edistyminen: $0"
+
 #: pkg/storaged/mdraid/mdraid-disk.jsx:69
 msgid "In sync"
 msgstr "Synkronoitu"
@@ -3844,6 +3949,13 @@ msgstr "Sisäinen virhe: Virheellinen haasteen otsikko"
 #: pkg/static/login.js:871
 msgid "Internal protocol error"
 msgstr "Sisäinen protokollavirhe"
+
+#: pkg/storaged/drive/smart-details.jsx:45
+#, fuzzy
+#| msgid "Interface"
+#| msgid_plural "Interfaces"
+msgid "Interrupted"
+msgstr "Liitäntä"
 
 #: pkg/systemd/services.jsx:253
 msgid "Invalid"
@@ -4704,7 +4816,7 @@ msgstr "Lievennykset"
 msgid "Mode"
 msgstr "Tila"
 
-#: pkg/storaged/drive/drive.jsx:121
+#: pkg/storaged/drive/drive.jsx:123
 #: pkg/systemd/overview-cards/systemInformationCard.jsx:111
 #: pkg/systemd/hwinfo.jsx:279
 msgid "Model"
@@ -4842,7 +4954,7 @@ msgstr ""
 msgid "Multi-system chassis"
 msgstr "Monijärjestelmäinen alusta"
 
-#: pkg/storaged/drive/drive.jsx:135
+#: pkg/storaged/drive/drive.jsx:136
 msgid "Multipathed devices"
 msgstr "Monipolkuiset laitteet"
 
@@ -5178,7 +5290,7 @@ msgstr "Ei löytynyt lokeja"
 msgid "No matching results"
 msgstr "Ei vastaavia tuloksia"
 
-#: pkg/storaged/drive/drive.jsx:128
+#: pkg/storaged/drive/drive.jsx:130
 msgid "No media inserted"
 msgstr "Ei välinettä asetettuna"
 
@@ -5354,6 +5466,10 @@ msgstr "Muistikirja"
 #: pkg/systemd/logs.jsx:70
 msgid "Notice and above"
 msgstr "Ilmoitus ja yli"
+
+#: pkg/storaged/drive/smart-details.jsx:175
+msgid "Number of bad sectors"
+msgstr ""
 
 #: pkg/sosreport/sosreport.jsx:335
 msgid "Obfuscate network addresses, hostnames, and usernames"
@@ -5778,6 +5894,12 @@ msgstr "Poistetaanko alitaltio $0 pysyvästi?"
 msgid "Permission denied"
 msgstr "Käyttö estetty"
 
+#: pkg/storaged/drive/smart-details.jsx:71
+#, fuzzy
+#| msgid "Filesystem is mounted read-only"
+msgid "Persistent memory has become read-only"
+msgstr "Tiedostojärjestelmä on liitetty vain luku -tilassa"
+
 #: pkg/storaged/legacy-vdo/legacy-vdo.jsx:292
 msgid "Physical"
 msgstr "Fyysinen"
@@ -5878,6 +6000,10 @@ msgstr "Kannettava"
 #: pkg/networkmanager/bridge.jsx:101 pkg/networkmanager/team.jsx:159
 msgid "Ports"
 msgstr "Portit"
+
+#: pkg/storaged/drive/smart-details.jsx:168
+msgid "Power on hours"
+msgstr ""
 
 #: pkg/storaged/partitions/partition.jsx:124
 msgid "PowerPC PReP boot partition"
@@ -6602,6 +6728,10 @@ msgstr "Rivin valinta"
 msgid "Run at"
 msgstr "Aja klo"
 
+#: pkg/storaged/drive/smart-details.jsx:97
+msgid "Run extended test"
+msgstr ""
+
 #: pkg/sosreport/sosreport.jsx:308
 msgid "Run new report"
 msgstr "Tee uusi raportti"
@@ -6613,6 +6743,12 @@ msgstr "Aja kohteessa"
 #: pkg/sosreport/sosreport.jsx:286 pkg/sosreport/sosreport.jsx:495
 msgid "Run report"
 msgstr "Tee raportti"
+
+#: pkg/storaged/drive/smart-details.jsx:92
+#, fuzzy
+#| msgid "Run when host boots"
+msgid "Run short test"
+msgstr "Suorita, kun isäntä käynnistyy"
 
 #: pkg/lib/cockpit-connect-ssh.tsx:150 pkg/shell/hosts_dialog.jsx:686
 msgid ""
@@ -6844,13 +6980,19 @@ msgstr ""
 "Valitse fyysiset taltiot, joita tulee käyttää loogisen taltion korjaamiseen. "
 "Vähintään $0 tarvitaan."
 
+#: pkg/storaged/drive/smart-details.jsx:171
+#, fuzzy
+#| msgid "SMART self-test of $target"
+msgid "Self-test status"
+msgstr "Levyn $target SMART-itsetesti"
+
 #: pkg/networkmanager/network-interface-members.jsx:209
 #: pkg/networkmanager/network-main.jsx:187
 #: pkg/networkmanager/network-main.jsx:202
 msgid "Sending"
 msgstr "Lähetetään"
 
-#: pkg/storaged/drive/drive.jsx:123
+#: pkg/storaged/drive/drive.jsx:125
 msgid "Serial number"
 msgstr "Sarjanumero"
 
@@ -7203,6 +7345,10 @@ msgstr "Spanning tree -protokolla (STP)"
 msgid "Spare"
 msgstr "Varaosa"
 
+#: pkg/storaged/drive/smart-details.jsx:66
+msgid "Spare capacity is below the threshold"
+msgstr ""
+
 #: pkg/lib/cockpit-components-shutdown.jsx:183
 msgid "Specific time"
 msgstr "Tietty aika"
@@ -7409,6 +7555,12 @@ msgstr "Pieni kannettava tietokone"
 msgid "Subscribing to systemd signals failed: $0"
 msgstr "Systemd-signaalien tilaaminen epäonnistui: $0"
 
+#: pkg/storaged/drive/smart-details.jsx:40
+#, fuzzy
+#| msgid "Logout successful"
+msgid "Successful"
+msgstr "Uloskirjautuminen onnistui"
+
 #: pkg/systemd/logs.jsx:399
 msgid "Successfully copied to clipboard"
 msgstr "Kopioitu onnistuneesti leikepöydälle"
@@ -7552,6 +7704,10 @@ msgstr "Joukkueen portti"
 #: pkg/networkmanager/teamport.jsx:82
 msgid "Team port settings"
 msgstr "Joukkueen portin asetukset"
+
+#: pkg/storaged/drive/smart-details.jsx:67
+msgid "Temperature outside of recommended thresholds"
+msgstr ""
 
 #: pkg/systemd/terminal.html:4 pkg/systemd/manifest.json:0
 msgid "Terminal"
@@ -8867,7 +9023,7 @@ msgstr "Vahvistetaan osoite"
 msgid "Validating authentication token"
 msgstr "Vahvistetaan todennustunnus"
 
-#: pkg/storaged/drive/drive.jsx:120 pkg/systemd/hwinfo.jsx:280
+#: pkg/storaged/drive/drive.jsx:122 pkg/systemd/hwinfo.jsx:280
 msgid "Vendor"
 msgstr "Toimittaja"
 
@@ -8974,6 +9130,10 @@ msgstr "Virtuaalinen kokoraja"
 #: pkg/lib/cockpit-components-firewalld-request.jsx:153
 msgid "Visit firewall"
 msgstr "Käy palomuurissa"
+
+#: pkg/storaged/drive/smart-details.jsx:70
+msgid "Volatile memory backup failed"
+msgstr ""
 
 #: pkg/storaged/lvm2/physical-volume.jsx:108
 msgid "Volume group"
@@ -9085,7 +9245,7 @@ msgstr "Asetetaan \"Automaattinen\""
 msgid "WireGuard"
 msgstr "WireGuard"
 
-#: pkg/storaged/drive/drive.jsx:124
+#: pkg/storaged/drive/drive.jsx:126
 msgid "World wide name"
 msgstr "Maailmanlaajuinen nimi"
 
@@ -11804,9 +11964,6 @@ msgstr "vyöhyke"
 
 #~ msgid "Run unattended installation"
 #~ msgstr "Suorita asennus ilman valvontaa"
-
-#~ msgid "Run when host boots"
-#~ msgstr "Suorita, kun isäntä käynnistyy"
 
 #~ msgid "SPICE TLS port"
 #~ msgstr "SPICE-TLS-portti"

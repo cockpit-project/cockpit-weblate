@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-11 03:01+0000\n"
+"POT-Creation-Date: 2025-03-12 03:01+0000\n"
 "PO-Revision-Date: 2024-09-07 12:38+0000\n"
 "Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
 "memory@weblate.org>\n"
@@ -151,6 +151,13 @@ msgid "$0 hour"
 msgid_plural "$0 hours"
 msgstr[0] "$0 uur"
 msgstr[1] "$0 uren"
+
+#: pkg/storaged/drive/smart-details.jsx:169
+#, fuzzy
+#| msgid "$0 hour"
+#| msgid_plural "$0 hours"
+msgid "$0 hours"
+msgstr "$0 uur"
 
 #: pkg/systemd/overview-cards/insights.jsx:202
 msgid "$0 important hit"
@@ -578,6 +585,10 @@ msgstr "9de"
 msgid "A compatible version of Cockpit is not installed on $0."
 msgstr "Er is geen compatibele versie van Cockpit geïnstalleerd op $0."
 
+#: pkg/storaged/drive/smart-details.jsx:57
+msgid "A fatal error occurred during the self-test operation"
+msgstr ""
+
 #: pkg/storaged/stratis/utils.jsx:120
 msgid "A filesystem with this name exists already in this pool."
 msgstr "Er bestaat al een bestandssysteem met deze naam in deze pool."
@@ -651,6 +662,34 @@ msgstr "ARP-bewaking"
 #: pkg/networkmanager/team.jsx:57
 msgid "ARP ping"
 msgstr "ARP-ping"
+
+#: pkg/storaged/drive/smart-details.jsx:102
+msgid "Abort test"
+msgstr ""
+
+#: pkg/storaged/drive/smart-details.jsx:41
+msgid "Aborted"
+msgstr ""
+
+#: pkg/storaged/drive/smart-details.jsx:54
+msgid "Aborted by a Controller Level Reset"
+msgstr ""
+
+#: pkg/storaged/drive/smart-details.jsx:55
+msgid "Aborted due to a removal of a namespace from the namespace inventory"
+msgstr ""
+
+#: pkg/storaged/drive/smart-details.jsx:61
+msgid "Aborted due to a sanitize operation"
+msgstr ""
+
+#: pkg/storaged/drive/smart-details.jsx:56
+msgid "Aborted due to the processing of a Format NVM command"
+msgstr ""
+
+#: pkg/storaged/drive/smart-details.jsx:60
+msgid "Aborted for unknown reason"
+msgstr ""
 
 #: pkg/shell/topnav.tsx:174
 msgid "About Web Console"
@@ -1043,6 +1082,12 @@ msgid "All $0 selected physical volumes are needed for the chosen layout."
 msgstr ""
 "Alle $0 geselecteerde fysieke volumes zijn nodig voor de gekozen lay-out."
 
+#: pkg/storaged/drive/smart-details.jsx:69
+#, fuzzy
+#| msgid "Device is read-only"
+msgid "All media is in read-only mode"
+msgstr "Apparaat is alleen-lezen"
+
 #: pkg/packagekit/autoupdates.jsx:421
 msgid "All updates"
 msgstr "Alle vernieuwingen"
@@ -1151,7 +1196,7 @@ msgstr "Geschikt voor kritieke koppelingen, zoals /var"
 msgid "Apps"
 msgstr "Apps"
 
-#: pkg/storaged/drive/drive.jsx:102
+#: pkg/storaged/drive/smart-details.jsx:165
 #, fuzzy
 #| msgctxt "storage"
 #| msgid "Assessment"
@@ -1201,6 +1246,12 @@ msgstr "Op specifiek tijdstip"
 
 #: pkg/sosreport/sosreport.jsx:505
 msgid "Attributes"
+msgstr "Attributen"
+
+#: pkg/storaged/drive/smart-details.jsx:185
+#, fuzzy
+#| msgid "Attributes"
+msgid "Attributes failing"
 msgstr "Attributen"
 
 #: pkg/selinux/setroubleshoot-view.jsx:356
@@ -1536,7 +1587,7 @@ msgstr ""
 msgid "Cannot schedule event in the past"
 msgstr "Kan evenement niet in het verleden plannen"
 
-#: pkg/storaged/drive/drive.jsx:125 pkg/storaged/lvm2/volume-group.jsx:366
+#: pkg/storaged/drive/drive.jsx:127 pkg/storaged/lvm2/volume-group.jsx:366
 #: pkg/storaged/mdraid/mdraid.jsx:303 pkg/storaged/btrfs/volume.jsx:150
 msgid "Capacity"
 msgstr "Capaciteit"
@@ -1892,6 +1943,15 @@ msgstr "Compatibel met alle systemen en apparaten (MBR)"
 #: pkg/storaged/partitions/format-disk-dialog.jsx:56
 msgid "Compatible with modern system and hard disks > 2TB (GPT)"
 msgstr "Verenigbaar met moderne systemen en harde schijven > 2TB (GPT)"
+
+#: pkg/storaged/drive/smart-details.jsx:58
+msgid ""
+"Completed with a segment that failed and the segment that failed is not known"
+msgstr ""
+
+#: pkg/storaged/drive/smart-details.jsx:59
+msgid "Completed with one or more failed segments"
+msgstr ""
 
 #: pkg/kdump/kdump-view.jsx:319
 msgid "Compress crash dumps to save space"
@@ -2547,6 +2607,10 @@ msgstr "Deduplicatie"
 msgid "Default"
 msgstr "Standaard"
 
+#: pkg/storaged/drive/smart-details.jsx:68
+msgid "Degraded"
+msgstr ""
+
 #: pkg/lib/cockpit-components-shutdown.jsx:201 pkg/systemd/timer-dialog.jsx:200
 #: pkg/systemd/timer-dialog.jsx:209
 msgid "Delay"
@@ -2697,10 +2761,14 @@ msgstr "Apparaat"
 msgid "Device contains unrecognized data"
 msgstr "Onbekende data"
 
-#: pkg/storaged/block/other.jsx:62 pkg/storaged/drive/drive.jsx:132
+#: pkg/storaged/block/other.jsx:62 pkg/storaged/drive/drive.jsx:133
 #: pkg/storaged/legacy-vdo/legacy-vdo.jsx:287
 msgid "Device file"
 msgstr "Apparaatbestand"
+
+#: pkg/storaged/drive/drive.jsx:98
+msgid "Device health (SMART)"
+msgstr ""
 
 #: pkg/storaged/partitions/actions.jsx:27 pkg/storaged/block/actions.jsx:28
 msgid "Device is read-only"
@@ -2716,6 +2784,10 @@ msgstr "Servicenaam"
 #: src/appstream/org.cockpit_project.cockpit_sosreport.metainfo.xml.in:5
 msgid "Diagnostic reports"
 msgstr "Diagnostische rapporten"
+
+#: pkg/storaged/drive/smart-details.jsx:46
+msgid "Did not complete"
+msgstr ""
 
 #: pkg/kdump/kdump-view.jsx:256 pkg/kdump/kdump-view.jsx:277
 #: pkg/kdump/kdump-view.jsx:303
@@ -2772,11 +2844,12 @@ msgstr "Verbinding verbroken"
 msgid "Disk I/O"
 msgstr "Schijf I/O"
 
-#: pkg/storaged/drive/drive.jsx:106
+#: pkg/storaged/drive/smart-details.jsx:152
 msgid "Disk is OK"
 msgstr "Schijf is OK"
 
-#: pkg/storaged/drive/drive.jsx:105
+#: pkg/storaged/drive/smart-details.jsx:144
+#: pkg/storaged/drive/smart-details.jsx:148
 msgid "Disk is failing"
 msgstr "Schijf werkt niet"
 
@@ -3247,6 +3320,32 @@ msgstr "FIPS met verdere Common Criteria-beperkingen."
 msgid "Failed"
 msgstr "Mislukt"
 
+#: pkg/storaged/drive/smart-details.jsx:51
+msgid "Failed (Damaged)"
+msgstr ""
+
+#: pkg/storaged/drive/smart-details.jsx:48
+msgid "Failed (Electrical)"
+msgstr ""
+
+#: pkg/storaged/drive/smart-details.jsx:50
+#, fuzzy
+#| msgid "Failed"
+msgid "Failed (Read)"
+msgstr "Mislukt"
+
+#: pkg/storaged/drive/smart-details.jsx:49
+#, fuzzy
+#| msgid "Failed"
+msgid "Failed (Servo)"
+msgstr "Mislukt"
+
+#: pkg/storaged/drive/smart-details.jsx:47
+#, fuzzy
+#| msgid "Unknown"
+msgid "Failed (Unknown)"
+msgstr "Onbekend"
+
 #: pkg/shell/hosts_dialog.jsx:408
 msgid "Failed to add machine: $0"
 msgstr "Kan machine niet toevoegen: $0"
@@ -3404,7 +3503,7 @@ msgstr "Firewall"
 msgid "Firewall is not available"
 msgstr "Firewall is niet beschikbaar"
 
-#: pkg/storaged/drive/drive.jsx:122
+#: pkg/storaged/drive/drive.jsx:124
 #, fuzzy
 #| msgctxt "storage"
 #| msgid "Firmware version"
@@ -3778,6 +3877,12 @@ msgstr ""
 "gebruik je het inlogwachtwoord van $2 op $3 als het sleutelwachtwoord, of "
 "laat je het sleutelwachtwoord leeg."
 
+#: pkg/storaged/drive/smart-details.jsx:42
+#, fuzzy
+#| msgid "Progress: $0"
+msgid "In progress"
+msgstr "Voortgang: $0"
+
 #: pkg/storaged/mdraid/mdraid-disk.jsx:69
 msgid "In sync"
 msgstr "Synchroon"
@@ -3962,6 +4067,13 @@ msgstr "Interne fout: ongeldige exceptie koptekst"
 #| msgid "Internal error"
 msgid "Internal protocol error"
 msgstr "Interne fout"
+
+#: pkg/storaged/drive/smart-details.jsx:45
+#, fuzzy
+#| msgid "Interface"
+#| msgid_plural "Interfaces"
+msgid "Interrupted"
+msgstr "Interface"
 
 #: pkg/systemd/services.jsx:253
 msgid "Invalid"
@@ -4877,7 +4989,7 @@ msgstr "Beperkende factoren"
 msgid "Mode"
 msgstr "Modus"
 
-#: pkg/storaged/drive/drive.jsx:121
+#: pkg/storaged/drive/drive.jsx:123
 #: pkg/systemd/overview-cards/systemInformationCard.jsx:111
 #: pkg/systemd/hwinfo.jsx:279
 msgid "Model"
@@ -5014,7 +5126,7 @@ msgstr ""
 msgid "Multi-system chassis"
 msgstr "Chassis met meerdere systemen"
 
-#: pkg/storaged/drive/drive.jsx:135
+#: pkg/storaged/drive/drive.jsx:136
 #, fuzzy
 #| msgctxt "storage"
 #| msgid "Multipathed devices"
@@ -5367,7 +5479,7 @@ msgstr "Geen logs gevonden"
 msgid "No matching results"
 msgstr "Geen overeenkomende resultaten"
 
-#: pkg/storaged/drive/drive.jsx:128
+#: pkg/storaged/drive/drive.jsx:130
 msgid "No media inserted"
 msgstr "Geen media geplaatst"
 
@@ -5559,6 +5671,10 @@ msgstr "Notebook"
 #: pkg/systemd/logs.jsx:70
 msgid "Notice and above"
 msgstr "Kennisgeving en hoger"
+
+#: pkg/storaged/drive/smart-details.jsx:175
+msgid "Number of bad sectors"
+msgstr ""
 
 #: pkg/sosreport/sosreport.jsx:335
 msgid "Obfuscate network addresses, hostnames, and usernames"
@@ -5990,6 +6106,12 @@ msgstr "$0 permanent verwijderen?"
 msgid "Permission denied"
 msgstr "Toestemming geweigerd"
 
+#: pkg/storaged/drive/smart-details.jsx:71
+#, fuzzy
+#| msgid "Filesystem is locked"
+msgid "Persistent memory has become read-only"
+msgstr "Bestandssysteem is vergrendeld"
+
 #: pkg/storaged/legacy-vdo/legacy-vdo.jsx:292
 msgid "Physical"
 msgstr "Fysiek"
@@ -6094,6 +6216,10 @@ msgstr "Draagbaar"
 #: pkg/networkmanager/bridge.jsx:101 pkg/networkmanager/team.jsx:159
 msgid "Ports"
 msgstr "Poorten"
+
+#: pkg/storaged/drive/smart-details.jsx:168
+msgid "Power on hours"
+msgstr ""
 
 #: pkg/storaged/partitions/partition.jsx:124
 #, fuzzy
@@ -6836,6 +6962,10 @@ msgstr "Selecteren"
 msgid "Run at"
 msgstr "Uitvoeren op"
 
+#: pkg/storaged/drive/smart-details.jsx:97
+msgid "Run extended test"
+msgstr ""
+
 #: pkg/sosreport/sosreport.jsx:308
 msgid "Run new report"
 msgstr "Vier nieuw rapport uit"
@@ -6847,6 +6977,12 @@ msgstr "Uitvoeren op"
 #: pkg/sosreport/sosreport.jsx:286 pkg/sosreport/sosreport.jsx:495
 msgid "Run report"
 msgstr "Voer rapport uit"
+
+#: pkg/storaged/drive/smart-details.jsx:92
+#, fuzzy
+#| msgid "Run when host boots"
+msgid "Run short test"
+msgstr "Uitvoeren wanneer de host opstart"
 
 #: pkg/lib/cockpit-connect-ssh.tsx:150 pkg/shell/hosts_dialog.jsx:686
 msgid ""
@@ -7088,13 +7224,19 @@ msgstr ""
 "Selecteer de fysieke volumes die moeten worden gebruikt om het logische "
 "volume te repareren. Er zijn minimaal $0 nodig."
 
+#: pkg/storaged/drive/smart-details.jsx:171
+#, fuzzy
+#| msgid "SMART self-test of $target"
+msgid "Self-test status"
+msgstr "SMART zelftest van $target"
+
 #: pkg/networkmanager/network-interface-members.jsx:209
 #: pkg/networkmanager/network-main.jsx:187
 #: pkg/networkmanager/network-main.jsx:202
 msgid "Sending"
 msgstr "Verzenden"
 
-#: pkg/storaged/drive/drive.jsx:123
+#: pkg/storaged/drive/drive.jsx:125
 #, fuzzy
 #| msgctxt "storage"
 #| msgid "Serial number"
@@ -7467,6 +7609,10 @@ msgstr "Spanning tree protocol (STP)"
 msgid "Spare"
 msgstr "Reserve"
 
+#: pkg/storaged/drive/smart-details.jsx:66
+msgid "Spare capacity is below the threshold"
+msgstr ""
+
 #: pkg/lib/cockpit-components-shutdown.jsx:183
 msgid "Specific time"
 msgstr "Specifieke tijd"
@@ -7687,6 +7833,12 @@ msgstr "Sub-notebook"
 msgid "Subscribing to systemd signals failed: $0"
 msgstr "Abonneren op systemd-signalen is mislukt: $0"
 
+#: pkg/storaged/drive/smart-details.jsx:40
+#, fuzzy
+#| msgid "Logout successful"
+msgid "Successful"
+msgstr "Uitloggen succesvol"
+
 #: pkg/systemd/logs.jsx:399
 msgid "Successfully copied to clipboard"
 msgstr "Succesvol naar het klembord gekopieerd"
@@ -7834,6 +7986,10 @@ msgstr "Teampoort"
 #: pkg/networkmanager/teamport.jsx:82
 msgid "Team port settings"
 msgstr "Teampoortinstellingen"
+
+#: pkg/storaged/drive/smart-details.jsx:67
+msgid "Temperature outside of recommended thresholds"
+msgstr ""
 
 #: pkg/systemd/terminal.html:4 pkg/systemd/manifest.json:0
 msgid "Terminal"
@@ -9204,7 +9360,7 @@ msgstr "Adres valideren"
 msgid "Validating authentication token"
 msgstr "Verificatietoken valideren"
 
-#: pkg/storaged/drive/drive.jsx:120 pkg/systemd/hwinfo.jsx:280
+#: pkg/storaged/drive/drive.jsx:122 pkg/systemd/hwinfo.jsx:280
 msgid "Vendor"
 msgstr "Leverancier"
 
@@ -9312,6 +9468,10 @@ msgstr "Virtueel netwerk"
 #: pkg/lib/cockpit-components-firewalld-request.jsx:153
 msgid "Visit firewall"
 msgstr "Bezoek firewall"
+
+#: pkg/storaged/drive/smart-details.jsx:70
+msgid "Volatile memory backup failed"
+msgstr ""
 
 #: pkg/storaged/lvm2/physical-volume.jsx:108
 msgid "Volume group"
@@ -9427,7 +9587,7 @@ msgstr "Wordt ingesteld op \"Automatisch\""
 msgid "WireGuard"
 msgstr "WireGuard"
 
-#: pkg/storaged/drive/drive.jsx:124
+#: pkg/storaged/drive/drive.jsx:126
 #, fuzzy
 #| msgctxt "storage"
 #| msgid "World wide name"
@@ -12209,9 +12369,6 @@ msgstr "zone"
 
 #~ msgid "Run unattended installation"
 #~ msgstr "Voer een installatie zonder toezicht uit"
-
-#~ msgid "Run when host boots"
-#~ msgstr "Uitvoeren wanneer de host opstart"
 
 #~ msgid "SPICE TLS port"
 #~ msgstr "SPICE TLS poort"

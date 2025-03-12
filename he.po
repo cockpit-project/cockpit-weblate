@@ -24,7 +24,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-11 03:01+0000\n"
+"POT-Creation-Date: 2025-03-12 03:01+0000\n"
 "PO-Revision-Date: 2024-11-13 11:38+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://translate.fedoraproject.org/projects/cockpit/"
@@ -172,6 +172,13 @@ msgstr[0] "שעה"
 msgstr[1] "שעתיים"
 msgstr[2] "$0 שעות"
 msgstr[3] "$0 שעות"
+
+#: pkg/storaged/drive/smart-details.jsx:169
+#, fuzzy
+#| msgid "$0 hour"
+#| msgid_plural "$0 hours"
+msgid "$0 hours"
+msgstr "שעה"
 
 #: pkg/systemd/overview-cards/insights.jsx:202
 msgid "$0 important hit"
@@ -623,6 +630,10 @@ msgstr "תשעה"
 msgid "A compatible version of Cockpit is not installed on $0."
 msgstr "לא מותקנת גרסה תואמת של Cockpit ב־$0."
 
+#: pkg/storaged/drive/smart-details.jsx:57
+msgid "A fatal error occurred during the self-test operation"
+msgstr ""
+
 #: pkg/storaged/stratis/utils.jsx:120
 msgid "A filesystem with this name exists already in this pool."
 msgstr "כבר קיימת מערכת קבצים בשם הזה במאגר הזה."
@@ -688,6 +699,34 @@ msgstr "מעקב אחר ARP"
 #: pkg/networkmanager/team.jsx:57
 msgid "ARP ping"
 msgstr "פינג ARP"
+
+#: pkg/storaged/drive/smart-details.jsx:102
+msgid "Abort test"
+msgstr ""
+
+#: pkg/storaged/drive/smart-details.jsx:41
+msgid "Aborted"
+msgstr ""
+
+#: pkg/storaged/drive/smart-details.jsx:54
+msgid "Aborted by a Controller Level Reset"
+msgstr ""
+
+#: pkg/storaged/drive/smart-details.jsx:55
+msgid "Aborted due to a removal of a namespace from the namespace inventory"
+msgstr ""
+
+#: pkg/storaged/drive/smart-details.jsx:61
+msgid "Aborted due to a sanitize operation"
+msgstr ""
+
+#: pkg/storaged/drive/smart-details.jsx:56
+msgid "Aborted due to the processing of a Format NVM command"
+msgstr ""
+
+#: pkg/storaged/drive/smart-details.jsx:60
+msgid "Aborted for unknown reason"
+msgstr ""
 
 #: pkg/shell/topnav.tsx:174
 msgid "About Web Console"
@@ -1071,6 +1110,12 @@ msgstr "הכול"
 msgid "All $0 selected physical volumes are needed for the chosen layout."
 msgstr "כל $0 הכרכים הפיזיים הנבחרים נחוצים לפריסה הנבחרת."
 
+#: pkg/storaged/drive/smart-details.jsx:69
+#, fuzzy
+#| msgid "Device is read-only"
+msgid "All media is in read-only mode"
+msgstr "ההתקן הוא לקריאה בלבד"
+
 #: pkg/packagekit/autoupdates.jsx:421
 msgid "All updates"
 msgstr "כל העדכונים"
@@ -1176,7 +1221,7 @@ msgstr "מתאים לעיגונים מהותיים כגון ‎/var"
 msgid "Apps"
 msgstr "יישומים"
 
-#: pkg/storaged/drive/drive.jsx:102
+#: pkg/storaged/drive/smart-details.jsx:165
 #, fuzzy
 #| msgctxt "storage"
 #| msgid "Assessment"
@@ -1228,6 +1273,12 @@ msgstr "במועד מסוים"
 
 #: pkg/sosreport/sosreport.jsx:505
 msgid "Attributes"
+msgstr "מאפיינים"
+
+#: pkg/storaged/drive/smart-details.jsx:185
+#, fuzzy
+#| msgid "Attributes"
+msgid "Attributes failing"
 msgstr "מאפיינים"
 
 #: pkg/selinux/setroubleshoot-view.jsx:356
@@ -1552,7 +1603,7 @@ msgstr "לא ניתן להצטרף לשם תחום כיוון ש־realmd לא ז
 msgid "Cannot schedule event in the past"
 msgstr "לא ניתן לתזמן אירוע לעבר"
 
-#: pkg/storaged/drive/drive.jsx:125 pkg/storaged/lvm2/volume-group.jsx:366
+#: pkg/storaged/drive/drive.jsx:127 pkg/storaged/lvm2/volume-group.jsx:366
 #: pkg/storaged/mdraid/mdraid.jsx:303 pkg/storaged/btrfs/volume.jsx:150
 msgid "Capacity"
 msgstr "קיבולת"
@@ -1894,6 +1945,15 @@ msgstr "תואם לכל המערכות וההתקנים (MBR)"
 #: pkg/storaged/partitions/format-disk-dialog.jsx:56
 msgid "Compatible with modern system and hard disks > 2TB (GPT)"
 msgstr "תואם למערכות ולכוננים חדישים > 2 ט״ב (GPT)"
+
+#: pkg/storaged/drive/smart-details.jsx:58
+msgid ""
+"Completed with a segment that failed and the segment that failed is not known"
+msgstr ""
+
+#: pkg/storaged/drive/smart-details.jsx:59
+msgid "Completed with one or more failed segments"
+msgstr ""
 
 #: pkg/kdump/kdump-view.jsx:319
 msgid "Compress crash dumps to save space"
@@ -2532,6 +2592,10 @@ msgstr "הסרת כפילות"
 msgid "Default"
 msgstr "בררת מחדל"
 
+#: pkg/storaged/drive/smart-details.jsx:68
+msgid "Degraded"
+msgstr ""
+
 #: pkg/lib/cockpit-components-shutdown.jsx:201 pkg/systemd/timer-dialog.jsx:200
 #: pkg/systemd/timer-dialog.jsx:209
 msgid "Delay"
@@ -2680,10 +2744,14 @@ msgstr "התקן"
 msgid "Device contains unrecognized data"
 msgstr "נתונים לא מזוהים"
 
-#: pkg/storaged/block/other.jsx:62 pkg/storaged/drive/drive.jsx:132
+#: pkg/storaged/block/other.jsx:62 pkg/storaged/drive/drive.jsx:133
 #: pkg/storaged/legacy-vdo/legacy-vdo.jsx:287
 msgid "Device file"
 msgstr "קובץ התקן"
+
+#: pkg/storaged/drive/drive.jsx:98
+msgid "Device health (SMART)"
+msgstr ""
 
 #: pkg/storaged/partitions/actions.jsx:27 pkg/storaged/block/actions.jsx:28
 msgid "Device is read-only"
@@ -2699,6 +2767,10 @@ msgstr "שם השירות"
 #: src/appstream/org.cockpit_project.cockpit_sosreport.metainfo.xml.in:5
 msgid "Diagnostic reports"
 msgstr "דוחות אבחון"
+
+#: pkg/storaged/drive/smart-details.jsx:46
+msgid "Did not complete"
+msgstr ""
 
 #: pkg/kdump/kdump-view.jsx:256 pkg/kdump/kdump-view.jsx:277
 #: pkg/kdump/kdump-view.jsx:303
@@ -2755,11 +2827,12 @@ msgstr "מנותק"
 msgid "Disk I/O"
 msgstr "קלט/פלט של כונן"
 
-#: pkg/storaged/drive/drive.jsx:106
+#: pkg/storaged/drive/smart-details.jsx:152
 msgid "Disk is OK"
 msgstr "הכונן תקין"
 
-#: pkg/storaged/drive/drive.jsx:105
+#: pkg/storaged/drive/smart-details.jsx:144
+#: pkg/storaged/drive/smart-details.jsx:148
 msgid "Disk is failing"
 msgstr "הכונן נכשל"
 
@@ -3229,6 +3302,32 @@ msgstr "FIPS עם מגבלות קריטריונים משותפים נוספות.
 msgid "Failed"
 msgstr "נכשל"
 
+#: pkg/storaged/drive/smart-details.jsx:51
+msgid "Failed (Damaged)"
+msgstr ""
+
+#: pkg/storaged/drive/smart-details.jsx:48
+msgid "Failed (Electrical)"
+msgstr ""
+
+#: pkg/storaged/drive/smart-details.jsx:50
+#, fuzzy
+#| msgid "Failed"
+msgid "Failed (Read)"
+msgstr "נכשל"
+
+#: pkg/storaged/drive/smart-details.jsx:49
+#, fuzzy
+#| msgid "Failed"
+msgid "Failed (Servo)"
+msgstr "נכשל"
+
+#: pkg/storaged/drive/smart-details.jsx:47
+#, fuzzy
+#| msgid "Unknown"
+msgid "Failed (Unknown)"
+msgstr "לא ידוע"
+
 #: pkg/shell/hosts_dialog.jsx:408
 msgid "Failed to add machine: $0"
 msgstr "הוספת המכונה נכשלה: $0"
@@ -3385,7 +3484,7 @@ msgstr "חומת אש"
 msgid "Firewall is not available"
 msgstr "חומת האש אינה זמינה"
 
-#: pkg/storaged/drive/drive.jsx:122
+#: pkg/storaged/drive/drive.jsx:124
 #, fuzzy
 #| msgctxt "storage"
 #| msgid "Firmware version"
@@ -3756,6 +3855,12 @@ msgstr ""
 "כדי לאפשר כניסה אל $0 בתור $1 ללא סיסמה בעתיד, עליך להשתמש בסיסמת הכניסה של "
 "$2 על גבי $3 כסיסמת המפתח או להשאיר את סיסמת המפתח ריקה."
 
+#: pkg/storaged/drive/smart-details.jsx:42
+#, fuzzy
+#| msgid "Progress: $0"
+msgid "In progress"
+msgstr "התקדמות: $0"
+
 #: pkg/storaged/mdraid/mdraid-disk.jsx:69
 msgid "In sync"
 msgstr "בסנכרון"
@@ -3941,6 +4046,13 @@ msgstr "שגיאה פנימית: כותרת אתגר שגויה"
 #| msgid "Internal error"
 msgid "Internal protocol error"
 msgstr "שגיאה פנימה"
+
+#: pkg/storaged/drive/smart-details.jsx:45
+#, fuzzy
+#| msgid "Interface"
+#| msgid_plural "Interfaces"
+msgid "Interrupted"
+msgstr "מנשק"
 
 #: pkg/systemd/services.jsx:253
 msgid "Invalid"
@@ -4856,7 +4968,7 @@ msgstr "אפחותים"
 msgid "Mode"
 msgstr "מצב"
 
-#: pkg/storaged/drive/drive.jsx:121
+#: pkg/storaged/drive/drive.jsx:123
 #: pkg/systemd/overview-cards/systemInformationCard.jsx:111
 #: pkg/systemd/hwinfo.jsx:279
 msgid "Model"
@@ -4994,7 +5106,7 @@ msgstr "מעוגן במקביל לשירותים, אבל אחרי שהרשת ז�
 msgid "Multi-system chassis"
 msgstr "שלדה למגוון מערכות"
 
-#: pkg/storaged/drive/drive.jsx:135
+#: pkg/storaged/drive/drive.jsx:136
 #, fuzzy
 #| msgctxt "storage"
 #| msgid "Multipathed devices"
@@ -5349,7 +5461,7 @@ msgstr "לא נמצאו יומנים"
 msgid "No matching results"
 msgstr "אין כללים תואמים"
 
-#: pkg/storaged/drive/drive.jsx:128
+#: pkg/storaged/drive/drive.jsx:130
 msgid "No media inserted"
 msgstr "לא הוכנס אמצעי מדיה"
 
@@ -5539,6 +5651,10 @@ msgstr "מחברת"
 #: pkg/systemd/logs.jsx:70
 msgid "Notice and above"
 msgstr "הודעה ומעלה"
+
+#: pkg/storaged/drive/smart-details.jsx:175
+msgid "Number of bad sectors"
+msgstr ""
 
 #: pkg/sosreport/sosreport.jsx:335
 msgid "Obfuscate network addresses, hostnames, and usernames"
@@ -5966,6 +6082,12 @@ msgstr "למחוק את $0 לצמיתות?"
 msgid "Permission denied"
 msgstr "ההרשאה נדחתה"
 
+#: pkg/storaged/drive/smart-details.jsx:71
+#, fuzzy
+#| msgid "Filesystem is locked"
+msgid "Persistent memory has become read-only"
+msgstr "מערכת הקבצים נעולה"
+
 #: pkg/storaged/legacy-vdo/legacy-vdo.jsx:292
 msgid "Physical"
 msgstr "פיזי"
@@ -6072,6 +6194,10 @@ msgstr "נייד"
 #: pkg/networkmanager/bridge.jsx:101 pkg/networkmanager/team.jsx:159
 msgid "Ports"
 msgstr "פתחות"
+
+#: pkg/storaged/drive/smart-details.jsx:168
+msgid "Power on hours"
+msgstr ""
 
 #: pkg/storaged/partitions/partition.jsx:124
 #, fuzzy
@@ -6806,6 +6932,10 @@ msgstr "בחירה"
 msgid "Run at"
 msgstr "להריץ בתזמון"
 
+#: pkg/storaged/drive/smart-details.jsx:97
+msgid "Run extended test"
+msgstr ""
+
 #: pkg/sosreport/sosreport.jsx:308
 msgid "Run new report"
 msgstr "הרצת דוח חדש"
@@ -6817,6 +6947,12 @@ msgstr "להריץ על"
 #: pkg/sosreport/sosreport.jsx:286 pkg/sosreport/sosreport.jsx:495
 msgid "Run report"
 msgstr "הרצת דוח"
+
+#: pkg/storaged/drive/smart-details.jsx:92
+#, fuzzy
+#| msgid "Run when host boots"
+msgid "Run short test"
+msgstr "הפעלה עם עליית המארח"
 
 #: pkg/lib/cockpit-connect-ssh.tsx:150 pkg/shell/hosts_dialog.jsx:686
 msgid ""
@@ -7047,13 +7183,19 @@ msgid ""
 "volume. At least $0 are needed."
 msgstr ""
 
+#: pkg/storaged/drive/smart-details.jsx:171
+#, fuzzy
+#| msgid "SMART self-test of $target"
+msgid "Self-test status"
+msgstr "בדיקת SMART עצמית של $0"
+
 #: pkg/networkmanager/network-interface-members.jsx:209
 #: pkg/networkmanager/network-main.jsx:187
 #: pkg/networkmanager/network-main.jsx:202
 msgid "Sending"
 msgstr "שליחה"
 
-#: pkg/storaged/drive/drive.jsx:123
+#: pkg/storaged/drive/drive.jsx:125
 #, fuzzy
 #| msgctxt "storage"
 #| msgid "Serial number"
@@ -7420,6 +7562,10 @@ msgstr "פרוטוקול העץ הפורש (STP)"
 msgid "Spare"
 msgstr "עודף"
 
+#: pkg/storaged/drive/smart-details.jsx:66
+msgid "Spare capacity is below the threshold"
+msgstr ""
+
 #: pkg/lib/cockpit-components-shutdown.jsx:183
 msgid "Specific time"
 msgstr "זמן מסוים"
@@ -7642,6 +7788,12 @@ msgstr "תת מחברת"
 msgid "Subscribing to systemd signals failed: $0"
 msgstr "הרישום ל־signals (אותות) של systemd נכשל: $0"
 
+#: pkg/storaged/drive/smart-details.jsx:40
+#, fuzzy
+#| msgid "Logout successful"
+msgid "Successful"
+msgstr "היציאה הצליחה"
+
 #: pkg/systemd/logs.jsx:399
 msgid "Successfully copied to clipboard"
 msgstr "ההעתקה ללוח הגזירים צלחה"
@@ -7785,6 +7937,10 @@ msgstr "פתחת ציוות"
 #: pkg/networkmanager/teamport.jsx:82
 msgid "Team port settings"
 msgstr "הגדרות פתחת ציוות"
+
+#: pkg/storaged/drive/smart-details.jsx:67
+msgid "Temperature outside of recommended thresholds"
+msgstr ""
 
 #: pkg/systemd/terminal.html:4 pkg/systemd/manifest.json:0
 msgid "Terminal"
@@ -9083,7 +9239,7 @@ msgstr "הכתובת מתוקפת"
 msgid "Validating authentication token"
 msgstr "אסימון האימות מתוקף"
 
-#: pkg/storaged/drive/drive.jsx:120 pkg/systemd/hwinfo.jsx:280
+#: pkg/storaged/drive/drive.jsx:122 pkg/systemd/hwinfo.jsx:280
 msgid "Vendor"
 msgstr "ספק"
 
@@ -9195,6 +9351,10 @@ msgstr "רשת וירטואלית"
 #: pkg/lib/cockpit-components-firewalld-request.jsx:153
 msgid "Visit firewall"
 msgstr "ביקור בחומת האש"
+
+#: pkg/storaged/drive/smart-details.jsx:70
+msgid "Volatile memory backup failed"
+msgstr ""
 
 #: pkg/storaged/lvm2/physical-volume.jsx:108
 msgid "Volume group"
@@ -9309,7 +9469,7 @@ msgstr ""
 msgid "WireGuard"
 msgstr ""
 
-#: pkg/storaged/drive/drive.jsx:124
+#: pkg/storaged/drive/drive.jsx:126
 #, fuzzy
 #| msgctxt "storage"
 #| msgid "World wide name"
@@ -12037,9 +12197,6 @@ msgstr "אזור"
 
 #~ msgid "Run unattended installation"
 #~ msgstr "הפעלת התקנה ללא מגע"
-
-#~ msgid "Run when host boots"
-#~ msgstr "הפעלה עם עליית המארח"
 
 #~ msgid "SPICE TLS port"
 #~ msgstr "פתחת TLS של SPICE"
