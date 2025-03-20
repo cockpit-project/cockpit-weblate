@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-19 03:03+0000\n"
+"POT-Creation-Date: 2025-03-20 03:02+0000\n"
 "PO-Revision-Date: 2024-06-14 18:36+0000\n"
 "Last-Translator: Wojciech Teichert <wojtekt99@gmail.com>\n"
 "Language-Team: Polish <https://translate.fedoraproject.org/projects/cockpit/"
@@ -196,7 +196,7 @@ msgstr "Plik $0 już istnieje"
 #: pkg/storaged/lvm2/block-logical-volume.jsx:151
 #: pkg/storaged/legacy-vdo/legacy-vdo.jsx:50
 #: pkg/storaged/legacy-vdo/legacy-vdo.jsx:84 pkg/storaged/mdraid/mdraid.jsx:63
-#: pkg/storaged/mdraid/mdraid.jsx:116
+#: pkg/storaged/mdraid/mdraid.jsx:116 pkg/storaged/btrfs/volume.jsx:70
 msgid "$0 is in use"
 msgstr "$0 jest używane"
 
@@ -1637,7 +1637,7 @@ msgid "Cannot schedule event in the past"
 msgstr "Nie można planować zdarzeń w przeszłości"
 
 #: pkg/storaged/drive/drive.jsx:127 pkg/storaged/lvm2/volume-group.jsx:366
-#: pkg/storaged/mdraid/mdraid.jsx:303 pkg/storaged/btrfs/volume.jsx:150
+#: pkg/storaged/mdraid/mdraid.jsx:303 pkg/storaged/btrfs/volume.jsx:206
 msgid "Capacity"
 msgstr "Pojemność"
 
@@ -1680,7 +1680,7 @@ msgstr "Zmień nazwę inicjatora iSCSI"
 msgid "Change iSCSI initiator name"
 msgstr "Zmień nazwę inicjatora iSCSI"
 
-#: pkg/storaged/btrfs/volume.jsx:87
+#: pkg/storaged/btrfs/volume.jsx:143
 #, fuzzy
 #| msgid "Change shell"
 msgid "Change label"
@@ -2664,9 +2664,10 @@ msgstr "Opóźnienie musi być liczbą"
 #: pkg/storaged/legacy-vdo/legacy-vdo.jsx:122
 #: pkg/storaged/legacy-vdo/legacy-vdo.jsx:152
 #: pkg/storaged/mdraid/mdraid.jsx:126 pkg/storaged/mdraid/mdraid.jsx:233
-#: pkg/storaged/btrfs/subvolume.jsx:253 pkg/storaged/btrfs/subvolume.jsx:400
-#: pkg/sosreport/sosreport.jsx:373 pkg/sosreport/sosreport.jsx:472
-#: pkg/systemd/service-details.jsx:151 pkg/systemd/service-details.jsx:709
+#: pkg/storaged/btrfs/volume.jsx:81 pkg/storaged/btrfs/subvolume.jsx:253
+#: pkg/storaged/btrfs/subvolume.jsx:400 pkg/sosreport/sosreport.jsx:373
+#: pkg/sosreport/sosreport.jsx:472 pkg/systemd/service-details.jsx:151
+#: pkg/systemd/service-details.jsx:709
 msgid "Delete"
 msgstr "Usuń"
 
@@ -2681,6 +2682,12 @@ msgstr "Usuń konto"
 
 #: pkg/users/delete-account-dialog.js:33
 msgid "Delete files"
+msgstr "Usuń pliki"
+
+#: pkg/storaged/btrfs/volume.jsx:128
+#, fuzzy
+#| msgid "Delete files"
+msgid "Delete filesystem"
 msgstr "Usuń pliki"
 
 #: pkg/users/group-actions.jsx:45 pkg/storaged/lvm2/volume-group.jsx:246
@@ -2739,6 +2746,12 @@ msgstr "Usunięcie usuwa wszystkie dane na urządzeniu RAID."
 #: pkg/storaged/legacy-vdo/legacy-vdo.jsx:123
 msgid "Deleting erases all data on a VDO device."
 msgstr "Usunięcie usuwa wszystkie dane na urządzeniu VDO."
+
+#: pkg/storaged/btrfs/volume.jsx:80
+#, fuzzy
+#| msgid "Deleting erases all data on a volume group."
+msgid "Deleting erases all data on a btrfs volume."
+msgstr "Usunięcie usuwa wszystkie dane w grupie woluminów."
 
 #: pkg/storaged/lvm2/volume-group.jsx:94
 msgid "Deleting erases all data on a volume group."
@@ -3486,7 +3499,7 @@ msgstr "System plików"
 msgid "Filesystem is locked"
 msgstr "System plików jest zablokowany"
 
-#: pkg/storaged/btrfs/volume.jsx:129
+#: pkg/storaged/btrfs/volume.jsx:185
 #, fuzzy
 #| msgid "Filesystem is locked"
 msgid "Filesystem is mounted read-only"
@@ -4363,7 +4376,7 @@ msgstr "Grupa woluminów LVM2"
 msgid "LVM2 volume group $0"
 msgstr "Grupa woluminów LVM2 $0"
 
-#: pkg/storaged/btrfs/volume.jsx:131
+#: pkg/storaged/btrfs/volume.jsx:187
 msgid "Label"
 msgstr "Etykieta"
 
@@ -5219,7 +5232,7 @@ msgstr "Serwer NTP"
 #: pkg/storaged/lvm2/thin-pool-logical-volume.jsx:44
 #: pkg/storaged/lvm2/thin-pool-logical-volume.jsx:138
 #: pkg/storaged/mdraid/create-dialog.jsx:47 pkg/storaged/mdraid/mdraid.jsx:295
-#: pkg/storaged/btrfs/volume.jsx:89 pkg/storaged/btrfs/subvolume.jsx:157
+#: pkg/storaged/btrfs/volume.jsx:145 pkg/storaged/btrfs/subvolume.jsx:157
 #: pkg/storaged/btrfs/subvolume.jsx:470 pkg/systemd/timer-dialog.jsx:157
 #: pkg/systemd/hwinfo.jsx:86
 msgid "Name"
@@ -5430,7 +5443,7 @@ msgstr "Brak dostępnego opisu"
 msgid "No description provided."
 msgstr "Nie podano opisu."
 
-#: pkg/storaged/btrfs/volume.jsx:158
+#: pkg/storaged/btrfs/volume.jsx:214
 #, fuzzy
 #| msgid "No boot device found"
 msgid "No devices found"
@@ -5577,7 +5590,7 @@ msgstr "Brak migawek"
 msgid "No storage found"
 msgstr "Brak urządzeń do przechowywania danych"
 
-#: pkg/storaged/btrfs/volume.jsx:179 pkg/storaged/btrfs/filesystem.jsx:71
+#: pkg/storaged/btrfs/volume.jsx:235 pkg/storaged/btrfs/filesystem.jsx:71
 #: pkg/storaged/btrfs/subvolume.jsx:488
 #, fuzzy
 #| msgid "No logical volumes"
@@ -6129,7 +6142,7 @@ msgstr "Trwale usunąć grupę $0?"
 #: pkg/storaged/stratis/pool.jsx:173 pkg/storaged/partitions/partition.jsx:54
 #: pkg/storaged/lvm2/volume-group.jsx:91
 #: pkg/storaged/legacy-vdo/legacy-vdo.jsx:119
-#: pkg/storaged/mdraid/mdraid.jsx:123
+#: pkg/storaged/mdraid/mdraid.jsx:123 pkg/storaged/btrfs/volume.jsx:77
 msgid "Permanently delete $0?"
 msgstr "Trwale usunąć $0?"
 
@@ -7154,7 +7167,7 @@ msgstr "soboty"
 #: pkg/storaged/crypto/encryption.jsx:196 pkg/storaged/stratis/pool.jsx:406
 #: pkg/storaged/stratis/pool.jsx:435 pkg/storaged/stratis/pool.jsx:490
 #: pkg/storaged/partitions/partition.jsx:197 pkg/storaged/nfs/nfs.jsx:188
-#: pkg/storaged/btrfs/volume.jsx:96 pkg/systemd/timer-dialog.jsx:148
+#: pkg/storaged/btrfs/volume.jsx:152 pkg/systemd/timer-dialog.jsx:148
 msgid "Save"
 msgstr "Zapisz"
 
@@ -8944,7 +8957,7 @@ msgstr "UDP"
 #: pkg/storaged/partitions/partition.jsx:228
 #: pkg/storaged/lvm2/volume-group.jsx:365
 #: pkg/storaged/lvm2/physical-volume.jsx:117 pkg/storaged/mdraid/mdraid.jsx:301
-#: pkg/storaged/btrfs/volume.jsx:149 pkg/storaged/btrfs/device.jsx:78
+#: pkg/storaged/btrfs/volume.jsx:205 pkg/storaged/btrfs/device.jsx:78
 #: pkg/storaged/btrfs/filesystem.jsx:62
 msgid "UUID"
 msgstr "UUID"
@@ -9277,7 +9290,7 @@ msgstr "Wczytaj ponownie"
 #: pkg/storaged/filesystem/filesystem.jsx:152 pkg/storaged/stratis/pool.jsx:543
 #: pkg/storaged/stratis/filesystem.jsx:256
 #: pkg/storaged/block/unrecognized-data.jsx:50
-#: pkg/storaged/lvm2/physical-volume.jsx:119 pkg/storaged/btrfs/volume.jsx:151
+#: pkg/storaged/lvm2/physical-volume.jsx:119 pkg/storaged/btrfs/volume.jsx:207
 #: pkg/storaged/btrfs/device.jsx:80 pkg/storaged/btrfs/filesystem.jsx:64
 #: pkg/systemd/overview-cards/usageCard.jsx:128
 msgid "Usage"
@@ -9840,13 +9853,13 @@ msgstr "uruchom"
 msgid "bridge"
 msgstr "mostek"
 
-#: pkg/storaged/btrfs/volume.jsx:159 pkg/storaged/btrfs/device.jsx:42
+#: pkg/storaged/btrfs/volume.jsx:215 pkg/storaged/btrfs/device.jsx:42
 #, fuzzy
 #| msgid "Other devices"
 msgid "btrfs device"
 msgstr "Inne urządzenia"
 
-#: pkg/storaged/btrfs/volume.jsx:156
+#: pkg/storaged/btrfs/volume.jsx:212
 #, fuzzy
 #| msgid "Other devices"
 msgid "btrfs devices"
@@ -9868,14 +9881,14 @@ msgstr "Wolumin urządzeń do przechowywania danych"
 msgid "btrfs subvolume $0 of $1"
 msgstr "subwolumen btrfs $0 wolumenu $1"
 
-#: pkg/storaged/btrfs/volume.jsx:168 pkg/storaged/btrfs/volume.jsx:180
+#: pkg/storaged/btrfs/volume.jsx:224 pkg/storaged/btrfs/volume.jsx:236
 #: pkg/storaged/btrfs/filesystem.jsx:72 pkg/storaged/btrfs/subvolume.jsx:489
 #, fuzzy
 #| msgid "Storage volumes"
 msgid "btrfs subvolumes"
 msgstr "Woluminy urządzeń do przechowywania danych"
 
-#: pkg/storaged/btrfs/volume.jsx:68 pkg/storaged/btrfs/device.jsx:69
+#: pkg/storaged/btrfs/volume.jsx:117 pkg/storaged/btrfs/device.jsx:69
 #, fuzzy
 #| msgid "Storage volume"
 msgid "btrfs volume"
@@ -9924,7 +9937,7 @@ msgstr "zrzut core"
 msgid "cpu"
 msgstr "procesor"
 
-#: pkg/systemd/manifest.json:0 pkg/kdump/manifest.json:0
+#: pkg/kdump/manifest.json:0 pkg/systemd/manifest.json:0
 msgid "crash"
 msgstr "awaria"
 
@@ -9955,7 +9968,7 @@ msgstr "debuguj"
 #: pkg/storaged/lvm2/volume-group.jsx:79 pkg/storaged/lvm2/volume-group.jsx:308
 #: pkg/storaged/lvm2/block-logical-volume.jsx:64
 #: pkg/storaged/legacy-vdo/legacy-vdo.jsx:80 pkg/storaged/mdraid/mdraid.jsx:112
-#: pkg/storaged/btrfs/subvolume.jsx:235
+#: pkg/storaged/btrfs/volume.jsx:66 pkg/storaged/btrfs/subvolume.jsx:235
 msgid "delete"
 msgstr "usuń"
 
@@ -10004,7 +10017,7 @@ msgstr "napęd"
 #: pkg/storaged/lvm2/volume-group.jsx:363
 #: pkg/storaged/lvm2/block-logical-volume.jsx:288
 #: pkg/storaged/lvm2/thin-pool-logical-volume.jsx:141
-#: pkg/storaged/btrfs/volume.jsx:136
+#: pkg/storaged/btrfs/volume.jsx:192
 #: pkg/systemd/overview-cards/configurationCard.jsx:55
 msgid "edit"
 msgstr "modyfikuj"
@@ -10293,7 +10306,7 @@ msgstr "montowanie"
 msgid "nbde"
 msgstr "NBDE"
 
-#: pkg/systemd/manifest.json:0 pkg/networkmanager/manifest.json:0
+#: pkg/networkmanager/manifest.json:0 pkg/systemd/manifest.json:0
 msgid "network"
 msgstr "sieć"
 
@@ -10538,7 +10551,7 @@ msgstr "sos"
 msgid "sos report failed"
 msgstr "Zgłoszenie sos się nie powiodło"
 
-#: pkg/users/manifest.json:0 pkg/systemd/manifest.json:0
+#: pkg/systemd/manifest.json:0 pkg/users/manifest.json:0
 msgid "ssh"
 msgstr "SSH"
 

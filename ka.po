@@ -26,7 +26,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-19 03:03+0000\n"
+"POT-Creation-Date: 2025-03-20 03:02+0000\n"
 "PO-Revision-Date: 2025-03-14 01:52+0000\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://translate.fedoraproject.org/projects/"
@@ -185,7 +185,7 @@ msgstr "$0 არსებული ფაილია"
 #: pkg/storaged/lvm2/block-logical-volume.jsx:151
 #: pkg/storaged/legacy-vdo/legacy-vdo.jsx:50
 #: pkg/storaged/legacy-vdo/legacy-vdo.jsx:84 pkg/storaged/mdraid/mdraid.jsx:63
-#: pkg/storaged/mdraid/mdraid.jsx:116
+#: pkg/storaged/mdraid/mdraid.jsx:116 pkg/storaged/btrfs/volume.jsx:70
 msgid "$0 is in use"
 msgstr "$0 გამოიყენება"
 
@@ -1550,7 +1550,7 @@ msgid "Cannot schedule event in the past"
 msgstr "მოვლენის წარსულ დროში დანიშვნა შეუძლებელია"
 
 #: pkg/storaged/drive/drive.jsx:127 pkg/storaged/lvm2/volume-group.jsx:366
-#: pkg/storaged/mdraid/mdraid.jsx:303 pkg/storaged/btrfs/volume.jsx:150
+#: pkg/storaged/mdraid/mdraid.jsx:303 pkg/storaged/btrfs/volume.jsx:206
 msgid "Capacity"
 msgstr "მოცულობა"
 
@@ -1589,7 +1589,7 @@ msgstr "iSCSI ინიციატორის სახელის შეც�
 msgid "Change iSCSI initiator name"
 msgstr "iSCSI ინიციატორის სახელის შეცვლა"
 
-#: pkg/storaged/btrfs/volume.jsx:87
+#: pkg/storaged/btrfs/volume.jsx:143
 msgid "Change label"
 msgstr "ჭდის შეცვლა"
 
@@ -2567,9 +2567,10 @@ msgstr "დაყოვნება რიცხვი უნდა იყოს
 #: pkg/storaged/legacy-vdo/legacy-vdo.jsx:122
 #: pkg/storaged/legacy-vdo/legacy-vdo.jsx:152
 #: pkg/storaged/mdraid/mdraid.jsx:126 pkg/storaged/mdraid/mdraid.jsx:233
-#: pkg/storaged/btrfs/subvolume.jsx:253 pkg/storaged/btrfs/subvolume.jsx:400
-#: pkg/sosreport/sosreport.jsx:373 pkg/sosreport/sosreport.jsx:472
-#: pkg/systemd/service-details.jsx:151 pkg/systemd/service-details.jsx:709
+#: pkg/storaged/btrfs/volume.jsx:81 pkg/storaged/btrfs/subvolume.jsx:253
+#: pkg/storaged/btrfs/subvolume.jsx:400 pkg/sosreport/sosreport.jsx:373
+#: pkg/sosreport/sosreport.jsx:472 pkg/systemd/service-details.jsx:151
+#: pkg/systemd/service-details.jsx:709
 msgid "Delete"
 msgstr "წაშლა"
 
@@ -2584,6 +2585,12 @@ msgstr "ანგარიშის წაშლა"
 
 #: pkg/users/delete-account-dialog.js:33
 msgid "Delete files"
+msgstr "ფაილების წაშლა"
+
+#: pkg/storaged/btrfs/volume.jsx:128
+#, fuzzy
+#| msgid "Delete files"
+msgid "Delete filesystem"
 msgstr "ფაილების წაშლა"
 
 #: pkg/users/group-actions.jsx:45 pkg/storaged/lvm2/volume-group.jsx:246
@@ -2641,6 +2648,12 @@ msgid "Deleting erases all data on a VDO device."
 msgstr ""
 "VDO მოწყობილობის წაშლის შემთხვევაში ასევე წაიშლება ზედ მდებარე ყველა "
 "მონაცემი."
+
+#: pkg/storaged/btrfs/volume.jsx:80
+#, fuzzy
+#| msgid "Deleting erases all data on a volume group."
+msgid "Deleting erases all data on a btrfs volume."
+msgstr "საცავების ჯგუფის წაშლისას ასევე წაიშლება ზედ მდებარე მონაცემებიც."
 
 #: pkg/storaged/lvm2/volume-group.jsx:94
 msgid "Deleting erases all data on a volume group."
@@ -3362,7 +3375,7 @@ msgstr "ფაილური სისტემა"
 msgid "Filesystem is locked"
 msgstr "ფაილური სისტემა ჩაკეტილია"
 
-#: pkg/storaged/btrfs/volume.jsx:129
+#: pkg/storaged/btrfs/volume.jsx:185
 msgid "Filesystem is mounted read-only"
 msgstr "ფაილური სისტემა მიმაგრებულია, როგორც, მხოლოდ-წაკითხვადი"
 
@@ -4190,7 +4203,7 @@ msgstr "LVM2 ტომების ჯგუფი"
 msgid "LVM2 volume group $0"
 msgstr "LVM2 ტომის ჯგუფი $0"
 
-#: pkg/storaged/btrfs/volume.jsx:131
+#: pkg/storaged/btrfs/volume.jsx:187
 msgid "Label"
 msgstr "ჭდე"
 
@@ -5001,7 +5014,7 @@ msgstr "NTP სერვერი"
 #: pkg/storaged/lvm2/thin-pool-logical-volume.jsx:44
 #: pkg/storaged/lvm2/thin-pool-logical-volume.jsx:138
 #: pkg/storaged/mdraid/create-dialog.jsx:47 pkg/storaged/mdraid/mdraid.jsx:295
-#: pkg/storaged/btrfs/volume.jsx:89 pkg/storaged/btrfs/subvolume.jsx:157
+#: pkg/storaged/btrfs/volume.jsx:145 pkg/storaged/btrfs/subvolume.jsx:157
 #: pkg/storaged/btrfs/subvolume.jsx:470 pkg/systemd/timer-dialog.jsx:157
 #: pkg/systemd/hwinfo.jsx:86
 msgid "Name"
@@ -5204,7 +5217,7 @@ msgstr "აღწერა ხელმიუწვდომელია"
 msgid "No description provided."
 msgstr "აღწერის გარეშე."
 
-#: pkg/storaged/btrfs/volume.jsx:158
+#: pkg/storaged/btrfs/volume.jsx:214
 msgid "No devices found"
 msgstr "მოწყობილობები აღმოჩენილი არაა"
 
@@ -5336,7 +5349,7 @@ msgstr "სწრაფი ასლების გარეშე"
 msgid "No storage found"
 msgstr "საცავი ვერ ვიპოვე"
 
-#: pkg/storaged/btrfs/volume.jsx:179 pkg/storaged/btrfs/filesystem.jsx:71
+#: pkg/storaged/btrfs/volume.jsx:235 pkg/storaged/btrfs/filesystem.jsx:71
 #: pkg/storaged/btrfs/subvolume.jsx:488
 msgid "No subvolumes"
 msgstr "ქვეტომების გარეშე"
@@ -5874,7 +5887,7 @@ msgstr "სამუდამოდ წავშალო $0 ჯგუფი?"
 #: pkg/storaged/stratis/pool.jsx:173 pkg/storaged/partitions/partition.jsx:54
 #: pkg/storaged/lvm2/volume-group.jsx:91
 #: pkg/storaged/legacy-vdo/legacy-vdo.jsx:119
-#: pkg/storaged/mdraid/mdraid.jsx:123
+#: pkg/storaged/mdraid/mdraid.jsx:123 pkg/storaged/btrfs/volume.jsx:77
 msgid "Permanently delete $0?"
 msgstr "წავშალო სამუდამოდ $0?"
 
@@ -6860,7 +6873,7 @@ msgstr "შაბათობით"
 #: pkg/storaged/crypto/encryption.jsx:196 pkg/storaged/stratis/pool.jsx:406
 #: pkg/storaged/stratis/pool.jsx:435 pkg/storaged/stratis/pool.jsx:490
 #: pkg/storaged/partitions/partition.jsx:197 pkg/storaged/nfs/nfs.jsx:188
-#: pkg/storaged/btrfs/volume.jsx:96 pkg/systemd/timer-dialog.jsx:148
+#: pkg/storaged/btrfs/volume.jsx:152 pkg/systemd/timer-dialog.jsx:148
 msgid "Save"
 msgstr "შენახვა"
 
@@ -8560,7 +8573,7 @@ msgstr "UDP"
 #: pkg/storaged/partitions/partition.jsx:228
 #: pkg/storaged/lvm2/volume-group.jsx:365
 #: pkg/storaged/lvm2/physical-volume.jsx:117 pkg/storaged/mdraid/mdraid.jsx:301
-#: pkg/storaged/btrfs/volume.jsx:149 pkg/storaged/btrfs/device.jsx:78
+#: pkg/storaged/btrfs/volume.jsx:205 pkg/storaged/btrfs/device.jsx:78
 #: pkg/storaged/btrfs/filesystem.jsx:62
 msgid "UUID"
 msgstr "UUID"
@@ -8870,7 +8883,7 @@ msgstr "ატვირთვა"
 #: pkg/storaged/filesystem/filesystem.jsx:152 pkg/storaged/stratis/pool.jsx:543
 #: pkg/storaged/stratis/filesystem.jsx:256
 #: pkg/storaged/block/unrecognized-data.jsx:50
-#: pkg/storaged/lvm2/physical-volume.jsx:119 pkg/storaged/btrfs/volume.jsx:151
+#: pkg/storaged/lvm2/physical-volume.jsx:119 pkg/storaged/btrfs/volume.jsx:207
 #: pkg/storaged/btrfs/device.jsx:80 pkg/storaged/btrfs/filesystem.jsx:64
 #: pkg/systemd/overview-cards/usageCard.jsx:128
 msgid "Usage"
@@ -9416,11 +9429,11 @@ msgstr "ჩატვირთვა"
 msgid "bridge"
 msgstr "ხიდი"
 
-#: pkg/storaged/btrfs/volume.jsx:159 pkg/storaged/btrfs/device.jsx:42
+#: pkg/storaged/btrfs/volume.jsx:215 pkg/storaged/btrfs/device.jsx:42
 msgid "btrfs device"
 msgstr "btrfs მოწყობილობება"
 
-#: pkg/storaged/btrfs/volume.jsx:156
+#: pkg/storaged/btrfs/volume.jsx:212
 msgid "btrfs devices"
 msgstr "btrfs მოწყობილობები"
 
@@ -9436,12 +9449,12 @@ msgstr "Btrfs ქვეტომი"
 msgid "btrfs subvolume $0 of $1"
 msgstr "btrfs ქვეტომი $0 $1-დან"
 
-#: pkg/storaged/btrfs/volume.jsx:168 pkg/storaged/btrfs/volume.jsx:180
+#: pkg/storaged/btrfs/volume.jsx:224 pkg/storaged/btrfs/volume.jsx:236
 #: pkg/storaged/btrfs/filesystem.jsx:72 pkg/storaged/btrfs/subvolume.jsx:489
 msgid "btrfs subvolumes"
 msgstr "btrfs ქვეტომები"
 
-#: pkg/storaged/btrfs/volume.jsx:68 pkg/storaged/btrfs/device.jsx:69
+#: pkg/storaged/btrfs/volume.jsx:117 pkg/storaged/btrfs/device.jsx:69
 msgid "btrfs volume"
 msgstr "btrfs ტომი"
 
@@ -9486,7 +9499,7 @@ msgstr "coredump"
 msgid "cpu"
 msgstr "პროცესორი"
 
-#: pkg/systemd/manifest.json:0 pkg/kdump/manifest.json:0
+#: pkg/kdump/manifest.json:0 pkg/systemd/manifest.json:0
 msgid "crash"
 msgstr "ავარია"
 
@@ -9513,7 +9526,7 @@ msgstr "შეცდომების მოძებნა"
 #: pkg/storaged/lvm2/volume-group.jsx:79 pkg/storaged/lvm2/volume-group.jsx:308
 #: pkg/storaged/lvm2/block-logical-volume.jsx:64
 #: pkg/storaged/legacy-vdo/legacy-vdo.jsx:80 pkg/storaged/mdraid/mdraid.jsx:112
-#: pkg/storaged/btrfs/subvolume.jsx:235
+#: pkg/storaged/btrfs/volume.jsx:66 pkg/storaged/btrfs/subvolume.jsx:235
 msgid "delete"
 msgstr "წაშლა"
 
@@ -9562,7 +9575,7 @@ msgstr "დისკი"
 #: pkg/storaged/lvm2/volume-group.jsx:363
 #: pkg/storaged/lvm2/block-logical-volume.jsx:288
 #: pkg/storaged/lvm2/thin-pool-logical-volume.jsx:141
-#: pkg/storaged/btrfs/volume.jsx:136
+#: pkg/storaged/btrfs/volume.jsx:192
 #: pkg/systemd/overview-cards/configurationCard.jsx:55
 msgid "edit"
 msgstr "ჩასწორება"
@@ -9837,7 +9850,7 @@ msgstr "მიმაგრება"
 msgid "nbde"
 msgstr "nbde"
 
-#: pkg/systemd/manifest.json:0 pkg/networkmanager/manifest.json:0
+#: pkg/networkmanager/manifest.json:0 pkg/systemd/manifest.json:0
 msgid "network"
 msgstr "ქსელი"
 
@@ -10075,7 +10088,7 @@ msgstr "sos"
 msgid "sos report failed"
 msgstr "sos-ის ანგარიშის შეცდომა"
 
-#: pkg/users/manifest.json:0 pkg/systemd/manifest.json:0
+#: pkg/systemd/manifest.json:0 pkg/users/manifest.json:0
 msgid "ssh"
 msgstr "ssh"
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-19 03:03+0000\n"
+"POT-Creation-Date: 2025-03-20 03:02+0000\n"
 "PO-Revision-Date: 2025-03-20 14:52+0000\n"
 "Last-Translator: Ricky Tigg <ricky.tigg@gmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/cockpit/"
@@ -167,7 +167,7 @@ msgstr "$0 on olemassa oleva tiedosto"
 #: pkg/storaged/lvm2/block-logical-volume.jsx:151
 #: pkg/storaged/legacy-vdo/legacy-vdo.jsx:50
 #: pkg/storaged/legacy-vdo/legacy-vdo.jsx:84 pkg/storaged/mdraid/mdraid.jsx:63
-#: pkg/storaged/mdraid/mdraid.jsx:116
+#: pkg/storaged/mdraid/mdraid.jsx:116 pkg/storaged/btrfs/volume.jsx:70
 msgid "$0 is in use"
 msgstr "$0 on käytössä"
 
@@ -1541,7 +1541,7 @@ msgid "Cannot schedule event in the past"
 msgstr "Tapahtumaa ei voi aikatauluttaa menneisyyteen"
 
 #: pkg/storaged/drive/drive.jsx:127 pkg/storaged/lvm2/volume-group.jsx:366
-#: pkg/storaged/mdraid/mdraid.jsx:303 pkg/storaged/btrfs/volume.jsx:150
+#: pkg/storaged/mdraid/mdraid.jsx:303 pkg/storaged/btrfs/volume.jsx:206
 msgid "Capacity"
 msgstr "Koko"
 
@@ -1580,7 +1580,7 @@ msgstr "Vaihda iSCSI-aloittajan nimi"
 msgid "Change iSCSI initiator name"
 msgstr "Vaihda iSCSI-aloittajan nimi"
 
-#: pkg/storaged/btrfs/volume.jsx:87
+#: pkg/storaged/btrfs/volume.jsx:143
 msgid "Change label"
 msgstr "Vaihda nimiö"
 
@@ -2558,9 +2558,10 @@ msgstr "Viiveen tulee olla numero"
 #: pkg/storaged/legacy-vdo/legacy-vdo.jsx:122
 #: pkg/storaged/legacy-vdo/legacy-vdo.jsx:152
 #: pkg/storaged/mdraid/mdraid.jsx:126 pkg/storaged/mdraid/mdraid.jsx:233
-#: pkg/storaged/btrfs/subvolume.jsx:253 pkg/storaged/btrfs/subvolume.jsx:400
-#: pkg/sosreport/sosreport.jsx:373 pkg/sosreport/sosreport.jsx:472
-#: pkg/systemd/service-details.jsx:151 pkg/systemd/service-details.jsx:709
+#: pkg/storaged/btrfs/volume.jsx:81 pkg/storaged/btrfs/subvolume.jsx:253
+#: pkg/storaged/btrfs/subvolume.jsx:400 pkg/sosreport/sosreport.jsx:373
+#: pkg/sosreport/sosreport.jsx:472 pkg/systemd/service-details.jsx:151
+#: pkg/systemd/service-details.jsx:709
 msgid "Delete"
 msgstr "Poista"
 
@@ -2575,6 +2576,12 @@ msgstr "Poista tili"
 
 #: pkg/users/delete-account-dialog.js:33
 msgid "Delete files"
+msgstr "Poista tiedostot"
+
+#: pkg/storaged/btrfs/volume.jsx:128
+#, fuzzy
+#| msgid "Delete files"
+msgid "Delete filesystem"
 msgstr "Poista tiedostot"
 
 #: pkg/users/group-actions.jsx:45 pkg/storaged/lvm2/volume-group.jsx:246
@@ -2628,6 +2635,12 @@ msgstr "Poistaminen tuhoaa kaiken MDRAID-laitteella olevan datan."
 #: pkg/storaged/legacy-vdo/legacy-vdo.jsx:123
 msgid "Deleting erases all data on a VDO device."
 msgstr "VDO-laitteen poistaminen tuhoaa kaiken sillä olevan datan."
+
+#: pkg/storaged/btrfs/volume.jsx:80
+#, fuzzy
+#| msgid "Deleting erases all data on a volume group."
+msgid "Deleting erases all data on a btrfs volume."
+msgstr "Poistaminen poistaa kaikki taltioryhmässä olevat tiedot."
 
 #: pkg/storaged/lvm2/volume-group.jsx:94
 msgid "Deleting erases all data on a volume group."
@@ -3351,7 +3364,7 @@ msgstr "Tiedostojärjestelmä"
 msgid "Filesystem is locked"
 msgstr "Tiedostojärjestelmä on lukittu"
 
-#: pkg/storaged/btrfs/volume.jsx:129
+#: pkg/storaged/btrfs/volume.jsx:185
 msgid "Filesystem is mounted read-only"
 msgstr "Tiedostojärjestelmä on liitetty vain luku -tilassa"
 
@@ -4177,7 +4190,7 @@ msgstr "LVM-taltioryhmä"
 msgid "LVM2 volume group $0"
 msgstr "LVM2-taltioryhmä $0"
 
-#: pkg/storaged/btrfs/volume.jsx:131
+#: pkg/storaged/btrfs/volume.jsx:187
 msgid "Label"
 msgstr "Nimiö"
 
@@ -4991,7 +5004,7 @@ msgstr "NTP-palvelin"
 #: pkg/storaged/lvm2/thin-pool-logical-volume.jsx:44
 #: pkg/storaged/lvm2/thin-pool-logical-volume.jsx:138
 #: pkg/storaged/mdraid/create-dialog.jsx:47 pkg/storaged/mdraid/mdraid.jsx:295
-#: pkg/storaged/btrfs/volume.jsx:89 pkg/storaged/btrfs/subvolume.jsx:157
+#: pkg/storaged/btrfs/volume.jsx:145 pkg/storaged/btrfs/subvolume.jsx:157
 #: pkg/storaged/btrfs/subvolume.jsx:470 pkg/systemd/timer-dialog.jsx:157
 #: pkg/systemd/hwinfo.jsx:86
 msgid "Name"
@@ -5194,7 +5207,7 @@ msgstr "Ei kuvausta saatavilla"
 msgid "No description provided."
 msgstr "Kuvausta ei annettu."
 
-#: pkg/storaged/btrfs/volume.jsx:158
+#: pkg/storaged/btrfs/volume.jsx:214
 msgid "No devices found"
 msgstr "Laitteita ei löytynyt"
 
@@ -5327,7 +5340,7 @@ msgstr "Tilannevedoksia ei löytynyt"
 msgid "No storage found"
 msgstr "Tallennustilaa ei löytynyt"
 
-#: pkg/storaged/btrfs/volume.jsx:179 pkg/storaged/btrfs/filesystem.jsx:71
+#: pkg/storaged/btrfs/volume.jsx:235 pkg/storaged/btrfs/filesystem.jsx:71
 #: pkg/storaged/btrfs/subvolume.jsx:488
 msgid "No subvolumes"
 msgstr "Ei alitaltioita"
@@ -5866,7 +5879,7 @@ msgstr "Poista ryhmä $0 pysyvästi?"
 #: pkg/storaged/stratis/pool.jsx:173 pkg/storaged/partitions/partition.jsx:54
 #: pkg/storaged/lvm2/volume-group.jsx:91
 #: pkg/storaged/legacy-vdo/legacy-vdo.jsx:119
-#: pkg/storaged/mdraid/mdraid.jsx:123
+#: pkg/storaged/mdraid/mdraid.jsx:123 pkg/storaged/btrfs/volume.jsx:77
 msgid "Permanently delete $0?"
 msgstr "Poista $0 pysyvästi?"
 
@@ -6854,7 +6867,7 @@ msgstr "Lauantai"
 #: pkg/storaged/crypto/encryption.jsx:196 pkg/storaged/stratis/pool.jsx:406
 #: pkg/storaged/stratis/pool.jsx:435 pkg/storaged/stratis/pool.jsx:490
 #: pkg/storaged/partitions/partition.jsx:197 pkg/storaged/nfs/nfs.jsx:188
-#: pkg/storaged/btrfs/volume.jsx:96 pkg/systemd/timer-dialog.jsx:148
+#: pkg/storaged/btrfs/volume.jsx:152 pkg/systemd/timer-dialog.jsx:148
 msgid "Save"
 msgstr "Tallenna"
 
@@ -8562,7 +8575,7 @@ msgstr "UDP"
 #: pkg/storaged/partitions/partition.jsx:228
 #: pkg/storaged/lvm2/volume-group.jsx:365
 #: pkg/storaged/lvm2/physical-volume.jsx:117 pkg/storaged/mdraid/mdraid.jsx:301
-#: pkg/storaged/btrfs/volume.jsx:149 pkg/storaged/btrfs/device.jsx:78
+#: pkg/storaged/btrfs/volume.jsx:205 pkg/storaged/btrfs/device.jsx:78
 #: pkg/storaged/btrfs/filesystem.jsx:62
 msgid "UUID"
 msgstr "UUID"
@@ -8873,7 +8886,7 @@ msgstr "Uloslataa"
 #: pkg/storaged/filesystem/filesystem.jsx:152 pkg/storaged/stratis/pool.jsx:543
 #: pkg/storaged/stratis/filesystem.jsx:256
 #: pkg/storaged/block/unrecognized-data.jsx:50
-#: pkg/storaged/lvm2/physical-volume.jsx:119 pkg/storaged/btrfs/volume.jsx:151
+#: pkg/storaged/lvm2/physical-volume.jsx:119 pkg/storaged/btrfs/volume.jsx:207
 #: pkg/storaged/btrfs/device.jsx:80 pkg/storaged/btrfs/filesystem.jsx:64
 #: pkg/systemd/overview-cards/usageCard.jsx:128
 msgid "Usage"
@@ -9421,11 +9434,11 @@ msgstr "käynnistys"
 msgid "bridge"
 msgstr "silta"
 
-#: pkg/storaged/btrfs/volume.jsx:159 pkg/storaged/btrfs/device.jsx:42
+#: pkg/storaged/btrfs/volume.jsx:215 pkg/storaged/btrfs/device.jsx:42
 msgid "btrfs device"
 msgstr "BTRFS-laite"
 
-#: pkg/storaged/btrfs/volume.jsx:156
+#: pkg/storaged/btrfs/volume.jsx:212
 msgid "btrfs devices"
 msgstr "BTRFS-laitteet"
 
@@ -9441,12 +9454,12 @@ msgstr "Btrfs-alataltio"
 msgid "btrfs subvolume $0 of $1"
 msgstr "BTRFS-alitaltio $0 / $1"
 
-#: pkg/storaged/btrfs/volume.jsx:168 pkg/storaged/btrfs/volume.jsx:180
+#: pkg/storaged/btrfs/volume.jsx:224 pkg/storaged/btrfs/volume.jsx:236
 #: pkg/storaged/btrfs/filesystem.jsx:72 pkg/storaged/btrfs/subvolume.jsx:489
 msgid "btrfs subvolumes"
 msgstr "BTRFS-alitaltiot"
 
-#: pkg/storaged/btrfs/volume.jsx:68 pkg/storaged/btrfs/device.jsx:69
+#: pkg/storaged/btrfs/volume.jsx:117 pkg/storaged/btrfs/device.jsx:69
 msgid "btrfs volume"
 msgstr "Btrfs-taltio"
 
@@ -9491,7 +9504,7 @@ msgstr "ytimen tyhjennys"
 msgid "cpu"
 msgstr "suoritin"
 
-#: pkg/systemd/manifest.json:0 pkg/kdump/manifest.json:0
+#: pkg/kdump/manifest.json:0 pkg/systemd/manifest.json:0
 msgid "crash"
 msgstr "kaatuminen"
 
@@ -9518,7 +9531,7 @@ msgstr "virheenjäljitys"
 #: pkg/storaged/lvm2/volume-group.jsx:79 pkg/storaged/lvm2/volume-group.jsx:308
 #: pkg/storaged/lvm2/block-logical-volume.jsx:64
 #: pkg/storaged/legacy-vdo/legacy-vdo.jsx:80 pkg/storaged/mdraid/mdraid.jsx:112
-#: pkg/storaged/btrfs/subvolume.jsx:235
+#: pkg/storaged/btrfs/volume.jsx:66 pkg/storaged/btrfs/subvolume.jsx:235
 msgid "delete"
 msgstr "Poista"
 
@@ -9567,7 +9580,7 @@ msgstr "asema"
 #: pkg/storaged/lvm2/volume-group.jsx:363
 #: pkg/storaged/lvm2/block-logical-volume.jsx:288
 #: pkg/storaged/lvm2/thin-pool-logical-volume.jsx:141
-#: pkg/storaged/btrfs/volume.jsx:136
+#: pkg/storaged/btrfs/volume.jsx:192
 #: pkg/systemd/overview-cards/configurationCard.jsx:55
 msgid "edit"
 msgstr "muokkaa"
@@ -9842,7 +9855,7 @@ msgstr "liitos"
 msgid "nbde"
 msgstr "nbde"
 
-#: pkg/systemd/manifest.json:0 pkg/networkmanager/manifest.json:0
+#: pkg/networkmanager/manifest.json:0 pkg/systemd/manifest.json:0
 msgid "network"
 msgstr "verkko"
 
@@ -10080,7 +10093,7 @@ msgstr "sos"
 msgid "sos report failed"
 msgstr "sos-raportointi epäonnistui"
 
-#: pkg/users/manifest.json:0 pkg/systemd/manifest.json:0
+#: pkg/systemd/manifest.json:0 pkg/users/manifest.json:0
 msgid "ssh"
 msgstr "ssh"
 

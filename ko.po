@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-19 03:03+0000\n"
+"POT-Creation-Date: 2025-03-20 03:02+0000\n"
 "PO-Revision-Date: 2025-03-17 22:31+0000\n"
 "Last-Translator: 김인수 <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/cockpit/"
@@ -161,7 +161,7 @@ msgstr "$0는 존재하는 파일입니다"
 #: pkg/storaged/lvm2/block-logical-volume.jsx:151
 #: pkg/storaged/legacy-vdo/legacy-vdo.jsx:50
 #: pkg/storaged/legacy-vdo/legacy-vdo.jsx:84 pkg/storaged/mdraid/mdraid.jsx:63
-#: pkg/storaged/mdraid/mdraid.jsx:116
+#: pkg/storaged/mdraid/mdraid.jsx:116 pkg/storaged/btrfs/volume.jsx:70
 msgid "$0 is in use"
 msgstr "$0 사용 중"
 
@@ -1499,7 +1499,7 @@ msgid "Cannot schedule event in the past"
 msgstr "이전 이벤트를 예약할 수 없습니다"
 
 #: pkg/storaged/drive/drive.jsx:127 pkg/storaged/lvm2/volume-group.jsx:366
-#: pkg/storaged/mdraid/mdraid.jsx:303 pkg/storaged/btrfs/volume.jsx:150
+#: pkg/storaged/mdraid/mdraid.jsx:303 pkg/storaged/btrfs/volume.jsx:206
 msgid "Capacity"
 msgstr "용량"
 
@@ -1538,7 +1538,7 @@ msgstr "iSCSI 개시자 이름 변경"
 msgid "Change iSCSI initiator name"
 msgstr "iSCSI 개시자 이름 변경"
 
-#: pkg/storaged/btrfs/volume.jsx:87
+#: pkg/storaged/btrfs/volume.jsx:143
 msgid "Change label"
 msgstr "분류 변경"
 
@@ -2502,9 +2502,10 @@ msgstr "지연은 숫자여야 합니다"
 #: pkg/storaged/legacy-vdo/legacy-vdo.jsx:122
 #: pkg/storaged/legacy-vdo/legacy-vdo.jsx:152
 #: pkg/storaged/mdraid/mdraid.jsx:126 pkg/storaged/mdraid/mdraid.jsx:233
-#: pkg/storaged/btrfs/subvolume.jsx:253 pkg/storaged/btrfs/subvolume.jsx:400
-#: pkg/sosreport/sosreport.jsx:373 pkg/sosreport/sosreport.jsx:472
-#: pkg/systemd/service-details.jsx:151 pkg/systemd/service-details.jsx:709
+#: pkg/storaged/btrfs/volume.jsx:81 pkg/storaged/btrfs/subvolume.jsx:253
+#: pkg/storaged/btrfs/subvolume.jsx:400 pkg/sosreport/sosreport.jsx:373
+#: pkg/sosreport/sosreport.jsx:472 pkg/systemd/service-details.jsx:151
+#: pkg/systemd/service-details.jsx:709
 msgid "Delete"
 msgstr "삭제"
 
@@ -2519,6 +2520,12 @@ msgstr "계정 삭제"
 
 #: pkg/users/delete-account-dialog.js:33
 msgid "Delete files"
+msgstr "파일 삭제"
+
+#: pkg/storaged/btrfs/volume.jsx:128
+#, fuzzy
+#| msgid "Delete files"
+msgid "Delete filesystem"
 msgstr "파일 삭제"
 
 #: pkg/users/group-actions.jsx:45 pkg/storaged/lvm2/volume-group.jsx:246
@@ -2571,6 +2578,12 @@ msgstr "삭제하면 MD레이드 장치에서 모든 자료를 삭제합니다."
 #: pkg/storaged/legacy-vdo/legacy-vdo.jsx:123
 msgid "Deleting erases all data on a VDO device."
 msgstr "삭제하면 VDO 장치에서 모든 자료를 삭제합니다."
+
+#: pkg/storaged/btrfs/volume.jsx:80
+#, fuzzy
+#| msgid "Deleting erases all data on a volume group."
+msgid "Deleting erases all data on a btrfs volume."
+msgstr "삭제하면 볼륨 그룹에서 모든 자료가 제거됩니다."
 
 #: pkg/storaged/lvm2/volume-group.jsx:94
 msgid "Deleting erases all data on a volume group."
@@ -3304,7 +3317,7 @@ msgstr "파일 시스템"
 msgid "Filesystem is locked"
 msgstr "파일 시스템이 잠겨 있습니다"
 
-#: pkg/storaged/btrfs/volume.jsx:129
+#: pkg/storaged/btrfs/volume.jsx:185
 msgid "Filesystem is mounted read-only"
 msgstr "파일시스템이 읽기-전용으로 적재되었습니다"
 
@@ -4136,7 +4149,7 @@ msgstr "LVM2 볼륨 그룹"
 msgid "LVM2 volume group $0"
 msgstr "LVM2 볼륨 그룹 $0"
 
-#: pkg/storaged/btrfs/volume.jsx:131
+#: pkg/storaged/btrfs/volume.jsx:187
 msgid "Label"
 msgstr "이름표"
 
@@ -4957,7 +4970,7 @@ msgstr "NTP 서버"
 #: pkg/storaged/lvm2/thin-pool-logical-volume.jsx:44
 #: pkg/storaged/lvm2/thin-pool-logical-volume.jsx:138
 #: pkg/storaged/mdraid/create-dialog.jsx:47 pkg/storaged/mdraid/mdraid.jsx:295
-#: pkg/storaged/btrfs/volume.jsx:89 pkg/storaged/btrfs/subvolume.jsx:157
+#: pkg/storaged/btrfs/volume.jsx:145 pkg/storaged/btrfs/subvolume.jsx:157
 #: pkg/storaged/btrfs/subvolume.jsx:470 pkg/systemd/timer-dialog.jsx:157
 #: pkg/systemd/hwinfo.jsx:86
 msgid "Name"
@@ -5160,7 +5173,7 @@ msgstr "사용 가능한 설명 없음"
 msgid "No description provided."
 msgstr "설명이 없습니다."
 
-#: pkg/storaged/btrfs/volume.jsx:158
+#: pkg/storaged/btrfs/volume.jsx:214
 msgid "No devices found"
 msgstr "장치를 찾을 수 없습니다"
 
@@ -5293,7 +5306,7 @@ msgstr "순간찍기를 찾을 수 없음"
 msgid "No storage found"
 msgstr "저장소를 찾을 수 없음"
 
-#: pkg/storaged/btrfs/volume.jsx:179 pkg/storaged/btrfs/filesystem.jsx:71
+#: pkg/storaged/btrfs/volume.jsx:235 pkg/storaged/btrfs/filesystem.jsx:71
 #: pkg/storaged/btrfs/subvolume.jsx:488
 msgid "No subvolumes"
 msgstr "하위볼륨 없음"
@@ -5837,7 +5850,7 @@ msgstr "영구적으로 $0 그룹을 삭제 할까요?"
 #: pkg/storaged/stratis/pool.jsx:173 pkg/storaged/partitions/partition.jsx:54
 #: pkg/storaged/lvm2/volume-group.jsx:91
 #: pkg/storaged/legacy-vdo/legacy-vdo.jsx:119
-#: pkg/storaged/mdraid/mdraid.jsx:123
+#: pkg/storaged/mdraid/mdraid.jsx:123 pkg/storaged/btrfs/volume.jsx:77
 msgid "Permanently delete $0?"
 msgstr "영구적으로 $0를 삭제 할까요?"
 
@@ -6825,7 +6838,7 @@ msgstr "토요일"
 #: pkg/storaged/crypto/encryption.jsx:196 pkg/storaged/stratis/pool.jsx:406
 #: pkg/storaged/stratis/pool.jsx:435 pkg/storaged/stratis/pool.jsx:490
 #: pkg/storaged/partitions/partition.jsx:197 pkg/storaged/nfs/nfs.jsx:188
-#: pkg/storaged/btrfs/volume.jsx:96 pkg/systemd/timer-dialog.jsx:148
+#: pkg/storaged/btrfs/volume.jsx:152 pkg/systemd/timer-dialog.jsx:148
 msgid "Save"
 msgstr "저장"
 
@@ -8511,7 +8524,7 @@ msgstr "UDP"
 #: pkg/storaged/partitions/partition.jsx:228
 #: pkg/storaged/lvm2/volume-group.jsx:365
 #: pkg/storaged/lvm2/physical-volume.jsx:117 pkg/storaged/mdraid/mdraid.jsx:301
-#: pkg/storaged/btrfs/volume.jsx:149 pkg/storaged/btrfs/device.jsx:78
+#: pkg/storaged/btrfs/volume.jsx:205 pkg/storaged/btrfs/device.jsx:78
 #: pkg/storaged/btrfs/filesystem.jsx:62
 msgid "UUID"
 msgstr "UUID"
@@ -8825,7 +8838,7 @@ msgstr "올려주기"
 #: pkg/storaged/filesystem/filesystem.jsx:152 pkg/storaged/stratis/pool.jsx:543
 #: pkg/storaged/stratis/filesystem.jsx:256
 #: pkg/storaged/block/unrecognized-data.jsx:50
-#: pkg/storaged/lvm2/physical-volume.jsx:119 pkg/storaged/btrfs/volume.jsx:151
+#: pkg/storaged/lvm2/physical-volume.jsx:119 pkg/storaged/btrfs/volume.jsx:207
 #: pkg/storaged/btrfs/device.jsx:80 pkg/storaged/btrfs/filesystem.jsx:64
 #: pkg/systemd/overview-cards/usageCard.jsx:128
 msgid "Usage"
@@ -9371,11 +9384,11 @@ msgstr "부팅"
 msgid "bridge"
 msgstr "브릿지"
 
-#: pkg/storaged/btrfs/volume.jsx:159 pkg/storaged/btrfs/device.jsx:42
+#: pkg/storaged/btrfs/volume.jsx:215 pkg/storaged/btrfs/device.jsx:42
 msgid "btrfs device"
 msgstr "btrfs 장치"
 
-#: pkg/storaged/btrfs/volume.jsx:156
+#: pkg/storaged/btrfs/volume.jsx:212
 msgid "btrfs devices"
 msgstr "btrfs 장치"
 
@@ -9391,12 +9404,12 @@ msgstr "btrfs 하위볼륨"
 msgid "btrfs subvolume $0 of $1"
 msgstr "btrfs 하위 볼륨 $0/$1"
 
-#: pkg/storaged/btrfs/volume.jsx:168 pkg/storaged/btrfs/volume.jsx:180
+#: pkg/storaged/btrfs/volume.jsx:224 pkg/storaged/btrfs/volume.jsx:236
 #: pkg/storaged/btrfs/filesystem.jsx:72 pkg/storaged/btrfs/subvolume.jsx:489
 msgid "btrfs subvolumes"
 msgstr "btrfs 하위볼륨"
 
-#: pkg/storaged/btrfs/volume.jsx:68 pkg/storaged/btrfs/device.jsx:69
+#: pkg/storaged/btrfs/volume.jsx:117 pkg/storaged/btrfs/device.jsx:69
 msgid "btrfs volume"
 msgstr "btrfs 볼륨"
 
@@ -9441,7 +9454,7 @@ msgstr "코어 덤프"
 msgid "cpu"
 msgstr "중앙처리장치"
 
-#: pkg/systemd/manifest.json:0 pkg/kdump/manifest.json:0
+#: pkg/kdump/manifest.json:0 pkg/systemd/manifest.json:0
 msgid "crash"
 msgstr "충돌"
 
@@ -9468,7 +9481,7 @@ msgstr "디버그"
 #: pkg/storaged/lvm2/volume-group.jsx:79 pkg/storaged/lvm2/volume-group.jsx:308
 #: pkg/storaged/lvm2/block-logical-volume.jsx:64
 #: pkg/storaged/legacy-vdo/legacy-vdo.jsx:80 pkg/storaged/mdraid/mdraid.jsx:112
-#: pkg/storaged/btrfs/subvolume.jsx:235
+#: pkg/storaged/btrfs/volume.jsx:66 pkg/storaged/btrfs/subvolume.jsx:235
 msgid "delete"
 msgstr "삭제"
 
@@ -9517,7 +9530,7 @@ msgstr "드라이브"
 #: pkg/storaged/lvm2/volume-group.jsx:363
 #: pkg/storaged/lvm2/block-logical-volume.jsx:288
 #: pkg/storaged/lvm2/thin-pool-logical-volume.jsx:141
-#: pkg/storaged/btrfs/volume.jsx:136
+#: pkg/storaged/btrfs/volume.jsx:192
 #: pkg/systemd/overview-cards/configurationCard.jsx:55
 msgid "edit"
 msgstr "편집"
@@ -9794,7 +9807,7 @@ msgstr "적재"
 msgid "nbde"
 msgstr "nbde"
 
-#: pkg/systemd/manifest.json:0 pkg/networkmanager/manifest.json:0
+#: pkg/networkmanager/manifest.json:0 pkg/systemd/manifest.json:0
 msgid "network"
 msgstr "네트워크"
 
@@ -10031,7 +10044,7 @@ msgstr "sos"
 msgid "sos report failed"
 msgstr "sos 보고에 실패했습니다"
 
-#: pkg/users/manifest.json:0 pkg/systemd/manifest.json:0
+#: pkg/systemd/manifest.json:0 pkg/users/manifest.json:0
 msgid "ssh"
 msgstr "ssh"
 
