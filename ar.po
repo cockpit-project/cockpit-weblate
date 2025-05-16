@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-05-16 03:08+0000\n"
-"PO-Revision-Date: 2025-05-16 04:47+0000\n"
+"PO-Revision-Date: 2025-05-16 21:59+0000\n"
 "Last-Translator: عمّار عبدالله <ammar-dmour19@proton.me>\n"
 "Language-Team: Arabic <https://translate.fedoraproject.org/projects/cockpit/"
 "cockpit/ar/>\n"
@@ -110,16 +110,14 @@ msgstr[4] "$0 يوما"
 msgstr[5] "$0 يوم"
 
 #: pkg/systemd/overview-cards/smart-status.jsx:94
-#, fuzzy
-#| msgid "Disk is failing"
 msgid "$0 disk is failing"
 msgid_plural "$0 disks are failing"
-msgstr[0] "القرص معطل"
+msgstr[0] "لا قرص معطل"
 msgstr[1] "القرص معطل"
-msgstr[2] "القرص معطل"
-msgstr[3] "القرص معطل"
-msgstr[4] "القرص معطل"
-msgstr[5] "القرص معطل"
+msgstr[2] "القرصان معطلان"
+msgstr[3] "توجد $0 أقراص معطلة"
+msgstr[4] "يوجد $0 قرصاً معطلاً"
+msgstr[5] "يوجد $0 قرصاً معطلاً"
 
 #: pkg/playground/translate.js:26 pkg/playground/translate.js:29
 #: pkg/storaged/mdraid/mdraid.jsx:274
@@ -2631,9 +2629,8 @@ msgid "Default"
 msgstr "افتراضي"
 
 #: pkg/storaged/drive/smart-details.jsx:66
-#, fuzzy
 msgid "Degraded"
-msgstr "مُدمَّر"
+msgstr "متدهور"
 
 #: pkg/systemd/timer-dialog.jsx:202 pkg/systemd/timer-dialog.jsx:211
 #: pkg/lib/cockpit-components-shutdown.jsx:203
@@ -3716,9 +3713,8 @@ msgid "Hide password"
 msgstr "أخفِ كلمة السر"
 
 #: pkg/systemd/overview-cards/cryptoPolicies.jsx:137
-#, fuzzy
 msgid "Higher interoperability at the cost of an increased attack surface."
-msgstr "قابلية أعلى للتشغيل البيني على حساب زيادة مساحة الهجوم."
+msgstr "توافقية أعلى على حساب زيادة المساحة المعرضة للهجوم."
 
 #: pkg/packagekit/history.jsx:113
 msgid "History package count"
@@ -3914,9 +3910,8 @@ msgid "Increase by one"
 msgstr "الزيادة بمقدار واحد"
 
 #: pkg/storaged/legacy-vdo/legacy-vdo.jsx:320
-#, fuzzy
 msgid "Index memory"
-msgstr "فهرس الذاكرة"
+msgstr "ذاكرة الفهرسة"
 
 #: pkg/systemd/services.jsx:254
 msgid "Indirect"
@@ -3947,9 +3942,8 @@ msgid "Initializing..."
 msgstr "قيد التمهيد..."
 
 #: pkg/systemd/overview-cards/insights.jsx:232
-#, fuzzy
 msgid "Insights: "
-msgstr "رؤى ثاقبة: "
+msgstr "تحليلات النظام: "
 
 #: pkg/packagekit/kpatch.jsx:255
 #: pkg/lib/cockpit-components-install-dialog.jsx:126
@@ -4768,9 +4762,8 @@ msgid "Managing firewall"
 msgstr "إدارة الجدار الناري"
 
 #: pkg/networkmanager/manifest.json:0
-#, fuzzy
 msgid "Managing networking bonds"
-msgstr "إدارة الروابط الشبكية"
+msgstr "إدارة الوصلات الشبكية المجمَّعة"
 
 #: pkg/networkmanager/manifest.json:0
 msgid "Managing networking bridges"
@@ -4863,9 +4856,8 @@ msgid "Merged"
 msgstr "مدمج"
 
 #: pkg/lib/cockpit-components-shutdown.jsx:200
-#, fuzzy
 msgid "Message to logged in users"
-msgstr "رسالة للمستخدمين داخل النظام"
+msgstr "رسالة للمستخدمين النشطين"
 
 #: pkg/shell/failures.tsx:50
 msgid "Messages related to the failure might be found in the journal:"
@@ -5170,9 +5162,8 @@ msgid "Network I/O"
 msgstr "شبكة I/O"
 
 #: pkg/networkmanager/bond.jsx:147
-#, fuzzy
 msgid "Network bond"
-msgstr "رابط الشبكة"
+msgstr "ربط شبكي"
 
 #: pkg/networkmanager/networkmanager.jsx:101
 msgid "Network devices and graphs require NetworkManager"
@@ -5790,7 +5781,6 @@ msgid "Partitions"
 msgstr "الأقسام"
 
 #: pkg/networkmanager/team.jsx:50
-#, fuzzy
 msgid "Passive"
 msgstr "سلبي"
 
@@ -7902,59 +7892,64 @@ msgstr "خدمة Cockpit مضمّنة تلقائياً"
 
 #: pkg/selinux/setroubleshoot-view.jsx:258
 msgid "The configured state is unknown, it might change on the next boot."
-msgstr ""
+msgstr "الحالة التي تم تكوينها غير معروفة، وقد تتغير عند الإقلاع التالي."
 
 #: pkg/storaged/legacy-vdo/legacy-vdo.jsx:226
 msgid ""
 "The creation of this VDO device did not finish and the device can't be used."
-msgstr ""
+msgstr "لم يتم الانتهاء من إنشاء جهاز VDO هذا ولا يمكن استخدام الجهاز."
 
 #: pkg/storaged/crypto/keyslots.jsx:733
 msgid ""
 "The currently logged in user is not permitted to see information about keys."
 msgstr ""
+"لا يُسمح للمستخدم الذي قام بتسجيل الدخول حالياً بالاطلاع على معلومات حول "
+"المفاتيح."
 
 #: pkg/storaged/block/format-dialog.jsx:371
 msgid ""
 "The disk needs to be unlocked before formatting.  Please provide a existing "
 "passphrase."
-msgstr ""
+msgstr "يجب إلغاء قفل القرص قبل التهيئة.  يرجى تقديم عبارة مرور موجودة."
 
 #: pkg/sosreport/sosreport.jsx:385
 msgid "The file $0 will be deleted."
-msgstr ""
+msgstr "الملف $0 سيتم حذفه."
 
 #: pkg/storaged/filesystem/utils.jsx:191
 msgid "The filesystem has no assigned mount point."
-msgstr ""
+msgstr "لا يحوي نظام الملفات على نقطة تحميل معيّنة."
 
 #: pkg/storaged/filesystem/utils.jsx:195
 msgid "The filesystem has no permanent mount point."
-msgstr ""
+msgstr "لا يحوي نظام الملفات على نقطة تحميل دائمة."
 
 #: pkg/storaged/filesystem/mismounting.jsx:228
 msgid ""
 "The filesystem is configured to be automatically mounted on boot but its "
 "encryption container will not be unlocked at that time."
 msgstr ""
+"تم إعداد نظام الملفات ليتم تركيبه تلقائيًاً عند الإقلاع ، لكن لن يتم إلغاء قفل "
+"حاوية التشفير الخاصة به في ذلك الوقت."
 
 #: pkg/storaged/filesystem/mismounting.jsx:220
 msgid ""
 "The filesystem is currently mounted but will not be mounted after the next "
 "boot."
-msgstr ""
+msgstr "نظام الملفات مركَّب حاليًا لكن لن يتم تركيبه بعد الإقلاع التالي."
 
 #: pkg/storaged/filesystem/mismounting.jsx:212
 msgid ""
 "The filesystem is currently mounted on $0 but will be mounted on $1 on the "
 "next boot."
 msgstr ""
+"نظام الملفات مركَّب حاليًا على $0 ولكن سيتم تثبيته على $1 عند الإقلاع التالي."
 
 #: pkg/storaged/filesystem/mismounting.jsx:224
 msgid ""
 "The filesystem is currently mounted on $0 but will not be mounted after the "
 "next boot."
-msgstr ""
+msgstr "نظام الملفات مثبت حاليًا على $0 لكن لن يتم تثبيته بعد الإقلاع التالي."
 
 #: pkg/storaged/filesystem/mismounting.jsx:216
 msgid ""
@@ -8005,11 +8000,11 @@ msgstr "مجلد المنزل \"$0\" موجود بالفعل. سيتم تغيي�
 
 #: pkg/storaged/crypto/keyslots.jsx:310
 msgid "The initrd must be regenerated."
-msgstr ""
+msgstr "يجب إعادة توليظ initrd."
 
 #: pkg/lib/cockpit-connect-ssh.tsx:344 pkg/shell/hosts_dialog.jsx:889
 msgid "The key password can not be empty"
-msgstr ""
+msgstr "مفتاح كلمة السر لا يمكن أن يكون فارغاً"
 
 #: pkg/lib/cockpit-connect-ssh.tsx:346 pkg/shell/hosts_dialog.jsx:892
 #: pkg/shell/hosts_dialog.jsx:898
@@ -8022,19 +8017,19 @@ msgstr "المفتاح الذي قدمته لم يكن صالحًا."
 
 #: pkg/storaged/crypto/keyslots.jsx:764
 msgid "The last key slot can not be removed"
-msgstr ""
+msgstr "لا يمكن إزالة فتحة المفتاح الأخير"
 
 #: pkg/storaged/btrfs/subvolume.jsx:386
 msgid "The last mounted subvolume can not be deleted"
-msgstr ""
+msgstr "لا يمكن حذف آخر وحدة تخزين فرعية مركَّبة"
 
 #: pkg/storaged/dialog.jsx:1494
 msgid "The listed processes and services will be forcefully stopped."
-msgstr ""
+msgstr "سيتم إيقاف العمليات والخدمات المدرجة بالقوة."
 
 #: pkg/storaged/dialog.jsx:1496
 msgid "The listed processes will be forcefully stopped."
-msgstr ""
+msgstr "سيتم إيقاف العمليات المدرجة بالقوة."
 
 #: pkg/storaged/dialog.jsx:1498
 msgid "The listed services will be forcefully stopped."
@@ -8062,7 +8057,7 @@ msgstr ""
 
 #: pkg/lib/cockpit-connect-ssh.tsx:338 pkg/shell/hosts_dialog.jsx:873
 msgid "The password can not be empty"
-msgstr ""
+msgstr "كلمة السر لا بمكن أن تكون فارغة"
 
 #: pkg/users/account-create-dialog.js:208 pkg/users/password-dialogs.js:191
 msgid "The passwords do not match"
@@ -8210,12 +8205,12 @@ msgstr ""
 
 #: pkg/storaged/dialog.jsx:1187
 msgid "This device is currently in use."
-msgstr ""
+msgstr "هذا الجهاز حالياً قيد الاستخدام."
 
 #: pkg/systemd/timer-dialog.jsx:166 pkg/systemd/timer-dialog.jsx:174
 #: pkg/systemd/timer-dialog.jsx:183
 msgid "This field cannot be empty"
-msgstr ""
+msgstr "هذا الحقل لا يمكن أن يكون فارغاً"
 
 #: pkg/users/delete-group-dialog.js:38
 msgid "This group is the primary group for the following users:"
@@ -8254,50 +8249,51 @@ msgstr ""
 
 #: pkg/storaged/lvm2/block-logical-volume.jsx:275
 msgid "This logical volume is not completely used by its content."
-msgstr ""
+msgstr "وحدة التخزين المنطقية هذه غير مستخدمة بالكامل من قبل محتواها."
 
 #: pkg/shell/hosts_dialog.jsx:354
 msgid "This machine has already been added."
-msgstr ""
+msgstr "تمت إضافة هذه الآلة بالفعل."
 
 #: pkg/systemd/overview-cards/realmd.jsx:437
 msgid "This may take a while"
-msgstr ""
+msgstr "قد يستغرق هذا بعض الوقت"
 
 #: pkg/storaged/partitions/partition.jsx:212
 msgid "This partition is not completely used by its content."
-msgstr ""
+msgstr "هذا القسم غير مستخدم بالكامل من قبل محتواه."
 
 #: pkg/storaged/stratis/pool.jsx:570
 msgid ""
 "This passphrase is the only way to unlock the pool and can not be removed."
-msgstr ""
+msgstr "عبارة المرور هذه هي الطريقة الوحيدة لإلغاء قفل المجمع ولا يمكن إزالتها."
 
 #: pkg/storaged/stratis/pool.jsx:352
 msgid "This pool does not use all the space on its block devices."
-msgstr ""
+msgstr "لا يستخدم هذا المجمع كل المساحة الموجودة على أجهزة الكتل الخاصة به."
 
 #: pkg/storaged/stratis/pool.jsx:367
 msgid "This pool is in a degraded state."
-msgstr ""
+msgstr "هذا المجمع في حالة متدهورة."
 
 #: pkg/packagekit/updates.jsx:1447
 msgid "This system is not registered"
-msgstr ""
+msgstr "هذا النظام غير مسجل"
 
 #: pkg/systemd/overview-cards/tuned-dialog.jsx:85
 msgid "This system is using a custom profile"
-msgstr ""
+msgstr "هذا النظام يستخدم ملف تعريف مخصص"
 
 #: pkg/systemd/overview-cards/tuned-dialog.jsx:83
 msgid "This system is using the recommended profile"
-msgstr ""
+msgstr "هذا النظام يستخدم ملف التعريف الموصى به"
 
 #: src/appstream/org.cockpit_project.cockpit_selinux.metainfo.xml.in:8
 msgid ""
 "This tool configures the SELinux policy and can help with understanding and "
 "resolving policy violations."
 msgstr ""
+"تقوم هذه الأداة بتكوين سياسة SELinux ويمكن أن تساعد في فهم انتهاكاتها وحلها."
 
 #: src/appstream/org.cockpit_project.cockpit_kdump.metainfo.xml.in:8
 msgid ""
@@ -8373,11 +8369,11 @@ msgstr ""
 
 #: pkg/systemd/timer-dialog.jsx:322 pkg/packagekit/autoupdates.jsx:437
 msgid "Thursdays"
-msgstr ""
+msgstr "أيام الخميس"
 
 #: pkg/storaged/stratis/pool.jsx:218
 msgid "Tier"
-msgstr ""
+msgstr "فئة"
 
 #: pkg/systemd/logs.jsx:193 pkg/packagekit/history.jsx:113
 msgid "Time"
@@ -8389,15 +8385,15 @@ msgstr "المنطقة الزمنية"
 
 #: pkg/systemd/timer-dialog.jsx:157
 msgid "Timer creation failed"
-msgstr ""
+msgstr "فشل إنشاء المؤقت"
 
 #: pkg/systemd/service-details.jsx:722
 msgid "Timer deletion failed"
-msgstr ""
+msgstr "فشل حذف المؤقت"
 
 #: pkg/systemd/service-tabs.jsx:44
 msgid "Timers"
-msgstr ""
+msgstr "المؤقتات"
 
 #: pkg/shell/credentials.tsx:190
 msgid ""
@@ -8429,11 +8425,11 @@ msgstr ""
 
 #: pkg/metrics/metrics.jsx:1879
 msgid "Today"
-msgstr ""
+msgstr "اليوم"
 
 #: pkg/shell/credentials.tsx:306
 msgid "Toggle"
-msgstr ""
+msgstr "تبديل"
 
 #: pkg/users/expiration-dialogs.js:49 pkg/systemd/timer-dialog.jsx:350
 #: pkg/lib/cockpit-components-shutdown.jsx:213 pkg/lib/serverTime.js:596
@@ -8442,7 +8438,7 @@ msgstr "إخفاء منتقي التاريخ و الوقت"
 
 #: pkg/systemd/services.jsx:819 pkg/systemd/logs.jsx:188
 msgid "Toggle filters"
-msgstr ""
+msgstr "تبديل عوامل التصفية"
 
 #: pkg/lib/cockpit.js:2447
 msgid "Too much data"
@@ -8450,19 +8446,19 @@ msgstr "الكثير من البيانات"
 
 #: pkg/shell/nav.tsx:415
 msgid "Tools"
-msgstr ""
+msgstr "الأدوات"
 
 #: pkg/metrics/metrics.jsx:829
 msgid "Top 5 CPU services"
-msgstr ""
+msgstr "أعلى ٥ خدمات لوحدة المعالجة المركزية (CPU)"
 
 #: pkg/metrics/metrics.jsx:927
 msgid "Top 5 disk usage services"
-msgstr ""
+msgstr "أعلى ٥ خدمات استهلاكاً للقرص"
 
 #: pkg/metrics/metrics.jsx:867
 msgid "Top 5 memory services"
-msgstr ""
+msgstr "أعلى ٥ خدمات استهلاكاً للذاكرة"
 
 #: pkg/lib/cockpit-components-install-dialog.jsx:105
 msgid "Total size: $0"
@@ -8474,47 +8470,47 @@ msgstr "برج"
 
 #: pkg/systemd/services.jsx:256
 msgid "Transient"
-msgstr ""
+msgstr "مؤقَّت"
 
 #: pkg/networkmanager/plots.js:39
 msgid "Transmitting"
-msgstr "إرسال"
+msgstr "النقل"
 
 #: pkg/systemd/services-list.jsx:45 pkg/systemd/timer-dialog.jsx:185
 msgid "Trigger"
-msgstr ""
+msgstr "المشغِّل"
 
 #: pkg/systemd/service-details.jsx:555
 msgid "Triggered by"
-msgstr ""
+msgstr "تم تشغيله بواسطة"
 
 #: pkg/systemd/service-details.jsx:554
 msgid "Triggers"
-msgstr ""
+msgstr "المشغِّلات"
 
 #: pkg/metrics/metrics.jsx:1839
 msgid "Troubleshoot"
-msgstr "حل المشاكل"
+msgstr "استكشاف الأخطاء وإصلاحها"
 
 #: pkg/networkmanager/networkmanager.jsx:84
 msgid "Troubleshoot…"
-msgstr "حل المشاكل…"
+msgstr "استكشاف الأخطاء وإصلاحها…"
 
 #: pkg/lib/cockpit-connect-ssh.tsx:129 pkg/shell/hosts_dialog.jsx:660
 msgid "Trust and add host"
-msgstr ""
+msgstr "الثقة بالمضيف وإضافته"
 
 #: pkg/storaged/stratis/utils.jsx:86 pkg/storaged/crypto/keyslots.jsx:581
 msgid "Trust key"
-msgstr ""
+msgstr "مفتاح موثوق"
 
 #: pkg/networkmanager/firewall.jsx:825
 msgid "Trust level"
-msgstr ""
+msgstr "مستوى الثقة"
 
 #: pkg/static/login.html:165
 msgid "Try again"
-msgstr ""
+msgstr "حاول من جديد"
 
 #: pkg/lib/serverTime.js:454
 msgid "Trying to synchronize with $0"
@@ -8587,7 +8583,7 @@ msgstr ""
 #: pkg/storaged/stratis/stopped-pool.jsx:180 pkg/storaged/stratis/pool.jsx:540
 #: pkg/storaged/mdraid/mdraid.jsx:308
 msgid "UUID"
-msgstr ""
+msgstr "UUID"
 
 #: pkg/selinux/setroubleshoot-view.jsx:114
 msgid "Unable to apply this solution automatically"
@@ -9350,16 +9346,16 @@ msgstr "[لا بيانات]"
 
 #: pkg/systemd/manifest.json:0
 msgid "abrt"
-msgstr ""
+msgstr "abrt"
 
 #: pkg/users/manifest.json:0
 msgid "access"
-msgstr ""
+msgstr "وصول"
 
 #: pkg/systemd/overview-cards/profiles-menu-dialog-body.jsx:56
 #: pkg/shell/active-pages-modal.tsx:89
 msgid "active"
-msgstr "نشِط"
+msgstr "نشط"
 
 #: pkg/apps/manifest.json:0
 msgid "add-on"
@@ -9379,7 +9375,7 @@ msgstr "تطبيقات"
 
 #: pkg/packagekit/manifest.json:0
 msgid "apt-get"
-msgstr ""
+msgstr "apt-get"
 
 #: pkg/systemd/manifest.json:0
 msgid "asset tag"
@@ -9387,11 +9383,11 @@ msgstr ""
 
 #: pkg/packagekit/autoupdates.jsx:443
 msgid "at"
-msgstr ""
+msgstr "عند"
 
 #: pkg/selinux/manifest.json:0
 msgid "avc"
-msgstr ""
+msgstr "avc"
 
 #: pkg/metrics/metrics.jsx:716
 msgid "average: $0%"
@@ -9403,11 +9399,11 @@ msgstr ""
 
 #: pkg/systemd/manifest.json:0
 msgid "bash"
-msgstr ""
+msgstr "bash"
 
 #: pkg/systemd/manifest.json:0
 msgid "bios"
-msgstr ""
+msgstr "bios"
 
 #: pkg/networkmanager/manifest.json:0
 #, fuzzy
