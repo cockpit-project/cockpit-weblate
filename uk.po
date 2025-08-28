@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-27 03:06+0000\n"
+"POT-Creation-Date: 2025-08-28 03:06+0000\n"
 "PO-Revision-Date: 2025-08-10 11:58+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
@@ -93,8 +93,8 @@ msgstr[0] "$0 диск виходить з ладу"
 msgstr[1] "$0 диски виходять з ладу"
 msgstr[2] "$0 дисків виходять з ладу"
 
-#: pkg/playground/translate.js:26 pkg/playground/translate.js:29
-#: pkg/storaged/mdraid/mdraid.jsx:274
+#: pkg/storaged/mdraid/mdraid.jsx:274 pkg/playground/translate.js:26
+#: pkg/playground/translate.js:29
 msgid "$0 disk is missing"
 msgid_plural "$0 disks are missing"
 msgstr[0] "Не вистачає $0 диска"
@@ -174,17 +174,17 @@ msgstr[2] "$0 збігів із важливими"
 msgid "$0 is an existing file"
 msgstr "$0 є наявним файлом"
 
-#: pkg/storaged/crypto/actions.jsx:71 pkg/storaged/mdraid/mdraid.jsx:63
-#: pkg/storaged/mdraid/mdraid.jsx:123 pkg/storaged/legacy-vdo/legacy-vdo.jsx:50
-#: pkg/storaged/legacy-vdo/legacy-vdo.jsx:84 pkg/storaged/block/resize.jsx:437
-#: pkg/storaged/block/resize.jsx:587 pkg/storaged/block/format-dialog.jsx:212
-#: pkg/storaged/btrfs/volume.jsx:70
-#: pkg/storaged/partitions/format-disk-dialog.jsx:39
-#: pkg/storaged/partitions/partition.jsx:47
+#: pkg/storaged/stratis/pool.jsx:166 pkg/storaged/stratis/filesystem.jsx:116
+#: pkg/storaged/lvm2/volume-group.jsx:87 pkg/storaged/lvm2/volume-group.jsx:318
 #: pkg/storaged/lvm2/block-logical-volume.jsx:68
 #: pkg/storaged/lvm2/block-logical-volume.jsx:151
-#: pkg/storaged/lvm2/volume-group.jsx:87 pkg/storaged/lvm2/volume-group.jsx:318
-#: pkg/storaged/stratis/filesystem.jsx:116 pkg/storaged/stratis/pool.jsx:166
+#: pkg/storaged/crypto/actions.jsx:71 pkg/storaged/block/resize.jsx:437
+#: pkg/storaged/block/resize.jsx:587 pkg/storaged/block/format-dialog.jsx:212
+#: pkg/storaged/partitions/partition.jsx:47
+#: pkg/storaged/partitions/format-disk-dialog.jsx:39
+#: pkg/storaged/legacy-vdo/legacy-vdo.jsx:50
+#: pkg/storaged/legacy-vdo/legacy-vdo.jsx:84 pkg/storaged/btrfs/volume.jsx:70
+#: pkg/storaged/mdraid/mdraid.jsx:63 pkg/storaged/mdraid/mdraid.jsx:123
 msgid "$0 is in use"
 msgstr "$0 використовується"
 
@@ -197,7 +197,7 @@ msgstr "$0 не є директорією"
 msgid "$0 is not available from any repository."
 msgstr "$0 немає у жодному зі сховищ."
 
-#: pkg/shell/hosts_dialog.jsx:667 pkg/static/login.js:835
+#: pkg/static/login.js:835 pkg/shell/hosts_dialog.jsx:667
 #: pkg/lib/cockpit-connect-ssh.tsx:127
 msgid "$0 key changed"
 msgstr "Змінено ключ $0"
@@ -318,7 +318,7 @@ msgstr[2] "Доступні $0 оновлень"
 msgid "$0 used of $1 ($2 saved)"
 msgstr "$0 використано з $1 ($2 заощаджено)"
 
-#: pkg/storaged/dialog.jsx:1404
+#: pkg/storaged/dialog.jsx:1402
 msgid "$0 used, $1 total"
 msgstr "використано $0, загалом $1"
 
@@ -348,7 +348,7 @@ msgstr "зона $0"
 msgid "$name (from $host)"
 msgstr "$name (з $host)"
 
-#: pkg/storaged/dialog.jsx:1306
+#: pkg/storaged/dialog.jsx:1304
 msgid "(Not part of target)"
 msgstr "(Не є частиною цілі)"
 
@@ -356,8 +356,8 @@ msgstr "(Не є частиною цілі)"
 msgid "(no assigned mount point)"
 msgstr "(немає пов'язаної точки монтування)"
 
-#: pkg/storaged/filesystem/utils.jsx:236 pkg/storaged/filesystem/utils.jsx:241
-#: pkg/storaged/nfs/nfs.jsx:294
+#: pkg/storaged/nfs/nfs.jsx:294 pkg/storaged/filesystem/utils.jsx:236
+#: pkg/storaged/filesystem/utils.jsx:241
 msgid "(not mounted)"
 msgstr "(не змонтовано)"
 
@@ -724,12 +724,12 @@ msgstr "Обліковий запис недоступний або його н�
 msgid "Accounts"
 msgstr "Облікові записи"
 
-#: pkg/storaged/dialog.jsx:1331
+#: pkg/storaged/dialog.jsx:1329
 msgid "Action"
 msgstr "Дія"
 
-#: pkg/users/accounts-list.js:385 pkg/apps/application-list.jsx:91
-#: pkg/storaged/pages.jsx:727 pkg/storaged/drive/smart-details.jsx:106
+#: pkg/apps/application-list.jsx:91 pkg/storaged/drive/smart-details.jsx:106
+#: pkg/storaged/pages.jsx:727 pkg/users/accounts-list.js:385
 msgid "Actions"
 msgstr "Дії"
 
@@ -775,23 +775,24 @@ msgstr "Адаптивне урівноваження навантаження"
 msgid "Adaptive transmit load balancing"
 msgstr "Адаптивне урівноваження навантаження за передаванням"
 
-#: pkg/users/authorized-keys-panel.js:68 pkg/storaged/nfs/nfs.jsx:188
-#: pkg/storaged/crypto/keyslots.jsx:477 pkg/storaged/crypto/keyslots.jsx:792
-#: pkg/storaged/mdraid/mdraid.jsx:174 pkg/storaged/iscsi/create-dialog.jsx:120
-#: pkg/storaged/iscsi/create-dialog.jsx:144
-#: pkg/storaged/lvm2/volume-group.jsx:211 pkg/storaged/stratis/pool.jsx:245
-#: pkg/shell/hosts_dialog.jsx:451 pkg/shell/credentials.tsx:92
-#: pkg/networkmanager/dialogs-common.jsx:156 pkg/systemd/timer-dialog.jsx:358
+#: pkg/systemd/timer-dialog.jsx:356 pkg/networkmanager/dialogs-common.jsx:156
+#: pkg/storaged/stratis/pool.jsx:245 pkg/storaged/lvm2/volume-group.jsx:211
+#: pkg/storaged/nfs/nfs.jsx:188 pkg/storaged/crypto/keyslots.jsx:477
+#: pkg/storaged/crypto/keyslots.jsx:792
+#: pkg/storaged/iscsi/create-dialog.jsx:120
+#: pkg/storaged/iscsi/create-dialog.jsx:144 pkg/storaged/mdraid/mdraid.jsx:174
+#: pkg/users/authorized-keys-panel.js:68 pkg/shell/hosts_dialog.jsx:451
+#: pkg/shell/credentials.tsx:92
 msgid "Add"
 msgstr "Додати"
 
-#: pkg/networkmanager/network-interface-members.jsx:167
+#: pkg/networkmanager/network-interface-members.jsx:165
 #: pkg/lib/cockpit-components-firewalld-request.jsx:145
 msgid "Add $0"
 msgstr "Додати $0"
 
-#: pkg/networkmanager/ip-settings.jsx:239
-#: pkg/networkmanager/ip-settings.jsx:244
+#: pkg/networkmanager/ip-settings.jsx:237
+#: pkg/networkmanager/ip-settings.jsx:242
 msgid "Add DNS server"
 msgstr "Додати сервер DNS"
 
@@ -803,7 +804,7 @@ msgstr "Додати шифрування диска з мережевою пр�
 msgid "Add Tang keyserver"
 msgstr "Додати сервер ключів Tang"
 
-#: pkg/networkmanager/network-main.jsx:145 pkg/networkmanager/vlan.jsx:91
+#: pkg/networkmanager/vlan.jsx:91 pkg/networkmanager/network-main.jsx:145
 msgid "Add VLAN"
 msgstr "Додати VLAN"
 
@@ -844,7 +845,7 @@ msgstr "Додати місток"
 msgid "Add disk"
 msgstr "Додати диск"
 
-#: pkg/storaged/mdraid/mdraid.jsx:161 pkg/storaged/lvm2/volume-group.jsx:198
+#: pkg/storaged/lvm2/volume-group.jsx:198 pkg/storaged/mdraid/mdraid.jsx:161
 msgid "Add disks"
 msgstr "Додати диски"
 
@@ -853,7 +854,7 @@ msgstr "Додати диски"
 msgid "Add iSCSI portal"
 msgstr "Додати портал iSCSI"
 
-#: pkg/users/authorized-keys-panel.js:112 pkg/storaged/crypto/keyslots.jsx:441
+#: pkg/storaged/crypto/keyslots.jsx:441 pkg/users/authorized-keys-panel.js:112
 #: pkg/shell/credentials.tsx:294
 msgid "Add key"
 msgstr "Додати ключ"
@@ -862,7 +863,7 @@ msgstr "Додати ключ"
 msgid "Add keyserver"
 msgstr "Додати сервер ключів"
 
-#: pkg/networkmanager/network-interface-members.jsx:187
+#: pkg/networkmanager/network-interface-members.jsx:185
 msgid "Add member"
 msgstr "Додати учасника"
 
@@ -898,13 +899,13 @@ msgstr "Додати порти до зони $0"
 msgid "Add public key"
 msgstr "Додати відкритий ключ"
 
-#: pkg/networkmanager/ip-settings.jsx:335
-#: pkg/networkmanager/ip-settings.jsx:340
+#: pkg/networkmanager/ip-settings.jsx:329
+#: pkg/networkmanager/ip-settings.jsx:334
 msgid "Add route"
 msgstr "Додати маршрут"
 
-#: pkg/networkmanager/ip-settings.jsx:287
-#: pkg/networkmanager/ip-settings.jsx:292
+#: pkg/networkmanager/ip-settings.jsx:283
+#: pkg/networkmanager/ip-settings.jsx:288
 msgid "Add search domain"
 msgstr "Додати домен пошуку"
 
@@ -936,7 +937,7 @@ msgstr "Додавання «$0» параметрів шифрування"
 msgid "Adding \"$0\" to filesystem options"
 msgstr "Додавання «$0» до параметрів файлової системи"
 
-#: pkg/networkmanager/network-interface-members.jsx:166
+#: pkg/networkmanager/network-interface-members.jsx:164
 msgid ""
 "Adding $0 will break the connection to the server, and will make the "
 "administration UI unavailable."
@@ -996,9 +997,9 @@ msgstr "Додаткові пакунки:"
 msgid "Additional ports"
 msgstr "Додаткові порти"
 
-#: pkg/storaged/iscsi/session.jsx:91 pkg/storaged/iscsi/create-dialog.jsx:111
-#: pkg/networkmanager/ip-settings.jsx:192
-#: pkg/networkmanager/ip-settings.jsx:352
+#: pkg/networkmanager/ip-settings.jsx:190
+#: pkg/networkmanager/ip-settings.jsx:344 pkg/storaged/iscsi/session.jsx:91
+#: pkg/storaged/iscsi/create-dialog.jsx:111
 msgid "Address"
 msgstr "Адреса"
 
@@ -1126,7 +1127,7 @@ msgstr "Ansible"
 msgid "Ansible roles documentation"
 msgstr "Документація з ролей Ansible"
 
-#: pkg/systemd/logs.jsx:363
+#: pkg/systemd/logs.jsx:355
 msgid ""
 "Any text string in the logs messages can be filtered. The string can also be "
 "in the form of a regular expression. Also supports filtering by message log "
@@ -1143,20 +1144,20 @@ msgstr ""
 msgid "Appearance"
 msgstr "Вигляд"
 
-#: pkg/apps/application-list.jsx:168
+#: pkg/apps/application-list.jsx:166
 msgid "Application information is missing"
 msgstr "Немає даних щодо програми"
 
 #: pkg/apps/index.html:23 pkg/apps/application.jsx:145
-#: pkg/apps/application-list.jsx:175 pkg/apps/manifest.json:0
+#: pkg/apps/application-list.jsx:173 pkg/apps/manifest.json:0
 msgid "Applications"
 msgstr "Програми"
 
-#: pkg/apps/application-list.jsx:201
+#: pkg/apps/application-list.jsx:199
 msgid "Applications list"
 msgstr "Список програм"
 
-#: pkg/systemd/overview-cards/cryptoPolicies.jsx:230
+#: pkg/systemd/overview-cards/cryptoPolicies.jsx:228
 msgid "Apply and reboot"
 msgstr "Застосувати і перезавантажити"
 
@@ -1168,7 +1169,7 @@ msgstr "Застосувати інтерактивні латки до ядра
 msgid "Apply this solution"
 msgstr "Застосувати це рішення"
 
-#: pkg/systemd/overview-cards/cryptoPolicies.jsx:224
+#: pkg/systemd/overview-cards/cryptoPolicies.jsx:222
 msgid "Applying new policy... This may take a few minutes."
 msgstr "Застосовуємо нові правила… Застосування може тривати декілька хвилин."
 
@@ -1188,7 +1189,7 @@ msgstr "Не вдалося застосувати оновлення"
 msgid "Appropriate for critical mounts, such as /var"
 msgstr "Придатне для критичних монтувань, зокрема /var"
 
-#: pkg/shell/nav.tsx:409
+#: pkg/shell/nav.tsx:408
 msgid "Apps"
 msgstr "Програми"
 
@@ -1215,8 +1216,8 @@ msgstr[2] "Потрібно принаймні $0 дисків."
 msgid "At least one block device is needed."
 msgstr "Потрібен принаймні один блоковий пристрій."
 
-#: pkg/storaged/mdraid/mdraid.jsx:168 pkg/storaged/lvm2/create-dialog.jsx:57
-#: pkg/storaged/lvm2/volume-group.jsx:205 pkg/storaged/stratis/pool.jsx:239
+#: pkg/storaged/stratis/pool.jsx:239 pkg/storaged/lvm2/volume-group.jsx:205
+#: pkg/storaged/lvm2/create-dialog.jsx:57 pkg/storaged/mdraid/mdraid.jsx:168
 msgid "At least one disk is needed."
 msgstr "Потрібен принаймні один диск."
 
@@ -1287,10 +1288,10 @@ msgstr "Уповноважити ключ SSH"
 msgid "Authorized public SSH keys"
 msgstr "Уповноважені відкриті ключі SSH"
 
-#: pkg/networkmanager/mtu.jsx:79 pkg/networkmanager/network-interface.jsx:378
-#: pkg/networkmanager/ip-settings.jsx:40 pkg/networkmanager/ip-settings.jsx:238
-#: pkg/networkmanager/ip-settings.jsx:286
-#: pkg/networkmanager/ip-settings.jsx:334
+#: pkg/networkmanager/network-interface.jsx:378 pkg/networkmanager/mtu.jsx:79
+#: pkg/networkmanager/ip-settings.jsx:40 pkg/networkmanager/ip-settings.jsx:236
+#: pkg/networkmanager/ip-settings.jsx:282
+#: pkg/networkmanager/ip-settings.jsx:328
 msgid "Automatic"
 msgstr "Автоматично"
 
@@ -1411,7 +1412,7 @@ msgstr "Заблоковано"
 msgid "Bond"
 msgstr "Прив’язка"
 
-#: pkg/systemd/logs.jsx:337 pkg/metrics/metrics.jsx:1114
+#: pkg/systemd/logs.jsx:333 pkg/metrics/metrics.jsx:1114
 msgid "Boot"
 msgstr "Завантаження"
 
@@ -1518,30 +1519,28 @@ msgstr ""
 msgid "Can not find any logs using the current combination of filters."
 msgstr "Не вдалося знайти журналів на основі поточної комбінації фільтрів."
 
-#: pkg/static/login.html:156 pkg/kdump/kdump-view.jsx:327 pkg/apps/utils.tsx:92
-#: pkg/packagekit/autoupdates.jsx:453 pkg/packagekit/kpatch.jsx:324
-#: pkg/packagekit/updates.jsx:538 pkg/packagekit/updates.jsx:571
-#: pkg/storaged/jobs-panel.jsx:140 pkg/shell/hosts_dialog.jsx:289
-#: pkg/shell/hosts_dialog.jsx:491 pkg/shell/hosts_dialog.jsx:588
-#: pkg/shell/hosts_dialog.jsx:724 pkg/shell/hosts_dialog.jsx:1103
-#: pkg/shell/active-pages-modal.tsx:126 pkg/shell/superuser.tsx:211
-#: pkg/shell/superuser.tsx:248 pkg/shell/superuser.tsx:304
-#: pkg/shell/credentials.tsx:243 pkg/shell/shell-modals.tsx:186
-#: pkg/networkmanager/firewall.jsx:711 pkg/networkmanager/firewall.jsx:901
-#: pkg/networkmanager/firewall.jsx:925
-#: pkg/networkmanager/dialogs-common.jsx:159
-#: pkg/systemd/overview-cards/tuned-dialog.jsx:327
-#: pkg/systemd/overview-cards/motdCard.jsx:77
-#: pkg/systemd/overview-cards/realmd.jsx:455
-#: pkg/systemd/overview-cards/cryptoPolicies.jsx:233
+#: pkg/static/login.html:156 pkg/systemd/overview-cards/tuned-dialog.jsx:325
 #: pkg/systemd/overview-cards/configurationCard.jsx:306
+#: pkg/systemd/overview-cards/motdCard.jsx:77
+#: pkg/systemd/overview-cards/cryptoPolicies.jsx:231
+#: pkg/systemd/overview-cards/realmd.jsx:455 pkg/systemd/hwinfo.jsx:235
 #: pkg/systemd/service-details.jsx:91 pkg/systemd/service-details.jsx:749
-#: pkg/systemd/timer-dialog.jsx:396 pkg/systemd/hwinfo.jsx:235
-#: pkg/systemd/terminal.jsx:295 pkg/metrics/metrics.jsx:1504
-#: pkg/lib/cockpit-components-dialog.jsx:127
-#: pkg/lib/cockpit-components-shutdown.jsx:237
+#: pkg/systemd/timer-dialog.jsx:392 pkg/systemd/terminal.jsx:295
+#: pkg/apps/utils.tsx:92 pkg/sosreport/sosreport.jsx:296
+#: pkg/sosreport/sosreport.jsx:384 pkg/networkmanager/dialogs-common.jsx:159
+#: pkg/networkmanager/firewall.jsx:711 pkg/networkmanager/firewall.jsx:901
+#: pkg/networkmanager/firewall.jsx:925 pkg/packagekit/updates.jsx:538
+#: pkg/packagekit/updates.jsx:571 pkg/packagekit/kpatch.jsx:324
+#: pkg/packagekit/autoupdates.jsx:453 pkg/kdump/kdump-view.jsx:327
+#: pkg/metrics/metrics.jsx:1504 pkg/storaged/jobs-panel.jsx:140
+#: pkg/shell/active-pages-modal.tsx:126 pkg/shell/shell-modals.tsx:186
+#: pkg/shell/hosts_dialog.jsx:289 pkg/shell/hosts_dialog.jsx:491
+#: pkg/shell/hosts_dialog.jsx:588 pkg/shell/hosts_dialog.jsx:724
+#: pkg/shell/hosts_dialog.jsx:1103 pkg/shell/superuser.tsx:211
+#: pkg/shell/superuser.tsx:248 pkg/shell/superuser.tsx:304
+#: pkg/shell/credentials.tsx:243 pkg/lib/cockpit-components-shutdown.jsx:237
 #: pkg/lib/cockpit-connect-ssh.tsx:189 pkg/lib/cockpit-connect-ssh.tsx:502
-#: pkg/sosreport/sosreport.jsx:296 pkg/sosreport/sosreport.jsx:384
+#: pkg/lib/cockpit-components-dialog.jsx:127
 msgid "Cancel"
 msgstr "Скасувати"
 
@@ -1574,8 +1573,8 @@ msgstr "Неможливо долучитися до домену, оскіль�
 msgid "Cannot schedule event in the past"
 msgstr "Не можна планувати подію на минуле"
 
-#: pkg/storaged/mdraid/mdraid.jsx:310 pkg/storaged/btrfs/volume.jsx:206
 #: pkg/storaged/lvm2/volume-group.jsx:369 pkg/storaged/drive/drive.jsx:127
+#: pkg/storaged/btrfs/volume.jsx:206 pkg/storaged/mdraid/mdraid.jsx:310
 msgid "Capacity"
 msgstr "Місткість"
 
@@ -1587,15 +1586,14 @@ msgstr "Носій сигналу"
 msgid "Category"
 msgstr "Категорія"
 
-#: pkg/users/expiration-dialogs.js:115 pkg/users/expiration-dialogs.js:217
-#: pkg/users/shell-dialog.js:78 pkg/storaged/iscsi/create-dialog.jsx:171
-#: pkg/storaged/stratis/pool.jsx:568
 #: pkg/systemd/overview-cards/configurationCard.jsx:305
-#: pkg/lib/serverTime.js:722
+#: pkg/storaged/stratis/pool.jsx:568 pkg/storaged/iscsi/create-dialog.jsx:171
+#: pkg/users/expiration-dialogs.js:115 pkg/users/expiration-dialogs.js:217
+#: pkg/users/shell-dialog.js:78 pkg/lib/serverTime.js:722
 msgid "Change"
 msgstr "Змінити"
 
-#: pkg/systemd/overview-cards/cryptoPolicies.jsx:211
+#: pkg/systemd/overview-cards/cryptoPolicies.jsx:209
 msgid "Change cryptographic policy"
 msgstr "Змінити правила шифрування"
 
@@ -1616,7 +1614,7 @@ msgstr "Змінити назву ініціатора iSCSI"
 msgid "Change label"
 msgstr "Змінити мітку"
 
-#: pkg/storaged/crypto/keyslots.jsx:499 pkg/storaged/stratis/pool.jsx:422
+#: pkg/storaged/stratis/pool.jsx:422 pkg/storaged/crypto/keyslots.jsx:499
 msgid "Change passphrase"
 msgstr "Змінити пароль"
 
@@ -1624,11 +1622,11 @@ msgstr "Змінити пароль"
 msgid "Change password"
 msgstr "Змінити пароль"
 
-#: pkg/systemd/overview-cards/tuned-dialog.jsx:312
+#: pkg/systemd/overview-cards/tuned-dialog.jsx:310
 msgid "Change performance profile"
 msgstr "Зміна профілю швидкодії"
 
-#: pkg/systemd/overview-cards/tuned-dialog.jsx:324
+#: pkg/systemd/overview-cards/tuned-dialog.jsx:322
 msgid "Change profile"
 msgstr "Змінити профіль"
 
@@ -1710,7 +1708,7 @@ msgstr "Перевіряємо пристрій MDRAID $target"
 msgid "Checking and repairing MDRAID device $target"
 msgstr "Перевіряємо і відновлюємо пристрій MDRAID $target"
 
-#: pkg/storaged/dialog.jsx:1388
+#: pkg/storaged/dialog.jsx:1386
 msgid "Checking filesystem usage"
 msgstr "Перевіряємо використання файлової системи"
 
@@ -1767,7 +1765,7 @@ msgstr "Зняти фільтрування"
 msgid "Clear input value"
 msgstr "Вилучити вхідне значення"
 
-#: pkg/shell/nav.tsx:217
+#: pkg/shell/nav.tsx:216
 msgid "Clear search"
 msgstr "Очистити критерій пошуку"
 
@@ -1779,16 +1777,15 @@ msgstr "Пристрій Cleartext"
 msgid "Client software"
 msgstr "Клієнтське програмне забезпечення"
 
-#: pkg/users/dialog-utils.js:58 pkg/apps/utils.tsx:112
-#: pkg/storaged/dialog.jsx:504 pkg/shell/hosts_dialog.jsx:220
-#: pkg/shell/superuser.tsx:219 pkg/shell/superuser.tsx:227
-#: pkg/shell/credentials.tsx:350 pkg/shell/shell-modals.tsx:212
-#: pkg/networkmanager/interfaces.js:43
-#: pkg/systemd/overview-cards/realmd.jsx:322
 #: pkg/systemd/overview-cards/configurationCard.jsx:202
-#: pkg/lib/cockpit-components-modifications.jsx:79
+#: pkg/systemd/overview-cards/realmd.jsx:322 pkg/apps/utils.tsx:112
+#: pkg/networkmanager/interfaces.js:43 pkg/storaged/dialog.jsx:504
+#: pkg/users/dialog-utils.js:58 pkg/shell/shell-modals.tsx:212
+#: pkg/shell/hosts_dialog.jsx:220 pkg/shell/superuser.tsx:219
+#: pkg/shell/superuser.tsx:227 pkg/shell/credentials.tsx:350
 #: pkg/lib/cockpit-connect-ssh.tsx:527
 #: pkg/lib/cockpit-components-terminal.jsx:246
+#: pkg/lib/cockpit-components-modifications.jsx:79
 msgid "Close"
 msgstr "Закрити"
 
@@ -1886,8 +1883,8 @@ msgstr "Колір"
 msgid "Comma-separated ports, ranges, and services are accepted"
 msgstr "Можна використовувати відокремлені комами порти, діапазони і служби"
 
-#: pkg/storaged/dialog.jsx:1476 pkg/storaged/dialog.jsx:1496
-#: pkg/systemd/timer-dialog.jsx:165
+#: pkg/systemd/timer-dialog.jsx:165 pkg/storaged/dialog.jsx:1474
+#: pkg/storaged/dialog.jsx:1494
 msgid "Command"
 msgstr "Команда"
 
@@ -1928,9 +1925,9 @@ msgstr "Завершено із одним або декількома поми�
 msgid "Compress crash dumps to save space"
 msgstr "Стиснути дампи аварійних завершень для заощадження місця"
 
-#: pkg/kdump/kdump-view.jsx:306 pkg/storaged/legacy-vdo/legacy-vdo.jsx:325
-#: pkg/storaged/lvm2/vdo-pool.jsx:84
+#: pkg/kdump/kdump-view.jsx:306 pkg/storaged/lvm2/vdo-pool.jsx:84
 #: pkg/storaged/lvm2/create-logical-volume-dialog.jsx:230
+#: pkg/storaged/legacy-vdo/legacy-vdo.jsx:325
 msgid "Compression"
 msgstr "Стискання"
 
@@ -1962,12 +1959,13 @@ msgstr "Налаштовування kdump"
 msgid "Configuring system settings"
 msgstr "Налаштовування параметрів системи"
 
-#: pkg/storaged/block/format-dialog.jsx:345 pkg/storaged/stratis/pool.jsx:402
-#: pkg/storaged/stratis/pool.jsx:431 pkg/storaged/stratis/create-dialog.jsx:82
+#: pkg/storaged/stratis/pool.jsx:402 pkg/storaged/stratis/pool.jsx:431
+#: pkg/storaged/stratis/create-dialog.jsx:82
+#: pkg/storaged/block/format-dialog.jsx:345
 msgid "Confirm"
 msgstr "Підтвердити"
 
-#: pkg/storaged/stratis/filesystem.jsx:124 pkg/systemd/service-details.jsx:734
+#: pkg/systemd/service-details.jsx:734 pkg/storaged/stratis/filesystem.jsx:124
 msgid "Confirm deletion of $0"
 msgstr "Підтвердьте вилучення $0"
 
@@ -1995,7 +1993,7 @@ msgstr "Підтвердження вилучення $0"
 msgid "Confirm removal with an alternate passphrase"
 msgstr "Підтвердьте вилучення введенням альтернативного пароля"
 
-#: pkg/storaged/mdraid/mdraid.jsx:71 pkg/storaged/legacy-vdo/legacy-vdo.jsx:58
+#: pkg/storaged/legacy-vdo/legacy-vdo.jsx:58 pkg/storaged/mdraid/mdraid.jsx:71
 msgid "Confirm stopping of $0"
 msgstr "Підтвердьте зупинку $0"
 
@@ -2076,7 +2074,7 @@ msgstr "Пов'язаний домен"
 msgid "Container"
 msgstr "Контейнер"
 
-#: pkg/shell/nav.tsx:296
+#: pkg/shell/nav.tsx:295
 msgid "Contains:"
 msgstr "Містить:"
 
@@ -2101,24 +2099,24 @@ msgstr "Ctrl"
 msgid "Convertible"
 msgstr "Змінюваний"
 
-#: pkg/shell/hosts_dialog.jsx:678 pkg/shell/hosts_dialog.jsx:681
-#: pkg/shell/hosts_dialog.jsx:696 pkg/shell/hosts_dialog.jsx:698
-#: pkg/shell/failures.tsx:51 pkg/shell/credentials.tsx:120
+#: pkg/shell/failures.tsx:51 pkg/shell/hosts_dialog.jsx:678
+#: pkg/shell/hosts_dialog.jsx:681 pkg/shell/hosts_dialog.jsx:696
+#: pkg/shell/hosts_dialog.jsx:698 pkg/shell/credentials.tsx:120
 #: pkg/lib/cockpit-connect-ssh.tsx:135 pkg/lib/cockpit-connect-ssh.tsx:138
 #: pkg/lib/cockpit-connect-ssh.tsx:153 pkg/lib/cockpit-connect-ssh.tsx:155
 msgid "Copied"
 msgstr "Скопійовано"
 
-#: pkg/shell/hosts_dialog.jsx:678 pkg/shell/hosts_dialog.jsx:681
-#: pkg/shell/hosts_dialog.jsx:696 pkg/shell/hosts_dialog.jsx:698
-#: pkg/shell/failures.tsx:51 pkg/shell/credentials.tsx:120
+#: pkg/shell/failures.tsx:51 pkg/shell/hosts_dialog.jsx:678
+#: pkg/shell/hosts_dialog.jsx:681 pkg/shell/hosts_dialog.jsx:696
+#: pkg/shell/hosts_dialog.jsx:698 pkg/shell/credentials.tsx:120
 #: pkg/lib/cockpit-connect-ssh.tsx:135 pkg/lib/cockpit-connect-ssh.tsx:138
 #: pkg/lib/cockpit-connect-ssh.tsx:153 pkg/lib/cockpit-connect-ssh.tsx:155
 #: pkg/lib/cockpit-components-terminal.jsx:224
 msgid "Copy"
 msgstr "Копіювати"
 
-#: pkg/storaged/crypto/tang.jsx:145 pkg/systemd/logs.jsx:400
+#: pkg/systemd/logs.jsx:390 pkg/storaged/crypto/tang.jsx:145
 #: pkg/lib/cockpit-components-modifications.jsx:76
 msgid "Copy to clipboard"
 msgstr "Копіювати до буфера"
@@ -2139,16 +2137,16 @@ msgstr "Розташування дампу аварійного заверше�
 msgid "Crash system"
 msgstr "Аварійно завершити роботу системи"
 
-#: pkg/users/group-create-dialog.js:141 pkg/users/account-create-dialog.js:481
-#: pkg/storaged/mdraid/create-dialog.jsx:112
+#: pkg/storaged/stratis/pool.jsx:85 pkg/storaged/stratis/create-dialog.jsx:118
+#: pkg/storaged/lvm2/volume-group.jsx:122
+#: pkg/storaged/lvm2/thin-pool-logical-volume.jsx:58
+#: pkg/storaged/lvm2/create-dialog.jsx:63
+#: pkg/storaged/lvm2/create-logical-volume-dialog.jsx:270
 #: pkg/storaged/block/format-dialog.jsx:275
 #: pkg/storaged/block/format-dialog.jsx:285
 #: pkg/storaged/btrfs/subvolume.jsx:150
-#: pkg/storaged/lvm2/create-logical-volume-dialog.jsx:270
-#: pkg/storaged/lvm2/create-dialog.jsx:63
-#: pkg/storaged/lvm2/thin-pool-logical-volume.jsx:58
-#: pkg/storaged/lvm2/volume-group.jsx:122 pkg/storaged/stratis/pool.jsx:85
-#: pkg/storaged/stratis/create-dialog.jsx:118
+#: pkg/storaged/mdraid/create-dialog.jsx:112
+#: pkg/users/group-create-dialog.js:141 pkg/users/account-create-dialog.js:481
 msgid "Create"
 msgstr "Створити"
 
@@ -2193,8 +2191,8 @@ msgstr "Створити обліковий запис із простим па�
 msgid "Create and change ownership of home directory"
 msgstr "Створення і зміна прав власності на домашній каталог"
 
-#: pkg/storaged/block/format-dialog.jsx:270
-#: pkg/storaged/btrfs/subvolume.jsx:144 pkg/storaged/stratis/pool.jsx:80
+#: pkg/storaged/stratis/pool.jsx:80 pkg/storaged/block/format-dialog.jsx:270
+#: pkg/storaged/btrfs/subvolume.jsx:144
 msgid "Create and mount"
 msgstr "Створити і змонтувати"
 
@@ -2238,9 +2236,9 @@ msgstr "Створити файл завдання із цим вмістом."
 msgid "Create new thinly provisioned logical volume"
 msgstr "Створити логічний том з тонким прогнозуванням"
 
-#: pkg/storaged/block/format-dialog.jsx:271
+#: pkg/storaged/stratis/pool.jsx:81 pkg/storaged/block/format-dialog.jsx:271
 #: pkg/storaged/block/format-dialog.jsx:280
-#: pkg/storaged/btrfs/subvolume.jsx:145 pkg/storaged/stratis/pool.jsx:81
+#: pkg/storaged/btrfs/subvolume.jsx:145
 msgid "Create only"
 msgstr "Лише створити"
 
@@ -2347,7 +2345,7 @@ msgstr ""
 msgid "Cryptographic policy"
 msgstr "Правило шифрування"
 
-#: pkg/systemd/overview-cards/cryptoPolicies.jsx:264
+#: pkg/systemd/overview-cards/cryptoPolicies.jsx:262
 msgid "Cryptographic policy is inconsistent"
 msgstr "Правила шифрування є несумісними"
 
@@ -2367,7 +2365,7 @@ msgstr "Поточне завантаження"
 msgid "Current top CPU usage"
 msgstr "Поточний рейтинг використання процесора"
 
-#: pkg/storaged/dialog.jsx:1255
+#: pkg/storaged/dialog.jsx:1253
 msgid "Currently in use"
 msgstr "Зараз використовується"
 
@@ -2383,7 +2381,7 @@ msgstr "Нетиповий"
 msgid "Custom cryptographic policy"
 msgstr "Нетипове правило шифрування"
 
-#: pkg/storaged/filesystem/mounting-dialog.jsx:64 pkg/storaged/nfs/nfs.jsx:173
+#: pkg/storaged/nfs/nfs.jsx:173 pkg/storaged/filesystem/mounting-dialog.jsx:64
 msgid "Custom mount options"
 msgstr "Нетипові параметри монтування"
 
@@ -2403,7 +2401,7 @@ msgstr "Нетипові зони"
 msgid "DEFAULT with SHA-1 signature verification allowed."
 msgstr "DEFAULT із дозволеною перевіркою підпису SHA-1."
 
-#: pkg/networkmanager/ip-settings.jsx:231
+#: pkg/networkmanager/ip-settings.jsx:229
 msgid "DNS"
 msgstr "DNS"
 
@@ -2411,7 +2409,7 @@ msgstr "DNS"
 msgid "DNS $val"
 msgstr "DNS $val"
 
-#: pkg/networkmanager/ip-settings.jsx:279
+#: pkg/networkmanager/ip-settings.jsx:275
 msgid "DNS search domains"
 msgstr "Домени пошуку DNS"
 
@@ -2427,7 +2425,7 @@ msgstr "Щодня"
 msgid "Danger alert:"
 msgstr "Попередження про небезпеку:"
 
-#: pkg/shell/topnav.tsx:199 pkg/systemd/terminal.jsx:262
+#: pkg/systemd/terminal.jsx:262 pkg/shell/topnav.tsx:199
 msgid "Dark"
 msgstr "Темний"
 
@@ -2435,8 +2433,8 @@ msgstr "Темний"
 msgid "Data"
 msgstr "Дані"
 
-#: pkg/storaged/lvm2/vdo-pool.jsx:80
 #: pkg/storaged/lvm2/thin-pool-logical-volume.jsx:143
+#: pkg/storaged/lvm2/vdo-pool.jsx:80
 msgid "Data used"
 msgstr "Використано даних"
 
@@ -2516,9 +2514,9 @@ msgstr ""
 "«tomorrow» («завтра»). Рядок «now» відповідає поточному моменту часу. "
 "Нарешті, можна вказувати відносний час за допомогою префіксів «-» і «+»"
 
-#: pkg/storaged/lvm2/unsupported-logical-volume.jsx:43
 #: pkg/storaged/lvm2/block-logical-volume.jsx:161
 #: pkg/storaged/lvm2/block-logical-volume.jsx:216
+#: pkg/storaged/lvm2/unsupported-logical-volume.jsx:43
 msgid "Deactivate"
 msgstr "Вимкнути"
 
@@ -2546,12 +2544,13 @@ msgstr "Зменшити на одиницю"
 msgid "Dedicated parity (RAID 4)"
 msgstr "Спеціальна парність (RAID 4)"
 
-#: pkg/storaged/legacy-vdo/legacy-vdo.jsx:334 pkg/storaged/lvm2/vdo-pool.jsx:88
+#: pkg/storaged/lvm2/vdo-pool.jsx:88
 #: pkg/storaged/lvm2/create-logical-volume-dialog.jsx:235
+#: pkg/storaged/legacy-vdo/legacy-vdo.jsx:334
 msgid "Deduplication"
 msgstr "Скасування дублювання"
 
-#: pkg/shell/topnav.tsx:193 pkg/systemd/overview-cards/cryptoPolicies.jsx:40
+#: pkg/systemd/overview-cards/cryptoPolicies.jsx:40 pkg/shell/topnav.tsx:193
 msgid "Default"
 msgstr "Типовий"
 
@@ -2568,34 +2567,33 @@ msgstr "Затримка"
 msgid "Delay must be a number"
 msgstr "Значенням затримки має бути число"
 
-#: pkg/users/delete-group-dialog.js:51 pkg/users/account-details.js:219
-#: pkg/users/delete-account-dialog.js:60 pkg/storaged/mdraid/mdraid.jsx:133
-#: pkg/storaged/mdraid/mdraid.jsx:240
-#: pkg/storaged/legacy-vdo/legacy-vdo.jsx:122
-#: pkg/storaged/legacy-vdo/legacy-vdo.jsx:152
-#: pkg/storaged/btrfs/subvolume.jsx:253 pkg/storaged/btrfs/subvolume.jsx:400
-#: pkg/storaged/btrfs/volume.jsx:81
+#: pkg/systemd/service-details.jsx:154 pkg/systemd/service-details.jsx:747
+#: pkg/sosreport/sosreport.jsx:378 pkg/sosreport/sosreport.jsx:477
+#: pkg/networkmanager/network-interface.jsx:726
+#: pkg/networkmanager/firewall.jsx:119 pkg/networkmanager/firewall.jsx:181
+#: pkg/networkmanager/firewall.jsx:922 pkg/storaged/stratis/pool.jsx:178
+#: pkg/storaged/stratis/filesystem.jsx:128
+#: pkg/storaged/stratis/filesystem.jsx:169
+#: pkg/storaged/lvm2/volume-group.jsx:99
+#: pkg/storaged/lvm2/block-logical-volume.jsx:79
+#: pkg/storaged/lvm2/block-logical-volume.jsx:222
+#: pkg/storaged/lvm2/thin-pool-logical-volume.jsx:109
+#: pkg/storaged/lvm2/inactive-logical-volume.jsx:42
+#: pkg/storaged/lvm2/unsupported-logical-volume.jsx:44
 #: pkg/storaged/partitions/partition-table.jsx:62
 #: pkg/storaged/partitions/partition.jsx:58
 #: pkg/storaged/partitions/partition.jsx:112
-#: pkg/storaged/lvm2/unsupported-logical-volume.jsx:44
-#: pkg/storaged/lvm2/inactive-logical-volume.jsx:42
-#: pkg/storaged/lvm2/thin-pool-logical-volume.jsx:109
-#: pkg/storaged/lvm2/block-logical-volume.jsx:79
-#: pkg/storaged/lvm2/block-logical-volume.jsx:222
-#: pkg/storaged/lvm2/volume-group.jsx:99
-#: pkg/storaged/stratis/filesystem.jsx:128
-#: pkg/storaged/stratis/filesystem.jsx:169 pkg/storaged/stratis/pool.jsx:178
-#: pkg/networkmanager/network-interface.jsx:726
-#: pkg/networkmanager/firewall.jsx:119 pkg/networkmanager/firewall.jsx:181
-#: pkg/networkmanager/firewall.jsx:922 pkg/systemd/service-details.jsx:154
-#: pkg/systemd/service-details.jsx:747 pkg/sosreport/sosreport.jsx:378
-#: pkg/sosreport/sosreport.jsx:477
+#: pkg/storaged/legacy-vdo/legacy-vdo.jsx:122
+#: pkg/storaged/legacy-vdo/legacy-vdo.jsx:152 pkg/storaged/btrfs/volume.jsx:81
+#: pkg/storaged/btrfs/subvolume.jsx:253 pkg/storaged/btrfs/subvolume.jsx:400
+#: pkg/storaged/mdraid/mdraid.jsx:133 pkg/storaged/mdraid/mdraid.jsx:240
+#: pkg/users/delete-account-dialog.js:60 pkg/users/delete-group-dialog.js:51
+#: pkg/users/account-details.js:219
 msgid "Delete"
 msgstr "Вилучити"
 
-#: pkg/users/delete-account-dialog.js:53
 #: pkg/networkmanager/network-interface.jsx:117
+#: pkg/users/delete-account-dialog.js:53
 msgid "Delete $0"
 msgstr "Вилучити $0"
 
@@ -2611,7 +2609,7 @@ msgstr "Вилучити файли"
 msgid "Delete filesystem"
 msgstr "Вилучити файлову систему"
 
-#: pkg/users/group-actions.jsx:45 pkg/storaged/lvm2/volume-group.jsx:250
+#: pkg/storaged/lvm2/volume-group.jsx:250 pkg/users/group-actions.jsx:45
 msgid "Delete group"
 msgstr "Вилучити групу"
 
@@ -2688,8 +2686,8 @@ msgstr ""
 msgid "Deletion will remove the following files:"
 msgstr "У результаті вилучення буде усунено такі файли:"
 
-#: pkg/storaged/dialog.jsx:1497 pkg/networkmanager/firewall.jsx:693
-#: pkg/networkmanager/firewall.jsx:842 pkg/systemd/timer-dialog.jsx:157
+#: pkg/systemd/timer-dialog.jsx:157 pkg/networkmanager/firewall.jsx:693
+#: pkg/networkmanager/firewall.jsx:842 pkg/storaged/dialog.jsx:1495
 msgid "Description"
 msgstr "Опис"
 
@@ -2701,8 +2699,8 @@ msgstr "Робоча станція"
 msgid "Detachable"
 msgstr "Змінний"
 
-#: pkg/packagekit/updates.jsx:442 pkg/shell/credentials.tsx:313
-#: pkg/systemd/overview-cards/realmd.jsx:419
+#: pkg/systemd/overview-cards/realmd.jsx:419 pkg/packagekit/updates.jsx:442
+#: pkg/shell/credentials.tsx:313
 msgid "Details"
 msgstr "Подробиці"
 
@@ -2710,17 +2708,17 @@ msgstr "Подробиці"
 msgid "Development"
 msgstr "Розробка"
 
-#: pkg/storaged/mdraid/mdraid.jsx:309 pkg/storaged/dialog.jsx:1210
-#: pkg/storaged/dialog.jsx:1329 pkg/metrics/metrics.jsx:749
+#: pkg/metrics/metrics.jsx:749 pkg/storaged/mdraid/mdraid.jsx:309
+#: pkg/storaged/dialog.jsx:1208 pkg/storaged/dialog.jsx:1327
 msgid "Device"
 msgstr "Пристрій"
 
-#: pkg/storaged/dialog.jsx:1408 pkg/storaged/dialog.jsx:1415
+#: pkg/storaged/dialog.jsx:1406 pkg/storaged/dialog.jsx:1413
 msgid "Device contains unrecognized data"
 msgstr "На пристрої містяться нерозпізнані дані"
 
-#: pkg/storaged/legacy-vdo/legacy-vdo.jsx:287 pkg/storaged/block/other.jsx:62
-#: pkg/storaged/drive/drive.jsx:133
+#: pkg/storaged/drive/drive.jsx:133 pkg/storaged/block/other.jsx:62
+#: pkg/storaged/legacy-vdo/legacy-vdo.jsx:287
 msgid "Device file"
 msgstr "Файл пристрою"
 
@@ -2766,11 +2764,11 @@ msgstr "Вимкнути брандмауер"
 msgid "Disable tuned"
 msgstr "Вимкнути tuned"
 
-#: pkg/kdump/kdump-view.jsx:558 pkg/packagekit/autoupdates.jsx:469
-#: pkg/packagekit/kpatch.jsx:258 pkg/networkmanager/firewall-switch.jsx:64
+#: pkg/systemd/service-details.jsx:444 pkg/systemd/services.jsx:247
+#: pkg/systemd/services.jsx:688 pkg/networkmanager/firewall-switch.jsx:64
 #: pkg/networkmanager/firewall-switch.jsx:74
-#: pkg/networkmanager/ip-settings.jsx:46 pkg/systemd/services.jsx:247
-#: pkg/systemd/services.jsx:688 pkg/systemd/service-details.jsx:444
+#: pkg/networkmanager/ip-settings.jsx:46 pkg/packagekit/kpatch.jsx:258
+#: pkg/packagekit/autoupdates.jsx:469 pkg/kdump/kdump-view.jsx:558
 msgid "Disabled"
 msgstr "Вимкнено"
 
@@ -2813,9 +2811,9 @@ msgstr "Диск виходить з ладу"
 msgid "Disk passphrase"
 msgstr "Пароль до диска"
 
-#: pkg/storaged/mdraid/create-dialog.jsx:99 pkg/storaged/mdraid/mdraid.jsx:163
-#: pkg/storaged/mdraid/mdraid.jsx:313 pkg/storaged/lvm2/create-dialog.jsx:52
-#: pkg/storaged/lvm2/volume-group.jsx:200 pkg/metrics/metrics.jsx:882
+#: pkg/metrics/metrics.jsx:882 pkg/storaged/lvm2/volume-group.jsx:200
+#: pkg/storaged/lvm2/create-dialog.jsx:52 pkg/storaged/mdraid/mdraid.jsx:163
+#: pkg/storaged/mdraid/mdraid.jsx:313 pkg/storaged/mdraid/create-dialog.jsx:99
 msgid "Disks"
 msgstr "Диски"
 
@@ -2838,12 +2836,12 @@ msgstr[2] "Відкинути $0 попереджень"
 msgid "Dismiss selected alerts"
 msgstr "Відкинути позначені попередження"
 
-#: pkg/shell/topnav.tsx:212 pkg/shell/shell-modals.tsx:132
+#: pkg/shell/shell-modals.tsx:132 pkg/shell/topnav.tsx:212
 msgid "Display language"
 msgstr "Мова перекладу"
 
-#: pkg/storaged/lvm2/create-logical-volume-dialog.jsx:87
 #: pkg/storaged/lvm2/block-logical-volume.jsx:264
+#: pkg/storaged/lvm2/create-logical-volume-dialog.jsx:87
 msgid "Distributed parity (RAID 5)"
 msgstr "Розподілена парність (RAID 5)"
 
@@ -2868,8 +2866,8 @@ msgstr "Не запускається автоматично"
 msgid "Does not mount during boot"
 msgstr "Не монтується під час завантаження"
 
-#: pkg/systemd/overview-cards/realmd.jsx:282
 #: pkg/systemd/overview-cards/configurationCard.jsx:81
+#: pkg/systemd/overview-cards/realmd.jsx:282
 msgid "Domain"
 msgstr "Домен"
 
@@ -2902,8 +2900,8 @@ msgstr "Підтримки домену не передбачено"
 msgid "Don't repeat"
 msgstr "Не повторювати"
 
-#: pkg/storaged/lvm2/create-logical-volume-dialog.jsx:92
 #: pkg/storaged/lvm2/block-logical-volume.jsx:265
+#: pkg/storaged/lvm2/create-logical-volume-dialog.jsx:92
 msgid "Double distributed parity (RAID 6)"
 msgstr "Подвійна розподілена парність (RAID 6)"
 
@@ -2942,10 +2940,10 @@ msgstr "Подвійний ранг"
 msgid "EFI system partition"
 msgstr "Системний розділ EFI"
 
-#: pkg/kdump/kdump-view.jsx:494 pkg/packagekit/autoupdates.jsx:532
-#: pkg/packagekit/kpatch.jsx:237 pkg/storaged/nfs/nfs.jsx:312
-#: pkg/storaged/crypto/keyslots.jsx:737 pkg/shell/nav.tsx:422
-#: pkg/shell/hosts.tsx:260 pkg/networkmanager/firewall.jsx:117
+#: pkg/networkmanager/firewall.jsx:117 pkg/packagekit/kpatch.jsx:237
+#: pkg/packagekit/autoupdates.jsx:532 pkg/kdump/kdump-view.jsx:494
+#: pkg/storaged/nfs/nfs.jsx:312 pkg/storaged/crypto/keyslots.jsx:737
+#: pkg/shell/nav.tsx:421 pkg/shell/hosts.tsx:260
 msgid "Edit"
 msgstr "Змінити"
 
@@ -2989,8 +2987,9 @@ msgstr "Редагувати вузли"
 msgid "Edit motd"
 msgstr "Редагувати motd"
 
+#: pkg/storaged/stratis/filesystem.jsx:158
 #: pkg/storaged/filesystem/filesystem.jsx:100
-#: pkg/storaged/btrfs/subvolume.jsx:351 pkg/storaged/stratis/filesystem.jsx:158
+#: pkg/storaged/btrfs/subvolume.jsx:351
 msgid "Edit mount point"
 msgstr "Редагувати точку монтування"
 
@@ -3044,7 +3043,7 @@ msgstr "Порожній пароль"
 msgid "Emptying $target"
 msgstr "Спорожняємо $target"
 
-#: pkg/packagekit/autoupdates.jsx:532 pkg/packagekit/kpatch.jsx:259
+#: pkg/packagekit/kpatch.jsx:259 pkg/packagekit/autoupdates.jsx:532
 msgid "Enable"
 msgstr "Увімкнути"
 
@@ -3060,10 +3059,10 @@ msgstr "Увімкнути службу"
 msgid "Enable the firewall"
 msgstr "Увімкнути брандмауер"
 
-#: pkg/kdump/kdump-view.jsx:558 pkg/packagekit/kpatch.jsx:261
-#: pkg/networkmanager/firewall-switch.jsx:64
-#: pkg/networkmanager/firewall-switch.jsx:74 pkg/systemd/services.jsx:245
-#: pkg/systemd/services.jsx:246 pkg/systemd/services.jsx:687
+#: pkg/systemd/services.jsx:245 pkg/systemd/services.jsx:246
+#: pkg/systemd/services.jsx:687 pkg/networkmanager/firewall-switch.jsx:64
+#: pkg/networkmanager/firewall-switch.jsx:74 pkg/packagekit/kpatch.jsx:261
+#: pkg/kdump/kdump-view.jsx:558
 msgid "Enabled"
 msgstr "Увімкнено"
 
@@ -3161,10 +3160,10 @@ msgstr "Витираємо $target"
 msgid "Errata"
 msgstr "Відомі помилки"
 
-#: pkg/apps/utils.tsx:106 pkg/storaged/multipath.jsx:60
+#: pkg/systemd/service-details.jsx:277 pkg/systemd/services.jsx:225
+#: pkg/apps/utils.tsx:106 pkg/sosreport/sosreport.jsx:399
+#: pkg/storaged/multipath.jsx:60 pkg/storaged/overview/overview.jsx:94
 #: pkg/storaged/storage-controls.jsx:106 pkg/storaged/storage-controls.jsx:159
-#: pkg/storaged/overview/overview.jsx:94 pkg/systemd/services.jsx:225
-#: pkg/systemd/service-details.jsx:277 pkg/sosreport/sosreport.jsx:399
 msgid "Error"
 msgstr "Помилка"
 
@@ -3180,8 +3179,8 @@ msgstr "Сталася помилка"
 msgid "Error installing $0: PackageKit is not installed"
 msgstr "Помилка під час спроби встановити $0: PackageKit не встановлено"
 
-#: pkg/selinux/setroubleshoot-view.jsx:421
 #: pkg/systemd/overview-cards/configurationCard.jsx:176
+#: pkg/selinux/setroubleshoot-view.jsx:421
 msgid "Error message"
 msgstr "Повідомлення про помилку"
 
@@ -3258,7 +3257,7 @@ msgstr "Експортувати до мережі"
 msgid "Extended partition"
 msgstr "Розширений розділ"
 
-#: pkg/systemd/overview-cards/cryptoPolicies.jsx:264
+#: pkg/systemd/overview-cards/cryptoPolicies.jsx:262
 msgid "FIPS is not properly enabled"
 msgstr "FIPS не увімкнено належним чином"
 
@@ -3266,7 +3265,7 @@ msgstr "FIPS не увімкнено належним чином"
 msgid "FIPS with further Common Criteria restrictions."
 msgstr "FIPS із подальшими обмеженнями загальних критеріїв."
 
-#: pkg/storaged/mdraid/mdraid-disk.jsx:71 pkg/networkmanager/interfaces.js:811
+#: pkg/networkmanager/interfaces.js:811 pkg/storaged/mdraid/mdraid-disk.jsx:71
 msgid "Failed"
 msgstr "Помилка"
 
@@ -3377,7 +3376,7 @@ msgstr "Не вдалося зберегти зміни до /etc/motd"
 msgid "Failed to save settings"
 msgstr "Не вдалося зберегти параметри"
 
-#: pkg/systemd/services.jsx:236 pkg/systemd/service-details.jsx:455
+#: pkg/systemd/service-details.jsx:455 pkg/systemd/services.jsx:236
 msgid "Failed to start"
 msgstr "Не вдалося запустити"
 
@@ -3406,7 +3405,7 @@ msgstr "Файлову систему змонтовано лише для чи�
 msgid "Filesystem name"
 msgstr "Назва файлової системи"
 
-#: pkg/storaged/dialog.jsx:1191
+#: pkg/storaged/dialog.jsx:1189
 msgid "Filesystem outside the target"
 msgstr "Файлова система поза ціллю"
 
@@ -3434,8 +3433,8 @@ msgstr "Фільтри"
 msgid "Fingerprint"
 msgstr "Відбиток"
 
-#: pkg/networkmanager/firewall.html:22 pkg/networkmanager/firewall.jsx:1064
-#: pkg/networkmanager/firewall.jsx:1071 pkg/networkmanager/network-main.jsx:165
+#: pkg/networkmanager/firewall.html:22 pkg/networkmanager/network-main.jsx:165
+#: pkg/networkmanager/firewall.jsx:1064 pkg/networkmanager/firewall.jsx:1071
 msgid "Firewall"
 msgstr "Брандмауер"
 
@@ -3471,8 +3470,8 @@ msgstr "Примусове вилучення"
 msgid "Force password change"
 msgstr "Примусова зміна пароля"
 
-#: pkg/storaged/block/format-dialog.jsx:275
-#: pkg/storaged/block/format-dialog.jsx:285 pkg/storaged/block/actions.jsx:31
+#: pkg/storaged/block/actions.jsx:31 pkg/storaged/block/format-dialog.jsx:275
+#: pkg/storaged/block/format-dialog.jsx:285
 msgid "Format"
 msgstr "Формат"
 
@@ -3507,11 +3506,11 @@ msgstr "Затримка переспрямування $forward_delay"
 msgid "Free space"
 msgstr "Вільне місце"
 
-#: pkg/systemd/logs.jsx:361
+#: pkg/systemd/logs.jsx:353
 msgid "Free-form search"
 msgstr "Пошук із довільним критерієм"
 
-#: pkg/packagekit/autoupdates.jsx:424 pkg/systemd/timer-dialog.jsx:312
+#: pkg/systemd/timer-dialog.jsx:312 pkg/packagekit/autoupdates.jsx:424
 msgid "Fridays"
 msgstr "П'ятниці"
 
@@ -3524,8 +3523,8 @@ msgstr "Від"
 msgid "Full name"
 msgstr "Повне ім'я"
 
-#: pkg/networkmanager/ip-settings.jsx:208
-#: pkg/networkmanager/ip-settings.jsx:368
+#: pkg/networkmanager/ip-settings.jsx:206
+#: pkg/networkmanager/ip-settings.jsx:360
 msgid "Gateway"
 msgstr "Шлюз"
 
@@ -3533,7 +3532,7 @@ msgstr "Шлюз"
 msgid "General"
 msgstr "Загальний"
 
-#: pkg/networkmanager/wireguard.jsx:264 pkg/systemd/services.jsx:256
+#: pkg/systemd/services.jsx:256 pkg/networkmanager/wireguard.jsx:264
 msgid "Generated"
 msgstr "Створений"
 
@@ -3557,7 +3556,7 @@ msgstr "Видимість графіка"
 msgid "Graph visibility options menu"
 msgstr "Меню параметрів видимості графіка"
 
-#: pkg/users/accounts-list.js:384 pkg/networkmanager/network-interface.jsx:401
+#: pkg/networkmanager/network-interface.jsx:401 pkg/users/accounts-list.js:384
 msgid "Group"
 msgstr "Група"
 
@@ -3570,16 +3569,17 @@ msgstr "Назва групи"
 msgid "Groups"
 msgstr "Групи"
 
-#: pkg/storaged/legacy-vdo/legacy-vdo.jsx:259
-#: pkg/storaged/legacy-vdo/legacy-vdo.jsx:315 pkg/storaged/block/resize.jsx:533
-#: pkg/storaged/partitions/partition.jsx:107 pkg/storaged/lvm2/vdo-pool.jsx:48
-#: pkg/storaged/lvm2/thin-pool-logical-volume.jsx:104
 #: pkg/storaged/lvm2/block-logical-volume.jsx:211
+#: pkg/storaged/lvm2/thin-pool-logical-volume.jsx:104
+#: pkg/storaged/lvm2/vdo-pool.jsx:48 pkg/storaged/block/resize.jsx:533
+#: pkg/storaged/partitions/partition.jsx:107
+#: pkg/storaged/legacy-vdo/legacy-vdo.jsx:259
+#: pkg/storaged/legacy-vdo/legacy-vdo.jsx:315
 msgid "Grow"
 msgstr "Збільшити"
 
-#: pkg/storaged/partitions/partition.jsx:221
 #: pkg/storaged/lvm2/block-logical-volume.jsx:281
+#: pkg/storaged/partitions/partition.jsx:221
 msgid "Grow content"
 msgstr "Збільшити вміст"
 
@@ -3631,16 +3631,16 @@ msgstr "Здоров'я"
 msgid "Hello time $hello_time"
 msgstr "Час вітання $hello_time"
 
-#: pkg/shell/topnav.tsx:278 pkg/systemd/overview-cards/tuned-dialog.jsx:300
-#: pkg/systemd/overview-cards/cryptoPolicies.jsx:198
+#: pkg/systemd/overview-cards/tuned-dialog.jsx:300
+#: pkg/systemd/overview-cards/cryptoPolicies.jsx:198 pkg/shell/topnav.tsx:278
 msgid "Help"
 msgstr "Довідка"
 
-#: pkg/lib/cockpit-components-password.tsx:191
+#: pkg/lib/cockpit-components-password.tsx:189
 msgid "Hide confirmation password"
 msgstr "Приховати підтвердження пароля"
 
-#: pkg/lib/cockpit-components-password.tsx:151
+#: pkg/lib/cockpit-components-password.tsx:149
 msgid "Hide password"
 msgstr "Приховати пароль"
 
@@ -3697,14 +3697,14 @@ msgstr "Години"
 msgid "How to check"
 msgstr "Як перевірити"
 
-#: pkg/storaged/dialog.jsx:1424
+#: pkg/storaged/dialog.jsx:1422
 msgid "I confirm I want to lose this data forever"
 msgstr "Підтверджую остаточну втрату цих даних"
 
+#: pkg/systemd/hwinfo.jsx:295 pkg/networkmanager/firewall.jsx:687
+#: pkg/storaged/pages.jsx:723 pkg/storaged/btrfs/subvolume.jsx:471
 #: pkg/users/group-create-dialog.js:47 pkg/users/accounts-list.js:230
-#: pkg/users/accounts-list.js:382 pkg/storaged/pages.jsx:723
-#: pkg/storaged/btrfs/subvolume.jsx:471 pkg/networkmanager/firewall.jsx:687
-#: pkg/systemd/hwinfo.jsx:295
+#: pkg/users/accounts-list.js:382
 msgid "ID"
 msgstr "Ід."
 
@@ -3784,12 +3784,12 @@ msgstr ""
 "Якщо відбиток є відповідним, натисніть «Довіряти і додати вузол». Якщо ж це "
 "не так, не встановлюйте з'єднання і повідомте про подію адміністратору."
 
-#: pkg/packagekit/updates.jsx:674 pkg/packagekit/updates.jsx:756
-#: pkg/networkmanager/ip-settings.jsx:44
+#: pkg/networkmanager/ip-settings.jsx:44 pkg/packagekit/updates.jsx:674
+#: pkg/packagekit/updates.jsx:756
 msgid "Ignore"
 msgstr "Ігнорувати"
 
-#: pkg/storaged/dialog.jsx:1360
+#: pkg/storaged/dialog.jsx:1358
 msgid "Important data might be deleted:"
 msgstr "Може бути вилучено важливі дані:"
 
@@ -3819,9 +3819,9 @@ msgstr "Не завершено"
 msgid "In sync"
 msgstr "Синхронізовано"
 
-#: pkg/networkmanager/network-interface.jsx:257
 #: pkg/networkmanager/interfaces.js:793 pkg/networkmanager/interfaces.js:1354
 #: pkg/networkmanager/interfaces.js:1361
+#: pkg/networkmanager/network-interface.jsx:257
 msgid "Inactive"
 msgstr "Неактивний"
 
@@ -3883,7 +3883,7 @@ msgstr "Ініціалізація…"
 msgid "Insights: "
 msgstr "Натяки: "
 
-#: pkg/apps/application.jsx:51 pkg/apps/application-list.jsx:197
+#: pkg/apps/application.jsx:51 pkg/apps/application-list.jsx:195
 #: pkg/packagekit/kpatch.jsx:255
 #: pkg/lib/cockpit-components-install-dialog.jsx:126
 msgid "Install"
@@ -3905,7 +3905,7 @@ msgstr "Встановити підтримку Stratis"
 msgid "Install all updates"
 msgstr "Встановити усі оновлення"
 
-#: pkg/apps/application-list.jsx:191
+#: pkg/apps/application-list.jsx:189
 msgid "Install application information"
 msgstr "Встановити дані щодо програми"
 
@@ -3956,8 +3956,8 @@ msgstr "Встановлення"
 msgid "Installing $0"
 msgstr "Встановлюємо $0"
 
-#: pkg/storaged/crypto/keyslots.jsx:277
 #: pkg/storaged/lvm2/create-logical-volume-dialog.jsx:39
+#: pkg/storaged/crypto/keyslots.jsx:277
 msgid "Installing $0 would remove $1."
 msgstr "Встановлення $0 призведе до вилучення $1."
 
@@ -3972,14 +3972,14 @@ msgstr[0] "Інтерфейс"
 msgstr[1] "Інтерфейси"
 msgstr[2] "Інтерфейси"
 
+#: pkg/networkmanager/network-interface-members.jsx:200
 #: pkg/networkmanager/network-interface-members.jsx:202
-#: pkg/networkmanager/network-interface-members.jsx:204
 msgid "Interface members"
 msgstr "Учасники інтерфейсу"
 
-#: pkg/networkmanager/bond.jsx:174 pkg/networkmanager/firewall.jsx:855
-#: pkg/networkmanager/network-main.jsx:180
-#: pkg/networkmanager/network-interface-members.jsx:208
+#: pkg/networkmanager/network-interface-members.jsx:206
+#: pkg/networkmanager/bond.jsx:172 pkg/networkmanager/network-main.jsx:180
+#: pkg/networkmanager/firewall.jsx:855
 msgid "Interfaces"
 msgstr "Інтерфейси"
 
@@ -4007,7 +4007,7 @@ msgstr "Некоректний"
 msgid "Invalid address $0"
 msgstr "Некоректна адреса $0"
 
-#: pkg/lib/serverTime.js:680 pkg/lib/cockpit-components-shutdown.jsx:120
+#: pkg/lib/cockpit-components-shutdown.jsx:120 pkg/lib/serverTime.js:680
 msgid "Invalid date format"
 msgstr "Некоректний формат дати"
 
@@ -4051,8 +4051,8 @@ msgstr "Некоректний префікс або маска мережі $0"
 msgid "Invalid range"
 msgstr "Некоректний діапазон"
 
-#: pkg/packagekit/autoupdates.jsx:434 pkg/lib/serverTime.js:683
-#: pkg/lib/cockpit-components-shutdown.jsx:117
+#: pkg/packagekit/autoupdates.jsx:434
+#: pkg/lib/cockpit-components-shutdown.jsx:117 pkg/lib/serverTime.js:683
 msgid "Invalid time format"
 msgstr "Некоректний формат визначення часу"
 
@@ -4180,17 +4180,17 @@ msgstr "Джерело ключа"
 msgid "Keys"
 msgstr "Ключі"
 
-#: pkg/storaged/crypto/keyslots.jsx:762 pkg/storaged/stratis/pool.jsx:581
-#: pkg/storaged/stratis/stopped-pool.jsx:187
+#: pkg/storaged/stratis/pool.jsx:581 pkg/storaged/stratis/stopped-pool.jsx:187
+#: pkg/storaged/crypto/keyslots.jsx:762
 msgid "Keyserver"
 msgstr "Сервер ключів"
 
-#: pkg/storaged/crypto/keyslots.jsx:470 pkg/storaged/crypto/keyslots.jsx:528
 #: pkg/storaged/stratis/pool.jsx:478 pkg/storaged/stratis/create-dialog.jsx:99
+#: pkg/storaged/crypto/keyslots.jsx:470 pkg/storaged/crypto/keyslots.jsx:528
 msgid "Keyserver address"
 msgstr "Адреса сервера ключів"
 
-#: pkg/storaged/crypto/keyslots.jsx:654 pkg/storaged/stratis/pool.jsx:518
+#: pkg/storaged/stratis/pool.jsx:518 pkg/storaged/crypto/keyslots.jsx:654
 msgid "Keyserver removal may prevent unlocking $0."
 msgstr "Вилучення сервера ключів може завадити розблокуванню $0."
 
@@ -4275,16 +4275,15 @@ msgstr "Востаннє змінено: $0"
 msgid "Last successful login:"
 msgstr "Останній вдалий вхід:"
 
-#: pkg/storaged/lvm2/create-logical-volume-dialog.jsx:192
 #: pkg/storaged/lvm2/block-logical-volume.jsx:294
+#: pkg/storaged/lvm2/create-logical-volume-dialog.jsx:192
 msgid "Layout"
 msgstr "Розкладка"
 
-#: pkg/networkmanager/bond.jsx:161
 #: pkg/systemd/overview-cards/tuned-dialog.jsx:296
 #: pkg/systemd/overview-cards/cryptoPolicies.jsx:147
 #: pkg/systemd/overview-cards/cryptoPolicies.jsx:194
-#: pkg/lib/cockpit-components-dialog.jsx:227
+#: pkg/networkmanager/bond.jsx:161 pkg/lib/cockpit-components-dialog.jsx:227
 #: pkg/lib/cockpit-components-dialog.jsx:234
 msgid "Learn more"
 msgstr "Докладніше"
@@ -4307,7 +4306,7 @@ msgstr "Не заповнюйте, щоб пропустити шифруван�
 msgid "Licensed under GNU LGPL version 2.1"
 msgstr "Ліцензовано за умов дотримання GNU LGPL версії 2.1"
 
-#: pkg/shell/topnav.tsx:196 pkg/systemd/terminal.jsx:263
+#: pkg/systemd/terminal.jsx:263 pkg/shell/topnav.tsx:196
 msgid "Light"
 msgstr "Світлий"
 
@@ -4339,7 +4338,7 @@ msgstr ""
 msgid "Linear"
 msgstr "Лінійний"
 
-#: pkg/networkmanager/team.jsx:195 pkg/networkmanager/bond.jsx:210
+#: pkg/networkmanager/team.jsx:195 pkg/networkmanager/bond.jsx:208
 msgid "Link down delay"
 msgstr "Затримка розірвання зв’язку"
 
@@ -4347,11 +4346,11 @@ msgstr "Затримка розірвання зв’язку"
 msgid "Link local"
 msgstr "Пов’язати локальний"
 
-#: pkg/networkmanager/bond.jsx:197
+#: pkg/networkmanager/bond.jsx:195
 msgid "Link monitoring"
 msgstr "Спостереження за зв’язком"
 
-#: pkg/networkmanager/team.jsx:192 pkg/networkmanager/bond.jsx:207
+#: pkg/networkmanager/team.jsx:192 pkg/networkmanager/bond.jsx:205
 msgid "Link up delay"
 msgstr "Затримка встановлення зв’язку"
 
@@ -4442,12 +4441,12 @@ msgstr "Завантажуємо модифікації системи…"
 msgid "Loading unit failed"
 msgstr "Не вдалося завантажити модуль"
 
-#: pkg/users/account-details.js:169 pkg/users/accounts-list.js:318
-#: pkg/users/accounts-list.js:339 pkg/users/accounts-list.js:454
-#: pkg/kdump/kdump-view.jsx:456 pkg/storaged/storaged.jsx:66
-#: pkg/systemd/logDetails.jsx:172 pkg/systemd/service.jsx:132
-#: pkg/systemd/services.jsx:684 pkg/systemd/logsJournal.jsx:268
-#: pkg/metrics/metrics.jsx:1983
+#: pkg/systemd/logsJournal.jsx:268 pkg/systemd/services.jsx:684
+#: pkg/systemd/service.jsx:132 pkg/systemd/logDetails.jsx:172
+#: pkg/kdump/kdump-view.jsx:456 pkg/metrics/metrics.jsx:1983
+#: pkg/storaged/storaged.jsx:66 pkg/users/account-details.js:169
+#: pkg/users/accounts-list.js:318 pkg/users/accounts-list.js:339
+#: pkg/users/accounts-list.js:454
 msgid "Loading..."
 msgstr "Завантаження…"
 
@@ -4472,12 +4471,12 @@ msgid "Local, $0"
 msgstr "Локальний, $0"
 
 #: pkg/kdump/kdump-view.jsx:233 pkg/storaged/pages.jsx:725
-#: pkg/storaged/dialog.jsx:1211 pkg/storaged/dialog.jsx:1330
+#: pkg/storaged/dialog.jsx:1209 pkg/storaged/dialog.jsx:1328
 msgid "Location"
 msgstr "Адреса"
 
-#: pkg/users/lock-account-dialog.js:36 pkg/storaged/crypto/actions.jsx:81
-#: pkg/storaged/crypto/actions.jsx:98
+#: pkg/storaged/crypto/actions.jsx:81 pkg/storaged/crypto/actions.jsx:98
+#: pkg/users/lock-account-dialog.js:36
 msgid "Lock"
 msgstr "Заблокувати"
 
@@ -4497,7 +4496,7 @@ msgstr "Заблокувати обліковий запис"
 msgid "Locked data"
 msgstr "Заблоковані дані"
 
-#: pkg/storaged/dialog.jsx:1412
+#: pkg/storaged/dialog.jsx:1410
 msgid "Locked encrypted device might contain data"
 msgstr "На заблокованому зашифрованому пристрої можуть міститися дані"
 
@@ -4505,9 +4504,8 @@ msgstr "На заблокованому зашифрованому пристр�
 msgid "Locking $target"
 msgstr "Блокуємо $target"
 
-#: pkg/static/login.html:154 pkg/shell/hosts_dialog.jsx:969
-#: pkg/shell/failures.tsx:95 pkg/static/login.js:741
-#: pkg/lib/cockpit-connect-ssh.tsx:394
+#: pkg/static/login.html:154 pkg/static/login.js:741 pkg/shell/failures.tsx:95
+#: pkg/shell/hosts_dialog.jsx:969 pkg/lib/cockpit-connect-ssh.tsx:394
 msgid "Log in"
 msgstr "Увійти"
 
@@ -4544,8 +4542,8 @@ msgstr "Логічний"
 msgid "Logical Volume Manager partition"
 msgstr "Розділ засобу керування логічними томами (LVM)"
 
-#: pkg/storaged/legacy-vdo/legacy-vdo.jsx:249
 #: pkg/storaged/lvm2/create-logical-volume-dialog.jsx:214
+#: pkg/storaged/legacy-vdo/legacy-vdo.jsx:249
 msgid "Logical size"
 msgstr "Логічний розмір"
 
@@ -4605,12 +4603,12 @@ msgstr "Низькопрофільна робоча станція"
 msgid "Lunch box"
 msgstr "Пусковий комп'ютер"
 
-#: pkg/networkmanager/mac.jsx:73 pkg/networkmanager/bond.jsx:177
+#: pkg/networkmanager/bond.jsx:175 pkg/networkmanager/mac.jsx:73
 msgid "MAC"
 msgstr "MAC"
 
-#: pkg/storaged/mdraid/mdraid-disk.jsx:125 pkg/storaged/mdraid/mdraid.jsx:210
-#: pkg/storaged/mdraid/mdraid.jsx:218
+#: pkg/storaged/mdraid/mdraid.jsx:210 pkg/storaged/mdraid/mdraid.jsx:218
+#: pkg/storaged/mdraid/mdraid-disk.jsx:125
 msgid "MDRAID device"
 msgstr "пристрій MDRAID"
 
@@ -4748,8 +4746,8 @@ msgstr "Позначаємо $target як помилковий"
 msgid "Mask service"
 msgstr "Замаскувати службу"
 
-#: pkg/systemd/services.jsx:251 pkg/systemd/services.jsx:252
-#: pkg/systemd/service-details.jsx:432
+#: pkg/systemd/service-details.jsx:432 pkg/systemd/services.jsx:251
+#: pkg/systemd/services.jsx:252
 msgid "Masked"
 msgstr "Замасковано"
 
@@ -4771,11 +4769,10 @@ msgstr "Максимальний вік повідомлення $max_age"
 msgid "Media drive"
 msgstr "Мультимедійний носій"
 
-#: pkg/systemd/overview-cards/usageCard.jsx:145
-#: pkg/systemd/service-details.jsx:677 pkg/systemd/hwinfo.jsx:294
-#: pkg/systemd/hwinfo.jsx:338 pkg/metrics/metrics.jsx:128
-#: pkg/metrics/metrics.jsx:844 pkg/metrics/metrics.jsx:1567
-#: pkg/metrics/metrics.jsx:1949
+#: pkg/systemd/overview-cards/usageCard.jsx:145 pkg/systemd/hwinfo.jsx:294
+#: pkg/systemd/hwinfo.jsx:338 pkg/systemd/service-details.jsx:677
+#: pkg/metrics/metrics.jsx:128 pkg/metrics/metrics.jsx:844
+#: pkg/metrics/metrics.jsx:1567 pkg/metrics/metrics.jsx:1949
 msgid "Memory"
 msgstr "Пам'ять"
 
@@ -4803,8 +4800,8 @@ msgstr "Повідомлення користувачам, які увійшли
 msgid "Messages related to the failure might be found in the journal:"
 msgstr "Повідомлення, пов'язані із аварією, яких може не бути у журналі:"
 
-#: pkg/storaged/lvm2/vdo-pool.jsx:83
 #: pkg/storaged/lvm2/thin-pool-logical-volume.jsx:144
+#: pkg/storaged/lvm2/vdo-pool.jsx:83
 msgid "Metadata used"
 msgstr "Використано метаданих"
 
@@ -4812,7 +4809,7 @@ msgstr "Використано метаданих"
 msgid "Method"
 msgstr "Метод"
 
-#: pkg/networkmanager/ip-settings.jsx:376
+#: pkg/networkmanager/ip-settings.jsx:368
 msgid "Metric"
 msgstr "Метрика"
 
@@ -4848,8 +4845,8 @@ msgstr "За хвилинами"
 msgid "Minutes"
 msgstr "Хвилини"
 
-#: pkg/storaged/lvm2/create-logical-volume-dialog.jsx:77
 #: pkg/storaged/lvm2/block-logical-volume.jsx:261
+#: pkg/storaged/lvm2/create-logical-volume-dialog.jsx:77
 msgid "Mirrored (RAID 1)"
 msgstr "Віддзеркалений (RAID 1)"
 
@@ -4857,13 +4854,12 @@ msgstr "Віддзеркалений (RAID 1)"
 msgid "Mitigations"
 msgstr "Запобіжні заходи"
 
-#: pkg/networkmanager/bond.jsx:180
+#: pkg/networkmanager/bond.jsx:178
 msgid "Mode"
 msgstr "Режим"
 
-#: pkg/storaged/drive/drive.jsx:123
 #: pkg/systemd/overview-cards/systemInformationCard.jsx:111
-#: pkg/systemd/hwinfo.jsx:281
+#: pkg/systemd/hwinfo.jsx:281 pkg/storaged/drive/drive.jsx:123
 msgid "Model"
 msgstr "Модель"
 
@@ -4872,15 +4868,15 @@ msgstr "Модель"
 msgid "Modifying $target"
 msgstr "Змінюємо $target"
 
-#: pkg/packagekit/autoupdates.jsx:420 pkg/systemd/timer-dialog.jsx:308
+#: pkg/systemd/timer-dialog.jsx:308 pkg/packagekit/autoupdates.jsx:420
 msgid "Mondays"
 msgstr "Понеділки"
 
-#: pkg/networkmanager/bond.jsx:203
+#: pkg/networkmanager/bond.jsx:201
 msgid "Monitoring interval"
 msgstr "Інтервал оновлення"
 
-#: pkg/networkmanager/bond.jsx:214
+#: pkg/networkmanager/bond.jsx:212
 msgid "Monitoring targets"
 msgstr "Спостерігаємо за цілями"
 
@@ -4892,9 +4888,10 @@ msgstr "Щомісяця"
 msgid "More info..."
 msgstr "Докладніше…"
 
+#: pkg/storaged/stratis/filesystem.jsx:161 pkg/storaged/nfs/nfs.jsx:310
+#: pkg/storaged/filesystem/filesystem.jsx:103
 #: pkg/storaged/filesystem/mounting-dialog.jsx:356
-#: pkg/storaged/filesystem/filesystem.jsx:103 pkg/storaged/nfs/nfs.jsx:310
-#: pkg/storaged/btrfs/subvolume.jsx:363 pkg/storaged/stratis/filesystem.jsx:161
+#: pkg/storaged/btrfs/subvolume.jsx:363
 msgid "Mount"
 msgstr "Змонтувати"
 
@@ -4939,15 +4936,16 @@ msgstr "Змонтувати зараз"
 msgid "Mount on $0 now"
 msgstr "Змонтувати до $0 зараз"
 
-#: pkg/storaged/filesystem/mounting-dialog.jsx:52 pkg/storaged/nfs/nfs.jsx:168
+#: pkg/storaged/nfs/nfs.jsx:168 pkg/storaged/filesystem/mounting-dialog.jsx:52
 msgid "Mount options"
 msgstr "Параметри монтування"
 
+#: pkg/storaged/stratis/pool.jsx:132 pkg/storaged/stratis/filesystem.jsx:81
+#: pkg/storaged/stratis/filesystem.jsx:252 pkg/storaged/nfs/nfs.jsx:329
+#: pkg/storaged/filesystem/filesystem.jsx:147
 #: pkg/storaged/filesystem/mounting-dialog.jsx:326
-#: pkg/storaged/filesystem/filesystem.jsx:147 pkg/storaged/nfs/nfs.jsx:329
 #: pkg/storaged/block/format-dialog.jsx:299
-#: pkg/storaged/btrfs/subvolume.jsx:480 pkg/storaged/stratis/filesystem.jsx:81
-#: pkg/storaged/stratis/filesystem.jsx:252 pkg/storaged/stratis/pool.jsx:132
+#: pkg/storaged/btrfs/subvolume.jsx:480
 msgid "Mount point"
 msgstr "Точка монтування"
 
@@ -4967,7 +4965,7 @@ msgstr "Точку монтування вже використано для $0"
 msgid "Mount point must start with \"/\"."
 msgstr "Запис точки монтування має починатися з «/»."
 
-#: pkg/storaged/filesystem/mounting-dialog.jsx:61 pkg/storaged/nfs/nfs.jsx:172
+#: pkg/storaged/nfs/nfs.jsx:172 pkg/storaged/filesystem/mounting-dialog.jsx:61
 msgid "Mount read only"
 msgstr "Змонтувати лише для читання"
 
@@ -5017,34 +5015,34 @@ msgstr "Луна-імпульс NSNA"
 msgid "NTP server"
 msgstr "Сервер NTP"
 
-#: pkg/users/group-create-dialog.js:39 pkg/users/authorized-keys-panel.js:127
-#: pkg/packagekit/updates.jsx:439 pkg/storaged/filesystem/filesystem.jsx:119
-#: pkg/storaged/filesystem/filesystem.jsx:141
-#: pkg/storaged/mdraid/create-dialog.jsx:47 pkg/storaged/mdraid/mdraid.jsx:302
-#: pkg/storaged/block/format-dialog.jsx:293
-#: pkg/storaged/iscsi/create-dialog.jsx:111
-#: pkg/storaged/iscsi/create-dialog.jsx:168
-#: pkg/storaged/btrfs/subvolume.jsx:157 pkg/storaged/btrfs/subvolume.jsx:470
-#: pkg/storaged/btrfs/volume.jsx:145 pkg/storaged/partitions/partition.jsx:227
-#: pkg/storaged/lvm2/vdo-pool.jsx:78
-#: pkg/storaged/lvm2/create-logical-volume-dialog.jsx:166
-#: pkg/storaged/lvm2/create-dialog.jsx:47
-#: pkg/storaged/lvm2/thin-pool-logical-volume.jsx:44
-#: pkg/storaged/lvm2/thin-pool-logical-volume.jsx:137
+#: pkg/systemd/hwinfo.jsx:88 pkg/systemd/timer-dialog.jsx:148
+#: pkg/networkmanager/dialogs-common.jsx:133
+#: pkg/networkmanager/network-main.jsx:185
+#: pkg/networkmanager/network-main.jsx:200 pkg/packagekit/updates.jsx:439
+#: pkg/storaged/stratis/pool.jsx:92 pkg/storaged/stratis/pool.jsx:195
+#: pkg/storaged/stratis/pool.jsx:536 pkg/storaged/stratis/filesystem.jsx:76
+#: pkg/storaged/stratis/filesystem.jsx:187
+#: pkg/storaged/stratis/filesystem.jsx:247
+#: pkg/storaged/stratis/create-dialog.jsx:50
+#: pkg/storaged/lvm2/volume-group.jsx:63 pkg/storaged/lvm2/volume-group.jsx:118
+#: pkg/storaged/lvm2/volume-group.jsx:362
 #: pkg/storaged/lvm2/block-logical-volume.jsx:49
 #: pkg/storaged/lvm2/block-logical-volume.jsx:238
 #: pkg/storaged/lvm2/block-logical-volume.jsx:286
-#: pkg/storaged/lvm2/volume-group.jsx:63 pkg/storaged/lvm2/volume-group.jsx:118
-#: pkg/storaged/lvm2/volume-group.jsx:362
-#: pkg/storaged/stratis/filesystem.jsx:76
-#: pkg/storaged/stratis/filesystem.jsx:187
-#: pkg/storaged/stratis/filesystem.jsx:247 pkg/storaged/stratis/pool.jsx:92
-#: pkg/storaged/stratis/pool.jsx:195 pkg/storaged/stratis/pool.jsx:536
-#: pkg/storaged/stratis/create-dialog.jsx:50 pkg/shell/credentials.tsx:305
-#: pkg/networkmanager/network-main.jsx:185
-#: pkg/networkmanager/network-main.jsx:200
-#: pkg/networkmanager/dialogs-common.jsx:133 pkg/systemd/timer-dialog.jsx:148
-#: pkg/systemd/hwinfo.jsx:88
+#: pkg/storaged/lvm2/thin-pool-logical-volume.jsx:44
+#: pkg/storaged/lvm2/thin-pool-logical-volume.jsx:137
+#: pkg/storaged/lvm2/create-dialog.jsx:47 pkg/storaged/lvm2/vdo-pool.jsx:78
+#: pkg/storaged/lvm2/create-logical-volume-dialog.jsx:166
+#: pkg/storaged/filesystem/filesystem.jsx:119
+#: pkg/storaged/filesystem/filesystem.jsx:141
+#: pkg/storaged/iscsi/create-dialog.jsx:111
+#: pkg/storaged/iscsi/create-dialog.jsx:168
+#: pkg/storaged/block/format-dialog.jsx:293
+#: pkg/storaged/partitions/partition.jsx:227 pkg/storaged/btrfs/volume.jsx:145
+#: pkg/storaged/btrfs/subvolume.jsx:157 pkg/storaged/btrfs/subvolume.jsx:470
+#: pkg/storaged/mdraid/mdraid.jsx:302 pkg/storaged/mdraid/create-dialog.jsx:47
+#: pkg/users/authorized-keys-panel.js:127 pkg/users/group-create-dialog.js:39
+#: pkg/shell/credentials.tsx:305
 msgid "Name"
 msgstr "Назва"
 
@@ -5142,11 +5140,11 @@ msgstr "Робота у мережі"
 msgid "Never"
 msgstr "Ніколи"
 
-#: pkg/users/account-details.js:75 pkg/users/expiration-dialogs.js:42
+#: pkg/users/expiration-dialogs.js:42 pkg/users/account-details.js:75
 msgid "Never expire account"
 msgstr "Строк дії облікового запису є нескінченним"
 
-#: pkg/users/account-details.js:67 pkg/users/expiration-dialogs.js:154
+#: pkg/users/expiration-dialogs.js:154 pkg/users/account-details.js:67
 msgid "Never expire password"
 msgstr "Необмежений строк дії пароля"
 
@@ -5174,8 +5172,8 @@ msgstr "Новий пароль до ключа"
 msgid "New name"
 msgstr "Нова назва"
 
-#: pkg/storaged/crypto/keyslots.jsx:454 pkg/storaged/crypto/keyslots.jsx:504
-#: pkg/storaged/stratis/pool.jsx:429
+#: pkg/storaged/stratis/pool.jsx:429 pkg/storaged/crypto/keyslots.jsx:454
+#: pkg/storaged/crypto/keyslots.jsx:504
 msgid "New passphrase"
 msgstr "Новий пароль"
 
@@ -5203,7 +5201,7 @@ msgstr "Не вказано ідентифікатора"
 msgid "No SELinux alerts."
 msgstr "Немає сповіщень SELinux."
 
-#: pkg/apps/application-list.jsx:189
+#: pkg/apps/application-list.jsx:187
 msgid "No applications installed or available."
 msgstr "Немає встановлених або доступних програм."
 
@@ -5251,9 +5249,9 @@ msgstr "Опису не надано."
 msgid "No devices found"
 msgstr "Не знайдено пристроїв"
 
-#: pkg/storaged/mdraid/create-dialog.jsx:101 pkg/storaged/mdraid/mdraid.jsx:165
-#: pkg/storaged/lvm2/create-dialog.jsx:54
-#: pkg/storaged/lvm2/volume-group.jsx:202 pkg/storaged/stratis/pool.jsx:236
+#: pkg/storaged/stratis/pool.jsx:236 pkg/storaged/lvm2/volume-group.jsx:202
+#: pkg/storaged/lvm2/create-dialog.jsx:54 pkg/storaged/mdraid/mdraid.jsx:165
+#: pkg/storaged/mdraid/create-dialog.jsx:101
 msgid "No disks are available."
 msgstr "Немає доступних дисків."
 
@@ -5317,8 +5315,8 @@ msgstr "Не є відповідною жодна мова"
 msgid "No log entries"
 msgstr "Немає записів у журналі"
 
-#: pkg/storaged/lvm2/thin-pool-logical-volume.jsx:126
 #: pkg/storaged/lvm2/volume-group.jsx:282
+#: pkg/storaged/lvm2/thin-pool-logical-volume.jsx:126
 msgid "No logical volumes"
 msgstr "Немає логічних томів"
 
@@ -5326,8 +5324,8 @@ msgstr "Немає логічних томів"
 msgid "No logs found"
 msgstr "Журналів не знайдено"
 
-#: pkg/users/accounts-list.js:341 pkg/users/accounts-list.js:456
-#: pkg/systemd/services-list.jsx:59
+#: pkg/systemd/services-list.jsx:59 pkg/users/accounts-list.js:341
+#: pkg/users/accounts-list.js:456
 msgid "No matching results"
 msgstr "Нічого не знайдено"
 
@@ -5343,7 +5341,7 @@ msgstr "Немає розподілу на розділи"
 msgid "No partitions found"
 msgstr "Розділів не знайдено"
 
-#: pkg/networkmanager/wireguard.jsx:392
+#: pkg/networkmanager/wireguard.jsx:390
 msgid "No peers added."
 msgstr "Не додано жодного вузла."
 
@@ -5355,10 +5353,9 @@ msgstr "Не знайдено фізичних томів"
 msgid "No real name specified"
 msgstr "Не вказано справжнього імені"
 
-#: pkg/shell/nav.tsx:216
-#: pkg/lib/cockpit-components-multi-typeahead-select.tsx:117
-#: pkg/lib/cockpit-components-typeahead-select.tsx:210
+#: pkg/shell/nav.tsx:215 pkg/lib/cockpit-components-typeahead-select.tsx:210
 #: pkg/lib/cockpit-components-typeahead-select.tsx:211
+#: pkg/lib/cockpit-components-multi-typeahead-select.tsx:117
 msgid "No results found"
 msgstr "Нічого не знайдено"
 
@@ -5381,8 +5378,8 @@ msgstr "Знімків не знайдено"
 msgid "No storage found"
 msgstr "Не знайдено сховища даних"
 
-#: pkg/storaged/btrfs/filesystem.jsx:71 pkg/storaged/btrfs/subvolume.jsx:488
-#: pkg/storaged/btrfs/volume.jsx:234
+#: pkg/storaged/btrfs/volume.jsx:234 pkg/storaged/btrfs/subvolume.jsx:488
+#: pkg/storaged/btrfs/filesystem.jsx:71
 msgid "No subvolumes"
 msgstr "Немає підтомів"
 
@@ -5408,8 +5405,8 @@ msgstr "Немає оновлень"
 msgid "No user name specified"
 msgstr "Не вказано імені користувача"
 
-#: pkg/kdump/kdump-view.jsx:506 pkg/networkmanager/firewall.jsx:850
 #: pkg/systemd/overview-cards/tuned-dialog.jsx:227
+#: pkg/networkmanager/firewall.jsx:850 pkg/kdump/kdump-view.jsx:506
 msgid "None"
 msgstr "Немає"
 
@@ -5425,7 +5422,7 @@ msgstr "Не уповноважено вимикати брандмауер"
 msgid "Not authorized to enable the firewall"
 msgstr "Не уповноважено вмикати брандмауер"
 
-#: pkg/packagekit/kpatch.jsx:246 pkg/networkmanager/interfaces.js:791
+#: pkg/networkmanager/interfaces.js:791 pkg/packagekit/kpatch.jsx:246
 msgid "Not available"
 msgstr "Недоступний"
 
@@ -5441,8 +5438,8 @@ msgstr "Не з'єднано із Insights"
 msgid "Not connected to host"
 msgstr "Не з'єднано із вузлом"
 
+#: pkg/storaged/stratis/pool.jsx:330 pkg/storaged/stratis/filesystem.jsx:166
 #: pkg/storaged/lvm2/physical-volume.jsx:81
-#: pkg/storaged/stratis/filesystem.jsx:166 pkg/storaged/stratis/pool.jsx:330
 msgid "Not enough free space"
 msgstr "Недостатньо вільного місця"
 
@@ -5454,8 +5451,8 @@ msgstr "Недостатньо місця"
 msgid "Not enough space to grow"
 msgstr "Недостатньо місця для збільшення"
 
-#: pkg/storaged/pages.jsx:283 pkg/storaged/pages.jsx:288
-#: pkg/systemd/services.jsx:223
+#: pkg/systemd/services.jsx:223 pkg/storaged/pages.jsx:283
+#: pkg/storaged/pages.jsx:288
 msgid "Not found"
 msgstr "Не знайдено"
 
@@ -5483,9 +5480,9 @@ msgstr "Не готовий"
 msgid "Not registered"
 msgstr "Не зареєстровано"
 
-#: pkg/storaged/mdraid/mdraid.jsx:304 pkg/systemd/services.jsx:235
+#: pkg/systemd/service-details.jsx:480 pkg/systemd/services.jsx:235
 #: pkg/systemd/services.jsx:238 pkg/systemd/services.jsx:698
-#: pkg/systemd/service-details.jsx:480
+#: pkg/storaged/mdraid/mdraid.jsx:304
 msgid "Not running"
 msgstr "Зупинено"
 
@@ -5538,7 +5535,7 @@ msgstr "Випадки"
 msgid "Ok"
 msgstr "Гаразд"
 
-#: pkg/storaged/crypto/keyslots.jsx:501 pkg/storaged/stratis/pool.jsx:424
+#: pkg/storaged/stratis/pool.jsx:424 pkg/storaged/crypto/keyslots.jsx:501
 msgid "Old passphrase"
 msgstr "Старий пароль"
 
@@ -5598,11 +5595,11 @@ msgstr ""
 msgid "Operation '$operation' on $target"
 msgstr "Дія «$operation» над $target"
 
-#: pkg/users/account-details.js:261 pkg/storaged/crypto/encryption.jsx:235
-#: pkg/storaged/lvm2/create-logical-volume-dialog.jsx:224
+#: pkg/sosreport/sosreport.jsx:331 pkg/networkmanager/bridge.jsx:104
 #: pkg/storaged/stratis/filesystem.jsx:207
-#: pkg/storaged/stratis/create-dialog.jsx:64 pkg/networkmanager/bridge.jsx:104
-#: pkg/sosreport/sosreport.jsx:331
+#: pkg/storaged/stratis/create-dialog.jsx:64
+#: pkg/storaged/lvm2/create-logical-volume-dialog.jsx:224
+#: pkg/storaged/crypto/encryption.jsx:235 pkg/users/account-details.js:261
 msgid "Options"
 msgstr "Параметри"
 
@@ -5657,7 +5654,7 @@ msgstr "PCI"
 msgid "PCP is missing for metrics history"
 msgstr "Не вистачає PCP для журналу метрики"
 
-#: pkg/storaged/dialog.jsx:1475
+#: pkg/storaged/dialog.jsx:1473
 msgid "PID"
 msgstr "PID"
 
@@ -5740,15 +5737,14 @@ msgstr ""
 msgid "Passive"
 msgstr "Неактивний"
 
-#: pkg/storaged/filesystem/mounting-dialog.jsx:341
-#: pkg/storaged/crypto/actions.jsx:42 pkg/storaged/crypto/keyslots.jsx:449
-#: pkg/storaged/crypto/keyslots.jsx:757
-#: pkg/storaged/block/format-dialog.jsx:336
-#: pkg/storaged/block/format-dialog.jsx:364 pkg/storaged/stratis/pool.jsx:229
-#: pkg/storaged/stratis/pool.jsx:400 pkg/storaged/stratis/pool.jsx:563
-#: pkg/storaged/stratis/create-dialog.jsx:73
+#: pkg/storaged/stratis/pool.jsx:229 pkg/storaged/stratis/pool.jsx:400
+#: pkg/storaged/stratis/pool.jsx:563 pkg/storaged/stratis/create-dialog.jsx:73
 #: pkg/storaged/stratis/stopped-pool.jsx:103
-#: pkg/storaged/stratis/stopped-pool.jsx:182
+#: pkg/storaged/stratis/stopped-pool.jsx:182 pkg/storaged/crypto/actions.jsx:42
+#: pkg/storaged/crypto/keyslots.jsx:449 pkg/storaged/crypto/keyslots.jsx:757
+#: pkg/storaged/filesystem/mounting-dialog.jsx:341
+#: pkg/storaged/block/format-dialog.jsx:336
+#: pkg/storaged/block/format-dialog.jsx:364
 msgid "Passphrase"
 msgstr "Пароль"
 
@@ -5756,14 +5752,14 @@ msgstr "Пароль"
 msgid "Passphrase can not be empty"
 msgstr "Пароль не може бути порожнім"
 
-#: pkg/storaged/filesystem/mounting-dialog.jsx:344
+#: pkg/storaged/stratis/pool.jsx:232 pkg/storaged/stratis/pool.jsx:401
+#: pkg/storaged/stratis/pool.jsx:427 pkg/storaged/stratis/pool.jsx:430
+#: pkg/storaged/stratis/pool.jsx:485 pkg/storaged/stratis/create-dialog.jsx:77
 #: pkg/storaged/crypto/keyslots.jsx:181 pkg/storaged/crypto/keyslots.jsx:457
 #: pkg/storaged/crypto/keyslots.jsx:502 pkg/storaged/crypto/keyslots.jsx:506
+#: pkg/storaged/filesystem/mounting-dialog.jsx:344
 #: pkg/storaged/block/format-dialog.jsx:340
-#: pkg/storaged/block/format-dialog.jsx:368 pkg/storaged/stratis/pool.jsx:232
-#: pkg/storaged/stratis/pool.jsx:401 pkg/storaged/stratis/pool.jsx:427
-#: pkg/storaged/stratis/pool.jsx:430 pkg/storaged/stratis/pool.jsx:485
-#: pkg/storaged/stratis/create-dialog.jsx:77
+#: pkg/storaged/block/format-dialog.jsx:368
 msgid "Passphrase cannot be empty"
 msgstr "Пароль не може бути порожнім"
 
@@ -5771,20 +5767,20 @@ msgstr "Пароль не може бути порожнім"
 msgid "Passphrase from any other key slot"
 msgstr "Пароль з будь-якого іншого слоту ключів"
 
-#: pkg/storaged/crypto/keyslots.jsx:605 pkg/storaged/stratis/pool.jsx:461
+#: pkg/storaged/stratis/pool.jsx:461 pkg/storaged/crypto/keyslots.jsx:605
 msgid "Passphrase removal may prevent unlocking $0."
 msgstr "Вилучення пароля може завадити розблокуванню $0."
 
+#: pkg/storaged/stratis/pool.jsx:403 pkg/storaged/stratis/pool.jsx:432
+#: pkg/storaged/stratis/create-dialog.jsx:86
 #: pkg/storaged/crypto/keyslots.jsx:466 pkg/storaged/crypto/keyslots.jsx:511
-#: pkg/storaged/block/format-dialog.jsx:349 pkg/storaged/stratis/pool.jsx:403
-#: pkg/storaged/stratis/pool.jsx:432 pkg/storaged/stratis/create-dialog.jsx:86
+#: pkg/storaged/block/format-dialog.jsx:349
 msgid "Passphrases do not match"
 msgstr "Паролі не збігаються"
 
-#: pkg/static/login.html:113 pkg/users/account-details.js:288
-#: pkg/users/account-create-dialog.js:139
-#: pkg/storaged/iscsi/create-dialog.jsx:34
-#: pkg/storaged/iscsi/create-dialog.jsx:140 pkg/shell/hosts_dialog.jsx:1050
+#: pkg/static/login.html:113 pkg/storaged/iscsi/create-dialog.jsx:34
+#: pkg/storaged/iscsi/create-dialog.jsx:140 pkg/users/account-details.js:288
+#: pkg/users/account-create-dialog.js:139 pkg/shell/hosts_dialog.jsx:1050
 #: pkg/shell/hosts_dialog.jsx:1059 pkg/shell/superuser.tsx:174
 #: pkg/shell/credentials.tsx:177 pkg/shell/credentials.tsx:236
 #: pkg/shell/credentials.tsx:323 pkg/lib/cockpit-connect-ssh.tsx:446
@@ -5932,10 +5928,10 @@ msgstr "Постійний"
 msgid "Permanently delete $0 group?"
 msgstr "Остаточно вилучити групу $0?"
 
-#: pkg/storaged/mdraid/mdraid.jsx:130
-#: pkg/storaged/legacy-vdo/legacy-vdo.jsx:119 pkg/storaged/btrfs/volume.jsx:77
+#: pkg/storaged/stratis/pool.jsx:174 pkg/storaged/lvm2/volume-group.jsx:95
 #: pkg/storaged/partitions/partition.jsx:54
-#: pkg/storaged/lvm2/volume-group.jsx:95 pkg/storaged/stratis/pool.jsx:174
+#: pkg/storaged/legacy-vdo/legacy-vdo.jsx:119 pkg/storaged/btrfs/volume.jsx:77
+#: pkg/storaged/mdraid/mdraid.jsx:130
 msgid "Permanently delete $0?"
 msgstr "Остаточно вилучити $0?"
 
@@ -5959,14 +5955,14 @@ msgstr "Сталу пам'ять переведено у режим лише ч�
 msgid "Physical"
 msgstr "Фізичний"
 
-#: pkg/storaged/block/resize.jsx:448
-#: pkg/storaged/lvm2/create-logical-volume-dialog.jsx:180
 #: pkg/storaged/lvm2/block-logical-volume.jsx:130
+#: pkg/storaged/lvm2/create-logical-volume-dialog.jsx:180
+#: pkg/storaged/block/resize.jsx:448
 msgid "Physical Volumes"
 msgstr "Фізичні томи"
 
-#: pkg/storaged/lvm2/block-logical-volume.jsx:356
 #: pkg/storaged/lvm2/volume-group.jsx:372
+#: pkg/storaged/lvm2/block-logical-volume.jsx:356
 msgid "Physical volumes"
 msgstr "Фізичні томи"
 
@@ -5974,8 +5970,8 @@ msgstr "Фізичні томи"
 msgid "Physical volumes can not be resized here"
 msgstr "Тут не можна змінювати розміри фізичних томів"
 
-#: pkg/users/expiration-dialogs.js:48 pkg/systemd/timer-dialog.jsx:338
-#: pkg/lib/serverTime.js:595 pkg/lib/cockpit-components-shutdown.jsx:208
+#: pkg/systemd/timer-dialog.jsx:338 pkg/users/expiration-dialogs.js:48
+#: pkg/lib/cockpit-components-shutdown.jsx:208 pkg/lib/serverTime.js:595
 msgid "Pick date"
 msgstr "Вибрати дату"
 
@@ -6053,8 +6049,9 @@ msgstr "Порт"
 msgid "Portable"
 msgstr "Портативний"
 
-#: pkg/networkmanager/team.jsx:159 pkg/networkmanager/bridge.jsx:101
-#: pkg/networkmanager/network-interface-members.jsx:208
+#: pkg/networkmanager/team.jsx:159
+#: pkg/networkmanager/network-interface-members.jsx:206
+#: pkg/networkmanager/bridge.jsx:101
 msgid "Ports"
 msgstr "Порти"
 
@@ -6066,12 +6063,12 @@ msgstr "Години живлення"
 msgid "PowerPC PReP boot partition"
 msgstr "Розділ завантаження PowerPC PReP"
 
-#: pkg/networkmanager/ip-settings.jsx:188
+#: pkg/networkmanager/ip-settings.jsx:186
 msgid "Prefix length"
 msgstr "Довжина префікса"
 
-#: pkg/networkmanager/ip-settings.jsx:188
-#: pkg/networkmanager/ip-settings.jsx:360
+#: pkg/networkmanager/ip-settings.jsx:186
+#: pkg/networkmanager/ip-settings.jsx:352
 msgid "Prefix length or netmask"
 msgstr "Довжина префікса або маска мережі"
 
@@ -6095,12 +6092,12 @@ msgstr "Зручна назва вузла"
 msgid "Previous boot"
 msgstr "Попереднє завантаження"
 
-#: pkg/networkmanager/team.jsx:174 pkg/networkmanager/bond.jsx:186
+#: pkg/networkmanager/team.jsx:174 pkg/networkmanager/bond.jsx:184
 msgid "Primary"
 msgstr "Основний"
 
-#: pkg/networkmanager/teamport.jsx:84 pkg/networkmanager/bridgeport.jsx:80
 #: pkg/systemd/logs.jsx:200 pkg/systemd/logs.jsx:205
+#: pkg/networkmanager/teamport.jsx:84 pkg/networkmanager/bridgeport.jsx:80
 msgid "Priority"
 msgstr "Пріоритетність"
 
@@ -6117,7 +6114,7 @@ msgstr "Закритий ключ"
 msgid "Problem becoming administrator"
 msgstr "Проблеми із набуттям прав адміністратора"
 
-#: pkg/storaged/dialog.jsx:1244
+#: pkg/storaged/dialog.jsx:1242
 msgid "Processes using the location"
 msgstr "Процеси, що використовують це місце"
 
@@ -6157,8 +6154,8 @@ msgstr ""
 msgid "Provide the passphrase for the pool on these block devices:"
 msgstr "Вкажіть пароль до буфера даних на цих блокових пристроях:"
 
-#: pkg/shell/credentials.tsx:318 pkg/networkmanager/wireguard.jsx:287
-#: pkg/networkmanager/wireguard.jsx:350
+#: pkg/networkmanager/wireguard.jsx:287 pkg/networkmanager/wireguard.jsx:350
+#: pkg/shell/credentials.tsx:318
 msgid "Public key"
 msgstr "Відкритий ключ"
 
@@ -6227,7 +6224,7 @@ msgstr "RAID 6 (Подвійна розподілена парність)"
 msgid "RAID chassis"
 msgstr "Апаратний блок RAID"
 
-#: pkg/storaged/mdraid/create-dialog.jsx:51 pkg/storaged/mdraid/mdraid.jsx:303
+#: pkg/storaged/mdraid/mdraid.jsx:303 pkg/storaged/mdraid/create-dialog.jsx:51
 msgid "RAID level"
 msgstr "Рівень RAID"
 
@@ -6313,14 +6310,14 @@ msgstr ""
 msgid "Real host name must be 64 characters or less"
 msgstr "Назва справжнього вузла має складатися не більше ніж з 64 символів"
 
-#: pkg/systemd/overview-cards/cryptoPolicies.jsx:230
+#: pkg/systemd/overview-cards/cryptoPolicies.jsx:228
 msgid "Reapply and reboot"
 msgstr "Повторно застосувати і перезавантажити"
 
 #: pkg/systemd/overview.jsx:110 pkg/systemd/overview.jsx:133
-#: pkg/lib/cockpit-components-logs-panel.jsx:114
 #: pkg/lib/cockpit-components-shutdown.jsx:193
 #: pkg/lib/cockpit-components-shutdown.jsx:236
+#: pkg/lib/cockpit-components-logs-panel.jsx:114
 msgid "Reboot"
 msgstr "Перезавантажити"
 
@@ -6337,9 +6334,9 @@ msgstr "Рекомендовано перезавантажити"
 msgid "Reboot system..."
 msgstr "Перезавантажити систему…"
 
-#: pkg/networkmanager/plots.js:44 pkg/networkmanager/network-main.jsx:188
-#: pkg/networkmanager/network-main.jsx:203
-#: pkg/networkmanager/network-interface-members.jsx:210
+#: pkg/networkmanager/network-interface-members.jsx:208
+#: pkg/networkmanager/network-main.jsx:188
+#: pkg/networkmanager/network-main.jsx:203 pkg/networkmanager/plots.js:44
 msgid "Receiving"
 msgstr "Отримання"
 
@@ -6383,15 +6380,15 @@ msgstr "Повторно створюємо initrd"
 msgid "Register…"
 msgstr "Зареєструвати…"
 
-#: pkg/storaged/dialog.jsx:1376
+#: pkg/storaged/dialog.jsx:1374
 msgid "Related processes and services will be forcefully stopped."
 msgstr "Пов'язані процеси і служби буде примусово зупинено."
 
-#: pkg/storaged/dialog.jsx:1378
+#: pkg/storaged/dialog.jsx:1376
 msgid "Related processes will be forcefully stopped."
 msgstr "Пов'язані процеси буде примусово зупинено."
 
-#: pkg/storaged/dialog.jsx:1380
+#: pkg/storaged/dialog.jsx:1378
 msgid "Related services will be forcefully stopped."
 msgstr "Пов'язані служби буде примусово зупинено."
 
@@ -6443,16 +6440,15 @@ msgstr "Віддалене на основі SSH, $0"
 msgid "Removals:"
 msgstr "Вилучення:"
 
+#: pkg/systemd/timer-dialog.jsx:352 pkg/apps/application.jsx:49
+#: pkg/storaged/stratis/pool.jsx:465 pkg/storaged/stratis/pool.jsx:522
+#: pkg/storaged/stratis/pool.jsx:572 pkg/storaged/stratis/pool.jsx:590
+#: pkg/storaged/lvm2/volume-group.jsx:329
+#: pkg/storaged/lvm2/physical-volume.jsx:91 pkg/storaged/nfs/nfs.jsx:315
+#: pkg/storaged/crypto/keyslots.jsx:634 pkg/storaged/crypto/keyslots.jsx:669
+#: pkg/storaged/crypto/keyslots.jsx:745 pkg/storaged/mdraid/mdraid-disk.jsx:101
 #: pkg/users/authorized-keys-panel.js:142
-#: pkg/users/authorized-keys-panel.js:150 pkg/apps/application.jsx:49
-#: pkg/storaged/nfs/nfs.jsx:315 pkg/storaged/crypto/keyslots.jsx:634
-#: pkg/storaged/crypto/keyslots.jsx:669 pkg/storaged/crypto/keyslots.jsx:745
-#: pkg/storaged/mdraid/mdraid-disk.jsx:101
-#: pkg/storaged/lvm2/physical-volume.jsx:91
-#: pkg/storaged/lvm2/volume-group.jsx:329 pkg/storaged/stratis/pool.jsx:465
-#: pkg/storaged/stratis/pool.jsx:522 pkg/storaged/stratis/pool.jsx:572
-#: pkg/storaged/stratis/pool.jsx:590 pkg/shell/hosts.tsx:263
-#: pkg/systemd/timer-dialog.jsx:352
+#: pkg/users/authorized-keys-panel.js:150 pkg/shell/hosts.tsx:263
 msgid "Remove"
 msgstr "Вилучити"
 
@@ -6464,11 +6460,11 @@ msgstr "Вилучити $0"
 msgid "Remove $0 service from $1 zone"
 msgstr "Вилучити службу $0 із зони $1"
 
-#: pkg/storaged/crypto/keyslots.jsx:653 pkg/storaged/stratis/pool.jsx:517
+#: pkg/storaged/stratis/pool.jsx:517 pkg/storaged/crypto/keyslots.jsx:653
 msgid "Remove $0?"
 msgstr "Вилучити $0?"
 
-#: pkg/storaged/crypto/keyslots.jsx:663 pkg/storaged/stratis/pool.jsx:515
+#: pkg/storaged/stratis/pool.jsx:515 pkg/storaged/crypto/keyslots.jsx:663
 msgid "Remove Tang keyserver?"
 msgstr "Вилучити сервер ключів Tang?"
 
@@ -6480,10 +6476,10 @@ msgstr "Вилучити пристрій"
 msgid "Remove host"
 msgstr "Вилучити вузол"
 
-#: pkg/networkmanager/ip-settings.jsx:220
-#: pkg/networkmanager/ip-settings.jsx:268
-#: pkg/networkmanager/ip-settings.jsx:316
-#: pkg/networkmanager/ip-settings.jsx:388
+#: pkg/networkmanager/ip-settings.jsx:218
+#: pkg/networkmanager/ip-settings.jsx:264
+#: pkg/networkmanager/ip-settings.jsx:310
+#: pkg/networkmanager/ip-settings.jsx:380
 msgid "Remove item"
 msgstr "Вилучити запис"
 
@@ -6555,11 +6551,11 @@ msgstr ""
 msgid "Removing the zone will remove all services within it."
 msgstr "Вилучення запису зони призведе до вилучення усіх служб у ній."
 
-#: pkg/users/rename-group-dialog.jsx:68
+#: pkg/storaged/stratis/pool.jsx:202 pkg/storaged/stratis/filesystem.jsx:194
+#: pkg/storaged/lvm2/volume-group.jsx:70
 #: pkg/storaged/lvm2/block-logical-volume.jsx:53
 #: pkg/storaged/lvm2/block-logical-volume.jsx:242
-#: pkg/storaged/lvm2/volume-group.jsx:70
-#: pkg/storaged/stratis/filesystem.jsx:194 pkg/storaged/stratis/pool.jsx:202
+#: pkg/users/rename-group-dialog.jsx:68
 msgid "Rename"
 msgstr "Перейменувати"
 
@@ -6688,7 +6684,7 @@ msgstr ""
 msgid "Reserved memory"
 msgstr "Зарезервована пам’ять"
 
-#: pkg/systemd/logs.jsx:389 pkg/systemd/terminal.jsx:271
+#: pkg/systemd/terminal.jsx:271 pkg/systemd/logs.jsx:379
 msgid "Reset"
 msgstr "Скинути"
 
@@ -6757,7 +6753,7 @@ msgstr "Повторно використати наявне шифруванн�
 msgid "Reuse existing encryption ($0)"
 msgstr "Повторно використати наявне шифрування ($0)"
 
-#: pkg/systemd/overview-cards/cryptoPolicies.jsx:271
+#: pkg/systemd/overview-cards/cryptoPolicies.jsx:269
 msgid "Review cryptographic policy"
 msgstr "Переглянути правила шифрування"
 
@@ -6769,7 +6765,7 @@ msgstr "Перегляд журналів"
 msgid "Round robin"
 msgstr "Циклічне"
 
-#: pkg/networkmanager/ip-settings.jsx:327
+#: pkg/networkmanager/ip-settings.jsx:321
 msgid "Routes"
 msgstr "Маршрути"
 
@@ -6816,9 +6812,9 @@ msgstr ""
 msgid "Runner"
 msgstr "Засіб для запуску"
 
-#: pkg/storaged/mdraid/mdraid.jsx:304 pkg/systemd/services.jsx:233
+#: pkg/systemd/service-details.jsx:470 pkg/systemd/services.jsx:233
 #: pkg/systemd/services.jsx:237 pkg/systemd/services.jsx:697
-#: pkg/systemd/service-details.jsx:470
+#: pkg/storaged/mdraid/mdraid.jsx:304
 msgid "Running"
 msgstr "Працює"
 
@@ -6887,8 +6883,8 @@ msgstr "Ключ SSH не вказано у форматі шляху"
 msgid "SSH key login"
 msgstr "Вхід за ключем SSH"
 
-#: pkg/shell/topnav.tsx:225 pkg/shell/credentials.tsx:285
-#: pkg/shell/credentials.tsx:299
+#: pkg/shell/credentials.tsx:285 pkg/shell/credentials.tsx:299
+#: pkg/shell/topnav.tsx:225
 msgid "SSH keys"
 msgstr "Ключі SSH"
 
@@ -6915,20 +6911,20 @@ msgstr ""
 "Користувачам Safari слід імпортувати сертифікат самопідписаного CA і "
 "встановити довіру до нього:"
 
-#: pkg/packagekit/autoupdates.jsx:425 pkg/systemd/timer-dialog.jsx:313
+#: pkg/systemd/timer-dialog.jsx:313 pkg/packagekit/autoupdates.jsx:425
 msgid "Saturdays"
 msgstr "Суботи"
 
-#: pkg/packagekit/kpatch.jsx:319
-#: pkg/storaged/filesystem/mounting-dialog.jsx:358
-#: pkg/storaged/filesystem/filesystem.jsx:126 pkg/storaged/nfs/nfs.jsx:188
+#: pkg/systemd/timer-dialog.jsx:389 pkg/networkmanager/dialogs-common.jsx:156
+#: pkg/packagekit/kpatch.jsx:319 pkg/metrics/metrics.jsx:1501
+#: pkg/storaged/stratis/pool.jsx:406 pkg/storaged/stratis/pool.jsx:435
+#: pkg/storaged/stratis/pool.jsx:490 pkg/storaged/nfs/nfs.jsx:188
+#: pkg/storaged/crypto/keyslots.jsx:516 pkg/storaged/crypto/keyslots.jsx:535
 #: pkg/storaged/crypto/encryption.jsx:169
-#: pkg/storaged/crypto/encryption.jsx:196 pkg/storaged/crypto/keyslots.jsx:516
-#: pkg/storaged/crypto/keyslots.jsx:535 pkg/storaged/btrfs/volume.jsx:152
-#: pkg/storaged/partitions/partition.jsx:197 pkg/storaged/stratis/pool.jsx:406
-#: pkg/storaged/stratis/pool.jsx:435 pkg/storaged/stratis/pool.jsx:490
-#: pkg/networkmanager/dialogs-common.jsx:156 pkg/systemd/timer-dialog.jsx:393
-#: pkg/metrics/metrics.jsx:1501
+#: pkg/storaged/crypto/encryption.jsx:196
+#: pkg/storaged/filesystem/filesystem.jsx:126
+#: pkg/storaged/filesystem/mounting-dialog.jsx:358
+#: pkg/storaged/partitions/partition.jsx:197 pkg/storaged/btrfs/volume.jsx:152
 msgid "Save"
 msgstr "Зберегти"
 
@@ -6936,8 +6932,8 @@ msgstr "Зберегти"
 msgid "Save and reboot"
 msgstr "Зберегти і перезавантажити"
 
-#: pkg/kdump/kdump-view.jsx:321 pkg/packagekit/autoupdates.jsx:448
 #: pkg/systemd/overview-cards/motdCard.jsx:73
+#: pkg/packagekit/autoupdates.jsx:448 pkg/kdump/kdump-view.jsx:321
 msgid "Save changes"
 msgstr "Зберегти зміни"
 
@@ -6970,11 +6966,11 @@ msgstr "Заплановане перезавантаження о $0"
 msgid "Sealed-case PC"
 msgstr "ПК з опломбованим корпусом"
 
-#: pkg/shell/nav.tsx:193 pkg/systemd/logs.jsx:390
+#: pkg/systemd/logs.jsx:380 pkg/shell/nav.tsx:192
 msgid "Search"
 msgstr "Пошук"
 
-#: pkg/networkmanager/ip-settings.jsx:304
+#: pkg/networkmanager/ip-settings.jsx:298
 msgid "Search domain"
 msgstr "Домен пошуку"
 
@@ -7042,9 +7038,9 @@ msgstr ""
 msgid "Self-test status"
 msgstr "Стан самоперевірки"
 
+#: pkg/networkmanager/network-interface-members.jsx:207
 #: pkg/networkmanager/network-main.jsx:187
 #: pkg/networkmanager/network-main.jsx:202
-#: pkg/networkmanager/network-interface-members.jsx:209
 msgid "Sending"
 msgstr "Надсилання"
 
@@ -7052,9 +7048,9 @@ msgstr "Надсилання"
 msgid "Serial number"
 msgstr "Серійний номер"
 
-#: pkg/static/login.html:173 pkg/kdump/kdump-view.jsx:257
-#: pkg/kdump/kdump-view.jsx:281 pkg/storaged/nfs/nfs.jsx:328
-#: pkg/networkmanager/ip-settings.jsx:256
+#: pkg/static/login.html:173 pkg/networkmanager/ip-settings.jsx:252
+#: pkg/kdump/kdump-view.jsx:257 pkg/kdump/kdump-view.jsx:281
+#: pkg/storaged/nfs/nfs.jsx:328
 msgid "Server"
 msgstr "Сервер"
 
@@ -7082,10 +7078,10 @@ msgstr "З’єднання розірвано сервером."
 msgid "Server software"
 msgstr "Програмне забезпечення сервера"
 
-#: pkg/storaged/dialog.jsx:1495 pkg/networkmanager/firewall.jsx:210
-#: pkg/metrics/metrics.jsx:776 pkg/metrics/metrics.jsx:777
-#: pkg/metrics/metrics.jsx:832 pkg/metrics/metrics.jsx:870
-#: pkg/metrics/metrics.jsx:930 pkg/metrics/metrics.jsx:936
+#: pkg/networkmanager/firewall.jsx:210 pkg/metrics/metrics.jsx:776
+#: pkg/metrics/metrics.jsx:777 pkg/metrics/metrics.jsx:832
+#: pkg/metrics/metrics.jsx:870 pkg/metrics/metrics.jsx:930
+#: pkg/metrics/metrics.jsx:936 pkg/storaged/dialog.jsx:1493
 msgid "Service"
 msgstr "Служба"
 
@@ -7097,13 +7093,13 @@ msgstr "Помилка у службі"
 msgid "Service logs"
 msgstr "Журнали служб"
 
-#: pkg/systemd/services.html:4 pkg/networkmanager/firewall.jsx:619
-#: pkg/systemd/service.jsx:151 pkg/systemd/service-tabs.jsx:41
+#: pkg/systemd/services.html:4 pkg/systemd/service-tabs.jsx:41
+#: pkg/systemd/service.jsx:151 pkg/networkmanager/firewall.jsx:619
 #: pkg/systemd/manifest.json:0
 msgid "Services"
 msgstr "Служби"
 
-#: pkg/storaged/dialog.jsx:1230
+#: pkg/storaged/dialog.jsx:1228
 msgid "Services using the location"
 msgstr "Служби, що використовують це місце"
 
@@ -7144,7 +7140,7 @@ msgstr "Встановити пароль"
 msgid "Set time"
 msgstr "Встановити час"
 
-#: pkg/networkmanager/mtu.jsx:87
+#: pkg/networkmanager/mtu.jsx:88
 msgid "Set to"
 msgstr "Встановити значення"
 
@@ -7199,7 +7195,7 @@ msgstr "Shift+Insert"
 msgid "Show all $0 rows"
 msgstr "Показати усі $0 рядків"
 
-#: pkg/lib/cockpit-components-password.tsx:191
+#: pkg/lib/cockpit-components-password.tsx:189
 msgid "Show confirmation password"
 msgstr "Показати підтвердження пароля"
 
@@ -7207,15 +7203,15 @@ msgstr "Показати підтвердження пароля"
 msgid "Show fingerprints"
 msgstr "Показати відбитки"
 
-#: pkg/systemd/logs.jsx:362
+#: pkg/systemd/logs.jsx:354
 msgid "Show messages containing given string."
 msgstr "Показати повідомлення, які містять вказаний рядок."
 
-#: pkg/systemd/logs.jsx:350
+#: pkg/systemd/logs.jsx:344
 msgid "Show messages for the specified systemd unit."
 msgstr "Показати повідомлення для вказаного модуля systemd."
 
-#: pkg/systemd/logs.jsx:338
+#: pkg/systemd/logs.jsx:334
 msgid "Show messages from a specific boot."
 msgstr "Показати повідомлення з вказаного завантаження."
 
@@ -7223,7 +7219,7 @@ msgstr "Показати повідомлення з вказаного зава
 msgid "Show more relationships"
 msgstr "Показати більше зв'язків"
 
-#: pkg/lib/cockpit-components-password.tsx:151
+#: pkg/lib/cockpit-components-password.tsx:149
 msgid "Show password"
 msgstr "Показати пароль"
 
@@ -7231,8 +7227,8 @@ msgstr "Показати пароль"
 msgid "Show relationships"
 msgstr "Показати зв'язки"
 
-#: pkg/storaged/block/resize.jsx:651 pkg/storaged/partitions/partition.jsx:101
 #: pkg/storaged/lvm2/block-logical-volume.jsx:205
+#: pkg/storaged/block/resize.jsx:651 pkg/storaged/partitions/partition.jsx:101
 msgid "Shrink"
 msgstr "Стиснути"
 
@@ -7265,35 +7261,36 @@ msgstr "З"
 msgid "Single rank"
 msgstr "Єдиний ранг"
 
+#: pkg/systemd/hwinfo.jsx:295 pkg/storaged/lvm2/block-logical-volume.jsx:291
+#: pkg/storaged/lvm2/thin-pool-logical-volume.jsx:49
+#: pkg/storaged/lvm2/thin-pool-logical-volume.jsx:142
+#: pkg/storaged/lvm2/vdo-pool.jsx:79
+#: pkg/storaged/lvm2/create-logical-volume-dialog.jsx:200
+#: pkg/storaged/lvm2/create-logical-volume-dialog.jsx:207
 #: pkg/storaged/nfs/nfs.jsx:330 pkg/storaged/pages.jsx:726
 #: pkg/storaged/block/resize.jsx:460 pkg/storaged/block/resize.jsx:597
 #: pkg/storaged/block/format-dialog.jsx:315
-#: pkg/storaged/partitions/partition.jsx:235 pkg/storaged/lvm2/vdo-pool.jsx:79
-#: pkg/storaged/lvm2/create-logical-volume-dialog.jsx:200
-#: pkg/storaged/lvm2/create-logical-volume-dialog.jsx:207
-#: pkg/storaged/lvm2/thin-pool-logical-volume.jsx:49
-#: pkg/storaged/lvm2/thin-pool-logical-volume.jsx:142
-#: pkg/storaged/lvm2/block-logical-volume.jsx:291 pkg/systemd/hwinfo.jsx:295
+#: pkg/storaged/partitions/partition.jsx:235
 msgid "Size"
 msgstr "Розмір"
 
-#: pkg/storaged/dialog.jsx:1135
+#: pkg/storaged/dialog.jsx:1133
 msgid "Size cannot be negative"
 msgstr "Розмір не може бути від’ємним"
 
-#: pkg/storaged/dialog.jsx:1133
+#: pkg/storaged/dialog.jsx:1131
 msgid "Size cannot be zero"
 msgstr "Розмір не може бути нульовим"
 
-#: pkg/storaged/dialog.jsx:1137
+#: pkg/storaged/dialog.jsx:1135
 msgid "Size is too large"
 msgstr "Розмір є надто великим"
 
-#: pkg/storaged/dialog.jsx:1131
+#: pkg/storaged/dialog.jsx:1129
 msgid "Size must be a number"
 msgstr "Розмір має бути числом"
 
-#: pkg/storaged/dialog.jsx:1139
+#: pkg/storaged/dialog.jsx:1137
 msgid "Size must be at least $0"
 msgstr "Розмір має бути не меншим за $0"
 
@@ -7419,10 +7416,10 @@ msgstr "Швидкість"
 msgid "Stable"
 msgstr "Стабільний"
 
-#: pkg/storaged/mdraid/mdraid.jsx:227
-#: pkg/storaged/legacy-vdo/legacy-vdo.jsx:150 pkg/storaged/swap/swap.jsx:98
+#: pkg/systemd/service-details.jsx:147 pkg/storaged/swap/swap.jsx:98
 #: pkg/storaged/stratis/stopped-pool.jsx:161
-#: pkg/systemd/service-details.jsx:147
+#: pkg/storaged/legacy-vdo/legacy-vdo.jsx:150
+#: pkg/storaged/mdraid/mdraid.jsx:227
 msgid "Start"
 msgstr "Почати"
 
@@ -7434,7 +7431,7 @@ msgstr "Запустити і увімкнути"
 msgid "Start multipath"
 msgstr "Запустити Multipath"
 
-#: pkg/networkmanager/networkmanager.jsx:78 pkg/systemd/service-details.jsx:457
+#: pkg/systemd/service-details.jsx:457 pkg/networkmanager/networkmanager.jsx:78
 msgid "Start service"
 msgstr "Запустити службу"
 
@@ -7442,13 +7439,13 @@ msgstr "Запустити службу"
 msgid "Start showing entries on or newer than the specified date."
 msgstr "Почати показ записів, дата яких є рівною вказаній або новішою за неї."
 
-#: pkg/systemd/logs.jsx:326
+#: pkg/systemd/logs.jsx:324
 msgid "Start showing entries on or older than the specified date."
 msgstr ""
 "Показати показ записів, дата яких є рівною вказаній або старішою за неї."
 
-#: pkg/users/account-logs-panel.jsx:77 pkg/storaged/dialog.jsx:1478
-#: pkg/storaged/dialog.jsx:1498
+#: pkg/storaged/dialog.jsx:1476 pkg/storaged/dialog.jsx:1496
+#: pkg/users/account-logs-panel.jsx:77
 msgid "Started"
 msgstr "Почато"
 
@@ -7460,18 +7457,18 @@ msgstr "Запускаємо пристрій MDRAID $target"
 msgid "Starting swapspace $target"
 msgstr "Запускаємо резервну область пам’яті $target"
 
-#: pkg/storaged/mdraid/mdraid.jsx:304 pkg/systemd/hwinfo.jsx:295
-#: pkg/systemd/services-list.jsx:40 pkg/systemd/services-list.jsx:46
+#: pkg/systemd/hwinfo.jsx:295 pkg/systemd/services-list.jsx:40
+#: pkg/systemd/services-list.jsx:46 pkg/storaged/mdraid/mdraid.jsx:304
 msgid "State"
 msgstr "Стан"
 
-#: pkg/systemd/services.jsx:253 pkg/systemd/services.jsx:689
-#: pkg/systemd/service-details.jsx:492
+#: pkg/systemd/service-details.jsx:492 pkg/systemd/services.jsx:253
+#: pkg/systemd/services.jsx:689
 msgid "Static"
 msgstr "Статичний"
 
-#: pkg/packagekit/updates.jsx:901 pkg/networkmanager/network-interface.jsx:266
 #: pkg/systemd/service-details.jsx:666
+#: pkg/networkmanager/network-interface.jsx:266 pkg/packagekit/updates.jsx:901
 msgid "Status"
 msgstr "Стан"
 
@@ -7483,9 +7480,10 @@ msgstr "Паличковий ПК"
 msgid "Sticky"
 msgstr "Липкий"
 
-#: pkg/storaged/mdraid/mdraid.jsx:306 pkg/storaged/legacy-vdo/legacy-vdo.jsx:62
-#: pkg/storaged/legacy-vdo/legacy-vdo.jsx:149 pkg/storaged/swap/swap.jsx:95
-#: pkg/systemd/service-details.jsx:143
+#: pkg/systemd/service-details.jsx:143 pkg/storaged/swap/swap.jsx:95
+#: pkg/storaged/legacy-vdo/legacy-vdo.jsx:62
+#: pkg/storaged/legacy-vdo/legacy-vdo.jsx:149
+#: pkg/storaged/mdraid/mdraid.jsx:306
 msgid "Stop"
 msgstr "Зупинити"
 
@@ -7558,7 +7556,7 @@ msgstr "Блокові пристрої Stratis"
 msgid "Stratis blockdevs can not be made smaller"
 msgstr "Блокові пристрої Stratis не можна звужувати"
 
-#: pkg/storaged/stratis/filesystem.jsx:146 pkg/storaged/stratis/pool.jsx:96
+#: pkg/storaged/stratis/pool.jsx:96 pkg/storaged/stratis/filesystem.jsx:146
 msgid "Stratis filesystem"
 msgstr "Файлова система Stratis"
 
@@ -7570,18 +7568,18 @@ msgstr "Файлові системи Stratis"
 msgid "Stratis filesystems pool"
 msgstr "Буфер файлових систем Stratis"
 
-#: pkg/storaged/stratis/blockdev.jsx:84 pkg/storaged/stratis/pool.jsx:295
-#: pkg/storaged/stratis/stopped-pool.jsx:151
+#: pkg/storaged/stratis/pool.jsx:295 pkg/storaged/stratis/stopped-pool.jsx:151
+#: pkg/storaged/stratis/blockdev.jsx:84
 msgid "Stratis pool"
 msgstr "Буфер Stratis"
 
-#: pkg/storaged/lvm2/create-logical-volume-dialog.jsx:72
 #: pkg/storaged/lvm2/block-logical-volume.jsx:260
+#: pkg/storaged/lvm2/create-logical-volume-dialog.jsx:72
 msgid "Striped (RAID 0)"
 msgstr "Смуговий (RAID 0)"
 
-#: pkg/storaged/lvm2/create-logical-volume-dialog.jsx:82
 #: pkg/storaged/lvm2/block-logical-volume.jsx:262
+#: pkg/storaged/lvm2/create-logical-volume-dialog.jsx:82
 msgid "Striped and mirrored (RAID 10)"
 msgstr "Смуговий і віддзеркалений (RAID 10)"
 
@@ -7617,7 +7615,7 @@ msgstr "Не вдалося підписатися на сигнали systemd: 
 msgid "Successful"
 msgstr "Успішно"
 
-#: pkg/systemd/logs.jsx:398
+#: pkg/systemd/logs.jsx:388
 msgid "Successfully copied to clipboard"
 msgstr "Успішно скопійовано до буфера обміну"
 
@@ -7625,12 +7623,12 @@ msgstr "Успішно скопійовано до буфера обміну"
 msgid "Successfully copied to clipboard!"
 msgstr "Успішно скопійовано до буфера!"
 
-#: pkg/packagekit/autoupdates.jsx:426 pkg/systemd/timer-dialog.jsx:314
+#: pkg/systemd/timer-dialog.jsx:314 pkg/packagekit/autoupdates.jsx:426
 msgid "Sundays"
 msgstr "Неділі"
 
-#: pkg/storaged/swap/swap.jsx:88 pkg/metrics/metrics.jsx:135
-#: pkg/metrics/metrics.jsx:689 pkg/metrics/metrics.jsx:1949
+#: pkg/metrics/metrics.jsx:135 pkg/metrics/metrics.jsx:689
+#: pkg/metrics/metrics.jsx:1949 pkg/storaged/swap/swap.jsx:88
 msgid "Swap"
 msgstr "Свопінґ"
 
@@ -7642,14 +7640,14 @@ msgstr "Тут не можна змінювати розмір резервно�
 msgid "Swap out"
 msgstr "Резервування"
 
-#: pkg/networkmanager/network-interface.jsx:163
 #: pkg/networkmanager/network-interface-members.jsx:68
 #: pkg/networkmanager/network-interface-members.jsx:88
+#: pkg/networkmanager/network-interface.jsx:163
 msgid "Switch off $0"
 msgstr "Вимкнути $0"
 
-#: pkg/networkmanager/network-interface.jsx:144
 #: pkg/networkmanager/network-interface-members.jsx:79
+#: pkg/networkmanager/network-interface.jsx:144
 msgid "Switch on $0"
 msgstr "Увімкнути $0"
 
@@ -7661,8 +7659,8 @@ msgstr "Перемкнутися на адміністративний дост�
 msgid "Switch to limited access"
 msgstr "Перемкнутися на обмежений доступ"
 
-#: pkg/networkmanager/network-interface.jsx:162
 #: pkg/networkmanager/network-interface-members.jsx:87
+#: pkg/networkmanager/network-interface.jsx:162
 msgid ""
 "Switching off $0 will break the connection to the server, and will make the "
 "administration UI unavailable."
@@ -7670,8 +7668,8 @@ msgstr ""
 "Вимикання $0 призведе до розірвання з’єднання із сервером і зробить "
 "адміністративний інтерфейс користувача недоступним."
 
-#: pkg/networkmanager/network-interface.jsx:143
 #: pkg/networkmanager/network-interface-members.jsx:78
+#: pkg/networkmanager/network-interface.jsx:143
 msgid ""
 "Switching on $0 will break the connection to the server, and will make the "
 "administration UI unavailable."
@@ -7695,7 +7693,7 @@ msgstr "Синхронізація"
 msgid "Synchronizing MDRAID device $target"
 msgstr "Синхронізуємо пристрій MDRAID $target"
 
-#: pkg/shell/nav.tsx:72 pkg/shell/nav.tsx:412 pkg/systemd/services.jsx:924
+#: pkg/systemd/services.jsx:924 pkg/shell/nav.tsx:72 pkg/shell/nav.tsx:411
 msgid "System"
 msgstr "Система"
 
@@ -8012,15 +8010,15 @@ msgstr "Не можна вилучати останній слот ключів"
 msgid "The last mounted subvolume can not be deleted"
 msgstr "Не можна вилучати останній змонтований підтом"
 
-#: pkg/storaged/dialog.jsx:1513
+#: pkg/storaged/dialog.jsx:1511
 msgid "The listed processes and services will be forcefully stopped."
 msgstr "Процеси і служби зі списку буде примусово зупинено."
 
-#: pkg/storaged/dialog.jsx:1515
+#: pkg/storaged/dialog.jsx:1513
 msgid "The listed processes will be forcefully stopped."
 msgstr "Процеси зі списку буде примусово зупинено."
 
-#: pkg/storaged/dialog.jsx:1517
+#: pkg/storaged/dialog.jsx:1515
 msgid "The listed services will be forcefully stopped."
 msgstr "Служби зі списку буде примусово зупинено."
 
@@ -8034,11 +8032,11 @@ msgstr ""
 msgid "The machine is rebooting"
 msgstr "Комп’ютер перезавантажується"
 
-#: pkg/storaged/dialog.jsx:1471
+#: pkg/storaged/dialog.jsx:1469
 msgid "The mount point $0 is in use by these processes:"
 msgstr "Точка монтування $0 перебуває у користуванні такими процесами:"
 
-#: pkg/storaged/dialog.jsx:1491
+#: pkg/storaged/dialog.jsx:1489
 msgid "The mount point $0 is in use by these services:"
 msgstr "Точка монтування $0 перебуває у користуванні такими службами:"
 
@@ -8180,7 +8178,7 @@ msgstr ""
 msgid "These additional steps are necessary:"
 msgstr "Потрібні такі додаткові кроки:"
 
-#: pkg/storaged/dialog.jsx:1326
+#: pkg/storaged/dialog.jsx:1324
 msgid "These changes will be made:"
 msgstr "Буде внесено такі зміни:"
 
@@ -8219,7 +8217,7 @@ msgstr "Цей пристрій не можна використовувати �
 msgid "This device cannot be managed here."
 msgstr "Тут не можна керувати цим пристроєм."
 
-#: pkg/storaged/dialog.jsx:1207
+#: pkg/storaged/dialog.jsx:1205
 msgid "This device is currently in use."
 msgstr "Цей пристрій зараз перебуває у користуванні."
 
@@ -8396,7 +8394,7 @@ msgstr ""
 "Ця програма для перегляду інтернету є надто старою для роботи з вебконсоллю "
 "(не вистачає можливості $0)"
 
-#: pkg/systemd/logs.jsx:339
+#: pkg/systemd/logs.jsx:335
 msgid ""
 "This will add a match for '_BOOT_ID='. If not specified the logs for the "
 "current boot will be shown. If the boot ID is omitted, a positive offset "
@@ -8414,7 +8412,7 @@ msgstr ""
 "хронологічному порядку, 2 — друге завантаження тощо; а -0 — останнє "
 "завантаження, -1 — завантаження перед останнім тощо."
 
-#: pkg/systemd/logs.jsx:351
+#: pkg/systemd/logs.jsx:345
 msgid ""
 "This will add match for '_SYSTEMD_UNIT=', 'COREDUMP_UNIT=' and 'UNIT=' to "
 "find all possible messages for the given unit. Can contain more units "
@@ -8436,7 +8434,7 @@ msgstr ""
 "У цій зоні міститься служба cockpit. Переконайтеся, що застосування цієї "
 "зони не поширюється на ваше поточне з'єднання за допомогою вебконсолі."
 
-#: pkg/packagekit/autoupdates.jsx:423 pkg/systemd/timer-dialog.jsx:311
+#: pkg/systemd/timer-dialog.jsx:311 pkg/packagekit/autoupdates.jsx:423
 msgid "Thursdays"
 msgstr "Четверги"
 
@@ -8444,7 +8442,7 @@ msgstr "Четверги"
 msgid "Tier"
 msgstr "Клас"
 
-#: pkg/packagekit/history.jsx:113 pkg/systemd/logs.jsx:193
+#: pkg/systemd/logs.jsx:193 pkg/packagekit/history.jsx:113
 msgid "Time"
 msgstr "Час"
 
@@ -8490,7 +8488,7 @@ msgstr ""
 "зареєструвати у Red Hat або за допомогою порталу клієнтів Red Hat, або за "
 "допомогою локального сервера передплати."
 
-#: pkg/shell/hosts_dialog.jsx:680 pkg/static/login.js:846
+#: pkg/static/login.js:846 pkg/shell/hosts_dialog.jsx:680
 #: pkg/lib/cockpit-connect-ssh.tsx:137
 msgid ""
 "To verify a fingerprint, run the following on $0 while physically sitting at "
@@ -8507,8 +8505,8 @@ msgstr "Сьогодні"
 msgid "Toggle"
 msgstr "Перемкнути"
 
-#: pkg/users/expiration-dialogs.js:49 pkg/systemd/timer-dialog.jsx:339
-#: pkg/lib/serverTime.js:596 pkg/lib/cockpit-components-shutdown.jsx:209
+#: pkg/systemd/timer-dialog.jsx:339 pkg/users/expiration-dialogs.js:49
+#: pkg/lib/cockpit-components-shutdown.jsx:209 pkg/lib/serverTime.js:596
 msgid "Toggle date picker"
 msgstr "Перемкнути засіб вибору дати"
 
@@ -8520,7 +8518,7 @@ msgstr "Перемкнути фільтри"
 msgid "Too much data"
 msgstr "Забагато даних"
 
-#: pkg/shell/nav.tsx:415
+#: pkg/shell/nav.tsx:414
 msgid "Tools"
 msgstr "Інструменти"
 
@@ -8552,7 +8550,7 @@ msgstr "Проміжний"
 msgid "Transmitting"
 msgstr "Передавання"
 
-#: pkg/systemd/timer-dialog.jsx:174 pkg/systemd/services-list.jsx:45
+#: pkg/systemd/services-list.jsx:45 pkg/systemd/timer-dialog.jsx:174
 msgid "Trigger"
 msgstr "Перемикач"
 
@@ -8576,7 +8574,7 @@ msgstr "Діагностика проблем…"
 msgid "Trust and add host"
 msgstr "Довіряти і додати вузол"
 
-#: pkg/storaged/crypto/keyslots.jsx:563 pkg/storaged/stratis/utils.jsx:86
+#: pkg/storaged/stratis/utils.jsx:86 pkg/storaged/crypto/keyslots.jsx:563
 msgid "Trust key"
 msgstr "Довіряти ключу"
 
@@ -8592,7 +8590,7 @@ msgstr "Спробувати ще раз"
 msgid "Trying to synchronize with $0"
 msgstr "Намагаємося синхронізуватися з $0"
 
-#: pkg/packagekit/autoupdates.jsx:421 pkg/systemd/timer-dialog.jsx:309
+#: pkg/systemd/timer-dialog.jsx:309 pkg/packagekit/autoupdates.jsx:421
 msgid "Tuesdays"
 msgstr "Вівторки"
 
@@ -8626,12 +8624,12 @@ msgstr "Tuned вимкнено"
 msgid "Turn on administrative access"
 msgstr "Увімкнути адміністративний доступ"
 
+#: pkg/systemd/hwinfo.jsx:83 pkg/systemd/hwinfo.jsx:295
 #: pkg/packagekit/autoupdates.jsx:390 pkg/storaged/pages.jsx:724
-#: pkg/storaged/block/unrecognized-data.jsx:51
 #: pkg/storaged/block/format-dialog.jsx:310
+#: pkg/storaged/block/unrecognized-data.jsx:51
 #: pkg/storaged/partitions/partition.jsx:183
 #: pkg/storaged/partitions/partition.jsx:229 pkg/shell/credentials.tsx:107
-#: pkg/systemd/hwinfo.jsx:83 pkg/systemd/hwinfo.jsx:295
 msgid "Type"
 msgstr "Тип"
 
@@ -8648,7 +8646,7 @@ msgid "Type must contain exactly two hexadecimal characters (0 to 9, A to F)."
 msgstr ""
 "Тип має містити точно дві шістнадцяткові цифри (від 0 до 9 або від A до F)."
 
-#: pkg/systemd/logs.jsx:386
+#: pkg/systemd/logs.jsx:376
 msgid "Type to filter"
 msgstr "Введіть щось для фільтрування"
 
@@ -8656,12 +8654,12 @@ msgstr "Введіть щось для фільтрування"
 msgid "UDP"
 msgstr "UDP"
 
-#: pkg/storaged/mdraid/mdraid.jsx:308 pkg/storaged/btrfs/filesystem.jsx:62
-#: pkg/storaged/btrfs/device.jsx:81 pkg/storaged/btrfs/volume.jsx:205
-#: pkg/storaged/partitions/partition.jsx:228
+#: pkg/storaged/stratis/pool.jsx:541 pkg/storaged/stratis/stopped-pool.jsx:180
+#: pkg/storaged/lvm2/volume-group.jsx:368
 #: pkg/storaged/lvm2/physical-volume.jsx:120
-#: pkg/storaged/lvm2/volume-group.jsx:368 pkg/storaged/stratis/pool.jsx:541
-#: pkg/storaged/stratis/stopped-pool.jsx:180
+#: pkg/storaged/partitions/partition.jsx:228 pkg/storaged/btrfs/device.jsx:81
+#: pkg/storaged/btrfs/volume.jsx:205 pkg/storaged/btrfs/filesystem.jsx:62
+#: pkg/storaged/mdraid/mdraid.jsx:308
 msgid "UUID"
 msgstr "UUID"
 
@@ -8763,8 +8761,8 @@ msgstr "Скасувати"
 msgid "Unexpected PackageKit error during installation of $0: $1"
 msgstr "Неочікувана помилка PackageKit під час встановлення $0: $1"
 
-#: pkg/users/dialog-utils.js:65 pkg/shell/shell-modals.tsx:201
-#: pkg/networkmanager/interfaces.js:50
+#: pkg/networkmanager/interfaces.js:50 pkg/users/dialog-utils.js:65
+#: pkg/shell/shell-modals.tsx:201
 msgid "Unexpected error"
 msgstr "Неочікувана помилка"
 
@@ -8776,17 +8774,17 @@ msgstr "Неочікувані розділи"
 msgid "Unformatted data"
 msgstr "Неформатовані дані"
 
-#: pkg/systemd/logs.jsx:349 pkg/systemd/services-list.jsx:39
-#: pkg/systemd/services-list.jsx:44
+#: pkg/systemd/services-list.jsx:39 pkg/systemd/services-list.jsx:44
+#: pkg/systemd/logs.jsx:343
 msgid "Unit"
 msgstr "Модуль"
 
-#: pkg/storaged/swap/swap.jsx:116 pkg/networkmanager/network-interface.jsx:200
-#: pkg/networkmanager/network-interface.jsx:202
-#: pkg/networkmanager/interfaces.js:509 pkg/networkmanager/interfaces.js:1035
 #: pkg/systemd/hw-detect.js:85 pkg/systemd/hw-detect.js:94
 #: pkg/systemd/hw-detect.js:101 pkg/systemd/hw-detect.js:104
 #: pkg/systemd/hw-detect.js:111 pkg/systemd/hw-detect.js:112
+#: pkg/networkmanager/interfaces.js:509 pkg/networkmanager/interfaces.js:1035
+#: pkg/networkmanager/network-interface.jsx:200
+#: pkg/networkmanager/network-interface.jsx:202 pkg/storaged/swap/swap.jsx:116
 #: pkg/lib/machine-info.js:61 pkg/lib/machine-info.js:227
 #: pkg/lib/machine-info.js:235 pkg/lib/machine-info.js:237
 #: pkg/lib/machine-info.js:244 pkg/lib/machine-info.js:246
@@ -8827,9 +8825,10 @@ msgstr "Невідома назва служби"
 msgid "Unknown type"
 msgstr "Невідомий тип"
 
-#: pkg/storaged/crypto/actions.jsx:40 pkg/storaged/crypto/actions.jsx:45
+#: pkg/storaged/stratis/stopped-pool.jsx:106 pkg/storaged/crypto/actions.jsx:40
+#: pkg/storaged/crypto/actions.jsx:45
 #: pkg/storaged/crypto/locked-encrypted-data.jsx:36
-#: pkg/storaged/stratis/stopped-pool.jsx:106 pkg/shell/credentials.tsx:242
+#: pkg/shell/credentials.tsx:242
 msgid "Unlock"
 msgstr "Розблокувати"
 
@@ -8862,9 +8861,10 @@ msgstr "Розблоковуємо диск"
 msgid "Unmanaged interfaces"
 msgstr "Некеровані інтерфейси"
 
+#: pkg/storaged/stratis/filesystem.jsx:160 pkg/storaged/nfs/nfs.jsx:309
+#: pkg/storaged/filesystem/filesystem.jsx:102
 #: pkg/storaged/filesystem/mounting-dialog.jsx:357
-#: pkg/storaged/filesystem/filesystem.jsx:102 pkg/storaged/nfs/nfs.jsx:309
-#: pkg/storaged/btrfs/subvolume.jsx:358 pkg/storaged/stratis/filesystem.jsx:160
+#: pkg/storaged/btrfs/subvolume.jsx:358
 msgid "Unmount"
 msgstr "Демонтувати"
 
@@ -8910,7 +8910,7 @@ msgid "Unsupported shell. Check the journal for details."
 msgstr ""
 "Непідтримувана оболонка. Ознайомтеся із журналом, щоб дізнатися більше."
 
-#: pkg/systemd/logs.jsx:325
+#: pkg/systemd/logs.jsx:323
 msgid "Until"
 msgstr "До"
 
@@ -8974,14 +8974,14 @@ msgstr "Оновлюємо стан…"
 msgid "Upload"
 msgstr "Вивантажити"
 
-#: pkg/storaged/filesystem/filesystem.jsx:152
-#: pkg/storaged/block/unrecognized-data.jsx:50
-#: pkg/storaged/btrfs/filesystem.jsx:64 pkg/storaged/btrfs/device.jsx:83
-#: pkg/storaged/btrfs/volume.jsx:207 pkg/storaged/lvm2/physical-volume.jsx:122
-#: pkg/storaged/stratis/filesystem.jsx:256 pkg/storaged/stratis/pool.jsx:543
 #: pkg/systemd/overview-cards/usageCard.jsx:128 pkg/metrics/metrics.jsx:1948
 #: pkg/metrics/metrics.jsx:1949 pkg/metrics/metrics.jsx:1950
-#: pkg/metrics/metrics.jsx:1951
+#: pkg/metrics/metrics.jsx:1951 pkg/storaged/stratis/pool.jsx:543
+#: pkg/storaged/stratis/filesystem.jsx:256
+#: pkg/storaged/lvm2/physical-volume.jsx:122
+#: pkg/storaged/filesystem/filesystem.jsx:152
+#: pkg/storaged/block/unrecognized-data.jsx:50 pkg/storaged/btrfs/device.jsx:83
+#: pkg/storaged/btrfs/volume.jsx:207 pkg/storaged/btrfs/filesystem.jsx:64
 msgid "Usage"
 msgstr "Використання"
 
@@ -8989,19 +8989,19 @@ msgstr "Використання"
 msgid "Usage of $0"
 msgstr "Вживання $0"
 
-#: pkg/storaged/dialog.jsx:1212
+#: pkg/storaged/dialog.jsx:1210
 msgid "Use"
 msgstr "Використати"
 
-#: pkg/storaged/dialog.jsx:693 pkg/networkmanager/dialogs-common.jsx:107
+#: pkg/networkmanager/dialogs-common.jsx:107 pkg/storaged/dialog.jsx:693
 msgid "Use $0"
 msgstr "Використати $0"
 
-#: pkg/storaged/legacy-vdo/legacy-vdo.jsx:328 pkg/storaged/lvm2/vdo-pool.jsx:85
+#: pkg/storaged/lvm2/vdo-pool.jsx:85 pkg/storaged/legacy-vdo/legacy-vdo.jsx:328
 msgid "Use compression"
 msgstr "Скористатися стисканням"
 
-#: pkg/storaged/legacy-vdo/legacy-vdo.jsx:337 pkg/storaged/lvm2/vdo-pool.jsx:89
+#: pkg/storaged/lvm2/vdo-pool.jsx:89 pkg/storaged/legacy-vdo/legacy-vdo.jsx:337
 msgid "Use deduplication"
 msgstr "Скористатися скасуванням дублювання"
 
@@ -9021,8 +9021,8 @@ msgstr "Використати вказані нижче ключі для ро�
 msgid "Use verbose logging"
 msgstr "Скористатися докладним журналюванням"
 
-#: pkg/storaged/swap/swap.jsx:125 pkg/metrics/metrics.jsx:777
-#: pkg/metrics/metrics.jsx:871
+#: pkg/metrics/metrics.jsx:777 pkg/metrics/metrics.jsx:871
+#: pkg/storaged/swap/swap.jsx:125
 msgid "Used"
 msgstr "Використано"
 
@@ -9033,7 +9033,7 @@ msgstr ""
 "Корисно для монтувань, які є необов'язковими або потребують взаємодії "
 "(зокрема паролів)"
 
-#: pkg/storaged/dialog.jsx:1477 pkg/systemd/services.jsx:928
+#: pkg/systemd/services.jsx:928 pkg/storaged/dialog.jsx:1475
 msgid "User"
 msgstr "Користувач"
 
@@ -9066,8 +9066,8 @@ msgstr "Ім'я користувача"
 msgid "User name cannot be empty"
 msgstr "Ім’я користувача не може бути порожнім"
 
-#: pkg/users/accounts-list.js:380 pkg/storaged/iscsi/create-dialog.jsx:33
-#: pkg/storaged/iscsi/create-dialog.jsx:138
+#: pkg/storaged/iscsi/create-dialog.jsx:33
+#: pkg/storaged/iscsi/create-dialog.jsx:138 pkg/users/accounts-list.js:380
 msgid "Username"
 msgstr "Користувач"
 
@@ -9109,7 +9109,7 @@ msgstr "Перевіряємо чинність адреси"
 msgid "Validating authentication token"
 msgstr "Перевіряємо ключ розпізнавання"
 
-#: pkg/storaged/drive/drive.jsx:122 pkg/systemd/hwinfo.jsx:282
+#: pkg/systemd/hwinfo.jsx:282 pkg/storaged/drive/drive.jsx:122
 msgid "Vendor"
 msgstr "Постачальник"
 
@@ -9121,7 +9121,7 @@ msgstr "Перевірено"
 msgid "Verify fingerprint"
 msgstr "Перевірити відбиток"
 
-#: pkg/storaged/crypto/keyslots.jsx:559 pkg/storaged/stratis/utils.jsx:83
+#: pkg/storaged/stratis/utils.jsx:83 pkg/storaged/crypto/keyslots.jsx:559
 msgid "Verify key"
 msgstr "Перевірити ключ"
 
@@ -9129,7 +9129,7 @@ msgstr "Перевірити ключ"
 msgid "Verifying"
 msgstr "Перевіряємо"
 
-#: pkg/packagekit/updates.jsx:440 pkg/systemd/hwinfo.jsx:93
+#: pkg/systemd/hwinfo.jsx:93 pkg/packagekit/updates.jsx:440
 msgid "Version"
 msgstr "Версія"
 
@@ -9228,8 +9228,8 @@ msgstr "Не вдалося створити резервну копію тим�
 msgid "Volume group"
 msgstr "Група томів"
 
-#: pkg/storaged/lvm2/physical-volume.jsx:74
 #: pkg/storaged/lvm2/volume-group.jsx:225
+#: pkg/storaged/lvm2/physical-volume.jsx:74
 msgid "Volume group is missing physical volumes"
 msgstr "У групі томів пропущено фізичні томи"
 
@@ -9294,7 +9294,7 @@ msgstr "Вебконсоль працює у режимі обмеженого �
 msgid "Web console logo"
 msgstr "Логотип вебконсолі"
 
-#: pkg/packagekit/autoupdates.jsx:422 pkg/systemd/timer-dialog.jsx:310
+#: pkg/systemd/timer-dialog.jsx:310 pkg/packagekit/autoupdates.jsx:422
 msgid "Wednesdays"
 msgstr "Середи"
 
@@ -9369,7 +9369,7 @@ msgstr "Щорічно"
 msgid "Yes"
 msgstr "Так"
 
-#: pkg/shell/hosts_dialog.jsx:691 pkg/static/login.js:843
+#: pkg/static/login.js:843 pkg/shell/hosts_dialog.jsx:691
 #: pkg/lib/cockpit-connect-ssh.tsx:148
 msgid "You are connecting to $0 for the first time."
 msgstr "Ви вперше встановлюєте з'єднання із $0."
@@ -9470,8 +9470,8 @@ msgstr "abrt"
 msgid "access"
 msgstr "доступ"
 
-#: pkg/shell/active-pages-modal.tsx:92
 #: pkg/systemd/overview-cards/profiles-menu-dialog-body.jsx:56
+#: pkg/shell/active-pages-modal.tsx:92
 msgid "active"
 msgstr "активний"
 
@@ -9511,7 +9511,7 @@ msgstr "avc"
 msgid "average: $0%"
 msgstr "середнє: $0%"
 
-#: pkg/storaged/dialog.jsx:1189
+#: pkg/storaged/dialog.jsx:1187
 msgid "backing device for VDO device"
 msgstr "резервний пристрій для пристрою VDO"
 
@@ -9555,8 +9555,8 @@ msgstr "Підтом btrfs"
 msgid "btrfs subvolume $0 of $1"
 msgstr "Підтом BTRFS $0 з $1"
 
-#: pkg/storaged/btrfs/filesystem.jsx:72 pkg/storaged/btrfs/subvolume.jsx:489
 #: pkg/storaged/btrfs/volume.jsx:223 pkg/storaged/btrfs/volume.jsx:235
+#: pkg/storaged/btrfs/subvolume.jsx:489 pkg/storaged/btrfs/filesystem.jsx:72
 msgid "btrfs subvolumes"
 msgstr "Підтоми BTRFS"
 
@@ -9625,18 +9625,18 @@ msgstr "вимкнути"
 msgid "debug"
 msgstr "діагностика"
 
-#: pkg/storaged/mdraid/mdraid.jsx:119 pkg/storaged/legacy-vdo/legacy-vdo.jsx:80
-#: pkg/storaged/block/format-dialog.jsx:208
-#: pkg/storaged/btrfs/subvolume.jsx:235 pkg/storaged/btrfs/volume.jsx:66
-#: pkg/storaged/partitions/format-disk-dialog.jsx:35
-#: pkg/storaged/partitions/partition.jsx:43
-#: pkg/storaged/lvm2/block-logical-volume.jsx:64
+#: pkg/storaged/stratis/pool.jsx:162 pkg/storaged/stratis/filesystem.jsx:112
 #: pkg/storaged/lvm2/volume-group.jsx:83 pkg/storaged/lvm2/volume-group.jsx:311
-#: pkg/storaged/stratis/filesystem.jsx:112 pkg/storaged/stratis/pool.jsx:162
+#: pkg/storaged/lvm2/block-logical-volume.jsx:64
+#: pkg/storaged/block/format-dialog.jsx:208
+#: pkg/storaged/partitions/partition.jsx:43
+#: pkg/storaged/partitions/format-disk-dialog.jsx:35
+#: pkg/storaged/legacy-vdo/legacy-vdo.jsx:80 pkg/storaged/btrfs/volume.jsx:66
+#: pkg/storaged/btrfs/subvolume.jsx:235 pkg/storaged/mdraid/mdraid.jsx:119
 msgid "delete"
 msgstr "вилучити"
 
-#: pkg/storaged/dialog.jsx:1192
+#: pkg/storaged/dialog.jsx:1190
 msgid "device of btrfs volume"
 msgstr "пристрій тому BTRFS"
 
@@ -9668,19 +9668,19 @@ msgstr "домен"
 msgid "drive"
 msgstr "диск"
 
-#: pkg/users/account-details.js:283 pkg/users/account-details.js:313
-#: pkg/storaged/filesystem/filesystem.jsx:145
-#: pkg/storaged/filesystem/utils.jsx:221 pkg/storaged/crypto/encryption.jsx:234
-#: pkg/storaged/crypto/encryption.jsx:237 pkg/storaged/btrfs/volume.jsx:192
-#: pkg/storaged/partitions/partition.jsx:232
-#: pkg/storaged/lvm2/thin-pool-logical-volume.jsx:140
-#: pkg/storaged/lvm2/block-logical-volume.jsx:288
-#: pkg/storaged/lvm2/volume-group.jsx:366
-#: pkg/storaged/stratis/filesystem.jsx:250
-#: pkg/storaged/stratis/filesystem.jsx:265 pkg/storaged/stratis/pool.jsx:539
-#: pkg/networkmanager/network-interface.jsx:349
-#: pkg/networkmanager/dialogs-common.jsx:251
 #: pkg/systemd/overview-cards/configurationCard.jsx:57
+#: pkg/networkmanager/dialogs-common.jsx:251
+#: pkg/networkmanager/network-interface.jsx:349
+#: pkg/storaged/stratis/pool.jsx:539 pkg/storaged/stratis/filesystem.jsx:250
+#: pkg/storaged/stratis/filesystem.jsx:265
+#: pkg/storaged/lvm2/volume-group.jsx:366
+#: pkg/storaged/lvm2/block-logical-volume.jsx:288
+#: pkg/storaged/lvm2/thin-pool-logical-volume.jsx:140
+#: pkg/storaged/crypto/encryption.jsx:234
+#: pkg/storaged/crypto/encryption.jsx:237 pkg/storaged/filesystem/utils.jsx:221
+#: pkg/storaged/filesystem/filesystem.jsx:145
+#: pkg/storaged/partitions/partition.jsx:232 pkg/storaged/btrfs/volume.jsx:192
+#: pkg/users/account-details.js:283 pkg/users/account-details.js:313
 msgid "edit"
 msgstr "редагувати"
 
@@ -9862,7 +9862,7 @@ msgstr "iscsi"
 msgid "journal"
 msgstr "журнал"
 
-#: pkg/systemd/logs.jsx:396
+#: pkg/systemd/logs.jsx:386
 msgid "journalctl manpage"
 msgstr "сторінка підручника з journalctl"
 
@@ -9918,11 +9918,11 @@ msgstr "маска"
 msgid "max: $0%"
 msgstr "макс.: $0%"
 
-#: pkg/storaged/dialog.jsx:1188
+#: pkg/storaged/dialog.jsx:1186
 msgid "member of MDRAID device"
 msgstr "елемент пристрою MDRAID"
 
-#: pkg/storaged/dialog.jsx:1190
+#: pkg/storaged/dialog.jsx:1188
 msgid "member of Stratis pool"
 msgstr "частина буфера Stratis"
 
@@ -9982,12 +9982,12 @@ msgstr "Сервер nfs не є коректним сервером IPv6"
 msgid "nice"
 msgstr "пріоритетність"
 
-#: pkg/storaged/crypto/encryption.jsx:233
-#: pkg/storaged/crypto/encryption.jsx:236
+#: pkg/systemd/overview-cards/tuned-dialog.jsx:86
 #: pkg/storaged/stratis/filesystem.jsx:263
 #: pkg/storaged/stratis/stopped-pool.jsx:183
 #: pkg/storaged/stratis/stopped-pool.jsx:187
-#: pkg/systemd/overview-cards/tuned-dialog.jsx:86
+#: pkg/storaged/crypto/encryption.jsx:233
+#: pkg/storaged/crypto/encryption.jsx:236
 msgid "none"
 msgstr "немає"
 
@@ -10031,7 +10031,7 @@ msgstr "passwd"
 msgid "password"
 msgstr "пароль"
 
-#: pkg/lib/cockpit-components-password.tsx:160
+#: pkg/lib/cockpit-components-password.tsx:158
 msgid "password quality"
 msgstr "якість пароля"
 
@@ -10055,7 +10055,7 @@ msgstr "pcp"
 msgid "performance"
 msgstr "швидкодія"
 
-#: pkg/storaged/dialog.jsx:1187
+#: pkg/storaged/dialog.jsx:1185
 msgid "physical volume of LVM2 volume group"
 msgstr "фізичний том групи томів LVM2"
 
@@ -10204,8 +10204,8 @@ msgstr "ключ ssh не вказано у форматі шляху"
 msgid "ssh server is empty"
 msgstr "запис сервера ssh є порожнім"
 
-#: pkg/storaged/utils.js:891 pkg/storaged/mdraid/mdraid.jsx:59
-#: pkg/storaged/legacy-vdo/legacy-vdo.jsx:46
+#: pkg/storaged/utils.js:891 pkg/storaged/legacy-vdo/legacy-vdo.jsx:46
+#: pkg/storaged/mdraid/mdraid.jsx:59
 msgid "stop"
 msgstr "зупинити"
 
@@ -10213,7 +10213,7 @@ msgstr "зупинити"
 msgid "stop boot on failure"
 msgstr "припинити завантаження при помилці"
 
-#: pkg/storaged/mdraid/mdraid.jsx:217 pkg/storaged/stratis/stopped-pool.jsx:152
+#: pkg/storaged/stratis/stopped-pool.jsx:152 pkg/storaged/mdraid/mdraid.jsx:217
 msgid "stopped"
 msgstr "зупинено"
 
