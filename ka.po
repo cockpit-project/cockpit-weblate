@@ -26,7 +26,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-28 03:06+0000\n"
+"POT-Creation-Date: 2025-09-01 03:12+0000\n"
 "PO-Revision-Date: 2025-08-28 17:53+0000\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://translate.fedoraproject.org/projects/"
@@ -126,7 +126,7 @@ msgstr "$0 დისკი"
 msgid "$0 documentation"
 msgstr "$0 დოკუმენტაცია"
 
-#: pkg/systemd/terminal.jsx:166
+#: pkg/systemd/terminal.jsx:167
 msgid "$0 does not exist"
 msgstr "$0 არ არსებობს"
 
@@ -180,7 +180,7 @@ msgstr[1] "$0 მოხვედრა, მნიშვნელოვნის 
 msgid "$0 is an existing file"
 msgstr "$0 არსებული ფაილია"
 
-#: pkg/storaged/stratis/pool.jsx:166 pkg/storaged/stratis/filesystem.jsx:116
+#: pkg/storaged/stratis/pool.jsx:452 pkg/storaged/stratis/filesystem.jsx:116
 #: pkg/storaged/lvm2/volume-group.jsx:87 pkg/storaged/lvm2/volume-group.jsx:318
 #: pkg/storaged/lvm2/block-logical-volume.jsx:68
 #: pkg/storaged/lvm2/block-logical-volume.jsx:151
@@ -194,12 +194,12 @@ msgstr "$0 არსებული ფაილია"
 msgid "$0 is in use"
 msgstr "$0 გამოიყენება"
 
-#: pkg/systemd/terminal.jsx:162
+#: pkg/systemd/terminal.jsx:163
 msgid "$0 is not a directory"
 msgstr "$0 საქაღალდე არაა"
 
 #: pkg/storaged/lvm2/create-logical-volume-dialog.jsx:35
-#: pkg/lib/cockpit-components-install-dialog.jsx:160
+#: pkg/lib/cockpit-components-install-dialog.jsx:152
 msgid "$0 is not available from any repository."
 msgstr "$0 ხელმიუწვდომელია ყველა რეპოზიტორიიდან."
 
@@ -321,7 +321,7 @@ msgid_plural "$0 weeks"
 msgstr[0] "$0 კვირა"
 msgstr[1] "კვირა: $0"
 
-#: pkg/lib/cockpit-components-install-dialog.jsx:115
+#: pkg/lib/cockpit-components-install-dialog.jsx:107
 msgid "$0 will be installed."
 msgstr "დაყენდება $0."
 
@@ -713,7 +713,7 @@ msgid "Action"
 msgstr "ქმედება"
 
 #: pkg/apps/application-list.jsx:91 pkg/storaged/drive/smart-details.jsx:106
-#: pkg/storaged/pages.jsx:727 pkg/users/accounts-list.js:385
+#: pkg/storaged/pages.jsx:730 pkg/users/accounts-list.js:385
 msgid "Actions"
 msgstr "ქმედებები"
 
@@ -760,7 +760,7 @@ msgid "Adaptive transmit load balancing"
 msgstr "გადაცემის დატვირთვის ადაპტაციური გადანაწილება"
 
 #: pkg/systemd/timer-dialog.jsx:356 pkg/networkmanager/dialogs-common.jsx:156
-#: pkg/storaged/stratis/pool.jsx:245 pkg/storaged/lvm2/volume-group.jsx:211
+#: pkg/storaged/stratis/pool.jsx:526 pkg/storaged/lvm2/volume-group.jsx:211
 #: pkg/storaged/nfs/nfs.jsx:188 pkg/storaged/crypto/keyslots.jsx:477
 #: pkg/storaged/crypto/keyslots.jsx:792
 #: pkg/storaged/iscsi/create-dialog.jsx:120
@@ -784,7 +784,7 @@ msgstr "DNS სერვერის დამატება"
 msgid "Add Network Bound Disk Encryption"
 msgstr "ქსელზე მიბმული დისკის დაშიფვრის დამატება"
 
-#: pkg/storaged/stratis/pool.jsx:476
+#: pkg/storaged/stratis/pool.jsx:945
 msgid "Add Tang keyserver"
 msgstr "Tang გასაღებების სერვერის დამატება"
 
@@ -813,7 +813,7 @@ msgstr "ახალი ზონის დამატება"
 msgid "Add address"
 msgstr "მისამართის დამატება"
 
-#: pkg/storaged/stratis/pool.jsx:217 pkg/storaged/stratis/pool.jsx:308
+#: pkg/storaged/stratis/pool.jsx:502 pkg/storaged/stratis/pool.jsx:585
 msgid "Add block devices"
 msgstr "ბლოკური მოწყობილობების დამატება"
 
@@ -843,7 +843,7 @@ msgstr "iSCSI პორტალის დამატება"
 msgid "Add key"
 msgstr "გასაღების დამატება"
 
-#: pkg/storaged/stratis/pool.jsx:584
+#: pkg/storaged/stratis/pool.jsx:729 pkg/storaged/stratis/pool.jsx:840
 msgid "Add keyserver"
 msgstr "გასაღებების სერვერის დამატება"
 
@@ -851,7 +851,7 @@ msgstr "გასაღებების სერვერის დამა�
 msgid "Add member"
 msgstr "წევრის დამატება"
 
-#: pkg/shell/hosts_dialog.jsx:450 pkg/shell/hosts.tsx:271
+#: pkg/shell/hosts_dialog.jsx:450 pkg/shell/hosts.tsx:273
 msgid "Add new host"
 msgstr "ახალი ჰოსტის დამატება"
 
@@ -859,7 +859,8 @@ msgstr "ახალი ჰოსტის დამატება"
 msgid "Add new zone"
 msgstr "ახალი ზონის დამატება"
 
-#: pkg/storaged/stratis/pool.jsx:398 pkg/storaged/stratis/pool.jsx:566
+#: pkg/storaged/stratis/pool.jsx:699 pkg/storaged/stratis/pool.jsx:835
+#: pkg/storaged/stratis/pool.jsx:868
 msgid "Add passphrase"
 msgstr "საკვანძო ფრაზის დამატება"
 
@@ -929,13 +930,29 @@ msgstr ""
 "$0-ის დამატება გაწყვეტს კავშირს სერვერთან და ადმინისტრირების ინტერფეისს "
 "ხელმიუწვდომელს გახდის."
 
-#: pkg/storaged/stratis/pool.jsx:486
-msgid ""
-"Adding a keyserver requires unlocking the pool. Please provide the existing "
-"pool passphrase."
+#: pkg/storaged/stratis/pool.jsx:951
+#, fuzzy
+#| msgid ""
+#| "Adding a keyserver requires unlocking the pool. Please provide the "
+#| "existing pool passphrase."
+msgid "Adding a keyserver requires unlocking the pool."
 msgstr ""
 "ახალი გასარებების სერვერის დასამატებლად საჭიროა პულის განბლოკვა. შეიყვანეთ "
 "არსებული პულის საკვანძო ფრაზა."
+
+#: pkg/storaged/stratis/pool.jsx:874
+#, fuzzy
+#| msgid ""
+#| "Saving a new passphrase requires unlocking the disk. Please provide a "
+#| "current disk passphrase."
+msgid "Adding a passphrase requires unlocking the pool."
+msgstr ""
+"ახალი საკვანძო სიტყვის შესანახად საჭიროა დისკის განბლოკვა. შეიყვანეთ დისკის "
+"საკვანძო ფრაზა."
+
+#: pkg/storaged/stratis/pool.jsx:522
+msgid "Adding blockdevices requires unlocking the pool."
+msgstr ""
 
 #: pkg/networkmanager/firewall.jsx:705
 msgid ""
@@ -973,7 +990,7 @@ msgstr "დამატებითი ქმედებები"
 msgid "Additional address $val"
 msgstr "დამატებითი მისამართი $val"
 
-#: pkg/lib/cockpit-components-install-dialog.jsx:82
+#: pkg/lib/cockpit-components-install-dialog.jsx:74
 msgid "Additional packages:"
 msgstr "დამატებითი პაკეტები:"
 
@@ -1046,7 +1063,7 @@ msgstr ""
 msgid "After system boot"
 msgstr "სისტემის ჩატვირთვის შემდეგ"
 
-#: pkg/selinux/setroubleshoot-view.jsx:421
+#: pkg/selinux/setroubleshoot-view.jsx:423
 msgid "Alert"
 msgstr "გაფრთხილება"
 
@@ -1078,11 +1095,11 @@ msgstr "ყველა განახლება"
 msgid "All-in-one"
 msgstr "ყველა-ერთში"
 
-#: pkg/storaged/stratis/pool.jsx:558
+#: pkg/storaged/stratis/pool.jsx:1059
 msgid "Allocated"
 msgstr "გამოყოფილი"
 
-#: pkg/storaged/stratis/pool.jsx:549
+#: pkg/storaged/stratis/pool.jsx:1050
 msgid "Allow overprovisioning"
 msgstr "სამუშაოდ მომზადების გადამეტტვირთვის დაშვება"
 
@@ -1123,7 +1140,7 @@ msgstr ""
 "მნისვნელობებს FIELD=VALUE ფორმაში, სადაც მნიშვნელობები შეიძლება "
 "წარმოადგენდეს მძიმით გამოყოფილ შესაძლო მნიშვნელობების სიას."
 
-#: pkg/systemd/terminal.jsx:255
+#: pkg/systemd/terminal.jsx:256
 msgid "Appearance"
 msgstr "გარეგნობა"
 
@@ -1148,7 +1165,7 @@ msgstr "გადატარება და გადატვირთვა"
 msgid "Apply kernel live patches"
 msgstr "გაშვებული ბირთვის პაჩების გადატარება"
 
-#: pkg/selinux/setroubleshoot-view.jsx:106
+#: pkg/selinux/setroubleshoot-view.jsx:108
 msgid "Apply this solution"
 msgstr "ამ გადაწყვეტის გადატარება"
 
@@ -1156,7 +1173,7 @@ msgstr "ამ გადაწყვეტის გადატარება"
 msgid "Applying new policy... This may take a few minutes."
 msgstr "ახალი წესების გადატარება... შეიძლება რამდენიმე წუთი დასჭირდეს."
 
-#: pkg/selinux/setroubleshoot-view.jsx:83
+#: pkg/selinux/setroubleshoot-view.jsx:85
 msgid "Applying solution..."
 msgstr "გადაწყვეტის გადატარება..."
 
@@ -1194,14 +1211,24 @@ msgid_plural "At least $0 disks are needed."
 msgstr[0] "საჭიროა $0 დისკი მაინც."
 msgstr[1] "საჭიროა $0 ცალი დისკი მაინც."
 
-#: pkg/storaged/stratis/create-dialog.jsx:60
+#: pkg/storaged/stratis/create-dialog.jsx:98
 msgid "At least one block device is needed."
 msgstr "საჭიროა ერთი ბლოკური ტიპის მოწყობილობა მაინც."
 
-#: pkg/storaged/stratis/pool.jsx:239 pkg/storaged/lvm2/volume-group.jsx:205
+#: pkg/storaged/stratis/pool.jsx:517 pkg/storaged/lvm2/volume-group.jsx:205
 #: pkg/storaged/lvm2/create-dialog.jsx:57 pkg/storaged/mdraid/mdraid.jsx:168
 msgid "At least one disk is needed."
 msgstr "საჭიროა ერთი დისკი მაინც."
+
+#: pkg/storaged/stratis/pool.jsx:322
+#, fuzzy
+#| msgid "At least one block device is needed."
+msgid "At least one keyserver must be reachable."
+msgstr "საჭიროა ერთი ბლოკური ტიპის მოწყობილობა მაინც."
+
+#: pkg/storaged/stratis/pool.jsx:326
+msgid "At least one of the non-interactive unlock methods must work."
+msgstr ""
 
 #: pkg/storaged/btrfs/subvolume.jsx:383
 msgid "At least one subvolume needs to be mounted"
@@ -1227,7 +1254,7 @@ msgstr "ატრიბუტები"
 msgid "Attributes failing"
 msgstr "ჩავარდნილი ატრიბუტები"
 
-#: pkg/selinux/setroubleshoot-view.jsx:364
+#: pkg/selinux/setroubleshoot-view.jsx:366
 msgid "Audit log"
 msgstr "აუდიტის ჟურნალი"
 
@@ -1358,7 +1385,7 @@ msgstr "წინ"
 msgid "Binds to"
 msgstr "ებმება"
 
-#: pkg/systemd/terminal.jsx:261
+#: pkg/systemd/terminal.jsx:262
 msgid "Black"
 msgstr "შავი"
 
@@ -1378,9 +1405,9 @@ msgstr "ბლოკური მოწყობილობა"
 msgid "Block device for filesystems"
 msgstr "ბლოკური მოწყობილობები ფაილური სისტემებისთვის"
 
-#: pkg/storaged/stratis/pool.jsx:234 pkg/storaged/stratis/pool.jsx:600
-#: pkg/storaged/stratis/create-dialog.jsx:55
-#: pkg/storaged/stratis/stopped-pool.jsx:191
+#: pkg/storaged/stratis/pool.jsx:513 pkg/storaged/stratis/pool.jsx:1065
+#: pkg/storaged/stratis/create-dialog.jsx:93
+#: pkg/storaged/stratis/stopped-pool.jsx:204
 msgid "Block devices"
 msgstr "ბლოკური მოწყობილობები"
 
@@ -1488,7 +1515,7 @@ msgstr "CPU-ის გამოყენება/დატვირთვა"
 msgid "CVE"
 msgstr "CVE"
 
-#: pkg/storaged/stratis/pool.jsx:225
+#: pkg/storaged/stratis/pool.jsx:509
 msgid "Cache"
 msgstr "ქეში"
 
@@ -1507,7 +1534,7 @@ msgstr ""
 #: pkg/systemd/overview-cards/cryptoPolicies.jsx:231
 #: pkg/systemd/overview-cards/realmd.jsx:455 pkg/systemd/hwinfo.jsx:235
 #: pkg/systemd/service-details.jsx:91 pkg/systemd/service-details.jsx:749
-#: pkg/systemd/timer-dialog.jsx:392 pkg/systemd/terminal.jsx:295
+#: pkg/systemd/timer-dialog.jsx:392 pkg/systemd/terminal.jsx:296
 #: pkg/apps/utils.tsx:92 pkg/sosreport/sosreport.jsx:296
 #: pkg/sosreport/sosreport.jsx:384 pkg/networkmanager/dialogs-common.jsx:159
 #: pkg/networkmanager/firewall.jsx:711 pkg/networkmanager/firewall.jsx:901
@@ -1522,7 +1549,7 @@ msgstr ""
 #: pkg/shell/superuser.tsx:248 pkg/shell/superuser.tsx:304
 #: pkg/shell/credentials.tsx:243 pkg/lib/cockpit-components-shutdown.jsx:237
 #: pkg/lib/cockpit-connect-ssh.tsx:189 pkg/lib/cockpit-connect-ssh.tsx:502
-#: pkg/lib/cockpit-components-dialog.jsx:127
+#: pkg/lib/cockpit-components-dialog.jsx:128
 msgid "Cancel"
 msgstr "გაუქმება"
 
@@ -1542,7 +1569,7 @@ msgstr "ვერ ჩაირთვება"
 msgid "Cannot connect to an unknown host"
 msgstr "უცნობ ჰოსტთან მიერთების პრობლემა"
 
-#: pkg/lib/cockpit.js:2439
+#: pkg/lib/cockpit.js:2447
 msgid "Cannot forward login credentials"
 msgstr "მომხმარებლისადაპაროლის გადაგზავნის შეცდომა"
 
@@ -1564,14 +1591,15 @@ msgstr "მოცულობა"
 msgid "Carrier"
 msgstr "გადამზიდი"
 
-#: pkg/storaged/pages.jsx:722
+#: pkg/storaged/pages.jsx:725
 msgid "Category"
 msgstr "კატეგორია"
 
 #: pkg/systemd/overview-cards/configurationCard.jsx:305
-#: pkg/storaged/stratis/pool.jsx:568 pkg/storaged/iscsi/create-dialog.jsx:171
-#: pkg/users/expiration-dialogs.js:115 pkg/users/expiration-dialogs.js:217
-#: pkg/users/shell-dialog.js:78 pkg/lib/serverTime.js:722
+#: pkg/storaged/stratis/pool.jsx:707 pkg/storaged/stratis/pool.jsx:788
+#: pkg/storaged/iscsi/create-dialog.jsx:171 pkg/users/expiration-dialogs.js:115
+#: pkg/users/expiration-dialogs.js:217 pkg/users/shell-dialog.js:78
+#: pkg/lib/serverTime.js:722
 msgid "Change"
 msgstr "შეცვლა"
 
@@ -1579,7 +1607,7 @@ msgstr "შეცვლა"
 msgid "Change cryptographic policy"
 msgstr "კრიპტოგრაფიული პოლიტიკის შეცვლა"
 
-#: pkg/systemd/terminal.jsx:294
+#: pkg/systemd/terminal.jsx:295
 msgid "Change directory"
 msgstr "საქაღალდის შეცვლა"
 
@@ -1596,7 +1624,7 @@ msgstr "iSCSI ინიციატორის სახელის შეც�
 msgid "Change label"
 msgstr "ჭდის შეცვლა"
 
-#: pkg/storaged/stratis/pool.jsx:422 pkg/storaged/crypto/keyslots.jsx:499
+#: pkg/storaged/stratis/pool.jsx:893 pkg/storaged/crypto/keyslots.jsx:499
 msgid "Change passphrase"
 msgstr "საკვანძო ფრაზის შეცვლა"
 
@@ -1644,7 +1672,7 @@ msgid "Changing partition types might prevent the system from booting."
 msgstr ""
 "დანაყოფის ტიპების შეცვლამ, შეიძლება, სისტემის ჩატვირთვას ხელი შეუშალოს."
 
-#: pkg/systemd/terminal.jsx:298
+#: pkg/systemd/terminal.jsx:299
 msgid ""
 "Changing the directory will forcefully stop the currently running process. "
 "The process can also be stopped manually in the terminal before continuing."
@@ -1708,7 +1736,7 @@ msgid "Checking for package updates..."
 msgstr "პაკეტების განახლებების შემოწმება..."
 
 #: pkg/storaged/lvm2/create-logical-volume-dialog.jsx:31
-#: pkg/lib/cockpit-components-install-dialog.jsx:152
+#: pkg/lib/cockpit-components-install-dialog.jsx:144
 msgid "Checking installed software"
 msgstr "დაყენებული პროგრამული უზრუნველყოფის შემოწმება"
 
@@ -1744,7 +1772,7 @@ msgstr "ყველა ფილტრის გასუფთავება"
 msgid "Clear filter"
 msgstr "ფილტრის გასუფთავება"
 
-#: pkg/lib/cockpit-components-multi-typeahead-select.tsx:350
+#: pkg/lib/cockpit-components-multi-typeahead-select.tsx:340
 msgid "Clear input value"
 msgstr "შეყვანილი მნიშვნელობის გასუფთავება"
 
@@ -1755,6 +1783,10 @@ msgstr "ძებნის გასუფთავება"
 #: pkg/storaged/crypto/encryption.jsx:229
 msgid "Cleartext device"
 msgstr "მოწყობილობის შექმნა"
+
+#: pkg/storaged/stratis/pool.jsx:747 pkg/storaged/stratis/pool.jsx:811
+msgid "Clevis \"$0\""
+msgstr ""
 
 #: pkg/systemd/overview-cards/realmd.jsx:302
 msgid "Client software"
@@ -1788,7 +1820,7 @@ msgstr "Cockpit-ის ავთენტიკაციის არასწ�
 msgid "Cockpit configuration of NetworkManager and Firewalld"
 msgstr "NetworkManager-ის და Firewalld-ის მორგება Cockpit-ით"
 
-#: pkg/lib/cockpit.js:2445
+#: pkg/lib/cockpit.js:2453
 msgid "Cockpit could not contact the given host."
 msgstr "Cockpit-ს მითითებულ ჰოსტთან დაკავშირება არ შეუძლია ."
 
@@ -1816,7 +1848,7 @@ msgstr ""
 "Cockpit-ი წარმოადგენს ლინუქსის სერვერების ადმინისტრირების ინტერაქტიულ "
 "ინტერფეისს."
 
-#: pkg/lib/cockpit.js:2443
+#: pkg/lib/cockpit.js:2451
 msgid "Cockpit is not compatible with the software on the system."
 msgstr ""
 "Cockpit-ი შეუთავსებელია თქვენს სერვერზე დაყენებულ პროგრამულ უზრუნველყოფასთან."
@@ -1825,7 +1857,7 @@ msgstr ""
 msgid "Cockpit is not installed"
 msgstr "Cockpit-ი დაყენებული არაა"
 
-#: pkg/lib/cockpit.js:2437
+#: pkg/lib/cockpit.js:2445
 msgid "Cockpit is not installed on the system."
 msgstr "Cockpit-ი ამ სისტემაზე დაყენებული არაა."
 
@@ -1946,8 +1978,8 @@ msgstr "kdump-ის მორგება"
 msgid "Configuring system settings"
 msgstr "სისტემის პარამეტრების მორგება"
 
-#: pkg/storaged/stratis/pool.jsx:402 pkg/storaged/stratis/pool.jsx:431
-#: pkg/storaged/stratis/create-dialog.jsx:82
+#: pkg/storaged/stratis/pool.jsx:872 pkg/storaged/stratis/pool.jsx:902
+#: pkg/storaged/stratis/create-dialog.jsx:120
 #: pkg/storaged/block/format-dialog.jsx:345
 msgid "Confirm"
 msgstr "დასტური"
@@ -2021,7 +2053,7 @@ msgstr ""
 "პროგრამებსაც, რომლებსაც ზიანის მოტანა, ან მონაცემების მოპარვა შეუძლიათ. "
 "დაუკავშირდით, მხოლოდ, სანდო მანქანებს."
 
-#: pkg/selinux/setroubleshoot-view.jsx:337
+#: pkg/selinux/setroubleshoot-view.jsx:339
 msgid "Connecting to SETroubleshoot daemon..."
 msgstr "SETroubleshoot-ის დემონთან დაკავშირება..."
 
@@ -2041,7 +2073,7 @@ msgstr "დაკავშირების შეცდომა"
 msgid "Connection failed"
 msgstr "დაკავშირების შეცდომა"
 
-#: pkg/lib/cockpit.js:2435
+#: pkg/lib/cockpit.js:2443
 msgid "Connection has timed out."
 msgstr "კავშირის დრო გავიდა."
 
@@ -2124,7 +2156,7 @@ msgstr "ავარიული დამპის მდებარეობ�
 msgid "Crash system"
 msgstr "ავარიული სისტემა"
 
-#: pkg/storaged/stratis/pool.jsx:85 pkg/storaged/stratis/create-dialog.jsx:118
+#: pkg/storaged/stratis/pool.jsx:371 pkg/storaged/stratis/create-dialog.jsx:156
 #: pkg/storaged/lvm2/volume-group.jsx:122
 #: pkg/storaged/lvm2/thin-pool-logical-volume.jsx:58
 #: pkg/storaged/lvm2/create-dialog.jsx:63
@@ -2153,7 +2185,7 @@ msgstr "MDRAID მოწყობილობის შექმნა"
 msgid "Create RAID device"
 msgstr "RAID მოწყობილობის შექმნა"
 
-#: pkg/storaged/stratis/create-dialog.jsx:48
+#: pkg/storaged/stratis/create-dialog.jsx:86
 #: pkg/storaged/overview/overview.jsx:147
 msgid "Create Stratis pool"
 msgstr "Stratis-ის პულის შექმნა"
@@ -2178,7 +2210,7 @@ msgstr "შექმენით ანგარიში სუსტი პა
 msgid "Create and change ownership of home directory"
 msgstr "საწყისი საქაღალდის შექმნა და მისი მფლობელის შეცვლა"
 
-#: pkg/storaged/stratis/pool.jsx:80 pkg/storaged/block/format-dialog.jsx:270
+#: pkg/storaged/stratis/pool.jsx:366 pkg/storaged/block/format-dialog.jsx:270
 #: pkg/storaged/btrfs/subvolume.jsx:144
 msgid "Create and mount"
 msgstr "შექმნა და მიმაგრება"
@@ -2187,7 +2219,7 @@ msgstr "შექმნა და მიმაგრება"
 msgid "Create and start"
 msgstr "შექმნა და გაშვება"
 
-#: pkg/storaged/stratis/pool.jsx:90
+#: pkg/storaged/stratis/pool.jsx:376
 msgid "Create filesystem"
 msgstr "ფაილური სისტემის შექმნა"
 
@@ -2203,7 +2235,7 @@ msgstr "ლოგიკური ტომის შექმნა"
 msgid "Create new account"
 msgstr "ახალი ანგარიშის შექმნა"
 
-#: pkg/storaged/stratis/pool.jsx:327
+#: pkg/storaged/stratis/pool.jsx:614
 msgid "Create new filesystem"
 msgstr "ახალი ფაილური სისტემის შექმნა"
 
@@ -2223,7 +2255,7 @@ msgstr "ახალი ამოცანის ამ შემცველო
 msgid "Create new thinly provisioned logical volume"
 msgstr "ახალი თხლად გამოყოფილი ლოგიკური ტომის შექმნა"
 
-#: pkg/storaged/stratis/pool.jsx:81 pkg/storaged/block/format-dialog.jsx:271
+#: pkg/storaged/stratis/pool.jsx:367 pkg/storaged/block/format-dialog.jsx:271
 #: pkg/storaged/block/format-dialog.jsx:280
 #: pkg/storaged/btrfs/subvolume.jsx:145
 msgid "Create only"
@@ -2412,11 +2444,11 @@ msgstr "დღიურად"
 msgid "Danger alert:"
 msgstr "საშიშროების შეტყობინება:"
 
-#: pkg/systemd/terminal.jsx:262 pkg/shell/topnav.tsx:199
+#: pkg/systemd/terminal.jsx:263 pkg/shell/topnav.tsx:199
 msgid "Dark"
 msgstr "ბლენი"
 
-#: pkg/storaged/stratis/pool.jsx:222
+#: pkg/storaged/stratis/pool.jsx:506
 msgid "Data"
 msgstr "მონაცემები"
 
@@ -2525,7 +2557,7 @@ msgstr "$target-ის დეაქტივაცია"
 msgid "Debug and above"
 msgstr "გამართვა და ზემოთ"
 
-#: pkg/systemd/terminal.jsx:247
+#: pkg/systemd/terminal.jsx:248
 msgid "Decrease by one"
 msgstr "ერთით შემცირება"
 
@@ -2560,7 +2592,7 @@ msgstr "დაყოვნება რიცხვი უნდა იყოს
 #: pkg/sosreport/sosreport.jsx:378 pkg/sosreport/sosreport.jsx:477
 #: pkg/networkmanager/network-interface.jsx:726
 #: pkg/networkmanager/firewall.jsx:119 pkg/networkmanager/firewall.jsx:181
-#: pkg/networkmanager/firewall.jsx:922 pkg/storaged/stratis/pool.jsx:178
+#: pkg/networkmanager/firewall.jsx:922 pkg/storaged/stratis/pool.jsx:464
 #: pkg/storaged/stratis/filesystem.jsx:128
 #: pkg/storaged/stratis/filesystem.jsx:169
 #: pkg/storaged/lvm2/volume-group.jsx:99
@@ -2602,7 +2634,7 @@ msgstr "ფაილური სისტემის წაშლა"
 msgid "Delete group"
 msgstr "ჯგუფის წაშლა"
 
-#: pkg/storaged/stratis/pool.jsx:312
+#: pkg/storaged/stratis/pool.jsx:589
 msgid "Delete pool"
 msgstr "პულის წაშლა"
 
@@ -2626,7 +2658,7 @@ msgstr "$target-ის წაშლა"
 msgid "Deleting LVM2 volume group $target"
 msgstr "LVM2 საცავების ჯგუფი $target-ის წაშლა"
 
-#: pkg/storaged/stratis/pool.jsx:177
+#: pkg/storaged/stratis/pool.jsx:463
 msgid "Deleting a Stratis pool will erase all data it contains."
 msgstr "Stratis-ის პულის წაშლა მასზე ჩაწერილი მონაცემების წაშლასაც გამოიწვევს."
 
@@ -2809,13 +2841,13 @@ msgstr "დისკების გამოყენება"
 msgid "Dismiss"
 msgstr "მოცილება"
 
-#: pkg/selinux/setroubleshoot-view.jsx:405
+#: pkg/selinux/setroubleshoot-view.jsx:407
 msgid "Dismiss $0 alert"
 msgid_plural "Dismiss $0 alerts"
 msgstr[0] "$0 გაფრთხილების მოცილება"
 msgstr[1] "$0 ცალი გაფრთხილების მოცილება"
 
-#: pkg/selinux/setroubleshoot-view.jsx:405
+#: pkg/selinux/setroubleshoot-view.jsx:407
 msgid "Dismiss selected alerts"
 msgstr "მონიშნული გაფრთხილებების მოცილება"
 
@@ -2905,7 +2937,7 @@ msgid "Downloading"
 msgstr "გადმოწერა"
 
 #: pkg/storaged/crypto/keyslots.jsx:257
-#: pkg/lib/cockpit-components-install-dialog.jsx:185
+#: pkg/lib/cockpit-components-install-dialog.jsx:177
 msgid "Downloading $0"
 msgstr "$0-ის გადმოწერა"
 
@@ -2926,7 +2958,7 @@ msgstr "EFI-ის სისტემური დანაყოფი"
 #: pkg/networkmanager/firewall.jsx:117 pkg/packagekit/kpatch.jsx:237
 #: pkg/packagekit/autoupdates.jsx:532 pkg/kdump/kdump-view.jsx:494
 #: pkg/storaged/nfs/nfs.jsx:312 pkg/storaged/crypto/keyslots.jsx:737
-#: pkg/shell/nav.tsx:421 pkg/shell/hosts.tsx:260
+#: pkg/shell/nav.tsx:421 pkg/shell/hosts.tsx:261
 msgid "Edit"
 msgstr "ჩასწორება"
 
@@ -2962,7 +2994,7 @@ msgstr "ხელით მითითებული სერვისის 
 msgid "Edit host"
 msgstr "ჰოსტის ჩასწორება"
 
-#: pkg/shell/hosts.tsx:315
+#: pkg/shell/hosts.tsx:317
 msgid "Edit hosts"
 msgstr "hosts ფაილის ჩასწორება"
 
@@ -3053,11 +3085,11 @@ msgstr "ჩართულია"
 msgid "Enabling $0"
 msgstr "$0-ის ჩართვა"
 
-#: pkg/storaged/stratis/create-dialog.jsx:96
+#: pkg/storaged/stratis/create-dialog.jsx:134
 msgid "Encrypt data with a Tang keyserver"
 msgstr "მონაცემების დაშიფვრა Tang-ის გასაღებების სერვერით"
 
-#: pkg/storaged/stratis/create-dialog.jsx:69
+#: pkg/storaged/stratis/create-dialog.jsx:107
 msgid "Encrypt data with a passphrase"
 msgstr "დაშიფვრა საკვანძო ფრაზით"
 
@@ -3069,7 +3101,7 @@ msgstr "დაშიფრულია"
 msgid "Encrypted $0"
 msgstr "$0 დაშიფრულია"
 
-#: pkg/storaged/stratis/pool.jsx:295
+#: pkg/storaged/stratis/pool.jsx:572
 msgid "Encrypted Stratis pool"
 msgstr "სტრატისის დაშიფრული პული"
 
@@ -3095,6 +3127,12 @@ msgstr "დაშიფვრის მორგება"
 msgid "Encryption passphrase"
 msgstr "დაშიფვრის საკვანძო ფრაზა"
 
+#: pkg/storaged/stratis/pool.jsx:599
+#, fuzzy
+#| msgid "Encryption options"
+msgid "Encryption tokens"
+msgstr "დაშიფვრის მორგება"
+
 #: pkg/storaged/crypto/encryption.jsx:226
 msgid "Encryption type"
 msgstr "დაშიფვრის ტიპი"
@@ -3115,7 +3153,7 @@ msgstr ""
 "ბოლოწერტილები, რომლებიც იქცევიან, როგორც \"სერვერი\", ჰოსტი:პორტი სახით უნდა "
 "იყოს მითითებული, ან ცარიელი."
 
-#: pkg/selinux/setroubleshoot-view.jsx:269
+#: pkg/selinux/setroubleshoot-view.jsx:271
 msgid "Enforcing"
 msgstr "ძალით"
 
@@ -3163,11 +3201,11 @@ msgid "Error installing $0: PackageKit is not installed"
 msgstr "$0-ის დაყენების შეცდომა: PackageKit დაყენებული არაა"
 
 #: pkg/systemd/overview-cards/configurationCard.jsx:176
-#: pkg/selinux/setroubleshoot-view.jsx:421
+#: pkg/selinux/setroubleshoot-view.jsx:423
 msgid "Error message"
 msgstr "შეცდომის შეტყობინება"
 
-#: pkg/selinux/setroubleshoot-view.jsx:437
+#: pkg/selinux/setroubleshoot-view.jsx:439
 msgid "Error running semanage to discover system modifications"
 msgstr "სისტემის მოდიფიკაციის საპოვნელად semanage-ის გაშვების შეცდომა"
 
@@ -3432,7 +3470,7 @@ msgstr "მიკროკოდის ვერსია"
 msgid "Fix NBDE support"
 msgstr "NBDE-ის მხარდაჭერის გასწორება"
 
-#: pkg/systemd/terminal.jsx:236 pkg/systemd/terminal.jsx:246
+#: pkg/systemd/terminal.jsx:237 pkg/systemd/terminal.jsx:247
 msgid "Font size"
 msgstr "ფონტის ზომა"
 
@@ -3575,7 +3613,7 @@ msgstr "ლოგიკური ტომის გაზრდა"
 msgid "Grow partition"
 msgstr "დანაყოფის გაზრდა"
 
-#: pkg/storaged/stratis/pool.jsx:357
+#: pkg/storaged/stratis/pool.jsx:643
 msgid "Grow the pool to take all space"
 msgstr "პულის გადიდება მაქს. შესაძლო ზომამდე"
 
@@ -3636,7 +3674,7 @@ msgstr "ისტორიის პაკეტის რიცხვი"
 msgid "Home directory"
 msgstr "საწყისი საქაღალდე"
 
-#: pkg/shell/hosts_dialog.jsx:454 pkg/shell/hosts.tsx:291
+#: pkg/shell/hosts_dialog.jsx:454 pkg/shell/hosts.tsx:293
 msgid "Host"
 msgstr "ჰოსტი"
 
@@ -3644,7 +3682,7 @@ msgstr "ჰოსტი"
 msgid "Host is unknown"
 msgstr "ჰოსტი უცნობია"
 
-#: pkg/lib/cockpit.js:2431
+#: pkg/lib/cockpit.js:2439
 msgid "Host key is incorrect"
 msgstr "ჰოსტის გასაღები არასწორია"
 
@@ -3681,7 +3719,7 @@ msgid "I confirm I want to lose this data forever"
 msgstr "ვადასტურებ, მნებავს, ეს მონაცემები სამუდამოდ წაიშალოს"
 
 #: pkg/systemd/hwinfo.jsx:295 pkg/networkmanager/firewall.jsx:687
-#: pkg/storaged/pages.jsx:723 pkg/storaged/btrfs/subvolume.jsx:471
+#: pkg/storaged/pages.jsx:726 pkg/storaged/btrfs/subvolume.jsx:471
 #: pkg/users/group-create-dialog.js:47 pkg/users/accounts-list.js:230
 #: pkg/users/accounts-list.js:382
 msgid "ID"
@@ -3745,6 +3783,28 @@ msgstr ""
 "თუ ცარიელია, ID დაგენერირდება შესაბამისი პორტის სერვისებისა და პორტის "
 "ნომრებისგან"
 
+#: pkg/storaged/stratis/pool.jsx:308
+#, fuzzy
+#| msgid ""
+#| "Adding a keyserver requires unlocking the pool. Please provide the "
+#| "existing pool passphrase."
+msgid ""
+"If none of the keyservers is reachable, you can provide an existing "
+"passphrase."
+msgstr ""
+"ახალი გასარებების სერვერის დასამატებლად საჭიროა პულის განბლოკვა. შეიყვანეთ "
+"არსებული პულის საკვანძო ფრაზა."
+
+#: pkg/storaged/stratis/pool.jsx:312
+#, fuzzy
+#| msgid ""
+#| "The disk needs to be unlocked before formatting. Please provide an "
+#| "existing passphrase."
+msgid ""
+"If none of the non-interactive unlock methods works, you can provide an "
+"existing passphrase."
+msgstr "დაფორმატებამდე საჭიროა დისკის განბლოკვა. შეიყვანეთ საკვანძო ფრაზა."
+
 #: pkg/static/login.html:102
 msgid ""
 "If the fingerprint matches, click \"Accept key and log in\". Otherwise, do "
@@ -3760,6 +3820,18 @@ msgid ""
 msgstr ""
 "თუ ანაბეჭდი ემთხვევა, დააწექით \"ჰოსტის ნდობა და დამატებას\", ან არ შეხვიდეთ "
 "და დაუკავშირდით ადმინისტრატორს."
+
+#: pkg/storaged/stratis/pool.jsx:306
+#, fuzzy
+#| msgid ""
+#| "Adding a keyserver requires unlocking the pool. Please provide the "
+#| "existing pool passphrase."
+msgid ""
+"If the keyserver at $0 is not reachable, you can provide an existing "
+"passphrase."
+msgstr ""
+"ახალი გასარებების სერვერის დასამატებლად საჭიროა პულის განბლოკვა. შეიყვანეთ "
+"არსებული პულის საკვანძო ფრაზა."
 
 #: pkg/networkmanager/ip-settings.jsx:44 pkg/packagekit/updates.jsx:674
 #: pkg/packagekit/updates.jsx:756
@@ -3820,7 +3892,7 @@ msgstr ""
 msgid "Inconsistent filesystem mount"
 msgstr "ფაილური სისტემის არასწორი მიმაგრება"
 
-#: pkg/systemd/terminal.jsx:248
+#: pkg/systemd/terminal.jsx:249
 msgid "Increase by one"
 msgstr "ერთით გაზრდა"
 
@@ -3862,7 +3934,7 @@ msgstr "Insights: "
 
 #: pkg/apps/application.jsx:51 pkg/apps/application-list.jsx:195
 #: pkg/packagekit/kpatch.jsx:255
-#: pkg/lib/cockpit-components-install-dialog.jsx:126
+#: pkg/lib/cockpit-components-install-dialog.jsx:118
 msgid "Install"
 msgstr "დაყენება"
 
@@ -3898,11 +3970,11 @@ msgstr "Realmd-ის მხარდაჭერის დაყენება
 msgid "Install security updates"
 msgstr "უსაფრთხოების განახლებების დაყენება"
 
-#: pkg/selinux/setroubleshoot-view.jsx:341
+#: pkg/selinux/setroubleshoot-view.jsx:343
 msgid "Install setroubleshoot-server to troubleshoot SELinux events."
 msgstr "SELinux-ის შეცდომებში გასარკვევად დააყენეთ setroubleshoot-server."
 
-#: pkg/lib/cockpit-components-install-dialog.jsx:112
+#: pkg/lib/cockpit-components-install-dialog.jsx:104
 msgid "Install software"
 msgstr "პროგრამების დაყენება"
 
@@ -3927,7 +3999,7 @@ msgid "Installing"
 msgstr "მიმდინარეობს დაყენება"
 
 #: pkg/storaged/crypto/keyslots.jsx:261
-#: pkg/lib/cockpit-components-install-dialog.jsx:189
+#: pkg/lib/cockpit-components-install-dialog.jsx:181
 msgid "Installing $0"
 msgstr "$0-ის დაყენება"
 
@@ -3957,7 +4029,7 @@ msgstr "ინტერფეისის წევრები"
 msgid "Interfaces"
 msgstr "ინტერფეისები"
 
-#: pkg/lib/cockpit.js:2433
+#: pkg/lib/cockpit.js:2441
 msgid "Internal error"
 msgstr "შიდა შეცდომა"
 
@@ -4154,17 +4226,16 @@ msgstr "გასაღების წყარო"
 msgid "Keys"
 msgstr "გასაღებები"
 
-#: pkg/storaged/stratis/pool.jsx:581 pkg/storaged/stratis/stopped-pool.jsx:187
-#: pkg/storaged/crypto/keyslots.jsx:762
+#: pkg/storaged/stratis/pool.jsx:722 pkg/storaged/crypto/keyslots.jsx:762
 msgid "Keyserver"
 msgstr "გასაღებების სერვერი"
 
-#: pkg/storaged/stratis/pool.jsx:478 pkg/storaged/stratis/create-dialog.jsx:99
+#: pkg/storaged/stratis/pool.jsx:947 pkg/storaged/stratis/create-dialog.jsx:137
 #: pkg/storaged/crypto/keyslots.jsx:470 pkg/storaged/crypto/keyslots.jsx:528
 msgid "Keyserver address"
 msgstr "გასაღების სერვერის მისამართი"
 
-#: pkg/storaged/stratis/pool.jsx:518 pkg/storaged/crypto/keyslots.jsx:654
+#: pkg/storaged/crypto/keyslots.jsx:654
 msgid "Keyserver removal may prevent unlocking $0."
 msgstr ""
 "გასაღებების სერვერის წაშლით თქვენ შეიძლება დაკარგოთ $0-ის განბლოკვის "
@@ -4251,6 +4322,12 @@ msgstr "ბოლოს შეიცვალა: $0"
 msgid "Last successful login:"
 msgstr "ბოლო წარმატებული შესვლა:"
 
+#: pkg/storaged/stratis/pool.jsx:768
+#, fuzzy
+#| msgid "Last disk can not be removed"
+msgid "Last token can not be removed"
+msgstr "ბოლო დისკს ვერ წაშლით"
+
 #: pkg/storaged/lvm2/block-logical-volume.jsx:294
 #: pkg/storaged/lvm2/create-logical-volume-dialog.jsx:192
 msgid "Layout"
@@ -4259,8 +4336,8 @@ msgstr "განლაგება"
 #: pkg/systemd/overview-cards/tuned-dialog.jsx:296
 #: pkg/systemd/overview-cards/cryptoPolicies.jsx:147
 #: pkg/systemd/overview-cards/cryptoPolicies.jsx:194
-#: pkg/networkmanager/bond.jsx:161 pkg/lib/cockpit-components-dialog.jsx:227
-#: pkg/lib/cockpit-components-dialog.jsx:234
+#: pkg/networkmanager/bond.jsx:161 pkg/lib/cockpit-components-dialog.jsx:228
+#: pkg/lib/cockpit-components-dialog.jsx:235
 msgid "Learn more"
 msgstr "გაიგეთ მეტი"
 
@@ -4282,7 +4359,7 @@ msgstr "შიფრაციის გამოსატოვებლად �
 msgid "Licensed under GNU LGPL version 2.1"
 msgstr "ლიცენზირებულია GNU LGPL -ის ვერსია 2.1-ით"
 
-#: pkg/systemd/terminal.jsx:263 pkg/shell/topnav.tsx:196
+#: pkg/systemd/terminal.jsx:264 pkg/shell/topnav.tsx:196
 msgid "Light"
 msgstr "ღია"
 
@@ -4290,7 +4367,7 @@ msgstr "ღია"
 msgid "Limit access"
 msgstr "წვდომის შეზღუდვა"
 
-#: pkg/storaged/stratis/pool.jsx:120
+#: pkg/storaged/stratis/pool.jsx:406
 msgid "Limit size"
 msgstr "ლიმიტის ზომა"
 
@@ -4446,7 +4523,7 @@ msgstr "ლოკალური საცავი"
 msgid "Local, $0"
 msgstr "ლოკალური, $0"
 
-#: pkg/kdump/kdump-view.jsx:233 pkg/storaged/pages.jsx:725
+#: pkg/kdump/kdump-view.jsx:233 pkg/storaged/pages.jsx:728
 #: pkg/storaged/dialog.jsx:1209 pkg/storaged/dialog.jsx:1328
 msgid "Location"
 msgstr "მდებარეობა"
@@ -4543,7 +4620,7 @@ msgstr "შესვლა"
 msgid "Login again"
 msgstr "თავიდან შესვლა"
 
-#: pkg/lib/cockpit.js:2423
+#: pkg/lib/cockpit.js:2431
 msgid "Login failed"
 msgstr "შესვლა წარუმატებელია"
 
@@ -4776,6 +4853,12 @@ msgstr "შესული მომხმარებლებისთვი�
 msgid "Messages related to the failure might be found in the journal:"
 msgstr "შეტყობინებები ამ შეცდომის შესახებ შეგიძლიათ იპოვოთ ჟურნალში:"
 
+#: pkg/storaged/stratis/pool.jsx:1018
+#, fuzzy
+#| msgid "Invalid date format"
+msgid "Metadata format"
+msgstr "თარიღის არასწორი ფორმატი"
+
 #: pkg/storaged/lvm2/thin-pool-logical-volume.jsx:144
 #: pkg/storaged/lvm2/vdo-pool.jsx:83
 msgid "Metadata used"
@@ -4916,7 +4999,7 @@ msgstr "$0-ზე მიმაგრება"
 msgid "Mount options"
 msgstr "მიმაგრების მორგება"
 
-#: pkg/storaged/stratis/pool.jsx:132 pkg/storaged/stratis/filesystem.jsx:81
+#: pkg/storaged/stratis/pool.jsx:418 pkg/storaged/stratis/filesystem.jsx:81
 #: pkg/storaged/stratis/filesystem.jsx:252 pkg/storaged/nfs/nfs.jsx:329
 #: pkg/storaged/filesystem/filesystem.jsx:147
 #: pkg/storaged/filesystem/mounting-dialog.jsx:326
@@ -4994,11 +5077,11 @@ msgstr "NTP სერვერი"
 #: pkg/networkmanager/dialogs-common.jsx:133
 #: pkg/networkmanager/network-main.jsx:185
 #: pkg/networkmanager/network-main.jsx:200 pkg/packagekit/updates.jsx:439
-#: pkg/storaged/stratis/pool.jsx:92 pkg/storaged/stratis/pool.jsx:195
-#: pkg/storaged/stratis/pool.jsx:536 pkg/storaged/stratis/filesystem.jsx:76
+#: pkg/storaged/stratis/pool.jsx:378 pkg/storaged/stratis/pool.jsx:481
+#: pkg/storaged/stratis/pool.jsx:1037 pkg/storaged/stratis/filesystem.jsx:76
 #: pkg/storaged/stratis/filesystem.jsx:187
 #: pkg/storaged/stratis/filesystem.jsx:247
-#: pkg/storaged/stratis/create-dialog.jsx:50
+#: pkg/storaged/stratis/create-dialog.jsx:88
 #: pkg/storaged/lvm2/volume-group.jsx:63 pkg/storaged/lvm2/volume-group.jsx:118
 #: pkg/storaged/lvm2/volume-group.jsx:362
 #: pkg/storaged/lvm2/block-logical-volume.jsx:49
@@ -5145,7 +5228,7 @@ msgstr "გასაღების ახალი პაროლი"
 msgid "New name"
 msgstr "ახალი სახელი"
 
-#: pkg/storaged/stratis/pool.jsx:429 pkg/storaged/crypto/keyslots.jsx:454
+#: pkg/storaged/stratis/pool.jsx:900 pkg/storaged/crypto/keyslots.jsx:454
 #: pkg/storaged/crypto/keyslots.jsx:504
 msgid "New passphrase"
 msgstr "ახალი საკვანძო ფრაზა"
@@ -5170,7 +5253,7 @@ msgstr "არა"
 msgid "No ID specified"
 msgstr "ID მითითებული არაა"
 
-#: pkg/selinux/setroubleshoot-view.jsx:332
+#: pkg/selinux/setroubleshoot-view.jsx:334
 msgid "No SELinux alerts."
 msgstr "SELinux-ის გაფრთხილებების გარეშე."
 
@@ -5182,11 +5265,11 @@ msgstr "დაყენებული ან ხელმისაწვდო�
 msgid "No available slots"
 msgstr "თავისუფალი სლოტი ხელმიუწვდომელია"
 
-#: pkg/storaged/stratis/create-dialog.jsx:57
+#: pkg/storaged/stratis/create-dialog.jsx:95
 msgid "No block devices are available."
 msgstr "ბლოკური მოწყობილობები ხელმიუწვდომელია."
 
-#: pkg/storaged/stratis/pool.jsx:602 pkg/storaged/stratis/stopped-pool.jsx:193
+#: pkg/storaged/stratis/pool.jsx:1067 pkg/storaged/stratis/stopped-pool.jsx:206
 msgid "No block devices found"
 msgstr "ბლოკური მოწყობილობები აღმოჩენილი არაა"
 
@@ -5222,7 +5305,7 @@ msgstr "აღწერის გარეშე."
 msgid "No devices found"
 msgstr "მოწყობილობები აღმოჩენილი არაა"
 
-#: pkg/storaged/stratis/pool.jsx:236 pkg/storaged/lvm2/volume-group.jsx:202
+#: pkg/storaged/stratis/pool.jsx:514 pkg/storaged/lvm2/volume-group.jsx:202
 #: pkg/storaged/lvm2/create-dialog.jsx:54 pkg/storaged/mdraid/mdraid.jsx:165
 #: pkg/storaged/mdraid/create-dialog.jsx:101
 msgid "No disks are available."
@@ -5248,7 +5331,7 @@ msgstr "მოვლენების გარეშე"
 msgid "No filesystem"
 msgstr "ფაილური სისტემების გარეშე"
 
-#: pkg/storaged/stratis/pool.jsx:380
+#: pkg/storaged/stratis/pool.jsx:666
 msgid "No filesystems"
 msgstr "ფაილური სისტემების გარეშე"
 
@@ -5306,6 +5389,10 @@ msgstr "პასუხები არაა"
 msgid "No media inserted"
 msgstr "დისკი არ დევს"
 
+#: pkg/storaged/stratis/pool.jsx:776
+msgid "No more space for passphrases or keyservers."
+msgstr ""
+
 #: pkg/storaged/partitions/format-disk-dialog.jsx:58
 msgid "No partitioning"
 msgstr "დანაყოფების გარეშე"
@@ -5326,9 +5413,9 @@ msgstr "ფიზიკური ტომები ვერ ვიპოვე
 msgid "No real name specified"
 msgstr "რეალური სახელი მითითებული არაა"
 
-#: pkg/shell/nav.tsx:215 pkg/lib/cockpit-components-typeahead-select.tsx:210
-#: pkg/lib/cockpit-components-typeahead-select.tsx:211
-#: pkg/lib/cockpit-components-multi-typeahead-select.tsx:117
+#: pkg/shell/nav.tsx:215 pkg/lib/cockpit-components-typeahead-select.tsx:200
+#: pkg/lib/cockpit-components-typeahead-select.tsx:201
+#: pkg/lib/cockpit-components-multi-typeahead-select.tsx:107
 msgid "No results found"
 msgstr "შედეგები ნაპოვნი არაა"
 
@@ -5410,7 +5497,7 @@ msgstr "არაა მიერთებული Insights-თან"
 msgid "Not connected to host"
 msgstr "არაა მიერთებული ჰოსტთან"
 
-#: pkg/storaged/stratis/pool.jsx:330 pkg/storaged/stratis/filesystem.jsx:166
+#: pkg/storaged/stratis/pool.jsx:617 pkg/storaged/stratis/filesystem.jsx:166
 #: pkg/storaged/lvm2/physical-volume.jsx:81
 msgid "Not enough free space"
 msgstr "თავისუფალი ადგილი საკმარისი არაა"
@@ -5423,8 +5510,8 @@ msgstr "ადგილი საკმარისი არაა"
 msgid "Not enough space to grow"
 msgstr "გასადიდებლად არასაკმარისი სივრცეა"
 
-#: pkg/systemd/services.jsx:223 pkg/storaged/pages.jsx:283
-#: pkg/storaged/pages.jsx:288
+#: pkg/systemd/services.jsx:223 pkg/storaged/pages.jsx:285
+#: pkg/storaged/pages.jsx:290
 msgid "Not found"
 msgstr "ნაპოვნი არაა"
 
@@ -5440,7 +5527,7 @@ msgstr "ქსელური მოწყობილობების მო�
 msgid "Not permitted to configure realms"
 msgstr "realm-ების მორგების წვდომა აკრძალულია"
 
-#: pkg/lib/cockpit.js:2421
+#: pkg/lib/cockpit.js:2429
 msgid "Not permitted to perform this action."
 msgstr "არ გაქვთ მითითებული მოქმედების შესასრულებლად საკმარისი წვდომა."
 
@@ -5490,24 +5577,24 @@ msgstr "ქსელის მისამართების, ჰოსტი
 msgid "Obfuscated"
 msgstr "ობფუსკირებულია"
 
-#: pkg/selinux/setroubleshoot-view.jsx:354
+#: pkg/selinux/setroubleshoot-view.jsx:356
 msgid "Occurred $0"
 msgstr "მოხდა $0"
 
-#: pkg/selinux/setroubleshoot-view.jsx:349
+#: pkg/selinux/setroubleshoot-view.jsx:351
 msgid "Occurred between $0 and $1"
 msgstr "მოხდა $0-სა და $1-ს შორის"
 
-#: pkg/selinux/setroubleshoot-view.jsx:421
+#: pkg/selinux/setroubleshoot-view.jsx:423
 #: pkg/lib/cockpit-components-logs-panel.jsx:98
 msgid "Occurrences"
 msgstr "გამოვლენები"
 
-#: pkg/lib/cockpit-components-dialog.jsx:153
+#: pkg/lib/cockpit-components-dialog.jsx:154
 msgid "Ok"
 msgstr "დიახ"
 
-#: pkg/storaged/stratis/pool.jsx:424 pkg/storaged/crypto/keyslots.jsx:501
+#: pkg/storaged/stratis/pool.jsx:895 pkg/storaged/crypto/keyslots.jsx:501
 msgid "Old passphrase"
 msgstr "ძველი საკვანძო ფრაზა"
 
@@ -5566,7 +5653,7 @@ msgstr "ოპერაცია '$operation' $target-ზე"
 
 #: pkg/sosreport/sosreport.jsx:331 pkg/networkmanager/bridge.jsx:104
 #: pkg/storaged/stratis/filesystem.jsx:207
-#: pkg/storaged/stratis/create-dialog.jsx:64
+#: pkg/storaged/stratis/create-dialog.jsx:102
 #: pkg/storaged/lvm2/create-logical-volume-dialog.jsx:224
 #: pkg/storaged/crypto/encryption.jsx:235 pkg/users/account-details.js:261
 msgid "Options"
@@ -5596,7 +5683,8 @@ msgstr "სხვა პარამეტრები"
 msgid "Out"
 msgstr "გარე"
 
-#: pkg/storaged/stratis/pool.jsx:547 pkg/storaged/stratis/create-dialog.jsx:112
+#: pkg/storaged/stratis/pool.jsx:1048
+#: pkg/storaged/stratis/create-dialog.jsx:150
 msgid "Overprovisioning"
 msgstr "სამუშაოდ მომზადების გადამეტტვირთვა"
 
@@ -5706,10 +5794,9 @@ msgstr ""
 msgid "Passive"
 msgstr "პასიური"
 
-#: pkg/storaged/stratis/pool.jsx:229 pkg/storaged/stratis/pool.jsx:400
-#: pkg/storaged/stratis/pool.jsx:563 pkg/storaged/stratis/create-dialog.jsx:73
-#: pkg/storaged/stratis/stopped-pool.jsx:103
-#: pkg/storaged/stratis/stopped-pool.jsx:182 pkg/storaged/crypto/actions.jsx:42
+#: pkg/storaged/stratis/pool.jsx:692 pkg/storaged/stratis/pool.jsx:785
+#: pkg/storaged/stratis/pool.jsx:870 pkg/storaged/stratis/create-dialog.jsx:111
+#: pkg/storaged/stratis/stopped-pool.jsx:128 pkg/storaged/crypto/actions.jsx:42
 #: pkg/storaged/crypto/keyslots.jsx:449 pkg/storaged/crypto/keyslots.jsx:757
 #: pkg/storaged/filesystem/mounting-dialog.jsx:341
 #: pkg/storaged/block/format-dialog.jsx:336
@@ -5721,9 +5808,9 @@ msgstr "საკვანძო სიტყვა"
 msgid "Passphrase can not be empty"
 msgstr "საკვანძო ფრაზა ცარიელი არ შეიძლება იყოს"
 
-#: pkg/storaged/stratis/pool.jsx:232 pkg/storaged/stratis/pool.jsx:401
-#: pkg/storaged/stratis/pool.jsx:427 pkg/storaged/stratis/pool.jsx:430
-#: pkg/storaged/stratis/pool.jsx:485 pkg/storaged/stratis/create-dialog.jsx:77
+#: pkg/storaged/stratis/pool.jsx:316 pkg/storaged/stratis/pool.jsx:871
+#: pkg/storaged/stratis/pool.jsx:898 pkg/storaged/stratis/pool.jsx:901
+#: pkg/storaged/stratis/create-dialog.jsx:115
 #: pkg/storaged/crypto/keyslots.jsx:181 pkg/storaged/crypto/keyslots.jsx:457
 #: pkg/storaged/crypto/keyslots.jsx:502 pkg/storaged/crypto/keyslots.jsx:506
 #: pkg/storaged/filesystem/mounting-dialog.jsx:344
@@ -5736,12 +5823,12 @@ msgstr "საკვანძო ფრაზა არ შეიძლება
 msgid "Passphrase from any other key slot"
 msgstr "საკვანძო ფრაზა ნებისმიერი სხვა გასაღების სლოტიდან"
 
-#: pkg/storaged/stratis/pool.jsx:461 pkg/storaged/crypto/keyslots.jsx:605
+#: pkg/storaged/stratis/pool.jsx:929 pkg/storaged/crypto/keyslots.jsx:605
 msgid "Passphrase removal may prevent unlocking $0."
 msgstr "საკვანძო ფრაზის მოცილებამ შეიძლება შეუძლებელი გახადოს $0-ის განბლოკვა."
 
-#: pkg/storaged/stratis/pool.jsx:403 pkg/storaged/stratis/pool.jsx:432
-#: pkg/storaged/stratis/create-dialog.jsx:86
+#: pkg/storaged/stratis/pool.jsx:873 pkg/storaged/stratis/pool.jsx:903
+#: pkg/storaged/stratis/create-dialog.jsx:124
 #: pkg/storaged/crypto/keyslots.jsx:466 pkg/storaged/crypto/keyslots.jsx:511
 #: pkg/storaged/block/format-dialog.jsx:349
 msgid "Passphrases do not match"
@@ -5895,7 +5982,7 @@ msgstr "მუდმივი"
 msgid "Permanently delete $0 group?"
 msgstr "სამუდამოდ წავშალო $0 ჯგუფი?"
 
-#: pkg/storaged/stratis/pool.jsx:174 pkg/storaged/lvm2/volume-group.jsx:95
+#: pkg/storaged/stratis/pool.jsx:460 pkg/storaged/lvm2/volume-group.jsx:95
 #: pkg/storaged/partitions/partition.jsx:54
 #: pkg/storaged/legacy-vdo/legacy-vdo.jsx:119 pkg/storaged/btrfs/volume.jsx:77
 #: pkg/storaged/mdraid/mdraid.jsx:130
@@ -5974,6 +6061,16 @@ msgstr "ვებ კონსოლის გამოსაყენებლ�
 msgid "Please install the $0 package"
 msgstr "დააყენეთ პაკეტი $0"
 
+#: pkg/storaged/stratis/pool.jsx:304
+#, fuzzy
+#| msgid ""
+#| "Adding a keyserver requires unlocking the pool. Please provide the "
+#| "existing pool passphrase."
+msgid "Please provide an existing pool passphrase."
+msgstr ""
+"ახალი გასარებების სერვერის დასამატებლად საჭიროა პულის განბლოკვა. შეიყვანეთ "
+"არსებული პულის საკვანძო ფრაზა."
+
 #: pkg/packagekit/updates.jsx:1552
 msgid "Please resolve the issue and reload this page."
 msgstr "გადაწყვიტეთ პრობლემა და განაახლეთ ეს გვერდი."
@@ -6002,9 +6099,15 @@ msgstr "პული თხლად გამოყოფილი LVM2 ლო�
 msgid "Pool for thinly provisioned volumes"
 msgstr "თხლად გაწერილი საცავების პული"
 
-#: pkg/storaged/stratis/pool.jsx:482
+#: pkg/storaged/stratis/pool.jsx:315
 msgid "Pool passphrase"
 msgstr "პულის საკვანძო ფრაზა"
+
+#: pkg/storaged/stratis/pool.jsx:1020
+msgid ""
+"Pools with metadata format V1 are restricted to at most one passphrase and "
+"at most one keyserver."
+msgstr ""
 
 #: pkg/storaged/iscsi/create-dialog.jsx:111 pkg/shell/hosts_dialog.jsx:564
 msgid "Port"
@@ -6114,7 +6217,7 @@ msgid ""
 msgstr ""
 "იცავს მოსალოდნელი უახლოესი მომავალი თავდასხმებისგან თავსებადობის ხარჯზე."
 
-#: pkg/storaged/stratis/stopped-pool.jsx:98
+#: pkg/storaged/stratis/stopped-pool.jsx:123
 msgid "Provide the passphrase for the pool on these block devices:"
 msgstr "შეიყვანეთ საკვანძო ფრაზა ამ ბლოკური მოწყობილობების პულისტვის:"
 
@@ -6399,19 +6502,28 @@ msgstr "გარედან SSH-ზე"
 msgid "Remote over SSH, $0"
 msgstr "დაშორებული SSH-ის ზემოდან, $0"
 
-#: pkg/lib/cockpit-components-install-dialog.jsx:90
+#: pkg/storaged/stratis/pool.jsx:975
+#, fuzzy
+#| msgid "Keyserver removal may prevent unlocking $0."
+msgid "Removal may prevent unlocking $0."
+msgstr ""
+"გასაღებების სერვერის წაშლით თქვენ შეიძლება დაკარგოთ $0-ის განბლოკვის "
+"საშუალება."
+
+#: pkg/lib/cockpit-components-install-dialog.jsx:82
 msgid "Removals:"
 msgstr "წაიშლება:"
 
 #: pkg/systemd/timer-dialog.jsx:352 pkg/apps/application.jsx:49
-#: pkg/storaged/stratis/pool.jsx:465 pkg/storaged/stratis/pool.jsx:522
-#: pkg/storaged/stratis/pool.jsx:572 pkg/storaged/stratis/pool.jsx:590
-#: pkg/storaged/lvm2/volume-group.jsx:329
+#: pkg/storaged/stratis/pool.jsx:715 pkg/storaged/stratis/pool.jsx:742
+#: pkg/storaged/stratis/pool.jsx:792 pkg/storaged/stratis/pool.jsx:803
+#: pkg/storaged/stratis/pool.jsx:814 pkg/storaged/stratis/pool.jsx:933
+#: pkg/storaged/stratis/pool.jsx:979 pkg/storaged/lvm2/volume-group.jsx:329
 #: pkg/storaged/lvm2/physical-volume.jsx:91 pkg/storaged/nfs/nfs.jsx:315
 #: pkg/storaged/crypto/keyslots.jsx:634 pkg/storaged/crypto/keyslots.jsx:669
 #: pkg/storaged/crypto/keyslots.jsx:745 pkg/storaged/mdraid/mdraid-disk.jsx:101
 #: pkg/users/authorized-keys-panel.js:142
-#: pkg/users/authorized-keys-panel.js:150 pkg/shell/hosts.tsx:263
+#: pkg/users/authorized-keys-panel.js:150 pkg/shell/hosts.tsx:264
 msgid "Remove"
 msgstr "წაშლა"
 
@@ -6423,11 +6535,17 @@ msgstr "$0-ის წაშლა"
 msgid "Remove $0 service from $1 zone"
 msgstr "$1 ზონიდან $0 სერვისის წაშლა"
 
-#: pkg/storaged/stratis/pool.jsx:517 pkg/storaged/crypto/keyslots.jsx:653
+#: pkg/storaged/stratis/pool.jsx:974 pkg/storaged/crypto/keyslots.jsx:653
 msgid "Remove $0?"
 msgstr "წავშალო $0?"
 
-#: pkg/storaged/stratis/pool.jsx:515 pkg/storaged/crypto/keyslots.jsx:663
+#: pkg/storaged/stratis/pool.jsx:972
+#, fuzzy
+#| msgid "Remove device"
+msgid "Remove Clevis token?"
+msgstr "მოწყობილობის წაშლა"
+
+#: pkg/storaged/stratis/pool.jsx:972 pkg/storaged/crypto/keyslots.jsx:663
 msgid "Remove Tang keyserver?"
 msgstr "წავშალო Tang გასაღებების სერვერი?"
 
@@ -6454,7 +6572,7 @@ msgstr "წავშალო ნაკლული ფიზიკური ტ
 msgid "Remove passphrase in key slot $0?"
 msgstr "წავშალო საკვანძო ფრაზა გასაღების სლოტი $0-დან?"
 
-#: pkg/storaged/stratis/pool.jsx:459
+#: pkg/storaged/stratis/pool.jsx:927
 msgid "Remove passphrase?"
 msgstr "წავშალო საკვანძო სიტყვა?"
 
@@ -6471,7 +6589,7 @@ msgid "Removing"
 msgstr "წაშლა"
 
 #: pkg/storaged/crypto/keyslots.jsx:259
-#: pkg/lib/cockpit-components-install-dialog.jsx:187
+#: pkg/lib/cockpit-components-install-dialog.jsx:179
 msgid "Removing $0"
 msgstr "$0-ის წაშლა"
 
@@ -6513,7 +6631,7 @@ msgstr ""
 msgid "Removing the zone will remove all services within it."
 msgstr "ზონის წაშლა მასში მყოფი სერვისების წაშლასაც გამოიწევევს."
 
-#: pkg/storaged/stratis/pool.jsx:202 pkg/storaged/stratis/filesystem.jsx:194
+#: pkg/storaged/stratis/pool.jsx:488 pkg/storaged/stratis/filesystem.jsx:194
 #: pkg/storaged/lvm2/volume-group.jsx:70
 #: pkg/storaged/lvm2/block-logical-volume.jsx:53
 #: pkg/storaged/lvm2/block-logical-volume.jsx:242
@@ -6521,7 +6639,7 @@ msgstr "ზონის წაშლა მასში მყოფი სე�
 msgid "Rename"
 msgstr "სახელის გადარქმევა"
 
-#: pkg/storaged/stratis/pool.jsx:193
+#: pkg/storaged/stratis/pool.jsx:479
 msgid "Rename Stratis pool"
 msgstr "Stratis-ის პულისთვის სახელის გადარქმევა"
 
@@ -6647,7 +6765,7 @@ msgstr ""
 msgid "Reserved memory"
 msgstr "რეზერვირებული მეხსიერება"
 
-#: pkg/systemd/terminal.jsx:271 pkg/systemd/logs.jsx:379
+#: pkg/systemd/terminal.jsx:272 pkg/systemd/logs.jsx:379
 msgid "Reset"
 msgstr "საწყის მნიშვნელობებზე დაბრუნება"
 
@@ -6732,12 +6850,12 @@ msgstr "Round robin"
 msgid "Routes"
 msgstr "მარშრუტები"
 
-#: pkg/lib/cockpit-components-table.tsx:355
+#: pkg/lib/cockpit-components-table.tsx:362
 msgid "Row expansion"
 msgstr "მწკრივის გაფართოება"
 
-#: pkg/lib/cockpit-components-table.tsx:356
-#: pkg/lib/cockpit-components-table.tsx:357
+#: pkg/lib/cockpit-components-table.tsx:363
+#: pkg/lib/cockpit-components-table.tsx:364
 msgid "Row select"
 msgstr "მწკრივის არჩევა"
 
@@ -6780,7 +6898,7 @@ msgstr "გამშვები"
 msgid "Running"
 msgstr "გაშვებული"
 
-#: pkg/systemd/terminal.jsx:288
+#: pkg/systemd/terminal.jsx:289
 msgid "Running process prevents directory change"
 msgstr "გაშვებული პროცესი ხელს უშლის საქაღალდის შეცვლას"
 
@@ -6789,23 +6907,23 @@ msgstr "გაშვებული პროცესი ხელს უშლ
 msgid "SELinux"
 msgstr "SELinux"
 
-#: pkg/selinux/setroubleshoot-view.jsx:331
+#: pkg/selinux/setroubleshoot-view.jsx:333
 msgid "SELinux access control errors"
 msgstr "SELinux-ის წვდომის კონტროლის შეცდომები"
 
-#: pkg/selinux/setroubleshoot-view.jsx:328
+#: pkg/selinux/setroubleshoot-view.jsx:330
 msgid "SELinux is disabled on the system"
 msgstr "ამ სისტემაზე SELinux-ი გათიშულია"
 
-#: pkg/selinux/setroubleshoot-view.jsx:251
+#: pkg/selinux/setroubleshoot-view.jsx:253
 msgid "SELinux is disabled on the system."
 msgstr "ამ სისტემაზე SELinux-ი გათიშულია."
 
-#: pkg/selinux/setroubleshoot-view.jsx:267
+#: pkg/selinux/setroubleshoot-view.jsx:269
 msgid "SELinux policy"
 msgstr "SELinux-ის წესები"
 
-#: pkg/selinux/setroubleshoot-view.jsx:243
+#: pkg/selinux/setroubleshoot-view.jsx:245
 msgid "SELinux system status is unknown."
 msgstr "SELinux-ის სტატუსი უცნობია."
 
@@ -6879,8 +6997,8 @@ msgstr "შაბათობით"
 
 #: pkg/systemd/timer-dialog.jsx:389 pkg/networkmanager/dialogs-common.jsx:156
 #: pkg/packagekit/kpatch.jsx:319 pkg/metrics/metrics.jsx:1501
-#: pkg/storaged/stratis/pool.jsx:406 pkg/storaged/stratis/pool.jsx:435
-#: pkg/storaged/stratis/pool.jsx:490 pkg/storaged/nfs/nfs.jsx:188
+#: pkg/storaged/stratis/pool.jsx:877 pkg/storaged/stratis/pool.jsx:906
+#: pkg/storaged/stratis/pool.jsx:954 pkg/storaged/nfs/nfs.jsx:188
 #: pkg/storaged/crypto/keyslots.jsx:516 pkg/storaged/crypto/keyslots.jsx:535
 #: pkg/storaged/crypto/encryption.jsx:169
 #: pkg/storaged/crypto/encryption.jsx:196
@@ -6982,7 +7100,7 @@ msgstr "უსაფრთხოების პაჩები გადატ�
 msgid "Select"
 msgstr "არჩევა"
 
-#: pkg/lib/cockpit-components-typeahead-select.tsx:209
+#: pkg/lib/cockpit-components-typeahead-select.tsx:199
 msgid "Select an option"
 msgstr "აირჩიეთ პარამეტრი"
 
@@ -7034,7 +7152,7 @@ msgstr "სერვერი არ შეიძლება ცარიელ
 msgid "Server closed connection"
 msgstr "სერვერმა დახურა კავშირი"
 
-#: pkg/lib/cockpit.js:2441
+#: pkg/lib/cockpit.js:2449
 msgid "Server has closed the connection."
 msgstr "სერვერმა დახურა კავშირი."
 
@@ -7083,7 +7201,7 @@ msgstr "დაყენება"
 msgid "Set hostname"
 msgstr "ჰოსტის სახელის დაყენება"
 
-#: pkg/storaged/stratis/pool.jsx:103
+#: pkg/storaged/stratis/pool.jsx:389
 msgid "Set initial size"
 msgstr "საწყისი ზომის დაყენება"
 
@@ -7116,7 +7234,7 @@ msgstr "მორგება"
 msgid "Set weak password"
 msgstr "დააყენეთ სუსტი პაროლი"
 
-#: pkg/selinux/setroubleshoot-view.jsx:260
+#: pkg/selinux/setroubleshoot-view.jsx:262
 msgid ""
 "Setting deviates from the configured state and will revert on the next boot."
 msgstr ""
@@ -7155,7 +7273,7 @@ msgstr "გარსის სკრიპტი"
 msgid "Shift+Insert"
 msgstr "Shift+Insert"
 
-#: pkg/storaged/pages.jsx:706
+#: pkg/storaged/pages.jsx:709
 msgid "Show all $0 rows"
 msgstr "ყელა $0 მწკრივის ჩვენება"
 
@@ -7231,7 +7349,7 @@ msgstr "ერთრანგიანი"
 #: pkg/storaged/lvm2/vdo-pool.jsx:79
 #: pkg/storaged/lvm2/create-logical-volume-dialog.jsx:200
 #: pkg/storaged/lvm2/create-logical-volume-dialog.jsx:207
-#: pkg/storaged/nfs/nfs.jsx:330 pkg/storaged/pages.jsx:726
+#: pkg/storaged/nfs/nfs.jsx:330 pkg/storaged/pages.jsx:729
 #: pkg/storaged/block/resize.jsx:460 pkg/storaged/block/resize.jsx:597
 #: pkg/storaged/block/format-dialog.jsx:315
 #: pkg/storaged/partitions/partition.jsx:235
@@ -7270,7 +7388,8 @@ msgstr "შემცველობაზე გადახტომა"
 msgid "Slot"
 msgstr "სლოტი"
 
-#: pkg/storaged/crypto/keyslots.jsx:734 pkg/storaged/mdraid/mdraid-disk.jsx:83
+#: pkg/storaged/stratis/pool.jsx:824 pkg/storaged/crypto/keyslots.jsx:734
+#: pkg/storaged/mdraid/mdraid-disk.jsx:83
 msgid "Slot $0"
 msgstr "სლოტი $0"
 
@@ -7308,19 +7427,19 @@ msgstr ""
 msgid "Solid State Drive"
 msgstr "მყარსხეულიანი დისკი"
 
-#: pkg/selinux/setroubleshoot-view.jsx:89
+#: pkg/selinux/setroubleshoot-view.jsx:91
 msgid "Solution applied successfully"
 msgstr "გადაწყვეტა წარმატებით გადატარდა"
 
-#: pkg/selinux/setroubleshoot-view.jsx:95
+#: pkg/selinux/setroubleshoot-view.jsx:97
 msgid "Solution failed"
 msgstr "გადაწყვეტილების შეცდომა"
 
-#: pkg/selinux/setroubleshoot-view.jsx:359
+#: pkg/selinux/setroubleshoot-view.jsx:361
 msgid "Solutions"
 msgstr "გადაწყვეტები"
 
-#: pkg/storaged/stratis/pool.jsx:354
+#: pkg/storaged/stratis/pool.jsx:640
 msgid ""
 "Some block devices of this pool have grown in size after the pool was "
 "created. The pool can be safely grown to use the newly available space."
@@ -7380,7 +7499,7 @@ msgid "Stable"
 msgstr "სტაბილური"
 
 #: pkg/systemd/service-details.jsx:147 pkg/storaged/swap/swap.jsx:98
-#: pkg/storaged/stratis/stopped-pool.jsx:161
+#: pkg/storaged/stratis/stopped-pool.jsx:189
 #: pkg/storaged/legacy-vdo/legacy-vdo.jsx:150
 #: pkg/storaged/mdraid/mdraid.jsx:227
 msgid "Start"
@@ -7465,7 +7584,7 @@ msgstr "გაჩერება და მოძრობა"
 msgid "Stop device"
 msgstr "მოწყობილობის გაჩერება"
 
-#: pkg/shell/hosts.tsx:315
+#: pkg/shell/hosts.tsx:317
 msgid "Stop editing hosts"
 msgstr "hosts ფაილის ჩასწორების დამთავრება"
 
@@ -7510,7 +7629,7 @@ msgstr "დამახსოვრებული საკვანძო ს�
 msgid "Stratis block device"
 msgstr "Stratis-ის ბლოკური მოწყობილობა"
 
-#: pkg/storaged/stratis/pool.jsx:603 pkg/storaged/stratis/stopped-pool.jsx:194
+#: pkg/storaged/stratis/pool.jsx:1068 pkg/storaged/stratis/stopped-pool.jsx:207
 msgid "Stratis block devices"
 msgstr "Stratis-ის ბლოკური მოწყობილობები"
 
@@ -7518,19 +7637,19 @@ msgstr "Stratis-ის ბლოკური მოწყობილობე�
 msgid "Stratis blockdevs can not be made smaller"
 msgstr "Stratis ბლოკური მოწყობილობები მეტად ვეღარ დაპატარავდება"
 
-#: pkg/storaged/stratis/pool.jsx:96 pkg/storaged/stratis/filesystem.jsx:146
+#: pkg/storaged/stratis/pool.jsx:382 pkg/storaged/stratis/filesystem.jsx:146
 msgid "Stratis filesystem"
 msgstr "Stratis-ის ფაილური სისტემა"
 
-#: pkg/storaged/stratis/pool.jsx:320
+#: pkg/storaged/stratis/pool.jsx:607
 msgid "Stratis filesystems"
 msgstr "Stratis-ს ფაილური სისტემები"
 
-#: pkg/storaged/stratis/pool.jsx:381
+#: pkg/storaged/stratis/pool.jsx:667
 msgid "Stratis filesystems pool"
 msgstr "Stratis-ის ფაილური სისტემების პული"
 
-#: pkg/storaged/stratis/pool.jsx:295 pkg/storaged/stratis/stopped-pool.jsx:151
+#: pkg/storaged/stratis/pool.jsx:572 pkg/storaged/stratis/stopped-pool.jsx:179
 #: pkg/storaged/stratis/blockdev.jsx:84
 msgid "Stratis pool"
 msgstr "Startis-ის პული"
@@ -7672,7 +7791,7 @@ msgstr "ინფორმაცია სისტემის შესახ�
 msgid "System is up to date"
 msgstr "სისტემა განახლებულია"
 
-#: pkg/selinux/setroubleshoot-view.jsx:432
+#: pkg/selinux/setroubleshoot-view.jsx:434
 msgid "System modifications"
 msgstr "სისტემური ცვლილებები"
 
@@ -7822,7 +7941,7 @@ msgstr "ანგარიში '$0' შემდეგ შესვლაზ�
 msgid "The cockpit service is automatically included"
 msgstr "Cocpit-ის სერვისი ავტომატურად მოჰყვება"
 
-#: pkg/selinux/setroubleshoot-view.jsx:258
+#: pkg/selinux/setroubleshoot-view.jsx:260
 msgid "The configured state is unknown, it might change on the next boot."
 msgstr ""
 "მორგების მდგომარეობა უცნობია. შემდეგი გადატვირთვის შემდეგ შეიძლება შეიცვალოს."
@@ -7959,6 +8078,10 @@ msgstr "გასაღების პაროლები არ ემთხ
 msgid "The key you provided was not valid."
 msgstr "დამატებული გასაღები არასწორია."
 
+#: pkg/storaged/stratis/pool.jsx:320
+msgid "The keyserver at $0 must be reachable."
+msgstr ""
+
 #: pkg/storaged/crypto/keyslots.jsx:746
 msgid "The last key slot can not be removed"
 msgstr "ბოლო სლოტს ვერ წაშლით"
@@ -8032,7 +8155,7 @@ msgstr ""
 "სერვერმა უარყო $0-ის ავთენტიკაცია პაროლის საშუალებით და ავთენტიკაციის სხვა "
 "საშუალებები ხელმიუწვდომელია."
 
-#: pkg/lib/cockpit.js:2425
+#: pkg/lib/cockpit.js:2433
 msgid "The server refused to authenticate using any supported methods."
 msgstr "სერვერმა ყველა მხარდაჭერილი მეთოდით ავთენტიკაცია უარჰყო."
 
@@ -8185,7 +8308,7 @@ msgstr "განახლებების დაყენების შე�
 msgid "This information is stored only on the system."
 msgstr "შეგროვებული ინფორმაცია მხოლოდ სისტემაში ინახება."
 
-#: pkg/storaged/stratis/pool.jsx:589
+#: pkg/storaged/stratis/pool.jsx:687
 msgid ""
 "This keyserver is the only way to unlock the pool and can not be removed."
 msgstr ""
@@ -8232,18 +8355,18 @@ msgstr "საკმაო დრო დასჭირდება"
 msgid "This partition is not completely used by its content."
 msgstr "ეს დანაყოფი მისი შემცველობის მიერ სრულად არ გამოიყენება."
 
-#: pkg/storaged/stratis/pool.jsx:571
+#: pkg/storaged/stratis/pool.jsx:686
 msgid ""
 "This passphrase is the only way to unlock the pool and can not be removed."
 msgstr ""
 "ეს საკვანძო ფრაზა ამ პულის განბლოკვისთვის ერთად-ერთი საშუალებაა და მისი "
 "წაშლა შეუძლებელია."
 
-#: pkg/storaged/stratis/pool.jsx:353
+#: pkg/storaged/stratis/pool.jsx:639
 msgid "This pool does not use all the space on its block devices."
 msgstr "ეს პული მის ბლოკურ მოწყობილობებზე არსებულ ადგილს ბოლომდე არ იყენებს."
 
-#: pkg/storaged/stratis/pool.jsx:368
+#: pkg/storaged/stratis/pool.jsx:654
 msgid "This pool is in a degraded state."
 msgstr "ეს პულ ავარიულ მდგომარეობაშია."
 
@@ -8376,7 +8499,7 @@ msgstr ""
 msgid "Thursdays"
 msgstr "ხუთშაბათობით"
 
-#: pkg/storaged/stratis/pool.jsx:219
+#: pkg/storaged/stratis/pool.jsx:504
 msgid "Tier"
 msgstr "კლასი"
 
@@ -8451,7 +8574,7 @@ msgstr "თარიღის ამრჩევის გადართვა"
 msgid "Toggle filters"
 msgstr "ფილტრების ჩართ/გამორთ"
 
-#: pkg/lib/cockpit.js:2447
+#: pkg/lib/cockpit.js:2455
 msgid "Too much data"
 msgstr "მეტისმეტად ბევრი მონაცემი"
 
@@ -8471,7 +8594,7 @@ msgstr "ყველაზე მეტი დისკის მხარჯა
 msgid "Top 5 memory services"
 msgstr "ყველაზე მეტი მეხსიერების მხარჯავი 5 სერვისი"
 
-#: pkg/lib/cockpit-components-install-dialog.jsx:105
+#: pkg/lib/cockpit-components-install-dialog.jsx:97
 msgid "Total size: $0"
 msgstr "ჯამური ზომა: $0"
 
@@ -8562,7 +8685,7 @@ msgid "Turn on administrative access"
 msgstr "ადმინისტრატორის წვდომების ჩართვა"
 
 #: pkg/systemd/hwinfo.jsx:83 pkg/systemd/hwinfo.jsx:295
-#: pkg/packagekit/autoupdates.jsx:390 pkg/storaged/pages.jsx:724
+#: pkg/packagekit/autoupdates.jsx:390 pkg/storaged/pages.jsx:727
 #: pkg/storaged/block/format-dialog.jsx:310
 #: pkg/storaged/block/unrecognized-data.jsx:51
 #: pkg/storaged/partitions/partition.jsx:183
@@ -8591,7 +8714,7 @@ msgstr "გასაფილტრად აკრიფეთ"
 msgid "UDP"
 msgstr "UDP"
 
-#: pkg/storaged/stratis/pool.jsx:541 pkg/storaged/stratis/stopped-pool.jsx:180
+#: pkg/storaged/stratis/pool.jsx:1042 pkg/storaged/stratis/stopped-pool.jsx:201
 #: pkg/storaged/lvm2/volume-group.jsx:368
 #: pkg/storaged/lvm2/physical-volume.jsx:120
 #: pkg/storaged/partitions/partition.jsx:228 pkg/storaged/btrfs/device.jsx:81
@@ -8600,7 +8723,7 @@ msgstr "UDP"
 msgid "UUID"
 msgstr "UUID"
 
-#: pkg/selinux/setroubleshoot-view.jsx:114
+#: pkg/selinux/setroubleshoot-view.jsx:116
 msgid "Unable to apply this solution automatically"
 msgstr "გადაწყვეტის ავტომატური გადატარების შეცდომა"
 
@@ -8620,8 +8743,8 @@ msgstr ""
 "მითითებულ, $0 ჰოსტთან კავშირის პრობლემა. დარწმუნდით, რომ ssh გაშვებულია $1-ე "
 "პორტზე ან მიუთითეთ სხვა პორტი."
 
-#: pkg/selinux/setroubleshoot-view.jsx:60
-#: pkg/selinux/setroubleshoot-view.jsx:188
+#: pkg/selinux/setroubleshoot-view.jsx:62
+#: pkg/selinux/setroubleshoot-view.jsx:190
 msgid "Unable to get alert details."
 msgstr "გაფრთხილების დეტალების მიღების შეცდომა."
 
@@ -8647,7 +8770,7 @@ msgstr ""
 "$0-ზე შესვლის პრობლემა. ჰოსტი არ იღებს პაროლით შესვლას ან არცერთ თქვენს SSH "
 "გასაღებს."
 
-#: pkg/systemd/terminal.jsx:280
+#: pkg/systemd/terminal.jsx:281
 msgid "Unable to open directory"
 msgstr "საქაღალდის გახსნა შეუძლებელია"
 
@@ -8759,7 +8882,7 @@ msgstr "სერვისის უცნობი სახელი"
 msgid "Unknown type"
 msgstr "უცნობი ტიპი"
 
-#: pkg/storaged/stratis/stopped-pool.jsx:106 pkg/storaged/crypto/actions.jsx:40
+#: pkg/storaged/stratis/stopped-pool.jsx:131 pkg/storaged/crypto/actions.jsx:40
 #: pkg/storaged/crypto/actions.jsx:45
 #: pkg/storaged/crypto/locked-encrypted-data.jsx:36
 #: pkg/shell/credentials.tsx:242
@@ -8774,7 +8897,7 @@ msgstr "ავტომატური განბლოკვა ჩატვ�
 msgid "Unlock before resizing"
 msgstr "განბლოკვა ზომის შეცვლამდე"
 
-#: pkg/storaged/stratis/stopped-pool.jsx:95
+#: pkg/storaged/stratis/stopped-pool.jsx:120
 msgid "Unlock encrypted Stratis pool"
 msgstr "Stratis-ის დაშიფრული პულის განბლოკვა"
 
@@ -8847,7 +8970,7 @@ msgstr "მხარდაუჭერელი გარსი. დეტალ
 msgid "Until"
 msgstr "დასასრულის დრო"
 
-#: pkg/lib/cockpit.js:2427 pkg/lib/cockpit.js:2429
+#: pkg/lib/cockpit.js:2435 pkg/lib/cockpit.js:2437
 msgid "Untrusted host"
 msgstr "არასანდო ჰოსტი"
 
@@ -8910,7 +9033,7 @@ msgstr "ატვირთვა"
 
 #: pkg/systemd/overview-cards/usageCard.jsx:128 pkg/metrics/metrics.jsx:1948
 #: pkg/metrics/metrics.jsx:1949 pkg/metrics/metrics.jsx:1950
-#: pkg/metrics/metrics.jsx:1951 pkg/storaged/stratis/pool.jsx:543
+#: pkg/metrics/metrics.jsx:1951 pkg/storaged/stratis/pool.jsx:1044
 #: pkg/storaged/stratis/filesystem.jsx:256
 #: pkg/storaged/lvm2/physical-volume.jsx:122
 #: pkg/storaged/filesystem/filesystem.jsx:152
@@ -9108,7 +9231,7 @@ msgstr "აპარატურის დეტალების ნახვ�
 msgid "View login history"
 msgstr "შესვლების ისტორიის ნახვა"
 
-#: pkg/storaged/stratis/pool.jsx:371
+#: pkg/storaged/stratis/pool.jsx:657
 msgid "View logs"
 msgstr "ჟურნალის ნახვა"
 
@@ -9132,7 +9255,7 @@ msgstr "განახლების ჟურნალის ნახვა"
 msgid "Viewing memory information requires administrative access."
 msgstr "მეხსიერების ინფორმაციის ნახვას ადმინისტრირების წვდომა სჭირდება."
 
-#: pkg/storaged/stratis/pool.jsx:554
+#: pkg/storaged/stratis/pool.jsx:1055
 msgid ""
 "Virtual filesystem sizes are larger than the pool. Overprovisioning can not "
 "be disabled."
@@ -9175,8 +9298,8 @@ msgstr "საცავის ზომაა $0. შემცველობი
 msgid "Waiting"
 msgstr "მოლოდინი"
 
-#: pkg/selinux/setroubleshoot-view.jsx:58
-#: pkg/selinux/setroubleshoot-view.jsx:186
+#: pkg/selinux/setroubleshoot-view.jsx:60
+#: pkg/selinux/setroubleshoot-view.jsx:188
 msgid "Waiting for details..."
 msgstr "დეტალების მოლოდინი..."
 
@@ -9186,8 +9309,8 @@ msgstr ""
 "სხვა პროგრამების მიერ პაკეტების მმართველის გამოყენების დასრულების მოლოდინი..."
 
 #: pkg/storaged/crypto/keyslots.jsx:253
-#: pkg/lib/cockpit-components-install-dialog.jsx:150
-#: pkg/lib/cockpit-components-install-dialog.jsx:181
+#: pkg/lib/cockpit-components-install-dialog.jsx:142
+#: pkg/lib/cockpit-components-install-dialog.jsx:173
 msgid "Waiting for other software management operations to finish"
 msgstr "პროგრამების მართვის სხვა ოპერაციების დასრულების მოლოდინი"
 
@@ -9257,7 +9380,7 @@ msgstr ""
 "მიმდინარეობის შესახებ. მაგრამ განახლების პროცესი ფონურად გაგრძელდება. "
 "მიმდინარეობის დასანახავად დაუკავშირდით თავიდან."
 
-#: pkg/systemd/terminal.jsx:264
+#: pkg/systemd/terminal.jsx:265
 msgid "White"
 msgstr "თეთრი"
 
@@ -9369,11 +9492,11 @@ msgstr ""
 "თქვენი სერვერი მალე კავშირს დახურავს. გადატვირთვის შემდეგ შეგეძლებათ თავიდან "
 "დაუკავშირდეთ."
 
-#: pkg/lib/cockpit.js:2417
+#: pkg/lib/cockpit.js:2425
 msgid "Your session has been terminated."
 msgstr "თქვენი სესია გაწყვეტილია."
 
-#: pkg/lib/cockpit.js:2419
+#: pkg/lib/cockpit.js:2427
 msgid "Your session has expired. Please log in again."
 msgstr "სესიის ვადა გასულია. თავიდან შედით."
 
@@ -9553,7 +9676,7 @@ msgstr "დეაქტივაცია"
 msgid "debug"
 msgstr "შეცდომების მოძებნა"
 
-#: pkg/storaged/stratis/pool.jsx:162 pkg/storaged/stratis/filesystem.jsx:112
+#: pkg/storaged/stratis/pool.jsx:448 pkg/storaged/stratis/filesystem.jsx:112
 #: pkg/storaged/lvm2/volume-group.jsx:83 pkg/storaged/lvm2/volume-group.jsx:311
 #: pkg/storaged/lvm2/block-logical-volume.jsx:64
 #: pkg/storaged/block/format-dialog.jsx:208
@@ -9599,7 +9722,7 @@ msgstr "დისკი"
 #: pkg/systemd/overview-cards/configurationCard.jsx:57
 #: pkg/networkmanager/dialogs-common.jsx:251
 #: pkg/networkmanager/network-interface.jsx:349
-#: pkg/storaged/stratis/pool.jsx:539 pkg/storaged/stratis/filesystem.jsx:250
+#: pkg/storaged/stratis/pool.jsx:1040 pkg/storaged/stratis/filesystem.jsx:250
 #: pkg/storaged/stratis/filesystem.jsx:265
 #: pkg/storaged/lvm2/volume-group.jsx:366
 #: pkg/storaged/lvm2/block-logical-volume.jsx:288
@@ -9874,6 +9997,12 @@ msgstr "mkfs"
 msgid "more details"
 msgstr "მეტი დეტალი"
 
+#: pkg/storaged/pages.jsx:844
+#, fuzzy
+#| msgid "More info..."
+msgid "more info"
+msgstr "მეტი ინფორმაცია..."
+
 #: pkg/storaged/utils.js:854 pkg/storaged/manifest.json:0
 msgid "mount"
 msgstr "მიმაგრება"
@@ -9882,7 +10011,7 @@ msgstr "მიმაგრება"
 msgid "nbde"
 msgstr "nbde"
 
-#: pkg/networkmanager/manifest.json:0 pkg/systemd/manifest.json:0
+#: pkg/systemd/manifest.json:0 pkg/networkmanager/manifest.json:0
 msgid "network"
 msgstr "ქსელი"
 
@@ -9912,8 +10041,6 @@ msgstr "პრიორიტეტი"
 
 #: pkg/systemd/overview-cards/tuned-dialog.jsx:86
 #: pkg/storaged/stratis/filesystem.jsx:263
-#: pkg/storaged/stratis/stopped-pool.jsx:183
-#: pkg/storaged/stratis/stopped-pool.jsx:187
 #: pkg/storaged/crypto/encryption.jsx:233
 #: pkg/storaged/crypto/encryption.jsx:236
 msgid "none"
@@ -10103,11 +10230,11 @@ msgstr "სწრაფი ასლი"
 msgid "socket"
 msgstr "სოკეტი"
 
-#: pkg/selinux/setroubleshoot-view.jsx:121
+#: pkg/selinux/setroubleshoot-view.jsx:123
 msgid "solution"
 msgstr "გადაწყვეტა"
 
-#: pkg/selinux/setroubleshoot-view.jsx:166
+#: pkg/selinux/setroubleshoot-view.jsx:168
 msgid "solution details"
 msgstr "გადაწყვეტის დეტალები"
 
@@ -10119,7 +10246,7 @@ msgstr "sos"
 msgid "sos report failed"
 msgstr "sos-ის ანგარიშის შეცდომა"
 
-#: pkg/users/manifest.json:0 pkg/systemd/manifest.json:0
+#: pkg/systemd/manifest.json:0 pkg/users/manifest.json:0
 msgid "ssh"
 msgstr "ssh"
 
@@ -10140,7 +10267,7 @@ msgstr "გაჩერება"
 msgid "stop boot on failure"
 msgstr "შეცდომის შემთხვევაში ჩატვირთვის გაჩერება"
 
-#: pkg/storaged/stratis/stopped-pool.jsx:152 pkg/storaged/mdraid/mdraid.jsx:217
+#: pkg/storaged/stratis/stopped-pool.jsx:180 pkg/storaged/mdraid/mdraid.jsx:217
 msgid "stopped"
 msgstr "გაჩერებულია"
 
@@ -10230,10 +10357,6 @@ msgstr "useradd"
 msgid "username"
 msgstr "მომხმარებლის სახელი"
 
-#: pkg/storaged/stratis/stopped-pool.jsx:183
-msgid "using key description $0"
-msgstr "ვიყენებ გასაღების აღწერას $0"
-
 #: pkg/storaged/manifest.json:0
 msgid "vdo"
 msgstr "vdo"
@@ -10269,6 +10392,9 @@ msgstr "yum"
 #: pkg/networkmanager/manifest.json:0
 msgid "zone"
 msgstr "ზონა"
+
+#~ msgid "using key description $0"
+#~ msgstr "ვიყენებ გასაღების აღწერას $0"
 
 #~ msgid "Change iSCSI initiater name"
 #~ msgstr "iSCSI ინიციატორის სახელის შეცვლა"
