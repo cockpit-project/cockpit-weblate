@@ -9,16 +9,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-03 03:01+0000\n"
-"PO-Revision-Date: 2025-04-03 22:40+0000\n"
+"PO-Revision-Date: 2025-09-04 08:53+0000\n"
 "Last-Translator: Ricky Tigg <ricky.tigg@gmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/cockpit/"
-"main/fi/>\n"
+"cockpit/fi/>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.10.4\n"
+"X-Generator: Weblate 5.13\n"
 
 #: pkg/users/accounts-list.js:231
 msgid "# of users"
@@ -81,12 +81,10 @@ msgstr[0] "$0 päivä"
 msgstr[1] "$0 päivää"
 
 #: pkg/systemd/overview-cards/smart-status.jsx:94
-#, fuzzy
-#| msgid "Disk is failing"
 msgid "$0 disk is failing"
 msgid_plural "$0 disks are failing"
-msgstr[0] "Levy on rikkoutumassa"
-msgstr[1] "Levy on rikkoutumassa"
+msgstr[0] "$0 levy on vialla"
+msgstr[1] "$0 levyä on vialla"
 
 #: pkg/storaged/mdraid/mdraid.jsx:274 pkg/playground/translate.js:26
 #: pkg/playground/translate.js:29
@@ -923,28 +921,19 @@ msgstr ""
 "hallintakäyttöliittymä ei ole saatavilla."
 
 #: pkg/storaged/stratis/pool.jsx:951
-#, fuzzy
-#| msgid ""
-#| "Adding a keyserver requires unlocking the pool. Please provide the "
-#| "existing pool passphrase."
 msgid "Adding a keyserver requires unlocking the pool."
 msgstr ""
-"Avainpalvelimen lisääminen edellyttää altaan lukituksen avaamista. Syötä "
-"olemassa oleva altaan tunnuslause."
+"Avainpalvelimen lisääminen edellyttää resurssien altaan lukituksen avaamista."
 
 #: pkg/storaged/stratis/pool.jsx:874
-#, fuzzy
-#| msgid ""
-#| "Saving a new passphrase requires unlocking the disk. Please provide a "
-#| "current disk passphrase."
 msgid "Adding a passphrase requires unlocking the pool."
 msgstr ""
-"Uuden salasanan tallentaminen edellyttää levyn lukituksen avaamista. Anna "
-"nykyinen levyn tunnuslause."
+"Salalauseen lisääminen edellyttää resurssien altaan lukituksen avaamista."
 
 #: pkg/storaged/stratis/pool.jsx:522
 msgid "Adding blockdevices requires unlocking the pool."
 msgstr ""
+"Lohkolaitteiden lisääminen edellyttää resurssien altaan lukituksen avaamista."
 
 #: pkg/networkmanager/firewall.jsx:734
 msgid ""
@@ -1214,14 +1203,14 @@ msgid "At least one disk is needed."
 msgstr "Vähintään yksi levy tarvitaan."
 
 #: pkg/storaged/stratis/pool.jsx:322
-#, fuzzy
-#| msgid "At least one block device is needed."
 msgid "At least one keyserver must be reachable."
-msgstr "Vähintään yksi lohkolaite tarvitaan."
+msgstr "Vähintään yhden avainpalvelimen on oltava tavoitettavissa."
 
 #: pkg/storaged/stratis/pool.jsx:326
 msgid "At least one of the non-interactive unlock methods must work."
 msgstr ""
+"Vähintään yhden ei-vuorovaikutteisista lukituksen avausmenetelmistä on "
+"toimittava."
 
 #: pkg/storaged/btrfs/subvolume.jsx:383
 msgid "At least one subvolume needs to be mounted"
@@ -1779,10 +1768,8 @@ msgid "Cleartext device"
 msgstr "Selkotekstilaite"
 
 #: pkg/storaged/stratis/pool.jsx:747 pkg/storaged/stratis/pool.jsx:811
-#, fuzzy
-#| msgid "e.g. \"$0\""
 msgid "Clevis \"$0\""
-msgstr "esim. \"$0\""
+msgstr "Clevis \"$0\""
 
 #: pkg/systemd/overview-cards/realmd.jsx:302
 msgid "Client software"
@@ -2084,10 +2071,8 @@ msgid "Contacted domain"
 msgstr "Toimialue, johon otettiin yhteyttä"
 
 #: pkg/systemd/service-details.jsx:688
-#, fuzzy
-#| msgid "Container:"
 msgid "Container"
-msgstr "Kontti:"
+msgstr "Kontti"
 
 #: pkg/shell/nav.tsx:295
 msgid "Contains:"
@@ -2529,7 +2514,7 @@ msgid ""
 "prefixed with '-' or '+'"
 msgstr ""
 "Päivämäärätietojen on oltava muodossa VVVV-KK-PP tt:mm:ss. Vaihtoehtoisesti "
-"merkkijonot \"eilen\", \"tänään\", \"huomenna\" ymmärretään. \"nyt\" viittaa "
+"merkkijonot 'yesterday', 'today', 'tomorrow' ymmärretään. 'now' viittaa "
 "nykyiseen aikaan. Lopuksi suhteelliset ajat voidaan määrittää etuliitteellä "
 "'-' tai '+'"
 
@@ -2689,8 +2674,6 @@ msgid "Deleting erases all data on a volume group."
 msgstr "Poistaminen poistaa kaikki taltioryhmässä olevat tiedot."
 
 #: pkg/storaged/btrfs/subvolume.jsx:254
-#, fuzzy
-#| msgid "Deleting erases all data on this subvolume and all it's children."
 msgid "Deleting erases all data on this subvolume and all its children."
 msgstr ""
 "Poistaminen tyhjentää kaikki tämän alitaltion tiedot ja kaikki sen lapset."
@@ -3125,10 +3108,8 @@ msgid "Encryption passphrase"
 msgstr "Salauksen tunnuslause"
 
 #: pkg/storaged/stratis/pool.jsx:599
-#, fuzzy
-#| msgid "Encryption options"
 msgid "Encryption tokens"
-msgstr "Salauksen valinnat"
+msgstr "Salauspoletit"
 
 #: pkg/storaged/crypto/encryption.jsx:226
 msgid "Encryption type"
@@ -3750,10 +3731,8 @@ msgstr ""
 "Esimerkki: 192.0.2.0/24, 2001:db8::/32"
 
 #: pkg/networkmanager/wireguard.jsx:302
-#, fuzzy
-#| msgid "IPv4 addresses"
 msgid "IP addresses"
-msgstr "IPv4-osoitteet"
+msgstr "IP-osoitteet"
 
 #: pkg/networkmanager/network-interface.jsx:569
 msgid "IPv4"
@@ -3784,26 +3763,20 @@ msgstr ""
 "porttinumeroiden perusteella"
 
 #: pkg/storaged/stratis/pool.jsx:308
-#, fuzzy
-#| msgid ""
-#| "Adding a keyserver requires unlocking the pool. Please provide the "
-#| "existing pool passphrase."
 msgid ""
 "If none of the keyservers is reachable, you can provide an existing "
 "passphrase."
 msgstr ""
-"Avainpalvelimen lisääminen edellyttää altaan lukituksen avaamista. Syötä "
-"olemassa oleva altaan tunnuslause."
+"Jos mikään avainpalvelimista ei ole tavoitettavissa, voit antaa olemassa "
+"olevan salalauseen."
 
 #: pkg/storaged/stratis/pool.jsx:312
-#, fuzzy
-#| msgid ""
-#| "The disk needs to be unlocked before formatting.  Please provide a "
-#| "existing passphrase."
 msgid ""
 "If none of the non-interactive unlock methods works, you can provide an "
 "existing passphrase."
-msgstr "Levy on avattava ennen alustamista. Anna olemassa oleva tunnuslause."
+msgstr ""
+"Jos mikään ei-vuorovaikutteisista lukituksen avausmenetelmistä ei toimi, "
+"voit ilmoittaa olemassa olevan salalauseen."
 
 #: pkg/static/login.html:102
 msgid ""
@@ -3822,16 +3795,12 @@ msgstr ""
 "tapauksessa älä muodosta yhteyttä ja ota yhteyttä järjestelmänvalvojaan."
 
 #: pkg/storaged/stratis/pool.jsx:306
-#, fuzzy
-#| msgid ""
-#| "Adding a keyserver requires unlocking the pool. Please provide the "
-#| "existing pool passphrase."
 msgid ""
 "If the keyserver at $0 is not reachable, you can provide an existing "
 "passphrase."
 msgstr ""
-"Avainpalvelimen lisääminen edellyttää altaan lukituksen avaamista. Syötä "
-"olemassa oleva altaan tunnuslause."
+"Jos sijainnissa $0 oleva avainpalvelin ei ole tavoitettavissa, voit antaa "
+"olemassa olevan salalauseen."
 
 #: pkg/networkmanager/ip-settings.jsx:44 pkg/packagekit/updates.jsx:675
 #: pkg/packagekit/updates.jsx:757
@@ -4321,10 +4290,8 @@ msgid "Last successful login:"
 msgstr "Edellinen onnistunut kirjautuminen:"
 
 #: pkg/storaged/stratis/pool.jsx:768
-#, fuzzy
-#| msgid "Last disk can not be removed"
 msgid "Last token can not be removed"
-msgstr "Viimeistä levyä ei voida poistaa"
+msgstr "Viimeistä polettia ei voi poistaa"
 
 #: pkg/storaged/lvm2/block-logical-volume.jsx:294
 #: pkg/storaged/lvm2/create-logical-volume-dialog.jsx:192
@@ -4851,10 +4818,8 @@ msgid "Messages related to the failure might be found in the journal:"
 msgstr "Virheeseen liittyvät viestit saattavat löytyä päiväkirjasta:"
 
 #: pkg/storaged/stratis/pool.jsx:1018
-#, fuzzy
-#| msgid "Invalid date format"
 msgid "Metadata format"
-msgstr "Virheellinen päivämuoto"
+msgstr "Metatietojen muoto"
 
 #: pkg/storaged/lvm2/thin-pool-logical-volume.jsx:144
 #: pkg/storaged/lvm2/vdo-pool.jsx:83
@@ -5392,7 +5357,7 @@ msgstr "Ei välinettä asetettuna"
 
 #: pkg/storaged/stratis/pool.jsx:776
 msgid "No more space for passphrases or keyservers."
-msgstr ""
+msgstr "Ei enää tilaa salalauseille tai avainpalvelimille."
 
 #: pkg/storaged/partitions/format-disk-dialog.jsx:58
 msgid "No partitioning"
@@ -5789,6 +5754,8 @@ msgid ""
 "for a virtual machine, the partitions must be managed by the operating "
 "system inside the virtual machine."
 msgstr ""
+"Tässä lohkolaitteessa ei tueta osioita. Jos sitä käytetään virtuaalikoneen "
+"levynä, käyttöjärjestelmän on hallittava osioita virtuaalikoneen sisällä."
 
 #: pkg/networkmanager/team.jsx:50
 msgid "Passive"
@@ -5939,16 +5906,13 @@ msgstr ""
 "Vertaisella #$0 on virheellinen päätepisteportti. Portin on oltava numero."
 
 #: pkg/networkmanager/wireguard.jsx:157
-#, fuzzy
-#| msgid ""
-#| "Peer #$0 has invalid endpoint. It must be specified as host:port, e.g. "
-#| "1.2.3.4:51820 or example.com:51820"
 msgid ""
 "Peer #$0 has invalid endpoint. It must be specified as host:port, e.g. "
 "1.2.3.4:51820, [2001:db8::1]:51820 or example.com:51820"
 msgstr ""
-"Vertaisella #$0 on virheellinen päätepiste. Se on määritettävä 'isäntä:"
-"portti':ksi, esim. 1.2.3.4:51820 tai esimerkki.com:51820"
+"Vertaislaitteella #$0 on virheellinen päätepiste. Se on määritettävä "
+"muodossa isäntä:portti, esim. 1.2.3.4:51820, [2001:db8::1]:51820 tai "
+"esimerkiksi.com:51820"
 
 #: pkg/networkmanager/wireguard.jsx:318
 msgid "Peers"
@@ -6066,14 +6030,8 @@ msgid "Please install the $0 package"
 msgstr "Asenna $0-paketti"
 
 #: pkg/storaged/stratis/pool.jsx:304
-#, fuzzy
-#| msgid ""
-#| "Adding a keyserver requires unlocking the pool. Please provide the "
-#| "existing pool passphrase."
 msgid "Please provide an existing pool passphrase."
-msgstr ""
-"Avainpalvelimen lisääminen edellyttää altaan lukituksen avaamista. Syötä "
-"olemassa oleva altaan tunnuslause."
+msgstr "Syötä olemassa oleva resurssien altaan salalause."
 
 #: pkg/packagekit/updates.jsx:1582
 msgid "Please resolve the issue and reload this page."
@@ -6112,6 +6070,8 @@ msgid ""
 "Pools with metadata format V1 are restricted to at most one passphrase and "
 "at most one keyserver."
 msgstr ""
+"Metatietomuotoa V1 käyttävät resurssien altaat on rajoitettu enintään yhteen "
+"salalauseen ja enintään yhteen avainpalvelimeen."
 
 #: pkg/storaged/iscsi/create-dialog.jsx:111 pkg/shell/hosts_dialog.jsx:564
 msgid "Port"
@@ -6507,10 +6467,8 @@ msgid "Remote over SSH, $0"
 msgstr "Etäkäyttö SSH, $0:n välityksellä"
 
 #: pkg/storaged/stratis/pool.jsx:975
-#, fuzzy
-#| msgid "Keyserver removal may prevent unlocking $0."
 msgid "Removal may prevent unlocking $0."
-msgstr "Avaimenpalvelimen poisto voi estää lukituksen avaamisen$0."
+msgstr "Poistaminen saattaa estää $0:n lukituksen avaamisen."
 
 #: pkg/lib/cockpit-components-install-dialog.jsx:82
 msgid "Removals:"
@@ -6542,10 +6500,8 @@ msgid "Remove $0?"
 msgstr "Poistetaanko $0?"
 
 #: pkg/storaged/stratis/pool.jsx:972
-#, fuzzy
-#| msgid "Remove device"
 msgid "Remove Clevis token?"
-msgstr "Poista laite"
+msgstr "Poistetaanko Clevis-poletti?"
 
 #: pkg/storaged/stratis/pool.jsx:972 pkg/storaged/crypto/keyslots.jsx:663
 msgid "Remove Tang keyserver?"
@@ -6605,7 +6561,7 @@ msgstr ""
 
 #: pkg/storaged/jobs-panel.jsx:66
 msgid "Removing $target from MDRAID device"
-msgstr "$Target poistetaan MDRAID-laitteesta"
+msgstr "$target poistetaan MDRAID-laitteesta"
 
 #: pkg/storaged/crypto/keyslots.jsx:612
 msgid ""
@@ -6618,7 +6574,7 @@ msgstr ""
 
 #: pkg/storaged/jobs-panel.jsx:79
 msgid "Removing physical volume from $target"
-msgstr "Fyysinen taltio poistetaan $Target:sta"
+msgstr "Fyysinen taltio poistetaan $target:sta"
 
 #: pkg/networkmanager/firewall.jsx:1010
 msgid ""
@@ -7705,7 +7661,7 @@ msgstr "Kopioitu onnistuneesti leikepöydälle"
 
 #: pkg/storaged/crypto/tang.jsx:146
 msgid "Successfully copied to clipboard!"
-msgstr "Kopioitu onnistuneesti leikepöydälle!"
+msgstr "Kopioi leikepöydälle!"
 
 #: pkg/systemd/timer-dialog.jsx:314 pkg/packagekit/autoupdates.jsx:426
 msgid "Sundays"
@@ -7965,14 +7921,11 @@ msgstr ""
 "Tällä hetkellä kirjautuneena oleva käyttäjä ei saa nähdä tietoja avaimista."
 
 #: pkg/storaged/block/format-dialog.jsx:371
-#, fuzzy
-#| msgid ""
-#| "The disk needs to be unlocked before formatting.  Please provide a "
-#| "existing passphrase."
 msgid ""
 "The disk needs to be unlocked before formatting. Please provide an existing "
 "passphrase."
-msgstr "Levy on avattava ennen alustamista. Anna olemassa oleva tunnuslause."
+msgstr ""
+"Levyn lukitus on avattava ennen alustusta. Syötä olemassa oleva salalause."
 
 #: pkg/sosreport/sosreport.jsx:370
 msgid "The file $0 will be deleted."
@@ -8090,7 +8043,7 @@ msgstr "Antamasi avain ei ollut kelvollinen."
 
 #: pkg/storaged/stratis/pool.jsx:320
 msgid "The keyserver at $0 must be reachable."
-msgstr ""
+msgstr "Sijainnissa $0 olevan avainpalvelimen on oltava tavoitettavissa."
 
 #: pkg/storaged/crypto/keyslots.jsx:746
 msgid "The last key slot can not be removed"
@@ -8457,6 +8410,9 @@ msgid ""
 "This volume group contains the root filesystem. Renaming it might require "
 "further changes to the bootloader configuration or kernel command line."
 msgstr ""
+"Tämä taltioryhmä sisältää juuritiedostojärjestelmän. Sen uudelleennimeäminen "
+"saattaa vaatia lisämuutoksia käynnistyslataimen asetuksiin tai ytimen "
+"komentoriville."
 
 #: pkg/storaged/lvm2/volume-group.jsx:354
 msgid "This volume group is missing some physical volumes."
@@ -8486,11 +8442,6 @@ msgstr ""
 "viimeinen käynnistys, -1 käynnistys ennen viimeistä jne."
 
 #: pkg/systemd/logs.jsx:345
-#, fuzzy
-#| msgid ""
-#| "This will add match for '_SYSTEMD_UNIT=', 'COREDUMP_UNIT=' and 'UNIT=' to "
-#| "find all possible messages for the given unit. Can contain more units "
-#| "separated by comma. "
 msgid ""
 "This will add match for '_SYSTEMD_UNIT=', 'COREDUMP_UNIT=' and 'UNIT=' to "
 "find all possible messages for the given unit. Can contain more units "
@@ -8498,7 +8449,7 @@ msgid ""
 msgstr ""
 "Tämä lisää osuman '_SYSTEMD_UNIT =', 'COREDUMP_UNIT =' ja 'UNIT =' "
 "löytääkseen kaikki mahdolliset viestit annetulle yksikölle. Voi sisältää "
-"enemmän yksiköitä pilkuilla erotettuna. "
+"enemmän yksiköitä pilkuilla erotettuna."
 
 #: pkg/shell/hosts_dialog.jsx:1034
 msgid "This will allow you to log in without password in the future."
@@ -8526,7 +8477,7 @@ msgstr "Aika"
 
 #: pkg/packagekit/updates.jsx:595
 msgid "Time remaining: "
-msgstr ""
+msgstr "Jäljellä oleva aika: "
 
 #: pkg/lib/serverTime.js:574
 msgid "Time zone"
@@ -8846,10 +8797,8 @@ msgid "Unexpected error"
 msgstr "Odottamaton virhe"
 
 #: pkg/storaged/partitions/partition-table.jsx:122
-#, fuzzy
-#| msgid "Extended partition"
 msgid "Unexpected partitions"
-msgstr "Laajennettu osio"
+msgstr "Odottamattomat osiot"
 
 #: pkg/storaged/block/unformatted-data.jsx:30
 msgid "Unformatted data"
@@ -8988,7 +8937,7 @@ msgstr "Ei-tuettu looginen taltio"
 
 #: pkg/static/login.js:1055
 msgid "Unsupported shell. Check the journal for details."
-msgstr ""
+msgstr "Ei-tuettu komentotulkki. Tarkista lisätietoja päiväkirjasta."
 
 #: pkg/systemd/logs.jsx:323
 msgid "Until"
@@ -9019,10 +8968,8 @@ msgid "Update package information"
 msgstr "Päivitä pakettitiedot"
 
 #: pkg/packagekit/updates.jsx:595
-#, fuzzy
-#| msgid "Update log"
 msgid "Update progress"
-msgstr "Päivitysloki"
+msgstr "Päivityksen edistyminen"
 
 #: pkg/packagekit/updates.jsx:680 pkg/packagekit/updates.jsx:744
 msgid "Update was successful"
@@ -9226,10 +9173,8 @@ msgid "Very securely erasing $target"
 msgstr "Poistetaan hyvin turvallisesti $target"
 
 #: pkg/systemd/service-details.jsx:692
-#, fuzzy
-#| msgid "Link to another container"
 msgid "View Podman container"
-msgstr "Yhdistä toiseen konttiin"
+msgstr "Näytä Podman-kontti"
 
 #: pkg/metrics/metrics.jsx:730 pkg/metrics/metrics.jsx:731
 msgid "View all CPUs"
@@ -9720,7 +9665,7 @@ msgstr "virheenjäljitys"
 #: pkg/storaged/legacy-vdo/legacy-vdo.jsx:80 pkg/storaged/btrfs/volume.jsx:66
 #: pkg/storaged/btrfs/subvolume.jsx:235 pkg/storaged/mdraid/mdraid.jsx:119
 msgid "delete"
-msgstr "Poista"
+msgstr "pyyhki pois"
 
 #: pkg/storaged/dialog.jsx:1190
 msgid "device of btrfs volume"
@@ -10033,10 +9978,8 @@ msgid "more details"
 msgstr "lisätietoja"
 
 #: pkg/storaged/pages.jsx:844
-#, fuzzy
-#| msgid "More info..."
 msgid "more info"
-msgstr "Lisätietoja..."
+msgstr "lisätietoja"
 
 #: pkg/storaged/utils.js:854 pkg/storaged/manifest.json:0
 msgid "mount"
