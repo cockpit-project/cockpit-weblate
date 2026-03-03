@@ -24,7 +24,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-26 09:39+0000\n"
+"POT-Creation-Date: 2026-03-02 09:10+0000\n"
 "PO-Revision-Date: 2025-12-03 21:23+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://translate.fedoraproject.org/projects/cockpit/"
@@ -53,7 +53,7 @@ msgstr[3] "$0 מעבדים"
 msgid "$0 GiB"
 msgstr "$0 GiB"
 
-#: pkg/networkmanager/network-main.jsx:160
+#: pkg/networkmanager/network-main.jsx:189
 msgid "$0 active zone"
 msgid_plural "$0 active zones"
 msgstr[0] "אזור פעיל"
@@ -175,6 +175,16 @@ msgstr "$0 מסננים פעילים"
 msgid "$0 free"
 msgstr "$0 פנויים"
 
+#: pkg/networkmanager/network-interface.jsx:1056
+#, fuzzy
+#| msgid "$0 network"
+msgid "$0 hidden network"
+msgid_plural "$0 hidden networks"
+msgstr[0] "רשת $0"
+msgstr[1] "רשת $0"
+msgstr[2] "רשת $0"
+msgstr[3] "רשת $0"
+
 #: pkg/lib/cockpit-components-plot.jsx:217
 msgid "$0 hour"
 msgid_plural "$0 hours"
@@ -266,6 +276,16 @@ msgstr[3] "$0 חודשים"
 #: pkg/users/accounts-list.js:311
 msgid "$0 more..."
 msgstr "$0 נוספים…"
+
+#: pkg/networkmanager/network-main.jsx:99
+#, fuzzy
+#| msgid "$0 network"
+msgid "$0 network"
+msgid_plural "$0 networks"
+msgstr[0] "רשת $0"
+msgstr[1] "רשת $0"
+msgstr[2] "רשת $0"
+msgstr[3] "רשת $0"
 
 #: pkg/packagekit/history.jsx:75
 msgid "$0 package"
@@ -692,11 +712,17 @@ msgstr[3] "יש שירותים שעליך להפעיל מחדש כדי שהשי�
 msgid "A volume group with missing physical volumes can not be renamed."
 msgstr "לא ניתן לשנות שם לקבוצת כרכים שחסרים לה כרכים פיזיים."
 
+#: pkg/networkmanager/interfaces.js:907
+#, fuzzy
+#| msgid "ARP"
+msgid "AP"
+msgstr "ARP"
+
 #: pkg/networkmanager/bond.jsx:41
 msgid "ARP"
 msgstr "ARP"
 
-#: pkg/networkmanager/network-interface.jsx:410
+#: pkg/networkmanager/network-interface.jsx:652
 msgid "ARP monitoring"
 msgstr "מעקב אחר ARP"
 
@@ -765,6 +791,7 @@ msgstr "חשבונות"
 msgid "Action"
 msgstr "פעולה"
 
+#: pkg/networkmanager/network-interface.jsx:1111
 #: pkg/networkmanager/firewall.jsx:198 pkg/apps/application-list.jsx:132
 #: pkg/users/accounts-list.js:360 pkg/storaged/pages.jsx:716
 #: pkg/storaged/drive/smart-details.jsx:92
@@ -783,7 +810,7 @@ msgstr "הפעלה לפני שינוי גודל"
 msgid "Activating $target"
 msgstr "$target מופעל"
 
-#: pkg/networkmanager/interfaces.js:854 pkg/networkmanager/team.jsx:36
+#: pkg/networkmanager/interfaces.js:891 pkg/networkmanager/team.jsx:36
 msgid "Active"
 msgstr "פעיל"
 
@@ -841,11 +868,11 @@ msgstr "הוספת הצפנת כונן תלוית רשת"
 msgid "Add Tang keyserver"
 msgstr "הוספת שרת מפתחות Tang"
 
-#: pkg/networkmanager/vlan.jsx:76 pkg/networkmanager/network-main.jsx:131
+#: pkg/networkmanager/vlan.jsx:76 pkg/networkmanager/network-main.jsx:160
 msgid "Add VLAN"
 msgstr "הוספת VLAN"
 
-#: pkg/networkmanager/network-main.jsx:127
+#: pkg/networkmanager/network-main.jsx:156
 msgid "Add VPN"
 msgstr "הוספת VPN"
 
@@ -870,11 +897,11 @@ msgstr "הוספת כתובת"
 msgid "Add block devices"
 msgstr "הוספת התקני בלוק"
 
-#: pkg/networkmanager/bond.jsx:130 pkg/networkmanager/network-main.jsx:128
+#: pkg/networkmanager/bond.jsx:130 pkg/networkmanager/network-main.jsx:157
 msgid "Add bond"
 msgstr "הוספת מאגד"
 
-#: pkg/networkmanager/bridge.jsx:81 pkg/networkmanager/network-main.jsx:130
+#: pkg/networkmanager/bridge.jsx:81 pkg/networkmanager/network-main.jsx:159
 msgid "Add bridge"
 msgstr "הוספת גשר"
 
@@ -959,7 +986,7 @@ msgstr "הוספת שירותים לאזור $0"
 msgid "Add services to zone $0"
 msgstr "הוספת שירותים לאזור $0"
 
-#: pkg/networkmanager/team.jsx:139 pkg/networkmanager/network-main.jsx:129
+#: pkg/networkmanager/team.jsx:139 pkg/networkmanager/network-main.jsx:158
 msgid "Add team"
 msgstr "הוספת צוות"
 
@@ -1024,11 +1051,11 @@ msgstr "הוספת כרך פיזי אל $target"
 msgid "Adding rd.neednet=1 to kernel command line"
 msgstr "rd.neednet=1 מתווספת לשורת הפקודה של הליבה"
 
-#: pkg/networkmanager/network-interface.jsx:291
+#: pkg/networkmanager/network-interface.jsx:533
 msgid "Additional DNS $val"
 msgstr "$val נוסף ב־DNS"
 
-#: pkg/networkmanager/network-interface.jsx:294
+#: pkg/networkmanager/network-interface.jsx:536
 msgid "Additional DNS search domains $val"
 msgstr "חיפוש שמות תחום DNS נוספים $val"
 
@@ -1036,7 +1063,7 @@ msgstr "חיפוש שמות תחום DNS נוספים $val"
 msgid "Additional actions"
 msgstr "פעולות נוספות"
 
-#: pkg/networkmanager/network-interface.jsx:282
+#: pkg/networkmanager/network-interface.jsx:524
 msgid "Additional address $val"
 msgstr "כתובת נוספת $val"
 
@@ -1056,7 +1083,7 @@ msgstr "פתחות נוספות"
 msgid "Address"
 msgstr "כתובת"
 
-#: pkg/networkmanager/network-interface.jsx:282
+#: pkg/networkmanager/network-interface.jsx:524
 msgid "Address $val"
 msgstr "כתובת $val"
 
@@ -1075,6 +1102,10 @@ msgstr "כתובות"
 #: pkg/networkmanager/wireguard.jsx:44
 msgid "Addresses are not formatted correctly"
 msgstr "הכתובות אינן בתבנית נכונה"
+
+#: pkg/networkmanager/interfaces.js:903
+msgid "Adhoc"
+msgstr ""
 
 #: src/systemd/org.cockpit-project.cockpit-bridge.policy.in:10
 msgid "Administration with Cockpit Web Console"
@@ -1318,7 +1349,7 @@ msgstr "יומן פיקוח"
 msgid "Authenticate"
 msgstr "אימות"
 
-#: pkg/networkmanager/interfaces.js:846
+#: pkg/networkmanager/interfaces.js:883
 msgid "Authenticating"
 msgstr "מתבצע אימות"
 
@@ -1351,7 +1382,7 @@ msgstr "אישור מפתח SSH"
 msgid "Authorized public SSH keys"
 msgstr "מפתחות SSH ציבוריים מורשים"
 
-#: pkg/networkmanager/mtu.jsx:65 pkg/networkmanager/network-interface.jsx:366
+#: pkg/networkmanager/mtu.jsx:65 pkg/networkmanager/network-interface.jsx:608
 #: pkg/networkmanager/ip-settings.jsx:28 pkg/networkmanager/ip-settings.jsx:296
 #: pkg/networkmanager/ip-settings.jsx:342
 #: pkg/networkmanager/ip-settings.jsx:388
@@ -1389,6 +1420,13 @@ msgstr "אוטומטית באמצעות שרתי NTP מסוימים"
 #: pkg/lib/cockpit-components-modifications.jsx:74
 msgid "Automation script"
 msgstr "סקריפט אוטומטי"
+
+#: pkg/networkmanager/network-interface.jsx:1102
+#: pkg/networkmanager/network-interface.jsx:1104
+#, fuzzy
+#| msgid "No virtual networks"
+msgid "Available networks"
+msgstr "אין רשתות וירטואליות"
 
 #: pkg/storaged/iscsi/create-dialog.jsx:94
 msgid "Available targets on $0"
@@ -1468,9 +1506,9 @@ msgstr "התקני בלוק"
 msgid "Blocked"
 msgstr "חסום"
 
-#: pkg/networkmanager/network-interface.jsx:160
-#: pkg/networkmanager/network-interface.jsx:174
+#: pkg/networkmanager/network-interface.jsx:402
 #: pkg/networkmanager/network-interface.jsx:416
+#: pkg/networkmanager/network-interface.jsx:658
 msgid "Bond"
 msgstr "מאגד"
 
@@ -1491,13 +1529,13 @@ msgstr "העלייה עדיין תצליח כאשר מערכת הקבצים לא
 msgid "Bound by"
 msgstr "מאוגד על ידי"
 
-#: pkg/networkmanager/network-interface.jsx:166
-#: pkg/networkmanager/network-interface.jsx:180
-#: pkg/networkmanager/network-interface.jsx:498
+#: pkg/networkmanager/network-interface.jsx:408
+#: pkg/networkmanager/network-interface.jsx:422
+#: pkg/networkmanager/network-interface.jsx:740
 msgid "Bridge"
 msgstr "גשר"
 
-#: pkg/networkmanager/network-interface.jsx:520
+#: pkg/networkmanager/network-interface.jsx:762
 msgid "Bridge port"
 msgstr "פתחת גשר"
 
@@ -1509,8 +1547,8 @@ msgstr "הגדרות פתחת גשר"
 msgid "Broadcast"
 msgstr "שידור"
 
-#: pkg/networkmanager/network-interface.jsx:429
-#: pkg/networkmanager/network-interface.jsx:465
+#: pkg/networkmanager/network-interface.jsx:671
+#: pkg/networkmanager/network-interface.jsx:707
 msgid "Broken configuration"
 msgstr "הגדרות פגומות"
 
@@ -1590,8 +1628,9 @@ msgstr "לא ניתן למצוא יומנים עם שילוב המסננים ה�
 #: pkg/shell/shell-modals.tsx:172 pkg/shell/credentials.tsx:229
 #: pkg/shell/hosts_dialog.jsx:275 pkg/shell/hosts_dialog.jsx:477
 #: pkg/shell/hosts_dialog.jsx:574 pkg/shell/hosts_dialog.jsx:710
-#: pkg/shell/hosts_dialog.jsx:1089 pkg/networkmanager/firewall.jsx:728
-#: pkg/networkmanager/firewall.jsx:918 pkg/networkmanager/firewall.jsx:942
+#: pkg/shell/hosts_dialog.jsx:1089 pkg/networkmanager/network-interface.jsx:233
+#: pkg/networkmanager/firewall.jsx:728 pkg/networkmanager/firewall.jsx:918
+#: pkg/networkmanager/firewall.jsx:942
 #: pkg/networkmanager/dialogs-common.jsx:146 pkg/apps/utils.tsx:78
 #: pkg/kdump/kdump-view.jsx:313 pkg/systemd/overview-cards/tuned-dialog.jsx:311
 #: pkg/systemd/overview-cards/motdCard.jsx:63
@@ -1638,7 +1677,7 @@ msgstr "לא ניתן לתזמן אירוע לעבר"
 msgid "Capacity"
 msgstr "קיבולת"
 
-#: pkg/networkmanager/network-interface.jsx:226
+#: pkg/networkmanager/network-interface.jsx:468
 msgid "Carrier"
 msgstr "ספקית"
 
@@ -1703,7 +1742,7 @@ msgstr "החלפת שעון המערכת"
 msgid "Change the password of $0"
 msgstr "החלפת הסיסמה של $0"
 
-#: pkg/networkmanager/interfaces.js:1721
+#: pkg/networkmanager/interfaces.js:1944
 msgid "Change the settings"
 msgstr "שינוי ההגדרות"
 
@@ -1727,7 +1766,7 @@ msgid ""
 "The process can also be stopped manually in the terminal before continuing."
 msgstr ""
 
-#: pkg/networkmanager/interfaces.js:1720
+#: pkg/networkmanager/interfaces.js:1943
 msgid ""
 "Changing the settings will break the connection to the server, and will make "
 "the administration UI unavailable."
@@ -1750,7 +1789,7 @@ msgstr "בדיקת גיבוב המפתח מול שרת ה־Tang."
 msgid "Checking $target"
 msgstr "$target בבדיקה"
 
-#: pkg/networkmanager/interfaces.js:850
+#: pkg/networkmanager/interfaces.js:887
 msgid "Checking IP"
 msgstr "ה־IP נבדק"
 
@@ -1996,11 +2035,11 @@ msgstr "התנאי נכשל"
 msgid "Configuration"
 msgstr "הגדרות"
 
-#: pkg/networkmanager/interfaces.js:844
+#: pkg/networkmanager/interfaces.js:881
 msgid "Configuring"
 msgstr "מתבצעת הגדרה"
 
-#: pkg/networkmanager/interfaces.js:848
+#: pkg/networkmanager/interfaces.js:885
 msgid "Configuring IP"
 msgstr "מוגדרת כתובת IP"
 
@@ -2058,11 +2097,13 @@ msgstr "בסתירה עם"
 msgid "Conflicts"
 msgstr "סותר"
 
-#: pkg/shell/hosts_dialog.jsx:272
+#: pkg/shell/hosts_dialog.jsx:272 pkg/networkmanager/network-interface.jsx:228
+#: pkg/networkmanager/network-interface.jsx:1018
+#: pkg/networkmanager/network-interface.jsx:1019
 msgid "Connect"
 msgstr "התחברות"
 
-#: pkg/networkmanager/network-interface.jsx:312
+#: pkg/networkmanager/network-interface.jsx:554
 msgid "Connect automatically"
 msgstr "התחברות אוטומטית"
 
@@ -2070,9 +2111,22 @@ msgstr "התחברות אוטומטית"
 msgid "Connect to"
 msgstr "התחברות אל"
 
+#: pkg/networkmanager/network-interface.jsx:173
+#, fuzzy
+#| msgid "Connect to $0?"
+msgid "Connect to $0"
+msgstr "להתחבר אל $0?"
+
 #: pkg/shell/hosts_dialog.jsx:253
 msgid "Connect to $0?"
 msgstr "להתחבר אל $0?"
+
+#: pkg/networkmanager/network-interface.jsx:173
+#: pkg/networkmanager/network-interface.jsx:1088
+#, fuzzy
+#| msgid "Connecting to the machine"
+msgid "Connect to hidden network"
+msgstr "מתבצעת התחברות למכונה"
 
 #: pkg/static/login.js:735
 msgid "Connect to:"
@@ -2454,7 +2508,7 @@ msgstr "מותר ברירת מחדל עם אימות חתימה SHA-1."
 msgid "DNS"
 msgstr "DNS"
 
-#: pkg/networkmanager/network-interface.jsx:291
+#: pkg/networkmanager/network-interface.jsx:533
 msgid "DNS $val"
 msgstr "DNS $val"
 
@@ -2462,7 +2516,7 @@ msgstr "DNS $val"
 msgid "DNS search domains"
 msgstr "חיפוש שמות תחום DNS"
 
-#: pkg/networkmanager/network-interface.jsx:294
+#: pkg/networkmanager/network-interface.jsx:536
 msgid "DNS search domains $val"
 msgstr "חיפוש שמות תחום DNS‏ $val"
 
@@ -2564,7 +2618,7 @@ msgstr "השבתה"
 msgid "Deactivate logical volume $0/$1?"
 msgstr "להשבית את הכרך הלוגי $0/$1?"
 
-#: pkg/networkmanager/interfaces.js:856
+#: pkg/networkmanager/interfaces.js:893
 msgid "Deactivating"
 msgstr "מתבצעת השבתה"
 
@@ -2608,7 +2662,7 @@ msgid "Delay must be a number"
 msgstr "השהיה חייבת להיות מספר"
 
 #: pkg/sosreport/sosreport.jsx:364 pkg/sosreport/sosreport.jsx:463
-#: pkg/networkmanager/network-interface.jsx:714
+#: pkg/networkmanager/network-interface.jsx:1264
 #: pkg/networkmanager/firewall.jsx:105 pkg/networkmanager/firewall.jsx:151
 #: pkg/networkmanager/firewall.jsx:165 pkg/networkmanager/firewall.jsx:939
 #: pkg/systemd/service-details.jsx:156 pkg/systemd/service-details.jsx:809
@@ -2633,7 +2687,7 @@ msgstr "השהיה חייבת להיות מספר"
 msgid "Delete"
 msgstr "מחיקה"
 
-#: pkg/networkmanager/network-interface.jsx:103
+#: pkg/networkmanager/network-interface.jsx:345
 #: pkg/users/delete-account-dialog.js:39
 msgid "Delete $0"
 msgstr "מחיקת $0"
@@ -2662,7 +2716,7 @@ msgstr "מחיקת מאגר"
 msgid "Delete report permanently?"
 msgstr "למחוק את הדוח לצמיתות?"
 
-#: pkg/networkmanager/network-interface.jsx:102
+#: pkg/networkmanager/network-interface.jsx:344
 msgid ""
 "Deleting $0 will break the connection to the server, and will make the "
 "administration UI unavailable."
@@ -2732,6 +2786,8 @@ msgid "Detachable"
 msgstr "נתיק"
 
 #: pkg/packagekit/updates.jsx:419 pkg/shell/credentials.tsx:299
+#: pkg/networkmanager/network-main.jsx:204
+#: pkg/networkmanager/network-main.jsx:220
 #: pkg/systemd/overview-cards/realmd.jsx:404
 msgid "Details"
 msgstr "פרטים"
@@ -2817,6 +2873,8 @@ msgstr "לא לאפשר אימות בסיסמה"
 msgid "Disallow running (mask)"
 msgstr "לא לאפשר הרצה (מיסוך)"
 
+#: pkg/networkmanager/network-interface.jsx:1002
+#: pkg/networkmanager/network-interface.jsx:1003
 #: pkg/storaged/iscsi/session.jsx:41
 msgid "Disconnect"
 msgstr "ניתוק"
@@ -3030,7 +3088,7 @@ msgstr "עריכת ההודעה היומית"
 msgid "Edit mount point"
 msgstr "עריכת נקודת עיגון"
 
-#: pkg/networkmanager/network-main.jsx:147
+#: pkg/networkmanager/network-main.jsx:176
 msgid "Edit rules and zones"
 msgstr "עריכת כללים ואזורים"
 
@@ -3090,7 +3148,7 @@ msgstr "$target מתרוקן"
 msgid "Enable"
 msgstr "הפעלה"
 
-#: pkg/networkmanager/network-interface.jsx:673
+#: pkg/networkmanager/network-interface.jsx:1223
 msgid "Enable or disable the device"
 msgstr "להפעיל או להשבית את ההתקן"
 
@@ -3319,7 +3377,7 @@ msgid "FIPS with further Common Criteria restrictions."
 msgstr "FIPS עם מגבלות קריטריונים משותפים נוספות."
 
 #: pkg/lib/cockpit/dialog.tsx:1261 pkg/lib/cockpit/dialog.tsx:1264
-#: pkg/networkmanager/interfaces.js:858 pkg/storaged/mdraid/mdraid-disk.jsx:57
+#: pkg/networkmanager/interfaces.js:895 pkg/storaged/mdraid/mdraid-disk.jsx:57
 msgid "Failed"
 msgstr "נכשל"
 
@@ -3373,6 +3431,24 @@ msgstr "החלפת הסיסמה נכשלה"
 #: pkg/metrics/metrics.jsx:1452
 msgid "Failed to configure PCP"
 msgstr "הגדרת PCP נכשלה"
+
+#: pkg/networkmanager/network-interface.jsx:176
+#, fuzzy
+#| msgid "Failed to add zone"
+msgid "Failed to connect"
+msgstr "הוספת האזור נכשלה"
+
+#: pkg/networkmanager/network-interface.jsx:883
+#, fuzzy
+#| msgid "Failed to delete alert: $0"
+msgid "Failed to connect to $0"
+msgstr "מחיקת האזעקה נכשלה: $0"
+
+#: pkg/networkmanager/network-interface.jsx:157
+#, fuzzy
+#| msgid "Failed to change password"
+msgid "Failed to connect. Check your password."
+msgstr "החלפת הסיסמה נכשלה"
 
 #: pkg/selinux/setroubleshoot-client.js:140
 #: pkg/selinux/setroubleshoot-client.js:144
@@ -3484,6 +3560,12 @@ msgstr "נוצרת מערכת קבצים על $target"
 msgid "Filesystems are already mounted below this mountpoint."
 msgstr "מערכות הקבצים כבר מעוגנות תחת נקודת העיגון הזאת."
 
+#: pkg/networkmanager/network-interface.jsx:1077
+#, fuzzy
+#| msgid "Filters"
+msgid "Filter"
+msgstr "מסננים"
+
 #: pkg/systemd/services.jsx:810
 msgid "Filter by name or description"
 msgstr "סינון לפי שם או תיאור"
@@ -3505,7 +3587,7 @@ msgid "Fingerprint"
 msgstr "טביעת אצבע"
 
 #: pkg/networkmanager/firewall.html:8 pkg/networkmanager/firewall.jsx:1085
-#: pkg/networkmanager/firewall.jsx:1092 pkg/networkmanager/network-main.jsx:151
+#: pkg/networkmanager/firewall.jsx:1092 pkg/networkmanager/network-main.jsx:180
 msgid "Firewall"
 msgstr "חומת אש"
 
@@ -3541,6 +3623,13 @@ msgstr "לאלץ מחיקה"
 msgid "Force password change"
 msgstr "לאלץ החלפת סיסמה"
 
+#: pkg/networkmanager/network-interface.jsx:1032
+#: pkg/networkmanager/network-interface.jsx:1033
+#, fuzzy
+#| msgid "Target"
+msgid "Forget"
+msgstr "יעד"
+
 #: pkg/storaged/block/actions.jsx:17 pkg/storaged/block/format-dialog.jsx:261
 #: pkg/storaged/block/format-dialog.jsx:271
 msgid "Format"
@@ -3567,7 +3656,7 @@ msgstr "פרמוט בלבד"
 msgid "Formatting erases all data on a storage device."
 msgstr "פרמוט ימחק את כל הנתונים בהתקן אחסון."
 
-#: pkg/networkmanager/network-interface.jsx:490
+#: pkg/networkmanager/network-interface.jsx:732
 msgid "Forward delay $forward_delay"
 msgstr "השהיית העברה $forward_delay"
 
@@ -3597,13 +3686,13 @@ msgstr "שם מלא"
 msgid "Gateway"
 msgstr "שער גישה"
 
-#: pkg/networkmanager/network-interface.jsx:287
+#: pkg/networkmanager/network-interface.jsx:529
 #, fuzzy
 #| msgid "Gateway"
 msgid "Gateway $gateway"
 msgstr "שער גישה"
 
-#: pkg/networkmanager/network-interface.jsx:304
+#: pkg/networkmanager/network-interface.jsx:546
 msgid "General"
 msgstr "כללי"
 
@@ -3631,7 +3720,7 @@ msgstr "חשיפת התרשים"
 msgid "Graph visibility options menu"
 msgstr "תפריט אפשרויות חשיפת תרשים"
 
-#: pkg/networkmanager/network-interface.jsx:389 pkg/users/accounts-list.js:359
+#: pkg/networkmanager/network-interface.jsx:631 pkg/users/accounts-list.js:359
 msgid "Group"
 msgstr "קבוצה"
 
@@ -3681,7 +3770,7 @@ msgstr "להגדיל על חשבון כל המקום הפנוי"
 msgid "Hair pin mode"
 msgstr "מצב סיכת שיער"
 
-#: pkg/networkmanager/network-interface.jsx:517
+#: pkg/networkmanager/network-interface.jsx:759
 msgid "Hairpin mode"
 msgstr "מצב סיכת שיער"
 
@@ -3701,7 +3790,7 @@ msgstr "פרטי חומרה"
 msgid "Health"
 msgstr "בריאות"
 
-#: pkg/networkmanager/network-interface.jsx:492
+#: pkg/networkmanager/network-interface.jsx:734
 msgid "Hello time $hello_time"
 msgstr "זמן Hello‏ $hello_time"
 
@@ -3715,6 +3804,7 @@ msgid "Hide confirmation password"
 msgstr "הסתרת סיסמת האישור"
 
 #: pkg/lib/cockpit-components-password.tsx:135
+#: pkg/networkmanager/network-interface.jsx:211
 msgid "Hide password"
 msgstr "הסתרת הסיסמה"
 
@@ -3781,7 +3871,7 @@ msgstr "ארצה לאשר שהנתונים האלה יאבדו לעד"
 msgid "ID"
 msgstr "מזהה"
 
-#: pkg/networkmanager/network-interface.jsx:535
+#: pkg/networkmanager/network-interface.jsx:777
 msgid "ID $id"
 msgstr "מזהה $id"
 
@@ -3793,8 +3883,8 @@ msgstr ""
 "שגיאה פנימית - הכרך הלוגי הזה מסומן כפעיל ואמור להיות משויך אליו התקן אחסון "
 "(בלוק). עם זאת, לא נמצא התקן אחסון שכזה."
 
-#: pkg/networkmanager/network-main.jsx:172
-#: pkg/networkmanager/network-main.jsx:187
+#: pkg/networkmanager/network-main.jsx:201
+#: pkg/networkmanager/network-main.jsx:217
 msgid "IP address"
 msgstr "כתובת IP"
 
@@ -3812,7 +3902,7 @@ msgstr ""
 msgid "IP addresses"
 msgstr "כתובות IPv4"
 
-#: pkg/networkmanager/network-interface.jsx:557
+#: pkg/networkmanager/network-interface.jsx:799
 msgid "IPv4"
 msgstr "IPv4"
 
@@ -3820,7 +3910,7 @@ msgstr "IPv4"
 msgid "IPv4 settings"
 msgstr "הגדרות IPv4"
 
-#: pkg/networkmanager/network-interface.jsx:558
+#: pkg/networkmanager/network-interface.jsx:800
 msgid "IPv6"
 msgstr "IPv6"
 
@@ -3922,9 +4012,9 @@ msgstr "בתהליך"
 msgid "In sync"
 msgstr "בסנכרון"
 
-#: pkg/networkmanager/interfaces.js:840 pkg/networkmanager/interfaces.js:1401
-#: pkg/networkmanager/interfaces.js:1408
-#: pkg/networkmanager/network-interface.jsx:243
+#: pkg/networkmanager/interfaces.js:877 pkg/networkmanager/interfaces.js:1624
+#: pkg/networkmanager/interfaces.js:1631
+#: pkg/networkmanager/network-interface.jsx:485
 msgid "Inactive"
 msgstr "לא פעיל"
 
@@ -3964,6 +4054,10 @@ msgstr "מידע"
 #: pkg/systemd/logs.jsx:57
 msgid "Info and above"
 msgstr "מידע ומעלה"
+
+#: pkg/networkmanager/interfaces.js:905
+msgid "Infra"
+msgstr ""
 
 #: pkg/storaged/partitions/format-disk-dialog.jsx:55
 msgid "Initialize"
@@ -4082,7 +4176,7 @@ msgstr "חברים במנשק"
 
 #: pkg/networkmanager/firewall.jsx:872 pkg/networkmanager/bond.jsx:158
 #: pkg/networkmanager/network-interface-members.jsx:192
-#: pkg/networkmanager/network-main.jsx:166
+#: pkg/networkmanager/network-main.jsx:195
 msgid "Interfaces"
 msgstr "מנשקים"
 
@@ -4109,7 +4203,7 @@ msgstr "מנשק"
 msgid "Invalid"
 msgstr "שגוי"
 
-#: pkg/networkmanager/interfaces.js:655
+#: pkg/networkmanager/interfaces.js:678
 #, fuzzy
 #| msgid "Invalid address $0"
 msgid "Invalid DNS address: $0"
@@ -4121,7 +4215,7 @@ msgstr "כתובת שגויה $0"
 msgid "Invalid IP address '$0'"
 msgstr "כתובת שגויה $0"
 
-#: pkg/networkmanager/interfaces.js:443
+#: pkg/networkmanager/interfaces.js:459
 #, fuzzy
 #| msgid "Invalid address $0"
 msgid "Invalid IP address: $0"
@@ -4139,7 +4233,7 @@ msgstr "מבנה התאריך שגוי"
 msgid "Invalid date format and invalid time format"
 msgstr "מבנה תאריך שגוי ומבנה שעה שגוי"
 
-#: pkg/networkmanager/interfaces.js:466
+#: pkg/networkmanager/interfaces.js:482
 #, fuzzy
 #| msgid "Invalid address $0"
 msgid "Invalid destination address: $0"
@@ -4153,7 +4247,7 @@ msgstr "מועד התפוגה שגוי"
 msgid "Invalid file permissions"
 msgstr "הרשאות הקובץ שגויות"
 
-#: pkg/networkmanager/interfaces.js:477 pkg/networkmanager/interfaces.js:643
+#: pkg/networkmanager/interfaces.js:493 pkg/networkmanager/interfaces.js:666
 #, fuzzy
 #| msgid "Invalid address $0"
 msgid "Invalid gateway address: $0"
@@ -4392,6 +4486,12 @@ msgstr "לא ניתן להסיר את האחרון"
 
 #: pkg/packagekit/updates.jsx:761
 msgid "Last checked: $0"
+msgstr "בדיקה אחרונה: $0"
+
+#: pkg/networkmanager/network-interface.jsx:974
+#, fuzzy
+#| msgid "Last checked: $0"
+msgid "Last connected: $0"
 msgstr "בדיקה אחרונה: $0"
 
 #: pkg/storaged/mdraid/mdraid-disk.jsx:82
@@ -4787,7 +4887,7 @@ msgstr "כונני MDRAID"
 msgid "MII (recommended)"
 msgstr "MII (מומלץ)"
 
-#: pkg/networkmanager/network-interface.jsx:369
+#: pkg/networkmanager/network-interface.jsx:611
 msgid "MTU"
 msgstr "MTU"
 
@@ -4819,7 +4919,7 @@ msgstr "עמודים פוגעניים במכונה מרוחקת עלולים ל�
 msgid "Manage storage"
 msgstr "ניהול אחסון"
 
-#: pkg/networkmanager/network-main.jsx:168
+#: pkg/networkmanager/network-main.jsx:197
 msgid "Managed interfaces"
 msgstr "מנשקים מנוהלים"
 
@@ -4909,7 +5009,7 @@ msgstr ""
 "מיסוך שירות מונע מכל היחידות התלויות לפעול. להגדרה זו עשויה להיות השפעה "
 "גדולה מהצפוי. נא לאשר שברצונך למסך את היחידה הזאת."
 
-#: pkg/networkmanager/network-interface.jsx:494
+#: pkg/networkmanager/network-interface.jsx:736
 msgid "Maximum message age $max_age"
 msgstr "גיל הודעה מרבי $max_age"
 
@@ -4939,6 +5039,10 @@ msgstr "שימוש בזיכרון/החלפה"
 #: pkg/systemd/services.jsx:210
 msgid "Merged"
 msgstr "ממוזגת"
+
+#: pkg/networkmanager/interfaces.js:909
+msgid "Mesh"
+msgstr ""
 
 #: pkg/lib/cockpit-components-shutdown.jsx:182
 msgid "Message to logged in users"
@@ -5008,6 +5112,7 @@ msgstr "שיקוף מראה (RAID 1)"
 msgid "Mitigations"
 msgstr "אפחותים"
 
+#: pkg/networkmanager/network-interface.jsx:1108
 #: pkg/networkmanager/bond.jsx:164
 msgid "Mode"
 msgstr "מצב"
@@ -5170,8 +5275,8 @@ msgstr "שרת NTP"
 
 #: pkg/packagekit/updates.jsx:416 pkg/shell/credentials.tsx:291
 #: pkg/networkmanager/dialogs-common.jsx:120
-#: pkg/networkmanager/network-main.jsx:171
-#: pkg/networkmanager/network-main.jsx:186 pkg/systemd/hwinfo.jsx:74
+#: pkg/networkmanager/network-main.jsx:200
+#: pkg/networkmanager/network-main.jsx:216 pkg/systemd/hwinfo.jsx:74
 #: pkg/systemd/timer-dialog.jsx:129 pkg/users/group-create-dialog.js:25
 #: pkg/users/authorized-keys-panel.js:113 pkg/storaged/stratis/pool.jsx:364
 #: pkg/storaged/stratis/pool.jsx:467 pkg/storaged/stratis/pool.jsx:1023
@@ -5245,6 +5350,7 @@ msgstr "נדרש שרת NTP אחד לפחות"
 
 #: pkg/metrics/metrics.jsx:929 pkg/metrics/metrics.jsx:1553
 #: pkg/metrics/metrics.jsx:1924 pkg/metrics/metrics.jsx:1937
+#: pkg/networkmanager/network-interface.jsx:1107
 msgid "Network"
 msgstr "רשת"
 
@@ -5260,9 +5366,20 @@ msgstr "מאגד רשת"
 msgid "Network devices and graphs require NetworkManager"
 msgstr "התקני רשת ותרשימים דורשים NetworkManager"
 
-#: pkg/networkmanager/network-main.jsx:193
+#: pkg/networkmanager/network-main.jsx:224
 msgid "Network logs"
 msgstr "יומני תקשורת"
+
+#: pkg/networkmanager/network-interface.jsx:179
+#, fuzzy
+#| msgid "Network usage"
+msgid "Network name"
+msgstr "ניצולת רשת"
+
+#: pkg/networkmanager/network-interface.jsx:880
+msgid ""
+"Network password is not stored. Please forget and reconnect to this network."
+msgstr ""
 
 #: pkg/metrics/metrics.jsx:938
 msgid "Network usage"
@@ -5280,7 +5397,8 @@ msgstr "NetworkManager אינו פעיל"
 msgid "Networked storage"
 msgstr "אחסון דרך הרשת"
 
-#: pkg/networkmanager/index.html:9 pkg/networkmanager/network-interface.jsx:694
+#: pkg/networkmanager/index.html:9
+#: pkg/networkmanager/network-interface.jsx:1244
 #: pkg/networkmanager/firewall.jsx:1084 pkg/networkmanager/manifest.json:0
 #: src/appstream/org.cockpit_project.cockpit_networkmanager.metainfo.xml.in:5
 msgid "Networking"
@@ -5339,7 +5457,7 @@ msgstr "הסיסמה החדשה לא התקבלה"
 msgid "Next"
 msgstr "הבא"
 
-#: pkg/networkmanager/network-interface.jsx:228
+#: pkg/networkmanager/network-interface.jsx:470
 msgid "No"
 msgstr "לא"
 
@@ -5367,7 +5485,7 @@ msgstr "אין התקני בלוק זמינים."
 msgid "No block devices found"
 msgstr "לא נמצאו התקני אחסון (בלוק)"
 
-#: pkg/networkmanager/interfaces.js:1403
+#: pkg/networkmanager/interfaces.js:1626
 msgid "No carrier"
 msgstr "אין ספקית"
 
@@ -5563,6 +5681,7 @@ msgstr "אין עדכונים"
 msgid "No user name specified"
 msgstr "לא צוין שם משתמש"
 
+#: pkg/networkmanager/network-interface.jsx:192
 #: pkg/networkmanager/firewall.jsx:867 pkg/kdump/kdump-view.jsx:492
 #: pkg/systemd/overview-cards/tuned-dialog.jsx:213
 msgid "None"
@@ -5580,7 +5699,7 @@ msgstr "לא מורשה להשבית את חומת האש"
 msgid "Not authorized to enable the firewall"
 msgstr "לא מורשה להפעיל את חומת האש"
 
-#: pkg/packagekit/kpatch.jsx:224 pkg/networkmanager/interfaces.js:838
+#: pkg/packagekit/kpatch.jsx:224 pkg/networkmanager/interfaces.js:875
 msgid "Not available"
 msgstr "לא זמין"
 
@@ -5618,13 +5737,25 @@ msgstr "לא נמצא"
 msgid "Not installed"
 msgstr "לא מותקן"
 
-#: pkg/networkmanager/network-interface.jsx:668
+#: pkg/networkmanager/network-interface.jsx:1218
 msgid "Not permitted to configure network devices"
 msgstr "אין הקשה להגדיר התקני רשת"
 
 #: pkg/systemd/overview-cards/realmd.jsx:452
 msgid "Not permitted to configure realms"
 msgstr "המשתמש $0 אינו מורשה לשנות מתחמים"
+
+#: pkg/networkmanager/network-interface.jsx:1012
+#, fuzzy
+#| msgid "Not permitted to configure network devices"
+msgid "Not permitted to connect to network"
+msgstr "אין הקשה להגדיר התקני רשת"
+
+#: pkg/networkmanager/network-interface.jsx:992
+#, fuzzy
+#| msgid "Not permitted to configure network devices"
+msgid "Not permitted to disconnect network"
+msgstr "אין הקשה להגדיר התקני רשת"
 
 #: pkg/lib/cockpit.js:2415
 msgid "Not permitted to perform this action."
@@ -5849,7 +5980,7 @@ msgstr "שם העמוד"
 msgid "Parent"
 msgstr "הורה"
 
-#: pkg/networkmanager/network-interface.jsx:534
+#: pkg/networkmanager/network-interface.jsx:776
 msgid "Parent $parent"
 msgstr "$parent הורה"
 
@@ -5857,7 +5988,7 @@ msgstr "$parent הורה"
 msgid "Part of"
 msgstr "חלק מתוך"
 
-#: pkg/networkmanager/interfaces.js:1432
+#: pkg/networkmanager/interfaces.js:1655
 msgid "Part of $0"
 msgstr "חלק מתוך $0"
 
@@ -5940,8 +6071,9 @@ msgstr "מילות הצופן אינן תואמות"
 #: pkg/lib/cockpit-connect-ssh.tsx:442 pkg/lib/superuser-dialogs.tsx:176
 #: pkg/shell/credentials.tsx:163 pkg/shell/credentials.tsx:222
 #: pkg/shell/credentials.tsx:309 pkg/shell/hosts_dialog.jsx:1036
-#: pkg/shell/hosts_dialog.jsx:1045 pkg/users/account-create-dialog.js:125
-#: pkg/users/account-details.js:283 pkg/storaged/iscsi/create-dialog.jsx:20
+#: pkg/shell/hosts_dialog.jsx:1045 pkg/networkmanager/network-interface.jsx:199
+#: pkg/users/account-create-dialog.js:125 pkg/users/account-details.js:283
+#: pkg/storaged/iscsi/create-dialog.jsx:20
 #: pkg/storaged/iscsi/create-dialog.jsx:126
 msgid "Password"
 msgstr "סיסמה"
@@ -6002,7 +6134,7 @@ msgstr "נתיב"
 msgid "Path cost"
 msgstr "עלות נתיב"
 
-#: pkg/networkmanager/network-interface.jsx:515
+#: pkg/networkmanager/network-interface.jsx:757
 msgid "Path cost $path_cost"
 msgstr "עלות הנתיב $path_cost"
 
@@ -6244,7 +6376,7 @@ msgstr "אורך קידומת"
 msgid "Prefix length or netmask"
 msgstr "אורך קידומת או מסכת רשת"
 
-#: pkg/networkmanager/interfaces.js:842
+#: pkg/networkmanager/interfaces.js:879
 msgid "Preparing"
 msgstr "בהכנה"
 
@@ -6273,8 +6405,8 @@ msgstr "עיקרי"
 msgid "Priority"
 msgstr "עדיפות"
 
-#: pkg/networkmanager/network-interface.jsx:488
-#: pkg/networkmanager/network-interface.jsx:513
+#: pkg/networkmanager/network-interface.jsx:730
+#: pkg/networkmanager/network-interface.jsx:755
 msgid "Priority $priority"
 msgstr "עדיפות $priority"
 
@@ -6425,6 +6557,10 @@ msgstr "הטווח חייב להיות מסודר בקפידה"
 msgid "Rank"
 msgstr "דירוג"
 
+#: pkg/networkmanager/network-interface.jsx:1110
+msgid "Rate"
+msgstr ""
+
 #: pkg/kdump/kdump-view.jsx:463
 msgid "Raw to a device"
 msgstr "גולמי להתקן"
@@ -6505,8 +6641,8 @@ msgstr "הפעלת המערכת מחדש…"
 
 #: pkg/networkmanager/plots.js:30
 #: pkg/networkmanager/network-interface-members.jsx:194
-#: pkg/networkmanager/network-main.jsx:174
-#: pkg/networkmanager/network-main.jsx:189
+#: pkg/networkmanager/network-main.jsx:203
+#: pkg/networkmanager/network-main.jsx:219
 msgid "Receiving"
 msgstr "קבלה"
 
@@ -6529,6 +6665,10 @@ msgstr "מתבצע שיקום"
 #: pkg/storaged/jobs-panel.jsx:56
 msgid "Recovering MDRAID device $target"
 msgstr "התקן ה־MDRAID‏ $target עובר שיקום"
+
+#: pkg/networkmanager/network-interface.jsx:1096
+msgid "Refresh"
+msgstr ""
 
 #: pkg/packagekit/updates.jsx:90
 msgid "Refreshing package information"
@@ -7184,6 +7324,12 @@ msgstr "מפתחות מעטפת מאובטחת"
 msgid "Securely erasing $target"
 msgstr "$target נמחק בצורה מאובטחת"
 
+#: pkg/networkmanager/network-interface.jsx:187
+#, fuzzy
+#| msgid "security"
+msgid "Security"
+msgstr "אבטחה"
+
 #: src/appstream/org.cockpit_project.cockpit_selinux.metainfo.xml.in:6
 msgid "Security Enhanced Linux configuration and troubleshooting"
 msgstr "הגדרות ופתרון תקלות של Security Enhanced Linux"
@@ -7227,8 +7373,8 @@ msgid "Self-test status"
 msgstr "בדיקת SMART עצמית של $0"
 
 #: pkg/networkmanager/network-interface-members.jsx:193
-#: pkg/networkmanager/network-main.jsx:173
-#: pkg/networkmanager/network-main.jsx:188
+#: pkg/networkmanager/network-main.jsx:202
+#: pkg/networkmanager/network-main.jsx:218
 msgid "Sending"
 msgstr "שליחה"
 
@@ -7422,6 +7568,7 @@ msgid "Show more relationships"
 msgstr "הצגת קשרים נוספים"
 
 #: pkg/lib/cockpit-components-password.tsx:135
+#: pkg/networkmanager/network-interface.jsx:211
 msgid "Show password"
 msgstr "הצגת הסיסמה"
 
@@ -7457,6 +7604,14 @@ msgstr "כיבוי"
 #: pkg/systemd/overview.jsx:101
 msgid "Shutdown"
 msgstr "כיבוי"
+
+#: pkg/networkmanager/network-interface.jsx:1109
+msgid "Signal"
+msgstr ""
+
+#: pkg/networkmanager/network-interface.jsx:983
+msgid "Signal strength"
+msgstr ""
 
 #: pkg/systemd/logs.jsx:299
 msgid "Since"
@@ -7591,7 +7746,7 @@ msgstr "מסודר מהכי מהימן להכי פחות"
 msgid "Space-saving computer"
 msgstr "מחשב חסכוני במקום"
 
-#: pkg/networkmanager/network-interface.jsx:486
+#: pkg/networkmanager/network-interface.jsx:728
 msgid "Spanning tree protocol"
 msgstr "פרוטוקול העץ הפורש"
 
@@ -7669,7 +7824,7 @@ msgstr "מצב"
 msgid "Static"
 msgstr "סטטי"
 
-#: pkg/packagekit/updates.jsx:886 pkg/networkmanager/network-interface.jsx:252
+#: pkg/packagekit/updates.jsx:886 pkg/networkmanager/network-interface.jsx:494
 #: pkg/systemd/service-details.jsx:728
 msgid "Status"
 msgstr "מצב"
@@ -7860,13 +8015,13 @@ msgstr "אי אפשר לשנות כאן גודל של $0 ממערכות הקבצ
 msgid "Swap out"
 msgstr "יציאה מההחלפה"
 
-#: pkg/networkmanager/network-interface.jsx:149
+#: pkg/networkmanager/network-interface.jsx:391
 #: pkg/networkmanager/network-interface-members.jsx:54
 #: pkg/networkmanager/network-interface-members.jsx:74
 msgid "Switch off $0"
 msgstr "כיבוי $0"
 
-#: pkg/networkmanager/network-interface.jsx:130
+#: pkg/networkmanager/network-interface.jsx:372
 #: pkg/networkmanager/network-interface-members.jsx:65
 msgid "Switch on $0"
 msgstr "הדלקת $0"
@@ -7879,14 +8034,14 @@ msgstr "מעבר לגישה ניהולית"
 msgid "Switch to limited access"
 msgstr "העברה לגישה מוגבלת"
 
-#: pkg/networkmanager/network-interface.jsx:148
+#: pkg/networkmanager/network-interface.jsx:390
 #: pkg/networkmanager/network-interface-members.jsx:73
 msgid ""
 "Switching off $0 will break the connection to the server, and will make the "
 "administration UI unavailable."
 msgstr "כיבוי $0 יקטע את החיבור לשרת וגרום לכך שמנשק הניהול לא יהיה זמין."
 
-#: pkg/networkmanager/network-interface.jsx:129
+#: pkg/networkmanager/network-interface.jsx:371
 #: pkg/networkmanager/network-interface-members.jsx:64
 msgid ""
 "Switching on $0 will break the connection to the server, and will make the "
@@ -7958,13 +8113,13 @@ msgstr "יעד"
 msgid "Targets"
 msgstr "יעדים"
 
-#: pkg/networkmanager/network-interface.jsx:162
-#: pkg/networkmanager/network-interface.jsx:176
-#: pkg/networkmanager/network-interface.jsx:441
+#: pkg/networkmanager/network-interface.jsx:404
+#: pkg/networkmanager/network-interface.jsx:418
+#: pkg/networkmanager/network-interface.jsx:683
 msgid "Team"
 msgstr "ציוות"
 
-#: pkg/networkmanager/network-interface.jsx:471
+#: pkg/networkmanager/network-interface.jsx:713
 msgid "Team port"
 msgstr "פתחת ציוות"
 
@@ -8421,7 +8576,7 @@ msgstr ""
 msgid "This device can not be used for the installation target."
 msgstr "לא ניתן לנהל את ההתקן הזה כאן."
 
-#: pkg/networkmanager/network-interface.jsx:735
+#: pkg/networkmanager/network-interface.jsx:1285
 msgid "This device cannot be managed here."
 msgstr "לא ניתן לנהל את ההתקן הזה כאן."
 
@@ -8975,18 +9130,18 @@ msgstr "יחידה"
 #: pkg/lib/machine-info.js:49 pkg/lib/machine-info.js:215
 #: pkg/lib/machine-info.js:223 pkg/lib/machine-info.js:225
 #: pkg/lib/machine-info.js:232 pkg/lib/machine-info.js:234
-#: pkg/lib/machine-info.js:238 pkg/networkmanager/interfaces.js:522
-#: pkg/networkmanager/interfaces.js:1082
-#: pkg/networkmanager/network-interface.jsx:186
-#: pkg/networkmanager/network-interface.jsx:188 pkg/systemd/hw-detect.js:71
+#: pkg/lib/machine-info.js:238 pkg/networkmanager/interfaces.js:538
+#: pkg/networkmanager/interfaces.js:911 pkg/networkmanager/interfaces.js:1167
+#: pkg/networkmanager/network-interface.jsx:428
+#: pkg/networkmanager/network-interface.jsx:430 pkg/systemd/hw-detect.js:71
 #: pkg/systemd/hw-detect.js:80 pkg/systemd/hw-detect.js:87
 #: pkg/systemd/hw-detect.js:90 pkg/systemd/hw-detect.js:97
 #: pkg/systemd/hw-detect.js:98 pkg/storaged/swap/swap.jsx:102
 msgid "Unknown"
 msgstr "לא ידוע"
 
-#: pkg/networkmanager/network-interface.jsx:170
-#: pkg/networkmanager/network-interface.jsx:184
+#: pkg/networkmanager/network-interface.jsx:412
+#: pkg/networkmanager/network-interface.jsx:426
 msgid "Unknown \"$0\""
 msgstr "„$0” לא ידוע"
 
@@ -8998,7 +9153,7 @@ msgstr "לא ידוע ($0)"
 msgid "Unknown application"
 msgstr "יישום לא ידוע"
 
-#: pkg/networkmanager/network-interface.jsx:273
+#: pkg/networkmanager/network-interface.jsx:515
 msgid "Unknown configuration"
 msgstr "הגדרות לא ידועות"
 
@@ -9048,8 +9203,8 @@ msgstr "$target משוחרר"
 msgid "Unlocking disk"
 msgstr "הכונן משוחרר"
 
-#: pkg/networkmanager/network-main.jsx:181
-#: pkg/networkmanager/network-main.jsx:183
+#: pkg/networkmanager/network-main.jsx:211
+#: pkg/networkmanager/network-main.jsx:213
 msgid "Unmanaged interfaces"
 msgstr "מנשקים לא מנוהלים"
 
@@ -9293,9 +9448,9 @@ msgstr "התקן VDO‏ $0"
 msgid "VDO filesystem volume (compression/deduplication)"
 msgstr "כרך מערכת קבצים VDO (דחיסה/הסרת כפולים)"
 
-#: pkg/networkmanager/network-interface.jsx:164
-#: pkg/networkmanager/network-interface.jsx:178
-#: pkg/networkmanager/network-interface.jsx:538
+#: pkg/networkmanager/network-interface.jsx:406
+#: pkg/networkmanager/network-interface.jsx:420
+#: pkg/networkmanager/network-interface.jsx:780
 msgid "VLAN"
 msgstr "VLAN"
 
@@ -9446,7 +9601,11 @@ msgstr "לקבוצת הכרכים חסרים כרכים פיזיים"
 msgid "Volume size is $0. Content size is $1."
 msgstr "גודל הכרך הוא $0. גודל התוכן הוא $1."
 
-#: pkg/networkmanager/interfaces.js:852
+#: pkg/networkmanager/network-interface.jsx:193
+msgid "WPA/WPA2 Personal"
+msgstr ""
+
+#: pkg/networkmanager/interfaces.js:889
 msgid "Waiting"
 msgstr "בהמתנה"
 
@@ -9538,7 +9697,7 @@ msgstr "לבן"
 msgid "Will be set to \"Automatic\""
 msgstr "יוגדר ל„אוטומטי”"
 
-#: pkg/networkmanager/network-interface.jsx:551
+#: pkg/networkmanager/network-interface.jsx:793
 msgid "WireGuard"
 msgstr "WireGuard"
 
@@ -9574,7 +9733,7 @@ msgstr "XOR (קסור)"
 msgid "Yearly"
 msgstr "שנתי"
 
-#: pkg/networkmanager/network-interface.jsx:228
+#: pkg/networkmanager/network-interface.jsx:470
 msgid "Yes"
 msgstr "כן"
 
@@ -9812,7 +9971,7 @@ msgstr "היטל ליבה"
 msgid "cpu"
 msgstr "מעבד"
 
-#: pkg/systemd/manifest.json:0 pkg/kdump/manifest.json:0
+#: pkg/kdump/manifest.json:0 pkg/systemd/manifest.json:0
 msgid "crash"
 msgstr "קריסה"
 
@@ -9878,7 +10037,7 @@ msgstr "שם תחום"
 msgid "drive"
 msgstr "כונן"
 
-#: pkg/networkmanager/network-interface.jsx:337
+#: pkg/networkmanager/network-interface.jsx:579
 #: pkg/networkmanager/dialogs-common.jsx:242
 #: pkg/systemd/overview-cards/configurationCard.jsx:43
 #: pkg/users/account-details.js:278 pkg/users/account-details.js:308
@@ -10231,6 +10390,10 @@ msgctxt "on <terminal>"
 msgid "on $0"
 msgstr "על גבי $0"
 
+#: pkg/networkmanager/network-interface.jsx:961
+msgid "open"
+msgstr ""
+
 #: pkg/systemd/manifest.json:0
 msgid "operating system"
 msgstr "מערכת הפעלה"
@@ -10355,6 +10518,12 @@ msgstr "תפקידים"
 msgid "running $0"
 msgstr "פועל $0"
 
+#: pkg/networkmanager/network-interface.jsx:960
+#, fuzzy
+#| msgid "security"
+msgid "secured"
+msgstr "אבטחה"
+
 #: pkg/packagekit/updates.jsx:183 pkg/packagekit/updates.jsx:280
 #: pkg/packagekit/manifest.json:0
 msgid "security"
@@ -10420,7 +10589,7 @@ msgstr "חירום"
 msgid "sos report failed"
 msgstr "דיווח sos נכשל"
 
-#: pkg/users/manifest.json:0 pkg/systemd/manifest.json:0
+#: pkg/systemd/manifest.json:0 pkg/users/manifest.json:0
 msgid "ssh"
 msgstr "ssh"
 
@@ -11603,9 +11772,6 @@ msgstr "אזור"
 #~ msgid "$0 memory adjustment"
 #~ msgstr "התאמת זיכרון עבור $0"
 
-#~ msgid "$0 network"
-#~ msgstr "רשת $0"
-
 #~ msgid "$0 vCPU"
 #~ msgid_plural "$0 vCPUs"
 #~ msgstr[0] "מעבד וירטואלי אחד"
@@ -12105,9 +12271,6 @@ msgstr "אזור"
 
 #~ msgid "No storage volumes defined for this storage pool"
 #~ msgstr "לא הוגדרו כרכי אחסון למאגר האחסון הזה"
-
-#~ msgid "No virtual networks"
-#~ msgstr "אין רשתות וירטואליות"
 
 #~ msgid ""
 #~ "Non-persistent network cannot be deleted. It ceases to exists when it's "

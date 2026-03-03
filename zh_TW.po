@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-26 09:39+0000\n"
+"POT-Creation-Date: 2026-03-02 09:10+0000\n"
 "PO-Revision-Date: 2025-08-09 22:55+0000\n"
 "Last-Translator: hsu zangmen <chzang55@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://translate.fedoraproject.org/"
@@ -32,7 +32,7 @@ msgstr[0] "$0 CPU(s)"
 msgid "$0 GiB"
 msgstr "$0 GiB"
 
-#: pkg/networkmanager/network-main.jsx:160
+#: pkg/networkmanager/network-main.jsx:189
 msgid "$0 active zone"
 msgid_plural "$0 active zones"
 msgstr[0] "$0 個已啟用的區域"
@@ -133,6 +133,13 @@ msgstr "$0 個篩選器己經應用"
 msgid "$0 free"
 msgstr "$0 可用"
 
+#: pkg/networkmanager/network-interface.jsx:1056
+#, fuzzy
+#| msgid "$0 network"
+msgid "$0 hidden network"
+msgid_plural "$0 hidden networks"
+msgstr[0] "$0 網路"
+
 #: pkg/lib/cockpit-components-plot.jsx:217
 msgid "$0 hour"
 msgid_plural "$0 hours"
@@ -206,6 +213,13 @@ msgstr[0] "$0 月"
 #: pkg/users/accounts-list.js:311
 msgid "$0 more..."
 msgstr "其他 $0 筆..."
+
+#: pkg/networkmanager/network-main.jsx:99
+#, fuzzy
+#| msgid "$0 network"
+msgid "$0 network"
+msgid_plural "$0 networks"
+msgstr[0] "$0 網路"
 
 #: pkg/packagekit/history.jsx:75
 msgid "$0 package"
@@ -591,11 +605,17 @@ msgstr[0] "需要重新啟動一或數個服務以使更新生效："
 msgid "A volume group with missing physical volumes can not be renamed."
 msgstr "一個遺失實體磁碟區的磁碟區群組無法被重新命名。"
 
+#: pkg/networkmanager/interfaces.js:907
+#, fuzzy
+#| msgid "ARP"
+msgid "AP"
+msgstr "ARP"
+
 #: pkg/networkmanager/bond.jsx:41
 msgid "ARP"
 msgstr "ARP"
 
-#: pkg/networkmanager/network-interface.jsx:410
+#: pkg/networkmanager/network-interface.jsx:652
 msgid "ARP monitoring"
 msgstr "ARP監控"
 
@@ -664,6 +684,7 @@ msgstr "帳號管理"
 msgid "Action"
 msgstr "動作"
 
+#: pkg/networkmanager/network-interface.jsx:1111
 #: pkg/networkmanager/firewall.jsx:198 pkg/apps/application-list.jsx:132
 #: pkg/users/accounts-list.js:360 pkg/storaged/pages.jsx:716
 #: pkg/storaged/drive/smart-details.jsx:92
@@ -684,7 +705,7 @@ msgstr "啟動 $target"
 
 # translation auto-copied from project virt-manager, version 0.10.0, document
 # virt-manager
-#: pkg/networkmanager/interfaces.js:854 pkg/networkmanager/team.jsx:36
+#: pkg/networkmanager/interfaces.js:891 pkg/networkmanager/team.jsx:36
 msgid "Active"
 msgstr "啟用"
 
@@ -742,11 +763,11 @@ msgstr "新增網路綁定硬碟加密"
 msgid "Add Tang keyserver"
 msgstr "新增 Tang 金鑰伺服器"
 
-#: pkg/networkmanager/vlan.jsx:76 pkg/networkmanager/network-main.jsx:131
+#: pkg/networkmanager/vlan.jsx:76 pkg/networkmanager/network-main.jsx:160
 msgid "Add VLAN"
 msgstr "新增 VLAN"
 
-#: pkg/networkmanager/network-main.jsx:127
+#: pkg/networkmanager/network-main.jsx:156
 msgid "Add VPN"
 msgstr "新增 VPN"
 
@@ -771,11 +792,11 @@ msgstr "新增位址"
 msgid "Add block devices"
 msgstr "新增區塊裝置"
 
-#: pkg/networkmanager/bond.jsx:130 pkg/networkmanager/network-main.jsx:128
+#: pkg/networkmanager/bond.jsx:130 pkg/networkmanager/network-main.jsx:157
 msgid "Add bond"
 msgstr "新增 bond"
 
-#: pkg/networkmanager/bridge.jsx:81 pkg/networkmanager/network-main.jsx:130
+#: pkg/networkmanager/bridge.jsx:81 pkg/networkmanager/network-main.jsx:159
 msgid "Add bridge"
 msgstr "新增橋接"
 
@@ -860,7 +881,7 @@ msgstr "新增服務到 $0 區域"
 msgid "Add services to zone $0"
 msgstr "新增服務到 $0 區域"
 
-#: pkg/networkmanager/team.jsx:139 pkg/networkmanager/network-main.jsx:129
+#: pkg/networkmanager/team.jsx:139 pkg/networkmanager/network-main.jsx:158
 msgid "Add team"
 msgstr "新增 team"
 
@@ -922,11 +943,11 @@ msgstr "新增物理捲到 $target"
 msgid "Adding rd.neednet=1 to kernel command line"
 msgstr "增加 rd.neednet=1 至核心的指令行"
 
-#: pkg/networkmanager/network-interface.jsx:291
+#: pkg/networkmanager/network-interface.jsx:533
 msgid "Additional DNS $val"
 msgstr "額外的DNS $val"
 
-#: pkg/networkmanager/network-interface.jsx:294
+#: pkg/networkmanager/network-interface.jsx:536
 msgid "Additional DNS search domains $val"
 msgstr "額外的 DNS 搜尋網域 $val"
 
@@ -934,7 +955,7 @@ msgstr "額外的 DNS 搜尋網域 $val"
 msgid "Additional actions"
 msgstr "其他動作"
 
-#: pkg/networkmanager/network-interface.jsx:282
+#: pkg/networkmanager/network-interface.jsx:524
 msgid "Additional address $val"
 msgstr "額外的位址 $val"
 
@@ -954,7 +975,7 @@ msgstr "額外連接埠"
 msgid "Address"
 msgstr "位址"
 
-#: pkg/networkmanager/network-interface.jsx:282
+#: pkg/networkmanager/network-interface.jsx:524
 msgid "Address $val"
 msgstr "位址 $val"
 
@@ -973,6 +994,10 @@ msgstr "位址"
 #: pkg/networkmanager/wireguard.jsx:44
 msgid "Addresses are not formatted correctly"
 msgstr "位址的格式不正確"
+
+#: pkg/networkmanager/interfaces.js:903
+msgid "Adhoc"
+msgstr ""
 
 #: src/systemd/org.cockpit-project.cockpit-bridge.policy.in:10
 msgid "Administration with Cockpit Web Console"
@@ -1207,7 +1232,7 @@ msgstr "稽核日誌"
 msgid "Authenticate"
 msgstr "認證"
 
-#: pkg/networkmanager/interfaces.js:846
+#: pkg/networkmanager/interfaces.js:883
 msgid "Authenticating"
 msgstr "認證"
 
@@ -1240,7 +1265,7 @@ msgstr "授權 SSH 金鑰"
 msgid "Authorized public SSH keys"
 msgstr "已授權的公共 SSH 金鑰"
 
-#: pkg/networkmanager/mtu.jsx:65 pkg/networkmanager/network-interface.jsx:366
+#: pkg/networkmanager/mtu.jsx:65 pkg/networkmanager/network-interface.jsx:608
 #: pkg/networkmanager/ip-settings.jsx:28 pkg/networkmanager/ip-settings.jsx:296
 #: pkg/networkmanager/ip-settings.jsx:342
 #: pkg/networkmanager/ip-settings.jsx:388
@@ -1278,6 +1303,13 @@ msgstr "自動使用指定的 NTP 伺服器"
 #: pkg/lib/cockpit-components-modifications.jsx:74
 msgid "Automation script"
 msgstr "自動化腳本"
+
+#: pkg/networkmanager/network-interface.jsx:1102
+#: pkg/networkmanager/network-interface.jsx:1104
+#, fuzzy
+#| msgid "Available updates"
+msgid "Available networks"
+msgstr "可用的更新"
 
 #: pkg/storaged/iscsi/create-dialog.jsx:94
 msgid "Available targets on $0"
@@ -1357,9 +1389,9 @@ msgstr "區塊裝置"
 msgid "Blocked"
 msgstr "阻止"
 
-#: pkg/networkmanager/network-interface.jsx:160
-#: pkg/networkmanager/network-interface.jsx:174
+#: pkg/networkmanager/network-interface.jsx:402
 #: pkg/networkmanager/network-interface.jsx:416
+#: pkg/networkmanager/network-interface.jsx:658
 msgid "Bond"
 msgstr "Bond"
 
@@ -1380,13 +1412,13 @@ msgstr "即使檔案系統未能掛載，開機仍會成功"
 msgid "Bound by"
 msgstr "以......為界"
 
-#: pkg/networkmanager/network-interface.jsx:166
-#: pkg/networkmanager/network-interface.jsx:180
-#: pkg/networkmanager/network-interface.jsx:498
+#: pkg/networkmanager/network-interface.jsx:408
+#: pkg/networkmanager/network-interface.jsx:422
+#: pkg/networkmanager/network-interface.jsx:740
 msgid "Bridge"
 msgstr "橋接"
 
-#: pkg/networkmanager/network-interface.jsx:520
+#: pkg/networkmanager/network-interface.jsx:762
 msgid "Bridge port"
 msgstr "橋接埠"
 
@@ -1398,8 +1430,8 @@ msgstr "橋接埠設定"
 msgid "Broadcast"
 msgstr "廣播"
 
-#: pkg/networkmanager/network-interface.jsx:429
-#: pkg/networkmanager/network-interface.jsx:465
+#: pkg/networkmanager/network-interface.jsx:671
+#: pkg/networkmanager/network-interface.jsx:707
 msgid "Broken configuration"
 msgstr "設定檔損壞"
 
@@ -1480,8 +1512,9 @@ msgstr "使用目前的篩選器組合無法找到任何紀錄檔。"
 #: pkg/shell/shell-modals.tsx:172 pkg/shell/credentials.tsx:229
 #: pkg/shell/hosts_dialog.jsx:275 pkg/shell/hosts_dialog.jsx:477
 #: pkg/shell/hosts_dialog.jsx:574 pkg/shell/hosts_dialog.jsx:710
-#: pkg/shell/hosts_dialog.jsx:1089 pkg/networkmanager/firewall.jsx:728
-#: pkg/networkmanager/firewall.jsx:918 pkg/networkmanager/firewall.jsx:942
+#: pkg/shell/hosts_dialog.jsx:1089 pkg/networkmanager/network-interface.jsx:233
+#: pkg/networkmanager/firewall.jsx:728 pkg/networkmanager/firewall.jsx:918
+#: pkg/networkmanager/firewall.jsx:942
 #: pkg/networkmanager/dialogs-common.jsx:146 pkg/apps/utils.tsx:78
 #: pkg/kdump/kdump-view.jsx:313 pkg/systemd/overview-cards/tuned-dialog.jsx:311
 #: pkg/systemd/overview-cards/motdCard.jsx:63
@@ -1528,7 +1561,7 @@ msgstr "無法安排過去的活動"
 msgid "Capacity"
 msgstr "容量"
 
-#: pkg/networkmanager/network-interface.jsx:226
+#: pkg/networkmanager/network-interface.jsx:468
 msgid "Carrier"
 msgstr "載體"
 
@@ -1593,7 +1626,7 @@ msgstr "變更系統時間"
 msgid "Change the password of $0"
 msgstr "變更 $0 的密碼"
 
-#: pkg/networkmanager/interfaces.js:1721
+#: pkg/networkmanager/interfaces.js:1944
 msgid "Change the settings"
 msgstr "更改設定"
 
@@ -1619,7 +1652,7 @@ msgstr ""
 "變更目錄將會強制中止目前執行中的處理程序。也可以在終端機中手動停止該處理程序"
 "後，再繼續變更。"
 
-#: pkg/networkmanager/interfaces.js:1720
+#: pkg/networkmanager/interfaces.js:1943
 msgid ""
 "Changing the settings will break the connection to the server, and will make "
 "the administration UI unavailable."
@@ -1642,7 +1675,7 @@ msgstr "使用 Tang 伺服器檢查金鑰雜湊。"
 msgid "Checking $target"
 msgstr "檢查 $target"
 
-#: pkg/networkmanager/interfaces.js:850
+#: pkg/networkmanager/interfaces.js:887
 msgid "Checking IP"
 msgstr "檢查IP"
 
@@ -1886,11 +1919,11 @@ msgstr "條件失敗"
 msgid "Configuration"
 msgstr "組態"
 
-#: pkg/networkmanager/interfaces.js:844
+#: pkg/networkmanager/interfaces.js:881
 msgid "Configuring"
 msgstr "正在設定"
 
-#: pkg/networkmanager/interfaces.js:848
+#: pkg/networkmanager/interfaces.js:885
 msgid "Configuring IP"
 msgstr "正在設定 IP"
 
@@ -1948,11 +1981,13 @@ msgstr "衝突的"
 msgid "Conflicts"
 msgstr "衝突"
 
-#: pkg/shell/hosts_dialog.jsx:272
+#: pkg/shell/hosts_dialog.jsx:272 pkg/networkmanager/network-interface.jsx:228
+#: pkg/networkmanager/network-interface.jsx:1018
+#: pkg/networkmanager/network-interface.jsx:1019
 msgid "Connect"
 msgstr "連接"
 
-#: pkg/networkmanager/network-interface.jsx:312
+#: pkg/networkmanager/network-interface.jsx:554
 msgid "Connect automatically"
 msgstr "自動連線"
 
@@ -1960,9 +1995,22 @@ msgstr "自動連線"
 msgid "Connect to"
 msgstr "連線至"
 
+#: pkg/networkmanager/network-interface.jsx:173
+#, fuzzy
+#| msgid "Connect to $0?"
+msgid "Connect to $0"
+msgstr "連線至 $0 ？"
+
 #: pkg/shell/hosts_dialog.jsx:253
 msgid "Connect to $0?"
 msgstr "連線至 $0 ？"
+
+#: pkg/networkmanager/network-interface.jsx:173
+#: pkg/networkmanager/network-interface.jsx:1088
+#, fuzzy
+#| msgid "Connecting to the machine"
+msgid "Connect to hidden network"
+msgstr "正在連線至機器"
 
 #: pkg/static/login.js:735
 msgid "Connect to:"
@@ -2346,7 +2394,7 @@ msgstr "已允許具 SHA-1 簽章驗證的 DEFAULT 。"
 msgid "DNS"
 msgstr "DNS"
 
-#: pkg/networkmanager/network-interface.jsx:291
+#: pkg/networkmanager/network-interface.jsx:533
 msgid "DNS $val"
 msgstr "DNS $val"
 
@@ -2354,7 +2402,7 @@ msgstr "DNS $val"
 msgid "DNS search domains"
 msgstr "DNS 搜尋網域"
 
-#: pkg/networkmanager/network-interface.jsx:294
+#: pkg/networkmanager/network-interface.jsx:536
 msgid "DNS search domains $val"
 msgstr "DNS 搜尋網域 $val"
 
@@ -2457,7 +2505,7 @@ msgstr "取消啟動"
 msgid "Deactivate logical volume $0/$1?"
 msgstr "停止邏輯磁碟區 $0/$1 嗎？"
 
-#: pkg/networkmanager/interfaces.js:856
+#: pkg/networkmanager/interfaces.js:893
 msgid "Deactivating"
 msgstr "停用"
 
@@ -2501,7 +2549,7 @@ msgid "Delay must be a number"
 msgstr "延遲必須為數字"
 
 #: pkg/sosreport/sosreport.jsx:364 pkg/sosreport/sosreport.jsx:463
-#: pkg/networkmanager/network-interface.jsx:714
+#: pkg/networkmanager/network-interface.jsx:1264
 #: pkg/networkmanager/firewall.jsx:105 pkg/networkmanager/firewall.jsx:151
 #: pkg/networkmanager/firewall.jsx:165 pkg/networkmanager/firewall.jsx:939
 #: pkg/systemd/service-details.jsx:156 pkg/systemd/service-details.jsx:809
@@ -2526,7 +2574,7 @@ msgstr "延遲必須為數字"
 msgid "Delete"
 msgstr "刪除"
 
-#: pkg/networkmanager/network-interface.jsx:103
+#: pkg/networkmanager/network-interface.jsx:345
 #: pkg/users/delete-account-dialog.js:39
 msgid "Delete $0"
 msgstr "刪除 $0"
@@ -2555,7 +2603,7 @@ msgstr "刪除集區"
 msgid "Delete report permanently?"
 msgstr "要永遠刪除報告嗎？"
 
-#: pkg/networkmanager/network-interface.jsx:102
+#: pkg/networkmanager/network-interface.jsx:344
 msgid ""
 "Deleting $0 will break the connection to the server, and will make the "
 "administration UI unavailable."
@@ -2625,6 +2673,8 @@ msgstr "可拆開"
 # translation auto-copied from project libreport, version master, document
 # libreport
 #: pkg/packagekit/updates.jsx:419 pkg/shell/credentials.tsx:299
+#: pkg/networkmanager/network-main.jsx:204
+#: pkg/networkmanager/network-main.jsx:220
 #: pkg/systemd/overview-cards/realmd.jsx:404
 msgid "Details"
 msgstr "詳細資訊"
@@ -2710,6 +2760,8 @@ msgstr "禁止以密碼驗證"
 msgid "Disallow running (mask)"
 msgstr "禁止執行 (遮罩)"
 
+#: pkg/networkmanager/network-interface.jsx:1002
+#: pkg/networkmanager/network-interface.jsx:1003
 #: pkg/storaged/iscsi/session.jsx:41
 msgid "Disconnect"
 msgstr "斷線"
@@ -2922,7 +2974,7 @@ msgstr "編輯 motd"
 msgid "Edit mount point"
 msgstr "編輯掛載點"
 
-#: pkg/networkmanager/network-main.jsx:147
+#: pkg/networkmanager/network-main.jsx:176
 msgid "Edit rules and zones"
 msgstr "編輯規則與區域"
 
@@ -2982,7 +3034,7 @@ msgstr "清空 $target"
 msgid "Enable"
 msgstr "啟用"
 
-#: pkg/networkmanager/network-interface.jsx:673
+#: pkg/networkmanager/network-interface.jsx:1223
 msgid "Enable or disable the device"
 msgstr "啟用或停用裝置"
 
@@ -3210,7 +3262,7 @@ msgid "FIPS with further Common Criteria restrictions."
 msgstr "具進一步通用準則限制的 FIPS。"
 
 #: pkg/lib/cockpit/dialog.tsx:1261 pkg/lib/cockpit/dialog.tsx:1264
-#: pkg/networkmanager/interfaces.js:858 pkg/storaged/mdraid/mdraid-disk.jsx:57
+#: pkg/networkmanager/interfaces.js:895 pkg/storaged/mdraid/mdraid-disk.jsx:57
 msgid "Failed"
 msgstr "失敗"
 
@@ -3258,6 +3310,24 @@ msgstr "無法更改密碼"
 #: pkg/metrics/metrics.jsx:1452
 msgid "Failed to configure PCP"
 msgstr "設定 PCP 失敗"
+
+#: pkg/networkmanager/network-interface.jsx:176
+#, fuzzy
+#| msgid "Failed to add zone"
+msgid "Failed to connect"
+msgstr "新增區域失敗"
+
+#: pkg/networkmanager/network-interface.jsx:883
+#, fuzzy
+#| msgid "Failed to delete alert: $0"
+msgid "Failed to connect to $0"
+msgstr "刪除警示失敗： $0"
+
+#: pkg/networkmanager/network-interface.jsx:157
+#, fuzzy
+#| msgid "Failed to change password"
+msgid "Failed to connect. Check your password."
+msgstr "無法更改密碼"
 
 #: pkg/selinux/setroubleshoot-client.js:140
 #: pkg/selinux/setroubleshoot-client.js:144
@@ -3367,6 +3437,12 @@ msgstr "目標以外的檔案系統"
 msgid "Filesystems are already mounted below this mountpoint."
 msgstr "檔案系統已被掛載於此掛載點下。"
 
+#: pkg/networkmanager/network-interface.jsx:1077
+#, fuzzy
+#| msgid "Filters"
+msgid "Filter"
+msgstr "篩選器"
+
 #: pkg/systemd/services.jsx:810
 msgid "Filter by name or description"
 msgstr "以名稱或說明篩選"
@@ -3388,7 +3464,7 @@ msgid "Fingerprint"
 msgstr "指紋"
 
 #: pkg/networkmanager/firewall.html:8 pkg/networkmanager/firewall.jsx:1085
-#: pkg/networkmanager/firewall.jsx:1092 pkg/networkmanager/network-main.jsx:151
+#: pkg/networkmanager/firewall.jsx:1092 pkg/networkmanager/network-main.jsx:180
 msgid "Firewall"
 msgstr "防火牆"
 
@@ -3426,6 +3502,13 @@ msgstr "強制刪除"
 msgid "Force password change"
 msgstr "強制更改密碼"
 
+#: pkg/networkmanager/network-interface.jsx:1032
+#: pkg/networkmanager/network-interface.jsx:1033
+#, fuzzy
+#| msgid "Target"
+msgid "Forget"
+msgstr "目標"
+
 #: pkg/storaged/block/actions.jsx:17 pkg/storaged/block/format-dialog.jsx:261
 #: pkg/storaged/block/format-dialog.jsx:271
 msgid "Format"
@@ -3452,7 +3535,7 @@ msgstr "僅格式化"
 msgid "Formatting erases all data on a storage device."
 msgstr "格式化將會刪除儲存裝置上的所有資料。"
 
-#: pkg/networkmanager/network-interface.jsx:490
+#: pkg/networkmanager/network-interface.jsx:732
 msgid "Forward delay $forward_delay"
 msgstr "轉發延遲 $forward_delay"
 
@@ -3482,13 +3565,13 @@ msgstr "全名"
 msgid "Gateway"
 msgstr "閘道"
 
-#: pkg/networkmanager/network-interface.jsx:287
+#: pkg/networkmanager/network-interface.jsx:529
 #, fuzzy
 #| msgid "Gateway"
 msgid "Gateway $gateway"
 msgstr "閘道"
 
-#: pkg/networkmanager/network-interface.jsx:304
+#: pkg/networkmanager/network-interface.jsx:546
 msgid "General"
 msgstr "一般"
 
@@ -3516,7 +3599,7 @@ msgstr "圖表顯示"
 msgid "Graph visibility options menu"
 msgstr "圖表顯示選項選單"
 
-#: pkg/networkmanager/network-interface.jsx:389 pkg/users/accounts-list.js:359
+#: pkg/networkmanager/network-interface.jsx:631 pkg/users/accounts-list.js:359
 msgid "Group"
 msgstr "群組"
 
@@ -3566,7 +3649,7 @@ msgstr "成長以佔據所有空間"
 msgid "Hair pin mode"
 msgstr "Hair pin 模式"
 
-#: pkg/networkmanager/network-interface.jsx:517
+#: pkg/networkmanager/network-interface.jsx:759
 msgid "Hairpin mode"
 msgstr "Hairpin 模式"
 
@@ -3586,7 +3669,7 @@ msgstr "硬體資訊"
 msgid "Health"
 msgstr "系統摘要"
 
-#: pkg/networkmanager/network-interface.jsx:492
+#: pkg/networkmanager/network-interface.jsx:734
 msgid "Hello time $hello_time"
 msgstr "Hello 時間 $hello_time"
 
@@ -3600,6 +3683,7 @@ msgid "Hide confirmation password"
 msgstr "隱藏確認密碼"
 
 #: pkg/lib/cockpit-components-password.tsx:135
+#: pkg/networkmanager/network-interface.jsx:211
 msgid "Hide password"
 msgstr "隱藏密碼"
 
@@ -3666,7 +3750,7 @@ msgstr "我確認我想要永遠遺失此資料"
 msgid "ID"
 msgstr "ID"
 
-#: pkg/networkmanager/network-interface.jsx:535
+#: pkg/networkmanager/network-interface.jsx:777
 msgid "ID $id"
 msgstr "ID $id"
 
@@ -3678,8 +3762,8 @@ msgstr ""
 "內部錯誤 - 這個邏輯磁碟區被標記為啟用且應該擁有一個相聯的區塊裝置。然而，沒有"
 "找到前述的區塊裝置。"
 
-#: pkg/networkmanager/network-main.jsx:172
-#: pkg/networkmanager/network-main.jsx:187
+#: pkg/networkmanager/network-main.jsx:201
+#: pkg/networkmanager/network-main.jsx:217
 msgid "IP address"
 msgstr "IP 位址"
 
@@ -3697,7 +3781,7 @@ msgstr ""
 msgid "IP addresses"
 msgstr "IPv4 位址"
 
-#: pkg/networkmanager/network-interface.jsx:557
+#: pkg/networkmanager/network-interface.jsx:799
 msgid "IPv4"
 msgstr "IPv4"
 
@@ -3705,7 +3789,7 @@ msgstr "IPv4"
 msgid "IPv4 settings"
 msgstr "IPv4 設定"
 
-#: pkg/networkmanager/network-interface.jsx:558
+#: pkg/networkmanager/network-interface.jsx:800
 msgid "IPv6"
 msgstr "IPv6"
 
@@ -3803,9 +3887,9 @@ msgstr "同步中"
 
 # translation auto-copied from project virt-manager, version 0.10.0, document
 # virt-manager
-#: pkg/networkmanager/interfaces.js:840 pkg/networkmanager/interfaces.js:1401
-#: pkg/networkmanager/interfaces.js:1408
-#: pkg/networkmanager/network-interface.jsx:243
+#: pkg/networkmanager/interfaces.js:877 pkg/networkmanager/interfaces.js:1624
+#: pkg/networkmanager/interfaces.js:1631
+#: pkg/networkmanager/network-interface.jsx:485
 msgid "Inactive"
 msgstr "未啟用"
 
@@ -3845,6 +3929,10 @@ msgstr "資訊"
 #: pkg/systemd/logs.jsx:57
 msgid "Info and above"
 msgstr "資訊與更高等級"
+
+#: pkg/networkmanager/interfaces.js:905
+msgid "Infra"
+msgstr ""
 
 #: pkg/storaged/partitions/format-disk-dialog.jsx:55
 msgid "Initialize"
@@ -3960,7 +4048,7 @@ msgstr "介面成員"
 
 #: pkg/networkmanager/firewall.jsx:872 pkg/networkmanager/bond.jsx:158
 #: pkg/networkmanager/network-interface-members.jsx:192
-#: pkg/networkmanager/network-main.jsx:166
+#: pkg/networkmanager/network-main.jsx:195
 msgid "Interfaces"
 msgstr "介面"
 
@@ -3984,7 +4072,7 @@ msgstr "中斷"
 msgid "Invalid"
 msgstr "無效"
 
-#: pkg/networkmanager/interfaces.js:655
+#: pkg/networkmanager/interfaces.js:678
 #, fuzzy
 #| msgid "Invalid address $0"
 msgid "Invalid DNS address: $0"
@@ -3996,7 +4084,7 @@ msgstr "無效的位址 $0"
 msgid "Invalid IP address '$0'"
 msgstr "無效的位址 $0"
 
-#: pkg/networkmanager/interfaces.js:443
+#: pkg/networkmanager/interfaces.js:459
 #, fuzzy
 #| msgid "Invalid address $0"
 msgid "Invalid IP address: $0"
@@ -4014,7 +4102,7 @@ msgstr "日期格式無效"
 msgid "Invalid date format and invalid time format"
 msgstr "無效的日期與時間格式"
 
-#: pkg/networkmanager/interfaces.js:466
+#: pkg/networkmanager/interfaces.js:482
 #, fuzzy
 #| msgid "Invalid address $0"
 msgid "Invalid destination address: $0"
@@ -4028,7 +4116,7 @@ msgstr "失效日期無效"
 msgid "Invalid file permissions"
 msgstr "檔案權限無效"
 
-#: pkg/networkmanager/interfaces.js:477 pkg/networkmanager/interfaces.js:643
+#: pkg/networkmanager/interfaces.js:493 pkg/networkmanager/interfaces.js:666
 #, fuzzy
 #| msgid "Invalid address $0"
 msgid "Invalid gateway address: $0"
@@ -4269,6 +4357,12 @@ msgstr "最後一個無法被移除"
 
 #: pkg/packagekit/updates.jsx:761
 msgid "Last checked: $0"
+msgstr "最後一次檢查： $0"
+
+#: pkg/networkmanager/network-interface.jsx:974
+#, fuzzy
+#| msgid "Last checked: $0"
+msgid "Last connected: $0"
 msgstr "最後一次檢查： $0"
 
 #: pkg/storaged/mdraid/mdraid-disk.jsx:82
@@ -4657,7 +4751,7 @@ msgstr "MDRAID 磁碟"
 msgid "MII (recommended)"
 msgstr "MII (建議)"
 
-#: pkg/networkmanager/network-interface.jsx:369
+#: pkg/networkmanager/network-interface.jsx:611
 msgid "MTU"
 msgstr "MTU"
 
@@ -4689,7 +4783,7 @@ msgstr "遠端主機上的惡意網頁可能會影響其他已連線的主機"
 msgid "Manage storage"
 msgstr "管理儲存空間"
 
-#: pkg/networkmanager/network-main.jsx:168
+#: pkg/networkmanager/network-main.jsx:197
 msgid "Managed interfaces"
 msgstr "已接管的介面"
 
@@ -4779,7 +4873,7 @@ msgstr ""
 "遮罩服務會阻止所有相依的單元執行。這可能會造成比預期更大的影響。請確認你想遮"
 "罩這個單元。"
 
-#: pkg/networkmanager/network-interface.jsx:494
+#: pkg/networkmanager/network-interface.jsx:736
 msgid "Maximum message age $max_age"
 msgstr "最大訊息壽命 $max_age"
 
@@ -4809,6 +4903,10 @@ msgstr "記憶體使用率/置換空間"
 #: pkg/systemd/services.jsx:210
 msgid "Merged"
 msgstr "已合併"
+
+#: pkg/networkmanager/interfaces.js:909
+msgid "Mesh"
+msgstr ""
 
 #: pkg/lib/cockpit-components-shutdown.jsx:182
 msgid "Message to logged in users"
@@ -4878,6 +4976,7 @@ msgstr "鏡射存放 (RAID 1)"
 msgid "Mitigations"
 msgstr "緩解"
 
+#: pkg/networkmanager/network-interface.jsx:1108
 #: pkg/networkmanager/bond.jsx:164
 msgid "Mode"
 msgstr "模式"
@@ -5040,8 +5139,8 @@ msgstr "NTP 伺服器"
 
 #: pkg/packagekit/updates.jsx:416 pkg/shell/credentials.tsx:291
 #: pkg/networkmanager/dialogs-common.jsx:120
-#: pkg/networkmanager/network-main.jsx:171
-#: pkg/networkmanager/network-main.jsx:186 pkg/systemd/hwinfo.jsx:74
+#: pkg/networkmanager/network-main.jsx:200
+#: pkg/networkmanager/network-main.jsx:216 pkg/systemd/hwinfo.jsx:74
 #: pkg/systemd/timer-dialog.jsx:129 pkg/users/group-create-dialog.js:25
 #: pkg/users/authorized-keys-panel.js:113 pkg/storaged/stratis/pool.jsx:364
 #: pkg/storaged/stratis/pool.jsx:467 pkg/storaged/stratis/pool.jsx:1023
@@ -5115,6 +5214,7 @@ msgstr "至少需要一台 NTP 伺服器"
 
 #: pkg/metrics/metrics.jsx:929 pkg/metrics/metrics.jsx:1553
 #: pkg/metrics/metrics.jsx:1924 pkg/metrics/metrics.jsx:1937
+#: pkg/networkmanager/network-interface.jsx:1107
 msgid "Network"
 msgstr "網路"
 
@@ -5130,9 +5230,20 @@ msgstr "網路 bond"
 msgid "Network devices and graphs require NetworkManager"
 msgstr "網路裝置與圖表需要 NetworkManager"
 
-#: pkg/networkmanager/network-main.jsx:193
+#: pkg/networkmanager/network-main.jsx:224
 msgid "Network logs"
 msgstr "網路日誌紀錄"
+
+#: pkg/networkmanager/network-interface.jsx:179
+#, fuzzy
+#| msgid "Network usage"
+msgid "Network name"
+msgstr "網路使用量"
+
+#: pkg/networkmanager/network-interface.jsx:880
+msgid ""
+"Network password is not stored. Please forget and reconnect to this network."
+msgstr ""
 
 #: pkg/metrics/metrics.jsx:938
 msgid "Network usage"
@@ -5150,7 +5261,8 @@ msgstr "NetworkManager 非執行中"
 msgid "Networked storage"
 msgstr "網路儲存空間"
 
-#: pkg/networkmanager/index.html:9 pkg/networkmanager/network-interface.jsx:694
+#: pkg/networkmanager/index.html:9
+#: pkg/networkmanager/network-interface.jsx:1244
 #: pkg/networkmanager/firewall.jsx:1084 pkg/networkmanager/manifest.json:0
 #: src/appstream/org.cockpit_project.cockpit_networkmanager.metainfo.xml.in:5
 msgid "Networking"
@@ -5209,7 +5321,7 @@ msgstr "不接受新密碼"
 msgid "Next"
 msgstr "下一步"
 
-#: pkg/networkmanager/network-interface.jsx:228
+#: pkg/networkmanager/network-interface.jsx:470
 msgid "No"
 msgstr "否"
 
@@ -5237,7 +5349,7 @@ msgstr "沒有可用的區塊裝置。"
 msgid "No block devices found"
 msgstr "沒有找到區塊裝置"
 
-#: pkg/networkmanager/interfaces.js:1403
+#: pkg/networkmanager/interfaces.js:1626
 msgid "No carrier"
 msgstr "無載體"
 
@@ -5433,6 +5545,7 @@ msgstr "沒有更新"
 msgid "No user name specified"
 msgstr "未指定使用者名稱"
 
+#: pkg/networkmanager/network-interface.jsx:192
 #: pkg/networkmanager/firewall.jsx:867 pkg/kdump/kdump-view.jsx:492
 #: pkg/systemd/overview-cards/tuned-dialog.jsx:213
 msgid "None"
@@ -5450,7 +5563,7 @@ msgstr "未授權停用防火牆"
 msgid "Not authorized to enable the firewall"
 msgstr "未授權啟用防火牆"
 
-#: pkg/packagekit/kpatch.jsx:224 pkg/networkmanager/interfaces.js:838
+#: pkg/packagekit/kpatch.jsx:224 pkg/networkmanager/interfaces.js:875
 msgid "Not available"
 msgstr "無法使用"
 
@@ -5490,13 +5603,25 @@ msgstr "未找到"
 msgid "Not installed"
 msgstr "未安裝"
 
-#: pkg/networkmanager/network-interface.jsx:668
+#: pkg/networkmanager/network-interface.jsx:1218
 msgid "Not permitted to configure network devices"
 msgstr "未被允許設定網路裝置"
 
 #: pkg/systemd/overview-cards/realmd.jsx:452
 msgid "Not permitted to configure realms"
 msgstr "未被允許設定領域"
+
+#: pkg/networkmanager/network-interface.jsx:1012
+#, fuzzy
+#| msgid "Not permitted to configure network devices"
+msgid "Not permitted to connect to network"
+msgstr "未被允許設定網路裝置"
+
+#: pkg/networkmanager/network-interface.jsx:992
+#, fuzzy
+#| msgid "Not permitted to configure network devices"
+msgid "Not permitted to disconnect network"
+msgstr "未被允許設定網路裝置"
 
 #: pkg/lib/cockpit.js:2415
 msgid "Not permitted to perform this action."
@@ -5721,7 +5846,7 @@ msgstr "頁名"
 msgid "Parent"
 msgstr "上層"
 
-#: pkg/networkmanager/network-interface.jsx:534
+#: pkg/networkmanager/network-interface.jsx:776
 msgid "Parent $parent"
 msgstr "上層 $parent"
 
@@ -5729,7 +5854,7 @@ msgstr "上層 $parent"
 msgid "Part of"
 msgstr "部分"
 
-#: pkg/networkmanager/interfaces.js:1432
+#: pkg/networkmanager/interfaces.js:1655
 msgid "Part of $0"
 msgstr "$0 的一部分"
 
@@ -5812,8 +5937,9 @@ msgstr "通行片語不相符"
 #: pkg/lib/cockpit-connect-ssh.tsx:442 pkg/lib/superuser-dialogs.tsx:176
 #: pkg/shell/credentials.tsx:163 pkg/shell/credentials.tsx:222
 #: pkg/shell/credentials.tsx:309 pkg/shell/hosts_dialog.jsx:1036
-#: pkg/shell/hosts_dialog.jsx:1045 pkg/users/account-create-dialog.js:125
-#: pkg/users/account-details.js:283 pkg/storaged/iscsi/create-dialog.jsx:20
+#: pkg/shell/hosts_dialog.jsx:1045 pkg/networkmanager/network-interface.jsx:199
+#: pkg/users/account-create-dialog.js:125 pkg/users/account-details.js:283
+#: pkg/storaged/iscsi/create-dialog.jsx:20
 #: pkg/storaged/iscsi/create-dialog.jsx:126
 msgid "Password"
 msgstr "密碼"
@@ -5874,7 +6000,7 @@ msgstr "路徑"
 msgid "Path cost"
 msgstr "路徑成本"
 
-#: pkg/networkmanager/network-interface.jsx:515
+#: pkg/networkmanager/network-interface.jsx:757
 msgid "Path cost $path_cost"
 msgstr "路徑成本 $path_cost"
 
@@ -6111,7 +6237,7 @@ msgstr "前綴長度"
 msgid "Prefix length or netmask"
 msgstr "前綴長度或網路遮罩"
 
-#: pkg/networkmanager/interfaces.js:842
+#: pkg/networkmanager/interfaces.js:879
 msgid "Preparing"
 msgstr "正在準備"
 
@@ -6140,8 +6266,8 @@ msgstr "主要"
 msgid "Priority"
 msgstr "優先等級"
 
-#: pkg/networkmanager/network-interface.jsx:488
-#: pkg/networkmanager/network-interface.jsx:513
+#: pkg/networkmanager/network-interface.jsx:730
+#: pkg/networkmanager/network-interface.jsx:755
 msgid "Priority $priority"
 msgstr "優先度 $priority"
 
@@ -6294,6 +6420,10 @@ msgstr "範圍必須被嚴格排序"
 msgid "Rank"
 msgstr "Rank"
 
+#: pkg/networkmanager/network-interface.jsx:1110
+msgid "Rate"
+msgstr ""
+
 #: pkg/kdump/kdump-view.jsx:463
 msgid "Raw to a device"
 msgstr "直接寫到裝置 (Raw)"
@@ -6372,8 +6502,8 @@ msgstr "將系統重新開機…"
 
 #: pkg/networkmanager/plots.js:30
 #: pkg/networkmanager/network-interface-members.jsx:194
-#: pkg/networkmanager/network-main.jsx:174
-#: pkg/networkmanager/network-main.jsx:189
+#: pkg/networkmanager/network-main.jsx:203
+#: pkg/networkmanager/network-main.jsx:219
 msgid "Receiving"
 msgstr "正在接收"
 
@@ -6396,6 +6526,10 @@ msgstr "正在復原"
 #: pkg/storaged/jobs-panel.jsx:56
 msgid "Recovering MDRAID device $target"
 msgstr "正在復原 MDRAID 裝置 $target"
+
+#: pkg/networkmanager/network-interface.jsx:1096
+msgid "Refresh"
+msgstr ""
 
 #: pkg/packagekit/updates.jsx:90
 msgid "Refreshing package information"
@@ -7040,6 +7174,10 @@ msgstr "安全資料"
 msgid "Securely erasing $target"
 msgstr "正在安全抹除 $target"
 
+#: pkg/networkmanager/network-interface.jsx:187
+msgid "Security"
+msgstr "安全性"
+
 #: src/appstream/org.cockpit_project.cockpit_selinux.metainfo.xml.in:6
 msgid "Security Enhanced Linux configuration and troubleshooting"
 msgstr "Security Enhanced Linux 設定與疑難排解"
@@ -7079,8 +7217,8 @@ msgid "Self-test status"
 msgstr "自檢狀態"
 
 #: pkg/networkmanager/network-interface-members.jsx:193
-#: pkg/networkmanager/network-main.jsx:173
-#: pkg/networkmanager/network-main.jsx:188
+#: pkg/networkmanager/network-main.jsx:202
+#: pkg/networkmanager/network-main.jsx:218
 msgid "Sending"
 msgstr "傳送"
 
@@ -7269,6 +7407,7 @@ msgid "Show more relationships"
 msgstr "顯示更多相關服務"
 
 #: pkg/lib/cockpit-components-password.tsx:135
+#: pkg/networkmanager/network-interface.jsx:211
 msgid "Show password"
 msgstr "顯示密碼"
 
@@ -7304,6 +7443,14 @@ msgstr "關機"
 #: pkg/systemd/overview.jsx:101
 msgid "Shutdown"
 msgstr "關機"
+
+#: pkg/networkmanager/network-interface.jsx:1109
+msgid "Signal"
+msgstr ""
+
+#: pkg/networkmanager/network-interface.jsx:983
+msgid "Signal strength"
+msgstr ""
 
 #: pkg/systemd/logs.jsx:299
 msgid "Since"
@@ -7442,7 +7589,7 @@ msgstr "依最不受信任至最受信任排序"
 msgid "Space-saving computer"
 msgstr "節省空間的計算機"
 
-#: pkg/networkmanager/network-interface.jsx:486
+#: pkg/networkmanager/network-interface.jsx:728
 msgid "Spanning tree protocol"
 msgstr "生成樹協議"
 
@@ -7520,7 +7667,7 @@ msgstr "狀態"
 msgid "Static"
 msgstr "靜態"
 
-#: pkg/packagekit/updates.jsx:886 pkg/networkmanager/network-interface.jsx:252
+#: pkg/packagekit/updates.jsx:886 pkg/networkmanager/network-interface.jsx:494
 #: pkg/systemd/service-details.jsx:728
 msgid "Status"
 msgstr "狀態"
@@ -7693,13 +7840,13 @@ msgstr "無法在此處調整置換空間的大小"
 msgid "Swap out"
 msgstr "置換出"
 
-#: pkg/networkmanager/network-interface.jsx:149
+#: pkg/networkmanager/network-interface.jsx:391
 #: pkg/networkmanager/network-interface-members.jsx:54
 #: pkg/networkmanager/network-interface-members.jsx:74
 msgid "Switch off $0"
 msgstr "關掉 $0"
 
-#: pkg/networkmanager/network-interface.jsx:130
+#: pkg/networkmanager/network-interface.jsx:372
 #: pkg/networkmanager/network-interface-members.jsx:65
 msgid "Switch on $0"
 msgstr "打開 $0"
@@ -7712,14 +7859,14 @@ msgstr "切換至管理員存取模式"
 msgid "Switch to limited access"
 msgstr "切換至受限存取模式"
 
-#: pkg/networkmanager/network-interface.jsx:148
+#: pkg/networkmanager/network-interface.jsx:390
 #: pkg/networkmanager/network-interface-members.jsx:73
 msgid ""
 "Switching off $0 will break the connection to the server, and will make the "
 "administration UI unavailable."
 msgstr "關掉 $0 將中斷與伺服器的連線，且將使管理介面無法使用。"
 
-#: pkg/networkmanager/network-interface.jsx:129
+#: pkg/networkmanager/network-interface.jsx:371
 #: pkg/networkmanager/network-interface-members.jsx:64
 msgid ""
 "Switching on $0 will break the connection to the server, and will make the "
@@ -7794,13 +7941,13 @@ msgstr "目標"
 msgid "Targets"
 msgstr "目標"
 
-#: pkg/networkmanager/network-interface.jsx:162
-#: pkg/networkmanager/network-interface.jsx:176
-#: pkg/networkmanager/network-interface.jsx:441
+#: pkg/networkmanager/network-interface.jsx:404
+#: pkg/networkmanager/network-interface.jsx:418
+#: pkg/networkmanager/network-interface.jsx:683
 msgid "Team"
 msgstr "Team"
 
-#: pkg/networkmanager/network-interface.jsx:471
+#: pkg/networkmanager/network-interface.jsx:713
 msgid "Team port"
 msgstr "Team 埠"
 
@@ -8228,7 +8375,7 @@ msgstr ""
 msgid "This device can not be used for the installation target."
 msgstr "這個裝置不可被當作安裝目標。"
 
-#: pkg/networkmanager/network-interface.jsx:735
+#: pkg/networkmanager/network-interface.jsx:1285
 msgid "This device cannot be managed here."
 msgstr "此裝置無法在此處被管理。"
 
@@ -8774,18 +8921,18 @@ msgstr "單元"
 #: pkg/lib/machine-info.js:49 pkg/lib/machine-info.js:215
 #: pkg/lib/machine-info.js:223 pkg/lib/machine-info.js:225
 #: pkg/lib/machine-info.js:232 pkg/lib/machine-info.js:234
-#: pkg/lib/machine-info.js:238 pkg/networkmanager/interfaces.js:522
-#: pkg/networkmanager/interfaces.js:1082
-#: pkg/networkmanager/network-interface.jsx:186
-#: pkg/networkmanager/network-interface.jsx:188 pkg/systemd/hw-detect.js:71
+#: pkg/lib/machine-info.js:238 pkg/networkmanager/interfaces.js:538
+#: pkg/networkmanager/interfaces.js:911 pkg/networkmanager/interfaces.js:1167
+#: pkg/networkmanager/network-interface.jsx:428
+#: pkg/networkmanager/network-interface.jsx:430 pkg/systemd/hw-detect.js:71
 #: pkg/systemd/hw-detect.js:80 pkg/systemd/hw-detect.js:87
 #: pkg/systemd/hw-detect.js:90 pkg/systemd/hw-detect.js:97
 #: pkg/systemd/hw-detect.js:98 pkg/storaged/swap/swap.jsx:102
 msgid "Unknown"
 msgstr "不明"
 
-#: pkg/networkmanager/network-interface.jsx:170
-#: pkg/networkmanager/network-interface.jsx:184
+#: pkg/networkmanager/network-interface.jsx:412
+#: pkg/networkmanager/network-interface.jsx:426
 msgid "Unknown \"$0\""
 msgstr "未知“$0“"
 
@@ -8797,7 +8944,7 @@ msgstr "未知（$0）"
 msgid "Unknown application"
 msgstr "未知的申請"
 
-#: pkg/networkmanager/network-interface.jsx:273
+#: pkg/networkmanager/network-interface.jsx:515
 msgid "Unknown configuration"
 msgstr "未知的設定"
 
@@ -8847,8 +8994,8 @@ msgstr "解鎖 $target"
 msgid "Unlocking disk"
 msgstr "正在解鎖磁碟"
 
-#: pkg/networkmanager/network-main.jsx:181
-#: pkg/networkmanager/network-main.jsx:183
+#: pkg/networkmanager/network-main.jsx:211
+#: pkg/networkmanager/network-main.jsx:213
 msgid "Unmanaged interfaces"
 msgstr "未接管的介面"
 
@@ -9090,9 +9237,9 @@ msgstr "VDO 裝置 $0"
 msgid "VDO filesystem volume (compression/deduplication)"
 msgstr "VDO 檔案系統磁碟區 （壓縮/去重複）"
 
-#: pkg/networkmanager/network-interface.jsx:164
-#: pkg/networkmanager/network-interface.jsx:178
-#: pkg/networkmanager/network-interface.jsx:538
+#: pkg/networkmanager/network-interface.jsx:406
+#: pkg/networkmanager/network-interface.jsx:420
+#: pkg/networkmanager/network-interface.jsx:780
 msgid "VLAN"
 msgstr "VLAN"
 
@@ -9239,9 +9386,13 @@ msgstr "磁碟區群組缺少實體磁碟區"
 msgid "Volume size is $0. Content size is $1."
 msgstr "磁碟區大小是 $0 。內容物大小是 $1 。"
 
+#: pkg/networkmanager/network-interface.jsx:193
+msgid "WPA/WPA2 Personal"
+msgstr ""
+
 # translation auto-copied from project evolution-data-server, version el6,
 # document evolution-data-server-2.32
-#: pkg/networkmanager/interfaces.js:852
+#: pkg/networkmanager/interfaces.js:889
 msgid "Waiting"
 msgstr "正在等待"
 
@@ -9333,7 +9484,7 @@ msgstr "白色"
 msgid "Will be set to \"Automatic\""
 msgstr "將被設定為 \"自動\""
 
-#: pkg/networkmanager/network-interface.jsx:551
+#: pkg/networkmanager/network-interface.jsx:793
 msgid "WireGuard"
 msgstr "WireGuard"
 
@@ -9366,7 +9517,7 @@ msgstr "XOR"
 msgid "Yearly"
 msgstr "每年"
 
-#: pkg/networkmanager/network-interface.jsx:228
+#: pkg/networkmanager/network-interface.jsx:470
 msgid "Yes"
 msgstr "是"
 
@@ -9595,7 +9746,7 @@ msgstr "核心傾印"
 msgid "cpu"
 msgstr "處理器"
 
-#: pkg/systemd/manifest.json:0 pkg/kdump/manifest.json:0
+#: pkg/kdump/manifest.json:0 pkg/systemd/manifest.json:0
 msgid "crash"
 msgstr "當機"
 
@@ -9659,7 +9810,7 @@ msgstr "網域"
 msgid "drive"
 msgstr "硬碟"
 
-#: pkg/networkmanager/network-interface.jsx:337
+#: pkg/networkmanager/network-interface.jsx:579
 #: pkg/networkmanager/dialogs-common.jsx:242
 #: pkg/systemd/overview-cards/configurationCard.jsx:43
 #: pkg/users/account-details.js:278 pkg/users/account-details.js:308
@@ -10005,6 +10156,10 @@ msgctxt "on <terminal>"
 msgid "on $0"
 msgstr "於 $0"
 
+#: pkg/networkmanager/network-interface.jsx:961
+msgid "open"
+msgstr ""
+
 #: pkg/systemd/manifest.json:0
 msgid "operating system"
 msgstr "作業系統"
@@ -10129,6 +10284,12 @@ msgstr "角色"
 msgid "running $0"
 msgstr "正在執行 $0"
 
+#: pkg/networkmanager/network-interface.jsx:960
+#, fuzzy
+#| msgid "security"
+msgid "secured"
+msgstr "安全性"
+
 #: pkg/packagekit/updates.jsx:183 pkg/packagekit/updates.jsx:280
 #: pkg/packagekit/manifest.json:0
 msgid "security"
@@ -10194,7 +10355,7 @@ msgstr "sos"
 msgid "sos report failed"
 msgstr "sos 報告失敗"
 
-#: pkg/users/manifest.json:0 pkg/systemd/manifest.json:0
+#: pkg/systemd/manifest.json:0 pkg/users/manifest.json:0
 msgid "ssh"
 msgstr "ssh"
 
@@ -11250,9 +11411,6 @@ msgstr "區域"
 #~ "in GNOME Software or run the following:"
 #~ msgstr ""
 #~ "$0 適用於大多數操作系統。要安裝它，請在GNOME軟件中搜索它或運行以下命令："
-
-#~ msgid "$0 network"
-#~ msgstr "$0 網路"
 
 # ctx::sourcefile::/rhn/systems/details/virtualization/VirtualGuestsList.do
 #, fuzzy
@@ -12553,9 +12711,6 @@ msgstr "區域"
 #~ "Resetting the storage pool will erase all containers and release disks in "
 #~ "the pool."
 #~ msgstr "重置存儲池將清除池中的所有容器和釋放磁盤。"
-
-#~ msgid "Security"
-#~ msgstr "安全性"
 
 #~ msgid "The Docker storage pool cannot be managed on this system."
 #~ msgstr "無法在此系統上管理Docker存儲池。"

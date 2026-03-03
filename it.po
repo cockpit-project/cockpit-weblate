@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-26 09:39+0000\n"
+"POT-Creation-Date: 2026-03-02 09:10+0000\n"
 "PO-Revision-Date: 2026-01-24 10:58+0000\n"
 "Last-Translator: Nathan <nathan95@live.it>\n"
 "Language-Team: Italian <https://translate.fedoraproject.org/projects/cockpit/"
@@ -37,7 +37,7 @@ msgstr[1] "$0 CPU"
 msgid "$0 GiB"
 msgstr "$0 GiB"
 
-#: pkg/networkmanager/network-main.jsx:160
+#: pkg/networkmanager/network-main.jsx:189
 msgid "$0 active zone"
 msgid_plural "$0 active zones"
 msgstr[0] "zona attiva $0"
@@ -145,6 +145,14 @@ msgstr "$0 filtri applicati"
 msgid "$0 free"
 msgstr "$0 liberi"
 
+#: pkg/networkmanager/network-interface.jsx:1056
+#, fuzzy
+#| msgid "$0 network"
+msgid "$0 hidden network"
+msgid_plural "$0 hidden networks"
+msgstr[0] "Rete $0"
+msgstr[1] "Rete $0"
+
 #: pkg/lib/cockpit-components-plot.jsx:217
 msgid "$0 hour"
 msgid_plural "$0 hours"
@@ -224,6 +232,14 @@ msgstr[1] "$0 mesi"
 #: pkg/users/accounts-list.js:311
 msgid "$0 more..."
 msgstr "$0 di più..."
+
+#: pkg/networkmanager/network-main.jsx:99
+#, fuzzy
+#| msgid "$0 network"
+msgid "$0 network"
+msgid_plural "$0 networks"
+msgstr[0] "Rete $0"
+msgstr[1] "Rete $0"
 
 #: pkg/packagekit/history.jsx:75
 msgid "$0 package"
@@ -633,11 +649,17 @@ msgid "A volume group with missing physical volumes can not be renamed."
 msgstr ""
 "Un gruppo di volumi con volumi fisici mancanti non può essere rinominato."
 
+#: pkg/networkmanager/interfaces.js:907
+#, fuzzy
+#| msgid "ARP"
+msgid "AP"
+msgstr "ARP"
+
 #: pkg/networkmanager/bond.jsx:41
 msgid "ARP"
 msgstr "ARP"
 
-#: pkg/networkmanager/network-interface.jsx:410
+#: pkg/networkmanager/network-interface.jsx:652
 msgid "ARP monitoring"
 msgstr "Monitoraggio ARP"
 
@@ -708,6 +730,7 @@ msgstr "Account"
 msgid "Action"
 msgstr "Azione"
 
+#: pkg/networkmanager/network-interface.jsx:1111
 #: pkg/networkmanager/firewall.jsx:198 pkg/apps/application-list.jsx:132
 #: pkg/users/accounts-list.js:360 pkg/storaged/pages.jsx:716
 #: pkg/storaged/drive/smart-details.jsx:92
@@ -728,7 +751,7 @@ msgstr "Attivazione $target"
 
 # translation auto-copied from project virt-manager, version 0.10.0, document
 # virt-manager
-#: pkg/networkmanager/interfaces.js:854 pkg/networkmanager/team.jsx:36
+#: pkg/networkmanager/interfaces.js:891 pkg/networkmanager/team.jsx:36
 msgid "Active"
 msgstr "Attivo"
 
@@ -786,11 +809,11 @@ msgstr "Aggiungi la crittografia dei dischi legati alla rete"
 msgid "Add Tang keyserver"
 msgstr "Aggiungi il server delle chiavi Tang"
 
-#: pkg/networkmanager/vlan.jsx:76 pkg/networkmanager/network-main.jsx:131
+#: pkg/networkmanager/vlan.jsx:76 pkg/networkmanager/network-main.jsx:160
 msgid "Add VLAN"
 msgstr "Aggiungi VLAN"
 
-#: pkg/networkmanager/network-main.jsx:127
+#: pkg/networkmanager/network-main.jsx:156
 msgid "Add VPN"
 msgstr "Aggiungi VPN"
 
@@ -815,11 +838,11 @@ msgstr "Aggiungi indirizzo"
 msgid "Add block devices"
 msgstr "Aggiungi dispositivi a blocchi"
 
-#: pkg/networkmanager/bond.jsx:130 pkg/networkmanager/network-main.jsx:128
+#: pkg/networkmanager/bond.jsx:130 pkg/networkmanager/network-main.jsx:157
 msgid "Add bond"
 msgstr "Aggiungi bond"
 
-#: pkg/networkmanager/bridge.jsx:81 pkg/networkmanager/network-main.jsx:130
+#: pkg/networkmanager/bridge.jsx:81 pkg/networkmanager/network-main.jsx:159
 msgid "Add bridge"
 msgstr "Aggiungi bridge"
 
@@ -904,7 +927,7 @@ msgstr "Aggiungi servizi alla zona $0"
 msgid "Add services to zone $0"
 msgstr "Aggiungi servizi alla zona $0"
 
-#: pkg/networkmanager/team.jsx:139 pkg/networkmanager/network-main.jsx:129
+#: pkg/networkmanager/team.jsx:139 pkg/networkmanager/network-main.jsx:158
 msgid "Add team"
 msgstr "Aggiungi team"
 
@@ -960,11 +983,11 @@ msgstr "Aggiungo il volume fisico a $target"
 msgid "Adding rd.neednet=1 to kernel command line"
 msgstr "Aggiunta di rd.neednet=1 alla riga di comando del kernel"
 
-#: pkg/networkmanager/network-interface.jsx:291
+#: pkg/networkmanager/network-interface.jsx:533
 msgid "Additional DNS $val"
 msgstr "DNS aggiuntivo $val"
 
-#: pkg/networkmanager/network-interface.jsx:294
+#: pkg/networkmanager/network-interface.jsx:536
 msgid "Additional DNS search domains $val"
 msgstr "Domini di ricerca DNS aggiuntivi $val"
 
@@ -972,7 +995,7 @@ msgstr "Domini di ricerca DNS aggiuntivi $val"
 msgid "Additional actions"
 msgstr "Azioni aggiuntive"
 
-#: pkg/networkmanager/network-interface.jsx:282
+#: pkg/networkmanager/network-interface.jsx:524
 msgid "Additional address $val"
 msgstr "Indirizzo aggiuntivo $val"
 
@@ -990,7 +1013,7 @@ msgstr "Porta aggiuntiva"
 msgid "Address"
 msgstr "Indirizzo"
 
-#: pkg/networkmanager/network-interface.jsx:282
+#: pkg/networkmanager/network-interface.jsx:524
 msgid "Address $val"
 msgstr "Indirizzo $val"
 
@@ -1009,6 +1032,10 @@ msgstr "Indirizzi"
 #: pkg/networkmanager/wireguard.jsx:44
 msgid "Addresses are not formatted correctly"
 msgstr "Gli indirizzi non sono formattati correttamente"
+
+#: pkg/networkmanager/interfaces.js:903
+msgid "Adhoc"
+msgstr ""
 
 #: src/systemd/org.cockpit-project.cockpit-bridge.policy.in:10
 msgid "Administration with Cockpit Web Console"
@@ -1249,7 +1276,7 @@ msgstr "Log audit"
 msgid "Authenticate"
 msgstr "Autenticare"
 
-#: pkg/networkmanager/interfaces.js:846
+#: pkg/networkmanager/interfaces.js:883
 msgid "Authenticating"
 msgstr "Autenticazione"
 
@@ -1284,7 +1311,7 @@ msgstr "Autorizza chiave SSH"
 msgid "Authorized public SSH keys"
 msgstr "Chiavi SSH pubbliche autorizzate"
 
-#: pkg/networkmanager/mtu.jsx:65 pkg/networkmanager/network-interface.jsx:366
+#: pkg/networkmanager/mtu.jsx:65 pkg/networkmanager/network-interface.jsx:608
 #: pkg/networkmanager/ip-settings.jsx:28 pkg/networkmanager/ip-settings.jsx:296
 #: pkg/networkmanager/ip-settings.jsx:342
 #: pkg/networkmanager/ip-settings.jsx:388
@@ -1322,6 +1349,13 @@ msgstr "Automaticamente utilizzando server NTP specifici"
 #: pkg/lib/cockpit-components-modifications.jsx:74
 msgid "Automation script"
 msgstr "Script di automazione"
+
+#: pkg/networkmanager/network-interface.jsx:1102
+#: pkg/networkmanager/network-interface.jsx:1104
+#, fuzzy
+#| msgid "No virtual networks"
+msgid "Available networks"
+msgstr "Nessuna rete virtuale"
 
 #: pkg/storaged/iscsi/create-dialog.jsx:94
 msgid "Available targets on $0"
@@ -1401,9 +1435,9 @@ msgstr "Dispositivi a blocchi"
 msgid "Blocked"
 msgstr "Bloccato"
 
-#: pkg/networkmanager/network-interface.jsx:160
-#: pkg/networkmanager/network-interface.jsx:174
+#: pkg/networkmanager/network-interface.jsx:402
 #: pkg/networkmanager/network-interface.jsx:416
+#: pkg/networkmanager/network-interface.jsx:658
 msgid "Bond"
 msgstr "Bond"
 
@@ -1428,13 +1462,13 @@ msgstr "Legato da"
 
 # translation auto-copied from project Anaconda, version master, document
 # anaconda, author Gregorio
-#: pkg/networkmanager/network-interface.jsx:166
-#: pkg/networkmanager/network-interface.jsx:180
-#: pkg/networkmanager/network-interface.jsx:498
+#: pkg/networkmanager/network-interface.jsx:408
+#: pkg/networkmanager/network-interface.jsx:422
+#: pkg/networkmanager/network-interface.jsx:740
 msgid "Bridge"
 msgstr "Bridge"
 
-#: pkg/networkmanager/network-interface.jsx:520
+#: pkg/networkmanager/network-interface.jsx:762
 msgid "Bridge port"
 msgstr "Porta del bridge"
 
@@ -1446,8 +1480,8 @@ msgstr "Impostazioni della porta del bridge"
 msgid "Broadcast"
 msgstr "Broadcast"
 
-#: pkg/networkmanager/network-interface.jsx:429
-#: pkg/networkmanager/network-interface.jsx:465
+#: pkg/networkmanager/network-interface.jsx:671
+#: pkg/networkmanager/network-interface.jsx:707
 msgid "Broken configuration"
 msgstr "Configurazione errata"
 
@@ -1531,8 +1565,9 @@ msgstr ""
 #: pkg/shell/shell-modals.tsx:172 pkg/shell/credentials.tsx:229
 #: pkg/shell/hosts_dialog.jsx:275 pkg/shell/hosts_dialog.jsx:477
 #: pkg/shell/hosts_dialog.jsx:574 pkg/shell/hosts_dialog.jsx:710
-#: pkg/shell/hosts_dialog.jsx:1089 pkg/networkmanager/firewall.jsx:728
-#: pkg/networkmanager/firewall.jsx:918 pkg/networkmanager/firewall.jsx:942
+#: pkg/shell/hosts_dialog.jsx:1089 pkg/networkmanager/network-interface.jsx:233
+#: pkg/networkmanager/firewall.jsx:728 pkg/networkmanager/firewall.jsx:918
+#: pkg/networkmanager/firewall.jsx:942
 #: pkg/networkmanager/dialogs-common.jsx:146 pkg/apps/utils.tsx:78
 #: pkg/kdump/kdump-view.jsx:313 pkg/systemd/overview-cards/tuned-dialog.jsx:311
 #: pkg/systemd/overview-cards/motdCard.jsx:63
@@ -1581,7 +1616,7 @@ msgstr "Non è possibile programmare eventi del passato"
 msgid "Capacity"
 msgstr "Capacità"
 
-#: pkg/networkmanager/network-interface.jsx:226
+#: pkg/networkmanager/network-interface.jsx:468
 msgid "Carrier"
 msgstr "Carrier"
 
@@ -1646,7 +1681,7 @@ msgstr "Modifica dell'ora di sistema"
 msgid "Change the password of $0"
 msgstr "Cambia la password di $0"
 
-#: pkg/networkmanager/interfaces.js:1721
+#: pkg/networkmanager/interfaces.js:1944
 msgid "Change the settings"
 msgstr "Modifica le impostazioni"
 
@@ -1675,7 +1710,7 @@ msgstr ""
 "attualmente in esecuzione. Il processo può anche essere interrotto "
 "manualmente nel terminale prima di continuare."
 
-#: pkg/networkmanager/interfaces.js:1720
+#: pkg/networkmanager/interfaces.js:1943
 msgid ""
 "Changing the settings will break the connection to the server, and will make "
 "the administration UI unavailable."
@@ -1702,7 +1737,7 @@ msgstr "Controlla l'hash della chiave con il server Tang."
 msgid "Checking $target"
 msgstr "Controllo $target"
 
-#: pkg/networkmanager/interfaces.js:850
+#: pkg/networkmanager/interfaces.js:887
 msgid "Checking IP"
 msgstr "Controllo dell'IP"
 
@@ -1949,11 +1984,11 @@ msgstr "Condizione non riuscita"
 msgid "Configuration"
 msgstr "Configurazione"
 
-#: pkg/networkmanager/interfaces.js:844
+#: pkg/networkmanager/interfaces.js:881
 msgid "Configuring"
 msgstr "Configurazione"
 
-#: pkg/networkmanager/interfaces.js:848
+#: pkg/networkmanager/interfaces.js:885
 msgid "Configuring IP"
 msgstr "Configurazione dell'IP"
 
@@ -2013,11 +2048,13 @@ msgstr "Conflitto da"
 msgid "Conflicts"
 msgstr "Conflitti"
 
-#: pkg/shell/hosts_dialog.jsx:272
+#: pkg/shell/hosts_dialog.jsx:272 pkg/networkmanager/network-interface.jsx:228
+#: pkg/networkmanager/network-interface.jsx:1018
+#: pkg/networkmanager/network-interface.jsx:1019
 msgid "Connect"
 msgstr "Connetti"
 
-#: pkg/networkmanager/network-interface.jsx:312
+#: pkg/networkmanager/network-interface.jsx:554
 msgid "Connect automatically"
 msgstr "Connessione automatica"
 
@@ -2025,9 +2062,22 @@ msgstr "Connessione automatica"
 msgid "Connect to"
 msgstr "Collegati a"
 
+#: pkg/networkmanager/network-interface.jsx:173
+#, fuzzy
+#| msgid "Connect to $0?"
+msgid "Connect to $0"
+msgstr "Connettersi a $0?"
+
 #: pkg/shell/hosts_dialog.jsx:253
 msgid "Connect to $0?"
 msgstr "Connettersi a $0?"
+
+#: pkg/networkmanager/network-interface.jsx:173
+#: pkg/networkmanager/network-interface.jsx:1088
+#, fuzzy
+#| msgid "Connecting to the machine"
+msgid "Connect to hidden network"
+msgstr "Collegamento alla macchina"
 
 #: pkg/static/login.js:735
 msgid "Connect to:"
@@ -2415,7 +2465,7 @@ msgstr "DEFAULT con verifica della firma SHA-1 consentita."
 msgid "DNS"
 msgstr "DNS"
 
-#: pkg/networkmanager/network-interface.jsx:291
+#: pkg/networkmanager/network-interface.jsx:533
 msgid "DNS $val"
 msgstr "DNS $val"
 
@@ -2423,7 +2473,7 @@ msgstr "DNS $val"
 msgid "DNS search domains"
 msgstr "Domini di ricerca DNS"
 
-#: pkg/networkmanager/network-interface.jsx:294
+#: pkg/networkmanager/network-interface.jsx:536
 msgid "DNS search domains $val"
 msgstr "Domini di ricerca DNS $val"
 
@@ -2537,7 +2587,7 @@ msgstr "Disattiva"
 msgid "Deactivate logical volume $0/$1?"
 msgstr "Disattivare il volume logico $0/$1?"
 
-#: pkg/networkmanager/interfaces.js:856
+#: pkg/networkmanager/interfaces.js:893
 msgid "Deactivating"
 msgstr "Disattivazione"
 
@@ -2581,7 +2631,7 @@ msgid "Delay must be a number"
 msgstr "Il ritardo deve essere un numero"
 
 #: pkg/sosreport/sosreport.jsx:364 pkg/sosreport/sosreport.jsx:463
-#: pkg/networkmanager/network-interface.jsx:714
+#: pkg/networkmanager/network-interface.jsx:1264
 #: pkg/networkmanager/firewall.jsx:105 pkg/networkmanager/firewall.jsx:151
 #: pkg/networkmanager/firewall.jsx:165 pkg/networkmanager/firewall.jsx:939
 #: pkg/systemd/service-details.jsx:156 pkg/systemd/service-details.jsx:809
@@ -2606,7 +2656,7 @@ msgstr "Il ritardo deve essere un numero"
 msgid "Delete"
 msgstr "Elimina"
 
-#: pkg/networkmanager/network-interface.jsx:103
+#: pkg/networkmanager/network-interface.jsx:345
 #: pkg/users/delete-account-dialog.js:39
 msgid "Delete $0"
 msgstr "Cancella $0"
@@ -2635,7 +2685,7 @@ msgstr "Elimina pool"
 msgid "Delete report permanently?"
 msgstr "Eliminare il rapporto in modo permanente?"
 
-#: pkg/networkmanager/network-interface.jsx:102
+#: pkg/networkmanager/network-interface.jsx:344
 msgid ""
 "Deleting $0 will break the connection to the server, and will make the "
 "administration UI unavailable."
@@ -2713,6 +2763,8 @@ msgstr "Rimovibile"
 # translation auto-copied from project libreport, version master, document
 # libreport
 #: pkg/packagekit/updates.jsx:419 pkg/shell/credentials.tsx:299
+#: pkg/networkmanager/network-main.jsx:204
+#: pkg/networkmanager/network-main.jsx:220
 #: pkg/systemd/overview-cards/realmd.jsx:404
 msgid "Details"
 msgstr "Dettagli"
@@ -2798,6 +2850,8 @@ msgstr "Non consentire l'autenticazione con password"
 msgid "Disallow running (mask)"
 msgstr "Non consentire l'esecuzione (mask)"
 
+#: pkg/networkmanager/network-interface.jsx:1002
+#: pkg/networkmanager/network-interface.jsx:1003
 #: pkg/storaged/iscsi/session.jsx:41
 msgid "Disconnect"
 msgstr "Disconnetti"
@@ -3011,7 +3065,7 @@ msgstr "Modifica motd"
 msgid "Edit mount point"
 msgstr "Modifica punto di montaggio"
 
-#: pkg/networkmanager/network-main.jsx:147
+#: pkg/networkmanager/network-main.jsx:176
 msgid "Edit rules and zones"
 msgstr "Modifica regole e zone"
 
@@ -3071,7 +3125,7 @@ msgstr "Svuotamento $target"
 msgid "Enable"
 msgstr "Abilita"
 
-#: pkg/networkmanager/network-interface.jsx:673
+#: pkg/networkmanager/network-interface.jsx:1223
 msgid "Enable or disable the device"
 msgstr "Abilita o disabilita il dispositivo"
 
@@ -3301,7 +3355,7 @@ msgid "FIPS with further Common Criteria restrictions."
 msgstr "FIPS con ulteriori restrizioni dei Criteri Comuni."
 
 #: pkg/lib/cockpit/dialog.tsx:1261 pkg/lib/cockpit/dialog.tsx:1264
-#: pkg/networkmanager/interfaces.js:858 pkg/storaged/mdraid/mdraid-disk.jsx:57
+#: pkg/networkmanager/interfaces.js:895 pkg/storaged/mdraid/mdraid-disk.jsx:57
 msgid "Failed"
 msgstr "Fallito"
 
@@ -3349,6 +3403,24 @@ msgstr "Impossibile cambiare la password"
 #: pkg/metrics/metrics.jsx:1452
 msgid "Failed to configure PCP"
 msgstr "Impossibile configurare PCP"
+
+#: pkg/networkmanager/network-interface.jsx:176
+#, fuzzy
+#| msgid "Failed to add zone"
+msgid "Failed to connect"
+msgstr "Impossibile aggiungere la zona"
+
+#: pkg/networkmanager/network-interface.jsx:883
+#, fuzzy
+#| msgid "Failed to delete alert: $0"
+msgid "Failed to connect to $0"
+msgstr "Impossibile cancellare l'avviso: $0"
+
+#: pkg/networkmanager/network-interface.jsx:157
+#, fuzzy
+#| msgid "Failed to change password"
+msgid "Failed to connect. Check your password."
+msgstr "Impossibile cambiare la password"
 
 #: pkg/selinux/setroubleshoot-client.js:140
 #: pkg/selinux/setroubleshoot-client.js:144
@@ -3459,6 +3531,12 @@ msgstr "File system esterno alla destinazione"
 msgid "Filesystems are already mounted below this mountpoint."
 msgstr "I filesystem sono già montati sotto questo punto di montaggio."
 
+#: pkg/networkmanager/network-interface.jsx:1077
+#, fuzzy
+#| msgid "Filters"
+msgid "Filter"
+msgstr "Filtri"
+
 #: pkg/systemd/services.jsx:810
 msgid "Filter by name or description"
 msgstr "Filtra per nome o descrizione"
@@ -3480,7 +3558,7 @@ msgid "Fingerprint"
 msgstr "Impronta digitale"
 
 #: pkg/networkmanager/firewall.html:8 pkg/networkmanager/firewall.jsx:1085
-#: pkg/networkmanager/firewall.jsx:1092 pkg/networkmanager/network-main.jsx:151
+#: pkg/networkmanager/firewall.jsx:1092 pkg/networkmanager/network-main.jsx:180
 msgid "Firewall"
 msgstr "Firewall"
 
@@ -3518,6 +3596,13 @@ msgstr "Forza eliminazione"
 msgid "Force password change"
 msgstr "Forzare la modifica della password"
 
+#: pkg/networkmanager/network-interface.jsx:1032
+#: pkg/networkmanager/network-interface.jsx:1033
+#, fuzzy
+#| msgid "Target"
+msgid "Forget"
+msgstr "Target"
+
 #: pkg/storaged/block/actions.jsx:17 pkg/storaged/block/format-dialog.jsx:261
 #: pkg/storaged/block/format-dialog.jsx:271
 msgid "Format"
@@ -3546,7 +3631,7 @@ msgstr ""
 "La formattazione cancellerà tutti i dati contenuti in un dispositivo di "
 "memoria."
 
-#: pkg/networkmanager/network-interface.jsx:490
+#: pkg/networkmanager/network-interface.jsx:732
 msgid "Forward delay $forward_delay"
 msgstr "Ritardo in avanti $forward_delay"
 
@@ -3580,11 +3665,11 @@ msgstr "Gateway"
 
 # translation auto-copied from project virt-manager, version 0.10.0, document
 # virt-manager
-#: pkg/networkmanager/network-interface.jsx:287
+#: pkg/networkmanager/network-interface.jsx:529
 msgid "Gateway $gateway"
 msgstr "Portale $gateway"
 
-#: pkg/networkmanager/network-interface.jsx:304
+#: pkg/networkmanager/network-interface.jsx:546
 msgid "General"
 msgstr "Generale"
 
@@ -3612,7 +3697,7 @@ msgstr "Visibilità del grafico"
 msgid "Graph visibility options menu"
 msgstr "Menu delle opzioni di visibilità del grafico"
 
-#: pkg/networkmanager/network-interface.jsx:389 pkg/users/accounts-list.js:359
+#: pkg/networkmanager/network-interface.jsx:631 pkg/users/accounts-list.js:359
 msgid "Group"
 msgstr "Gruppo"
 
@@ -3662,7 +3747,7 @@ msgstr "Espandi per occupare tutto lo spazio"
 msgid "Hair pin mode"
 msgstr "Modalità hairpin"
 
-#: pkg/networkmanager/network-interface.jsx:517
+#: pkg/networkmanager/network-interface.jsx:759
 msgid "Hairpin mode"
 msgstr "Modalità hairpin"
 
@@ -3682,7 +3767,7 @@ msgstr "Informazioni hardware"
 msgid "Health"
 msgstr "Salute"
 
-#: pkg/networkmanager/network-interface.jsx:492
+#: pkg/networkmanager/network-interface.jsx:734
 msgid "Hello time $hello_time"
 msgstr "Ciao tempo $hello_time"
 
@@ -3696,6 +3781,7 @@ msgid "Hide confirmation password"
 msgstr "Nascondi la password di conferma"
 
 #: pkg/lib/cockpit-components-password.tsx:135
+#: pkg/networkmanager/network-interface.jsx:211
 msgid "Hide password"
 msgstr "Nascondi la password"
 
@@ -3763,7 +3849,7 @@ msgstr "Confermo di voler perdere questi dati per sempre"
 msgid "ID"
 msgstr "ID"
 
-#: pkg/networkmanager/network-interface.jsx:535
+#: pkg/networkmanager/network-interface.jsx:777
 msgid "ID $id"
 msgstr "ID $id"
 
@@ -3776,8 +3862,8 @@ msgstr ""
 "avere un dispositivo a blocchi associato. Tuttavia non è stato trovato alcun "
 "dispositivo a blocchi di questo tipo."
 
-#: pkg/networkmanager/network-main.jsx:172
-#: pkg/networkmanager/network-main.jsx:187
+#: pkg/networkmanager/network-main.jsx:201
+#: pkg/networkmanager/network-main.jsx:217
 msgid "IP address"
 msgstr "Indirizzo IP"
 
@@ -3793,7 +3879,7 @@ msgstr ""
 msgid "IP addresses"
 msgstr "Indirizzi IP"
 
-#: pkg/networkmanager/network-interface.jsx:557
+#: pkg/networkmanager/network-interface.jsx:799
 msgid "IPv4"
 msgstr "IPv4"
 
@@ -3801,7 +3887,7 @@ msgstr "IPv4"
 msgid "IPv4 settings"
 msgstr "Impostazioni IPv4"
 
-#: pkg/networkmanager/network-interface.jsx:558
+#: pkg/networkmanager/network-interface.jsx:800
 msgid "IPv6"
 msgstr "IPv6"
 
@@ -3898,9 +3984,9 @@ msgstr "In sincronizzazione"
 
 # translation auto-copied from project virt-manager, version 0.10.0, document
 # virt-manager
-#: pkg/networkmanager/interfaces.js:840 pkg/networkmanager/interfaces.js:1401
-#: pkg/networkmanager/interfaces.js:1408
-#: pkg/networkmanager/network-interface.jsx:243
+#: pkg/networkmanager/interfaces.js:877 pkg/networkmanager/interfaces.js:1624
+#: pkg/networkmanager/interfaces.js:1631
+#: pkg/networkmanager/network-interface.jsx:485
 msgid "Inactive"
 msgstr "Inattiva"
 
@@ -3942,6 +4028,10 @@ msgstr "Info"
 #: pkg/systemd/logs.jsx:57
 msgid "Info and above"
 msgstr "Info e superiore"
+
+#: pkg/networkmanager/interfaces.js:905
+msgid "Infra"
+msgstr ""
 
 #: pkg/storaged/partitions/format-disk-dialog.jsx:55
 msgid "Initialize"
@@ -4060,7 +4150,7 @@ msgstr "Membri interfaccia"
 
 #: pkg/networkmanager/firewall.jsx:872 pkg/networkmanager/bond.jsx:158
 #: pkg/networkmanager/network-interface-members.jsx:192
-#: pkg/networkmanager/network-main.jsx:166
+#: pkg/networkmanager/network-main.jsx:195
 msgid "Interfaces"
 msgstr "Interfacce"
 
@@ -4084,7 +4174,7 @@ msgstr "Interrotto"
 msgid "Invalid"
 msgstr "Non valido"
 
-#: pkg/networkmanager/interfaces.js:655
+#: pkg/networkmanager/interfaces.js:678
 msgid "Invalid DNS address: $0"
 msgstr "Indirizzo DNS non valido: $0"
 
@@ -4092,7 +4182,7 @@ msgstr "Indirizzo DNS non valido: $0"
 msgid "Invalid IP address '$0'"
 msgstr "Indirizzo IP non valido '$0'"
 
-#: pkg/networkmanager/interfaces.js:443
+#: pkg/networkmanager/interfaces.js:459
 msgid "Invalid IP address: $0"
 msgstr "Indirizzo IP non valido: $0"
 
@@ -4108,7 +4198,7 @@ msgstr "Formato data non valido"
 msgid "Invalid date format and invalid time format"
 msgstr "Formato data non valido e formato ora non valido"
 
-#: pkg/networkmanager/interfaces.js:466
+#: pkg/networkmanager/interfaces.js:482
 msgid "Invalid destination address: $0"
 msgstr "Indirizzo di destinazione non valido: $0"
 
@@ -4120,7 +4210,7 @@ msgstr "Data di scadenza non valida"
 msgid "Invalid file permissions"
 msgstr "Autorizzazioni file non valide"
 
-#: pkg/networkmanager/interfaces.js:477 pkg/networkmanager/interfaces.js:643
+#: pkg/networkmanager/interfaces.js:493 pkg/networkmanager/interfaces.js:666
 msgid "Invalid gateway address: $0"
 msgstr "Indirizzo gateway non valido: $0"
 
@@ -4360,6 +4450,12 @@ msgstr "L'ultimo non può essere rimosso"
 
 #: pkg/packagekit/updates.jsx:761
 msgid "Last checked: $0"
+msgstr "Ultimo controllo: $0"
+
+#: pkg/networkmanager/network-interface.jsx:974
+#, fuzzy
+#| msgid "Last checked: $0"
+msgid "Last connected: $0"
 msgstr "Ultimo controllo: $0"
 
 #: pkg/storaged/mdraid/mdraid-disk.jsx:82
@@ -4755,7 +4851,7 @@ msgstr "Dischi MDRAID"
 msgid "MII (recommended)"
 msgstr "MII (consigliato)"
 
-#: pkg/networkmanager/network-interface.jsx:369
+#: pkg/networkmanager/network-interface.jsx:611
 msgid "MTU"
 msgstr "MTU"
 
@@ -4789,7 +4885,7 @@ msgstr ""
 msgid "Manage storage"
 msgstr "Gestisci archiviazione"
 
-#: pkg/networkmanager/network-main.jsx:168
+#: pkg/networkmanager/network-main.jsx:197
 msgid "Managed interfaces"
 msgstr "Interfacce gestite"
 
@@ -4880,7 +4976,7 @@ msgstr ""
 "dipendenti. Questo può avere un impatto maggiore del previsto. Conferma di "
 "voler mascherare questa unità."
 
-#: pkg/networkmanager/network-interface.jsx:494
+#: pkg/networkmanager/network-interface.jsx:736
 msgid "Maximum message age $max_age"
 msgstr "Età massima del messaggio $max_age"
 
@@ -4910,6 +5006,10 @@ msgstr "Utilizzo memoria/swap"
 #: pkg/systemd/services.jsx:210
 msgid "Merged"
 msgstr "Fuso"
+
+#: pkg/networkmanager/interfaces.js:909
+msgid "Mesh"
+msgstr ""
 
 #: pkg/lib/cockpit-components-shutdown.jsx:182
 msgid "Message to logged in users"
@@ -4977,6 +5077,7 @@ msgstr "Con mirroring (RAID 1)"
 msgid "Mitigations"
 msgstr "Mitigazioni"
 
+#: pkg/networkmanager/network-interface.jsx:1108
 #: pkg/networkmanager/bond.jsx:164
 msgid "Mode"
 msgstr "Modalità"
@@ -5141,8 +5242,8 @@ msgstr "Server NTP"
 
 #: pkg/packagekit/updates.jsx:416 pkg/shell/credentials.tsx:291
 #: pkg/networkmanager/dialogs-common.jsx:120
-#: pkg/networkmanager/network-main.jsx:171
-#: pkg/networkmanager/network-main.jsx:186 pkg/systemd/hwinfo.jsx:74
+#: pkg/networkmanager/network-main.jsx:200
+#: pkg/networkmanager/network-main.jsx:216 pkg/systemd/hwinfo.jsx:74
 #: pkg/systemd/timer-dialog.jsx:129 pkg/users/group-create-dialog.js:25
 #: pkg/users/authorized-keys-panel.js:113 pkg/storaged/stratis/pool.jsx:364
 #: pkg/storaged/stratis/pool.jsx:467 pkg/storaged/stratis/pool.jsx:1023
@@ -5216,6 +5317,7 @@ msgstr "E' necessario almeno un server NTP"
 
 #: pkg/metrics/metrics.jsx:929 pkg/metrics/metrics.jsx:1553
 #: pkg/metrics/metrics.jsx:1924 pkg/metrics/metrics.jsx:1937
+#: pkg/networkmanager/network-interface.jsx:1107
 msgid "Network"
 msgstr "Rete"
 
@@ -5231,9 +5333,20 @@ msgstr "Bond di Rete"
 msgid "Network devices and graphs require NetworkManager"
 msgstr "I dispositivi di rete e i grafici richiedono NetworkManager"
 
-#: pkg/networkmanager/network-main.jsx:193
+#: pkg/networkmanager/network-main.jsx:224
 msgid "Network logs"
 msgstr "Log di rete"
+
+#: pkg/networkmanager/network-interface.jsx:179
+#, fuzzy
+#| msgid "Network usage"
+msgid "Network name"
+msgstr "Utilizzo rete"
+
+#: pkg/networkmanager/network-interface.jsx:880
+msgid ""
+"Network password is not stored. Please forget and reconnect to this network."
+msgstr ""
 
 #: pkg/metrics/metrics.jsx:938
 msgid "Network usage"
@@ -5251,7 +5364,8 @@ msgstr "NetworkManager non è in esecuzione"
 msgid "Networked storage"
 msgstr "Archiviazione in rete"
 
-#: pkg/networkmanager/index.html:9 pkg/networkmanager/network-interface.jsx:694
+#: pkg/networkmanager/index.html:9
+#: pkg/networkmanager/network-interface.jsx:1244
 #: pkg/networkmanager/firewall.jsx:1084 pkg/networkmanager/manifest.json:0
 #: src/appstream/org.cockpit_project.cockpit_networkmanager.metainfo.xml.in:5
 msgid "Networking"
@@ -5310,7 +5424,7 @@ msgstr "La nuova password non è stata accettata"
 msgid "Next"
 msgstr "Avanti"
 
-#: pkg/networkmanager/network-interface.jsx:228
+#: pkg/networkmanager/network-interface.jsx:470
 msgid "No"
 msgstr "No"
 
@@ -5338,7 +5452,7 @@ msgstr "Non sono disponibili dispositivi a blocchi."
 msgid "No block devices found"
 msgstr "Nessun dispositivo a blocchi trovato"
 
-#: pkg/networkmanager/interfaces.js:1403
+#: pkg/networkmanager/interfaces.js:1626
 msgid "No carrier"
 msgstr "Nessun carrier"
 
@@ -5539,6 +5653,7 @@ msgid "No user name specified"
 msgstr "Nessun nome utente specificato"
 
 # FIXME: consultare bug 572158
+#: pkg/networkmanager/network-interface.jsx:192
 #: pkg/networkmanager/firewall.jsx:867 pkg/kdump/kdump-view.jsx:492
 #: pkg/systemd/overview-cards/tuned-dialog.jsx:213
 msgid "None"
@@ -5556,7 +5671,7 @@ msgstr "Non autorizzato a disabilitare il firewall"
 msgid "Not authorized to enable the firewall"
 msgstr "Non autorizzato ad abilitare il firewall"
 
-#: pkg/packagekit/kpatch.jsx:224 pkg/networkmanager/interfaces.js:838
+#: pkg/packagekit/kpatch.jsx:224 pkg/networkmanager/interfaces.js:875
 msgid "Not available"
 msgstr "Non disponibile"
 
@@ -5596,13 +5711,25 @@ msgstr "Non trovato"
 msgid "Not installed"
 msgstr "Non installato"
 
-#: pkg/networkmanager/network-interface.jsx:668
+#: pkg/networkmanager/network-interface.jsx:1218
 msgid "Not permitted to configure network devices"
 msgstr "Non è consentito configurare i dispositivi di rete"
 
 #: pkg/systemd/overview-cards/realmd.jsx:452
 msgid "Not permitted to configure realms"
 msgstr "Non è consentito configurare i realm"
+
+#: pkg/networkmanager/network-interface.jsx:1012
+#, fuzzy
+#| msgid "Not permitted to configure network devices"
+msgid "Not permitted to connect to network"
+msgstr "Non è consentito configurare i dispositivi di rete"
+
+#: pkg/networkmanager/network-interface.jsx:992
+#, fuzzy
+#| msgid "Not permitted to configure network devices"
+msgid "Not permitted to disconnect network"
+msgstr "Non è consentito configurare i dispositivi di rete"
 
 #: pkg/lib/cockpit.js:2415
 msgid "Not permitted to perform this action."
@@ -5833,7 +5960,7 @@ msgstr "Nome pagina"
 msgid "Parent"
 msgstr "Genitore"
 
-#: pkg/networkmanager/network-interface.jsx:534
+#: pkg/networkmanager/network-interface.jsx:776
 msgid "Parent $parent"
 msgstr "Genitore $parent"
 
@@ -5841,7 +5968,7 @@ msgstr "Genitore $parent"
 msgid "Part of"
 msgstr "Parte di"
 
-#: pkg/networkmanager/interfaces.js:1432
+#: pkg/networkmanager/interfaces.js:1655
 msgid "Part of $0"
 msgstr "Parte di $0"
 
@@ -5928,8 +6055,9 @@ msgstr "Le frasi di accesso non corrispondono"
 #: pkg/lib/cockpit-connect-ssh.tsx:442 pkg/lib/superuser-dialogs.tsx:176
 #: pkg/shell/credentials.tsx:163 pkg/shell/credentials.tsx:222
 #: pkg/shell/credentials.tsx:309 pkg/shell/hosts_dialog.jsx:1036
-#: pkg/shell/hosts_dialog.jsx:1045 pkg/users/account-create-dialog.js:125
-#: pkg/users/account-details.js:283 pkg/storaged/iscsi/create-dialog.jsx:20
+#: pkg/shell/hosts_dialog.jsx:1045 pkg/networkmanager/network-interface.jsx:199
+#: pkg/users/account-create-dialog.js:125 pkg/users/account-details.js:283
+#: pkg/storaged/iscsi/create-dialog.jsx:20
 #: pkg/storaged/iscsi/create-dialog.jsx:126
 msgid "Password"
 msgstr "Password"
@@ -5990,7 +6118,7 @@ msgstr "Percorso"
 msgid "Path cost"
 msgstr "Costo percorso"
 
-#: pkg/networkmanager/network-interface.jsx:515
+#: pkg/networkmanager/network-interface.jsx:757
 msgid "Path cost $path_cost"
 msgstr "Costo della traiettoria $path_cost"
 
@@ -6226,7 +6354,7 @@ msgstr "Lunghezza prefisso"
 msgid "Prefix length or netmask"
 msgstr "Lunghezza prefisso o maschera di rete"
 
-#: pkg/networkmanager/interfaces.js:842
+#: pkg/networkmanager/interfaces.js:879
 msgid "Preparing"
 msgstr "Preparazione"
 
@@ -6255,8 +6383,8 @@ msgstr "Primario"
 msgid "Priority"
 msgstr "Priorità"
 
-#: pkg/networkmanager/network-interface.jsx:488
-#: pkg/networkmanager/network-interface.jsx:513
+#: pkg/networkmanager/network-interface.jsx:730
+#: pkg/networkmanager/network-interface.jsx:755
 msgid "Priority $priority"
 msgstr "Priorità $priority"
 
@@ -6411,6 +6539,10 @@ msgstr "L'intervallo deve essere rigorosamente ordinato"
 msgid "Rank"
 msgstr "Posizione"
 
+#: pkg/networkmanager/network-interface.jsx:1110
+msgid "Rate"
+msgstr ""
+
 #: pkg/kdump/kdump-view.jsx:463
 msgid "Raw to a device"
 msgstr "Raw a un dispositivo"
@@ -6491,8 +6623,8 @@ msgstr "Riavvio del sistema..."
 
 #: pkg/networkmanager/plots.js:30
 #: pkg/networkmanager/network-interface-members.jsx:194
-#: pkg/networkmanager/network-main.jsx:174
-#: pkg/networkmanager/network-main.jsx:189
+#: pkg/networkmanager/network-main.jsx:203
+#: pkg/networkmanager/network-main.jsx:219
 msgid "Receiving"
 msgstr "Ricevo"
 
@@ -6515,6 +6647,10 @@ msgstr "Recupero"
 #: pkg/storaged/jobs-panel.jsx:56
 msgid "Recovering MDRAID device $target"
 msgstr "Ripristino del dispositivo MDRAID $target"
+
+#: pkg/networkmanager/network-interface.jsx:1096
+msgid "Refresh"
+msgstr ""
 
 #: pkg/packagekit/updates.jsx:90
 msgid "Refreshing package information"
@@ -7167,6 +7303,10 @@ msgstr "Chiavi secure shell"
 msgid "Securely erasing $target"
 msgstr "Cancellazione sicura di $target"
 
+#: pkg/networkmanager/network-interface.jsx:187
+msgid "Security"
+msgstr "Sicurezza"
+
 #: src/appstream/org.cockpit_project.cockpit_selinux.metainfo.xml.in:6
 msgid "Security Enhanced Linux configuration and troubleshooting"
 msgstr "Configurazione e risoluzione dei problemi di Security Enhanced Linux"
@@ -7208,8 +7348,8 @@ msgid "Self-test status"
 msgstr "Stato autotest"
 
 #: pkg/networkmanager/network-interface-members.jsx:193
-#: pkg/networkmanager/network-main.jsx:173
-#: pkg/networkmanager/network-main.jsx:188
+#: pkg/networkmanager/network-main.jsx:202
+#: pkg/networkmanager/network-main.jsx:218
 msgid "Sending"
 msgstr "Invio"
 
@@ -7400,6 +7540,7 @@ msgid "Show more relationships"
 msgstr "Mostra più relazioni"
 
 #: pkg/lib/cockpit-components-password.tsx:135
+#: pkg/networkmanager/network-interface.jsx:211
 msgid "Show password"
 msgstr "Mostra password"
 
@@ -7435,6 +7576,14 @@ msgstr "Arresta"
 #: pkg/systemd/overview.jsx:101
 msgid "Shutdown"
 msgstr "Spegni"
+
+#: pkg/networkmanager/network-interface.jsx:1109
+msgid "Signal"
+msgstr ""
+
+#: pkg/networkmanager/network-interface.jsx:983
+msgid "Signal strength"
+msgstr ""
 
 #: pkg/systemd/logs.jsx:299
 msgid "Since"
@@ -7575,7 +7724,7 @@ msgstr "Ordinati dal meno affidabile al più affidabile"
 msgid "Space-saving computer"
 msgstr "Computer space-saving"
 
-#: pkg/networkmanager/network-interface.jsx:486
+#: pkg/networkmanager/network-interface.jsx:728
 msgid "Spanning tree protocol"
 msgstr "Protocollo spanning tree"
 
@@ -7655,7 +7804,7 @@ msgstr "Stato"
 msgid "Static"
 msgstr "Statico"
 
-#: pkg/packagekit/updates.jsx:886 pkg/networkmanager/network-interface.jsx:252
+#: pkg/packagekit/updates.jsx:886 pkg/networkmanager/network-interface.jsx:494
 #: pkg/systemd/service-details.jsx:728
 msgid "Status"
 msgstr "Stato"
@@ -7830,13 +7979,13 @@ msgstr "Lo Swap non può essere ridimensionato qui"
 msgid "Swap out"
 msgstr "Swap out"
 
-#: pkg/networkmanager/network-interface.jsx:149
+#: pkg/networkmanager/network-interface.jsx:391
 #: pkg/networkmanager/network-interface-members.jsx:54
 #: pkg/networkmanager/network-interface-members.jsx:74
 msgid "Switch off $0"
 msgstr "Spegni $0"
 
-#: pkg/networkmanager/network-interface.jsx:130
+#: pkg/networkmanager/network-interface.jsx:372
 #: pkg/networkmanager/network-interface-members.jsx:65
 msgid "Switch on $0"
 msgstr "Accendi $0"
@@ -7849,7 +7998,7 @@ msgstr "Passa all'accesso amministrativo"
 msgid "Switch to limited access"
 msgstr "Passa ad accesso limitato"
 
-#: pkg/networkmanager/network-interface.jsx:148
+#: pkg/networkmanager/network-interface.jsx:390
 #: pkg/networkmanager/network-interface-members.jsx:73
 msgid ""
 "Switching off $0 will break the connection to the server, and will make the "
@@ -7858,7 +8007,7 @@ msgstr ""
 "La disattivazione di $0 interromperà la connessione al server e renderà "
 "l'interfaccia utente di amministrazione non disponibile."
 
-#: pkg/networkmanager/network-interface.jsx:129
+#: pkg/networkmanager/network-interface.jsx:371
 #: pkg/networkmanager/network-interface-members.jsx:64
 msgid ""
 "Switching on $0 will break the connection to the server, and will make the "
@@ -7935,13 +8084,13 @@ msgstr "Target"
 msgid "Targets"
 msgstr "Destinazioni"
 
-#: pkg/networkmanager/network-interface.jsx:162
-#: pkg/networkmanager/network-interface.jsx:176
-#: pkg/networkmanager/network-interface.jsx:441
+#: pkg/networkmanager/network-interface.jsx:404
+#: pkg/networkmanager/network-interface.jsx:418
+#: pkg/networkmanager/network-interface.jsx:683
 msgid "Team"
 msgstr "Team"
 
-#: pkg/networkmanager/network-interface.jsx:471
+#: pkg/networkmanager/network-interface.jsx:713
 msgid "Team port"
 msgstr "Porta team"
 
@@ -8427,7 +8576,7 @@ msgstr ""
 "Questo dispositivo non può essere utilizzato per la destinazione "
 "dell'installazione."
 
-#: pkg/networkmanager/network-interface.jsx:735
+#: pkg/networkmanager/network-interface.jsx:1285
 msgid "This device cannot be managed here."
 msgstr "Questo dispositivo non può essere gestito qui."
 
@@ -9006,18 +9155,18 @@ msgstr "Unità"
 #: pkg/lib/machine-info.js:49 pkg/lib/machine-info.js:215
 #: pkg/lib/machine-info.js:223 pkg/lib/machine-info.js:225
 #: pkg/lib/machine-info.js:232 pkg/lib/machine-info.js:234
-#: pkg/lib/machine-info.js:238 pkg/networkmanager/interfaces.js:522
-#: pkg/networkmanager/interfaces.js:1082
-#: pkg/networkmanager/network-interface.jsx:186
-#: pkg/networkmanager/network-interface.jsx:188 pkg/systemd/hw-detect.js:71
+#: pkg/lib/machine-info.js:238 pkg/networkmanager/interfaces.js:538
+#: pkg/networkmanager/interfaces.js:911 pkg/networkmanager/interfaces.js:1167
+#: pkg/networkmanager/network-interface.jsx:428
+#: pkg/networkmanager/network-interface.jsx:430 pkg/systemd/hw-detect.js:71
 #: pkg/systemd/hw-detect.js:80 pkg/systemd/hw-detect.js:87
 #: pkg/systemd/hw-detect.js:90 pkg/systemd/hw-detect.js:97
 #: pkg/systemd/hw-detect.js:98 pkg/storaged/swap/swap.jsx:102
 msgid "Unknown"
 msgstr "Sconosciuto"
 
-#: pkg/networkmanager/network-interface.jsx:170
-#: pkg/networkmanager/network-interface.jsx:184
+#: pkg/networkmanager/network-interface.jsx:412
+#: pkg/networkmanager/network-interface.jsx:426
 msgid "Unknown \"$0\""
 msgstr "Sconosciuto \"$0\""
 
@@ -9029,7 +9178,7 @@ msgstr "Sconosciuto ($0)"
 msgid "Unknown application"
 msgstr "Applicazione sconosciuta"
 
-#: pkg/networkmanager/network-interface.jsx:273
+#: pkg/networkmanager/network-interface.jsx:515
 msgid "Unknown configuration"
 msgstr "Configurazione sconosciuta"
 
@@ -9079,8 +9228,8 @@ msgstr "Sbloccaggio $target"
 msgid "Unlocking disk"
 msgstr "Sblocco disco"
 
-#: pkg/networkmanager/network-main.jsx:181
-#: pkg/networkmanager/network-main.jsx:183
+#: pkg/networkmanager/network-main.jsx:211
+#: pkg/networkmanager/network-main.jsx:213
 msgid "Unmanaged interfaces"
 msgstr "Interfacce non gestite"
 
@@ -9327,9 +9476,9 @@ msgstr "Volume del filesystem VDO (compressione/deduplicazione)"
 
 # translation auto-copied from project Anaconda, version master, document
 # anaconda, author Gregorio
-#: pkg/networkmanager/network-interface.jsx:164
-#: pkg/networkmanager/network-interface.jsx:178
-#: pkg/networkmanager/network-interface.jsx:538
+#: pkg/networkmanager/network-interface.jsx:406
+#: pkg/networkmanager/network-interface.jsx:420
+#: pkg/networkmanager/network-interface.jsx:780
 msgid "VLAN"
 msgstr "VLAN"
 
@@ -9480,9 +9629,13 @@ msgstr "Al gruppo di volumi mancano volumi fisici"
 msgid "Volume size is $0. Content size is $1."
 msgstr "La dimensione del volume è $0. La dimensione del contenuto è $1."
 
+#: pkg/networkmanager/network-interface.jsx:193
+msgid "WPA/WPA2 Personal"
+msgstr ""
+
 # translation auto-copied from project evolution-data-server, version el6,
 # document evolution-data-server-2.32
-#: pkg/networkmanager/interfaces.js:852
+#: pkg/networkmanager/interfaces.js:889
 msgid "Waiting"
 msgstr "In attesa"
 
@@ -9577,7 +9730,7 @@ msgstr "Bianco"
 msgid "Will be set to \"Automatic\""
 msgstr "Verrà impostato su \"Automatico\""
 
-#: pkg/networkmanager/network-interface.jsx:551
+#: pkg/networkmanager/network-interface.jsx:793
 msgid "WireGuard"
 msgstr "WireGuard"
 
@@ -9610,7 +9763,7 @@ msgstr "XOR"
 msgid "Yearly"
 msgstr "Annuale"
 
-#: pkg/networkmanager/network-interface.jsx:228
+#: pkg/networkmanager/network-interface.jsx:470
 msgid "Yes"
 msgstr "Sì"
 
@@ -9848,7 +10001,7 @@ msgstr "coredump"
 msgid "cpu"
 msgstr "cpu"
 
-#: pkg/systemd/manifest.json:0 pkg/kdump/manifest.json:0
+#: pkg/kdump/manifest.json:0 pkg/systemd/manifest.json:0
 msgid "crash"
 msgstr "crash"
 
@@ -9912,7 +10065,7 @@ msgstr "dominio"
 msgid "drive"
 msgstr "disco"
 
-#: pkg/networkmanager/network-interface.jsx:337
+#: pkg/networkmanager/network-interface.jsx:579
 #: pkg/networkmanager/dialogs-common.jsx:242
 #: pkg/systemd/overview-cards/configurationCard.jsx:43
 #: pkg/users/account-details.js:278 pkg/users/account-details.js:308
@@ -10255,6 +10408,10 @@ msgctxt "on <terminal>"
 msgid "on $0"
 msgstr "su $0"
 
+#: pkg/networkmanager/network-interface.jsx:961
+msgid "open"
+msgstr ""
+
 #: pkg/systemd/manifest.json:0
 msgid "operating system"
 msgstr "sistema operativo"
@@ -10379,6 +10536,12 @@ msgstr "ruoli"
 msgid "running $0"
 msgstr "$0 in esecuzione"
 
+#: pkg/networkmanager/network-interface.jsx:960
+#, fuzzy
+#| msgid "security"
+msgid "secured"
+msgstr "sicurezza"
+
 #: pkg/packagekit/updates.jsx:183 pkg/packagekit/updates.jsx:280
 #: pkg/packagekit/manifest.json:0
 msgid "security"
@@ -10444,7 +10607,7 @@ msgstr "sos"
 msgid "sos report failed"
 msgstr "report sos fallito"
 
-#: pkg/users/manifest.json:0 pkg/systemd/manifest.json:0
+#: pkg/systemd/manifest.json:0 pkg/users/manifest.json:0
 msgid "ssh"
 msgstr "ssh"
 
@@ -11696,9 +11859,6 @@ msgstr "zona"
 #~ msgid "$0 memory adjustment"
 #~ msgstr "$0 regolazione della memoria"
 
-#~ msgid "$0 network"
-#~ msgstr "Rete $0"
-
 # ctx::sourcefile::/rhn/systems/details/virtualization/VirtualGuestsList.do
 #~ msgid "$0 vCPU"
 #~ msgid_plural "$0 vCPUs"
@@ -12225,9 +12385,6 @@ msgstr "zona"
 #~ msgid "No storage volumes defined for this storage pool"
 #~ msgstr ""
 #~ "Nessun Volume di archiviazione definito per questo pool di archiviazione"
-
-#~ msgid "No virtual networks"
-#~ msgstr "Nessuna rete virtuale"
 
 #~ msgid ""
 #~ "Non-persistent network cannot be deleted. It ceases to exists when it's "
@@ -13676,9 +13833,6 @@ msgstr "zona"
 #~ msgstr ""
 #~ "Il ripristino della piscina di stoccaggio cancellerà tutti i contenitori "
 #~ "e i dischi di rilascio nella piscina."
-
-#~ msgid "Security"
-#~ msgstr "Sicurezza"
 
 #~ msgid "The Docker storage pool cannot be managed on this system."
 #~ msgstr ""
