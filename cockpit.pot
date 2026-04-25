@@ -28,7 +28,7 @@ msgstr ""
 "#-#-#-#-#  cockpit.js.pot (PACKAGE VERSION)  #-#-#-#-#\n"
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-23 09:18+0000\n"
+"POT-Creation-Date: 2026-04-24 12:30+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -296,7 +296,7 @@ msgid_plural "$0 services need to be restarted"
 msgstr[0] ""
 msgstr[1] ""
 
-#: pkg/storaged/crypto/keyslots.jsx:776
+#: pkg/storaged/crypto/keyslots.jsx:781
 msgid "$0 slot remains"
 msgid_plural "$0 slots remain"
 msgstr[0] ""
@@ -779,7 +779,7 @@ msgstr ""
 #: pkg/systemd/timer-dialog.jsx:340 pkg/users/authorized-keys-panel.js:54
 #: pkg/storaged/iscsi/create-dialog.jsx:106
 #: pkg/storaged/iscsi/create-dialog.jsx:130 pkg/storaged/stratis/pool.jsx:512
-#: pkg/storaged/crypto/keyslots.jsx:464 pkg/storaged/crypto/keyslots.jsx:779
+#: pkg/storaged/crypto/keyslots.jsx:464 pkg/storaged/crypto/keyslots.jsx:784
 #: pkg/storaged/nfs/nfs.jsx:174 pkg/storaged/mdraid/mdraid.jsx:160
 #: pkg/storaged/lvm2/volume-group.jsx:197 pkg/shell/hosts_dialog.jsx:437
 #: pkg/shell/credentials.tsx:78 pkg/networkmanager/dialogs-common.jsx:143
@@ -2079,7 +2079,7 @@ msgstr ""
 msgid "Continue"
 msgstr ""
 
-#: pkg/shell/idle.tsx:117
+#: pkg/shell/shell.tsx:81
 msgid "Continue session"
 msgstr ""
 
@@ -2905,7 +2905,7 @@ msgid "EFI system partition"
 msgstr ""
 
 #: pkg/kdump/kdump-view.jsx:480 pkg/systemd/service-details.jsx:149
-#: pkg/storaged/crypto/keyslots.jsx:724 pkg/storaged/nfs/nfs.jsx:298
+#: pkg/storaged/crypto/keyslots.jsx:725 pkg/storaged/nfs/nfs.jsx:298
 #: pkg/shell/nav.tsx:413 pkg/shell/hosts.tsx:247
 #: pkg/networkmanager/firewall.jsx:103 pkg/packagekit/kpatch.tsx:242
 #: pkg/packagekit/autoupdates.jsx:519
@@ -2981,7 +2981,7 @@ msgstr ""
 msgid "Edit user"
 msgstr ""
 
-#: pkg/storaged/crypto/keyslots.jsx:726
+#: pkg/storaged/crypto/keyslots.jsx:729
 msgid "Editing a key requires a free slot"
 msgstr ""
 
@@ -4180,7 +4180,7 @@ msgstr ""
 msgid "Key password"
 msgstr ""
 
-#: pkg/storaged/crypto/keyslots.jsx:755
+#: pkg/storaged/crypto/keyslots.jsx:760
 msgid "Key slots with unknown types can not be edited here"
 msgstr ""
 
@@ -4188,21 +4188,17 @@ msgstr ""
 msgid "Key source"
 msgstr ""
 
-#: pkg/storaged/crypto/keyslots.jsx:761 pkg/storaged/crypto/keyslots.jsx:787
+#: pkg/storaged/crypto/keyslots.jsx:766 pkg/storaged/crypto/keyslots.jsx:792
 msgid "Keys"
 msgstr ""
 
-#: pkg/storaged/stratis/pool.jsx:708 pkg/storaged/crypto/keyslots.jsx:749
+#: pkg/storaged/stratis/pool.jsx:708 pkg/storaged/crypto/keyslots.jsx:754
 msgid "Keyserver"
 msgstr ""
 
 #: pkg/storaged/stratis/pool.jsx:933 pkg/storaged/stratis/create-dialog.jsx:123
 #: pkg/storaged/crypto/keyslots.jsx:457 pkg/storaged/crypto/keyslots.jsx:515
 msgid "Keyserver address"
-msgstr ""
-
-#: pkg/storaged/crypto/keyslots.jsx:641
-msgid "Keyserver removal may prevent unlocking $0."
 msgstr ""
 
 #: pkg/networkmanager/teamport.jsx:79
@@ -5235,7 +5231,7 @@ msgstr ""
 msgid "No applications installed or available."
 msgstr ""
 
-#: pkg/storaged/crypto/keyslots.jsx:776
+#: pkg/storaged/crypto/keyslots.jsx:781
 msgid "No available slots"
 msgstr ""
 
@@ -5310,7 +5306,7 @@ msgstr ""
 msgid "No filesystems"
 msgstr ""
 
-#: pkg/storaged/crypto/keyslots.jsx:781
+#: pkg/storaged/crypto/keyslots.jsx:786
 msgid "No free key slots"
 msgstr ""
 
@@ -5774,7 +5770,7 @@ msgstr ""
 #: pkg/storaged/stratis/pool.jsx:678 pkg/storaged/stratis/pool.jsx:771
 #: pkg/storaged/stratis/pool.jsx:856 pkg/storaged/stratis/create-dialog.jsx:97
 #: pkg/storaged/stratis/stopped-pool.jsx:114 pkg/storaged/crypto/actions.jsx:28
-#: pkg/storaged/crypto/keyslots.jsx:436 pkg/storaged/crypto/keyslots.jsx:744
+#: pkg/storaged/crypto/keyslots.jsx:436 pkg/storaged/crypto/keyslots.jsx:749
 #: pkg/storaged/filesystem/mounting-dialog.jsx:327
 #: pkg/storaged/block/format-dialog.jsx:322
 #: pkg/storaged/block/format-dialog.jsx:350
@@ -6474,7 +6470,7 @@ msgstr ""
 msgid "Remote over SSH, $0"
 msgstr ""
 
-#: pkg/storaged/stratis/pool.jsx:961
+#: pkg/storaged/stratis/pool.jsx:961 pkg/storaged/crypto/keyslots.jsx:641
 msgid "Removal may prevent unlocking $0."
 msgstr ""
 
@@ -6488,7 +6484,7 @@ msgstr ""
 #: pkg/storaged/stratis/pool.jsx:789 pkg/storaged/stratis/pool.jsx:800
 #: pkg/storaged/stratis/pool.jsx:919 pkg/storaged/stratis/pool.jsx:965
 #: pkg/storaged/crypto/keyslots.jsx:621 pkg/storaged/crypto/keyslots.jsx:656
-#: pkg/storaged/crypto/keyslots.jsx:732 pkg/storaged/nfs/nfs.jsx:301
+#: pkg/storaged/crypto/keyslots.jsx:737 pkg/storaged/nfs/nfs.jsx:301
 #: pkg/storaged/mdraid/mdraid-disk.jsx:87
 #: pkg/storaged/lvm2/volume-group.jsx:315
 #: pkg/storaged/lvm2/physical-volume.jsx:77 pkg/shell/hosts.tsx:250
@@ -6529,6 +6525,10 @@ msgstr ""
 #: pkg/networkmanager/ip-settings.jsx:370
 #: pkg/networkmanager/ip-settings.jsx:440
 msgid "Remove item"
+msgstr ""
+
+#: pkg/storaged/crypto/keyslots.jsx:650
+msgid "Remove key in slot $0?"
 msgstr ""
 
 #: pkg/storaged/lvm2/volume-group.jsx:312
@@ -7137,7 +7137,7 @@ msgstr ""
 msgid "Session"
 msgstr ""
 
-#: pkg/shell/idle.tsx:109
+#: pkg/shell/shell.tsx:73
 msgid "Session is about to expire"
 msgstr ""
 
@@ -7334,11 +7334,11 @@ msgstr ""
 msgid "Size must be at least $0"
 msgstr ""
 
-#: pkg/shell/shell.tsx:119
+#: pkg/shell/shell.tsx:152
 msgid "Skip main navigation"
 msgstr ""
 
-#: pkg/shell/shell.tsx:118
+#: pkg/shell/shell.tsx:151
 msgid "Skip to content"
 msgstr ""
 
@@ -8005,7 +8005,7 @@ msgstr ""
 msgid "The keyserver at $0 must be reachable."
 msgstr ""
 
-#: pkg/storaged/crypto/keyslots.jsx:733
+#: pkg/storaged/crypto/keyslots.jsx:738
 msgid "The last key slot can not be removed"
 msgstr ""
 
@@ -8738,7 +8738,7 @@ msgstr ""
 msgid "Unknown service name"
 msgstr ""
 
-#: pkg/storaged/crypto/keyslots.jsx:754
+#: pkg/storaged/crypto/keyslots.jsx:759
 msgid "Unknown type"
 msgstr ""
 
@@ -9299,7 +9299,7 @@ msgid ""
 "account."
 msgstr ""
 
-#: pkg/shell/idle.tsx:71
+#: pkg/shell/session.ts:62
 msgid "You have been logged out due to inactivity."
 msgstr ""
 
@@ -9319,7 +9319,7 @@ msgstr ""
 msgid "You now have administrative access."
 msgstr ""
 
-#: pkg/shell/idle.tsx:111
+#: pkg/shell/shell.tsx:75
 msgid "You will be logged out in $0 seconds."
 msgstr ""
 
