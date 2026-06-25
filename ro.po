@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-16 13:08+0000\n"
+"POT-Creation-Date: 2026-06-23 17:05+0000\n"
 "PO-Revision-Date: 2026-05-17 10:15+0000\n"
 "Last-Translator: Remus-Gabriel Chelu <remusgabriel.chelu@disroot.org>\n"
 "Language-Team: Romanian <https://translate.fedoraproject.org/projects/"
@@ -802,7 +802,7 @@ msgid "Add"
 msgstr "Adaugă"
 
 #: pkg/lib/cockpit-components-firewalld-request.jsx:131
-#: pkg/networkmanager/network-interface-members.jsx:151
+#: pkg/networkmanager/network-interface-members.jsx:146
 msgid "Add $0"
 msgstr "Adaugă $0"
 
@@ -878,7 +878,7 @@ msgstr "Adaugă cheie"
 msgid "Add keyserver"
 msgstr "Adaugă server de chei"
 
-#: pkg/networkmanager/network-interface-members.jsx:171
+#: pkg/networkmanager/network-interface-members.jsx:176
 msgid "Add member"
 msgstr "Adaugă membru"
 
@@ -953,7 +953,7 @@ msgstr "Se adaugă „$0” la opțiunile de criptare"
 msgid "Adding \"$0\" to filesystem options"
 msgstr "Se adaugă „$0” la opțiunile sistemului de fișiere"
 
-#: pkg/networkmanager/network-interface-members.jsx:150
+#: pkg/networkmanager/network-interface-members.jsx:145
 msgid ""
 "Adding $0 will break the connection to the server, and will make the "
 "administration UI unavailable."
@@ -3990,6 +3990,12 @@ msgstr "Inactivă"
 msgid "Inactive logical volume"
 msgstr "Volum logic inactiv"
 
+#: pkg/networkmanager/firewall.jsx:119
+#, fuzzy
+#| msgid "Included services"
+msgid "Included Services"
+msgstr "Servicii incluse"
+
 #: pkg/networkmanager/firewall.jsx:865
 msgid "Included services"
 msgstr "Servicii incluse"
@@ -4132,12 +4138,12 @@ msgstr[0] "Interfață"
 msgstr[1] "Interfețe"
 msgstr[2] "Interfețe"
 
-#: pkg/networkmanager/network-interface-members.jsx:186
-#: pkg/networkmanager/network-interface-members.jsx:188
+#: pkg/networkmanager/network-interface-members.jsx:191
+#: pkg/networkmanager/network-interface-members.jsx:193
 msgid "Interface members"
 msgstr "Membrii interfeței"
 
-#: pkg/networkmanager/network-interface-members.jsx:192
+#: pkg/networkmanager/network-interface-members.jsx:197
 #: pkg/networkmanager/network-main.jsx:198 pkg/networkmanager/bond.jsx:158
 #: pkg/networkmanager/firewall.jsx:872
 msgid "Interfaces"
@@ -5307,6 +5313,10 @@ msgstr "Legătură de rețea"
 msgid "Network devices and graphs require NetworkManager"
 msgstr "Dispozitivele de rețea și graficele necesită NetworkManager"
 
+#: pkg/networkmanager/networkmanager.jsx:134
+msgid "Network interface '$0' not found"
+msgstr ""
+
 #: pkg/networkmanager/network-main.jsx:227
 msgid "Network logs"
 msgstr "Jurnale de rețea"
@@ -5512,6 +5522,12 @@ msgstr "Nicio cheie de gazdă găsită."
 #: pkg/apps/utils.tsx:116
 msgid "No installation package found for this application."
 msgstr "Nu s-a găsit niciun pachet de instalare pentru această aplicație."
+
+#: pkg/networkmanager/network-interface-members.jsx:167
+#, fuzzy
+#| msgid "No data available"
+msgid "No intefaces available"
+msgstr "Nu există date disponibile"
 
 #: pkg/storaged/crypto/keyslots.jsx:706
 msgid "No keys added"
@@ -6291,7 +6307,7 @@ msgstr "Port"
 msgid "Portable"
 msgstr "Portabil"
 
-#: pkg/networkmanager/network-interface-members.jsx:192
+#: pkg/networkmanager/network-interface-members.jsx:197
 #: pkg/networkmanager/team.jsx:144 pkg/networkmanager/bridge.jsx:86
 msgid "Ports"
 msgstr "Porturi"
@@ -6580,7 +6596,7 @@ msgstr "Se recomandă repornirea"
 msgid "Reboot system..."
 msgstr "Se repornește sistemul..."
 
-#: pkg/networkmanager/network-interface-members.jsx:194
+#: pkg/networkmanager/network-interface-members.jsx:199
 #: pkg/networkmanager/network-main.jsx:206
 #: pkg/networkmanager/network-main.jsx:222 pkg/networkmanager/plots.js:30
 msgid "Receiving"
@@ -6728,6 +6744,12 @@ msgstr "Eliminați jetoanul Clevis?"
 #: pkg/storaged/stratis/pool.jsx:958 pkg/storaged/crypto/keyslots.jsx:650
 msgid "Remove Tang keyserver?"
 msgstr "Eliminați serverul de chei Tang?"
+
+#: pkg/networkmanager/firewall.jsx:151
+#, fuzzy
+#| msgid "Additional port"
+msgid "Remove additional port"
+msgstr "Port suplimentar"
 
 #: pkg/storaged/legacy-vdo/legacy-vdo.jsx:214
 msgid "Remove device"
@@ -7010,6 +7032,10 @@ msgstr ""
 #: pkg/systemd/logs.jsx:238
 msgid "Resume"
 msgstr "Reluare"
+
+#: pkg/networkmanager/networkmanager.jsx:135
+msgid "Return to overview page"
+msgstr ""
 
 #: pkg/storaged/block/format-dialog.jsx:189
 msgid "Reuse existing encryption"
@@ -7312,7 +7338,7 @@ msgstr ""
 msgid "Self-test status"
 msgstr "Starea autotestării"
 
-#: pkg/networkmanager/network-interface-members.jsx:193
+#: pkg/networkmanager/network-interface-members.jsx:198
 #: pkg/networkmanager/network-main.jsx:205
 #: pkg/networkmanager/network-main.jsx:221
 msgid "Sending"
@@ -9915,7 +9941,7 @@ msgstr "coredump"
 msgid "cpu"
 msgstr "cpu"
 
-#: pkg/kdump/manifest.json:0 pkg/systemd/manifest.json:0
+#: pkg/systemd/manifest.json:0 pkg/kdump/manifest.json:0
 msgid "crash"
 msgstr "colaps"
 
@@ -10273,7 +10299,7 @@ msgstr "montare"
 msgid "nbde"
 msgstr "nbde"
 
-#: pkg/systemd/manifest.json:0 pkg/networkmanager/manifest.json:0
+#: pkg/networkmanager/manifest.json:0 pkg/systemd/manifest.json:0
 msgid "network"
 msgstr "rețea"
 
@@ -10517,7 +10543,7 @@ msgstr "sos"
 msgid "sos report failed"
 msgstr "raportul sos a eșuat"
 
-#: pkg/systemd/manifest.json:0 pkg/users/manifest.json:0
+#: pkg/users/manifest.json:0 pkg/systemd/manifest.json:0
 msgid "ssh"
 msgstr "ssh"
 

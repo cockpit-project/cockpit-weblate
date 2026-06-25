@@ -26,7 +26,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-16 13:08+0000\n"
+"POT-Creation-Date: 2026-06-23 17:05+0000\n"
 "PO-Revision-Date: 2026-05-16 16:59+0000\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://translate.fedoraproject.org/projects/"
@@ -765,7 +765,7 @@ msgid "Add"
 msgstr "დამატება"
 
 #: pkg/lib/cockpit-components-firewalld-request.jsx:131
-#: pkg/networkmanager/network-interface-members.jsx:151
+#: pkg/networkmanager/network-interface-members.jsx:146
 msgid "Add $0"
 msgstr "$0-ის დამატება"
 
@@ -841,7 +841,7 @@ msgstr "გასაღების დამატება"
 msgid "Add keyserver"
 msgstr "გასაღებების სერვერის დამატება"
 
-#: pkg/networkmanager/network-interface-members.jsx:171
+#: pkg/networkmanager/network-interface-members.jsx:176
 msgid "Add member"
 msgstr "წევრის დამატება"
 
@@ -916,7 +916,7 @@ msgstr "\"$0\"-ის დამატება დაშიფვრის პ�
 msgid "Adding \"$0\" to filesystem options"
 msgstr "\"$0\"-ის დამატება ფაილური სისტემის პარამეტრებში"
 
-#: pkg/networkmanager/network-interface-members.jsx:150
+#: pkg/networkmanager/network-interface-members.jsx:145
 msgid ""
 "Adding $0 will break the connection to the server, and will make the "
 "administration UI unavailable."
@@ -3931,6 +3931,12 @@ msgstr "არააქტიური"
 msgid "Inactive logical volume"
 msgstr "არააქტიური ლოგიკური ტომი"
 
+#: pkg/networkmanager/firewall.jsx:119
+#, fuzzy
+#| msgid "Included services"
+msgid "Included Services"
+msgstr "მოყოლილი სერვისები"
+
 #: pkg/networkmanager/firewall.jsx:865
 msgid "Included services"
 msgstr "მოყოლილი სერვისები"
@@ -4072,12 +4078,12 @@ msgid_plural "Interfaces"
 msgstr[0] "ცალი ინტერფეისი"
 msgstr[1] "ინტერფეისი"
 
-#: pkg/networkmanager/network-interface-members.jsx:186
-#: pkg/networkmanager/network-interface-members.jsx:188
+#: pkg/networkmanager/network-interface-members.jsx:191
+#: pkg/networkmanager/network-interface-members.jsx:193
 msgid "Interface members"
 msgstr "ინტერფეისის წევრები"
 
-#: pkg/networkmanager/network-interface-members.jsx:192
+#: pkg/networkmanager/network-interface-members.jsx:197
 #: pkg/networkmanager/network-main.jsx:198 pkg/networkmanager/bond.jsx:158
 #: pkg/networkmanager/firewall.jsx:872
 msgid "Interfaces"
@@ -5240,6 +5246,10 @@ msgstr "ქსელის ბარათების გაერთიან�
 msgid "Network devices and graphs require NetworkManager"
 msgstr "ქსელურ მოწყობილობებს და გრაფიკებს NetworkManager-ი ესაჭიროებათ"
 
+#: pkg/networkmanager/networkmanager.jsx:134
+msgid "Network interface '$0' not found"
+msgstr ""
+
 #: pkg/networkmanager/network-main.jsx:227
 msgid "Network logs"
 msgstr "ქსელის ჟურნალი"
@@ -5445,6 +5455,12 @@ msgstr "ჰოსტის გასაღებები ნაპოვნი 
 #: pkg/apps/utils.tsx:116
 msgid "No installation package found for this application."
 msgstr "აპლიკაციის შესაბამისი პაკეტი ვერ მოიძებნა."
+
+#: pkg/networkmanager/network-interface-members.jsx:167
+#, fuzzy
+#| msgid "No data available"
+msgid "No intefaces available"
+msgstr "მონაცემები ხელმიუწვდომელია"
 
 #: pkg/storaged/crypto/keyslots.jsx:706
 msgid "No keys added"
@@ -6218,7 +6234,7 @@ msgstr "პორტი"
 msgid "Portable"
 msgstr "გადატანადი"
 
-#: pkg/networkmanager/network-interface-members.jsx:192
+#: pkg/networkmanager/network-interface-members.jsx:197
 #: pkg/networkmanager/team.jsx:144 pkg/networkmanager/bridge.jsx:86
 msgid "Ports"
 msgstr "პორტები"
@@ -6503,7 +6519,7 @@ msgstr "რეკომენდებულია გადატვირთ�
 msgid "Reboot system..."
 msgstr "სისტემის გადატვირთვა..."
 
-#: pkg/networkmanager/network-interface-members.jsx:194
+#: pkg/networkmanager/network-interface-members.jsx:199
 #: pkg/networkmanager/network-main.jsx:206
 #: pkg/networkmanager/network-main.jsx:222 pkg/networkmanager/plots.js:30
 msgid "Receiving"
@@ -6651,6 +6667,12 @@ msgstr "წავშალო Clevis-ის კოდი?"
 #: pkg/storaged/stratis/pool.jsx:958 pkg/storaged/crypto/keyslots.jsx:650
 msgid "Remove Tang keyserver?"
 msgstr "წავშალო Tang გასაღებების სერვერი?"
+
+#: pkg/networkmanager/firewall.jsx:151
+#, fuzzy
+#| msgid "Additional port"
+msgid "Remove additional port"
+msgstr "დამატებითი პორტი"
 
 #: pkg/storaged/legacy-vdo/legacy-vdo.jsx:214
 msgid "Remove device"
@@ -6931,6 +6953,10 @@ msgstr ""
 #: pkg/systemd/logs.jsx:238
 msgid "Resume"
 msgstr "გაგრძელება"
+
+#: pkg/networkmanager/networkmanager.jsx:135
+msgid "Return to overview page"
+msgstr ""
 
 #: pkg/storaged/block/format-dialog.jsx:189
 msgid "Reuse existing encryption"
@@ -7233,7 +7259,7 @@ msgstr ""
 msgid "Self-test status"
 msgstr "თვითშემოწმების სტატუსი"
 
-#: pkg/networkmanager/network-interface-members.jsx:193
+#: pkg/networkmanager/network-interface-members.jsx:198
 #: pkg/networkmanager/network-main.jsx:205
 #: pkg/networkmanager/network-main.jsx:221
 msgid "Sending"
@@ -9791,7 +9817,7 @@ msgstr "coredump"
 msgid "cpu"
 msgstr "პროცესორი"
 
-#: pkg/kdump/manifest.json:0 pkg/systemd/manifest.json:0
+#: pkg/systemd/manifest.json:0 pkg/kdump/manifest.json:0
 msgid "crash"
 msgstr "ავარია"
 
@@ -10149,7 +10175,7 @@ msgstr "მიმაგრება"
 msgid "nbde"
 msgstr "nbde"
 
-#: pkg/systemd/manifest.json:0 pkg/networkmanager/manifest.json:0
+#: pkg/networkmanager/manifest.json:0 pkg/systemd/manifest.json:0
 msgid "network"
 msgstr "ქსელი"
 
@@ -10392,7 +10418,7 @@ msgstr "sos"
 msgid "sos report failed"
 msgstr "sos-ის ანგარიშის შეცდომა"
 
-#: pkg/systemd/manifest.json:0 pkg/users/manifest.json:0
+#: pkg/users/manifest.json:0 pkg/systemd/manifest.json:0
 msgid "ssh"
 msgstr "ssh"
 

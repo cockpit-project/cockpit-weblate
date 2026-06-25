@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-16 13:08+0000\n"
+"POT-Creation-Date: 2026-06-23 17:05+0000\n"
 "PO-Revision-Date: 2026-06-20 10:11+0000\n"
 "Last-Translator: Jean-Baptiste Holcroft <jean-baptiste@holcroft.fr>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
@@ -730,7 +730,7 @@ msgid "Add"
 msgstr "添加"
 
 #: pkg/lib/cockpit-components-firewalld-request.jsx:131
-#: pkg/networkmanager/network-interface-members.jsx:151
+#: pkg/networkmanager/network-interface-members.jsx:146
 msgid "Add $0"
 msgstr "添加 $0"
 
@@ -806,7 +806,7 @@ msgstr "添加密钥"
 msgid "Add keyserver"
 msgstr "添加密钥服务器"
 
-#: pkg/networkmanager/network-interface-members.jsx:171
+#: pkg/networkmanager/network-interface-members.jsx:176
 msgid "Add member"
 msgstr "添加成员"
 
@@ -881,7 +881,7 @@ msgstr "将 \"$0\" 添加到加密选项"
 msgid "Adding \"$0\" to filesystem options"
 msgstr "将 \"$0\" 添加到文件系统选项"
 
-#: pkg/networkmanager/network-interface-members.jsx:150
+#: pkg/networkmanager/network-interface-members.jsx:145
 msgid ""
 "Adding $0 will break the connection to the server, and will make the "
 "administration UI unavailable."
@@ -3824,6 +3824,12 @@ msgstr "未激活"
 msgid "Inactive logical volume"
 msgstr "不活跃的逻辑卷"
 
+#: pkg/networkmanager/firewall.jsx:119
+#, fuzzy
+#| msgid "Included services"
+msgid "Included Services"
+msgstr "包括的服务"
+
 #: pkg/networkmanager/firewall.jsx:865
 msgid "Included services"
 msgstr "包括的服务"
@@ -3962,12 +3968,12 @@ msgid "Interface"
 msgid_plural "Interfaces"
 msgstr[0] "接口"
 
-#: pkg/networkmanager/network-interface-members.jsx:186
-#: pkg/networkmanager/network-interface-members.jsx:188
+#: pkg/networkmanager/network-interface-members.jsx:191
+#: pkg/networkmanager/network-interface-members.jsx:193
 msgid "Interface members"
 msgstr "接口成员"
 
-#: pkg/networkmanager/network-interface-members.jsx:192
+#: pkg/networkmanager/network-interface-members.jsx:197
 #: pkg/networkmanager/network-main.jsx:198 pkg/networkmanager/bond.jsx:158
 #: pkg/networkmanager/firewall.jsx:872
 msgid "Interfaces"
@@ -5125,6 +5131,12 @@ msgstr "网络绑定"
 msgid "Network devices and graphs require NetworkManager"
 msgstr "网络设备和图形需要 NetworkManager"
 
+#: pkg/networkmanager/networkmanager.jsx:134
+#, fuzzy
+#| msgid "Network interfaces"
+msgid "Network interface '$0' not found"
+msgstr "网络接口"
+
 #: pkg/networkmanager/network-main.jsx:227
 msgid "Network logs"
 msgstr "网络日志"
@@ -5328,6 +5340,12 @@ msgstr "没有找到主机密钥。"
 #: pkg/apps/utils.tsx:116
 msgid "No installation package found for this application."
 msgstr "没有找到该应用的安装包。"
+
+#: pkg/networkmanager/network-interface-members.jsx:167
+#, fuzzy
+#| msgid "No data available"
+msgid "No intefaces available"
+msgstr "没有可用数据"
 
 #: pkg/storaged/crypto/keyslots.jsx:706
 msgid "No keys added"
@@ -6087,7 +6105,7 @@ msgstr "端口"
 msgid "Portable"
 msgstr "手提"
 
-#: pkg/networkmanager/network-interface-members.jsx:192
+#: pkg/networkmanager/network-interface-members.jsx:197
 #: pkg/networkmanager/team.jsx:144 pkg/networkmanager/bridge.jsx:86
 msgid "Ports"
 msgstr "端口"
@@ -6369,7 +6387,7 @@ msgstr "推荐重新引导"
 msgid "Reboot system..."
 msgstr "重新引导系统......"
 
-#: pkg/networkmanager/network-interface-members.jsx:194
+#: pkg/networkmanager/network-interface-members.jsx:199
 #: pkg/networkmanager/network-main.jsx:206
 #: pkg/networkmanager/network-main.jsx:222 pkg/networkmanager/plots.js:30
 msgid "Receiving"
@@ -6517,6 +6535,12 @@ msgstr "删除Clevis令牌？"
 #: pkg/storaged/stratis/pool.jsx:958 pkg/storaged/crypto/keyslots.jsx:650
 msgid "Remove Tang keyserver?"
 msgstr "删除 Tang 密钥服务器？"
+
+#: pkg/networkmanager/firewall.jsx:151
+#, fuzzy
+#| msgid "Additional port"
+msgid "Remove additional port"
+msgstr "额外端口"
 
 #: pkg/storaged/legacy-vdo/legacy-vdo.jsx:214
 msgid "Remove device"
@@ -6786,6 +6810,10 @@ msgstr "如果 kdump 配置正确，崩溃的结果将在 $0 中被存储为 $1�
 #: pkg/systemd/logs.jsx:238
 msgid "Resume"
 msgstr "继续"
+
+#: pkg/networkmanager/networkmanager.jsx:135
+msgid "Return to overview page"
+msgstr ""
 
 #: pkg/storaged/block/format-dialog.jsx:189
 msgid "Reuse existing encryption"
@@ -7078,7 +7106,7 @@ msgstr "选择应该用来修复逻辑卷的物理卷。最少需要 $0。"
 msgid "Self-test status"
 msgstr "自检状态"
 
-#: pkg/networkmanager/network-interface-members.jsx:193
+#: pkg/networkmanager/network-interface-members.jsx:198
 #: pkg/networkmanager/network-main.jsx:205
 #: pkg/networkmanager/network-main.jsx:221
 msgid "Sending"
@@ -9550,7 +9578,7 @@ msgstr "核心转储"
 msgid "cpu"
 msgstr "中央处理器"
 
-#: pkg/kdump/manifest.json:0 pkg/systemd/manifest.json:0
+#: pkg/systemd/manifest.json:0 pkg/kdump/manifest.json:0
 msgid "crash"
 msgstr "崩溃"
 
@@ -9908,7 +9936,7 @@ msgstr "挂载"
 msgid "nbde"
 msgstr "nbde"
 
-#: pkg/systemd/manifest.json:0 pkg/networkmanager/manifest.json:0
+#: pkg/networkmanager/manifest.json:0 pkg/systemd/manifest.json:0
 msgid "network"
 msgstr "网络"
 
@@ -10150,7 +10178,7 @@ msgstr "sos"
 msgid "sos report failed"
 msgstr "sos 报告失败"
 
-#: pkg/systemd/manifest.json:0 pkg/users/manifest.json:0
+#: pkg/users/manifest.json:0 pkg/systemd/manifest.json:0
 msgid "ssh"
 msgstr "ssh"
 
@@ -12668,9 +12696,6 @@ msgstr "区"
 
 #~ msgid "Enter IP address or hostname"
 #~ msgstr "输入 IP 地址或主机名"
-
-#~ msgid "Network interfaces"
-#~ msgstr "网络接口"
 
 #~ msgid ""
 #~ "This version of cockpit-ws does not support connecting to a host with an "

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-16 13:08+0000\n"
+"POT-Creation-Date: 2026-06-23 17:05+0000\n"
 "PO-Revision-Date: 2025-12-22 06:10+0000\n"
 "Last-Translator: Aleksey Fedorov <aleksejfedorov963@gmail.com>\n"
 "Language-Team: Russian <https://translate.fedoraproject.org/projects/cockpit/"
@@ -791,7 +791,7 @@ msgid "Add"
 msgstr "Добавить"
 
 #: pkg/lib/cockpit-components-firewalld-request.jsx:131
-#: pkg/networkmanager/network-interface-members.jsx:151
+#: pkg/networkmanager/network-interface-members.jsx:146
 msgid "Add $0"
 msgstr "Добавить $0"
 
@@ -867,7 +867,7 @@ msgstr "Добавить ключ"
 msgid "Add keyserver"
 msgstr "Добавить сервер ключей"
 
-#: pkg/networkmanager/network-interface-members.jsx:171
+#: pkg/networkmanager/network-interface-members.jsx:176
 msgid "Add member"
 msgstr "Добавить участника"
 
@@ -942,7 +942,7 @@ msgstr "Добавление «$0» в параметры шифрования"
 msgid "Adding \"$0\" to filesystem options"
 msgstr "Добавление «$0» в параметры файловой системы"
 
-#: pkg/networkmanager/network-interface-members.jsx:150
+#: pkg/networkmanager/network-interface-members.jsx:145
 msgid ""
 "Adding $0 will break the connection to the server, and will make the "
 "administration UI unavailable."
@@ -4014,6 +4014,12 @@ msgstr "Неактивно"
 msgid "Inactive logical volume"
 msgstr "Неактивный логический том"
 
+#: pkg/networkmanager/firewall.jsx:119
+#, fuzzy
+#| msgid "Included services"
+msgid "Included Services"
+msgstr "Включённые службы"
+
 #: pkg/networkmanager/firewall.jsx:865
 msgid "Included services"
 msgstr "Включённые службы"
@@ -4158,12 +4164,12 @@ msgstr[0] "Интерфейс"
 msgstr[1] "Интерфейсы"
 msgstr[2] "Интерфейсы"
 
-#: pkg/networkmanager/network-interface-members.jsx:186
-#: pkg/networkmanager/network-interface-members.jsx:188
+#: pkg/networkmanager/network-interface-members.jsx:191
+#: pkg/networkmanager/network-interface-members.jsx:193
 msgid "Interface members"
 msgstr "Члены интерфейса"
 
-#: pkg/networkmanager/network-interface-members.jsx:192
+#: pkg/networkmanager/network-interface-members.jsx:197
 #: pkg/networkmanager/network-main.jsx:198 pkg/networkmanager/bond.jsx:158
 #: pkg/networkmanager/firewall.jsx:872
 msgid "Interfaces"
@@ -5343,6 +5349,12 @@ msgstr "Сетевое объединение"
 msgid "Network devices and graphs require NetworkManager"
 msgstr "Для сетевых устройств и графиков необходим NetworkManager"
 
+#: pkg/networkmanager/networkmanager.jsx:134
+#, fuzzy
+#| msgid "Network interfaces"
+msgid "Network interface '$0' not found"
+msgstr "Сетевые интерфейсы"
+
 #: pkg/networkmanager/network-main.jsx:227
 msgid "Network logs"
 msgstr "Сетевые журналы"
@@ -5548,6 +5560,12 @@ msgstr "Ключи узла не найдены."
 #: pkg/apps/utils.tsx:116
 msgid "No installation package found for this application."
 msgstr "Пакет установки для данного приложения не найден."
+
+#: pkg/networkmanager/network-interface-members.jsx:167
+#, fuzzy
+#| msgid "No data available"
+msgid "No intefaces available"
+msgstr "Данные недоступны"
 
 #: pkg/storaged/crypto/keyslots.jsx:706
 msgid "No keys added"
@@ -6342,7 +6360,7 @@ msgstr "Порт"
 msgid "Portable"
 msgstr "Портативный компьютер"
 
-#: pkg/networkmanager/network-interface-members.jsx:192
+#: pkg/networkmanager/network-interface-members.jsx:197
 #: pkg/networkmanager/team.jsx:144 pkg/networkmanager/bridge.jsx:86
 msgid "Ports"
 msgstr "Порты"
@@ -6629,7 +6647,7 @@ msgstr "Рекомендуется перезагрузка"
 msgid "Reboot system..."
 msgstr "Перезагрузить систему…"
 
-#: pkg/networkmanager/network-interface-members.jsx:194
+#: pkg/networkmanager/network-interface-members.jsx:199
 #: pkg/networkmanager/network-main.jsx:206
 #: pkg/networkmanager/network-main.jsx:222 pkg/networkmanager/plots.js:30
 msgid "Receiving"
@@ -6778,6 +6796,12 @@ msgstr "Удалить токен Clevis?"
 #: pkg/storaged/stratis/pool.jsx:958 pkg/storaged/crypto/keyslots.jsx:650
 msgid "Remove Tang keyserver?"
 msgstr "Удалить сервер криптографических ключей Tang?"
+
+#: pkg/networkmanager/firewall.jsx:151
+#, fuzzy
+#| msgid "Additional port"
+msgid "Remove additional port"
+msgstr "Дополнительный порт"
 
 #: pkg/storaged/legacy-vdo/legacy-vdo.jsx:214
 msgid "Remove device"
@@ -7065,6 +7089,10 @@ msgstr ""
 #: pkg/systemd/logs.jsx:238
 msgid "Resume"
 msgstr "Возобновить"
+
+#: pkg/networkmanager/networkmanager.jsx:135
+msgid "Return to overview page"
+msgstr ""
 
 #: pkg/storaged/block/format-dialog.jsx:189
 msgid "Reuse existing encryption"
@@ -7371,7 +7399,7 @@ msgstr ""
 msgid "Self-test status"
 msgstr "Статус самотестирования"
 
-#: pkg/networkmanager/network-interface-members.jsx:193
+#: pkg/networkmanager/network-interface-members.jsx:198
 #: pkg/networkmanager/network-main.jsx:205
 #: pkg/networkmanager/network-main.jsx:221
 msgid "Sending"
@@ -9991,7 +10019,7 @@ msgstr "дамп ядра"
 msgid "cpu"
 msgstr "процессор"
 
-#: pkg/kdump/manifest.json:0 pkg/systemd/manifest.json:0
+#: pkg/systemd/manifest.json:0 pkg/kdump/manifest.json:0
 msgid "crash"
 msgstr "сбой"
 
@@ -10351,7 +10379,7 @@ msgstr "монтировать"
 msgid "nbde"
 msgstr "nbde"
 
-#: pkg/systemd/manifest.json:0 pkg/networkmanager/manifest.json:0
+#: pkg/networkmanager/manifest.json:0 pkg/systemd/manifest.json:0
 msgid "network"
 msgstr "сеть"
 
@@ -10597,7 +10625,7 @@ msgstr "sos"
 msgid "sos report failed"
 msgstr "Не удалось создать SOS-отчёт"
 
-#: pkg/systemd/manifest.json:0 pkg/users/manifest.json:0
+#: pkg/users/manifest.json:0 pkg/systemd/manifest.json:0
 msgid "ssh"
 msgstr "ssh"
 
@@ -13343,9 +13371,6 @@ msgstr "зона"
 #, fuzzy
 #~ msgid "Enter IP address or hostname"
 #~ msgstr "Введите IP-адрес или имя узла"
-
-#~ msgid "Network interfaces"
-#~ msgstr "Сетевые интерфейсы"
 
 #~ msgid ""
 #~ "This version of cockpit-ws does not support connecting to a host with an "

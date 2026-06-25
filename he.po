@@ -24,7 +24,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-16 13:08+0000\n"
+"POT-Creation-Date: 2026-06-23 17:05+0000\n"
 "PO-Revision-Date: 2025-12-03 21:23+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://translate.fedoraproject.org/projects/cockpit/"
@@ -820,7 +820,7 @@ msgid "Add"
 msgstr "הוספה"
 
 #: pkg/lib/cockpit-components-firewalld-request.jsx:131
-#: pkg/networkmanager/network-interface-members.jsx:151
+#: pkg/networkmanager/network-interface-members.jsx:146
 msgid "Add $0"
 msgstr "הוספת $0"
 
@@ -896,7 +896,7 @@ msgstr "הוספת מפתח"
 msgid "Add keyserver"
 msgstr "הוספת שרת מפתחות"
 
-#: pkg/networkmanager/network-interface-members.jsx:171
+#: pkg/networkmanager/network-interface-members.jsx:176
 msgid "Add member"
 msgstr "הוספת חבר"
 
@@ -971,7 +971,7 @@ msgstr "„$0” נוספה לאפשרויות הצפנה"
 msgid "Adding \"$0\" to filesystem options"
 msgstr "„$0” נוספת לאפשרויות מערכת הקבצים"
 
-#: pkg/networkmanager/network-interface-members.jsx:150
+#: pkg/networkmanager/network-interface-members.jsx:145
 msgid ""
 "Adding $0 will break the connection to the server, and will make the "
 "administration UI unavailable."
@@ -4017,6 +4017,12 @@ msgstr "לא פעיל"
 msgid "Inactive logical volume"
 msgstr "כרך לוגי לא פעיל"
 
+#: pkg/networkmanager/firewall.jsx:119
+#, fuzzy
+#| msgid "Included services"
+msgid "Included Services"
+msgstr "שירותים כלולים"
+
 #: pkg/networkmanager/firewall.jsx:865
 msgid "Included services"
 msgstr "שירותים כלולים"
@@ -4160,12 +4166,12 @@ msgstr[1] "מנשקים"
 msgstr[2] "מנשקים"
 msgstr[3] "מנשקים"
 
-#: pkg/networkmanager/network-interface-members.jsx:186
-#: pkg/networkmanager/network-interface-members.jsx:188
+#: pkg/networkmanager/network-interface-members.jsx:191
+#: pkg/networkmanager/network-interface-members.jsx:193
 msgid "Interface members"
 msgstr "חברים במנשק"
 
-#: pkg/networkmanager/network-interface-members.jsx:192
+#: pkg/networkmanager/network-interface-members.jsx:197
 #: pkg/networkmanager/network-main.jsx:198 pkg/networkmanager/bond.jsx:158
 #: pkg/networkmanager/firewall.jsx:872
 msgid "Interfaces"
@@ -5353,6 +5359,12 @@ msgstr "מאגד רשת"
 msgid "Network devices and graphs require NetworkManager"
 msgstr "התקני רשת ותרשימים דורשים NetworkManager"
 
+#: pkg/networkmanager/networkmanager.jsx:134
+#, fuzzy
+#| msgid "Network interfaces"
+msgid "Network interface '$0' not found"
+msgstr "מנשקי רשת"
+
 #: pkg/networkmanager/network-main.jsx:227
 msgid "Network logs"
 msgstr "יומני תקשורת"
@@ -5558,6 +5570,12 @@ msgstr "לא נמצאו מפתחות מארחים."
 #: pkg/apps/utils.tsx:116
 msgid "No installation package found for this application."
 msgstr "לא נמצאה חבילת התקנה ליישום הזה."
+
+#: pkg/networkmanager/network-interface-members.jsx:167
+#, fuzzy
+#| msgid "No data available"
+msgid "No intefaces available"
+msgstr "אין נתונים זמינים"
 
 #: pkg/storaged/crypto/keyslots.jsx:706
 msgid "No keys added"
@@ -6342,7 +6360,7 @@ msgstr "פתחה"
 msgid "Portable"
 msgstr "נייד"
 
-#: pkg/networkmanager/network-interface-members.jsx:192
+#: pkg/networkmanager/network-interface-members.jsx:197
 #: pkg/networkmanager/team.jsx:144 pkg/networkmanager/bridge.jsx:86
 msgid "Ports"
 msgstr "פתחות"
@@ -6628,7 +6646,7 @@ msgstr "מומלץ להפעיל מחדש"
 msgid "Reboot system..."
 msgstr "הפעלת המערכת מחדש…"
 
-#: pkg/networkmanager/network-interface-members.jsx:194
+#: pkg/networkmanager/network-interface-members.jsx:199
 #: pkg/networkmanager/network-main.jsx:206
 #: pkg/networkmanager/network-main.jsx:222 pkg/networkmanager/plots.js:30
 msgid "Receiving"
@@ -6786,6 +6804,12 @@ msgstr "להסיר אסימון Clevis?"
 #: pkg/storaged/stratis/pool.jsx:958 pkg/storaged/crypto/keyslots.jsx:650
 msgid "Remove Tang keyserver?"
 msgstr "להסיר את שרת המפתחות Tang?"
+
+#: pkg/networkmanager/firewall.jsx:151
+#, fuzzy
+#| msgid "Additional ports"
+msgid "Remove additional port"
+msgstr "פתחות נוספות"
 
 #: pkg/storaged/legacy-vdo/legacy-vdo.jsx:214
 msgid "Remove device"
@@ -7059,6 +7083,10 @@ msgstr ""
 #: pkg/systemd/logs.jsx:238
 msgid "Resume"
 msgstr "המשך"
+
+#: pkg/networkmanager/networkmanager.jsx:135
+msgid "Return to overview page"
+msgstr ""
 
 #: pkg/storaged/block/format-dialog.jsx:189
 msgid "Reuse existing encryption"
@@ -7372,7 +7400,7 @@ msgstr ""
 msgid "Self-test status"
 msgstr "בדיקת SMART עצמית של $0"
 
-#: pkg/networkmanager/network-interface-members.jsx:193
+#: pkg/networkmanager/network-interface-members.jsx:198
 #: pkg/networkmanager/network-main.jsx:205
 #: pkg/networkmanager/network-main.jsx:221
 msgid "Sending"
@@ -9955,7 +9983,7 @@ msgstr "היטל ליבה"
 msgid "cpu"
 msgstr "מעבד"
 
-#: pkg/kdump/manifest.json:0 pkg/systemd/manifest.json:0
+#: pkg/systemd/manifest.json:0 pkg/kdump/manifest.json:0
 msgid "crash"
 msgstr "קריסה"
 
@@ -10325,7 +10353,7 @@ msgstr "עיגון"
 msgid "nbde"
 msgstr "nbde"
 
-#: pkg/systemd/manifest.json:0 pkg/networkmanager/manifest.json:0
+#: pkg/networkmanager/manifest.json:0 pkg/systemd/manifest.json:0
 msgid "network"
 msgstr "רשת"
 
@@ -10572,7 +10600,7 @@ msgstr "חירום"
 msgid "sos report failed"
 msgstr "דיווח sos נכשל"
 
-#: pkg/systemd/manifest.json:0 pkg/users/manifest.json:0
+#: pkg/users/manifest.json:0 pkg/systemd/manifest.json:0
 msgid "ssh"
 msgstr "ssh"
 
@@ -13162,9 +13190,6 @@ msgstr "אזור"
 
 #~ msgid "Enter IP address or hostname"
 #~ msgstr "נא למלא כתובת IP או שם מארח"
-
-#~ msgid "Network interfaces"
-#~ msgstr "מנשקי רשת"
 
 #~ msgid ""
 #~ "This version of cockpit-ws does not support connecting to a host with an "
