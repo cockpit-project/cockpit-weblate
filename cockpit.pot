@@ -28,7 +28,7 @@ msgstr ""
 "#-#-#-#-#  cockpit.js.pot (PACKAGE VERSION)  #-#-#-#-#\n"
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-07 06:28+0000\n"
+"POT-Creation-Date: 2026-09-08 14:23+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -262,7 +262,7 @@ msgid_plural "$0 packages"
 msgstr[0] ""
 msgstr[1] ""
 
-#: pkg/packagekit/updates.jsx:670 pkg/packagekit/updates.jsx:786
+#: pkg/packagekit/updates.jsx:549 pkg/packagekit/updates.jsx:665
 msgid "$0 package needs a system reboot"
 msgid_plural "$0 packages need a system reboot"
 msgstr[0] ""
@@ -278,7 +278,7 @@ msgstr[1] ""
 msgid "$0 partitions"
 msgstr ""
 
-#: pkg/packagekit/updates.jsx:758
+#: pkg/packagekit/updates.jsx:637
 msgid "$0 security fix available"
 msgid_plural "$0 security fixes available"
 msgstr[0] ""
@@ -290,7 +290,7 @@ msgid_plural "$0 services have failed"
 msgstr[0] ""
 msgstr[1] ""
 
-#: pkg/packagekit/updates.jsx:687 pkg/packagekit/updates.jsx:798
+#: pkg/packagekit/updates.jsx:566 pkg/packagekit/updates.jsx:677
 msgid "$0 service needs to be restarted"
 msgid_plural "$0 services need to be restarted"
 msgstr[0] ""
@@ -317,7 +317,7 @@ msgstr ""
 msgid "$0 total"
 msgstr ""
 
-#: pkg/packagekit/updates.jsx:766
+#: pkg/packagekit/updates.jsx:645
 msgid "$0 update available"
 msgid_plural "$0 updates available"
 msgstr[0] ""
@@ -372,7 +372,7 @@ msgstr ""
 msgid "(recommended)"
 msgstr ""
 
-#: pkg/packagekit/updates.jsx:768
+#: pkg/packagekit/updates.jsx:647
 msgid ", including $1 security fix"
 msgid_plural ", including $1 security fixes"
 msgstr[0] ""
@@ -628,7 +628,7 @@ msgid ""
 "$3 file of $4 on $5."
 msgstr ""
 
-#: pkg/packagekit/updates.jsx:1476
+#: pkg/packagekit/updates.jsx:1355
 msgid "A package needs a system reboot for the updates to take effect:"
 msgid_plural ""
 "Some packages need a system reboot for the updates to take effect:"
@@ -639,7 +639,7 @@ msgstr[1] ""
 msgid "A pool with this name exists already."
 msgstr ""
 
-#: pkg/packagekit/updates.jsx:1480
+#: pkg/packagekit/updates.jsx:1359
 msgid "A service needs to be restarted for the updates to take effect:"
 msgid_plural ""
 "Some services need to be restarted for the updates to take effect:"
@@ -1083,6 +1083,10 @@ msgstr ""
 msgid "All $0 selected physical volumes are needed for the chosen layout."
 msgstr ""
 
+#: pkg/lib/cockpit/react/FileChooser.tsx:377
+msgid "All files"
+msgstr ""
+
 #: pkg/storaged/drive/smart-details.jsx:53
 msgid "All media is in read-only mode"
 msgstr ""
@@ -1172,11 +1176,11 @@ msgstr ""
 msgid "Applying solution..."
 msgstr ""
 
-#: pkg/packagekit/updates.jsx:93
+#: pkg/packagekit/updates.jsx:90
 msgid "Applying updates"
 msgstr ""
 
-#: pkg/packagekit/updates.jsx:94
+#: pkg/packagekit/updates.jsx:91
 msgid "Applying updates failed"
 msgstr ""
 
@@ -1337,7 +1341,7 @@ msgstr ""
 msgid "Available targets on $0"
 msgstr ""
 
-#: pkg/packagekit/updates.jsx:414 pkg/packagekit/updates.jsx:897
+#: pkg/packagekit/updates.jsx:411 pkg/packagekit/updates.jsx:776
 msgid "Available updates"
 msgstr ""
 
@@ -1458,11 +1462,11 @@ msgstr ""
 msgid "Broken configuration"
 msgstr ""
 
-#: pkg/packagekit/updates.jsx:1386
+#: pkg/packagekit/updates.jsx:1265
 msgid "Bug fix updates available"
 msgstr ""
 
-#: pkg/packagekit/updates.jsx:357
+#: pkg/packagekit/updates.jsx:354
 msgid "Bugs"
 msgstr ""
 
@@ -1503,7 +1507,7 @@ msgstr ""
 msgid "CPU usage/load"
 msgstr ""
 
-#: pkg/packagekit/updates.jsx:339
+#: pkg/packagekit/updates.jsx:336
 msgid "CVE"
 msgstr ""
 
@@ -1535,12 +1539,13 @@ msgstr ""
 #: pkg/systemd/overview-cards/motdCard.jsx:63
 #: pkg/systemd/overview-cards/configurationCard.jsx:292
 #: pkg/systemd/overview-cards/cryptoPolicies.jsx:217
-#: pkg/systemd/timer-dialog.jsx:376 pkg/packagekit/kpatch.tsx:331
-#: pkg/packagekit/autoupdates.jsx:441 pkg/packagekit/updates.jsx:507
-#: pkg/packagekit/updates.jsx:540 pkg/metrics/metrics.jsx:1490
-#: pkg/sosreport/sosreport.jsx:290 pkg/sosreport/sosreport.jsx:378
-#: pkg/storaged/jobs-panel.jsx:126 pkg/networkmanager/firewall.jsx:728
-#: pkg/networkmanager/firewall.jsx:918 pkg/networkmanager/firewall.jsx:942
+#: pkg/systemd/timer-dialog.jsx:376
+#: pkg/packagekit/restartservices-dialog.tsx:125 pkg/packagekit/kpatch.tsx:331
+#: pkg/packagekit/autoupdates.jsx:441 pkg/packagekit/updates.jsx:448
+#: pkg/metrics/metrics.jsx:1490 pkg/sosreport/sosreport.jsx:290
+#: pkg/sosreport/sosreport.jsx:378 pkg/storaged/jobs-panel.jsx:126
+#: pkg/networkmanager/firewall.jsx:728 pkg/networkmanager/firewall.jsx:918
+#: pkg/networkmanager/firewall.jsx:942
 #: pkg/networkmanager/dialogs-common.jsx:146 pkg/kdump/kdump-view.jsx:312
 #: pkg/kdump/kdump-view.jsx:358 pkg/apps/utils.tsx:78
 msgid "Cancel"
@@ -1673,7 +1678,7 @@ msgid ""
 "the administration UI unavailable."
 msgstr ""
 
-#: pkg/packagekit/updates.jsx:879
+#: pkg/packagekit/updates.jsx:758
 msgid "Check for updates"
 msgstr ""
 
@@ -1718,7 +1723,7 @@ msgstr ""
 msgid "Checking for NBDE support in the initrd"
 msgstr ""
 
-#: pkg/packagekit/updates.jsx:1339
+#: pkg/packagekit/updates.jsx:1218
 msgid "Checking for package updates..."
 msgstr ""
 
@@ -1727,7 +1732,7 @@ msgstr ""
 msgid "Checking installed software"
 msgstr ""
 
-#: pkg/packagekit/updates.jsx:1349
+#: pkg/packagekit/updates.jsx:1228
 msgid "Checking software status"
 msgstr ""
 
@@ -1757,6 +1762,10 @@ msgstr ""
 
 #: pkg/users/accounts-list.js:322 pkg/users/accounts-list.js:431
 msgid "Clear filter"
+msgstr ""
+
+#: pkg/lib/cockpit/react/FileChooser.tsx:741
+msgid "Clear filters"
 msgstr ""
 
 #: pkg/lib/cockpit-components-multi-typeahead-select.tsx:321
@@ -2075,7 +2084,7 @@ msgstr ""
 msgid "Contains:"
 msgstr ""
 
-#: pkg/packagekit/updates.jsx:642 pkg/packagekit/updates.jsx:730
+#: pkg/packagekit/updates.jsx:521 pkg/packagekit/updates.jsx:609
 msgid "Continue"
 msgstr ""
 
@@ -2412,7 +2421,7 @@ msgstr ""
 msgid "Daily"
 msgstr ""
 
-#: pkg/packagekit/updates.jsx:904
+#: pkg/packagekit/updates.jsx:783
 msgid "Danger alert:"
 msgstr ""
 
@@ -2658,7 +2667,7 @@ msgid "Detachable"
 msgstr ""
 
 #: pkg/shell/credentials.tsx:299 pkg/systemd/overview-cards/realmd.jsx:404
-#: pkg/packagekit/updates.jsx:420 pkg/networkmanager/network-main.jsx:207
+#: pkg/packagekit/updates.jsx:417 pkg/networkmanager/network-main.jsx:207
 #: pkg/networkmanager/network-main.jsx:223
 msgid "Details"
 msgstr ""
@@ -2709,6 +2718,14 @@ msgstr ""
 
 #: pkg/kdump/kdump-client.js:107
 msgid "Directory $0 isn't writable or doesn't exist."
+msgstr ""
+
+#: pkg/lib/cockpit/react/FileChooser.tsx:768
+msgid "Directory has no sub-directories"
+msgstr ""
+
+#: pkg/lib/cockpit/react/FileChooser.tsx:766
+msgid "Directory is empty"
 msgstr ""
 
 #: pkg/systemd/hwinfo.jsx:193
@@ -2874,17 +2891,21 @@ msgstr ""
 msgid "Download a new browser for free"
 msgstr ""
 
-#: pkg/packagekit/updates.jsx:103
+#: pkg/packagekit/updates.jsx:100
 msgid "Downloaded"
 msgstr ""
 
-#: pkg/packagekit/updates.jsx:97
+#: pkg/packagekit/updates.jsx:94
 msgid "Downloading"
 msgstr ""
 
 #: pkg/lib/cockpit-components-install-dialog.jsx:164
 #: pkg/storaged/crypto/keyslots.jsx:243
 msgid "Downloading $0"
+msgstr ""
+
+#: pkg/lib/cockpit/react/FileChooser.tsx:176
+msgid "Downloads"
 msgstr ""
 
 #: pkg/storaged/drive/drive.jsx:61
@@ -3104,7 +3125,7 @@ msgstr ""
 msgid "Enforcing"
 msgstr ""
 
-#: pkg/packagekit/updates.jsx:1388
+#: pkg/packagekit/updates.jsx:1267
 msgid "Enhancement updates available"
 msgstr ""
 
@@ -3124,7 +3145,7 @@ msgstr ""
 msgid "Erasing $target"
 msgstr ""
 
-#: pkg/packagekit/updates.jsx:351
+#: pkg/packagekit/updates.jsx:348
 msgid "Errata"
 msgstr ""
 
@@ -3348,7 +3369,7 @@ msgid ""
 "install.timer. Please remove custom overrides to configure automatic updates."
 msgstr ""
 
-#: pkg/packagekit/updates.jsx:458
+#: pkg/packagekit/restartservices-dialog.tsx:75
 msgid "Failed to restart service"
 msgstr ""
 
@@ -3368,11 +3389,21 @@ msgstr ""
 msgid "Failed to switch profile"
 msgstr ""
 
+#: pkg/lib/cockpit/react/FileChooser.tsx:811
+msgid "File"
+msgstr ""
+
+#: pkg/lib/cockpit/react/FileChooser.tsx:606
+msgid "File chooser actions"
+msgstr ""
+
 #: pkg/systemd/services.jsx:841 pkg/systemd/services.jsx:845
 #: pkg/systemd/services.jsx:847
 msgid "File state"
 msgstr ""
 
+#: pkg/lib/cockpit/react/FileChooser.tsx:642
+#: pkg/lib/cockpit/react/FileChooser.tsx:708
 #: pkg/storaged/filesystem/filesystem.jsx:77
 msgid "Filesystem"
 msgstr ""
@@ -3436,6 +3467,10 @@ msgstr ""
 
 #: pkg/storaged/crypto/keyslots.jsx:409
 msgid "Fix NBDE support"
+msgstr ""
+
+#: pkg/lib/cockpit/react/FileChooser.tsx:811
+msgid "Folder"
 msgstr ""
 
 #: pkg/systemd/terminal.jsx:221 pkg/systemd/terminal.jsx:231
@@ -3648,6 +3683,10 @@ msgstr ""
 msgid "Hide confirmation password"
 msgstr ""
 
+#: pkg/lib/cockpit/react/FileChooser.tsx:637
+msgid "Hide hidden files"
+msgstr ""
+
 #: pkg/lib/cockpit-components-password.tsx:135 pkg/lib/cockpit/dialog.tsx:1777
 msgid "Hide password"
 msgstr ""
@@ -3658,6 +3697,10 @@ msgstr ""
 
 #: pkg/packagekit/history.tsx:103
 msgid "History package count"
+msgstr ""
+
+#: pkg/lib/cockpit/react/FileChooser.tsx:175
+msgid "Home"
 msgstr ""
 
 #: pkg/users/account-create-dialog.js:70 pkg/users/account-details.js:344
@@ -3796,7 +3839,7 @@ msgid ""
 "passphrase."
 msgstr ""
 
-#: pkg/packagekit/updates.jsx:645 pkg/packagekit/updates.jsx:729
+#: pkg/packagekit/updates.jsx:524 pkg/packagekit/updates.jsx:608
 #: pkg/networkmanager/ip-settings.jsx:32
 msgid "Ignore"
 msgstr ""
@@ -3867,7 +3910,7 @@ msgstr ""
 msgid "Indirect"
 msgstr ""
 
-#: pkg/packagekit/updates.jsx:721
+#: pkg/packagekit/updates.jsx:600
 msgid "Info"
 msgstr ""
 
@@ -3891,7 +3934,7 @@ msgstr ""
 msgid "Initializing erases all data on a disk."
 msgstr ""
 
-#: pkg/packagekit/updates.jsx:544
+#: pkg/packagekit/updates.jsx:452
 msgid "Initializing..."
 msgstr ""
 
@@ -3913,7 +3956,7 @@ msgstr ""
 msgid "Install Stratis support"
 msgstr ""
 
-#: pkg/packagekit/updates.jsx:1365
+#: pkg/packagekit/updates.jsx:1244
 msgid "Install all updates"
 msgstr ""
 
@@ -3921,7 +3964,7 @@ msgstr ""
 msgid "Install application information"
 msgstr ""
 
-#: pkg/packagekit/updates.jsx:1378
+#: pkg/packagekit/updates.jsx:1257
 msgid "Install kpatch updates"
 msgstr ""
 
@@ -3929,7 +3972,7 @@ msgstr ""
 msgid "Install realmd support"
 msgstr ""
 
-#: pkg/packagekit/updates.jsx:1364 pkg/packagekit/updates.jsx:1371
+#: pkg/packagekit/updates.jsx:1243 pkg/packagekit/updates.jsx:1250
 msgid "Install security updates"
 msgstr ""
 
@@ -3951,11 +3994,11 @@ msgid ""
 "on $0 to enable web console access."
 msgstr ""
 
-#: pkg/packagekit/updates.jsx:104
+#: pkg/packagekit/updates.jsx:101
 msgid "Installed"
 msgstr ""
 
-#: pkg/packagekit/updates.jsx:98 pkg/apps/application.jsx:41
+#: pkg/packagekit/updates.jsx:95 pkg/apps/application.jsx:41
 msgid "Installing"
 msgstr ""
 
@@ -4277,7 +4320,7 @@ msgstr ""
 msgid "Last cannot be removed"
 msgstr ""
 
-#: pkg/packagekit/updates.jsx:753
+#: pkg/packagekit/updates.jsx:632
 msgid "Last checked: $0"
 msgstr ""
 
@@ -4438,11 +4481,11 @@ msgstr ""
 msgid "Load earlier entries"
 msgstr ""
 
-#: pkg/packagekit/updates.jsx:95
+#: pkg/packagekit/updates.jsx:92
 msgid "Loading available updates failed"
 msgstr ""
 
-#: pkg/packagekit/updates.jsx:89
+#: pkg/packagekit/updates.jsx:86
 msgid "Loading available updates, please wait..."
 msgstr ""
 
@@ -4919,7 +4962,7 @@ msgstr ""
 msgid "Monthly"
 msgstr ""
 
-#: pkg/packagekit/updates.jsx:911
+#: pkg/packagekit/updates.jsx:790
 msgid "More info..."
 msgstr ""
 
@@ -5051,7 +5094,7 @@ msgstr ""
 
 #: pkg/shell/credentials.tsx:291 pkg/users/authorized-keys-panel.js:113
 #: pkg/users/group-create-dialog.js:25 pkg/systemd/hwinfo.jsx:74
-#: pkg/systemd/timer-dialog.jsx:129 pkg/packagekit/updates.jsx:417
+#: pkg/systemd/timer-dialog.jsx:129 pkg/packagekit/updates.jsx:414
 #: pkg/storaged/btrfs/volume.jsx:131 pkg/storaged/btrfs/subvolume.jsx:143
 #: pkg/storaged/btrfs/subvolume.jsx:456 pkg/storaged/lvm2/volume-group.jsx:49
 #: pkg/storaged/lvm2/volume-group.jsx:104
@@ -5377,8 +5420,9 @@ msgstr ""
 msgid "No logs found"
 msgstr ""
 
-#: pkg/users/accounts-list.js:322 pkg/users/accounts-list.js:431
-#: pkg/systemd/services-list.jsx:45
+#: pkg/lib/cockpit/react/FileChooser.tsx:780
+#: pkg/lib/cockpit/react/FileChooser.tsx:784 pkg/users/accounts-list.js:322
+#: pkg/users/accounts-list.js:431 pkg/systemd/services-list.jsx:45
 msgid "No matching results"
 msgstr ""
 
@@ -5413,6 +5457,14 @@ msgstr ""
 
 #: pkg/users/account-create-dialog.js:154
 msgid "No real name specified"
+msgstr ""
+
+#: pkg/lib/cockpit/react/FileChooser.tsx:381
+msgid "No recent directories"
+msgstr ""
+
+#: pkg/lib/cockpit/react/FileChooser.tsx:381
+msgid "No recent files"
 msgstr ""
 
 #: pkg/shell/nav.tsx:201 pkg/lib/cockpit-components-typeahead-select.tsx:180
@@ -5465,6 +5517,10 @@ msgstr ""
 #: pkg/networkmanager/firewall.jsx:867
 #: pkg/networkmanager/network-interface.jsx:189 pkg/kdump/kdump-view.jsx:516
 msgid "None"
+msgstr ""
+
+#: pkg/lib/cockpit/react/FileChooser.tsx:240
+msgid "Not a directory"
 msgstr ""
 
 #: pkg/lib/credentials.ts:249
@@ -5541,7 +5597,7 @@ msgstr ""
 msgid "Not ready"
 msgstr ""
 
-#: pkg/packagekit/updates.jsx:1317
+#: pkg/packagekit/updates.jsx:1196
 msgid "Not registered"
 msgstr ""
 
@@ -5646,6 +5702,10 @@ msgstr ""
 msgid "Ooops!"
 msgstr ""
 
+#: pkg/lib/cockpit/react/FileChooser.tsx:621
+msgid "Open in file browser"
+msgstr ""
+
 #: pkg/metrics/metrics.jsx:1422
 msgid "Open the pmproxy service in the firewall to share metrics."
 msgstr ""
@@ -5716,7 +5776,7 @@ msgstr ""
 msgid "PID"
 msgstr ""
 
-#: pkg/packagekit/updates.jsx:656 pkg/packagekit/updates.jsx:736
+#: pkg/packagekit/updates.jsx:535 pkg/packagekit/updates.jsx:615
 msgid "Package information"
 msgstr ""
 
@@ -5724,11 +5784,11 @@ msgstr ""
 msgid "PackageKit crashed"
 msgstr ""
 
-#: pkg/packagekit/updates.jsx:1154
+#: pkg/packagekit/updates.jsx:1033
 msgid "PackageKit is not installed"
 msgstr ""
 
-#: pkg/packagekit/updates.jsx:1255
+#: pkg/packagekit/updates.jsx:1134
 msgid "PackageKit reported error code $0"
 msgstr ""
 
@@ -5736,7 +5796,7 @@ msgstr ""
 msgid "Packageless session unavailable"
 msgstr ""
 
-#: pkg/packagekit/updates.jsx:334
+#: pkg/packagekit/updates.jsx:331
 msgid "Packages"
 msgstr ""
 
@@ -5993,7 +6053,7 @@ msgstr ""
 msgid "Permanently delete subvolume $0?"
 msgstr ""
 
-#: pkg/static/login.js:1032
+#: pkg/static/login.js:1032 pkg/lib/cockpit/react/FileChooser.tsx:235
 msgid "Permission denied"
 msgstr ""
 
@@ -6061,7 +6121,7 @@ msgstr ""
 msgid "Please provide an existing pool passphrase."
 msgstr ""
 
-#: pkg/packagekit/updates.jsx:1441
+#: pkg/packagekit/updates.jsx:1320
 msgid "Please resolve the issue and reload this page."
 msgstr ""
 
@@ -6376,16 +6436,16 @@ msgstr ""
 msgid "Reboot"
 msgstr ""
 
-#: pkg/packagekit/updates.jsx:575
+#: pkg/packagekit/updates.jsx:483
 msgid "Reboot after completion"
 msgstr ""
 
-#: pkg/packagekit/updates.jsx:1473
+#: pkg/packagekit/updates.jsx:1352
 msgid "Reboot recommended"
 msgstr ""
 
-#: pkg/packagekit/updates.jsx:644 pkg/packagekit/updates.jsx:726
-#: pkg/packagekit/updates.jsx:792
+#: pkg/packagekit/updates.jsx:523 pkg/packagekit/updates.jsx:605
+#: pkg/packagekit/updates.jsx:671
 msgid "Reboot system..."
 msgstr ""
 
@@ -6393,6 +6453,10 @@ msgstr ""
 #: pkg/networkmanager/network-main.jsx:222 pkg/networkmanager/plots.js:30
 #: pkg/networkmanager/network-interface-members.jsx:199
 msgid "Receiving"
+msgstr ""
+
+#: pkg/lib/cockpit/react/FileChooser.tsx:380
+msgid "Recent"
 msgstr ""
 
 #: pkg/static/login.html:179
@@ -6419,7 +6483,7 @@ msgstr ""
 msgid "Refresh"
 msgstr ""
 
-#: pkg/packagekit/updates.jsx:91
+#: pkg/packagekit/updates.jsx:88
 msgid "Refreshing package information"
 msgstr ""
 
@@ -6435,7 +6499,7 @@ msgstr ""
 msgid "Regenerating initrd"
 msgstr ""
 
-#: pkg/packagekit/updates.jsx:1328
+#: pkg/packagekit/updates.jsx:1207
 msgid "Register…"
 msgstr ""
 
@@ -6463,7 +6527,7 @@ msgstr ""
 msgid "Reloading"
 msgstr ""
 
-#: pkg/packagekit/updates.jsx:470
+#: pkg/packagekit/restartservices-dialog.tsx:87
 msgid "Reloading the state of remaining services"
 msgstr ""
 
@@ -6771,15 +6835,16 @@ msgstr ""
 msgid "Restart"
 msgstr ""
 
-#: pkg/packagekit/updates.jsx:485 pkg/packagekit/updates.jsx:504
+#: pkg/packagekit/restartservices-dialog.tsx:102
+#: pkg/packagekit/restartservices-dialog.tsx:122
 msgid "Restart services"
 msgstr ""
 
-#: pkg/packagekit/updates.jsx:727 pkg/packagekit/updates.jsx:804
+#: pkg/packagekit/updates.jsx:606 pkg/packagekit/updates.jsx:683
 msgid "Restart services..."
 msgstr ""
 
-#: pkg/packagekit/updates.jsx:1521
+#: pkg/packagekit/updates.jsx:1400
 msgid "Restarting"
 msgstr ""
 
@@ -7065,7 +7130,7 @@ msgstr ""
 msgid "Security Enhanced Linux configuration and troubleshooting"
 msgstr ""
 
-#: pkg/packagekit/updates.jsx:1384
+#: pkg/packagekit/updates.jsx:1263
 msgid "Security updates available"
 msgstr ""
 
@@ -7077,7 +7142,7 @@ msgstr ""
 msgid "Security updates will be applied $0 at $1"
 msgstr ""
 
-#: pkg/shell/shell-modals.tsx:171
+#: pkg/shell/shell-modals.tsx:171 pkg/lib/cockpit/react/FileChooser.tsx:884
 msgid "Select"
 msgstr ""
 
@@ -7205,7 +7270,7 @@ msgstr ""
 msgid "Set to"
 msgstr ""
 
-#: pkg/packagekit/updates.jsx:106
+#: pkg/packagekit/updates.jsx:103
 msgid "Set up"
 msgstr ""
 
@@ -7218,7 +7283,7 @@ msgid ""
 "Setting deviates from the configured state and will revert on the next boot."
 msgstr ""
 
-#: pkg/packagekit/updates.jsx:100
+#: pkg/packagekit/updates.jsx:97
 msgid "Setting up"
 msgstr ""
 
@@ -7226,11 +7291,11 @@ msgstr ""
 msgid "Setting up loop device $target"
 msgstr ""
 
-#: pkg/packagekit/updates.jsx:889
+#: pkg/packagekit/updates.jsx:768
 msgid "Settings"
 msgstr ""
 
-#: pkg/packagekit/updates.jsx:345 pkg/packagekit/updates.jsx:419
+#: pkg/packagekit/updates.jsx:342 pkg/packagekit/updates.jsx:416
 msgid "Severity"
 msgstr ""
 
@@ -7264,6 +7329,11 @@ msgstr ""
 
 #: pkg/systemd/overview-cards/configurationCard.jsx:83
 msgid "Show fingerprints"
+msgstr ""
+
+#: pkg/lib/cockpit/react/FileChooser.tsx:637
+#: pkg/lib/cockpit/react/FileChooser.tsx:741
+msgid "Show hidden files"
 msgstr ""
 
 #: pkg/systemd/logs.jsx:340
@@ -7431,13 +7501,13 @@ msgid ""
 "created. The pool can be safely grown to use the newly available space."
 msgstr ""
 
-#: pkg/packagekit/updates.jsx:90
+#: pkg/packagekit/updates.jsx:87
 msgid ""
 "Some other program is currently using the package manager, please wait..."
 msgstr ""
 
-#: pkg/packagekit/updates.jsx:704 pkg/packagekit/updates.jsx:812
-#: pkg/packagekit/updates.jsx:1484
+#: pkg/packagekit/updates.jsx:583 pkg/packagekit/updates.jsx:691
+#: pkg/packagekit/updates.jsx:1363
 msgid "Some software needs to be restarted manually"
 msgstr ""
 
@@ -7530,7 +7600,7 @@ msgstr ""
 msgid "Static"
 msgstr ""
 
-#: pkg/systemd/service-details.jsx:727 pkg/packagekit/updates.jsx:878
+#: pkg/systemd/service-details.jsx:727 pkg/packagekit/updates.jsx:757
 #: pkg/networkmanager/network-interface.jsx:468
 msgid "Status"
 msgstr ""
@@ -7764,7 +7834,7 @@ msgstr ""
 msgid "System information"
 msgstr ""
 
-#: pkg/packagekit/updates.jsx:92
+#: pkg/packagekit/updates.jsx:89
 msgid "System is up to date"
 msgstr ""
 
@@ -7987,7 +8057,7 @@ msgstr ""
 msgid "The fingerprint should match:"
 msgstr ""
 
-#: pkg/packagekit/updates.jsx:475
+#: pkg/packagekit/restartservices-dialog.tsx:92
 msgid "The following service will be restarted:"
 msgid_plural "The following services will be restarted:"
 msgstr[0] ""
@@ -8218,6 +8288,10 @@ msgstr ""
 msgid "This device is currently in use."
 msgstr ""
 
+#: pkg/lib/cockpit/react/FileChooser.tsx:774
+msgid "This directory contains only hidden files"
+msgstr ""
+
 #: pkg/systemd/timer-dialog.jsx:137 pkg/systemd/timer-dialog.jsx:145
 #: pkg/systemd/timer-dialog.jsx:155
 msgid "This field cannot be empty"
@@ -8287,7 +8361,7 @@ msgstr ""
 msgid "This pool is in a degraded state."
 msgstr ""
 
-#: pkg/packagekit/updates.jsx:1324
+#: pkg/packagekit/updates.jsx:1203
 msgid "This system is not registered"
 msgstr ""
 
@@ -8395,7 +8469,7 @@ msgstr ""
 msgid "Time"
 msgstr ""
 
-#: pkg/packagekit/updates.jsx:565
+#: pkg/packagekit/updates.jsx:473
 msgid "Time remaining: "
 msgstr ""
 
@@ -8428,7 +8502,7 @@ msgid ""
 "party, please verify the host key fingerprint:"
 msgstr ""
 
-#: pkg/packagekit/updates.jsx:1326
+#: pkg/packagekit/updates.jsx:1205
 msgid ""
 "To get software updates, this system needs to be registered with Red Hat, "
 "either using the Red Hat Customer Portal or a local subscription server."
@@ -8586,7 +8660,7 @@ msgstr ""
 msgid "Type must contain exactly two hexadecimal characters (0 to 9, A to F)."
 msgstr ""
 
-#: pkg/systemd/logs.jsx:362
+#: pkg/lib/cockpit/react/FileChooser.tsx:553 pkg/systemd/logs.jsx:362
 msgid "Type to filter"
 msgstr ""
 
@@ -8860,11 +8934,11 @@ msgstr ""
 msgid "Update"
 msgstr ""
 
-#: pkg/packagekit/updates.jsx:720
+#: pkg/packagekit/updates.jsx:599
 msgid "Update Success Table"
 msgstr ""
 
-#: pkg/packagekit/updates.jsx:927
+#: pkg/packagekit/updates.jsx:806
 msgid "Update history"
 msgstr ""
 
@@ -8872,23 +8946,23 @@ msgstr ""
 msgid "Update package information"
 msgstr ""
 
-#: pkg/packagekit/updates.jsx:565
+#: pkg/packagekit/updates.jsx:473
 msgid "Update progress"
 msgstr ""
 
-#: pkg/packagekit/updates.jsx:650 pkg/packagekit/updates.jsx:716
+#: pkg/packagekit/updates.jsx:529 pkg/packagekit/updates.jsx:595
 msgid "Update was successful"
 msgstr ""
 
-#: pkg/packagekit/updates.jsx:105
+#: pkg/packagekit/updates.jsx:102
 msgid "Updated"
 msgstr ""
 
-#: pkg/packagekit/updates.jsx:640
+#: pkg/packagekit/updates.jsx:519
 msgid "Updated packages may require a reboot to take effect."
 msgstr ""
 
-#: pkg/packagekit/updates.jsx:1390
+#: pkg/packagekit/updates.jsx:1269
 msgid "Updates available"
 msgstr ""
 
@@ -8900,7 +8974,7 @@ msgstr ""
 msgid "Updates will be applied $0 at $1"
 msgstr ""
 
-#: pkg/packagekit/updates.jsx:99
+#: pkg/packagekit/updates.jsx:96
 msgid "Updating"
 msgstr ""
 
@@ -9049,7 +9123,7 @@ msgstr ""
 msgid "Vendor"
 msgstr ""
 
-#: pkg/packagekit/updates.jsx:107
+#: pkg/packagekit/updates.jsx:104
 msgid "Verified"
 msgstr ""
 
@@ -9061,11 +9135,11 @@ msgstr ""
 msgid "Verify key"
 msgstr ""
 
-#: pkg/packagekit/updates.jsx:101
+#: pkg/packagekit/updates.jsx:98
 msgid "Verifying"
 msgstr ""
 
-#: pkg/systemd/hwinfo.jsx:79 pkg/packagekit/updates.jsx:418
+#: pkg/systemd/hwinfo.jsx:79 pkg/packagekit/updates.jsx:415
 msgid "Version"
 msgstr ""
 
@@ -9127,7 +9201,7 @@ msgstr ""
 msgid "View project website"
 msgstr ""
 
-#: pkg/packagekit/updates.jsx:580
+#: pkg/packagekit/updates.jsx:488
 msgid "View update log"
 msgstr ""
 
@@ -9219,7 +9293,7 @@ msgstr ""
 msgid "Web Console for Linux servers"
 msgstr ""
 
-#: pkg/packagekit/updates.jsx:495 pkg/packagekit/updates.jsx:905
+#: pkg/packagekit/restartservices-dialog.tsx:113 pkg/packagekit/updates.jsx:784
 msgid "Web Console will restart"
 msgstr ""
 
@@ -9251,7 +9325,7 @@ msgstr ""
 msgid "When empty, connect with the current user"
 msgstr ""
 
-#: pkg/packagekit/updates.jsx:498 pkg/packagekit/updates.jsx:910
+#: pkg/packagekit/restartservices-dialog.tsx:116 pkg/packagekit/updates.jsx:789
 msgid ""
 "When the Web Console is restarted, you will no longer see progress "
 "information. However, the update process will continue in the background. "
@@ -9360,7 +9434,7 @@ msgstr ""
 msgid "Your browser will remember your access level across sessions."
 msgstr ""
 
-#: pkg/packagekit/updates.jsx:1523
+#: pkg/packagekit/updates.jsx:1402
 msgid ""
 "Your server will close the connection soon. You can reconnect after it has "
 "restarted."
@@ -9485,7 +9559,7 @@ msgstr ""
 msgid "btrfs volume"
 msgstr ""
 
-#: pkg/packagekit/updates.jsx:186 pkg/packagekit/updates.jsx:289
+#: pkg/packagekit/updates.jsx:183 pkg/packagekit/updates.jsx:286
 msgid "bug fix"
 msgstr ""
 
@@ -9526,7 +9600,7 @@ msgstr ""
 msgid "cpu"
 msgstr ""
 
-#: pkg/systemd/manifest.json:0 pkg/kdump/manifest.json:0
+#: pkg/kdump/manifest.json:0 pkg/systemd/manifest.json:0
 msgid "crash"
 msgstr ""
 
@@ -9619,7 +9693,7 @@ msgstr ""
 msgid "encryption"
 msgstr ""
 
-#: pkg/packagekit/updates.jsx:188 pkg/packagekit/updates.jsx:289
+#: pkg/packagekit/updates.jsx:185 pkg/packagekit/updates.jsx:286
 msgid "enhancement"
 msgstr ""
 
@@ -9967,7 +10041,7 @@ msgstr ""
 msgid "password quality"
 msgstr ""
 
-#: pkg/packagekit/updates.jsx:314
+#: pkg/packagekit/updates.jsx:311
 msgid "patches"
 msgstr ""
 
@@ -10063,7 +10137,7 @@ msgstr ""
 msgid "secured"
 msgstr ""
 
-#: pkg/packagekit/updates.jsx:184 pkg/packagekit/updates.jsx:281
+#: pkg/packagekit/updates.jsx:181 pkg/packagekit/updates.jsx:278
 #: pkg/packagekit/manifest.json:0
 msgid "security"
 msgstr ""
