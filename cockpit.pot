@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-14 02:52+0000\n"
+"POT-Creation-Date: 2026-10-15 02:52+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -78,7 +78,7 @@ msgstr ""
 #: pkg/lib/superuser-dialogs.tsx:176 pkg/lib/cockpit-connect-ssh.tsx:432
 #: pkg/lib/cockpit-connect-ssh.tsx:442 pkg/users/account-create-dialog.js:125
 #: pkg/users/account-details.js:314
-#: pkg/networkmanager/network-interface.jsx:197
+#: pkg/networkmanager/network-interface.jsx:195
 #: pkg/storaged/iscsi/create-dialog.jsx:20
 #: pkg/storaged/iscsi/create-dialog.jsx:126
 msgid "Password"
@@ -174,14 +174,14 @@ msgid "Software updates"
 msgstr ""
 
 #: pkg/networkmanager/index.html:9 pkg/networkmanager/firewall.jsx:1084
-#: pkg/networkmanager/network-interface.jsx:1220
+#: pkg/networkmanager/network-interface.jsx:1233
 #: pkg/networkmanager/manifest.json:0
 #: src/appstream/org.cockpit_project.cockpit_networkmanager.metainfo.xml.in:5
 msgid "Networking"
 msgstr ""
 
 #: pkg/networkmanager/firewall.html:8 pkg/networkmanager/firewall.jsx:1085
-#: pkg/networkmanager/firewall.jsx:1092 pkg/networkmanager/network-main.jsx:183
+#: pkg/networkmanager/firewall.jsx:1092 pkg/networkmanager/network-main.jsx:175
 msgid "Firewall"
 msgstr ""
 
@@ -327,8 +327,8 @@ msgstr ""
 #: pkg/systemd/hwinfo.jsx:74 pkg/users/group-create-dialog.js:25
 #: pkg/users/authorized-keys-panel.js:113 pkg/packagekit/updates.jsx:417
 #: pkg/networkmanager/dialogs-common.jsx:120
-#: pkg/networkmanager/network-main.jsx:203
-#: pkg/networkmanager/network-main.jsx:219 pkg/storaged/btrfs/subvolume.jsx:143
+#: pkg/networkmanager/network-main.jsx:195
+#: pkg/networkmanager/network-main.jsx:211 pkg/storaged/btrfs/subvolume.jsx:143
 #: pkg/storaged/btrfs/subvolume.jsx:456 pkg/storaged/btrfs/volume.jsx:131
 #: pkg/storaged/partitions/partition.jsx:213 pkg/storaged/lvm2/vdo-pool.jsx:64
 #: pkg/storaged/lvm2/volume-group.jsx:49 pkg/storaged/lvm2/volume-group.jsx:104
@@ -359,8 +359,8 @@ msgid "Toggle"
 msgstr ""
 
 #: pkg/shell/credentials.tsx:286 pkg/systemd/overview-cards/realmd.jsx:404
-#: pkg/packagekit/updates.jsx:420 pkg/networkmanager/network-main.jsx:207
-#: pkg/networkmanager/network-main.jsx:223
+#: pkg/packagekit/updates.jsx:420 pkg/networkmanager/network-main.jsx:199
+#: pkg/networkmanager/network-main.jsx:215
 msgid "Details"
 msgstr ""
 
@@ -618,9 +618,9 @@ msgstr ""
 msgid "You will be reminded once per session."
 msgstr ""
 
-#: pkg/shell/hosts_dialog.jsx:272 pkg/networkmanager/network-interface.jsx:206
+#: pkg/shell/hosts_dialog.jsx:272 pkg/networkmanager/network-interface.jsx:204
+#: pkg/networkmanager/network-interface.jsx:991
 #: pkg/networkmanager/network-interface.jsx:992
-#: pkg/networkmanager/network-interface.jsx:993
 msgid "Connect"
 msgstr ""
 
@@ -898,7 +898,7 @@ msgstr ""
 msgid "Reconnect"
 msgstr ""
 
-#: pkg/shell/failures.tsx:97
+#: pkg/shell/failures.tsx:97 pkg/networkmanager/anaconda/anaconda-main.tsx:38
 msgid "Disconnected"
 msgstr ""
 
@@ -2997,7 +2997,7 @@ msgstr ""
 
 #: pkg/systemd/overview-cards/tuned-dialog.jsx:213
 #: pkg/networkmanager/firewall.jsx:867
-#: pkg/networkmanager/network-interface.jsx:189 pkg/kdump/kdump-view.jsx:516
+#: pkg/networkmanager/network-interface.jsx:187 pkg/kdump/kdump-view.jsx:516
 msgid "None"
 msgstr ""
 
@@ -3365,7 +3365,7 @@ msgstr ""
 #: pkg/users/delete-group-dialog.js:37 pkg/networkmanager/firewall.jsx:105
 #: pkg/networkmanager/firewall.jsx:151 pkg/networkmanager/firewall.jsx:165
 #: pkg/networkmanager/firewall.jsx:939
-#: pkg/networkmanager/network-interface.jsx:1240
+#: pkg/networkmanager/network-interface.jsx:1256
 #: pkg/storaged/btrfs/subvolume.jsx:239 pkg/storaged/btrfs/subvolume.jsx:386
 #: pkg/storaged/btrfs/volume.jsx:67
 #: pkg/storaged/partitions/partition-table.jsx:48
@@ -3429,7 +3429,7 @@ msgstr ""
 msgid "Forbidden from running"
 msgstr ""
 
-#: pkg/systemd/service-details.jsx:517 pkg/networkmanager/networkmanager.jsx:65
+#: pkg/systemd/service-details.jsx:517 pkg/networkmanager/networkmanager.jsx:67
 msgid "Start service"
 msgstr ""
 
@@ -3907,7 +3907,6 @@ msgid "Group"
 msgstr ""
 
 #: pkg/users/accounts-list.js:360 pkg/networkmanager/firewall.jsx:198
-#: pkg/networkmanager/network-interface.jsx:1085
 #: pkg/apps/application-list.jsx:140 pkg/storaged/drive/smart-details.jsx:92
 #: pkg/storaged/pages.jsx:716
 msgid "Actions"
@@ -4853,39 +4852,39 @@ msgstr ""
 msgid "Invalid prefix or netmask $0"
 msgstr ""
 
-#: pkg/networkmanager/networkmanager.jsx:52
+#: pkg/networkmanager/networkmanager.jsx:54
 msgid "Testing connection"
 msgstr ""
 
-#: pkg/networkmanager/networkmanager.jsx:52
+#: pkg/networkmanager/networkmanager.jsx:54
 msgid "Restoring connection"
 msgstr ""
 
-#: pkg/networkmanager/networkmanager.jsx:64
+#: pkg/networkmanager/networkmanager.jsx:66
 msgid "NetworkManager is not running"
 msgstr ""
 
-#: pkg/networkmanager/networkmanager.jsx:71
+#: pkg/networkmanager/networkmanager.jsx:73
 msgid "Troubleshoot…"
 msgstr ""
 
-#: pkg/networkmanager/networkmanager.jsx:80
+#: pkg/networkmanager/networkmanager.jsx:82
 msgid "NetworkManager is not installed"
 msgstr ""
 
-#: pkg/networkmanager/networkmanager.jsx:88
+#: pkg/networkmanager/networkmanager.jsx:90
 msgid "Network devices and graphs require NetworkManager"
 msgstr ""
 
-#: pkg/networkmanager/networkmanager.jsx:89
+#: pkg/networkmanager/networkmanager.jsx:91
 msgid "Enable service"
 msgstr ""
 
-#: pkg/networkmanager/networkmanager.jsx:134
+#: pkg/networkmanager/networkmanager.jsx:151
 msgid "Network interface '$0' not found"
 msgstr ""
 
-#: pkg/networkmanager/networkmanager.jsx:135
+#: pkg/networkmanager/networkmanager.jsx:152
 msgid "Return to overview page"
 msgstr ""
 
@@ -5090,7 +5089,7 @@ msgstr ""
 msgid "The cockpit service is automatically included"
 msgstr ""
 
-#: pkg/networkmanager/firewall.jsx:872 pkg/networkmanager/network-main.jsx:198
+#: pkg/networkmanager/firewall.jsx:872 pkg/networkmanager/network-main.jsx:190
 #: pkg/networkmanager/bond.jsx:158
 #: pkg/networkmanager/network-interface-members.jsx:197
 msgid "Interfaces"
@@ -5152,40 +5151,64 @@ msgid ""
 "Incoming requests are blocked by default. Outgoing requests are not blocked."
 msgstr ""
 
-#: pkg/networkmanager/network-interface.jsx:95
+#: pkg/networkmanager/anaconda/anaconda-main.tsx:38
+msgid "Connected"
+msgstr ""
+
+#: pkg/networkmanager/anaconda/anaconda-main.tsx:108
+msgid "Wireless"
+msgstr ""
+
+#: pkg/networkmanager/anaconda/anaconda-main.tsx:111
+msgid "Wired"
+msgstr ""
+
+#: pkg/networkmanager/anaconda/anaconda-main.tsx:114
+msgid "No networks found"
+msgstr ""
+
+#: pkg/networkmanager/anaconda/anaconda-main.tsx:128
+msgid "No interface selected"
+msgstr ""
+
+#: pkg/networkmanager/anaconda/anaconda-main.tsx:129
+msgid "Select a network interface to configure the connection."
+msgstr ""
+
+#: pkg/networkmanager/network-interface.jsx:93
 msgid "SSID can not be empty"
 msgstr ""
 
-#: pkg/networkmanager/network-interface.jsx:101
+#: pkg/networkmanager/network-interface.jsx:99
 msgid "Password can not be empty"
 msgstr ""
 
-#: pkg/networkmanager/network-interface.jsx:162
+#: pkg/networkmanager/network-interface.jsx:160
 msgid "Failed to connect"
 msgstr ""
 
-#: pkg/networkmanager/network-interface.jsx:164
+#: pkg/networkmanager/network-interface.jsx:162
 msgid "Check your password."
 msgstr ""
 
-#: pkg/networkmanager/network-interface.jsx:175
-#: pkg/networkmanager/network-interface.jsx:1062
+#: pkg/networkmanager/network-interface.jsx:173
+#: pkg/networkmanager/network-interface.jsx:1073
 msgid "Connect to hidden network"
 msgstr ""
 
-#: pkg/networkmanager/network-interface.jsx:175
+#: pkg/networkmanager/network-interface.jsx:173
 msgid "Connect to $0"
 msgstr ""
 
-#: pkg/networkmanager/network-interface.jsx:182
+#: pkg/networkmanager/network-interface.jsx:180
 msgid "Network name"
 msgstr ""
 
-#: pkg/networkmanager/network-interface.jsx:186
+#: pkg/networkmanager/network-interface.jsx:184
 msgid "Security"
 msgstr ""
 
-#: pkg/networkmanager/network-interface.jsx:190
+#: pkg/networkmanager/network-interface.jsx:188
 msgid "WPA/WPA2 Personal"
 msgstr ""
 
@@ -5419,62 +5442,70 @@ msgstr ""
 msgid "Disconnect"
 msgstr ""
 
-#: pkg/networkmanager/network-interface.jsx:986
+#: pkg/networkmanager/network-interface.jsx:985
 msgid "Not permitted to connect to network"
 msgstr ""
 
-#: pkg/networkmanager/network-interface.jsx:1006
-#: pkg/networkmanager/network-interface.jsx:1007
+#: pkg/networkmanager/network-interface.jsx:1018
+#: pkg/networkmanager/network-interface.jsx:1021
 msgid "Forget"
 msgstr ""
 
-#: pkg/networkmanager/network-interface.jsx:1030
+#: pkg/networkmanager/network-interface.jsx:1040
 msgid "$0 hidden network"
 msgid_plural "$0 hidden networks"
 msgstr[0] ""
 msgstr[1] ""
 
-#: pkg/networkmanager/network-interface.jsx:1051
+#: pkg/networkmanager/network-interface.jsx:1062
 msgid "Filter"
 msgstr ""
 
-#: pkg/networkmanager/network-interface.jsx:1070
+#: pkg/networkmanager/network-interface.jsx:1081
 msgid "Refresh"
 msgstr ""
 
-#: pkg/networkmanager/network-interface.jsx:1076
-#: pkg/networkmanager/network-interface.jsx:1078
+#: pkg/networkmanager/network-interface.jsx:1087
+#: pkg/networkmanager/network-interface.jsx:1089
 msgid "Available networks"
 msgstr ""
 
-#: pkg/networkmanager/network-interface.jsx:1081 pkg/metrics/metrics.jsx:929
+#: pkg/networkmanager/network-interface.jsx:1092 pkg/metrics/metrics.jsx:929
 #: pkg/metrics/metrics.jsx:1553 pkg/metrics/metrics.jsx:1924
 #: pkg/metrics/metrics.jsx:1937
 msgid "Network"
 msgstr ""
 
-#: pkg/networkmanager/network-interface.jsx:1082
+#: pkg/networkmanager/network-interface.jsx:1093
 #: pkg/networkmanager/bond.jsx:164
 msgid "Mode"
 msgstr ""
 
-#: pkg/networkmanager/network-interface.jsx:1083
+#: pkg/networkmanager/network-interface.jsx:1094
 msgid "Signal"
 msgstr ""
 
-#: pkg/networkmanager/network-interface.jsx:1084
+#: pkg/networkmanager/network-interface.jsx:1095
 msgid "Rate"
 msgstr ""
 
-#: pkg/networkmanager/network-interface.jsx:1192
+#: pkg/networkmanager/network-interface.jsx:1096
+msgid "Primary action"
+msgstr ""
+
+#: pkg/networkmanager/network-interface.jsx:1097
+msgid "Secondary actions"
+msgstr ""
+
+#: pkg/networkmanager/network-interface.jsx:1206
 msgid "Not permitted to configure network devices"
 msgstr ""
 
-#: pkg/networkmanager/network-interface.jsx:1197
+#: pkg/networkmanager/network-interface.jsx:1211
 msgid "Enable or disable the device"
 msgstr ""
 
-#: pkg/networkmanager/network-interface.jsx:1261
+#: pkg/networkmanager/network-interface.jsx:1277
 msgid "This device cannot be managed here."
 msgstr ""
 
@@ -5568,7 +5599,7 @@ msgstr ""
 msgid "Change the settings"
 msgstr ""
 
-#: pkg/networkmanager/bridge.jsx:81 pkg/networkmanager/network-main.jsx:160
+#: pkg/networkmanager/bridge.jsx:81 pkg/networkmanager/network-main.jsx:154
 msgid "Add bridge"
 msgstr ""
 
@@ -5637,7 +5668,7 @@ msgstr ""
 msgid "NSNA ping"
 msgstr ""
 
-#: pkg/networkmanager/team.jsx:139 pkg/networkmanager/network-main.jsx:159
+#: pkg/networkmanager/team.jsx:139 pkg/networkmanager/network-main.jsx:153
 msgid "Add team"
 msgstr ""
 
@@ -5787,61 +5818,61 @@ msgstr ""
 msgid "MAC"
 msgstr ""
 
-#: pkg/networkmanager/network-main.jsx:100
+#: pkg/networkmanager/network-main.jsx:94
 msgid "$0 network"
 msgid_plural "$0 networks"
 msgstr[0] ""
 msgstr[1] ""
 
-#: pkg/networkmanager/network-main.jsx:157
+#: pkg/networkmanager/network-main.jsx:151
 msgid "Add VPN"
 msgstr ""
 
-#: pkg/networkmanager/network-main.jsx:158 pkg/networkmanager/bond.jsx:130
+#: pkg/networkmanager/network-main.jsx:152 pkg/networkmanager/bond.jsx:130
 msgid "Add bond"
 msgstr ""
 
-#: pkg/networkmanager/network-main.jsx:161 pkg/networkmanager/vlan.jsx:76
+#: pkg/networkmanager/network-main.jsx:155 pkg/networkmanager/vlan.jsx:76
 msgid "Add VLAN"
 msgstr ""
 
-#: pkg/networkmanager/network-main.jsx:179
+#: pkg/networkmanager/network-main.jsx:171
 msgid "Edit rules and zones"
 msgstr ""
 
-#: pkg/networkmanager/network-main.jsx:192
+#: pkg/networkmanager/network-main.jsx:184
 msgid "$0 active zone"
 msgid_plural "$0 active zones"
 msgstr[0] ""
 msgstr[1] ""
 
-#: pkg/networkmanager/network-main.jsx:200
+#: pkg/networkmanager/network-main.jsx:192
 msgid "Managed interfaces"
 msgstr ""
 
-#: pkg/networkmanager/network-main.jsx:204
-#: pkg/networkmanager/network-main.jsx:220
+#: pkg/networkmanager/network-main.jsx:196
+#: pkg/networkmanager/network-main.jsx:212
 msgid "IP address"
 msgstr ""
 
-#: pkg/networkmanager/network-main.jsx:205
-#: pkg/networkmanager/network-main.jsx:221
+#: pkg/networkmanager/network-main.jsx:197
+#: pkg/networkmanager/network-main.jsx:213
 #: pkg/networkmanager/network-interface-members.jsx:198
 msgid "Sending"
 msgstr ""
 
-#: pkg/networkmanager/network-main.jsx:206
-#: pkg/networkmanager/network-main.jsx:222 pkg/networkmanager/plots.js:30
+#: pkg/networkmanager/network-main.jsx:198
+#: pkg/networkmanager/network-main.jsx:214 pkg/networkmanager/plots.js:30
 #: pkg/networkmanager/network-interface-members.jsx:199
 msgid "Receiving"
 msgstr ""
 
-#: pkg/networkmanager/network-main.jsx:214
-#: pkg/networkmanager/network-main.jsx:216
+#: pkg/networkmanager/network-main.jsx:206
+#: pkg/networkmanager/network-main.jsx:208
 msgid "Unmanaged interfaces"
 msgstr ""
 
-#: pkg/networkmanager/network-main.jsx:227
+#: pkg/networkmanager/network-main.jsx:219
 msgid "Network logs"
 msgstr ""
 
