@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-18 02:47+0000\n"
+"POT-Creation-Date: 2026-11-20 02:47+0000\n"
 "PO-Revision-Date: 2026-11-05 09:18+0000\n"
 "Last-Translator: 김인수 <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/cockpit/"
@@ -1054,66 +1054,100 @@ msgstr "최근 디렉토리 없음"
 msgid "No recent files"
 msgstr "최근 파일 없음"
 
-#: pkg/lib/cockpit/react/FileChooser.tsx:566 pkg/systemd/logs.jsx:362
-msgid "Type to filter"
-msgstr "필터 입력"
-
-#: pkg/lib/cockpit/react/FileChooser.tsx:621
-msgid "File chooser actions"
-msgstr "파일 선택기 작업"
-
-#: pkg/lib/cockpit/react/FileChooser.tsx:636
-msgid "Open in file browser"
-msgstr "파일 검색기에서 열기"
-
-#: pkg/lib/cockpit/react/FileChooser.tsx:652
-msgid "Hide hidden files"
-msgstr "숨겨진 파일을 숨깁니다"
-
-#: pkg/lib/cockpit/react/FileChooser.tsx:652
-#: pkg/lib/cockpit/react/FileChooser.tsx:756
-msgid "Show hidden files"
-msgstr "숨긴 파일 표시"
-
-#: pkg/lib/cockpit/react/FileChooser.tsx:657
-#: pkg/lib/cockpit/react/FileChooser.tsx:723
+#: pkg/lib/cockpit/react/FileChooser.tsx:532
+#: pkg/lib/cockpit/react/FileChooser.tsx:662
+#: pkg/lib/cockpit/react/FileChooser.tsx:728
 #: pkg/storaged/filesystem/filesystem.jsx:77
 msgid "Filesystem"
 msgstr "파일시스템"
 
-#: pkg/lib/cockpit/react/FileChooser.tsx:756
+#: pkg/lib/cockpit/react/FileChooser.tsx:540
+#: pkg/lib/cockpit/react/FileChooser.tsx:969
+#, fuzzy
+#| msgid "File state"
+msgid "File path"
+msgstr "파일 상태"
+
+#: pkg/lib/cockpit/react/FileChooser.tsx:549
+#, fuzzy
+#| msgid "Clear filters"
+msgid "File filters"
+msgstr "필터 지우기"
+
+#: pkg/lib/cockpit/react/FileChooser.tsx:570
+msgid "Filter by name"
+msgstr "이름으로 필터링"
+
+#: pkg/lib/cockpit/react/FileChooser.tsx:571 pkg/systemd/logs.jsx:362
+msgid "Type to filter"
+msgstr "필터 입력"
+
+#: pkg/lib/cockpit/react/FileChooser.tsx:626
+msgid "File chooser actions"
+msgstr "파일 선택기 작업"
+
+#: pkg/lib/cockpit/react/FileChooser.tsx:641
+msgid "Open in file browser"
+msgstr "파일 검색기에서 열기"
+
+#: pkg/lib/cockpit/react/FileChooser.tsx:657
+msgid "Hide hidden files"
+msgstr "숨겨진 파일을 숨깁니다"
+
+#: pkg/lib/cockpit/react/FileChooser.tsx:657
+#: pkg/lib/cockpit/react/FileChooser.tsx:761
+msgid "Show hidden files"
+msgstr "숨긴 파일 표시"
+
+#: pkg/lib/cockpit/react/FileChooser.tsx:724
+msgid "Places"
+msgstr ""
+
+#: pkg/lib/cockpit/react/FileChooser.tsx:761
 msgid "Clear filters"
 msgstr "필터 지우기"
 
-#: pkg/lib/cockpit/react/FileChooser.tsx:781
+#: pkg/lib/cockpit/react/FileChooser.tsx:786
 msgid "Directory is empty"
 msgstr "디렉토리가 비어 있습니다"
 
-#: pkg/lib/cockpit/react/FileChooser.tsx:783
+#: pkg/lib/cockpit/react/FileChooser.tsx:788
 msgid "Directory has no sub-directories"
 msgstr "디렉토리는 하위-디렉토리가 없습니다"
 
-#: pkg/lib/cockpit/react/FileChooser.tsx:789
+#: pkg/lib/cockpit/react/FileChooser.tsx:794
 msgid "This directory contains only hidden files"
 msgstr "이 디렉토리는 숨겨진 파일만 포함합니다"
 
-#: pkg/lib/cockpit/react/FileChooser.tsx:795
-#: pkg/lib/cockpit/react/FileChooser.tsx:799 pkg/systemd/services-list.jsx:45
+#: pkg/lib/cockpit/react/FileChooser.tsx:800
+#: pkg/lib/cockpit/react/FileChooser.tsx:804 pkg/systemd/services-list.jsx:45
 #: pkg/users/accounts-list.js:322 pkg/users/accounts-list.js:431
 msgid "No matching results"
 msgstr "일치하는 결과를 찾을 수 없습니다"
 
-#: pkg/lib/cockpit/react/FileChooser.tsx:826
+#: pkg/lib/cockpit/react/FileChooser.tsx:828
 msgid "Folder"
 msgstr "폴더"
 
-#: pkg/lib/cockpit/react/FileChooser.tsx:826
+#: pkg/lib/cockpit/react/FileChooser.tsx:828
 msgid "File"
 msgstr "파일"
 
-#: pkg/lib/cockpit/react/FileChooser.tsx:899 pkg/shell/shell-modals.tsx:171
+#: pkg/lib/cockpit/react/FileChooser.tsx:862
+#, fuzzy
+#| msgid "File"
+msgid "Files"
+msgstr "파일"
+
+#: pkg/lib/cockpit/react/FileChooser.tsx:906 pkg/shell/shell-modals.tsx:171
 msgid "Select"
 msgstr "선택"
+
+#: pkg/lib/cockpit/react/FileChooser.tsx:928
+#, fuzzy
+#| msgid "Change profile"
+msgid "Choose file"
+msgstr "프로파일 변경"
 
 #: pkg/lib/cockpit/dialog.tsx:1500
 msgid "Error during initialization"
@@ -11945,9 +11979,6 @@ msgstr "Cockpit 웹 콘솔의 권한 작업을 수행하려면 인증이 필요�
 
 #~ msgid "Fewer than the maximum number of virtual CPUs should be enabled."
 #~ msgstr "최대 가상 CPU 수 보다 적은 수를 활성화해야 합니다."
-
-#~ msgid "Filter by name"
-#~ msgstr "이름으로 필터링"
 
 #~ msgid "Firmware"
 #~ msgstr "펌웨어"

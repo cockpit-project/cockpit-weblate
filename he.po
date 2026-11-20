@@ -24,7 +24,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-18 02:47+0000\n"
+"POT-Creation-Date: 2026-11-20 02:47+0000\n"
 "PO-Revision-Date: 2025-12-03 21:23+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://translate.fedoraproject.org/projects/cockpit/"
@@ -1093,74 +1093,108 @@ msgstr "תיקיית בית"
 msgid "No recent files"
 msgstr "מחיקת קבצים"
 
-#: pkg/lib/cockpit/react/FileChooser.tsx:566 pkg/systemd/logs.jsx:362
+#: pkg/lib/cockpit/react/FileChooser.tsx:532
+#: pkg/lib/cockpit/react/FileChooser.tsx:662
+#: pkg/lib/cockpit/react/FileChooser.tsx:728
+#: pkg/storaged/filesystem/filesystem.jsx:77
+msgid "Filesystem"
+msgstr "מערכת קבצים"
+
+#: pkg/lib/cockpit/react/FileChooser.tsx:540
+#: pkg/lib/cockpit/react/FileChooser.tsx:969
+#, fuzzy
+#| msgid "File state"
+msgid "File path"
+msgstr "מצב הקובץ"
+
+#: pkg/lib/cockpit/react/FileChooser.tsx:549
+#, fuzzy
+#| msgid "Clear filter"
+msgid "File filters"
+msgstr "הסרת מסנן"
+
+#: pkg/lib/cockpit/react/FileChooser.tsx:570
+msgid "Filter by name"
+msgstr "סינון לפי שם"
+
+#: pkg/lib/cockpit/react/FileChooser.tsx:571 pkg/systemd/logs.jsx:362
 msgid "Type to filter"
 msgstr "יש להקליד כדי לסנן"
 
-#: pkg/lib/cockpit/react/FileChooser.tsx:621
+#: pkg/lib/cockpit/react/FileChooser.tsx:626
 msgid "File chooser actions"
 msgstr ""
 
-#: pkg/lib/cockpit/react/FileChooser.tsx:636
+#: pkg/lib/cockpit/react/FileChooser.tsx:641
 #, fuzzy
 #| msgid "Or use a bundled browser"
 msgid "Open in file browser"
 msgstr "או להשתמש בדפדפן מובנה"
 
-#: pkg/lib/cockpit/react/FileChooser.tsx:652
+#: pkg/lib/cockpit/react/FileChooser.tsx:657
 msgid "Hide hidden files"
 msgstr ""
 
-#: pkg/lib/cockpit/react/FileChooser.tsx:652
-#: pkg/lib/cockpit/react/FileChooser.tsx:756
+#: pkg/lib/cockpit/react/FileChooser.tsx:657
+#: pkg/lib/cockpit/react/FileChooser.tsx:761
 #, fuzzy
 #| msgid "Show filters"
 msgid "Show hidden files"
 msgstr "הצגת מסננים"
 
-#: pkg/lib/cockpit/react/FileChooser.tsx:657
-#: pkg/lib/cockpit/react/FileChooser.tsx:723
-#: pkg/storaged/filesystem/filesystem.jsx:77
-msgid "Filesystem"
-msgstr "מערכת קבצים"
+#: pkg/lib/cockpit/react/FileChooser.tsx:724
+msgid "Places"
+msgstr ""
 
-#: pkg/lib/cockpit/react/FileChooser.tsx:756
+#: pkg/lib/cockpit/react/FileChooser.tsx:761
 #, fuzzy
 #| msgid "Clear filter"
 msgid "Clear filters"
 msgstr "הסרת מסנן"
 
-#: pkg/lib/cockpit/react/FileChooser.tsx:781
+#: pkg/lib/cockpit/react/FileChooser.tsx:786
 #, fuzzy
 #| msgid "This directory is empty"
 msgid "Directory is empty"
 msgstr "התיקייה הזאת ריקה"
 
-#: pkg/lib/cockpit/react/FileChooser.tsx:783
+#: pkg/lib/cockpit/react/FileChooser.tsx:788
 msgid "Directory has no sub-directories"
 msgstr ""
 
-#: pkg/lib/cockpit/react/FileChooser.tsx:789
+#: pkg/lib/cockpit/react/FileChooser.tsx:794
 msgid "This directory contains only hidden files"
 msgstr ""
 
-#: pkg/lib/cockpit/react/FileChooser.tsx:795
-#: pkg/lib/cockpit/react/FileChooser.tsx:799 pkg/systemd/services-list.jsx:45
+#: pkg/lib/cockpit/react/FileChooser.tsx:800
+#: pkg/lib/cockpit/react/FileChooser.tsx:804 pkg/systemd/services-list.jsx:45
 #: pkg/users/accounts-list.js:322 pkg/users/accounts-list.js:431
 msgid "No matching results"
 msgstr "אין כללים תואמים"
 
-#: pkg/lib/cockpit/react/FileChooser.tsx:826
+#: pkg/lib/cockpit/react/FileChooser.tsx:828
 msgid "Folder"
 msgstr ""
 
-#: pkg/lib/cockpit/react/FileChooser.tsx:826
+#: pkg/lib/cockpit/react/FileChooser.tsx:828
 msgid "File"
 msgstr "קובץ"
 
-#: pkg/lib/cockpit/react/FileChooser.tsx:899 pkg/shell/shell-modals.tsx:171
+#: pkg/lib/cockpit/react/FileChooser.tsx:862
+#, fuzzy
+#| msgid "File"
+msgid "Files"
+msgstr "קובץ"
+
+#: pkg/lib/cockpit/react/FileChooser.tsx:906 pkg/shell/shell-modals.tsx:171
 msgid "Select"
 msgstr "בחירה"
+
+#: pkg/lib/cockpit/react/FileChooser.tsx:928
+#, fuzzy
+#| msgid "Change profile"
+msgid "Choose file"
+msgstr "החלפת פרופיל"
 
 #: pkg/lib/cockpit/dialog.tsx:1500
 msgid "Error during initialization"
@@ -12209,9 +12243,6 @@ msgstr "נדרש אימות כדי לבצע משימות שדורשות השרא
 
 #~ msgid "Fewer than the maximum number of virtual CPUs should be enabled."
 #~ msgstr "יש להפעיל פחות מכמות המעבדים הווירטואלים המרבית."
-
-#~ msgid "Filter by name"
-#~ msgstr "סינון לפי שם"
 
 #~ msgid "Firmware"
 #~ msgstr "קושחה"
